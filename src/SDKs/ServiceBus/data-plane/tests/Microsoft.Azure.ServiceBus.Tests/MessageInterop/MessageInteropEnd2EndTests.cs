@@ -21,7 +21,6 @@ namespace Microsoft.Azure.ServiceBus.UnitTests.MessageInterop
             new object[] { TransportType.Amqp, MessageInteropEnd2EndTests.GetSbConnectionString(TransportType.Amqp) }
         };
 
-        /* 
         [Theory]
         [MemberData(nameof(TestEnd2EndEntityPermutations))]
         [LiveTest]

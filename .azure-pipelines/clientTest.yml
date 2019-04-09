@@ -99,7 +99,8 @@ jobs:
           scriptPath: '$(Build.BinariesDirectory)/sdk-tools/scripts/python/verify_agent_os.py'
           arguments: $(OSName)
 
-      - powershell: dotnet test '$(ProjectFile)' --filter TestCategory!=Live --logger trx
+      - powershell: | 
+          C:\Program Files\dotnet\sdk\2.1.503\dotnet test '$(ProjectFile)' --filter TestCategory!=Live --logger trx
         displayName: 'Build & Test (no live tests)'
 
       - task: PublishTestResults@2

@@ -103,6 +103,10 @@ jobs:
         displayName: 'Use .NET Core sdk $(DotNetCoreVersion)'
         inputs:
           version: '$(DotNetCoreVersion)'
+          
+      - powershell: 'dotnet nuget locals all --clear'
+        workingDirectory: '$(Build.SourcesDirectory)'
+        displayName: 'PowerShell Script'
 
       - task: DotNetCoreCLI@2
         displayName: 'Restore'

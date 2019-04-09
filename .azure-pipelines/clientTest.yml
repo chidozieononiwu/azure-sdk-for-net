@@ -100,7 +100,12 @@ jobs:
           arguments: $(OSName)
 
       - powershell: | 
-          C:\Program Files\dotnet\sdk\2.1.503\dotnet test '$(ProjectFile)' --filter TestCategory!=Live --logger trx
+          cd '.\Program Files\dotnet\sdk\'
+          ls
+        displayName: 'Build & Test (no live tests)'
+
+      - powershell: | 
+          cd C:\Program Files\dotnet\sdk\2.1.503\dotnet test '$(ProjectFile)' --filter TestCategory!=Live --logger trx
         displayName: 'Build & Test (no live tests)'
 
       - task: PublishTestResults@2

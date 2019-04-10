@@ -19,6 +19,8 @@
   <ItemGroup Condition="'$(IsTargetingNetFx)' == 'true'">
     <Reference Include="System" />
     <Reference Include="Microsoft.CSharp" />
+    <PackageReference Include="System.Security.Cryptography.Algorithms" Version="4.3.0" />
+    <PackageReference Include="System.Security.Cryptography.Primitives" Version="4.3.0" />
   </ItemGroup>
 
   <ItemGroup>

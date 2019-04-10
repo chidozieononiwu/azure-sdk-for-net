@@ -26,6 +26,7 @@
     <Compile Remove="Diagnostics\SessionDiagnosticsTests.cs" />
     <Compile Remove="Diagnostics\QueueClientDiagnosticsTests.cs" />
     <Compile Remove="API\APIApprovals.cs" />
+    <Compile Remove="MessageInterop\MessageInteropEnd2EndTests.cs" />
   </ItemGroup>
 
    <ItemGroup Condition="'$(IsTargetingNetCoreApp)' == 'true'">

@@ -47,7 +47,7 @@
   </PropertyGroup>
 
   <!-- If signing is enabled for a Test library, sign immediately using the test key -->
-  <PropertyGroup Condition="'$(SignTestAssembly)' == 'true'">
+  <PropertyGroup Condition="'$(IsTestProject)' == 'true'">
     <SignAssembly>true</SignAssembly>
     <DelaySign>false</DelaySign>
     <PublicSign>true</PublicSign>

@@ -22,7 +22,8 @@
   <PropertyGroup Condition="'$(IsTestProject)' == 'true' or '$(IsTestHelperLibrary)' == 'true'">
     <IsPackable>false</IsPackable>
     <SignAssembly>false</SignAssembly>
-    <RequiredTargetFrameworks>netcoreapp2.0;net461</RequiredTargetFrameworks>
+    <RequiredTargetFrameworks>netcoreapp2.0</RequiredTargetFrameworks>
+    <RequiredTargetFrameworks Condition="'$(OS)' == 'Windows_NT'">netcoreapp2.0;net461</RequiredTargetFrameworks>
     <TargetFrameworks>$(RequiredTargetFrameworks)</TargetFrameworks>
     <DefaultReferenceTargets>AzSdk.test.reference.targets</DefaultReferenceTargets>
 
@@ -37,10 +38,11 @@
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0-alpha-004" PrivateAssets="all" IsImplicitlyDefined="true" />
   </ItemGroup>
 
-  <!-- If signing is enabled for an SDK library, delay sign using the shared key -->
+  <!-- If signing is enabled for an SDK library, public sign using the shared key -->
   <PropertyGroup Condition="'$(SignAssembly)' != 'false'">
     <SignAssembly>true</SignAssembly>
-    <DelaySign>true</DelaySign>
+    <DelaySign>false</DelaySign>
+    <PublicSign>true</PublicSign>
     <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)MSSharedLibKey.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
@@ -48,6 +50,7 @@
   <PropertyGroup Condition="'$(SignTestAssembly)' == 'true'">
     <SignAssembly>true</SignAssembly>
     <DelaySign>false</DelaySign>
+    <PublicSign>true</PublicSign>
     <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)AzSdkTestLibKey.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 

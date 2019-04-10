@@ -41,7 +41,6 @@
 
   <ItemGroup Condition="'$(IsTargetingNetFx)' == 'true'">
     <Reference Include="System.Transactions" />
-    <PackageReference Include="WindowsAzure.ServiceBus" Version="4.1.2" />
   </ItemGroup>
 
   <ItemGroup>

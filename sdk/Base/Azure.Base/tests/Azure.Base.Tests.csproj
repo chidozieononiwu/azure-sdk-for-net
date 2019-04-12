@@ -10,7 +10,7 @@
     <PackageReference Include="System.Memory" Version="4.5.2" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Azure.Base\Azure.Base.csproj">
+    <ProjectReference Include="..\src\Azure.Base.csproj">
       <Project>{FEC0AE57-E241-46DB-B7C7-9181F28E1D3F}</Project>
       <Name>Azure.Base</Name>
     </ProjectReference>

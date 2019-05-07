@@ -12,7 +12,7 @@ namespace Data.ApplicationInsights.Tests.Events
         private const int TopCount = 10;
         private readonly string Timespan = "P1D";
 
-        [Fact(Skip = "https://github.com/Azure/azure-sdk-for-net/issues/6135")]
+        [Fact]
         public async Task GetAllEvents()
         {
             using (var ctx = MockContext.Start(GetType().FullName))
@@ -33,7 +33,7 @@ namespace Data.ApplicationInsights.Tests.Events
             }
         }
 
-        [Theory(Skip = "https://github.com/Azure/azure-sdk-for-net/issues/6135")]
+        [Theory]
         [InlineData(EventType.Traces)]
         [InlineData(EventType.CustomEvents)]
         [InlineData(EventType.PageViews)]

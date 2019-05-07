@@ -11,7 +11,7 @@ namespace Data.ApplicationInsights.Tests.Metrics
 {
     public class MetricTests : MetricsTestBase
     {
-        [Theory(Skip = "https://github.com/Azure/azure-sdk-for-net/issues/6135")]
+        [Theory]
         [MemberData(nameof(AggregatedMetric))]
         [MemberData(nameof(AggregatedIntervalMetric))]
         [MemberData(nameof(AggregatedSegmentMetric))]

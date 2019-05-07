@@ -10,7 +10,7 @@ namespace Data.ApplicationInsights.Tests.Events
 {
     public class TraceEventsTests : EventsTestBase
     {
-        [Fact(Skip = "https://github.com/Azure/azure-sdk-for-net/issues/6135")]
+        [Fact]
         public async Task GetTraceEvents()
         {
             using (var ctx = MockContext.Start(GetType().FullName))

@@ -22,6 +22,21 @@
     <DefaultPathTokenToIgnore>$(DefaultPathTokenToIgnore) LocationBasedServices</DefaultPathTokenToIgnore>
     <DefaultPathTokenToIgnore>$(DefaultPathTokenToIgnore) BotService</DefaultPathTokenToIgnore>
     <DefaultPathTokenToIgnore>$(DefaultPathTokenToIgnore) TestFramework\TestFramework.Net45Tests</DefaultPathTokenToIgnore>
+    <DefaultPathTokenToIgnore>$(DefaultPathTokenToIgnore) batch</DefaultPathTokenToIgnore>
+    <DefaultPathTokenToIgnore>$(DefaultPathTokenToIgnore) appconfiguration</DefaultPathTokenToIgnore>
+    <DefaultPathTokenToIgnore>$(DefaultPathTokenToIgnore) applicationinsights</DefaultPathTokenToIgnore>
+    <DefaultPathTokenToIgnore>$(DefaultPathTokenToIgnore) cognitiveservices</DefaultPathTokenToIgnore>
+    <DefaultPathTokenToIgnore>$(DefaultPathTokenToIgnore) core</DefaultPathTokenToIgnore>
+    <DefaultPathTokenToIgnore>$(DefaultPathTokenToIgnore) eventgrid</DefaultPathTokenToIgnore>
+    <DefaultPathTokenToIgnore>$(DefaultPathTokenToIgnore) eventhub</DefaultPathTokenToIgnore>
+    <DefaultPathTokenToIgnore>$(DefaultPathTokenToIgnore) hdinsight</DefaultPathTokenToIgnore>
+    <DefaultPathTokenToIgnore>$(DefaultPathTokenToIgnore) identity</DefaultPathTokenToIgnore>
+    <DefaultPathTokenToIgnore>$(DefaultPathTokenToIgnore) keyvault</DefaultPathTokenToIgnore>
+    <DefaultPathTokenToIgnore>$(DefaultPathTokenToIgnore) operationalinsights</DefaultPathTokenToIgnore>
+    <DefaultPathTokenToIgnore>$(DefaultPathTokenToIgnore) servicebus</DefaultPathTokenToIgnore>
+    <DefaultPathTokenToIgnore>$(DefaultPathTokenToIgnore) storage</DefaultPathTokenToIgnore>
+    <DefaultPathTokenToIgnore>$(DefaultPathTokenToIgnore) Template</DefaultPathTokenToIgnore>
+    <DefaultPathTokenToIgnore>$(DefaultPathTokenToIgnore) containerregistry</DefaultPathTokenToIgnore>
   </PropertyGroup>
 
   <!-- Ignore all data plane libraries following the "data-plane" naming convention -->
@@ -30,4 +45,8 @@
   </PropertyGroup>
 
   <Import Project="$(NetSdkBuildTargetsDir)\core\_Directory.Build.props" Condition=" Exists('$(NetSdkBuildTargetsDir)\core\_Directory.Build.props') "/>
+
+  <PropertyGroup>
+    <LibrarySourceFolder>$(LibraryRoot)sdk</LibrarySourceFolder>
+  </PropertyGroup>
 </Project>

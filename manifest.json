@@ -35489,107 +35489,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/AuthConflictsBetweenSDKs.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/AuthConflictsBetweenSDKs.html",
-          "hash": "pMV0rnhAO+QiSkVIL7+O6g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "articles/CONTRIBUTING.md",
       "output": {
         ".html": {
           "relative_path": "articles/CONTRIBUTING.html",
           "hash": "Xy9Q2a2HoIkdQYYErHeU0g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "articles/ExistingManagementSDKVersioning.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/ExistingManagementSDKVersioning.html",
-          "hash": "k/CzJlkjHdpEc5FCFSiR6A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "articles/NetSDK-Repo-Tasks-Module.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/NetSDK-Repo-Tasks-Module.html",
-          "hash": "cEMzQNnYxZnK4czOSk8VRQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "articles/README.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/README.html",
-          "hash": "Db1MIuhDrCvfcpu4RdNRxQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "articles/Using-Azure-TestFramework.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/Using-Azure-TestFramework.html",
-          "hash": "MzRA5fwERb6HS18NuSuaBg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "articles/Versioning.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/Versioning.html",
-          "hash": "wnmoUXb/jbCmIQUwAAZTCw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "articles/breaking-changes.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/breaking-changes.html",
-          "hash": "ROPSGbD3DiaIEpbl6BTZ7w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "articles/code-generation-instructions.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/code-generation-instructions.html",
-          "hash": "VokQqA9dj6gAtNN4DKPvnQ=="
         }
       },
       "is_incremental": false,
@@ -35623,24 +35527,12 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "articles/sdk-for-net-packages.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/sdk-for-net-packages.html",
-          "hash": "UCM867tfAJp/aPhWJs9wHQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Toc",
       "source_relative_path": "articles/toc.yml",
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "ZWlWkYjLvNwMjMC/dY5gzg=="
+          "hash": "WqVlhPMnJjoNYvWSMEnaUw=="
         }
       },
       "is_incremental": false,
@@ -35664,7 +35556,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "bemUdpeq52uP2O/osjxPdw=="
+          "hash": "sg3p87VbBWcK30qmego3TQ=="
         }
       },
       "is_incremental": false,
@@ -35692,7 +35584,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 44,
+          "total_file_count": 35,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {

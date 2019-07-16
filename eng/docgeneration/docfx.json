@@ -34,127 +34,7 @@
       ],
       "dest": "api",
       "disableGitFeatures": false,
-      "disableDefaultFilter": false,
-      "properties": {
-        "TargetFramework": "net452"
-      }
-    },
-    {
-      "src": [
-        {
-          "files": [
-            "core/**/*.csproj",
-            "appconfiguration/**/*.csproj",
-            "applicationinsights/**/*.csproj",
-            "batch/**/*.csproj",
-            "cognitiveservices/**/*.csproj",
-            "containerregistry/**/*.csproj",
-            "eventgrid/**/*.csproj",
-            "eventhub/**/*.csproj",
-            "graphrbac/**/*.csproj",
-            "hdinsight/**/*.csproj",
-            "identity/**/*.csproj",
-            "keyvault/**/*.csproj",
-            "operationalinsights/**/*.csproj",
-            "search/**/*.csproj",
-            "servicebus/**/*.csproj",
-            "storage/**/*.csproj"
-          ],
-          "exclude": [
-            "**/bin/**",
-            "**/obj/**",
-            "**/**.Management.**/**",
-            "**/tests/**",
-            "**/Tools/**",
-            "**/Samples/**"
-          ],
-          "src": "../sdk"
-        }
-      ],
-      "dest": "api",
-      "disableGitFeatures": false,
-      "disableDefaultFilter": false,
-      "properties": {
-        "TargetFramework": "netstandard1.4"
-      }
-    },
-    {
-      "src": [
-        {
-          "files": [
-            "core/**/*.csproj",
-            "appconfiguration/**/*.csproj",
-            "applicationinsights/**/*.csproj",
-            "batch/**/*.csproj",
-            "cognitiveservices/**/*.csproj",
-            "containerregistry/**/*.csproj",
-            "eventgrid/**/*.csproj",
-            "eventhub/**/*.csproj",
-            "graphrbac/**/*.csproj",
-            "hdinsight/**/*.csproj",
-            "identity/**/*.csproj",
-            "keyvault/**/*.csproj",
-            "operationalinsights/**/*.csproj",
-            "search/**/*.csproj",
-            "servicebus/**/*.csproj",
-            "storage/**/*.csproj"
-          ],
-          "exclude": [
-            "**/bin/**",
-            "**/obj/**",
-            "**/**.Management.**/**",
-            "**/tests/**",
-            "**/Tools/**",
-            "**/Samples/**"
-          ],
-          "src": "../sdk"
-        }
-      ],
-      "dest": "api",
-      "disableGitFeatures": false,
-      "disableDefaultFilter": false,
-      "properties": {
-        "TargetFramework": "net461"
-      }
-    },
-    {
-      "src": [
-        {
-          "files": [
-            "core/**/*.csproj",
-            "appconfiguration/**/*.csproj",
-            "applicationinsights/**/*.csproj",
-            "batch/**/*.csproj",
-            "cognitiveservices/**/*.csproj",
-            "containerregistry/**/*.csproj",
-            "eventgrid/**/*.csproj",
-            "eventhub/**/*.csproj",
-            "graphrbac/**/*.csproj",
-            "hdinsight/**/*.csproj",
-            "identity/**/*.csproj",
-            "keyvault/**/*.csproj",
-            "operationalinsights/**/*.csproj",
-            "search/**/*.csproj",
-            "servicebus/**/*.csproj",
-            "storage/**/*.csproj"
-          ],
-          "exclude": [
-            "**/bin/**",
-            "**/obj/**",
-            "**/**.Management.**/**",
-            "**/tests/**",
-            "**/Tools/**",
-            "**/Samples/**"
-          ],
-          "src": "../sdk"
-        }
-      ],
-      "dest": "api",
-      "disableGitFeatures": false,
-      "disableDefaultFilter": false,
-      "properties": {
-        "TargetFramework": "netstandard2.0"
-      }
+      "disableDefaultFilter": false
     }
   ],
   "build": {
@@ -177,6 +57,7 @@
         "exclude": ["obj/**", "_site/**"]
       }
     ],
+    "xrefService": ["https://xref.docs.microsoft.com/query?uid={uid}"],
     "dest": "_site",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
@@ -186,6 +67,16 @@
     "noLangKeyword": false,
     "keepFileLink": false,
     "cleanupCacheHistory": false,
-    "disableGitFeatures": false
+    "disableGitFeatures": false,
+    "globalMetadata": {
+      "_appTitle": "Azure SDK for Net",
+      "_appFooter": "Azure SDK for Net",
+      "_enableSearch": true,
+      "_enableNewTab": true
+    },
+    "sitemap": {
+      "baseUrl": "https://azure.github.io/azure-sdk-for-net/index.html",
+      "changefreq": "monthly"
+    }
   }
 }

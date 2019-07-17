@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Microsoft Azure SDK for .NET Documentation </title>
+    <title>Azure SDK for .NET | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Microsoft Azure SDK for .NET Documentation ">
+    <meta name="title" content="Azure SDK for .NET | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -17,8 +17,8 @@
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -56,6 +56,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -67,209 +77,68 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="microsoft-azure-sdk-for-net-documentation">Microsoft Azure SDK for .NET Documentation</h1>
+<h1 id="azure-sdk-for-net">Azure SDK for .NET</h1>
 
-<p>The following services have SDKs that are generated from AutoRest</p>
-<p>** Old SDKs (as of August 2016)
-These SDKs depend on Microsoft.Azure.Common</p>
-<table>
-<thead>
-<tr>
-<th>Service Name</th>
-<th>Nuget Package</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Api Management</td>
-<td>Microsoft.Azure.Management.ApiManagement</td>
-</tr>
-<tr>
-<td>Automation</td>
-<td>Microsoft.WindowsAzure.Management.Automation</td>
-</tr>
-<tr>
-<td>Azure Backup</td>
-<td>Microsoft.Azure.Management.BackupServices</td>
-</tr>
-<tr>
-<td>Azure Stack</td>
-<td>Microsoft.AzureStack.Management, Microsoft.AzureStack.Management.Storage</td>
-</tr>
-<tr>
-<td>Commerce</td>
-<td>Microsoft.Azure.Commerce.UsageAggregates</td>
-</tr>
-<tr>
-<td>DataFactory</td>
-<td>Microsoft.Azure.Management.DataFactories</td>
-</tr>
-<tr>
-<td>DataLake</td>
-<td>Microsoft.Azure.Management.DataLake.AnalyticsCatalog, Microsoft.Azure.Management.DataLake.AnalyticsJob, Microsoft.Azure.Management.DataLake.StoreFileSystem</td>
-</tr>
-<tr>
-<td>ExpressRoute</td>
-<td>Microsoft.WindowsAzure.Management.ExpressRoute</td>
-</tr>
-<tr>
-<td>HdInsight</td>
-<td>Microsoft.Azure.Management.HDInsight, Microsoft.Azure.Management.HDInsight.Job</td>
-</tr>
-<tr>
-<td>Insights</td>
-<td>Microsoft.Azure.Insights</td>
-</tr>
-<tr>
-<td>Media Services</td>
-<td>Microsoft.WindowsAzure.Management.MediaServices</td>
-</tr>
-<tr>
-<td>Monitor</td>
-<td>Microsoft.Azure.Monitor</td>
-</tr>
-<tr>
-<td>Monitoring</td>
-<td>Microsoft.WindowsAzure.Management.Monitoring</td>
-</tr>
-<tr>
-<td>Operational Insights</td>
-<td>Microsoft.Azure.Management.OperationalInsights</td>
-</tr>
-<tr>
-<td>Recovery Services</td>
-<td>Microsoft.Azure.Management.RecoveryServices, Microsoft.Azure.Management.RecoveryServices.Backup</td>
-</tr>
-<tr>
-<td>ServerManagement</td>
-<td>Microsoft.Azure.Management.ServerManagement</td>
-</tr>
-<tr>
-<td>Site Recovery</td>
-<td>Microsoft.Azure.Management.SiteRecovery</td>
-</tr>
-<tr>
-<td>Sql</td>
-<td>Microsoft.Azure.Management.Sql, Microsoft.WindowsAzure.Management.Sql</td>
-</tr>
-<tr>
-<td>Stream Analytics</td>
-<td>Microsoft.Azure.Management.StreamAnalytics</td>
-</tr>
-</tbody>
-</table>
+<p>This repository contains official .NET libraries for Azure services. You can find NuGet packages for these libraries <a href="packages.html">here</a>.</p>
+<h2 id="getting-started">Getting started</h2>
+<p>To get started with a library, see the README.md file located in the library's project folder. You can find these library folders grouped by service in the /sdk directory.</p>
+<p>For tutorials, samples, quick starts, and other documentation, go to <a href="https://docs.microsoft.com/en-us/dotnet/azure/">Azure for .NET Developers</a>.</p>
+<h2 id="packages-available">Packages available</h2>
+<p>Each service might have a number of libraries available from each of the following categories discussed below:</p>
 <ul>
-<li>New SDKs (as of August 2016)
-These SDKs depend on Microsoft.Rest.ClientRuntime.Azure</li>
+<li><a href="#Client-July-2019-Preview">Client - July 2019 Preview</a></li>
+<li><a href="#Client-Stable">Client - Stable</a></li>
+<li><a href="#Management">Management</a></li>
 </ul>
+<h3 id="client-july-2019-preview">Client: July 2019 Preview</h3>
+<p>New wave of packages that we are currently releasing in <strong>preview</strong>.
+These libraries follow the <a href="https://azuresdkspecs.z5.web.core.windows.net/DotNetSpec.html">Azure SDK Design Guidelines for .NET</a> and share a number of core features such as HTTP retries, logging, transport protocols, authentication protocols, etc., so that once you learn how to use these features in one client library, you will know how to use them in other client libraries. You can learn about these shared features at <a href="/sdk/core/Azure.Core/README.md">Azure.Core</a>.</p>
+<p>These preview libraries can be easily identified by their folder, package, and namespaces names starting with 'Azure', e.g. Azure.Storage.Blobs.</p>
+<p>The libraries released in the July 2019 preview:</p>
+<ul>
+<li><a href="/sdk/appconfiguration/Azure.ApplicationModel.Configuration/README.md">Azure.ApplicationModel.Configuration</a></li>
+<li><a href="/sdk/eventhub/Azure.Messaging.EventHubs/README.md">Azure.Messaging.EventHubs</a></li>
+<li><a href="/sdk/keyvault/Azure.Security.KeyVault.Keys/Readme.md">Azure.Identity.KeyVault.Keys</a></li>
+<li><a href="/sdk/keyvault/Azure.Security.KeyVault.Secrets/Readme.md">Azure.Identity.KeyVault.Secrets</a></li>
+<li><a href="/sdk/storage/Azure.Storage.Blobs/README.md">Azure.Storage.Blobs</a></li>
+<li><a href="/sdk/storage/Azure.Storage.Files/README.md">Azure.Storage.Files</a></li>
+<li><a href="/sdk/storage/Azure.Storage.Queues/README.md">Azure.Storage.Queues</a></li>
+</ul>
+<blockquote>
+<p>NOTE: If you need to ensure your code is ready for production, use one of the stable libraries.</p>
+</blockquote>
+<h3 id="client-stable">Client: Stable</h3>
+<p>Last stable versions of packages that are production-ready. These libraries provide similar functionalities to the preview packages, as they allow you to use and consume existing resources and interact with them, for example: upload a storage blob. Stable library directories typically contain 'Microsoft.Azure' in their names, e.g. 'Microsoft.Azure.KeyVault'.</p>
+<h3 id="management">Management</h3>
+<p>Libraries which enable you to provision specific server resources. They are directly mirroring Azure service's REST endpoints. Management library directories typically contain the word 'Management' in their names, e.g. 'Microsoft.Azure.Management.Storage'.</p>
+<h2 id="need-help">Need help?</h2>
+<ul>
+<li>For reference documentation visit the <a href="http://aka.ms/net-docs">Azure SDK for .NET API Reference</a>.</li>
+<li>For tutorials, samples, quick starts, and other documentation, go to <a href="https://docs.microsoft.com/en-us/dotnet/azure/">Azure for .NET Developers</a>.</li>
+<li>File an issue via <a href="https://github.com/Azure/azure-sdk-for-net/issues/new/choose">Github Issues</a>.</li>
+<li>Check <a href="https://stackoverflow.com/questions/tagged/azure-net-sdk">previous questions</a> or ask new ones on StackOverflow using <code>azure-net-sdk</code> tag.</li>
+</ul>
+<h2 id="contributing">Contributing</h2>
+<p>For details on contributing to this repository, see the <a href="CONTRIBUTING.html">contributing guide</a>.</p>
 <table>
 <thead>
 <tr>
-<th>Service Name</th>
-<th>Nuget Package</th>
+<th>Component</th>
+<th>Build Status</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Authorization</td>
-<td>Microsoft.Azure.Management.Authorization</td>
+<td>Client Libraries</td>
+<td><a href="https://dev.azure.com/azure-sdk/public/_build/latest?definitionId=290&amp;branchName=master"><img src="https://dev.azure.com/azure-sdk/public/_apis/build/status/290?branchName=master" alt="Build Status"></a> <a href="https://azuresdkartifacts.blob.core.windows.net/azure-sdk-for-net/dependencies/dependencies.html"><img src="https://img.shields.io/badge/dependencies-analyzed-blue.svg" alt="Dependencies"></a></td>
 </tr>
 <tr>
-<td>Batch</td>
-<td>Microsoft.Azure.Batch</td>
-</tr>
-<tr>
-<td>Cdn</td>
-<td>Microsoft.Azure.Management.Cdn</td>
-</tr>
-<tr>
-<td>Cognitive Services</td>
-<td>Microsoft.Azure.Management.CognitiveServices</td>
-</tr>
-<tr>
-<td>Compute</td>
-<td>Microsoft.Azure.Management.Compute</td>
-</tr>
-<tr>
-<td>DataLake Analytics</td>
-<td>Microsoft.Azure.Management.DataLake.Analytics, Microsoft.Azure.Management.DataLake.Store</td>
-</tr>
-<tr>
-<td>DevTestLabs</td>
-<td>Microsoft.Azure.Management.DevTestLabs</td>
-</tr>
-<tr>
-<td>Graph.RBAC</td>
-<td>Microsoft.Azure.Graph.RBAC</td>
-</tr>
-<tr>
-<td>Intune</td>
-<td>Microsoft.Azure.Management.Intune</td>
-</tr>
-<tr>
-<td>KeyVault</td>
-<td>Microsoft.Azure.KeyVault, Microsoft.Azure.Management.KeyVault</td>
-</tr>
-<tr>
-<td>Logic</td>
-<td>Microsoft.Azure.Management.Logic</td>
-</tr>
-<tr>
-<td>Machine Learning</td>
-<td>Microsoft.Azure.Management.MachineLearning</td>
-</tr>
-<tr>
-<td>Machine Learning Compute</td>
-<td>Microsoft.Azure.Management.MachineLearningCompute</td>
-</tr>
-<tr>
-<td>Network</td>
-<td>Microsoft.Azure.Management.Network</td>
-</tr>
-<tr>
-<td>NotificationHubs</td>
-<td>Microsoft.Azure.Management.NotificationHubs</td>
-</tr>
-<tr>
-<td>Policy Insights</td>
-<td>Microsoft.Azure.Management.PolicyInsights</td>
-</tr>
-<tr>
-<td>PowerBI</td>
-<td>Microsoft.Azure.Management.PowerBIEmbedded</td>
-</tr>
-<tr>
-<td>Redis Cache</td>
-<td>Microsoft.Azure.Management.Redis</td>
-</tr>
-<tr>
-<td>Resource Manager (ARM)</td>
-<td>Microsoft.Azure.Management.ResourceManager</td>
-</tr>
-<tr>
-<td>Scheduler</td>
-<td>Microsoft.Azure.Management.Scheduler</td>
-</tr>
-<tr>
-<td>Search</td>
-<td>Microsoft.Azure.Search</td>
-</tr>
-<tr>
-<td>Storage</td>
-<td>Microsoft.Azure.Management.Storage</td>
-</tr>
-<tr>
-<td>Traffic Manager</td>
-<td>Microsoft.Azure.Management.TrafficManager</td>
-</tr>
-<tr>
-<td>Websites</td>
-<td>Microsoft.Azure.Management.WebSites</td>
+<td>Management Libraries</td>
+<td><a href="https://dev.azure.com/azure-sdk/public/_build/latest?definitionId=529&amp;branchName=master"><img src="https://dev.azure.com/azure-sdk/public/_apis/build/status/529?branchName=master" alt="Build Status"></a></td>
 </tr>
 </tbody>
 </table>
-<p>Please see at <a href="https://azure.microsoft.com/en-us/documentation/api/">Azure documentation</a> for more details</p>
-<p><img src="https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-net%2FDocumentation%2FREADME.png" alt="Impressions"></p>
+<p><img src="https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-net%2FREADME.png" alt="Impressions"></p>
 </article>
           </div>
           
@@ -278,7 +147,7 @@ These SDKs depend on Microsoft.Rest.ClientRuntime.Azure</li>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/docfx_project/articles/README.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/docfx_project/articles/README.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -297,8 +166,8 @@ These SDKs depend on Microsoft.Rest.ClientRuntime.Azure</li>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

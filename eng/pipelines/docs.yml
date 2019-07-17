@@ -29,40 +29,13 @@ jobs:
           script: $(Build.BinariesDirectory)/docfx/docfx.exe metadata
           workingDirectory: $(Build.SourcesDirectory)/docfx_project/
           failOnStderr: true
-      - task: PythonScript@0
-        displayName: "Arrange Yaml files into Folders"
+      - task: PowerShell@2
+        displayName: 'Structure DocFx Site'
         inputs:
-          scriptPath: "$(Build.SourcesDirectory)/eng/docgeneration/script/MoveYmlFiles.py"
-          arguments: $(Build.SourcesDirectory)
+          targetType: filePath
+          filePath: '$(Build.SourcesDirectory)/eng/docgeneration/script/Structure-DocfxSite.ps1'
+          arguments: '-SourceDirectory $(Build.SourcesDirectory)'
           failOnStderr: true
-      - task: PythonScript@0
-        displayName: "Create Toc.yml for each service directory"
-        inputs:
-          scriptPath: "$(Build.SourcesDirectory)/eng/docgeneration/script/CreateTocYml.py"
-          arguments: $(Build.SourcesDirectory)
-      - powershell: |
-          Copy-Item "$(Build.SourcesDirectory)/eng/docgeneration/api/*" -Destination "$(Build.SourcesDirectory)/docfx_project/api/" -Force
-          Copy-Item "$(Build.SourcesDirectory)/eng/docgeneration/api/index.md" -Destination "$(Build.SourcesDirectory)/docfx_project/articles/intro.md" -Force
-          Copy-Item "$(Build.SourcesDirectory)/Documentation/*" -Destination "$(Build.SourcesDirectory)/docfx_project/articles/"
-          Copy-Item "$(Build.SourcesDirectory)/eng/docgeneration/index/*" -Destination "$(Build.SourcesDirectory)/docfx_project/" -Force
-          Copy-Item "$(Build.SourcesDirectory)/CONTRIBUTING.md" -Destination "$(Build.SourcesDirectory)/docfx_project/articles/"
-          Copy-Item "$(Build.SourcesDirectory)/packages.md" -Destination "$(Build.SourcesDirectory)/docfx_project/articles/"
-          Copy-Item "$(Build.SourcesDirectory)/eng/docgeneration/docfx.json" -Destination "$(Build.SourcesDirectory)/docfx_project/" -Force
-        displayName: Copy over Yaml and Md files
-      - task: PythonScript@0
-        displayName: "Copy Over all ReadMes in the Repo"
-        inputs:
-          scriptPath: "$(Build.SourcesDirectory)/eng/docgeneration/script/CopyReadMes.py"
-          arguments: $(Build.SourcesDirectory)
-          failOnStderr: true
-      - task: PythonScript@0
-        displayName: "Create Toc.yml for articles"
-        inputs:
-          scriptPath: "$(Build.SourcesDirectory)/eng/docgeneration/script/CreateTocYmlForArticles.py"
-          arguments: $(Build.SourcesDirectory)
-          failOnStderr: true
-      - powershell: ls
-        workingDirectory: $(Build.SourcesDirectory)/docfx_project/articles
       - task: CmdLine@2
         displayName: Build Doc Content
         inputs:

@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class MessageInteropExtensions
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class MessageInteropExtensions
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -77,21 +87,45 @@
 the body of a message that was serialized and sent to ServiceBus Queue/Topic
 using the WindowsAzure.Messaging client library. The WindowsAzure.Messaging
 client library serializes objects using the
-<span class="xref">Microsoft.Azure.ServiceBus.InteropExtensions.DataContractBinarySerializer</span> (default serializer) or <see cref="!:DataContractSerializer"></see>
+<span class="xref">Microsoft.Azure.ServiceBus.InteropExtensions.DataContractBinarySerializer</span> (default serializer) or <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.datacontractserializer">DataContractSerializer</a>
 when sending message. This class provides extension methods to deserialize
 and retrieve the body of such messages.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">MessageInteropExtensions</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.ServiceBus.InteropExtensions.html">Microsoft.Azure.ServiceBus.InteropExtensions</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.ServiceBus.dll</h6>
   <h5 id="Microsoft_Azure_ServiceBus_InteropExtensions_MessageInteropExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class MessageInteropExtensions : object</code></pre>
+    <pre><code class="lang-csharp hljs">public static class MessageInteropExtensions</code></pre>
   </div>
   <h5 id="Microsoft_Azure_ServiceBus_InteropExtensions_MessageInteropExtensions_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><ol>
@@ -141,13 +175,13 @@ string returned = Encoding.UTF8.GetString(message4.Body); // Since message was s
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_InteropExtensions_MessageInteropExtensions_GetBody__1_Microsoft_Azure_ServiceBus_Message_XmlObjectSerializer_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.InteropExtensions.MessageInteropExtensions.GetBody%60%601(Microsoft.Azure.ServiceBus.Message%2CXmlObjectSerializer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_ServiceBus_InteropExtensions_MessageInteropExtensions_GetBody__1_Microsoft_Azure_ServiceBus_Message_System_Runtime_Serialization_XmlObjectSerializer_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.InteropExtensions.MessageInteropExtensions.GetBody%60%601(Microsoft.Azure.ServiceBus.Message%2CSystem.Runtime.Serialization.XmlObjectSerializer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Extensions/MessageInterOpExtensions.cs/#L76">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Extensions/MessageInterOpExtensions.cs/#L76">View Source</a>
   </span>
   <a id="Microsoft_Azure_ServiceBus_InteropExtensions_MessageInteropExtensions_GetBody_" data-uid="Microsoft.Azure.ServiceBus.InteropExtensions.MessageInteropExtensions.GetBody*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_InteropExtensions_MessageInteropExtensions_GetBody__1_Microsoft_Azure_ServiceBus_Message_XmlObjectSerializer_" data-uid="Microsoft.Azure.ServiceBus.InteropExtensions.MessageInteropExtensions.GetBody``1(Microsoft.Azure.ServiceBus.Message,XmlObjectSerializer)">GetBody&lt;T&gt;(Message, XmlObjectSerializer)</h4>
+  <h4 id="Microsoft_Azure_ServiceBus_InteropExtensions_MessageInteropExtensions_GetBody__1_Microsoft_Azure_ServiceBus_Message_System_Runtime_Serialization_XmlObjectSerializer_" data-uid="Microsoft.Azure.ServiceBus.InteropExtensions.MessageInteropExtensions.GetBody``1(Microsoft.Azure.ServiceBus.Message,System.Runtime.Serialization.XmlObjectSerializer)">GetBody&lt;T&gt;(Message, XmlObjectSerializer)</h4>
   <div class="markdown level1 summary"><p>Deserializes the body of a message that was serialized using XmlObjectSerializer</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -171,7 +205,7 @@ string returned = Encoding.UTF8.GetString(message4.Body); // Since message was s
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">XmlObjectSerializer</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.serialization.xmlobjectserializer">XmlObjectSerializer</a></td>
         <td><span class="parametername">serializer</span></td>
         <td></td>
       </tr>
@@ -215,10 +249,10 @@ string returned = Encoding.UTF8.GetString(message4.Body); // Since message was s
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_ServiceBus_InteropExtensions_MessageInteropExtensions.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.InteropExtensions.MessageInteropExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_ServiceBus_InteropExtensions_MessageInteropExtensions.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.InteropExtensions.MessageInteropExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Extensions/MessageInterOpExtensions.cs/#L71" class="contribution-link">View Source</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Extensions/MessageInterOpExtensions.cs/#L71" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
@@ -237,8 +271,8 @@ string returned = Encoding.UTF8.GetString(message4.Body); // Since message was s
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

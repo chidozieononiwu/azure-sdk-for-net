@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class CopyFromUriOperation
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class CopyFromUriOperation
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -73,16 +83,56 @@
   
   <h1 id="Azure_Storage_Blobs_Models_CopyFromUriOperation" data-uid="Azure.Storage.Blobs.Models.CopyFromUriOperation" class="text-break">Class CopyFromUriOperation
   </h1>
-  <div class="markdown level0 summary"><p>An <see cref="!:Operation&lt;Int64>"></see> for tracking the status of a
-<a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_StartCopyFromUriAsync_Uri_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__CancellationToken_">StartCopyFromUriAsync(Uri, System.Collections.Generic.IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a> request.  Its
-<see cref="!:Value"></see> upon succesful completion will be the number of
-bytes copied.</p>
+  <div class="markdown level0 summary"><p>An <a class="xref" href="../OtherAPIs/Azure.Operation-1.html">Operation&lt;T&gt;</a> for tracking the status of a
+<a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_StartCopyFromUriAsync_System_Uri_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Threading_CancellationToken_">StartCopyFromUriAsync(Uri, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>
+request.  Its <a class="xref" href="../OtherAPIs/Azure.Operation-1.html#Azure_Operation_1_Value">Value</a> upon succesful
+completion will be the number of bytes copied.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">CopyFromUriOperation</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="../OtherAPIs/Azure.Operation-1.html">Operation</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</div>
+    <div class="level2"><span class="xref">CopyFromUriOperation</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="../OtherAPIs/Azure.Operation-1.html#Azure_Operation_1_Value">Operation&lt;Int64&gt;.Value</a>
+    </div>
+    <div>
+      <a class="xref" href="../OtherAPIs/Azure.Operation-1.html#Azure_Operation_1_GetRawResponse">Operation&lt;Int64&gt;.GetRawResponse()</a>
+    </div>
+    <div>
+      <a class="xref" href="../OtherAPIs/Azure.Operation-1.html#Azure_Operation_1_SetRawResponse_Azure_Response_">Operation&lt;Int64&gt;.SetRawResponse(Response)</a>
+    </div>
+    <div>
+      <a class="xref" href="../OtherAPIs/Azure.Operation-1.html#Azure_Operation_1_PollingInterval">Operation&lt;Int64&gt;.PollingInterval</a>
+    </div>
+    <div>
+      <a class="xref" href="../OtherAPIs/Azure.Operation-1.html#Azure_Operation_1_WaitCompletionAsync_System_Threading_CancellationToken_">Operation&lt;Int64&gt;.WaitCompletionAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Azure.Storage.Blobs.Models.html">Azure.Storage.Blobs.Models</a></h6>
   <h6><strong>Assembly</strong>: Azure.Storage.Blobs.dll</h6>
@@ -94,10 +144,10 @@ bytes copied.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Azure_Storage_Blobs_Models_CopyFromUriOperation_HasCompleted.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Models.CopyFromUriOperation.HasCompleted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Azure_Storage_Blobs_Models_CopyFromUriOperation_HasCompleted.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Models.CopyFromUriOperation.HasCompleted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/storage/Azure.Storage.Blobs/src/Models/CopyFromUriOperation.cs/#L53">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/storage/Azure.Storage.Blobs/src/Models/CopyFromUriOperation.cs/#L53">View Source</a>
   </span>
   <a id="Azure_Storage_Blobs_Models_CopyFromUriOperation_HasCompleted_" data-uid="Azure.Storage.Blobs.Models.CopyFromUriOperation.HasCompleted*"></a>
   <h4 id="Azure_Storage_Blobs_Models_CopyFromUriOperation_HasCompleted" data-uid="Azure.Storage.Blobs.Models.CopyFromUriOperation.HasCompleted">HasCompleted</h4>
@@ -118,23 +168,25 @@ bytes copied.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Azure.Operation&lt;System.Int64&gt;.HasCompleted</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Azure_Storage_Blobs_Models_CopyFromUriOperation_HasValue.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Models.CopyFromUriOperation.HasValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Azure_Storage_Blobs_Models_CopyFromUriOperation_HasValue.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Models.CopyFromUriOperation.HasValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/storage/Azure.Storage.Blobs/src/Models/CopyFromUriOperation.cs/#L65">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/storage/Azure.Storage.Blobs/src/Models/CopyFromUriOperation.cs/#L65">View Source</a>
   </span>
   <a id="Azure_Storage_Blobs_Models_CopyFromUriOperation_HasValue_" data-uid="Azure.Storage.Blobs.Models.CopyFromUriOperation.HasValue*"></a>
   <h4 id="Azure_Storage_Blobs_Models_CopyFromUriOperation_HasValue" data-uid="Azure.Storage.Blobs.Models.CopyFromUriOperation.HasValue">HasValue</h4>
   <div class="markdown level1 summary"><p>Gets a value indicating whether the operation completed and
-succesfully produced a value.  The <see cref="!:Value"></see> property
-is the number of bytes copied by the operation.</p>
+succesfully produced a value.  The <a class="xref" href="../OtherAPIs/Azure.Operation-1.html#Azure_Operation_1_Value">Value</a>
+property is the number of bytes copied by the operation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -151,24 +203,26 @@ is the number of bytes copied by the operation.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Azure.Operation&lt;System.Int64&gt;.HasValue</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Azure_Storage_Blobs_Models_CopyFromUriOperation_Id.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Models.CopyFromUriOperation.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Azure_Storage_Blobs_Models_CopyFromUriOperation_Id.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Models.CopyFromUriOperation.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/storage/Azure.Storage.Blobs/src/Models/CopyFromUriOperation.cs/#L43">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/storage/Azure.Storage.Blobs/src/Models/CopyFromUriOperation.cs/#L43">View Source</a>
   </span>
   <a id="Azure_Storage_Blobs_Models_CopyFromUriOperation_Id_" data-uid="Azure.Storage.Blobs.Models.CopyFromUriOperation.Id*"></a>
   <h4 id="Azure_Storage_Blobs_Models_CopyFromUriOperation_Id" data-uid="Azure.Storage.Blobs.Models.CopyFromUriOperation.Id">Id</h4>
   <div class="markdown level1 summary"><p>Gets the ID of the copy operation that can be compared with the
 <a class="xref" href="Azure.Storage.Blobs.Models.BlobProperties.html#Azure_Storage_Blobs_Models_BlobProperties_CopyId">CopyId</a> value returned from
-<a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_GetPropertiesAsync_System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__CancellationToken_">GetPropertiesAsync(Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a> or passed to
-<a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_AbortCopyFromUriAsync_System_String_System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__CancellationToken_">AbortCopyFromUriAsync(String, Nullable&lt;LeaseAccessConditions&gt;, CancellationToken)</a>.</p>
+<a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_GetPropertiesAsync_System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Threading_CancellationToken_">GetPropertiesAsync(Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a> or passed to
+<a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_AbortCopyFromUriAsync_System_String_System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Threading_CancellationToken_">AbortCopyFromUriAsync(String, Nullable&lt;LeaseAccessConditions&gt;, CancellationToken)</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -185,7 +239,7 @@ is the number of bytes copied by the operation.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -194,19 +248,19 @@ is the number of bytes copied by the operation.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Azure_Storage_Blobs_Models_CopyFromUriOperation_UpdateStatus_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Models.CopyFromUriOperation.UpdateStatus(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Azure_Storage_Blobs_Models_CopyFromUriOperation_UpdateStatus_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Models.CopyFromUriOperation.UpdateStatus(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/storage/Azure.Storage.Blobs/src/Models/CopyFromUriOperation.cs/#L129">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/storage/Azure.Storage.Blobs/src/Models/CopyFromUriOperation.cs/#L129">View Source</a>
   </span>
   <a id="Azure_Storage_Blobs_Models_CopyFromUriOperation_UpdateStatus_" data-uid="Azure.Storage.Blobs.Models.CopyFromUriOperation.UpdateStatus*"></a>
-  <h4 id="Azure_Storage_Blobs_Models_CopyFromUriOperation_UpdateStatus_CancellationToken_" data-uid="Azure.Storage.Blobs.Models.CopyFromUriOperation.UpdateStatus(CancellationToken)">UpdateStatus(CancellationToken)</h4>
+  <h4 id="Azure_Storage_Blobs_Models_CopyFromUriOperation_UpdateStatus_System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Models.CopyFromUriOperation.UpdateStatus(System.Threading.CancellationToken)">UpdateStatus(CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Check for the latest status of the copy operation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Response UpdateStatus(CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public override Response UpdateStatus(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -219,9 +273,9 @@ is the number of bytes copied by the operation.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>Optional <see cref="!:CancellationToken"></see> to propagate
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
 notifications that the operation should be cancelled.</p>
 </td>
       </tr>
@@ -237,27 +291,29 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span></td>
-        <td><p>The <see cref="!:Response"></see> with the status update.</p>
+        <td><a class="xref" href="../OtherAPIs/Azure.Response.html">Response</a></td>
+        <td><p>The <a class="xref" href="../OtherAPIs/Azure.Response.html">Response</a> with the status update.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Azure.Operation&lt;System.Int64&gt;.UpdateStatus(System.Threading.CancellationToken)</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Azure_Storage_Blobs_Models_CopyFromUriOperation_UpdateStatusAsync_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Models.CopyFromUriOperation.UpdateStatusAsync(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Azure_Storage_Blobs_Models_CopyFromUriOperation_UpdateStatusAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Models.CopyFromUriOperation.UpdateStatusAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/storage/Azure.Storage.Blobs/src/Models/CopyFromUriOperation.cs/#L141">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/storage/Azure.Storage.Blobs/src/Models/CopyFromUriOperation.cs/#L141">View Source</a>
   </span>
   <a id="Azure_Storage_Blobs_Models_CopyFromUriOperation_UpdateStatusAsync_" data-uid="Azure.Storage.Blobs.Models.CopyFromUriOperation.UpdateStatusAsync*"></a>
-  <h4 id="Azure_Storage_Blobs_Models_CopyFromUriOperation_UpdateStatusAsync_CancellationToken_" data-uid="Azure.Storage.Blobs.Models.CopyFromUriOperation.UpdateStatusAsync(CancellationToken)">UpdateStatusAsync(CancellationToken)</h4>
+  <h4 id="Azure_Storage_Blobs_Models_CopyFromUriOperation_UpdateStatusAsync_System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Models.CopyFromUriOperation.UpdateStatusAsync(System.Threading.CancellationToken)">UpdateStatusAsync(CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Check for the latest status of the copy operation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override ValueTask&lt;Response&gt; UpdateStatusAsync(CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public override ValueTask&lt;Response&gt; UpdateStatusAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -270,9 +326,9 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>Optional <see cref="!:CancellationToken"></see> to propagate
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
 notifications that the operation should be cancelled.</p>
 </td>
       </tr>
@@ -288,12 +344,18 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ValueTask</span>&lt;<span class="xref">Response</span>&gt;</td>
-        <td><p>The <see cref="!:Response"></see> with the status update.</p>
+        <td><span class="xref">ValueTask</span>&lt;<a class="xref" href="../OtherAPIs/Azure.Response.html">Response</a>&gt;</td>
+        <td><p>The <a class="xref" href="../OtherAPIs/Azure.Response.html">Response</a> with the status update.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Azure.Operation&lt;System.Int64&gt;.UpdateStatusAsync(System.Threading.CancellationToken)</span></div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
+  </div>
 </article>
           </div>
           
@@ -302,10 +364,10 @@ notifications that the operation should be cancelled.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Azure_Storage_Blobs_Models_CopyFromUriOperation.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Models.CopyFromUriOperation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Azure_Storage_Blobs_Models_CopyFromUriOperation.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Models.CopyFromUriOperation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/storage/Azure.Storage.Blobs/src/Models/CopyFromUriOperation.cs/#L20" class="contribution-link">View Source</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/storage/Azure.Storage.Blobs/src/Models/CopyFromUriOperation.cs/#L20" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
@@ -324,8 +386,8 @@ notifications that the operation should be cancelled.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

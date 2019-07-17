@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class VisualSearchClient
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class VisualSearchClient
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -83,145 +93,31 @@ Overview</a>.</p>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">VisualSearchClient</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.VisualSearch.IVisualSearchClient.html">IVisualSearchClient</a></div>
-    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.CognitiveServices.Search.VisualSearch.html">Microsoft.Azure.CognitiveServices.Search.VisualSearch</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.CognitiveServices.Search.BingVisualSearch.dll</h6>
   <h5 id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class VisualSearchClient : ServiceClient&lt;VisualSearchClient&gt;, IVisualSearchClient, System.IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class VisualSearchClient : ServiceClient&lt;VisualSearchClient&gt;, IVisualSearchClient, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.%23ctor(DelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_ServiceClientCredentials_System_Net_Http_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.%23ctor(ServiceClientCredentials%2CSystem.Net.Http.DelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/cognitiveservices/Search.BingVisualSearch/src/Generated/VisualSearchClient.cs/#L79">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Search.BingVisualSearch/src/Generated/VisualSearchClient.cs/#L110">View Source</a>
   </span>
   <a id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.#ctor*"></a>
-  <h4 id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.#ctor(DelegatingHandler[])">VisualSearchClient(DelegatingHandler[])</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the VisualSearchClient class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected VisualSearchClient(params DelegatingHandler[] handlers)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DelegatingHandler</span>[]</td>
-        <td><span class="parametername">handlers</span></td>
-        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_HttpClient_System_Boolean_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.%23ctor(HttpClient%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/cognitiveservices/Search.BingVisualSearch/src/Generated/VisualSearchClient.cs/#L68">View Source</a>
-  </span>
-  <a id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.#ctor*"></a>
-  <h4 id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_HttpClient_System_Boolean_" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.#ctor(HttpClient,System.Boolean)">VisualSearchClient(HttpClient, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the VisualSearchClient class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected VisualSearchClient(HttpClient httpClient, bool disposeHttpClient)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">HttpClient</span></td>
-        <td><span class="parametername">httpClient</span></td>
-        <td><p>HttpClient to be used</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">disposeHttpClient</span></td>
-        <td><p>True: will dispose the provided httpClient on calling VisualSearchClient.Dispose(). False: will not dispose provided httpClient</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_HttpClientHandler_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.%23ctor(HttpClientHandler%2CDelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/cognitiveservices/Search.BingVisualSearch/src/Generated/VisualSearchClient.cs/#L93">View Source</a>
-  </span>
-  <a id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.#ctor*"></a>
-  <h4 id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_HttpClientHandler_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.#ctor(HttpClientHandler,DelegatingHandler[])">VisualSearchClient(HttpClientHandler, DelegatingHandler[])</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the VisualSearchClient class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected VisualSearchClient(HttpClientHandler rootHandler, params DelegatingHandler[] handlers)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">HttpClientHandler</span></td>
-        <td><span class="parametername">rootHandler</span></td>
-        <td><p>Optional. The http client handler used to handle http transport.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">DelegatingHandler</span>[]</td>
-        <td><span class="parametername">handlers</span></td>
-        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_ServiceClientCredentials_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.%23ctor(ServiceClientCredentials%2CDelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/cognitiveservices/Search.BingVisualSearch/src/Generated/VisualSearchClient.cs/#L110">View Source</a>
-  </span>
-  <a id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.#ctor*"></a>
-  <h4 id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_ServiceClientCredentials_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.#ctor(ServiceClientCredentials,DelegatingHandler[])">VisualSearchClient(ServiceClientCredentials, DelegatingHandler[])</h4>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_ServiceClientCredentials_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.#ctor(ServiceClientCredentials,System.Net.Http.DelegatingHandler[])">VisualSearchClient(ServiceClientCredentials, DelegatingHandler[])</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the VisualSearchClient class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -246,22 +142,38 @@ Overview</a>.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.delegatinghandler">DelegatingHandler</a>[]</td>
         <td><span class="parametername">handlers</span></td>
         <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_ServiceClientCredentials_HttpClient_System_Boolean_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.%23ctor(ServiceClientCredentials%2CHttpClient%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_ServiceClientCredentials_System_Net_Http_HttpClient_System_Boolean_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.%23ctor(ServiceClientCredentials%2CSystem.Net.Http.HttpClient%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/cognitiveservices/Search.BingVisualSearch/src/Generated/VisualSearchClient.cs/#L137">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Search.BingVisualSearch/src/Generated/VisualSearchClient.cs/#L137">View Source</a>
   </span>
   <a id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.#ctor*"></a>
-  <h4 id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_ServiceClientCredentials_HttpClient_System_Boolean_" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.#ctor(ServiceClientCredentials,HttpClient,System.Boolean)">VisualSearchClient(ServiceClientCredentials, HttpClient, Boolean)</h4>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_ServiceClientCredentials_System_Net_Http_HttpClient_System_Boolean_" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.#ctor(ServiceClientCredentials,System.Net.Http.HttpClient,System.Boolean)">VisualSearchClient(ServiceClientCredentials, HttpClient, Boolean)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the VisualSearchClient class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -286,28 +198,44 @@ Overview</a>.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">HttpClient</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></td>
         <td><span class="parametername">httpClient</span></td>
         <td><p>HttpClient to be used</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><span class="parametername">disposeHttpClient</span></td>
         <td><p>True: will dispose the provided httpClient on calling VisualSearchClient.Dispose(). False: will not dispose provided httpClient</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_ServiceClientCredentials_HttpClientHandler_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.%23ctor(ServiceClientCredentials%2CHttpClientHandler%2CDelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_ServiceClientCredentials_System_Net_Http_HttpClientHandler_System_Net_Http_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.%23ctor(ServiceClientCredentials%2CSystem.Net.Http.HttpClientHandler%2CSystem.Net.Http.DelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/cognitiveservices/Search.BingVisualSearch/src/Generated/VisualSearchClient.cs/#L165">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Search.BingVisualSearch/src/Generated/VisualSearchClient.cs/#L165">View Source</a>
   </span>
   <a id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.#ctor*"></a>
-  <h4 id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_ServiceClientCredentials_HttpClientHandler_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.#ctor(ServiceClientCredentials,HttpClientHandler,DelegatingHandler[])">VisualSearchClient(ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])</h4>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_ServiceClientCredentials_System_Net_Http_HttpClientHandler_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.#ctor(ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">VisualSearchClient(ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the VisualSearchClient class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -332,13 +260,143 @@ Overview</a>.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">HttpClientHandler</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclienthandler">HttpClientHandler</a></td>
         <td><span class="parametername">rootHandler</span></td>
         <td><p>Optional. The http client handler used to handle http transport.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.delegatinghandler">DelegatingHandler</a>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_System_Net_Http_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.%23ctor(System.Net.Http.DelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Search.BingVisualSearch/src/Generated/VisualSearchClient.cs/#L79">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.#ctor(System.Net.Http.DelegatingHandler[])">VisualSearchClient(DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the VisualSearchClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected VisualSearchClient(params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.delegatinghandler">DelegatingHandler</a>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_System_Net_Http_HttpClient_System_Boolean_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.%23ctor(System.Net.Http.HttpClient%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Search.BingVisualSearch/src/Generated/VisualSearchClient.cs/#L68">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_System_Net_Http_HttpClient_System_Boolean_" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.#ctor(System.Net.Http.HttpClient,System.Boolean)">VisualSearchClient(HttpClient, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the VisualSearchClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected VisualSearchClient(HttpClient httpClient, bool disposeHttpClient)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></td>
+        <td><span class="parametername">httpClient</span></td>
+        <td><p>HttpClient to be used</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">disposeHttpClient</span></td>
+        <td><p>True: will dispose the provided httpClient on calling VisualSearchClient.Dispose(). False: will not dispose provided httpClient</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_System_Net_Http_HttpClientHandler_System_Net_Http_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.%23ctor(System.Net.Http.HttpClientHandler%2CSystem.Net.Http.DelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Search.BingVisualSearch/src/Generated/VisualSearchClient.cs/#L93">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient__ctor_System_Net_Http_HttpClientHandler_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.#ctor(System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">VisualSearchClient(HttpClientHandler, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the VisualSearchClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected VisualSearchClient(HttpClientHandler rootHandler, params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclienthandler">HttpClientHandler</a></td>
+        <td><span class="parametername">rootHandler</span></td>
+        <td><p>Optional. The http client handler used to handle http transport.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.delegatinghandler">DelegatingHandler</a>[]</td>
         <td><span class="parametername">handlers</span></td>
         <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
 </td>
@@ -349,10 +407,10 @@ Overview</a>.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient_Credentials.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.Credentials%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient_Credentials.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.Credentials%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/cognitiveservices/Search.BingVisualSearch/src/Generated/VisualSearchClient.cs/#L53">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Search.BingVisualSearch/src/Generated/VisualSearchClient.cs/#L53">View Source</a>
   </span>
   <a id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient_Credentials_" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.Credentials*"></a>
   <h4 id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient_Credentials" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.Credentials">Credentials</h4>
@@ -380,10 +438,10 @@ Overview</a>.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient_DeserializationSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.DeserializationSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient_DeserializationSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.DeserializationSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/cognitiveservices/Search.BingVisualSearch/src/Generated/VisualSearchClient.cs/#L41">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Search.BingVisualSearch/src/Generated/VisualSearchClient.cs/#L41">View Source</a>
   </span>
   <a id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient_DeserializationSettings_" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.DeserializationSettings*"></a>
   <h4 id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient_DeserializationSettings" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.DeserializationSettings">DeserializationSettings</h4>
@@ -411,10 +469,10 @@ Overview</a>.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient_Endpoint.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.Endpoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient_Endpoint.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.Endpoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/cognitiveservices/Search.BingVisualSearch/src/Generated/VisualSearchClient.cs/#L48">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Search.BingVisualSearch/src/Generated/VisualSearchClient.cs/#L48">View Source</a>
   </span>
   <a id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient_Endpoint_" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.Endpoint*"></a>
   <h4 id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient_Endpoint" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.Endpoint">Endpoint</h4>
@@ -437,17 +495,17 @@ Overview</a>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient_Images.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.Images%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient_Images.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.Images%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/cognitiveservices/Search.BingVisualSearch/src/Generated/VisualSearchClient.cs/#L58">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Search.BingVisualSearch/src/Generated/VisualSearchClient.cs/#L58">View Source</a>
   </span>
   <a id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient_Images_" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.Images*"></a>
   <h4 id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient_Images" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.Images">Images</h4>
@@ -475,10 +533,10 @@ Overview</a>.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient_SerializationSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.SerializationSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient_SerializationSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.SerializationSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/cognitiveservices/Search.BingVisualSearch/src/Generated/VisualSearchClient.cs/#L36">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Search.BingVisualSearch/src/Generated/VisualSearchClient.cs/#L36">View Source</a>
   </span>
   <a id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient_SerializationSettings_" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.SerializationSettings*"></a>
   <h4 id="Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient_SerializationSettings" data-uid="Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient.SerializationSettings">SerializationSettings</h4>
@@ -509,7 +567,11 @@ Overview</a>.</p>
       <a class="xref" href="Microsoft.Azure.CognitiveServices.Search.VisualSearch.IVisualSearchClient.html">IVisualSearchClient</a>
   </div>
   <div>
-      <span class="xref">System.IDisposable</span>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
   </div>
 </article>
           </div>
@@ -519,10 +581,10 @@ Overview</a>.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_VisualSearch_VisualSearchClient.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.VisualSearch.VisualSearchClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/cognitiveservices/Search.BingVisualSearch/src/Generated/VisualSearchClient.cs/#L26" class="contribution-link">View Source</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Search.BingVisualSearch/src/Generated/VisualSearchClient.cs/#L26" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
@@ -541,8 +603,8 @@ Overview</a>.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

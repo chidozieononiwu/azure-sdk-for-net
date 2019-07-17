@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class SearchIndexClient
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class SearchIndexClient
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -79,146 +89,32 @@ merge, or delete documents.</p>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">SearchIndexClient</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Microsoft.Azure.Search.ISearchIndexClient.html">ISearchIndexClient</a></div>
-    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
     <div><span class="xref">IAzureClient</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.Search.html">Microsoft.Azure.Search</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Search.Data.dll</h6>
   <h5 id="Microsoft_Azure_Search_SearchIndexClient_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SearchIndexClient : ServiceClient&lt;SearchIndexClient&gt;, ISearchIndexClient, System.IDisposable, IAzureClient</code></pre>
+    <pre><code class="lang-csharp hljs">public class SearchIndexClient : ServiceClient&lt;SearchIndexClient&gt;, ISearchIndexClient, IDisposable, IAzureClient</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient__ctor_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.%23ctor(DelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient__ctor_ServiceClientCredentials_System_Net_Http_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.%23ctor(ServiceClientCredentials%2CSystem.Net.Http.DelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L113">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L144">View Source</a>
   </span>
   <a id="Microsoft_Azure_Search_SearchIndexClient__ctor_" data-uid="Microsoft.Azure.Search.SearchIndexClient.#ctor*"></a>
-  <h4 id="Microsoft_Azure_Search_SearchIndexClient__ctor_DelegatingHandler___" data-uid="Microsoft.Azure.Search.SearchIndexClient.#ctor(DelegatingHandler[])">SearchIndexClient(DelegatingHandler[])</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the SearchIndexClient class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected SearchIndexClient(params DelegatingHandler[] handlers)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DelegatingHandler</span>[]</td>
-        <td><span class="parametername">handlers</span></td>
-        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient__ctor_HttpClient_System_Boolean_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.%23ctor(HttpClient%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L102">View Source</a>
-  </span>
-  <a id="Microsoft_Azure_Search_SearchIndexClient__ctor_" data-uid="Microsoft.Azure.Search.SearchIndexClient.#ctor*"></a>
-  <h4 id="Microsoft_Azure_Search_SearchIndexClient__ctor_HttpClient_System_Boolean_" data-uid="Microsoft.Azure.Search.SearchIndexClient.#ctor(HttpClient,System.Boolean)">SearchIndexClient(HttpClient, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the SearchIndexClient class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected SearchIndexClient(HttpClient httpClient, bool disposeHttpClient)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">HttpClient</span></td>
-        <td><span class="parametername">httpClient</span></td>
-        <td><p>HttpClient to be used</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">disposeHttpClient</span></td>
-        <td><p>True: will dispose the provided httpClient on calling SearchIndexClient.Dispose(). False: will not dispose provided httpClient</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient__ctor_HttpClientHandler_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.%23ctor(HttpClientHandler%2CDelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L127">View Source</a>
-  </span>
-  <a id="Microsoft_Azure_Search_SearchIndexClient__ctor_" data-uid="Microsoft.Azure.Search.SearchIndexClient.#ctor*"></a>
-  <h4 id="Microsoft_Azure_Search_SearchIndexClient__ctor_HttpClientHandler_DelegatingHandler___" data-uid="Microsoft.Azure.Search.SearchIndexClient.#ctor(HttpClientHandler,DelegatingHandler[])">SearchIndexClient(HttpClientHandler, DelegatingHandler[])</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the SearchIndexClient class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected SearchIndexClient(HttpClientHandler rootHandler, params DelegatingHandler[] handlers)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">HttpClientHandler</span></td>
-        <td><span class="parametername">rootHandler</span></td>
-        <td><p>Optional. The http client handler used to handle http transport.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">DelegatingHandler</span>[]</td>
-        <td><span class="parametername">handlers</span></td>
-        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient__ctor_ServiceClientCredentials_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.%23ctor(ServiceClientCredentials%2CDelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L144">View Source</a>
-  </span>
-  <a id="Microsoft_Azure_Search_SearchIndexClient__ctor_" data-uid="Microsoft.Azure.Search.SearchIndexClient.#ctor*"></a>
-  <h4 id="Microsoft_Azure_Search_SearchIndexClient__ctor_ServiceClientCredentials_DelegatingHandler___" data-uid="Microsoft.Azure.Search.SearchIndexClient.#ctor(ServiceClientCredentials,DelegatingHandler[])">SearchIndexClient(ServiceClientCredentials, DelegatingHandler[])</h4>
+  <h4 id="Microsoft_Azure_Search_SearchIndexClient__ctor_ServiceClientCredentials_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.Search.SearchIndexClient.#ctor(ServiceClientCredentials,System.Net.Http.DelegatingHandler[])">SearchIndexClient(ServiceClientCredentials, DelegatingHandler[])</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the SearchIndexClient class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -243,22 +139,38 @@ merge, or delete documents.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.delegatinghandler">DelegatingHandler</a>[]</td>
         <td><span class="parametername">handlers</span></td>
         <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient__ctor_ServiceClientCredentials_HttpClient_System_Boolean_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.%23ctor(ServiceClientCredentials%2CHttpClient%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient__ctor_ServiceClientCredentials_System_Net_Http_HttpClient_System_Boolean_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.%23ctor(ServiceClientCredentials%2CSystem.Net.Http.HttpClient%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L171">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L171">View Source</a>
   </span>
   <a id="Microsoft_Azure_Search_SearchIndexClient__ctor_" data-uid="Microsoft.Azure.Search.SearchIndexClient.#ctor*"></a>
-  <h4 id="Microsoft_Azure_Search_SearchIndexClient__ctor_ServiceClientCredentials_HttpClient_System_Boolean_" data-uid="Microsoft.Azure.Search.SearchIndexClient.#ctor(ServiceClientCredentials,HttpClient,System.Boolean)">SearchIndexClient(ServiceClientCredentials, HttpClient, Boolean)</h4>
+  <h4 id="Microsoft_Azure_Search_SearchIndexClient__ctor_ServiceClientCredentials_System_Net_Http_HttpClient_System_Boolean_" data-uid="Microsoft.Azure.Search.SearchIndexClient.#ctor(ServiceClientCredentials,System.Net.Http.HttpClient,System.Boolean)">SearchIndexClient(ServiceClientCredentials, HttpClient, Boolean)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the SearchIndexClient class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -283,28 +195,44 @@ merge, or delete documents.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">HttpClient</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></td>
         <td><span class="parametername">httpClient</span></td>
         <td><p>HttpClient to be used</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><span class="parametername">disposeHttpClient</span></td>
         <td><p>True: will dispose the provided httpClient on calling SearchIndexClient.Dispose(). False: will not dispose provided httpClient</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient__ctor_ServiceClientCredentials_HttpClientHandler_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.%23ctor(ServiceClientCredentials%2CHttpClientHandler%2CDelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient__ctor_ServiceClientCredentials_System_Net_Http_HttpClientHandler_System_Net_Http_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.%23ctor(ServiceClientCredentials%2CSystem.Net.Http.HttpClientHandler%2CSystem.Net.Http.DelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L199">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L199">View Source</a>
   </span>
   <a id="Microsoft_Azure_Search_SearchIndexClient__ctor_" data-uid="Microsoft.Azure.Search.SearchIndexClient.#ctor*"></a>
-  <h4 id="Microsoft_Azure_Search_SearchIndexClient__ctor_ServiceClientCredentials_HttpClientHandler_DelegatingHandler___" data-uid="Microsoft.Azure.Search.SearchIndexClient.#ctor(ServiceClientCredentials,HttpClientHandler,DelegatingHandler[])">SearchIndexClient(ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])</h4>
+  <h4 id="Microsoft_Azure_Search_SearchIndexClient__ctor_ServiceClientCredentials_System_Net_Http_HttpClientHandler_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.Search.SearchIndexClient.#ctor(ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">SearchIndexClient(ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the SearchIndexClient class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -329,13 +257,63 @@ merge, or delete documents.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">HttpClientHandler</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclienthandler">HttpClientHandler</a></td>
         <td><span class="parametername">rootHandler</span></td>
         <td><p>Optional. The http client handler used to handle http transport.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.delegatinghandler">DelegatingHandler</a>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient__ctor_System_Net_Http_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.%23ctor(System.Net.Http.DelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L113">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Search_SearchIndexClient__ctor_" data-uid="Microsoft.Azure.Search.SearchIndexClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_Search_SearchIndexClient__ctor_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.Search.SearchIndexClient.#ctor(System.Net.Http.DelegatingHandler[])">SearchIndexClient(DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the SearchIndexClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SearchIndexClient(params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.delegatinghandler">DelegatingHandler</a>[]</td>
         <td><span class="parametername">handlers</span></td>
         <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
 </td>
@@ -344,10 +322,90 @@ merge, or delete documents.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient__ctor_System_String_System_String_Microsoft_Azure_Search_SearchCredentials_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.%23ctor(System.String%2CSystem.String%2CMicrosoft.Azure.Search.SearchCredentials)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient__ctor_System_Net_Http_HttpClient_System_Boolean_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.%23ctor(System.Net.Http.HttpClient%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/search/Microsoft.Azure.Search.Data/src/Customizations/SearchIndexClient.Customization.cs/#L27">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L102">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Search_SearchIndexClient__ctor_" data-uid="Microsoft.Azure.Search.SearchIndexClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_Search_SearchIndexClient__ctor_System_Net_Http_HttpClient_System_Boolean_" data-uid="Microsoft.Azure.Search.SearchIndexClient.#ctor(System.Net.Http.HttpClient,System.Boolean)">SearchIndexClient(HttpClient, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the SearchIndexClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SearchIndexClient(HttpClient httpClient, bool disposeHttpClient)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></td>
+        <td><span class="parametername">httpClient</span></td>
+        <td><p>HttpClient to be used</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">disposeHttpClient</span></td>
+        <td><p>True: will dispose the provided httpClient on calling SearchIndexClient.Dispose(). False: will not dispose provided httpClient</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient__ctor_System_Net_Http_HttpClientHandler_System_Net_Http_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.%23ctor(System.Net.Http.HttpClientHandler%2CSystem.Net.Http.DelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L127">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_Search_SearchIndexClient__ctor_" data-uid="Microsoft.Azure.Search.SearchIndexClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_Search_SearchIndexClient__ctor_System_Net_Http_HttpClientHandler_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.Search.SearchIndexClient.#ctor(System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">SearchIndexClient(HttpClientHandler, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the SearchIndexClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SearchIndexClient(HttpClientHandler rootHandler, params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclienthandler">HttpClientHandler</a></td>
+        <td><span class="parametername">rootHandler</span></td>
+        <td><p>Optional. The http client handler used to handle http transport.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.delegatinghandler">DelegatingHandler</a>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient__ctor_System_String_System_String_Microsoft_Azure_Search_SearchCredentials_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.%23ctor(System.String%2CSystem.String%2CMicrosoft.Azure.Search.SearchCredentials)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/search/Microsoft.Azure.Search.Data/src/Customizations/SearchIndexClient.Customization.cs/#L27">View Source</a>
   </span>
   <a id="Microsoft_Azure_Search_SearchIndexClient__ctor_" data-uid="Microsoft.Azure.Search.SearchIndexClient.#ctor*"></a>
   <h4 id="Microsoft_Azure_Search_SearchIndexClient__ctor_System_String_System_String_Microsoft_Azure_Search_SearchCredentials_" data-uid="Microsoft.Azure.Search.SearchIndexClient.#ctor(System.String,System.String,Microsoft.Azure.Search.SearchCredentials)">SearchIndexClient(String, String, SearchCredentials)</h4>
@@ -369,13 +427,13 @@ merge, or delete documents.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">searchServiceName</span></td>
         <td><p>Required. The name of the Azure Search service.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">indexName</span></td>
         <td><p>Required. The name of the Azure Search index.</p>
 </td>
@@ -391,13 +449,13 @@ merge, or delete documents.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient__ctor_System_String_System_String_Microsoft_Azure_Search_SearchCredentials_HttpClientHandler_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.%23ctor(System.String%2CSystem.String%2CMicrosoft.Azure.Search.SearchCredentials%2CHttpClientHandler%2CDelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient__ctor_System_String_System_String_Microsoft_Azure_Search_SearchCredentials_System_Net_Http_HttpClientHandler_System_Net_Http_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.%23ctor(System.String%2CSystem.String%2CMicrosoft.Azure.Search.SearchCredentials%2CSystem.Net.Http.HttpClientHandler%2CSystem.Net.Http.DelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/search/Microsoft.Azure.Search.Data/src/Customizations/SearchIndexClient.Customization.cs/#L48">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/search/Microsoft.Azure.Search.Data/src/Customizations/SearchIndexClient.Customization.cs/#L48">View Source</a>
   </span>
   <a id="Microsoft_Azure_Search_SearchIndexClient__ctor_" data-uid="Microsoft.Azure.Search.SearchIndexClient.#ctor*"></a>
-  <h4 id="Microsoft_Azure_Search_SearchIndexClient__ctor_System_String_System_String_Microsoft_Azure_Search_SearchCredentials_HttpClientHandler_DelegatingHandler___" data-uid="Microsoft.Azure.Search.SearchIndexClient.#ctor(System.String,System.String,Microsoft.Azure.Search.SearchCredentials,HttpClientHandler,DelegatingHandler[])">SearchIndexClient(String, String, SearchCredentials, HttpClientHandler, DelegatingHandler[])</h4>
+  <h4 id="Microsoft_Azure_Search_SearchIndexClient__ctor_System_String_System_String_Microsoft_Azure_Search_SearchCredentials_System_Net_Http_HttpClientHandler_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.Search.SearchIndexClient.#ctor(System.String,System.String,Microsoft.Azure.Search.SearchCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">SearchIndexClient(String, String, SearchCredentials, HttpClientHandler, DelegatingHandler[])</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the SearchIndexClient class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -416,13 +474,13 @@ merge, or delete documents.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">searchServiceName</span></td>
         <td><p>Required. The name of the Azure Search service.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">indexName</span></td>
         <td><p>Required. The name of the Azure Search index.</p>
 </td>
@@ -435,13 +493,13 @@ merge, or delete documents.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">HttpClientHandler</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclienthandler">HttpClientHandler</a></td>
         <td><span class="parametername">rootHandler</span></td>
         <td><p>Optional. The http client handler used to handle http transport.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.delegatinghandler">DelegatingHandler</a>[]</td>
         <td><span class="parametername">handlers</span></td>
         <td><p>Optional. The set of delegating handlers to insert in the http
 client pipeline.</p>
@@ -453,10 +511,10 @@ client pipeline.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient_AcceptLanguage.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.AcceptLanguage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient_AcceptLanguage.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.AcceptLanguage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L74">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L74">View Source</a>
   </span>
   <a id="Microsoft_Azure_Search_SearchIndexClient_AcceptLanguage_" data-uid="Microsoft.Azure.Search.SearchIndexClient.AcceptLanguage*"></a>
   <h4 id="Microsoft_Azure_Search_SearchIndexClient_AcceptLanguage" data-uid="Microsoft.Azure.Search.SearchIndexClient.AcceptLanguage">AcceptLanguage</h4>
@@ -477,17 +535,17 @@ client pipeline.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient_ApiVersion.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.ApiVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient_ApiVersion.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.ApiVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L53">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L53">View Source</a>
   </span>
   <a id="Microsoft_Azure_Search_SearchIndexClient_ApiVersion_" data-uid="Microsoft.Azure.Search.SearchIndexClient.ApiVersion*"></a>
   <h4 id="Microsoft_Azure_Search_SearchIndexClient_ApiVersion" data-uid="Microsoft.Azure.Search.SearchIndexClient.ApiVersion">ApiVersion</h4>
@@ -508,17 +566,17 @@ client pipeline.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient_Credentials.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.Credentials%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient_Credentials.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.Credentials%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L48">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L48">View Source</a>
   </span>
   <a id="Microsoft_Azure_Search_SearchIndexClient_Credentials_" data-uid="Microsoft.Azure.Search.SearchIndexClient.Credentials*"></a>
   <h4 id="Microsoft_Azure_Search_SearchIndexClient_Credentials" data-uid="Microsoft.Azure.Search.SearchIndexClient.Credentials">Credentials</h4>
@@ -546,10 +604,10 @@ client pipeline.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient_DeserializationSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.DeserializationSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient_DeserializationSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.DeserializationSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L43">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L43">View Source</a>
   </span>
   <a id="Microsoft_Azure_Search_SearchIndexClient_DeserializationSettings_" data-uid="Microsoft.Azure.Search.SearchIndexClient.DeserializationSettings*"></a>
   <h4 id="Microsoft_Azure_Search_SearchIndexClient_DeserializationSettings" data-uid="Microsoft.Azure.Search.SearchIndexClient.DeserializationSettings">DeserializationSettings</h4>
@@ -577,10 +635,10 @@ client pipeline.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient_Documents.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.Documents%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient_Documents.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.Documents%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/search/Microsoft.Azure.Search.Data/src/Customizations/SearchIndexClient.Customization.cs/#L17">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/search/Microsoft.Azure.Search.Data/src/Customizations/SearchIndexClient.Customization.cs/#L17">View Source</a>
   </span>
   <a id="Microsoft_Azure_Search_SearchIndexClient_Documents_" data-uid="Microsoft.Azure.Search.SearchIndexClient.Documents*"></a>
   <h4 id="Microsoft_Azure_Search_SearchIndexClient_Documents" data-uid="Microsoft.Azure.Search.SearchIndexClient.Documents">Documents</h4>
@@ -608,10 +666,10 @@ client pipeline.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient_GenerateClientRequestId.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.GenerateClientRequestId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient_GenerateClientRequestId.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.GenerateClientRequestId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L87">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L87">View Source</a>
   </span>
   <a id="Microsoft_Azure_Search_SearchIndexClient_GenerateClientRequestId_" data-uid="Microsoft.Azure.Search.SearchIndexClient.GenerateClientRequestId*"></a>
   <h4 id="Microsoft_Azure_Search_SearchIndexClient_GenerateClientRequestId" data-uid="Microsoft.Azure.Search.SearchIndexClient.GenerateClientRequestId">GenerateClientRequestId</h4>
@@ -634,17 +692,17 @@ each request. Default is true.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient_IndexName.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.IndexName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient_IndexName.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.IndexName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L69">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L69">View Source</a>
   </span>
   <a id="Microsoft_Azure_Search_SearchIndexClient_IndexName_" data-uid="Microsoft.Azure.Search.SearchIndexClient.IndexName*"></a>
   <h4 id="Microsoft_Azure_Search_SearchIndexClient_IndexName" data-uid="Microsoft.Azure.Search.SearchIndexClient.IndexName">IndexName</h4>
@@ -665,17 +723,17 @@ each request. Default is true.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient_LongRunningOperationRetryTimeout.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.LongRunningOperationRetryTimeout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient_LongRunningOperationRetryTimeout.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.LongRunningOperationRetryTimeout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L80">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L80">View Source</a>
   </span>
   <a id="Microsoft_Azure_Search_SearchIndexClient_LongRunningOperationRetryTimeout_" data-uid="Microsoft.Azure.Search.SearchIndexClient.LongRunningOperationRetryTimeout*"></a>
   <h4 id="Microsoft_Azure_Search_SearchIndexClient_LongRunningOperationRetryTimeout" data-uid="Microsoft.Azure.Search.SearchIndexClient.LongRunningOperationRetryTimeout">LongRunningOperationRetryTimeout</h4>
@@ -697,17 +755,17 @@ each request. Default is true.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient_SearchCredentials.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.SearchCredentials%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient_SearchCredentials.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.SearchCredentials%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/search/Microsoft.Azure.Search.Data/src/Customizations/SearchIndexClient.Customization.cs/#L65">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/search/Microsoft.Azure.Search.Data/src/Customizations/SearchIndexClient.Customization.cs/#L65">View Source</a>
   </span>
   <a id="Microsoft_Azure_Search_SearchIndexClient_SearchCredentials_" data-uid="Microsoft.Azure.Search.SearchIndexClient.SearchCredentials*"></a>
   <h4 id="Microsoft_Azure_Search_SearchIndexClient_SearchCredentials" data-uid="Microsoft.Azure.Search.SearchIndexClient.SearchCredentials">SearchCredentials</h4>
@@ -738,10 +796,10 @@ each request. Default is true.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient_SearchDnsSuffix.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.SearchDnsSuffix%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient_SearchDnsSuffix.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.SearchDnsSuffix%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L64">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L64">View Source</a>
   </span>
   <a id="Microsoft_Azure_Search_SearchIndexClient_SearchDnsSuffix_" data-uid="Microsoft.Azure.Search.SearchIndexClient.SearchDnsSuffix*"></a>
   <h4 id="Microsoft_Azure_Search_SearchIndexClient_SearchDnsSuffix" data-uid="Microsoft.Azure.Search.SearchIndexClient.SearchDnsSuffix">SearchDnsSuffix</h4>
@@ -763,17 +821,17 @@ search.windows.net.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient_SearchServiceName.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.SearchServiceName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient_SearchServiceName.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.SearchServiceName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L58">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L58">View Source</a>
   </span>
   <a id="Microsoft_Azure_Search_SearchIndexClient_SearchServiceName_" data-uid="Microsoft.Azure.Search.SearchIndexClient.SearchServiceName*"></a>
   <h4 id="Microsoft_Azure_Search_SearchIndexClient_SearchServiceName" data-uid="Microsoft.Azure.Search.SearchIndexClient.SearchServiceName">SearchServiceName</h4>
@@ -794,17 +852,17 @@ search.windows.net.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient_SerializationSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.SerializationSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient_SerializationSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.SerializationSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L38">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L38">View Source</a>
   </span>
   <a id="Microsoft_Azure_Search_SearchIndexClient_SerializationSettings_" data-uid="Microsoft.Azure.Search.SearchIndexClient.SerializationSettings*"></a>
   <h4 id="Microsoft_Azure_Search_SearchIndexClient_SerializationSettings" data-uid="Microsoft.Azure.Search.SearchIndexClient.SerializationSettings">SerializationSettings</h4>
@@ -832,10 +890,10 @@ search.windows.net.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient_UseHttpGetForQueries.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.UseHttpGetForQueries%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient_UseHttpGetForQueries.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.UseHttpGetForQueries%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/search/Microsoft.Azure.Search.Data/src/Customizations/SearchIndexClient.Customization.cs/#L71">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/search/Microsoft.Azure.Search.Data/src/Customizations/SearchIndexClient.Customization.cs/#L71">View Source</a>
   </span>
   <a id="Microsoft_Azure_Search_SearchIndexClient_UseHttpGetForQueries_" data-uid="Microsoft.Azure.Search.SearchIndexClient.UseHttpGetForQueries*"></a>
   <h4 id="Microsoft_Azure_Search_SearchIndexClient_UseHttpGetForQueries" data-uid="Microsoft.Azure.Search.SearchIndexClient.UseHttpGetForQueries">UseHttpGetForQueries</h4>
@@ -857,7 +915,7 @@ Azure Search REST API. The default is <code>false</code>, which indicates that H
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -866,10 +924,10 @@ Azure Search REST API. The default is <code>false</code>, which indicates that H
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient_TargetDifferentIndex_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.TargetDifferentIndex(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient_TargetDifferentIndex_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient.TargetDifferentIndex(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/search/Microsoft.Azure.Search.Data/src/Customizations/SearchIndexClient.Customization.cs/#L78">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/search/Microsoft.Azure.Search.Data/src/Customizations/SearchIndexClient.Customization.cs/#L78">View Source</a>
   </span>
   <a id="Microsoft_Azure_Search_SearchIndexClient_TargetDifferentIndex_" data-uid="Microsoft.Azure.Search.SearchIndexClient.TargetDifferentIndex*"></a>
   <h4 id="Microsoft_Azure_Search_SearchIndexClient_TargetDifferentIndex_System_String_" data-uid="Microsoft.Azure.Search.SearchIndexClient.TargetDifferentIndex(System.String)">TargetDifferentIndex(String)</h4>
@@ -879,7 +937,8 @@ must guarantee that no other threads are using the client before calling it.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void TargetDifferentIndex(string newIndexName)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This method is deprecated. Please set the IndexName property instead.&quot;)]
+public void TargetDifferentIndex(string newIndexName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -892,7 +951,7 @@ must guarantee that no other threads are using the client before calling it.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">newIndexName</span></td>
         <td><p>The name of the index to which all subsequent requests should be sent.</p>
 </td>
@@ -904,10 +963,14 @@ must guarantee that no other threads are using the client before calling it.</p>
       <a class="xref" href="Microsoft.Azure.Search.ISearchIndexClient.html">ISearchIndexClient</a>
   </div>
   <div>
-      <span class="xref">System.IDisposable</span>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
   </div>
   <div>
       <span class="xref">IAzureClient</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
   </div>
 </article>
           </div>
@@ -917,10 +980,10 @@ must guarantee that no other threads are using the client before calling it.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Search_SearchIndexClient.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.SearchIndexClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L28" class="contribution-link">View Source</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/search/Microsoft.Azure.Search.Data/src/Generated/SearchIndexClient.cs/#L28" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
@@ -939,8 +1002,8 @@ must guarantee that no other threads are using the client before calling it.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

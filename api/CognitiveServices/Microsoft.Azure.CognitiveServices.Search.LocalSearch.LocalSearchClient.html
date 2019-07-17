@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class LocalSearchClient
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class LocalSearchClient
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -82,145 +92,31 @@ restaurants near me).</p>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">LocalSearchClient</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Microsoft.Azure.CognitiveServices.Search.LocalSearch.ILocalSearchClient.html">ILocalSearchClient</a></div>
-    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.CognitiveServices.Search.LocalSearch.html">Microsoft.Azure.CognitiveServices.Search.LocalSearch</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.CognitiveServices.Search.BingLocalSearch.dll</h6>
   <h5 id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class LocalSearchClient : ServiceClient&lt;LocalSearchClient&gt;, ILocalSearchClient, System.IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class LocalSearchClient : ServiceClient&lt;LocalSearchClient&gt;, ILocalSearchClient, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.%23ctor(DelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_ServiceClientCredentials_System_Net_Http_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.%23ctor(ServiceClientCredentials%2CSystem.Net.Http.DelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L71">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L147">View Source</a>
   </span>
   <a id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor*"></a>
-  <h4 id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor(DelegatingHandler[])">LocalSearchClient(DelegatingHandler[])</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the LocalSearchClient class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected LocalSearchClient(params DelegatingHandler[] handlers)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DelegatingHandler</span>[]</td>
-        <td><span class="parametername">handlers</span></td>
-        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_HttpClient_System_Boolean_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.%23ctor(HttpClient%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L60">View Source</a>
-  </span>
-  <a id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor*"></a>
-  <h4 id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_HttpClient_System_Boolean_" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor(HttpClient,System.Boolean)">LocalSearchClient(HttpClient, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the LocalSearchClient class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected LocalSearchClient(HttpClient httpClient, bool disposeHttpClient)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">HttpClient</span></td>
-        <td><span class="parametername">httpClient</span></td>
-        <td><p>HttpClient to be used</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">disposeHttpClient</span></td>
-        <td><p>True: will dispose the provided httpClient on calling LocalSearchClient.Dispose(). False: will not dispose provided httpClient</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_HttpClientHandler_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.%23ctor(HttpClientHandler%2CDelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L85">View Source</a>
-  </span>
-  <a id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor*"></a>
-  <h4 id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_HttpClientHandler_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor(HttpClientHandler,DelegatingHandler[])">LocalSearchClient(HttpClientHandler, DelegatingHandler[])</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the LocalSearchClient class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected LocalSearchClient(HttpClientHandler rootHandler, params DelegatingHandler[] handlers)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">HttpClientHandler</span></td>
-        <td><span class="parametername">rootHandler</span></td>
-        <td><p>Optional. The http client handler used to handle http transport.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">DelegatingHandler</span>[]</td>
-        <td><span class="parametername">handlers</span></td>
-        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_ServiceClientCredentials_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.%23ctor(ServiceClientCredentials%2CDelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L147">View Source</a>
-  </span>
-  <a id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor*"></a>
-  <h4 id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_ServiceClientCredentials_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor(ServiceClientCredentials,DelegatingHandler[])">LocalSearchClient(ServiceClientCredentials, DelegatingHandler[])</h4>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_ServiceClientCredentials_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor(ServiceClientCredentials,System.Net.Http.DelegatingHandler[])">LocalSearchClient(ServiceClientCredentials, DelegatingHandler[])</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the LocalSearchClient class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -245,22 +141,38 @@ restaurants near me).</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.delegatinghandler">DelegatingHandler</a>[]</td>
         <td><span class="parametername">handlers</span></td>
         <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_ServiceClientCredentials_HttpClient_System_Boolean_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.%23ctor(ServiceClientCredentials%2CHttpClient%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_ServiceClientCredentials_System_Net_Http_HttpClient_System_Boolean_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.%23ctor(ServiceClientCredentials%2CSystem.Net.Http.HttpClient%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L174">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L174">View Source</a>
   </span>
   <a id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor*"></a>
-  <h4 id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_ServiceClientCredentials_HttpClient_System_Boolean_" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor(ServiceClientCredentials,HttpClient,System.Boolean)">LocalSearchClient(ServiceClientCredentials, HttpClient, Boolean)</h4>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_ServiceClientCredentials_System_Net_Http_HttpClient_System_Boolean_" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor(ServiceClientCredentials,System.Net.Http.HttpClient,System.Boolean)">LocalSearchClient(ServiceClientCredentials, HttpClient, Boolean)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the LocalSearchClient class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -285,28 +197,44 @@ restaurants near me).</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">HttpClient</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></td>
         <td><span class="parametername">httpClient</span></td>
         <td><p>HttpClient to be used</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><span class="parametername">disposeHttpClient</span></td>
         <td><p>True: will dispose the provided httpClient on calling LocalSearchClient.Dispose(). False: will not dispose provided httpClient</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_ServiceClientCredentials_HttpClientHandler_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.%23ctor(ServiceClientCredentials%2CHttpClientHandler%2CDelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_ServiceClientCredentials_System_Net_Http_HttpClientHandler_System_Net_Http_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.%23ctor(ServiceClientCredentials%2CSystem.Net.Http.HttpClientHandler%2CSystem.Net.Http.DelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L202">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L202">View Source</a>
   </span>
   <a id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor*"></a>
-  <h4 id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_ServiceClientCredentials_HttpClientHandler_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor(ServiceClientCredentials,HttpClientHandler,DelegatingHandler[])">LocalSearchClient(ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])</h4>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_ServiceClientCredentials_System_Net_Http_HttpClientHandler_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor(ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">LocalSearchClient(ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the LocalSearchClient class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -331,34 +259,50 @@ restaurants near me).</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">HttpClientHandler</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclienthandler">HttpClientHandler</a></td>
         <td><span class="parametername">rootHandler</span></td>
         <td><p>Optional. The http client handler used to handle http transport.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.delegatinghandler">DelegatingHandler</a>[]</td>
         <td><span class="parametername">handlers</span></td>
         <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_System_Uri_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.%23ctor(System.Uri%2CDelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_System_Net_Http_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.%23ctor(System.Net.Http.DelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L102">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L71">View Source</a>
   </span>
   <a id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor*"></a>
-  <h4 id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_System_Uri_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor(System.Uri,DelegatingHandler[])">LocalSearchClient(System.Uri, DelegatingHandler[])</h4>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor(System.Net.Http.DelegatingHandler[])">LocalSearchClient(DelegatingHandler[])</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the LocalSearchClient class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected LocalSearchClient(System.Uri baseUri, params DelegatingHandler[] handlers)</code></pre>
+    <pre><code class="lang-csharp hljs">protected LocalSearchClient(params DelegatingHandler[] handlers)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -371,13 +315,7 @@ restaurants near me).</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Uri</span></td>
-        <td><span class="parametername">baseUri</span></td>
-        <td><p>Optional. The base URI of the service.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.delegatinghandler">DelegatingHandler</a>[]</td>
         <td><span class="parametername">handlers</span></td>
         <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
 </td>
@@ -386,19 +324,19 @@ restaurants near me).</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_System_Uri_HttpClientHandler_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.%23ctor(System.Uri%2CHttpClientHandler%2CDelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_System_Net_Http_HttpClient_System_Boolean_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.%23ctor(System.Net.Http.HttpClient%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L126">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L60">View Source</a>
   </span>
   <a id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor*"></a>
-  <h4 id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_System_Uri_HttpClientHandler_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor(System.Uri,HttpClientHandler,DelegatingHandler[])">LocalSearchClient(System.Uri, HttpClientHandler, DelegatingHandler[])</h4>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_System_Net_Http_HttpClient_System_Boolean_" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor(System.Net.Http.HttpClient,System.Boolean)">LocalSearchClient(HttpClient, Boolean)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the LocalSearchClient class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected LocalSearchClient(System.Uri baseUri, HttpClientHandler rootHandler, params DelegatingHandler[] handlers)</code></pre>
+    <pre><code class="lang-csharp hljs">protected LocalSearchClient(HttpClient httpClient, bool disposeHttpClient)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -411,19 +349,53 @@ restaurants near me).</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Uri</span></td>
-        <td><span class="parametername">baseUri</span></td>
-        <td><p>Optional. The base URI of the service.</p>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></td>
+        <td><span class="parametername">httpClient</span></td>
+        <td><p>HttpClient to be used</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">HttpClientHandler</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">disposeHttpClient</span></td>
+        <td><p>True: will dispose the provided httpClient on calling LocalSearchClient.Dispose(). False: will not dispose provided httpClient</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_System_Net_Http_HttpClientHandler_System_Net_Http_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.%23ctor(System.Net.Http.HttpClientHandler%2CSystem.Net.Http.DelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L85">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_System_Net_Http_HttpClientHandler_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor(System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">LocalSearchClient(HttpClientHandler, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the LocalSearchClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected LocalSearchClient(HttpClientHandler rootHandler, params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclienthandler">HttpClientHandler</a></td>
         <td><span class="parametername">rootHandler</span></td>
         <td><p>Optional. The http client handler used to handle http transport.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.delegatinghandler">DelegatingHandler</a>[]</td>
         <td><span class="parametername">handlers</span></td>
         <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
 </td>
@@ -432,19 +404,19 @@ restaurants near me).</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_System_Uri_ServiceClientCredentials_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.%23ctor(System.Uri%2CServiceClientCredentials%2CDelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_System_Uri_ServiceClientCredentials_System_Net_Http_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.%23ctor(System.Uri%2CServiceClientCredentials%2CSystem.Net.Http.DelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L230">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L230">View Source</a>
   </span>
   <a id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor*"></a>
-  <h4 id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_System_Uri_ServiceClientCredentials_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor(System.Uri,ServiceClientCredentials,DelegatingHandler[])">LocalSearchClient(System.Uri, ServiceClientCredentials, DelegatingHandler[])</h4>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_System_Uri_ServiceClientCredentials_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor(System.Uri,ServiceClientCredentials,System.Net.Http.DelegatingHandler[])">LocalSearchClient(Uri, ServiceClientCredentials, DelegatingHandler[])</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the LocalSearchClient class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LocalSearchClient(System.Uri baseUri, ServiceClientCredentials credentials, params DelegatingHandler[] handlers)</code></pre>
+    <pre><code class="lang-csharp hljs">public LocalSearchClient(Uri baseUri, ServiceClientCredentials credentials, params DelegatingHandler[] handlers)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -457,7 +429,7 @@ restaurants near me).</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Uri</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
         <td><span class="parametername">baseUri</span></td>
         <td><p>Optional. The base URI of the service.</p>
 </td>
@@ -469,28 +441,44 @@ restaurants near me).</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.delegatinghandler">DelegatingHandler</a>[]</td>
         <td><span class="parametername">handlers</span></td>
         <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_System_Uri_ServiceClientCredentials_HttpClientHandler_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.%23ctor(System.Uri%2CServiceClientCredentials%2CHttpClientHandler%2CDelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_System_Uri_ServiceClientCredentials_System_Net_Http_HttpClientHandler_System_Net_Http_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.%23ctor(System.Uri%2CServiceClientCredentials%2CSystem.Net.Http.HttpClientHandler%2CSystem.Net.Http.DelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L266">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L266">View Source</a>
   </span>
   <a id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor*"></a>
-  <h4 id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_System_Uri_ServiceClientCredentials_HttpClientHandler_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor(System.Uri,ServiceClientCredentials,HttpClientHandler,DelegatingHandler[])">LocalSearchClient(System.Uri, ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])</h4>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_System_Uri_ServiceClientCredentials_System_Net_Http_HttpClientHandler_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor(System.Uri,ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">LocalSearchClient(Uri, ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the LocalSearchClient class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LocalSearchClient(System.Uri baseUri, ServiceClientCredentials credentials, HttpClientHandler rootHandler, params DelegatingHandler[] handlers)</code></pre>
+    <pre><code class="lang-csharp hljs">public LocalSearchClient(Uri baseUri, ServiceClientCredentials credentials, HttpClientHandler rootHandler, params DelegatingHandler[] handlers)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -503,7 +491,7 @@ restaurants near me).</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Uri</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
         <td><span class="parametername">baseUri</span></td>
         <td><p>Optional. The base URI of the service.</p>
 </td>
@@ -515,15 +503,149 @@ restaurants near me).</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">HttpClientHandler</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclienthandler">HttpClientHandler</a></td>
         <td><span class="parametername">rootHandler</span></td>
         <td><p>Optional. The http client handler used to handle http transport.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">DelegatingHandler</span>[]</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.delegatinghandler">DelegatingHandler</a>[]</td>
         <td><span class="parametername">handlers</span></td>
         <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_System_Uri_System_Net_Http_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.%23ctor(System.Uri%2CSystem.Net.Http.DelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L102">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_System_Uri_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor(System.Uri,System.Net.Http.DelegatingHandler[])">LocalSearchClient(Uri, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the LocalSearchClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected LocalSearchClient(Uri baseUri, params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">baseUri</span></td>
+        <td><p>Optional. The base URI of the service.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.delegatinghandler">DelegatingHandler</a>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_System_Uri_System_Net_Http_HttpClientHandler_System_Net_Http_DelegatingHandler___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.%23ctor(System.Uri%2CSystem.Net.Http.HttpClientHandler%2CSystem.Net.Http.DelegatingHandler%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L126">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient__ctor_System_Uri_System_Net_Http_HttpClientHandler_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.#ctor(System.Uri,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">LocalSearchClient(Uri, HttpClientHandler, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the LocalSearchClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected LocalSearchClient(Uri baseUri, HttpClientHandler rootHandler, params DelegatingHandler[] handlers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">baseUri</span></td>
+        <td><p>Optional. The base URI of the service.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclienthandler">HttpClientHandler</a></td>
+        <td><span class="parametername">rootHandler</span></td>
+        <td><p>Optional. The http client handler used to handle http transport.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.delegatinghandler">DelegatingHandler</a>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown when a required parameter is null</p>
 </td>
       </tr>
     </tbody>
@@ -532,10 +654,10 @@ restaurants near me).</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient_BaseUri.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.BaseUri%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient_BaseUri.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.BaseUri%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L30">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L30">View Source</a>
   </span>
   <a id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient_BaseUri_" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.BaseUri*"></a>
   <h4 id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient_BaseUri" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.BaseUri">BaseUri</h4>
@@ -544,7 +666,7 @@ restaurants near me).</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public System.Uri BaseUri { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Uri BaseUri { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -556,17 +678,17 @@ restaurants near me).</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Uri</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient_Credentials.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.Credentials%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient_Credentials.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.Credentials%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L45">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L45">View Source</a>
   </span>
   <a id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient_Credentials_" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.Credentials*"></a>
   <h4 id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient_Credentials" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.Credentials">Credentials</h4>
@@ -594,10 +716,10 @@ restaurants near me).</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient_DeserializationSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.DeserializationSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient_DeserializationSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.DeserializationSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L40">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L40">View Source</a>
   </span>
   <a id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient_DeserializationSettings_" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.DeserializationSettings*"></a>
   <h4 id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient_DeserializationSettings" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.DeserializationSettings">DeserializationSettings</h4>
@@ -625,10 +747,10 @@ restaurants near me).</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient_Local.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.Local%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient_Local.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.Local%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L50">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L50">View Source</a>
   </span>
   <a id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient_Local_" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.Local*"></a>
   <h4 id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient_Local" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.Local">Local</h4>
@@ -656,10 +778,10 @@ restaurants near me).</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient_SerializationSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.SerializationSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient_SerializationSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.SerializationSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L35">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L35">View Source</a>
   </span>
   <a id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient_SerializationSettings_" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.SerializationSettings*"></a>
   <h4 id="Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient_SerializationSettings" data-uid="Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient.SerializationSettings">SerializationSettings</h4>
@@ -690,7 +812,11 @@ restaurants near me).</p>
       <a class="xref" href="Microsoft.Azure.CognitiveServices.Search.LocalSearch.ILocalSearchClient.html">ILocalSearchClient</a>
   </div>
   <div>
-      <span class="xref">System.IDisposable</span>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
   </div>
 </article>
           </div>
@@ -700,10 +826,10 @@ restaurants near me).</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Search_LocalSearch_LocalSearchClient.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Search.LocalSearch.LocalSearchClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L25" class="contribution-link">View Source</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Search.BingLocalSearch/src/Generated/LocalSearch/LocalSearchClient.cs/#L25" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
@@ -722,8 +848,8 @@ restaurants near me).</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

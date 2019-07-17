@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Interface IApplicationsOperations
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IApplicationsOperations
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -86,19 +96,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_AddOwnerWithHttpMessagesAsync_System_String_Microsoft_Azure_Graph_RBAC_Models_AddOwnerParameters_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.AddOwnerWithHttpMessagesAsync(System.String%2CMicrosoft.Azure.Graph.RBAC.Models.AddOwnerParameters%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_AddOwnerWithHttpMessagesAsync_System_String_Microsoft_Azure_Graph_RBAC_Models_AddOwnerParameters_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.AddOwnerWithHttpMessagesAsync(System.String%2CMicrosoft.Azure.Graph.RBAC.Models.AddOwnerParameters%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L182">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L182">View Source</a>
   </span>
   <a id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_AddOwnerWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.AddOwnerWithHttpMessagesAsync*"></a>
-  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_AddOwnerWithHttpMessagesAsync_System_String_Microsoft_Azure_Graph_RBAC_Models_AddOwnerParameters_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.AddOwnerWithHttpMessagesAsync(System.String,Microsoft.Azure.Graph.RBAC.Models.AddOwnerParameters,Dictionary{System.String,List{System.String}},CancellationToken)">AddOwnerWithHttpMessagesAsync(String, AddOwnerParameters, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_AddOwnerWithHttpMessagesAsync_System_String_Microsoft_Azure_Graph_RBAC_Models_AddOwnerParameters_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.AddOwnerWithHttpMessagesAsync(System.String,Microsoft.Azure.Graph.RBAC.Models.AddOwnerParameters,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">AddOwnerWithHttpMessagesAsync(String, AddOwnerParameters, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Add an owner to an application.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&gt; AddOwnerWithHttpMessagesAsync(string applicationObjectId, AddOwnerParameters parameters, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&gt; AddOwnerWithHttpMessagesAsync(string applicationObjectId, AddOwnerParameters parameters, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -111,7 +121,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">applicationObjectId</span></td>
         <td><p>The object ID of the application to which to add the owner.</p>
 </td>
@@ -124,13 +134,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
         <td><p>The headers that will be added to request.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The cancellation token.</p>
 </td>
@@ -147,7 +157,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">AzureOperationResponse</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -170,19 +180,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_CreateWithHttpMessagesAsync_Microsoft_Azure_Graph_RBAC_Models_ApplicationCreateParameters_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.CreateWithHttpMessagesAsync(Microsoft.Azure.Graph.RBAC.Models.ApplicationCreateParameters%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_CreateWithHttpMessagesAsync_Microsoft_Azure_Graph_RBAC_Models_ApplicationCreateParameters_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.CreateWithHttpMessagesAsync(Microsoft.Azure.Graph.RBAC.Models.ApplicationCreateParameters%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L48">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L48">View Source</a>
   </span>
   <a id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_CreateWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.CreateWithHttpMessagesAsync*"></a>
-  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_CreateWithHttpMessagesAsync_Microsoft_Azure_Graph_RBAC_Models_ApplicationCreateParameters_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.CreateWithHttpMessagesAsync(Microsoft.Azure.Graph.RBAC.Models.ApplicationCreateParameters,Dictionary{System.String,List{System.String}},CancellationToken)">CreateWithHttpMessagesAsync(ApplicationCreateParameters, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_CreateWithHttpMessagesAsync_Microsoft_Azure_Graph_RBAC_Models_ApplicationCreateParameters_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.CreateWithHttpMessagesAsync(Microsoft.Azure.Graph.RBAC.Models.ApplicationCreateParameters,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">CreateWithHttpMessagesAsync(ApplicationCreateParameters, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Create a new application.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&lt;Application&gt;&gt; CreateWithHttpMessagesAsync(ApplicationCreateParameters parameters, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&lt;Application&gt;&gt; CreateWithHttpMessagesAsync(ApplicationCreateParameters parameters, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -201,13 +211,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
         <td><p>The headers that will be added to request.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The cancellation token.</p>
 </td>
@@ -224,7 +234,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.Application.html">Application</a>&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">AzureOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.Application.html">Application</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -247,19 +257,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_DeleteWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.DeleteWithHttpMessagesAsync(System.String%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_DeleteWithHttpMessagesAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.DeleteWithHttpMessagesAsync(System.String%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L89">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L89">View Source</a>
   </span>
   <a id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_DeleteWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.DeleteWithHttpMessagesAsync*"></a>
-  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_DeleteWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.DeleteWithHttpMessagesAsync(System.String,Dictionary{System.String,List{System.String}},CancellationToken)">DeleteWithHttpMessagesAsync(String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_DeleteWithHttpMessagesAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.DeleteWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">DeleteWithHttpMessagesAsync(String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Delete an application.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&gt; DeleteWithHttpMessagesAsync(string applicationObjectId, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&gt; DeleteWithHttpMessagesAsync(string applicationObjectId, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -272,19 +282,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">applicationObjectId</span></td>
         <td><p>Application object ID.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
         <td><p>The headers that will be added to request.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The cancellation token.</p>
 </td>
@@ -301,7 +311,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">AzureOperationResponse</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -324,20 +334,20 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_GetServicePrincipalsIdByAppIdWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.GetServicePrincipalsIdByAppIdWithHttpMessagesAsync(System.String%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_GetServicePrincipalsIdByAppIdWithHttpMessagesAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.GetServicePrincipalsIdByAppIdWithHttpMessagesAsync(System.String%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L316">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L316">View Source</a>
   </span>
   <a id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_GetServicePrincipalsIdByAppIdWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.GetServicePrincipalsIdByAppIdWithHttpMessagesAsync*"></a>
-  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_GetServicePrincipalsIdByAppIdWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.GetServicePrincipalsIdByAppIdWithHttpMessagesAsync(System.String,Dictionary{System.String,List{System.String}},CancellationToken)">GetServicePrincipalsIdByAppIdWithHttpMessagesAsync(String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_GetServicePrincipalsIdByAppIdWithHttpMessagesAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.GetServicePrincipalsIdByAppIdWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetServicePrincipalsIdByAppIdWithHttpMessagesAsync(String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Gets an object id for a given application id from the current
 tenant.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&lt;ServicePrincipalObjectResult&gt;&gt; GetServicePrincipalsIdByAppIdWithHttpMessagesAsync(string applicationID, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&lt;ServicePrincipalObjectResult&gt;&gt; GetServicePrincipalsIdByAppIdWithHttpMessagesAsync(string applicationID, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -350,19 +360,19 @@ tenant.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">applicationID</span></td>
         <td><p>The application ID.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
         <td><p>The headers that will be added to request.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The cancellation token.</p>
 </td>
@@ -379,7 +389,7 @@ tenant.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalObjectResult.html">ServicePrincipalObjectResult</a>&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">AzureOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.ServicePrincipalObjectResult.html">ServicePrincipalObjectResult</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -402,19 +412,19 @@ tenant.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_GetWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.GetWithHttpMessagesAsync(System.String%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_GetWithHttpMessagesAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.GetWithHttpMessagesAsync(System.String%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L111">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L111">View Source</a>
   </span>
   <a id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_GetWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.GetWithHttpMessagesAsync*"></a>
-  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_GetWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.GetWithHttpMessagesAsync(System.String,Dictionary{System.String,List{System.String}},CancellationToken)">GetWithHttpMessagesAsync(String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_GetWithHttpMessagesAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.GetWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetWithHttpMessagesAsync(String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Get an application by object ID.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&lt;Application&gt;&gt; GetWithHttpMessagesAsync(string applicationObjectId, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&lt;Application&gt;&gt; GetWithHttpMessagesAsync(string applicationObjectId, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -427,19 +437,19 @@ tenant.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">applicationObjectId</span></td>
         <td><p>Application object ID.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
         <td><p>The headers that will be added to request.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The cancellation token.</p>
 </td>
@@ -456,7 +466,7 @@ tenant.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.Application.html">Application</a>&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">AzureOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.Application.html">Application</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -479,19 +489,19 @@ tenant.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListKeyCredentialsWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListKeyCredentialsWithHttpMessagesAsync(System.String%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListKeyCredentialsWithHttpMessagesAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListKeyCredentialsWithHttpMessagesAsync(System.String%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L226">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L226">View Source</a>
   </span>
   <a id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListKeyCredentialsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListKeyCredentialsWithHttpMessagesAsync*"></a>
-  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListKeyCredentialsWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListKeyCredentialsWithHttpMessagesAsync(System.String,Dictionary{System.String,List{System.String}},CancellationToken)">ListKeyCredentialsWithHttpMessagesAsync(String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListKeyCredentialsWithHttpMessagesAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListKeyCredentialsWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListKeyCredentialsWithHttpMessagesAsync(String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Get the keyCredentials associated with an application.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&lt;IEnumerable&lt;KeyCredential&gt;&gt;&gt; ListKeyCredentialsWithHttpMessagesAsync(string applicationObjectId, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&lt;IEnumerable&lt;KeyCredential&gt;&gt;&gt; ListKeyCredentialsWithHttpMessagesAsync(string applicationObjectId, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -504,19 +514,19 @@ tenant.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">applicationObjectId</span></td>
         <td><p>Application object ID.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
         <td><p>The headers that will be added to request.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The cancellation token.</p>
 </td>
@@ -533,7 +543,7 @@ tenant.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.KeyCredential.html">KeyCredential</a>&gt;&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">AzureOperationResponse</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.KeyCredential.html">KeyCredential</a>&gt;&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -556,19 +566,19 @@ tenant.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListNextWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListNextWithHttpMessagesAsync(System.String%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListNextWithHttpMessagesAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListNextWithHttpMessagesAsync(System.String%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L338">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L338">View Source</a>
   </span>
   <a id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListNextWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListNextWithHttpMessagesAsync*"></a>
-  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListNextWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListNextWithHttpMessagesAsync(System.String,Dictionary{System.String,List{System.String}},CancellationToken)">ListNextWithHttpMessagesAsync(String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListNextWithHttpMessagesAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListNextWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListNextWithHttpMessagesAsync(String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Gets a list of applications from the current tenant.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&lt;IPage&lt;Application&gt;&gt;&gt; ListNextWithHttpMessagesAsync(string nextLink, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&lt;IPage&lt;Application&gt;&gt;&gt; ListNextWithHttpMessagesAsync(string nextLink, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -581,19 +591,19 @@ tenant.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">nextLink</span></td>
         <td><p>Next link for the list operation.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
         <td><p>The headers that will be added to request.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The cancellation token.</p>
 </td>
@@ -610,7 +620,7 @@ tenant.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&lt;<span class="xref">IPage</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.Application.html">Application</a>&gt;&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">AzureOperationResponse</span>&lt;<span class="xref">IPage</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.Application.html">Application</a>&gt;&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -633,19 +643,19 @@ tenant.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListOwnersNextWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListOwnersNextWithHttpMessagesAsync(System.String%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListOwnersNextWithHttpMessagesAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListOwnersNextWithHttpMessagesAsync(System.String%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L364">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L364">View Source</a>
   </span>
   <a id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListOwnersNextWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListOwnersNextWithHttpMessagesAsync*"></a>
-  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListOwnersNextWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListOwnersNextWithHttpMessagesAsync(System.String,Dictionary{System.String,List{System.String}},CancellationToken)">ListOwnersNextWithHttpMessagesAsync(String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListOwnersNextWithHttpMessagesAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListOwnersNextWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListOwnersNextWithHttpMessagesAsync(String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Directory objects that are owners of the application.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&lt;IPage&lt;DirectoryObject&gt;&gt;&gt; ListOwnersNextWithHttpMessagesAsync(string nextPageLink, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&lt;IPage&lt;DirectoryObject&gt;&gt;&gt; ListOwnersNextWithHttpMessagesAsync(string nextPageLink, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -658,19 +668,19 @@ tenant.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">nextPageLink</span></td>
         <td><p>The NextLink from the previous successful call to List operation.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
         <td><p>The headers that will be added to request.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The cancellation token.</p>
 </td>
@@ -687,12 +697,12 @@ tenant.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&lt;<span class="xref">IPage</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.DirectoryObject.html">DirectoryObject</a>&gt;&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">AzureOperationResponse</span>&lt;<span class="xref">IPage</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.DirectoryObject.html">DirectoryObject</a>&gt;&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListOwnersNextWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken__remarks">Remarks</h5>
+  <h5 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListOwnersNextWithHttpMessagesAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The owners are a set of non-admin users who are allowed to modify
 this object.</p>
 </div>
@@ -714,19 +724,19 @@ this object.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListOwnersWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListOwnersWithHttpMessagesAsync(System.String%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListOwnersWithHttpMessagesAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListOwnersWithHttpMessagesAsync(System.String%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L159">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L159">View Source</a>
   </span>
   <a id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListOwnersWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListOwnersWithHttpMessagesAsync*"></a>
-  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListOwnersWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListOwnersWithHttpMessagesAsync(System.String,Dictionary{System.String,List{System.String}},CancellationToken)">ListOwnersWithHttpMessagesAsync(String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListOwnersWithHttpMessagesAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListOwnersWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListOwnersWithHttpMessagesAsync(String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Directory objects that are owners of the application.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&lt;IPage&lt;DirectoryObject&gt;&gt;&gt; ListOwnersWithHttpMessagesAsync(string applicationObjectId, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&lt;IPage&lt;DirectoryObject&gt;&gt;&gt; ListOwnersWithHttpMessagesAsync(string applicationObjectId, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -739,19 +749,19 @@ this object.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">applicationObjectId</span></td>
         <td><p>The object ID of the application for which to get owners.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
         <td><p>The headers that will be added to request.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The cancellation token.</p>
 </td>
@@ -768,12 +778,12 @@ this object.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&lt;<span class="xref">IPage</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.DirectoryObject.html">DirectoryObject</a>&gt;&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">AzureOperationResponse</span>&lt;<span class="xref">IPage</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.DirectoryObject.html">DirectoryObject</a>&gt;&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListOwnersWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken__remarks">Remarks</h5>
+  <h5 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListOwnersWithHttpMessagesAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The owners are a set of non-admin users who are allowed to modify
 this object.</p>
 </div>
@@ -795,19 +805,19 @@ this object.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListPasswordCredentialsWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListPasswordCredentialsWithHttpMessagesAsync(System.String%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListPasswordCredentialsWithHttpMessagesAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListPasswordCredentialsWithHttpMessagesAsync(System.String%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L270">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L270">View Source</a>
   </span>
   <a id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListPasswordCredentialsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListPasswordCredentialsWithHttpMessagesAsync*"></a>
-  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListPasswordCredentialsWithHttpMessagesAsync_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListPasswordCredentialsWithHttpMessagesAsync(System.String,Dictionary{System.String,List{System.String}},CancellationToken)">ListPasswordCredentialsWithHttpMessagesAsync(String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListPasswordCredentialsWithHttpMessagesAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListPasswordCredentialsWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListPasswordCredentialsWithHttpMessagesAsync(String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Get the passwordCredentials associated with an application.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&lt;IEnumerable&lt;PasswordCredential&gt;&gt;&gt; ListPasswordCredentialsWithHttpMessagesAsync(string applicationObjectId, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&lt;IEnumerable&lt;PasswordCredential&gt;&gt;&gt; ListPasswordCredentialsWithHttpMessagesAsync(string applicationObjectId, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -820,19 +830,19 @@ this object.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">applicationObjectId</span></td>
         <td><p>Application object ID.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
         <td><p>The headers that will be added to request.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The cancellation token.</p>
 </td>
@@ -849,7 +859,7 @@ this object.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.PasswordCredential.html">PasswordCredential</a>&gt;&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">AzureOperationResponse</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.PasswordCredential.html">PasswordCredential</a>&gt;&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -872,19 +882,19 @@ this object.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListWithHttpMessagesAsync_ODataQuery_Microsoft_Azure_Graph_RBAC_Models_Application__Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListWithHttpMessagesAsync(ODataQuery%7BMicrosoft.Azure.Graph.RBAC.Models.Application%7D%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListWithHttpMessagesAsync_ODataQuery_Microsoft_Azure_Graph_RBAC_Models_Application__System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListWithHttpMessagesAsync(ODataQuery%7BMicrosoft.Azure.Graph.RBAC.Models.Application%7D%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L70">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L70">View Source</a>
   </span>
   <a id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListWithHttpMessagesAsync*"></a>
-  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListWithHttpMessagesAsync_ODataQuery_Microsoft_Azure_Graph_RBAC_Models_Application__Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListWithHttpMessagesAsync(ODataQuery{Microsoft.Azure.Graph.RBAC.Models.Application},Dictionary{System.String,List{System.String}},CancellationToken)">ListWithHttpMessagesAsync(ODataQuery&lt;Application&gt;, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ListWithHttpMessagesAsync_ODataQuery_Microsoft_Azure_Graph_RBAC_Models_Application__System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.ListWithHttpMessagesAsync(ODataQuery{Microsoft.Azure.Graph.RBAC.Models.Application},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListWithHttpMessagesAsync(ODataQuery&lt;Application&gt;, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Lists applications by filter parameters.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&lt;IPage&lt;Application&gt;&gt;&gt; ListWithHttpMessagesAsync(ODataQuery&lt;Application&gt; odataQuery = null, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&lt;IPage&lt;Application&gt;&gt;&gt; ListWithHttpMessagesAsync(ODataQuery&lt;Application&gt; odataQuery = null, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -903,13 +913,13 @@ this object.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
         <td><p>The headers that will be added to request.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The cancellation token.</p>
 </td>
@@ -926,7 +936,7 @@ this object.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&lt;<span class="xref">IPage</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.Application.html">Application</a>&gt;&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">AzureOperationResponse</span>&lt;<span class="xref">IPage</span>&lt;<a class="xref" href="Microsoft.Azure.Graph.RBAC.Models.Application.html">Application</a>&gt;&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -949,19 +959,19 @@ this object.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_PatchWithHttpMessagesAsync_System_String_Microsoft_Azure_Graph_RBAC_Models_ApplicationUpdateParameters_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.PatchWithHttpMessagesAsync(System.String%2CMicrosoft.Azure.Graph.RBAC.Models.ApplicationUpdateParameters%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_PatchWithHttpMessagesAsync_System_String_Microsoft_Azure_Graph_RBAC_Models_ApplicationUpdateParameters_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.PatchWithHttpMessagesAsync(System.String%2CMicrosoft.Azure.Graph.RBAC.Models.ApplicationUpdateParameters%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L133">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L133">View Source</a>
   </span>
   <a id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_PatchWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.PatchWithHttpMessagesAsync*"></a>
-  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_PatchWithHttpMessagesAsync_System_String_Microsoft_Azure_Graph_RBAC_Models_ApplicationUpdateParameters_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.PatchWithHttpMessagesAsync(System.String,Microsoft.Azure.Graph.RBAC.Models.ApplicationUpdateParameters,Dictionary{System.String,List{System.String}},CancellationToken)">PatchWithHttpMessagesAsync(String, ApplicationUpdateParameters, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_PatchWithHttpMessagesAsync_System_String_Microsoft_Azure_Graph_RBAC_Models_ApplicationUpdateParameters_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.PatchWithHttpMessagesAsync(System.String,Microsoft.Azure.Graph.RBAC.Models.ApplicationUpdateParameters,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">PatchWithHttpMessagesAsync(String, ApplicationUpdateParameters, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Update an existing application.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&gt; PatchWithHttpMessagesAsync(string applicationObjectId, ApplicationUpdateParameters parameters, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&gt; PatchWithHttpMessagesAsync(string applicationObjectId, ApplicationUpdateParameters parameters, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -974,7 +984,7 @@ this object.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">applicationObjectId</span></td>
         <td><p>Application object ID.</p>
 </td>
@@ -986,13 +996,13 @@ this object.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
         <td><p>The headers that will be added to request.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The cancellation token.</p>
 </td>
@@ -1009,7 +1019,7 @@ this object.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">AzureOperationResponse</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1032,19 +1042,19 @@ this object.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_RemoveOwnerWithHttpMessagesAsync_System_String_System_String_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.RemoveOwnerWithHttpMessagesAsync(System.String%2CSystem.String%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_RemoveOwnerWithHttpMessagesAsync_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.RemoveOwnerWithHttpMessagesAsync(System.String%2CSystem.String%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L204">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L204">View Source</a>
   </span>
   <a id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_RemoveOwnerWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.RemoveOwnerWithHttpMessagesAsync*"></a>
-  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_RemoveOwnerWithHttpMessagesAsync_System_String_System_String_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.RemoveOwnerWithHttpMessagesAsync(System.String,System.String,Dictionary{System.String,List{System.String}},CancellationToken)">RemoveOwnerWithHttpMessagesAsync(String, String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_RemoveOwnerWithHttpMessagesAsync_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.RemoveOwnerWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">RemoveOwnerWithHttpMessagesAsync(String, String, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Remove a member from owners.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&gt; RemoveOwnerWithHttpMessagesAsync(string applicationObjectId, string ownerObjectId, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&gt; RemoveOwnerWithHttpMessagesAsync(string applicationObjectId, string ownerObjectId, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1057,25 +1067,25 @@ this object.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">applicationObjectId</span></td>
         <td><p>The object ID of the application from which to remove the owner.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">ownerObjectId</span></td>
         <td><p>Owner object id</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
         <td><p>The headers that will be added to request.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The cancellation token.</p>
 </td>
@@ -1092,7 +1102,7 @@ this object.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">AzureOperationResponse</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1115,19 +1125,19 @@ this object.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_UpdateKeyCredentialsWithHttpMessagesAsync_System_String_Microsoft_Azure_Graph_RBAC_Models_KeyCredentialsUpdateParameters_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.UpdateKeyCredentialsWithHttpMessagesAsync(System.String%2CMicrosoft.Azure.Graph.RBAC.Models.KeyCredentialsUpdateParameters%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_UpdateKeyCredentialsWithHttpMessagesAsync_System_String_Microsoft_Azure_Graph_RBAC_Models_KeyCredentialsUpdateParameters_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.UpdateKeyCredentialsWithHttpMessagesAsync(System.String%2CMicrosoft.Azure.Graph.RBAC.Models.KeyCredentialsUpdateParameters%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L248">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L248">View Source</a>
   </span>
   <a id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_UpdateKeyCredentialsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.UpdateKeyCredentialsWithHttpMessagesAsync*"></a>
-  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_UpdateKeyCredentialsWithHttpMessagesAsync_System_String_Microsoft_Azure_Graph_RBAC_Models_KeyCredentialsUpdateParameters_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.UpdateKeyCredentialsWithHttpMessagesAsync(System.String,Microsoft.Azure.Graph.RBAC.Models.KeyCredentialsUpdateParameters,Dictionary{System.String,List{System.String}},CancellationToken)">UpdateKeyCredentialsWithHttpMessagesAsync(String, KeyCredentialsUpdateParameters, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_UpdateKeyCredentialsWithHttpMessagesAsync_System_String_Microsoft_Azure_Graph_RBAC_Models_KeyCredentialsUpdateParameters_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.UpdateKeyCredentialsWithHttpMessagesAsync(System.String,Microsoft.Azure.Graph.RBAC.Models.KeyCredentialsUpdateParameters,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">UpdateKeyCredentialsWithHttpMessagesAsync(String, KeyCredentialsUpdateParameters, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Update the keyCredentials associated with an application.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&gt; UpdateKeyCredentialsWithHttpMessagesAsync(string applicationObjectId, KeyCredentialsUpdateParameters parameters, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&gt; UpdateKeyCredentialsWithHttpMessagesAsync(string applicationObjectId, KeyCredentialsUpdateParameters parameters, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1140,7 +1150,7 @@ this object.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">applicationObjectId</span></td>
         <td><p>Application object ID.</p>
 </td>
@@ -1152,13 +1162,13 @@ this object.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
         <td><p>The headers that will be added to request.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The cancellation token.</p>
 </td>
@@ -1175,7 +1185,7 @@ this object.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">AzureOperationResponse</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1198,19 +1208,19 @@ this object.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_UpdatePasswordCredentialsWithHttpMessagesAsync_System_String_Microsoft_Azure_Graph_RBAC_Models_PasswordCredentialsUpdateParameters_Dictionary_System_String_List_System_String___CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.UpdatePasswordCredentialsWithHttpMessagesAsync(System.String%2CMicrosoft.Azure.Graph.RBAC.Models.PasswordCredentialsUpdateParameters%2CDictionary%7BSystem.String%2CList%7BSystem.String%7D%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations_UpdatePasswordCredentialsWithHttpMessagesAsync_System_String_Microsoft_Azure_Graph_RBAC_Models_PasswordCredentialsUpdateParameters_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations.UpdatePasswordCredentialsWithHttpMessagesAsync(System.String%2CMicrosoft.Azure.Graph.RBAC.Models.PasswordCredentialsUpdateParameters%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L293">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L293">View Source</a>
   </span>
   <a id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_UpdatePasswordCredentialsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.UpdatePasswordCredentialsWithHttpMessagesAsync*"></a>
-  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_UpdatePasswordCredentialsWithHttpMessagesAsync_System_String_Microsoft_Azure_Graph_RBAC_Models_PasswordCredentialsUpdateParameters_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.UpdatePasswordCredentialsWithHttpMessagesAsync(System.String,Microsoft.Azure.Graph.RBAC.Models.PasswordCredentialsUpdateParameters,Dictionary{System.String,List{System.String}},CancellationToken)">UpdatePasswordCredentialsWithHttpMessagesAsync(String, PasswordCredentialsUpdateParameters, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <h4 id="Microsoft_Azure_Graph_RBAC_IApplicationsOperations_UpdatePasswordCredentialsWithHttpMessagesAsync_System_String_Microsoft_Azure_Graph_RBAC_Models_PasswordCredentialsUpdateParameters_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Graph.RBAC.IApplicationsOperations.UpdatePasswordCredentialsWithHttpMessagesAsync(System.String,Microsoft.Azure.Graph.RBAC.Models.PasswordCredentialsUpdateParameters,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">UpdatePasswordCredentialsWithHttpMessagesAsync(String, PasswordCredentialsUpdateParameters, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Update passwordCredentials associated with an application.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&gt; UpdatePasswordCredentialsWithHttpMessagesAsync(string applicationObjectId, PasswordCredentialsUpdateParameters parameters, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&gt; UpdatePasswordCredentialsWithHttpMessagesAsync(string applicationObjectId, PasswordCredentialsUpdateParameters parameters, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1223,7 +1233,7 @@ this object.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">applicationObjectId</span></td>
         <td><p>Application object ID.</p>
 </td>
@@ -1236,13 +1246,13 @@ application.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
         <td><p>The headers that will be added to request.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The cancellation token.</p>
 </td>
@@ -1259,7 +1269,7 @@ application.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">AzureOperationResponse</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1285,91 +1295,94 @@ application.</p>
       <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_Create_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_Microsoft_Azure_Graph_RBAC_Models_ApplicationCreateParameters_">ApplicationsOperationsExtensions.Create(IApplicationsOperations, ApplicationCreateParameters)</a>
   </div>
   <div>
-      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_CreateAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_Microsoft_Azure_Graph_RBAC_Models_ApplicationCreateParameters_CancellationToken_">ApplicationsOperationsExtensions.CreateAsync(IApplicationsOperations, ApplicationCreateParameters, CancellationToken)</a>
+      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_CreateAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_Microsoft_Azure_Graph_RBAC_Models_ApplicationCreateParameters_System_Threading_CancellationToken_">ApplicationsOperationsExtensions.CreateAsync(IApplicationsOperations, ApplicationCreateParameters, CancellationToken)</a>
   </div>
   <div>
       <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_List_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ODataQuery_Microsoft_Azure_Graph_RBAC_Models_Application__">ApplicationsOperationsExtensions.List(IApplicationsOperations, ODataQuery&lt;Application&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_ListAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ODataQuery_Microsoft_Azure_Graph_RBAC_Models_Application__CancellationToken_">ApplicationsOperationsExtensions.ListAsync(IApplicationsOperations, ODataQuery&lt;Application&gt;, CancellationToken)</a>
+      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_ListAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_ODataQuery_Microsoft_Azure_Graph_RBAC_Models_Application__System_Threading_CancellationToken_">ApplicationsOperationsExtensions.ListAsync(IApplicationsOperations, ODataQuery&lt;Application&gt;, CancellationToken)</a>
   </div>
   <div>
       <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_Delete_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_">ApplicationsOperationsExtensions.Delete(IApplicationsOperations, String)</a>
   </div>
   <div>
-      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_DeleteAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_CancellationToken_">ApplicationsOperationsExtensions.DeleteAsync(IApplicationsOperations, String, CancellationToken)</a>
+      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_DeleteAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_System_Threading_CancellationToken_">ApplicationsOperationsExtensions.DeleteAsync(IApplicationsOperations, String, CancellationToken)</a>
   </div>
   <div>
       <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_Get_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_">ApplicationsOperationsExtensions.Get(IApplicationsOperations, String)</a>
   </div>
   <div>
-      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_GetAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_CancellationToken_">ApplicationsOperationsExtensions.GetAsync(IApplicationsOperations, String, CancellationToken)</a>
+      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_GetAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_System_Threading_CancellationToken_">ApplicationsOperationsExtensions.GetAsync(IApplicationsOperations, String, CancellationToken)</a>
   </div>
   <div>
       <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_Patch_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_Microsoft_Azure_Graph_RBAC_Models_ApplicationUpdateParameters_">ApplicationsOperationsExtensions.Patch(IApplicationsOperations, String, ApplicationUpdateParameters)</a>
   </div>
   <div>
-      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_PatchAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_Microsoft_Azure_Graph_RBAC_Models_ApplicationUpdateParameters_CancellationToken_">ApplicationsOperationsExtensions.PatchAsync(IApplicationsOperations, String, ApplicationUpdateParameters, CancellationToken)</a>
+      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_PatchAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_Microsoft_Azure_Graph_RBAC_Models_ApplicationUpdateParameters_System_Threading_CancellationToken_">ApplicationsOperationsExtensions.PatchAsync(IApplicationsOperations, String, ApplicationUpdateParameters, CancellationToken)</a>
   </div>
   <div>
       <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_ListOwners_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_">ApplicationsOperationsExtensions.ListOwners(IApplicationsOperations, String)</a>
   </div>
   <div>
-      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_ListOwnersAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_CancellationToken_">ApplicationsOperationsExtensions.ListOwnersAsync(IApplicationsOperations, String, CancellationToken)</a>
+      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_ListOwnersAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_System_Threading_CancellationToken_">ApplicationsOperationsExtensions.ListOwnersAsync(IApplicationsOperations, String, CancellationToken)</a>
   </div>
   <div>
       <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_AddOwner_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_Microsoft_Azure_Graph_RBAC_Models_AddOwnerParameters_">ApplicationsOperationsExtensions.AddOwner(IApplicationsOperations, String, AddOwnerParameters)</a>
   </div>
   <div>
-      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_AddOwnerAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_Microsoft_Azure_Graph_RBAC_Models_AddOwnerParameters_CancellationToken_">ApplicationsOperationsExtensions.AddOwnerAsync(IApplicationsOperations, String, AddOwnerParameters, CancellationToken)</a>
+      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_AddOwnerAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_Microsoft_Azure_Graph_RBAC_Models_AddOwnerParameters_System_Threading_CancellationToken_">ApplicationsOperationsExtensions.AddOwnerAsync(IApplicationsOperations, String, AddOwnerParameters, CancellationToken)</a>
   </div>
   <div>
       <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_RemoveOwner_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_System_String_">ApplicationsOperationsExtensions.RemoveOwner(IApplicationsOperations, String, String)</a>
   </div>
   <div>
-      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_RemoveOwnerAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_System_String_CancellationToken_">ApplicationsOperationsExtensions.RemoveOwnerAsync(IApplicationsOperations, String, String, CancellationToken)</a>
+      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_RemoveOwnerAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_System_String_System_Threading_CancellationToken_">ApplicationsOperationsExtensions.RemoveOwnerAsync(IApplicationsOperations, String, String, CancellationToken)</a>
   </div>
   <div>
       <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_ListKeyCredentials_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_">ApplicationsOperationsExtensions.ListKeyCredentials(IApplicationsOperations, String)</a>
   </div>
   <div>
-      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_ListKeyCredentialsAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_CancellationToken_">ApplicationsOperationsExtensions.ListKeyCredentialsAsync(IApplicationsOperations, String, CancellationToken)</a>
+      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_ListKeyCredentialsAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_System_Threading_CancellationToken_">ApplicationsOperationsExtensions.ListKeyCredentialsAsync(IApplicationsOperations, String, CancellationToken)</a>
   </div>
   <div>
       <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_UpdateKeyCredentials_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_Microsoft_Azure_Graph_RBAC_Models_KeyCredentialsUpdateParameters_">ApplicationsOperationsExtensions.UpdateKeyCredentials(IApplicationsOperations, String, KeyCredentialsUpdateParameters)</a>
   </div>
   <div>
-      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_UpdateKeyCredentialsAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_Microsoft_Azure_Graph_RBAC_Models_KeyCredentialsUpdateParameters_CancellationToken_">ApplicationsOperationsExtensions.UpdateKeyCredentialsAsync(IApplicationsOperations, String, KeyCredentialsUpdateParameters, CancellationToken)</a>
+      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_UpdateKeyCredentialsAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_Microsoft_Azure_Graph_RBAC_Models_KeyCredentialsUpdateParameters_System_Threading_CancellationToken_">ApplicationsOperationsExtensions.UpdateKeyCredentialsAsync(IApplicationsOperations, String, KeyCredentialsUpdateParameters, CancellationToken)</a>
   </div>
   <div>
       <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_ListPasswordCredentials_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_">ApplicationsOperationsExtensions.ListPasswordCredentials(IApplicationsOperations, String)</a>
   </div>
   <div>
-      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_ListPasswordCredentialsAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_CancellationToken_">ApplicationsOperationsExtensions.ListPasswordCredentialsAsync(IApplicationsOperations, String, CancellationToken)</a>
+      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_ListPasswordCredentialsAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_System_Threading_CancellationToken_">ApplicationsOperationsExtensions.ListPasswordCredentialsAsync(IApplicationsOperations, String, CancellationToken)</a>
   </div>
   <div>
       <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_UpdatePasswordCredentials_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_Microsoft_Azure_Graph_RBAC_Models_PasswordCredentialsUpdateParameters_">ApplicationsOperationsExtensions.UpdatePasswordCredentials(IApplicationsOperations, String, PasswordCredentialsUpdateParameters)</a>
   </div>
   <div>
-      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_UpdatePasswordCredentialsAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_Microsoft_Azure_Graph_RBAC_Models_PasswordCredentialsUpdateParameters_CancellationToken_">ApplicationsOperationsExtensions.UpdatePasswordCredentialsAsync(IApplicationsOperations, String, PasswordCredentialsUpdateParameters, CancellationToken)</a>
+      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_UpdatePasswordCredentialsAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_Microsoft_Azure_Graph_RBAC_Models_PasswordCredentialsUpdateParameters_System_Threading_CancellationToken_">ApplicationsOperationsExtensions.UpdatePasswordCredentialsAsync(IApplicationsOperations, String, PasswordCredentialsUpdateParameters, CancellationToken)</a>
   </div>
   <div>
       <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_GetServicePrincipalsIdByAppId_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_">ApplicationsOperationsExtensions.GetServicePrincipalsIdByAppId(IApplicationsOperations, String)</a>
   </div>
   <div>
-      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_GetServicePrincipalsIdByAppIdAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_CancellationToken_">ApplicationsOperationsExtensions.GetServicePrincipalsIdByAppIdAsync(IApplicationsOperations, String, CancellationToken)</a>
+      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_GetServicePrincipalsIdByAppIdAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_System_Threading_CancellationToken_">ApplicationsOperationsExtensions.GetServicePrincipalsIdByAppIdAsync(IApplicationsOperations, String, CancellationToken)</a>
   </div>
   <div>
       <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_ListNext_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_">ApplicationsOperationsExtensions.ListNext(IApplicationsOperations, String)</a>
   </div>
   <div>
-      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_ListNextAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_CancellationToken_">ApplicationsOperationsExtensions.ListNextAsync(IApplicationsOperations, String, CancellationToken)</a>
+      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_ListNextAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_System_Threading_CancellationToken_">ApplicationsOperationsExtensions.ListNextAsync(IApplicationsOperations, String, CancellationToken)</a>
   </div>
   <div>
       <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_ListOwnersNext_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_">ApplicationsOperationsExtensions.ListOwnersNext(IApplicationsOperations, String)</a>
   </div>
   <div>
-      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_ListOwnersNextAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_CancellationToken_">ApplicationsOperationsExtensions.ListOwnersNextAsync(IApplicationsOperations, String, CancellationToken)</a>
+      <a class="xref" href="Microsoft.Azure.Graph.RBAC.ApplicationsOperationsExtensions.html#Microsoft_Azure_Graph_RBAC_ApplicationsOperationsExtensions_ListOwnersNextAsync_Microsoft_Azure_Graph_RBAC_IApplicationsOperations_System_String_System_Threading_CancellationToken_">ApplicationsOperationsExtensions.ListOwnersNextAsync(IApplicationsOperations, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
   </div>
 </article>
           </div>
@@ -1379,10 +1392,10 @@ application.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/PublishDocsToGitHub/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Graph_RBAC_IApplicationsOperations.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Graph.RBAC.IApplicationsOperations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/PublishDocsToGitHub/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L25" class="contribution-link">View Source</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/graphrbac/Microsoft.Azure.Graph.RBAC/src/Generated/IApplicationsOperations.cs/#L25" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
@@ -1401,8 +1414,8 @@ application.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

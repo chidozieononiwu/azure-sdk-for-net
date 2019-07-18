@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Namespace Azure.Identity
-   | Azure SDK for Net </title>
+   </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace Azure.Identity
-   | Azure SDK for Net ">
+   ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    <meta property="docfx:rel" content="../../">
-    <meta property="docfx:newtab" content="true">
+    
+    
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,16 +58,6 @@
           </div>
         </div>
       </header>
-      <div class="container body-content">
-        
-        <div id="search-results">
-          <div class="search-list"></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
-          </div>
-          <ul id="pagination"></ul>
-        </div>
-      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -87,52 +77,22 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="Azure.Identity.AuthenticationFailedException.html">AuthenticationFailedException</a></h4>
-      <section><p>An exception class raised for errors in authenticating client reqeusts.</p>
-</section>
-      <h4><a class="xref" href="Azure.Identity.ChainedTokenCredential.html">ChainedTokenCredential</a></h4>
-      <section><p>Provides a <a class="xref" href="../Core/Azure.Core.TokenCredential.html">TokenCredential</a> implementation which chains multiple <a class="xref" href="../Core/Azure.Core.TokenCredential.html">TokenCredential</a> implementations to be tried in order
-until one of the getToken methods returns a non-default <a class="xref" href="../Core/Azure.Core.AccessToken.html">AccessToken</a>.</p>
-</section>
-      <h4><a class="xref" href="Azure.Identity.ClientCertificateCredential.html">ClientCertificateCredential</a></h4>
-      <section><p>Enables authentication of a service principal in to Azure Active Directory using a X509 certificate that is assigned to it's App Registration. More information
-on how to configure certificate authentication can be found here:
-<a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-certificate-credentials#register-your-certificate-with-azure-ad">https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-certificate-credentials#register-your-certificate-with-azure-ad</a></p>
-</section>
-      <h4><a class="xref" href="Azure.Identity.ClientSecretCredential.html">ClientSecretCredential</a></h4>
-      <section><p>Enables authentication to Azure Active Directory using a client secret that was generated for an App Registration.  More information on how
-to configure a client secret can be found here:
-<a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-credentials-to-your-web-application">https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-credentials-to-your-web-application</a></p>
-</section>
-      <h4><a class="xref" href="Azure.Identity.DefaultAzureCredential.html">DefaultAzureCredential</a></h4>
-      <section><p>Provides a default <a class="xref" href="Azure.Identity.ChainedTokenCredential.html">ChainedTokenCredential</a> configuration for applications that will be deployed to Azure.  The following credential
-types will be tried, in order:</p>
-<ul>
-<li><a class="xref" href="Azure.Identity.EnvironmentCredential.html">EnvironmentCredential</a></li>
-<li><a class="xref" href="Azure.Identity.ManagedIdentityCredential.html">ManagedIdentityCredential</a>
-Consult the documentation of these credential types for more information on how they attempt authentication.</li>
-</ul>
-</section>
-      <h4><a class="xref" href="Azure.Identity.EnvironmentCredential.html">EnvironmentCredential</a></h4>
-      <section><p>Enables authentication to Azure Active Directory using client secret
-details configured in the following environment variables:</p>
-<ul>
-<li>AZURE_TENANT_ID: The Azure Active Directory tenant(directory) ID.</li>
-<li>AZURE_CLIENT_ID: The client(application) ID of an App Registration in the tenant.</li>
-<li>AZURE_CLIENT_SECRET: A client secret that was generated for the App Registration.
-This credential ultimately uses a <a class="xref" href="Azure.Identity.ClientSecretCredential.html">ClientSecretCredential</a> to
-perform the authentication using these details. Please consult the
-documentation of that class for more details.</li>
-</ul>
-</section>
-      <h4><a class="xref" href="Azure.Identity.IdentityClientOptions.html">IdentityClientOptions</a></h4>
-      <section><p>Options to configure requests made to Azure Identity Services</p>
-</section>
-      <h4><a class="xref" href="Azure.Identity.ManagedIdentityCredential.html">ManagedIdentityCredential</a></h4>
-      <section><p>Attempts authentication using a managed identity that has been assigned to the deployment environment.This authentication type works in Azure VMs,
-App Service and Azure Functions applications, as well as inside of Azure Cloud Shell. More information about configuring managed identities can be found here:
-<a href="https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview">https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview</a></p>
-</section>
+      <h4><a class="xref" href="Azure.Identity/Azure.Identity.AuthenticationFailedException.html">AuthenticationFailedException</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Azure.Identity/Azure.Identity.ChainedTokenCredential.html">ChainedTokenCredential</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Azure.Identity/Azure.Identity.ClientCertificateCredential.html">ClientCertificateCredential</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Azure.Identity/Azure.Identity.ClientSecretCredential.html">ClientSecretCredential</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Azure.Identity/Azure.Identity.DefaultAzureCredential.html">DefaultAzureCredential</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Azure.Identity/Azure.Identity.EnvironmentCredential.html">EnvironmentCredential</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Azure.Identity/Azure.Identity.IdentityClientOptions.html">IdentityClientOptions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Azure.Identity/Azure.Identity.ManagedIdentityCredential.html">ManagedIdentityCredential</a></h4>
+      <section></section>
 </article>
           </div>
           
@@ -157,8 +117,8 @@ App Service and Azure Functions applications, as well as inside of Azure Cloud S
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Azure SDK for Net
             
+            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

@@ -73,7 +73,16 @@
   
   <h1 id="Microsoft_Azure_EventHubs_Processor_IEventProcessor" data-uid="Microsoft.Azure.EventHubs.Processor.IEventProcessor" class="text-break">Interface IEventProcessor
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Interface that must be implemented by event processor classes.</p>
+<p>Any given instance of an event processor class will only process events from one partition
+of one Event Hub. A PartitionContext is provided with each call to the event processor because
+some parameters could change, but it will always be the same partition.</p><p>Although EventProcessorHost is multithreaded, calls to a given instance of an event processor
+class are serialized, except for OnError(). OnOpen() is called first, then OnEvents() will be called zero or more
+times. When the event processor needs to be shut down, whether because there was a failure
+somewhere, or the lease for the partition has been lost, or because the entire processor host
+is being shut down, OnClose() is called after the last OnEvents() call returns.</p><p>OnError() could be called while OnEvents() or OnClose() is executing. No synchronization is attempted
+in order to avoid possibly deadlocking.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.EventHubs.Processor.html">Microsoft.Azure.EventHubs.Processor</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.EventHubs.Processor.dll</h6>
@@ -87,7 +96,8 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_IEventProcessor_CloseAsync_" data-uid="Microsoft.Azure.EventHubs.Processor.IEventProcessor.CloseAsync*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_IEventProcessor_CloseAsync_Microsoft_Azure_EventHubs_Processor_PartitionContext_Microsoft_Azure_EventHubs_Processor_CloseReason_" data-uid="Microsoft.Azure.EventHubs.Processor.IEventProcessor.CloseAsync(Microsoft.Azure.EventHubs.Processor.PartitionContext,Microsoft.Azure.EventHubs.Processor.CloseReason)">CloseAsync(PartitionContext, CloseReason)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called by processor host to indicate that the event processor is being stopped.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -106,12 +116,14 @@
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.Processor.PartitionContext.html">PartitionContext</a></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>Information about the partition.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.Processor.CloseReason.html">CloseReason</a></td>
         <td><span class="parametername">reason</span></td>
-        <td></td>
+        <td><p>Reason why the event processor is being stopped.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -134,7 +146,8 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_IEventProcessor_OpenAsync_" data-uid="Microsoft.Azure.EventHubs.Processor.IEventProcessor.OpenAsync*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_IEventProcessor_OpenAsync_Microsoft_Azure_EventHubs_Processor_PartitionContext_" data-uid="Microsoft.Azure.EventHubs.Processor.IEventProcessor.OpenAsync(Microsoft.Azure.EventHubs.Processor.PartitionContext)">OpenAsync(PartitionContext)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called by processor host to initialize the event processor.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -153,7 +166,8 @@
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.Processor.PartitionContext.html">PartitionContext</a></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>Information about the partition that this event processor will process events from.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -176,7 +190,10 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_IEventProcessor_ProcessErrorAsync_" data-uid="Microsoft.Azure.EventHubs.Processor.IEventProcessor.ProcessErrorAsync*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_IEventProcessor_ProcessErrorAsync_Microsoft_Azure_EventHubs_Processor_PartitionContext_System_Exception_" data-uid="Microsoft.Azure.EventHubs.Processor.IEventProcessor.ProcessErrorAsync(Microsoft.Azure.EventHubs.Processor.PartitionContext,System.Exception)">ProcessErrorAsync(PartitionContext, Exception)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called when the underlying client experiences an error while receiving. EventProcessorHost will take
+care of recovering from the error and continuing to pump messages, so no action is required from
+your code. This method is provided for informational purposes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -195,12 +212,14 @@
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.Processor.PartitionContext.html">PartitionContext</a></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>Information about the partition.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Exception</span></td>
         <td><span class="parametername">error</span></td>
-        <td></td>
+        <td><p>The error that occured.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -223,7 +242,9 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_IEventProcessor_ProcessEventsAsync_" data-uid="Microsoft.Azure.EventHubs.Processor.IEventProcessor.ProcessEventsAsync*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_IEventProcessor_ProcessEventsAsync_Microsoft_Azure_EventHubs_Processor_PartitionContext_System_Collections_Generic_IEnumerable_Microsoft_Azure_EventHubs_EventData__" data-uid="Microsoft.Azure.EventHubs.Processor.IEventProcessor.ProcessEventsAsync(Microsoft.Azure.EventHubs.Processor.PartitionContext,System.Collections.Generic.IEnumerable{Microsoft.Azure.EventHubs.EventData})">ProcessEventsAsync(PartitionContext, IEnumerable&lt;EventData&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called by the processor host when a batch of events has arrived.</p>
+<p>This is where the real work of the event processor is done.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -242,12 +263,14 @@
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.Processor.PartitionContext.html">PartitionContext</a></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>Information about the partition.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="../Microsoft.Azure.EventHubs/Microsoft.Azure.EventHubs.EventData.html">EventData</a>&gt;</td>
         <td><span class="parametername">messages</span></td>
-        <td></td>
+        <td><p>The events to be processed.</p>
+</td>
       </tr>
     </tbody>
   </table>

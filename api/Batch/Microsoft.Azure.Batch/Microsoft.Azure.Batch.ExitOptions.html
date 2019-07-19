@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_ExitOptions" data-uid="Microsoft.Azure.Batch.ExitOptions" class="text-break">Class ExitOptions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>How the Batch service should respond to a particular exit condition.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +93,8 @@
   
   <a id="Microsoft_Azure_Batch_ExitOptions__ctor_" data-uid="Microsoft.Azure.Batch.ExitOptions.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_ExitOptions__ctor" data-uid="Microsoft.Azure.Batch.ExitOptions.#ctor">ExitOptions()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.ExitOptions.html">ExitOptions</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -104,7 +106,8 @@
   
   <a id="Microsoft_Azure_Batch_ExitOptions_DependencyAction_" data-uid="Microsoft.Azure.Batch.ExitOptions.DependencyAction*"></a>
   <h4 id="Microsoft_Azure_Batch_ExitOptions_DependencyAction" data-uid="Microsoft.Azure.Batch.ExitOptions.DependencyAction">DependencyAction</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets an action that the Batch service should take on tasks that depend on this task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -125,11 +128,18 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_ExitOptions_DependencyAction_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default is <a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.DependencyAction.html#Microsoft_Azure_Batch_Common_DependencyAction_Satisfy">Satisfy</a> for exit code 0, and <a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.DependencyAction.html#Microsoft_Azure_Batch_Common_DependencyAction_Block">Block</a>
+for all other exit conditions. If the job's <a class="xref" href="Microsoft.Azure.Batch.CloudJob.html#Microsoft_Azure_Batch_CloudJob_UsesTaskDependencies">UsesTaskDependencies</a> is false, you cannot
+add a task with this property set.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_ExitOptions_JobAction_" data-uid="Microsoft.Azure.Batch.ExitOptions.JobAction*"></a>
   <h4 id="Microsoft_Azure_Batch_ExitOptions_JobAction" data-uid="Microsoft.Azure.Batch.ExitOptions.JobAction">JobAction</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets an action to take on the job containing the task, if the task completes with the given exit condition
+and the job's <a class="xref" href="Microsoft.Azure.Batch.CloudJob.html#Microsoft_Azure_Batch_CloudJob_OnTaskFailure">OnTaskFailure</a> property is <a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.OnTaskFailure.html#Microsoft_Azure_Batch_Common_OnTaskFailure_PerformExitOptionsJobAction">PerformExitOptionsJobAction</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

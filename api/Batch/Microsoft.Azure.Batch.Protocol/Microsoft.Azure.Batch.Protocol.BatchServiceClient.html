@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient" class="text-break">Class BatchServiceClient
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>A client for issuing REST requests to the Azure Batch service.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -98,7 +99,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.#ctor(System.Net.Http.DelegatingHandler[])">BatchServiceClient(DelegatingHandler[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the BatchServiceClient class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -117,7 +119,8 @@
       <tr>
         <td><span class="xref">System.Net.Http.DelegatingHandler</span>[]</td>
         <td><span class="parametername">handlers</span></td>
-        <td></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -125,7 +128,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_Microsoft_Rest_ServiceClientCredentials_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])">BatchServiceClient(ServiceClientCredentials, DelegatingHandler[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the BatchServiceClient class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -144,12 +148,30 @@
       <tr>
         <td><span class="xref">Microsoft.Rest.ServiceClientCredentials</span></td>
         <td><span class="parametername">credentials</span></td>
-        <td></td>
+        <td><p>Required. Credentials needed for the client to connect to Azure.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Net.Http.DelegatingHandler</span>[]</td>
         <td><span class="parametername">handlers</span></td>
-        <td></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -157,7 +179,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_System_Net_Http_HttpClient_System_Boolean_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.#ctor(System.Net.Http.HttpClient,System.Boolean)">BatchServiceClient(HttpClient, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the BatchServiceClient class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -176,12 +199,14 @@
       <tr>
         <td><span class="xref">System.Net.Http.HttpClient</span></td>
         <td><span class="parametername">httpClient</span></td>
-        <td></td>
+        <td><p>HttpClient to be used</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">disposeHttpClient</span></td>
-        <td></td>
+        <td><p>True: will dispose the provided httpClient on calling BatchServiceClient.Dispose(). False: will not dispose provided httpClient</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -189,7 +214,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_System_Net_Http_HttpClientHandler_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.#ctor(System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">BatchServiceClient(HttpClientHandler, DelegatingHandler[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the BatchServiceClient class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -208,12 +234,14 @@
       <tr>
         <td><span class="xref">System.Net.Http.HttpClientHandler</span></td>
         <td><span class="parametername">rootHandler</span></td>
-        <td></td>
+        <td><p>Optional. The http client handler used to handle http transport.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Net.Http.DelegatingHandler</span>[]</td>
         <td><span class="parametername">handlers</span></td>
-        <td></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -221,7 +249,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_Microsoft_Rest_ServiceClientCredentials_System_Net_Http_HttpClient_System_Boolean_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClient,System.Boolean)">BatchServiceClient(ServiceClientCredentials, HttpClient, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the BatchServiceClient class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -240,17 +269,36 @@
       <tr>
         <td><span class="xref">Microsoft.Rest.ServiceClientCredentials</span></td>
         <td><span class="parametername">credentials</span></td>
-        <td></td>
+        <td><p>Required. Credentials needed for the client to connect to Azure.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Net.Http.HttpClient</span></td>
         <td><span class="parametername">httpClient</span></td>
-        <td></td>
+        <td><p>HttpClient to be used</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">disposeHttpClient</span></td>
-        <td></td>
+        <td><p>True: will dispose the provided httpClient on calling BatchServiceClient.Dispose(). False: will not dispose provided httpClient</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -258,7 +306,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient__ctor_Microsoft_Rest_ServiceClientCredentials_System_Net_Http_HttpClientHandler_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">BatchServiceClient(ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the BatchServiceClient class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -277,17 +326,36 @@
       <tr>
         <td><span class="xref">Microsoft.Rest.ServiceClientCredentials</span></td>
         <td><span class="parametername">credentials</span></td>
-        <td></td>
+        <td><p>Required. Credentials needed for the client to connect to Azure.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Net.Http.HttpClientHandler</span></td>
         <td><span class="parametername">rootHandler</span></td>
-        <td></td>
+        <td><p>Optional. The http client handler used to handle http transport.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Net.Http.DelegatingHandler</span>[]</td>
         <td><span class="parametername">handlers</span></td>
-        <td></td>
+        <td><p>Optional. The delegating handlers to add to the http client pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -297,7 +365,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_AcceptLanguage_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.AcceptLanguage*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_AcceptLanguage" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.AcceptLanguage">AcceptLanguage</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The preferred language for the response.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -322,7 +391,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_Account_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.Account*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_Account" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.Account">Account</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the IAccountOperations.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -347,7 +417,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_ApiVersion_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.ApiVersion*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_ApiVersion" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.ApiVersion">ApiVersion</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Client API Version.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -372,7 +443,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_Application_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.Application*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_Application" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.Application">Application</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the IApplicationOperations.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -397,7 +469,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_BatchUrl_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.BatchUrl*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_BatchUrl" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.BatchUrl">BatchUrl</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The base URL for all Azure Batch service requests.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -422,7 +495,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_Certificate_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.Certificate*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_Certificate" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.Certificate">Certificate</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the ICertificateOperations.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -447,7 +521,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_ComputeNode_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.ComputeNode*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_ComputeNode" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.ComputeNode">ComputeNode</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the IComputeNodeOperations.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -472,7 +547,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_Credentials_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.Credentials*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_Credentials" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.Credentials">Credentials</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Credentials needed for the client to connect to Azure.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -497,7 +573,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_DeserializationSettings_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.DeserializationSettings*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_DeserializationSettings" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.DeserializationSettings">DeserializationSettings</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets json deserialization settings.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -522,7 +599,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_File_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.File*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_File" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.File">File</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the IFileOperations.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -547,7 +625,10 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_GenerateClientRequestId_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.GenerateClientRequestId*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_GenerateClientRequestId" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.GenerateClientRequestId">GenerateClientRequestId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Whether a unique x-ms-client-request-id should be generated. When set to
+true a unique x-ms-client-request-id value is generated and included in
+each request. Default is true.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -572,7 +653,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_Job_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.Job*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_Job" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.Job">Job</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the IJobOperations.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -597,7 +679,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_JobSchedule_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.JobSchedule*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_JobSchedule" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.JobSchedule">JobSchedule</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the IJobScheduleOperations.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -622,7 +705,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_LongRunningOperationRetryTimeout_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.LongRunningOperationRetryTimeout*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_LongRunningOperationRetryTimeout" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.LongRunningOperationRetryTimeout">LongRunningOperationRetryTimeout</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The retry timeout in seconds for Long Running Operations. Default value is
+30.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -647,7 +732,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_Pool_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.Pool*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_Pool" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.Pool">Pool</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the IPoolOperations.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -672,7 +758,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_SerializationSettings_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.SerializationSettings*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_SerializationSettings" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.SerializationSettings">SerializationSettings</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets json serialization settings.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -697,7 +784,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_Task_" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.Task*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_BatchServiceClient_Task" data-uid="Microsoft.Azure.Batch.Protocol.BatchServiceClient.Task">Task</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the ITaskOperations.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

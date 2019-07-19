@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_NodeAgentInformation" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeAgentInformation" class="text-break">Class NodeAgentInformation
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Information about the node agent.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -86,13 +87,18 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class NodeAgentInformation</code></pre>
   </div>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_NodeAgentInformation_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The Batch node agent is a program that runs on each node in the pool</p>
+<p>and provides Batch capability on the compute node.</p>
+</div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_NodeAgentInformation__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeAgentInformation.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_NodeAgentInformation__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeAgentInformation.#ctor">NodeAgentInformation()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the NodeAgentInformation class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -102,7 +108,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_NodeAgentInformation__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeAgentInformation.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_NodeAgentInformation__ctor_System_String_System_DateTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeAgentInformation.#ctor(System.String,System.DateTime)">NodeAgentInformation(String, DateTime)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the NodeAgentInformation class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -121,12 +128,16 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">version</span></td>
-        <td></td>
+        <td><p>The version of the Batch node agent running
+on the compute node.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.DateTime</span></td>
         <td><span class="parametername">lastUpdateTime</span></td>
-        <td></td>
+        <td><p>The time when the node agent was
+updated on the compute node.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -136,7 +147,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_NodeAgentInformation_LastUpdateTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeAgentInformation.LastUpdateTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_NodeAgentInformation_LastUpdateTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeAgentInformation.LastUpdateTime">LastUpdateTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the time when the node agent was updated on the
+compute node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -158,11 +171,17 @@ public DateTime LastUpdateTime { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_NodeAgentInformation_LastUpdateTime_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is the most recent time that the node agent was updated to a</p>
+<p>new version.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_NodeAgentInformation_Version_" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeAgentInformation.Version*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_NodeAgentInformation_Version" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeAgentInformation.Version">Version</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the version of the Batch node agent running on the
+compute node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -184,6 +203,11 @@ public string Version { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_NodeAgentInformation_Version_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This version number can be checked against the node agent release</p>
+<p>notes located at</p>
+<p><a href="https://github.com/Azure/Batch/blob/master/changelogs/nodeagent/CHANGELOG.md">https://github.com/Azure/Batch/blob/master/changelogs/nodeagent/CHANGELOG.md</a>.</p>
+</div>
 </article>
           </div>
           

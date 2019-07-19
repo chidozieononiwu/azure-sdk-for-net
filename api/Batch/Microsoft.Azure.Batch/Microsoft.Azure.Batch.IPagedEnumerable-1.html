@@ -73,7 +73,10 @@
   
   <h1 id="Microsoft_Azure_Batch_IPagedEnumerable_1" data-uid="Microsoft.Azure.Batch.IPagedEnumerable`1" class="text-break">Interface IPagedEnumerable&lt;T&gt;
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Exposes enumerators for a paged collection. These enumerators support simple iteration over a paged collection of a specified type.</p>
+<p>Paged collections are backed by one or more calls to the Batch Service.<br>
+Each of these calls can return a variable sized page of data which is then consumed by the enumerator.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -97,7 +100,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The type of objects to enumerate.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -107,7 +111,8 @@
   
   <a id="Microsoft_Azure_Batch_IPagedEnumerable_1_GetPagedEnumerator_" data-uid="Microsoft.Azure.Batch.IPagedEnumerable`1.GetPagedEnumerator*"></a>
   <h4 id="Microsoft_Azure_Batch_IPagedEnumerable_1_GetPagedEnumerator" data-uid="Microsoft.Azure.Batch.IPagedEnumerable`1.GetPagedEnumerator">GetPagedEnumerator()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns an asynchronous enumerator that iterates through the paged collection.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -124,7 +129,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.IPagedEnumerator-1.html">IPagedEnumerator&lt;T&gt;</a></td>
-        <td></td>
+        <td><p>The type of objects to enumerate.</p>
+</td>
       </tr>
     </tbody>
   </table>

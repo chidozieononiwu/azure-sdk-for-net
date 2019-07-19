@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode" class="text-break">Class ComputeNode
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>A compute node in the Batch service.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +93,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.#ctor">ComputeNode()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ComputeNode class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -102,7 +104,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode__ctor_System_String_System_String_System_Nullable_Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState__System_Nullable_Microsoft_Azure_Batch_Protocol_Models_SchedulingState__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_TaskInformation__Microsoft_Azure_Batch_Protocol_Models_StartTask_Microsoft_Azure_Batch_Protocol_Models_StartTaskInformation_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_CertificateReference__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_ComputeNodeError__System_Nullable_System_Boolean__Microsoft_Azure_Batch_Protocol_Models_ComputeNodeEndpointConfiguration_Microsoft_Azure_Batch_Protocol_Models_NodeAgentInformation_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.#ctor(System.String,System.String,System.Nullable{Microsoft.Azure.Batch.Protocol.Models.ComputeNodeState},System.Nullable{Microsoft.Azure.Batch.Protocol.Models.SchedulingState},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.TaskInformation},Microsoft.Azure.Batch.Protocol.Models.StartTask,Microsoft.Azure.Batch.Protocol.Models.StartTaskInformation,System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.CertificateReference},System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.ComputeNodeError},System.Nullable{System.Boolean},Microsoft.Azure.Batch.Protocol.Models.ComputeNodeEndpointConfiguration,Microsoft.Azure.Batch.Protocol.Models.NodeAgentInformation)">ComputeNode(String, String, Nullable&lt;ComputeNodeState&gt;, Nullable&lt;SchedulingState&gt;, Nullable&lt;DateTime&gt;, Nullable&lt;DateTime&gt;, Nullable&lt;DateTime&gt;, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, IList&lt;TaskInformation&gt;, StartTask, StartTaskInformation, IList&lt;CertificateReference&gt;, IList&lt;ComputeNodeError&gt;, Nullable&lt;Boolean&gt;, ComputeNodeEndpointConfiguration, NodeAgentInformation)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ComputeNode class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -121,107 +124,152 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">id</span></td>
-        <td></td>
+        <td><p>The ID of the compute node.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">url</span></td>
-        <td></td>
+        <td><p>The URL of the compute node.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeState.html">ComputeNodeState</a>&gt;</td>
         <td><span class="parametername">state</span></td>
-        <td></td>
+        <td><p>The current state of the compute node.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.SchedulingState.html">SchedulingState</a>&gt;</td>
         <td><span class="parametername">schedulingState</span></td>
-        <td></td>
+        <td><p>Whether the compute node is available
+for task scheduling.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
         <td><span class="parametername">stateTransitionTime</span></td>
-        <td></td>
+        <td><p>The time at which the compute
+node entered its current state.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
         <td><span class="parametername">lastBootTime</span></td>
-        <td></td>
+        <td><p>The last time at which the compute node
+was started.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
         <td><span class="parametername">allocationTime</span></td>
-        <td></td>
+        <td><p>The time at which this compute node
+was allocated to the pool.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">ipAddress</span></td>
-        <td></td>
+        <td><p>The IP address that other compute nodes can
+use to communicate with this compute node.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">affinityId</span></td>
-        <td></td>
+        <td><p>An identifier which can be passed when
+adding a task to request that the task be scheduled on this
+node.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">vmSize</span></td>
-        <td></td>
+        <td><p>The size of the virtual machine hosting the
+compute node.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">totalTasksRun</span></td>
-        <td></td>
+        <td><p>The total number of job tasks completed
+on the compute node. This includes Job Manager tasks and normal
+tasks, but not Job Preparation, Job Release or Start tasks.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">runningTasksCount</span></td>
-        <td></td>
+        <td><p>The total number of currently
+running job tasks on the compute node. This includes Job Manager
+tasks and normal tasks, but not Job Preparation, Job Release or
+Start tasks.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">totalTasksSucceeded</span></td>
-        <td></td>
+        <td><p>The total number of job tasks
+which completed successfully (with exitCode 0) on the compute node.
+This includes Job Manager tasks and normal tasks, but not Job
+Preparation, Job Release or Start tasks.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskInformation.html">TaskInformation</a>&gt;</td>
         <td><span class="parametername">recentTasks</span></td>
-        <td></td>
+        <td><p>A list of tasks whose state has recently
+changed.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.StartTask.html">StartTask</a></td>
         <td><span class="parametername">startTask</span></td>
-        <td></td>
+        <td><p>The task specified to run on the compute
+node as it joins the pool.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.StartTaskInformation.html">StartTaskInformation</a></td>
         <td><span class="parametername">startTaskInfo</span></td>
-        <td></td>
+        <td><p>Runtime information about the execution
+of the start task on the compute node.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.CertificateReference.html">CertificateReference</a>&gt;</td>
         <td><span class="parametername">certificateReferences</span></td>
-        <td></td>
+        <td><p>The list of certificates
+installed on the compute node.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeError.html">ComputeNodeError</a>&gt;</td>
         <td><span class="parametername">errors</span></td>
-        <td></td>
+        <td><p>The list of errors that are currently being
+encountered by the compute node.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">isDedicated</span></td>
-        <td></td>
+        <td><p>Whether this compute node is a dedicated
+node. If false, the node is a low-priority node.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeEndpointConfiguration.html">ComputeNodeEndpointConfiguration</a></td>
         <td><span class="parametername">endpointConfiguration</span></td>
-        <td></td>
+        <td><p>The endpoint configuration for
+the compute node.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.NodeAgentInformation.html">NodeAgentInformation</a></td>
         <td><span class="parametername">nodeAgentInfo</span></td>
-        <td></td>
+        <td><p>Information about the node agent
+version and the time the node upgraded to a new version.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -231,7 +279,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_AffinityId_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.AffinityId*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_AffinityId" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.AffinityId">AffinityId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets an identifier which can be passed when adding a task
+to request that the task be scheduled on this node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -253,11 +303,18 @@ public string AffinityId { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_AffinityId_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note that this is just a soft affinity. If the target node is busy</p>
+<p>or unavailable at the time the task is scheduled, then the task</p>
+<p>will be scheduled elsewhere.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_AllocationTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.AllocationTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_AllocationTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.AllocationTime">AllocationTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the time at which this compute node was allocated to
+the pool.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -279,11 +336,18 @@ public Nullable&lt;DateTime&gt; AllocationTime { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_AllocationTime_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is the time when the node was initially allocated and doesn't</p>
+<p>change once set. It is not updated when the node is service healed</p>
+<p>or preempted.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_CertificateReferences_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.CertificateReferences*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_CertificateReferences" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.CertificateReferences">CertificateReferences</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the list of certificates installed on the compute
+node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -305,11 +369,23 @@ public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_CertificateReferences_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>For Windows compute nodes, the Batch service installs the</p>
+<p>certificates to the specified certificate store and location. For</p>
+<p>Linux compute nodes, the certificates are stored in a directory</p>
+<p>inside the task working directory and an environment variable</p>
+<p>AZ_BATCH_CERTIFICATES_DIR is supplied to the task to query for this</p>
+<p>location. For certificates with visibility of 'remoteUser', a</p>
+<p>'certs' directory is created in the user's home directory (e.g.,</p>
+<p>/home/{user-name}/certs) and certificates are placed in that</p>
+<p>directory.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_EndpointConfiguration_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.EndpointConfiguration*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_EndpointConfiguration" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.EndpointConfiguration">EndpointConfiguration</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the endpoint configuration for the compute node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -335,7 +411,9 @@ public Microsoft.Azure.Batch.Protocol.Models.ComputeNodeEndpointConfiguration En
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_Errors_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.Errors*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_Errors" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.Errors">Errors</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the list of errors that are currently being
+encountered by the compute node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -361,7 +439,8 @@ public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_Id_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.Id*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_Id" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.Id">Id</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the ID of the compute node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -383,11 +462,18 @@ public string Id { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_Id_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Every node that is added to a pool is assigned a unique ID.</p>
+<p>Whenever a node is removed from a pool, all of its local files are</p>
+<p>deleted, and the ID is reclaimed and could be reused for new nodes.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_IpAddress_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.IpAddress*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_IpAddress" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.IpAddress">IpAddress</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the IP address that other compute nodes can use to
+communicate with this compute node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -409,11 +495,19 @@ public string IpAddress { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_IpAddress_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Every node that is added to a pool is assigned a unique IP address.</p>
+<p>Whenever a node is removed from a pool, all of its local files are</p>
+<p>deleted, and the IP address is reclaimed and could be reused for</p>
+<p>new nodes.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_IsDedicated_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.IsDedicated*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_IsDedicated" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.IsDedicated">IsDedicated</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets whether this compute node is a dedicated node. If
+false, the node is a low-priority node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -439,7 +533,8 @@ public Nullable&lt;bool&gt; IsDedicated { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_LastBootTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.LastBootTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_LastBootTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.LastBootTime">LastBootTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the last time at which the compute node was started.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -461,11 +556,16 @@ public Nullable&lt;DateTime&gt; LastBootTime { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_LastBootTime_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property may not be present if the node state is unusable.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_NodeAgentInfo_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.NodeAgentInfo*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_NodeAgentInfo" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.NodeAgentInfo">NodeAgentInfo</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets information about the node agent version and the time
+the node upgraded to a new version.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -491,7 +591,8 @@ public Microsoft.Azure.Batch.Protocol.Models.NodeAgentInformation NodeAgentInfo 
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_RecentTasks_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.RecentTasks*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_RecentTasks" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.RecentTasks">RecentTasks</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a list of tasks whose state has recently changed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -513,11 +614,18 @@ public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_RecentTasks_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is present only if at least one task has run on this</p>
+<p>node since it was assigned to the pool.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_RunningTasksCount_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.RunningTasksCount*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_RunningTasksCount" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.RunningTasksCount">RunningTasksCount</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the total number of currently running job tasks on the
+compute node. This includes Job Manager tasks and normal tasks, but
+not Job Preparation, Job Release or Start tasks.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -543,7 +651,9 @@ public Nullable&lt;int&gt; RunningTasksCount { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_SchedulingState_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.SchedulingState*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_SchedulingState" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.SchedulingState">SchedulingState</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets whether the compute node is available for task
+scheduling.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -565,11 +675,16 @@ public Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.SchedulingState&gt; Sch
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_SchedulingState_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Possible values include: 'enabled', 'disabled'</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_StartTask_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.StartTask*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_StartTask" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.StartTask">StartTask</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the task specified to run on the compute node as it
+joins the pool.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -595,7 +710,9 @@ public Microsoft.Azure.Batch.Protocol.Models.StartTask StartTask { get; set; }</
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_StartTaskInfo_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.StartTaskInfo*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_StartTaskInfo" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.StartTaskInfo">StartTaskInfo</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets runtime information about the execution of the start
+task on the compute node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -621,7 +738,8 @@ public Microsoft.Azure.Batch.Protocol.Models.StartTaskInformation StartTaskInfo 
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_State_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.State*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_State" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.State">State</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the current state of the compute node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -643,11 +761,21 @@ public Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.ComputeNodeState&gt; St
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_State_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The low-priority node has been preempted. Tasks which were running</p>
+<p>on the node when it was preempted will be rescheduled when another</p>
+<p>node becomes available. Possible values include: 'idle',</p>
+<p>'rebooting', 'reimaging', 'running', 'unusable', 'creating',</p>
+<p>'starting', 'waitingForStartTask', 'startTaskFailed', 'unknown',</p>
+<p>'leavingPool', 'offline', 'preempted'</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_StateTransitionTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.StateTransitionTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_StateTransitionTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.StateTransitionTime">StateTransitionTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the time at which the compute node entered its current
+state.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -673,7 +801,10 @@ public Nullable&lt;DateTime&gt; StateTransitionTime { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_TotalTasksRun_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.TotalTasksRun*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_TotalTasksRun" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.TotalTasksRun">TotalTasksRun</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the total number of job tasks completed on the compute
+node. This includes Job Manager tasks and normal tasks, but not Job
+Preparation, Job Release or Start tasks.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -699,7 +830,11 @@ public Nullable&lt;int&gt; TotalTasksRun { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_TotalTasksSucceeded_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.TotalTasksSucceeded*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_TotalTasksSucceeded" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.TotalTasksSucceeded">TotalTasksSucceeded</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the total number of job tasks which completed
+successfully (with exitCode 0) on the compute node. This includes
+Job Manager tasks and normal tasks, but not Job Preparation, Job
+Release or Start tasks.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -725,7 +860,8 @@ public Nullable&lt;int&gt; TotalTasksSucceeded { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_Url_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.Url*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_Url" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.Url">Url</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the URL of the compute node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -751,7 +887,9 @@ public string Url { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_VmSize_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.VmSize*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_VmSize" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNode.VmSize">VmSize</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the size of the virtual machine hosting the compute
+node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -773,6 +911,11 @@ public string VmSize { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNode_VmSize_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>For information about available sizes of virtual machines in pools,</p>
+<p>see Choose a VM size for compute nodes in an Azure Batch pool</p>
+<p>(<a href="https://docs.microsoft.com/azure/batch/batch-pool-vm-sizes">https://docs.microsoft.com/azure/batch/batch-pool-vm-sizes</a>).</p>
+</div>
 </article>
           </div>
           

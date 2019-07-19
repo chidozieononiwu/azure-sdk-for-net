@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_FileStaging_FileToStage" data-uid="Microsoft.Azure.Batch.FileStaging.FileToStage" class="text-break">Class FileToStage
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Provides for file staging of a local file to blob storage.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -96,7 +97,9 @@
   
   <a id="Microsoft_Azure_Batch_FileStaging_FileToStage__ctor_" data-uid="Microsoft.Azure.Batch.FileStaging.FileToStage.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_FileStaging_FileToStage__ctor_System_String_Microsoft_Azure_Batch_FileStaging_StagingStorageAccount_System_String_" data-uid="Microsoft.Azure.Batch.FileStaging.FileToStage.#ctor(System.String,Microsoft.Azure.Batch.FileStaging.StagingStorageAccount,System.String)">FileToStage(String, StagingStorageAccount, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Specifies that a local file should be staged to blob storage.<br>
+The specified account will be charged for storage costs.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -115,17 +118,21 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">localFileToStage</span></td>
-        <td></td>
+        <td><p>The name of the local file.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.FileStaging.StagingStorageAccount.html">StagingStorageAccount</a></td>
         <td><span class="parametername">storageCredentials</span></td>
-        <td></td>
+        <td><p>The storage credentials to be used when creating the default container.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">nodeFileName</span></td>
-        <td></td>
+        <td><p>Optional name to be given to the file on the compute node.  If this parameter is null or missing
+the name on the compute node will be set to the value of localFileToStage stripped of all path information.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -135,7 +142,8 @@
   
   <a id="Microsoft_Azure_Batch_FileStaging_FileToStage_Exception_" data-uid="Microsoft.Azure.Batch.FileStaging.FileToStage.Exception*"></a>
   <h4 id="Microsoft_Azure_Batch_FileStaging_FileToStage_Exception" data-uid="Microsoft.Azure.Batch.FileStaging.FileToStage.Exception">Exception</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The exception, if any, caught while attempting to stage this file.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -160,7 +168,8 @@
   
   <a id="Microsoft_Azure_Batch_FileStaging_FileToStage_LocalFileToStage_" data-uid="Microsoft.Azure.Batch.FileStaging.FileToStage.LocalFileToStage*"></a>
   <h4 id="Microsoft_Azure_Batch_FileStaging_FileToStage_LocalFileToStage" data-uid="Microsoft.Azure.Batch.FileStaging.FileToStage.LocalFileToStage">LocalFileToStage</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The name of the local file to stage to blob storage</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -185,7 +194,8 @@
   
   <a id="Microsoft_Azure_Batch_FileStaging_FileToStage_NodeFileName_" data-uid="Microsoft.Azure.Batch.FileStaging.FileToStage.NodeFileName*"></a>
   <h4 id="Microsoft_Azure_Batch_FileStaging_FileToStage_NodeFileName" data-uid="Microsoft.Azure.Batch.FileStaging.FileToStage.NodeFileName">NodeFileName</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The target filename, on the compute node, to which the blob contents will be downloaded.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -210,7 +220,10 @@
   
   <a id="Microsoft_Azure_Batch_FileStaging_FileToStage_StagedFiles_" data-uid="Microsoft.Azure.Batch.FileStaging.FileToStage.StagedFiles*"></a>
   <h4 id="Microsoft_Azure_Batch_FileStaging_FileToStage_StagedFiles" data-uid="Microsoft.Azure.Batch.FileStaging.FileToStage.StagedFiles">StagedFiles</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The instances of ResourcesFile for the staged local file.
+For this implementation, successful file staging of this object will
+result in a collection with only one entry.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -237,7 +250,8 @@
   
   <a id="Microsoft_Azure_Batch_FileStaging_FileToStage_CreateStagingArtifact_" data-uid="Microsoft.Azure.Batch.FileStaging.FileToStage.CreateStagingArtifact*"></a>
   <h4 id="Microsoft_Azure_Batch_FileStaging_FileToStage_CreateStagingArtifact" data-uid="Microsoft.Azure.Batch.FileStaging.FileToStage.CreateStagingArtifact">CreateStagingArtifact()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>See <a class="xref" href="Microsoft.Azure.Batch.FileStaging.IFileStagingProvider.html#Microsoft_Azure_Batch_FileStaging_IFileStagingProvider_CreateStagingArtifact">CreateStagingArtifact()</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -254,7 +268,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch/Microsoft.Azure.Batch.IFileStagingArtifact.html">IFileStagingArtifact</a></td>
-        <td></td>
+        <td><p>An instance of IFileStagingArtifact with default values.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -262,7 +277,8 @@
   
   <a id="Microsoft_Azure_Batch_FileStaging_FileToStage_StageFilesAsync_" data-uid="Microsoft.Azure.Batch.FileStaging.FileToStage.StageFilesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_FileStaging_FileToStage_StageFilesAsync_System_Collections_Generic_List_Microsoft_Azure_Batch_FileStaging_IFileStagingProvider__Microsoft_Azure_Batch_IFileStagingArtifact_" data-uid="Microsoft.Azure.Batch.FileStaging.FileToStage.StageFilesAsync(System.Collections.Generic.List{Microsoft.Azure.Batch.FileStaging.IFileStagingProvider},Microsoft.Azure.Batch.IFileStagingArtifact)">StageFilesAsync(List&lt;IFileStagingProvider&gt;, IFileStagingArtifact)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>See <a class="xref" href="Microsoft.Azure.Batch.FileStaging.IFileStagingProvider.html#Microsoft_Azure_Batch_FileStaging_IFileStagingProvider_StageFilesAsync_System_Collections_Generic_List_Microsoft_Azure_Batch_FileStaging_IFileStagingProvider__Microsoft_Azure_Batch_IFileStagingArtifact_">StageFilesAsync(List&lt;IFileStagingProvider&gt;, IFileStagingArtifact)</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -282,12 +298,14 @@ public System.Threading.Tasks.Task StageFilesAsync (System.Collections.Generic.L
       <tr>
         <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.FileStaging.IFileStagingProvider.html">IFileStagingProvider</a>&gt;</td>
         <td><span class="parametername">filesToStage</span></td>
-        <td></td>
+        <td><p>The instances of IFileStagingProvider to stage.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch/Microsoft.Azure.Batch.IFileStagingArtifact.html">IFileStagingArtifact</a></td>
         <td><span class="parametername">fileStagingArtifact</span></td>
-        <td></td>
+        <td><p>IFileStagingProvider specific staging artifacts including error/progress.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -302,7 +320,8 @@ public System.Threading.Tasks.Task StageFilesAsync (System.Collections.Generic.L
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>A <span class="xref">System.Threading.Tasks.Task</span> object that represents the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -310,7 +329,8 @@ public System.Threading.Tasks.Task StageFilesAsync (System.Collections.Generic.L
   
   <a id="Microsoft_Azure_Batch_FileStaging_FileToStage_Validate_" data-uid="Microsoft.Azure.Batch.FileStaging.FileToStage.Validate*"></a>
   <h4 id="Microsoft_Azure_Batch_FileStaging_FileToStage_Validate" data-uid="Microsoft.Azure.Batch.FileStaging.FileToStage.Validate">Validate()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>See <a class="xref" href="Microsoft.Azure.Batch.FileStaging.IFileStagingProvider.html#Microsoft_Azure_Batch_FileStaging_IFileStagingProvider_Validate">Validate()</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Common_ComputeNodeDeallocationOption" data-uid="Microsoft.Azure.Batch.Common.ComputeNodeDeallocationOption" class="text-break">Enum ComputeNodeDeallocationOption
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Specifies how to handle tasks already running, and when the nodes running them may be removed from the pool, if the pool size is decreasing.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Common.html">Microsoft.Azure.Batch.Common</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
@@ -93,19 +94,29 @@
     <tbody>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_ComputeNodeDeallocationOption_Requeue">Requeue</td>
-        <td></td>
+        <td><p>Terminate running tasks and requeue them. The tasks will run again
+when the job is enabled. Remove nodes as soon as tasks have been
+terminated.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_ComputeNodeDeallocationOption_RetainedData">RetainedData</td>
-        <td></td>
+        <td><p>Allow currently running tasks to complete, then wait for all task
+data retention periods to expire. Schedule no new tasks while
+waiting. Remove nodes when all task retention periods have expired.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_ComputeNodeDeallocationOption_TaskCompletion">TaskCompletion</td>
-        <td></td>
+        <td><p>Allow currently running tasks to complete. Schedule no new tasks
+while waiting. Remove nodes when all tasks have completed.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_ComputeNodeDeallocationOption_Terminate">Terminate</td>
-        <td></td>
+        <td><p>Terminate running tasks. The tasks will not run again. Remove nodes
+as soon as tasks have been terminated.</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>

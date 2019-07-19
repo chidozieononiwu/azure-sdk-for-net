@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_NetworkConfiguration" data-uid="Microsoft.Azure.Batch.Protocol.Models.NetworkConfiguration" class="text-break">Class NetworkConfiguration
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The network configuration for a pool.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +93,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_NetworkConfiguration__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.NetworkConfiguration.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_NetworkConfiguration__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.NetworkConfiguration.#ctor">NetworkConfiguration()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the NetworkConfiguration class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -102,7 +104,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_NetworkConfiguration__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.NetworkConfiguration.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_NetworkConfiguration__ctor_System_String_System_Nullable_Microsoft_Azure_Batch_Protocol_Models_DynamicVNetAssignmentScope__Microsoft_Azure_Batch_Protocol_Models_PoolEndpointConfiguration_" data-uid="Microsoft.Azure.Batch.Protocol.Models.NetworkConfiguration.#ctor(System.String,System.Nullable{Microsoft.Azure.Batch.Protocol.Models.DynamicVNetAssignmentScope},Microsoft.Azure.Batch.Protocol.Models.PoolEndpointConfiguration)">NetworkConfiguration(String, Nullable&lt;DynamicVNetAssignmentScope&gt;, PoolEndpointConfiguration)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the NetworkConfiguration class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -121,17 +124,25 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">subnetId</span></td>
-        <td></td>
+        <td><p>The ARM resource identifier of the virtual
+network subnet which the compute nodes of the pool will join. This
+is of the form
+/subscriptions/{subscription}/resourceGroups/{group}/providers/{provider}/virtualNetworks/{network}/subnets/{subnet}.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.DynamicVNetAssignmentScope.html">DynamicVNetAssignmentScope</a>&gt;</td>
         <td><span class="parametername">dynamicVNetAssignmentScope</span></td>
-        <td></td>
+        <td><p>The scope of dynamic vnet
+assignment.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.PoolEndpointConfiguration.html">PoolEndpointConfiguration</a></td>
         <td><span class="parametername">endpointConfiguration</span></td>
-        <td></td>
+        <td><p>The configuration for endpoints
+on compute nodes in the Batch pool.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -141,7 +152,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_NetworkConfiguration_DynamicVNetAssignmentScope_" data-uid="Microsoft.Azure.Batch.Protocol.Models.NetworkConfiguration.DynamicVNetAssignmentScope*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_NetworkConfiguration_DynamicVNetAssignmentScope" data-uid="Microsoft.Azure.Batch.Protocol.Models.NetworkConfiguration.DynamicVNetAssignmentScope">DynamicVNetAssignmentScope</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the scope of dynamic vnet assignment.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -163,11 +175,16 @@ public Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.DynamicVNetAssignmentSc
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_NetworkConfiguration_DynamicVNetAssignmentScope_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Possible values include: 'none', 'job'</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_NetworkConfiguration_EndpointConfiguration_" data-uid="Microsoft.Azure.Batch.Protocol.Models.NetworkConfiguration.EndpointConfiguration*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_NetworkConfiguration_EndpointConfiguration" data-uid="Microsoft.Azure.Batch.Protocol.Models.NetworkConfiguration.EndpointConfiguration">EndpointConfiguration</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the configuration for endpoints on compute nodes in
+the Batch pool.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -189,11 +206,19 @@ public Microsoft.Azure.Batch.Protocol.Models.PoolEndpointConfiguration EndpointC
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_NetworkConfiguration_EndpointConfiguration_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Pool endpoint configuration is only supported on pools with the</p>
+<p>virtualMachineConfiguration property.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_NetworkConfiguration_SubnetId_" data-uid="Microsoft.Azure.Batch.Protocol.Models.NetworkConfiguration.SubnetId*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_NetworkConfiguration_SubnetId" data-uid="Microsoft.Azure.Batch.Protocol.Models.NetworkConfiguration.SubnetId">SubnetId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the ARM resource identifier of the virtual network
+subnet which the compute nodes of the pool will join. This is of
+the form
+/subscriptions/{subscription}/resourceGroups/{group}/providers/{provider}/virtualNetworks/{network}/subnets/{subnet}.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -215,6 +240,34 @@ public string SubnetId { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_NetworkConfiguration_SubnetId_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The virtual network must be in the same region and subscription as</p>
+<p>the Azure Batch account. The specified subnet should have enough</p>
+<p>free IP addresses to accommodate the number of nodes in the pool.</p>
+<p>If the subnet doesn't have enough free IP addresses, the pool will</p>
+<p>partially allocate compute nodes, and a resize error will occur.</p>
+<p>The 'MicrosoftAzureBatch' service principal must have the 'Classic</p>
+<p>Virtual Machine Contributor' Role-Based Access Control (RBAC) role</p>
+<p>for the specified VNet. The specified subnet must allow</p>
+<p>communication from the Azure Batch service to be able to schedule</p>
+<p>tasks on the compute nodes. This can be verified by checking if the</p>
+<p>specified VNet has any associated Network Security Groups (NSG). If</p>
+<p>communication to the compute nodes in the specified subnet is</p>
+<p>denied by an NSG, then the Batch service will set the state of the</p>
+<p>compute nodes to unusable. For pools created with</p>
+<p>virtualMachineConfiguration only ARM virtual networks</p>
+<p>('Microsoft.Network/virtualNetworks') are supported, but for pools</p>
+<p>created with cloudServiceConfiguration both ARM and classic virtual</p>
+<p>networks are supported. If the specified VNet has any associated</p>
+<p>Network Security Groups (NSG), then a few reserved system ports</p>
+<p>must be enabled for inbound communication. For pools created with a</p>
+<p>virtual machine configuration, enable ports 29876 and 29877, as</p>
+<p>well as port 22 for Linux and port 3389 for Windows. For pools</p>
+<p>created with a cloud service configuration, enable ports 10100,</p>
+<p>20100, and 30100. Also enable outbound connections to Azure Storage</p>
+<p>on port 443. For more details see:</p>
+<p><a href="https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#virtual-network-vnet-and-firewall-configuration">https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#virtual-network-vnet-and-firewall-configuration</a></p>
+</div>
 </article>
           </div>
           

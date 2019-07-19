@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_EventHubs_TokenProvider" data-uid="Microsoft.Azure.EventHubs.TokenProvider" class="text-break">Class TokenProvider
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>This abstract base class can be extended to implement additional token providers.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -111,7 +112,8 @@
   
   <a id="Microsoft_Azure_EventHubs_TokenProvider_CreateAzureActiveDirectoryTokenProvider_" data-uid="Microsoft.Azure.EventHubs.TokenProvider.CreateAzureActiveDirectoryTokenProvider*"></a>
   <h4 id="Microsoft_Azure_EventHubs_TokenProvider_CreateAzureActiveDirectoryTokenProvider_Microsoft_Azure_EventHubs_AzureActiveDirectoryTokenProvider_AuthenticationCallback_System_String_System_Object_" data-uid="Microsoft.Azure.EventHubs.TokenProvider.CreateAzureActiveDirectoryTokenProvider(Microsoft.Azure.EventHubs.AzureActiveDirectoryTokenProvider.AuthenticationCallback,System.String,System.Object)">CreateAzureActiveDirectoryTokenProvider(AzureActiveDirectoryTokenProvider+AuthenticationCallback, String, Object)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates an Azure Active Directory token provider.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -130,17 +132,20 @@
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.AzureActiveDirectoryTokenProvider.AuthenticationCallback.html">AzureActiveDirectoryTokenProvider.AuthenticationCallback</a></td>
         <td><span class="parametername">authCallback</span></td>
-        <td></td>
+        <td><p>The authentication delegate to provide access token.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">authority</span></td>
-        <td></td>
+        <td><p>Address of the authority to issue token.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">state</span></td>
-        <td></td>
+        <td><p>State to be delivered to callback.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -155,7 +160,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.TokenProvider.html">TokenProvider</a></td>
-        <td></td>
+        <td><p>The <a class="xref" href="Microsoft.Azure.EventHubs.TokenProvider.html">TokenProvider</a> for returning Json web token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -163,7 +169,8 @@
   
   <a id="Microsoft_Azure_EventHubs_TokenProvider_CreateManagedIdentityTokenProvider_" data-uid="Microsoft.Azure.EventHubs.TokenProvider.CreateManagedIdentityTokenProvider*"></a>
   <h4 id="Microsoft_Azure_EventHubs_TokenProvider_CreateManagedIdentityTokenProvider" data-uid="Microsoft.Azure.EventHubs.TokenProvider.CreateManagedIdentityTokenProvider">CreateManagedIdentityTokenProvider()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates Azure Managed Identity token provider.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -180,7 +187,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.TokenProvider.html">TokenProvider</a></td>
-        <td></td>
+        <td><p>The <a class="xref" href="Microsoft.Azure.EventHubs.TokenProvider.html">TokenProvider</a> for returning Json web token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -188,7 +196,8 @@
   
   <a id="Microsoft_Azure_EventHubs_TokenProvider_CreateSharedAccessSignatureTokenProvider_" data-uid="Microsoft.Azure.EventHubs.TokenProvider.CreateSharedAccessSignatureTokenProvider*"></a>
   <h4 id="Microsoft_Azure_EventHubs_TokenProvider_CreateSharedAccessSignatureTokenProvider_System_String_" data-uid="Microsoft.Azure.EventHubs.TokenProvider.CreateSharedAccessSignatureTokenProvider(System.String)">CreateSharedAccessSignatureTokenProvider(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Construct a TokenProvider based on a sharedAccessSignature.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -207,7 +216,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">sharedAccessSignature</span></td>
-        <td></td>
+        <td><p>The shared access signature</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -222,7 +232,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.TokenProvider.html">TokenProvider</a></td>
-        <td></td>
+        <td><p>A TokenProvider initialized with the shared access signature</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -230,7 +241,8 @@
   
   <a id="Microsoft_Azure_EventHubs_TokenProvider_CreateSharedAccessSignatureTokenProvider_" data-uid="Microsoft.Azure.EventHubs.TokenProvider.CreateSharedAccessSignatureTokenProvider*"></a>
   <h4 id="Microsoft_Azure_EventHubs_TokenProvider_CreateSharedAccessSignatureTokenProvider_System_String_System_String_" data-uid="Microsoft.Azure.EventHubs.TokenProvider.CreateSharedAccessSignatureTokenProvider(System.String,System.String)">CreateSharedAccessSignatureTokenProvider(String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Construct a TokenProvider based on the provided Key Name and Shared Access Key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -249,12 +261,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">keyName</span></td>
-        <td></td>
+        <td><p>The key name of the corresponding SharedAccessKeyAuthorizationRule.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">sharedAccessKey</span></td>
-        <td></td>
+        <td><p>The key associated with the SharedAccessKeyAuthorizationRule</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -269,7 +283,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.TokenProvider.html">TokenProvider</a></td>
-        <td></td>
+        <td><p>A TokenProvider initialized with the provided RuleId and Password</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -277,7 +292,8 @@
   
   <a id="Microsoft_Azure_EventHubs_TokenProvider_CreateSharedAccessSignatureTokenProvider_" data-uid="Microsoft.Azure.EventHubs.TokenProvider.CreateSharedAccessSignatureTokenProvider*"></a>
   <h4 id="Microsoft_Azure_EventHubs_TokenProvider_CreateSharedAccessSignatureTokenProvider_System_String_System_String_Microsoft_Azure_EventHubs_TokenScope_" data-uid="Microsoft.Azure.EventHubs.TokenProvider.CreateSharedAccessSignatureTokenProvider(System.String,System.String,Microsoft.Azure.EventHubs.TokenScope)">CreateSharedAccessSignatureTokenProvider(String, String, TokenScope)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Construct a TokenProvider based on the provided Key Name and Shared Access Key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -296,17 +312,20 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">keyName</span></td>
-        <td></td>
+        <td><p>The key name of the corresponding SharedAccessKeyAuthorizationRule.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">sharedAccessKey</span></td>
-        <td></td>
+        <td><p>The key associated with the SharedAccessKeyAuthorizationRule</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.TokenScope.html">TokenScope</a></td>
         <td><span class="parametername">tokenScope</span></td>
-        <td></td>
+        <td><p>The tokenScope of tokens to request.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -321,7 +340,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.TokenProvider.html">TokenProvider</a></td>
-        <td></td>
+        <td><p>A TokenProvider initialized with the provided RuleId and Password</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -329,7 +349,8 @@
   
   <a id="Microsoft_Azure_EventHubs_TokenProvider_CreateSharedAccessSignatureTokenProvider_" data-uid="Microsoft.Azure.EventHubs.TokenProvider.CreateSharedAccessSignatureTokenProvider*"></a>
   <h4 id="Microsoft_Azure_EventHubs_TokenProvider_CreateSharedAccessSignatureTokenProvider_System_String_System_String_System_TimeSpan_" data-uid="Microsoft.Azure.EventHubs.TokenProvider.CreateSharedAccessSignatureTokenProvider(System.String,System.String,System.TimeSpan)">CreateSharedAccessSignatureTokenProvider(String, String, TimeSpan)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Construct a TokenProvider based on the provided Key Name and Shared Access Key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -348,17 +369,20 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">keyName</span></td>
-        <td></td>
+        <td><p>The key name of the corresponding SharedAccessKeyAuthorizationRule.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">sharedAccessKey</span></td>
-        <td></td>
+        <td><p>The key associated with the SharedAccessKeyAuthorizationRule</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">tokenTimeToLive</span></td>
-        <td></td>
+        <td><p>The token time to live</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -373,7 +397,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.TokenProvider.html">TokenProvider</a></td>
-        <td></td>
+        <td><p>A TokenProvider initialized with the provided RuleId and Password</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -381,7 +406,8 @@
   
   <a id="Microsoft_Azure_EventHubs_TokenProvider_CreateSharedAccessSignatureTokenProvider_" data-uid="Microsoft.Azure.EventHubs.TokenProvider.CreateSharedAccessSignatureTokenProvider*"></a>
   <h4 id="Microsoft_Azure_EventHubs_TokenProvider_CreateSharedAccessSignatureTokenProvider_System_String_System_String_System_TimeSpan_Microsoft_Azure_EventHubs_TokenScope_" data-uid="Microsoft.Azure.EventHubs.TokenProvider.CreateSharedAccessSignatureTokenProvider(System.String,System.String,System.TimeSpan,Microsoft.Azure.EventHubs.TokenScope)">CreateSharedAccessSignatureTokenProvider(String, String, TimeSpan, TokenScope)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Construct a TokenProvider based on the provided Key Name and Shared Access Key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -400,22 +426,26 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">keyName</span></td>
-        <td></td>
+        <td><p>The key name of the corresponding SharedAccessKeyAuthorizationRule.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">sharedAccessKey</span></td>
-        <td></td>
+        <td><p>The key associated with the SharedAccessKeyAuthorizationRule</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">tokenTimeToLive</span></td>
-        <td></td>
+        <td><p>The token time to live</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.TokenScope.html">TokenScope</a></td>
         <td><span class="parametername">tokenScope</span></td>
-        <td></td>
+        <td><p>The tokenScope of tokens to request.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -430,7 +460,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.TokenProvider.html">TokenProvider</a></td>
-        <td></td>
+        <td><p>A TokenProvider initialized with the provided RuleId and Password</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -438,7 +469,8 @@
   
   <a id="Microsoft_Azure_EventHubs_TokenProvider_GetTokenAsync_" data-uid="Microsoft.Azure.EventHubs.TokenProvider.GetTokenAsync*"></a>
   <h4 id="Microsoft_Azure_EventHubs_TokenProvider_GetTokenAsync_System_String_System_TimeSpan_" data-uid="Microsoft.Azure.EventHubs.TokenProvider.GetTokenAsync(System.String,System.TimeSpan)">GetTokenAsync(String, TimeSpan)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="Microsoft.Azure.EventHubs.SecurityToken.html">SecurityToken</a> for the given audience and duration.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -457,12 +489,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">appliesTo</span></td>
-        <td></td>
+        <td><p>The URI which the access token applies to</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">timeout</span></td>
-        <td></td>
+        <td><p>The time span that specifies the timeout value for the message that gets the security token</p>
+</td>
       </tr>
     </tbody>
   </table>

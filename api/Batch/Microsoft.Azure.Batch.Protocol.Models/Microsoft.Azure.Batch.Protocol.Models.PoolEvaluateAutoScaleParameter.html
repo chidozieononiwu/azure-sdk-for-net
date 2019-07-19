@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_PoolEvaluateAutoScaleParameter" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolEvaluateAutoScaleParameter" class="text-break">Class PoolEvaluateAutoScaleParameter
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Options for evaluating an automatic scaling formula on a pool.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +93,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_PoolEvaluateAutoScaleParameter__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolEvaluateAutoScaleParameter.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_PoolEvaluateAutoScaleParameter__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolEvaluateAutoScaleParameter.#ctor">PoolEvaluateAutoScaleParameter()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the PoolEvaluateAutoScaleParameter
+class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -102,7 +105,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_PoolEvaluateAutoScaleParameter__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolEvaluateAutoScaleParameter.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_PoolEvaluateAutoScaleParameter__ctor_System_String_" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolEvaluateAutoScaleParameter.#ctor(System.String)">PoolEvaluateAutoScaleParameter(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the PoolEvaluateAutoScaleParameter
+class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -121,7 +126,9 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">autoScaleFormula</span></td>
-        <td></td>
+        <td><p>The formula for the desired number
+of compute nodes in the pool.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -131,7 +138,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_PoolEvaluateAutoScaleParameter_AutoScaleFormula_" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolEvaluateAutoScaleParameter.AutoScaleFormula*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_PoolEvaluateAutoScaleParameter_AutoScaleFormula" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolEvaluateAutoScaleParameter.AutoScaleFormula">AutoScaleFormula</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the formula for the desired number of compute nodes in
+the pool.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -153,6 +162,14 @@ public string AutoScaleFormula { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_PoolEvaluateAutoScaleParameter_AutoScaleFormula_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The formula is validated and its results calculated, but it is not</p>
+<p>applied to the pool. To apply the formula to the pool, 'Enable</p>
+<p>automatic scaling on a pool'. For more information about specifying</p>
+<p>this formula, see Automatically scale compute nodes in an Azure</p>
+<p>Batch pool</p>
+<p>(<a href="https://azure.microsoft.com/en-us/documentation/articles/batch-automatic-scaling">https://azure.microsoft.com/en-us/documentation/articles/batch-automatic-scaling</a>).</p>
+</div>
 </article>
           </div>
           

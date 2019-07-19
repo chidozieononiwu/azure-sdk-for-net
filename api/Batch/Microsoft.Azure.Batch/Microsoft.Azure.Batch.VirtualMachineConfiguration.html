@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_VirtualMachineConfiguration" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration" class="text-break">Class VirtualMachineConfiguration
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The configuration for compute nodes in a pool based on the Azure Virtual Machines infrastructure.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +93,8 @@
   
   <a id="Microsoft_Azure_Batch_VirtualMachineConfiguration__ctor_" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_VirtualMachineConfiguration__ctor_Microsoft_Azure_Batch_ImageReference_System_String_" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration.#ctor(Microsoft.Azure.Batch.ImageReference,System.String)">VirtualMachineConfiguration(ImageReference, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.VirtualMachineConfiguration.html">VirtualMachineConfiguration</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -111,12 +113,14 @@
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.ImageReference.html">ImageReference</a></td>
         <td><span class="parametername">imageReference</span></td>
-        <td></td>
+        <td><p>A reference to the Azure Virtual Machines Marketplace Image or the custom Virtual Machine Image to use.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">nodeAgentSkuId</span></td>
-        <td></td>
+        <td><p>The SKU of Batch Node Agent to be provisioned on the compute node.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -126,7 +130,8 @@
   
   <a id="Microsoft_Azure_Batch_VirtualMachineConfiguration_ContainerConfiguration_" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration.ContainerConfiguration*"></a>
   <h4 id="Microsoft_Azure_Batch_VirtualMachineConfiguration_ContainerConfiguration" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration.ContainerConfiguration">ContainerConfiguration</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the container configuration for the pool.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -147,11 +152,17 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_VirtualMachineConfiguration_ContainerConfiguration_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If specified, setup is performed on each node in the pool to allow tasks to run in containers. All regular tasks
+and job manager tasks run on this pool must specify <a class="xref" href="Microsoft.Azure.Batch.TaskContainerSettings.html">TaskContainerSettings</a>, and all other tasks
+may specify it.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_VirtualMachineConfiguration_DataDisks_" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration.DataDisks*"></a>
   <h4 id="Microsoft_Azure_Batch_VirtualMachineConfiguration_DataDisks" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration.DataDisks">DataDisks</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the configuration for data disks attached to the Comptue Nodes in the pool.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -172,11 +183,17 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_VirtualMachineConfiguration_DataDisks_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property must be specified if the Compute Nodes in the pool need to have empty data disks attached to them.</p>
+<p>This cannot be updated.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_VirtualMachineConfiguration_ImageReference_" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration.ImageReference*"></a>
   <h4 id="Microsoft_Azure_Batch_VirtualMachineConfiguration_ImageReference" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration.ImageReference">ImageReference</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a reference to the Azure Virtual Machines Marketplace Image or the custom Virtual Machine Image
+to use.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -201,7 +218,8 @@
   
   <a id="Microsoft_Azure_Batch_VirtualMachineConfiguration_LicenseType_" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration.LicenseType*"></a>
   <h4 id="Microsoft_Azure_Batch_VirtualMachineConfiguration_LicenseType" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration.LicenseType">LicenseType</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the type of on-premises license to be used when deploying the operating system.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -222,11 +240,18 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_VirtualMachineConfiguration_LicenseType_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This only applies to images that contain the Windows operating system, and should only be used when you hold</p>
+<p>valid on-premises licenses for the nodes which will be deployed. If omitted, no on-premises licensing discount</p>
+<p>is applied. Values are: 'Windows_Server' - The on-premises license is for Windows Server. 'Windows_Client' -</p>
+<p>The on-premises license is for Windows Client.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_VirtualMachineConfiguration_NodeAgentSkuId_" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration.NodeAgentSkuId*"></a>
   <h4 id="Microsoft_Azure_Batch_VirtualMachineConfiguration_NodeAgentSkuId" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration.NodeAgentSkuId">NodeAgentSkuId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the SKU of Batch Node Agent to be provisioned on the compute node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -247,11 +272,18 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_VirtualMachineConfiguration_NodeAgentSkuId_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Batch node agent is a program that runs on each node in the pool, and provides the command-and-control interface</p>
+<p>between the node and the Batch service. There are different implementations of the node agent, known as SKUs,</p>
+<p>for different operating systems.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_VirtualMachineConfiguration_WindowsConfiguration_" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration.WindowsConfiguration*"></a>
   <h4 id="Microsoft_Azure_Batch_VirtualMachineConfiguration_WindowsConfiguration" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration.WindowsConfiguration">WindowsConfiguration</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets windows operating system settings on the Virtual Machine. This property must not be specified if
+the ImageReference property specifies a Linux OS image.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

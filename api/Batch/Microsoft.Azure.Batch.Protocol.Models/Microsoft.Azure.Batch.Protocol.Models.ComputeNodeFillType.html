@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeFillType" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeFillType" class="text-break">Enum ComputeNodeFillType
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Defines values for ComputeNodeFillType.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models.html">Microsoft.Azure.Batch.Protocol.Models</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
@@ -94,11 +95,15 @@ public enum ComputeNodeFillType</code></pre>
     <tbody>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeFillType_Pack">Pack</td>
-        <td></td>
+        <td><p>As many tasks as possible (maxTasksPerNode) should be assigned to
+each node in the pool before any tasks are assigned to the next
+node in the pool.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeFillType_Spread">Spread</td>
-        <td></td>
+        <td><p>Tasks should be assigned evenly across all nodes in the pool.</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>

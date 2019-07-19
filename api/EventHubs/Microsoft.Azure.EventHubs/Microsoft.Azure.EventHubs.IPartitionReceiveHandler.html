@@ -73,7 +73,9 @@
   
   <h1 id="Microsoft_Azure_EventHubs_IPartitionReceiveHandler" data-uid="Microsoft.Azure.EventHubs.IPartitionReceiveHandler" class="text-break">Interface IPartitionReceiveHandler
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>A handler interface for the receive operation. Use any implementation of this interface to specify
+user action when using <a class="xref" href="Microsoft.Azure.EventHubs.PartitionReceiver.html#Microsoft_Azure_EventHubs_PartitionReceiver_SetReceiveHandler_Microsoft_Azure_EventHubs_IPartitionReceiveHandler_System_Boolean_">SetReceiveHandler(IPartitionReceiveHandler, Boolean)</a>.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.EventHubs.html">Microsoft.Azure.EventHubs</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.EventHubs.dll</h6>
@@ -87,7 +89,8 @@
   
   <a id="Microsoft_Azure_EventHubs_IPartitionReceiveHandler_MaxBatchSize_" data-uid="Microsoft.Azure.EventHubs.IPartitionReceiveHandler.MaxBatchSize*"></a>
   <h4 id="Microsoft_Azure_EventHubs_IPartitionReceiveHandler_MaxBatchSize" data-uid="Microsoft.Azure.EventHubs.IPartitionReceiveHandler.MaxBatchSize">MaxBatchSize</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the maximum batch size.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -114,7 +117,8 @@
   
   <a id="Microsoft_Azure_EventHubs_IPartitionReceiveHandler_ProcessErrorAsync_" data-uid="Microsoft.Azure.EventHubs.IPartitionReceiveHandler.ProcessErrorAsync*"></a>
   <h4 id="Microsoft_Azure_EventHubs_IPartitionReceiveHandler_ProcessErrorAsync_System_Exception_" data-uid="Microsoft.Azure.EventHubs.IPartitionReceiveHandler.ProcessErrorAsync(System.Exception)">ProcessErrorAsync(Exception)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implement in order to handle exceptions that are thrown during receipt of events.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -133,7 +137,8 @@
       <tr>
         <td><span class="xref">System.Exception</span></td>
         <td><span class="parametername">error</span></td>
-        <td></td>
+        <td><p>The <span class="xref">System.Exception</span> to be processed</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -148,7 +153,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>An asynchronour operation</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -156,7 +162,8 @@
   
   <a id="Microsoft_Azure_EventHubs_IPartitionReceiveHandler_ProcessEventsAsync_" data-uid="Microsoft.Azure.EventHubs.IPartitionReceiveHandler.ProcessEventsAsync*"></a>
   <h4 id="Microsoft_Azure_EventHubs_IPartitionReceiveHandler_ProcessEventsAsync_System_Collections_Generic_IEnumerable_Microsoft_Azure_EventHubs_EventData__" data-uid="Microsoft.Azure.EventHubs.IPartitionReceiveHandler.ProcessEventsAsync(System.Collections.Generic.IEnumerable{Microsoft.Azure.EventHubs.EventData})">ProcessEventsAsync(IEnumerable&lt;EventData&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Users should implement this method to specify the action to be performed on the received events.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -175,7 +182,8 @@
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>&gt;</td>
         <td><span class="parametername">events</span></td>
-        <td></td>
+        <td><p>The list of fetched events from the corresponding PartitionReceiver.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -194,6 +202,10 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_EventHubs_IPartitionReceiveHandler_ProcessEventsAsync_System_Collections_Generic_IEnumerable_Microsoft_Azure_EventHubs_EventData___seealso">See Also</h5>
+  <div class="seealso">
+      <div></div>
+  </div>
 </article>
           </div>
           

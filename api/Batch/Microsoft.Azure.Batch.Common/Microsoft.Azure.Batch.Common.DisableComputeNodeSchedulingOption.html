@@ -73,7 +73,9 @@
   
   <h1 id="Microsoft_Azure_Batch_Common_DisableComputeNodeSchedulingOption" data-uid="Microsoft.Azure.Batch.Common.DisableComputeNodeSchedulingOption" class="text-break">Enum DisableComputeNodeSchedulingOption
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Specifies what to do with currently running tasks when disable task
+scheduling on the compute node.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Common.html">Microsoft.Azure.Batch.Common</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
@@ -93,15 +95,20 @@
     <tbody>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_DisableComputeNodeSchedulingOption_Requeue">Requeue</td>
-        <td></td>
+        <td><p>Terminate running tasks and requeue them. The tasks will run again
+when the job is enabled.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_DisableComputeNodeSchedulingOption_TaskCompletion">TaskCompletion</td>
-        <td></td>
+        <td><p>Allow currently running tasks to complete. Schedule no new tasks
+while waiting.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_DisableComputeNodeSchedulingOption_Terminate">Terminate</td>
-        <td></td>
+        <td><p>Terminate running tasks. The tasks will not run again.</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>

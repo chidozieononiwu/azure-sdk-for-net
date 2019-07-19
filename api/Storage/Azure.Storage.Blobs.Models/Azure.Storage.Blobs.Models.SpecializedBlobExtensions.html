@@ -73,7 +73,9 @@
   
   <h1 id="Azure_Storage_Blobs_Models_SpecializedBlobExtensions" data-uid="Azure.Storage.Blobs.Models.SpecializedBlobExtensions" class="text-break">Class SpecializedBlobExtensions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Add easy to discover methods to <a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.BlobContainerClient.html">BlobContainerClient</a> for
+creating <a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.BlobClient.html">BlobClient</a> instances.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +94,12 @@
   
   <a id="Azure_Storage_Blobs_Models_SpecializedBlobExtensions_GetBlobClient_" data-uid="Azure.Storage.Blobs.Models.SpecializedBlobExtensions.GetBlobClient*"></a>
   <h4 id="Azure_Storage_Blobs_Models_SpecializedBlobExtensions_GetBlobClient_Azure_Storage_Blobs_BlobContainerClient_System_String_" data-uid="Azure.Storage.Blobs.Models.SpecializedBlobExtensions.GetBlobClient(Azure.Storage.Blobs.BlobContainerClient,System.String)">GetBlobClient(BlobContainerClient, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Create a new <a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.BlobClient.html">BlobClient</a> object by concatenating
+<code data-dev-comment-type="paramref">blobName</code> to the end of the
+<code data-dev-comment-type="paramref">client</code>'s <a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.BlobContainerClient.html#Azure_Storage_Blobs_BlobContainerClient_Uri">Uri</a>.
+The new <a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.BlobClient.html">BlobClient</a> uses the same request policy
+pipeline as the <a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.BlobContainerClient.html">BlobContainerClient</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -111,12 +118,14 @@
       <tr>
         <td><a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.BlobContainerClient.html">BlobContainerClient</a></td>
         <td><span class="parametername">client</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.BlobContainerClient.html">BlobContainerClient</a>.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">blobName</span></td>
-        <td></td>
+        <td><p>The name of the blob.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -131,7 +140,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="../Azure.Storage.Blobs.Specialized/Azure.Storage.Blobs.Specialized.BlobBaseClient.html">BlobBaseClient</a></td>
-        <td></td>
+        <td><p>A new <a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.BlobClient.html">BlobClient</a> instance.</p>
+</td>
       </tr>
     </tbody>
   </table>

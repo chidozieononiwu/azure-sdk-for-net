@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_JobSchedulingError" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSchedulingError" class="text-break">Class JobSchedulingError
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>An error encountered by the Batch service when scheduling a job.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +93,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobSchedulingError__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSchedulingError.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobSchedulingError__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSchedulingError.#ctor">JobSchedulingError()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the JobSchedulingError class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -102,7 +104,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobSchedulingError__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSchedulingError.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobSchedulingError__ctor_Microsoft_Azure_Batch_Protocol_Models_ErrorCategory_System_String_System_String_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_NameValuePair__" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSchedulingError.#ctor(Microsoft.Azure.Batch.Protocol.Models.ErrorCategory,System.String,System.String,System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.NameValuePair})">JobSchedulingError(ErrorCategory, String, String, IList&lt;NameValuePair&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the JobSchedulingError class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -121,22 +124,32 @@
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ErrorCategory.html">ErrorCategory</a></td>
         <td><span class="parametername">category</span></td>
-        <td></td>
+        <td><p>The category of the job scheduling
+error.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">code</span></td>
-        <td></td>
+        <td><p>An identifier for the job scheduling error.
+Codes are invariant and are intended to be consumed
+programmatically.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>A message describing the job scheduling
+error, intended to be suitable for display in a user
+interface.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.NameValuePair.html">NameValuePair</a>&gt;</td>
         <td><span class="parametername">details</span></td>
-        <td></td>
+        <td><p>A list of additional error details related to
+the scheduling error.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -146,7 +159,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobSchedulingError_Category_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSchedulingError.Category*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobSchedulingError_Category" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSchedulingError.Category">Category</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the category of the job scheduling error.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -168,11 +182,16 @@ public Microsoft.Azure.Batch.Protocol.Models.ErrorCategory Category { get; set; 
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobSchedulingError_Category_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Possible values include: 'userError', 'serverError'</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobSchedulingError_Code_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSchedulingError.Code*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobSchedulingError_Code" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSchedulingError.Code">Code</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets an identifier for the job scheduling error. Codes are
+invariant and are intended to be consumed programmatically.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -198,7 +217,9 @@ public string Code { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobSchedulingError_Details_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSchedulingError.Details*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobSchedulingError_Details" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSchedulingError.Details">Details</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a list of additional error details related to the
+scheduling error.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -224,7 +245,9 @@ public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobSchedulingError_Message_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSchedulingError.Message*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobSchedulingError_Message" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSchedulingError.Message">Message</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a message describing the job scheduling error,
+intended to be suitable for display in a user interface.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

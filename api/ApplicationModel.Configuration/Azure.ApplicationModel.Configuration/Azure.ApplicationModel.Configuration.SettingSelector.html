@@ -73,7 +73,8 @@
   
   <h1 id="Azure_ApplicationModel_Configuration_SettingSelector" data-uid="Azure.ApplicationModel.Configuration.SettingSelector" class="text-break">Class SettingSelector
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Set of options for selecting <a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a> from the configuration store.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +93,8 @@
   
   <a id="Azure_ApplicationModel_Configuration_SettingSelector__ctor_" data-uid="Azure.ApplicationModel.Configuration.SettingSelector.#ctor*"></a>
   <h4 id="Azure_ApplicationModel_Configuration_SettingSelector__ctor" data-uid="Azure.ApplicationModel.Configuration.SettingSelector.#ctor">SettingSelector()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a SettingSelector with Any wildcards for both Key and Label properties</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -102,7 +104,8 @@
   
   <a id="Azure_ApplicationModel_Configuration_SettingSelector__ctor_" data-uid="Azure.ApplicationModel.Configuration.SettingSelector.#ctor*"></a>
   <h4 id="Azure_ApplicationModel_Configuration_SettingSelector__ctor_System_String_System_String_" data-uid="Azure.ApplicationModel.Configuration.SettingSelector.#ctor(System.String,System.String)">SettingSelector(String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a SettingSelector</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -121,12 +124,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>The primary identifier of a configuration setting.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">label</span></td>
-        <td></td>
+        <td><p>The value used to group configuration settings.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -135,7 +140,8 @@
   
   
   <h4 id="Azure_ApplicationModel_Configuration_SettingSelector_Any" data-uid="Azure.ApplicationModel.Configuration.SettingSelector.Any">Any</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Wildcard that symbolizes any value when used in filters.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -162,7 +168,8 @@
   
   <a id="Azure_ApplicationModel_Configuration_SettingSelector_AsOf_" data-uid="Azure.ApplicationModel.Configuration.SettingSelector.AsOf*"></a>
   <h4 id="Azure_ApplicationModel_Configuration_SettingSelector_AsOf" data-uid="Azure.ApplicationModel.Configuration.SettingSelector.AsOf">AsOf</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>If set, then key values will be retrieved exactly as they existed at the provided time.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -187,7 +194,8 @@
   
   <a id="Azure_ApplicationModel_Configuration_SettingSelector_Fields_" data-uid="Azure.ApplicationModel.Configuration.SettingSelector.Fields*"></a>
   <h4 id="Azure_ApplicationModel_Configuration_SettingSelector_Fields" data-uid="Azure.ApplicationModel.Configuration.SettingSelector.Fields">Fields</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Allows requesting a specific set of fields.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -212,7 +220,8 @@
   
   <a id="Azure_ApplicationModel_Configuration_SettingSelector_Keys_" data-uid="Azure.ApplicationModel.Configuration.SettingSelector.Keys*"></a>
   <h4 id="Azure_ApplicationModel_Configuration_SettingSelector_Keys" data-uid="Azure.ApplicationModel.Configuration.SettingSelector.Keys">Keys</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Keys that will be used to filter.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -233,11 +242,15 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Azure_ApplicationModel_Configuration_SettingSelector_Keys_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See the documentation for this client library for details on the format of filter expressions.</p>
+</div>
   
   
   <a id="Azure_ApplicationModel_Configuration_SettingSelector_Labels_" data-uid="Azure.ApplicationModel.Configuration.SettingSelector.Labels*"></a>
   <h4 id="Azure_ApplicationModel_Configuration_SettingSelector_Labels" data-uid="Azure.ApplicationModel.Configuration.SettingSelector.Labels">Labels</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Labels that will be used to filter.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -258,13 +271,17 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Azure_ApplicationModel_Configuration_SettingSelector_Labels_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See the documentation for this client library for details on the format of filter expressions.</p>
+</div>
   <h3 id="methods">Methods
   </h3>
   
   
   <a id="Azure_ApplicationModel_Configuration_SettingSelector_Equals_" data-uid="Azure.ApplicationModel.Configuration.SettingSelector.Equals*"></a>
   <h4 id="Azure_ApplicationModel_Configuration_SettingSelector_Equals_Azure_ApplicationModel_Configuration_SettingSelector_" data-uid="Azure.ApplicationModel.Configuration.SettingSelector.Equals(Azure.ApplicationModel.Configuration.SettingSelector)">Equals(SettingSelector)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Check if two SettingSelector instances are equal.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -283,7 +300,8 @@
       <tr>
         <td><a class="xref" href="Azure.ApplicationModel.Configuration.SettingSelector.html">SettingSelector</a></td>
         <td><span class="parametername">other</span></td>
-        <td></td>
+        <td><p>The instance to compare to.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -306,7 +324,8 @@
   
   <a id="Azure_ApplicationModel_Configuration_SettingSelector_Equals_" data-uid="Azure.ApplicationModel.Configuration.SettingSelector.Equals*"></a>
   <h4 id="Azure_ApplicationModel_Configuration_SettingSelector_Equals_System_Object_" data-uid="Azure.ApplicationModel.Configuration.SettingSelector.Equals(System.Object)">Equals(Object)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Check if two SettingSelector instances are equal.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -326,7 +345,8 @@ public override bool Equals (object obj);</code></pre>
       <tr>
         <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">obj</span></td>
-        <td></td>
+        <td><p>The instance to compare to.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -349,7 +369,8 @@ public override bool Equals (object obj);</code></pre>
   
   <a id="Azure_ApplicationModel_Configuration_SettingSelector_GetHashCode_" data-uid="Azure.ApplicationModel.Configuration.SettingSelector.GetHashCode*"></a>
   <h4 id="Azure_ApplicationModel_Configuration_SettingSelector_GetHashCode" data-uid="Azure.ApplicationModel.Configuration.SettingSelector.GetHashCode">GetHashCode()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get a hash code for the SettingSelector</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -375,7 +396,8 @@ public override int GetHashCode ();</code></pre>
   
   <a id="Azure_ApplicationModel_Configuration_SettingSelector_ToString_" data-uid="Azure.ApplicationModel.Configuration.SettingSelector.ToString*"></a>
   <h4 id="Azure_ApplicationModel_Configuration_SettingSelector_ToString" data-uid="Azure.ApplicationModel.Configuration.SettingSelector.ToString">ToString()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a string in reference to the SettingSelector.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

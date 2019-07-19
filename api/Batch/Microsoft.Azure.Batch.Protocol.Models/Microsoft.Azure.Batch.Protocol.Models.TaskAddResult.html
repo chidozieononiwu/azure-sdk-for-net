@@ -73,7 +73,9 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddResult" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddResult" class="text-break">Class TaskAddResult
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Result for a single task added as part of an add task collection
+operation.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +94,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskAddResult__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddResult.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddResult__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddResult.#ctor">TaskAddResult()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the TaskAddResult class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -102,7 +105,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskAddResult__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddResult.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddResult__ctor_Microsoft_Azure_Batch_Protocol_Models_TaskAddStatus_System_String_System_String_System_Nullable_System_DateTime__System_String_Microsoft_Azure_Batch_Protocol_Models_BatchError_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddResult.#ctor(Microsoft.Azure.Batch.Protocol.Models.TaskAddStatus,System.String,System.String,System.Nullable{System.DateTime},System.String,Microsoft.Azure.Batch.Protocol.Models.BatchError)">TaskAddResult(TaskAddStatus, String, String, Nullable&lt;DateTime&gt;, String, BatchError)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the TaskAddResult class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -121,32 +125,43 @@
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskAddStatus.html">TaskAddStatus</a></td>
         <td><span class="parametername">status</span></td>
-        <td></td>
+        <td><p>The status of the add task request.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The ID of the task for which this is the
+result.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">eTag</span></td>
-        <td></td>
+        <td><p>The ETag of the task, if the task was
+successfully added.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
         <td><span class="parametername">lastModified</span></td>
-        <td></td>
+        <td><p>The last modified time of the
+task.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">location</span></td>
-        <td></td>
+        <td><p>The URL of the task, if the task was
+successfully added.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.BatchError.html">BatchError</a></td>
         <td><span class="parametername">error</span></td>
-        <td></td>
+        <td><p>The error encountered while attempting to add
+the task.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -156,7 +171,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskAddResult_Error_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddResult.Error*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddResult_Error" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddResult.Error">Error</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the error encountered while attempting to add the
+task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -182,7 +199,9 @@ public Microsoft.Azure.Batch.Protocol.Models.BatchError Error { get; set; }</cod
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskAddResult_ETag_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddResult.ETag*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddResult_ETag" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddResult.ETag">ETag</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the ETag of the task, if the task was successfully
+added.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -204,11 +223,18 @@ public string ETag { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddResult_ETag_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You can use this to detect whether the task has changed between</p>
+<p>requests. In particular, you can be pass the ETag with an Update</p>
+<p>Task request to specify that your changes should take effect only</p>
+<p>if nobody else has modified the job in the meantime.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskAddResult_LastModified_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddResult.LastModified*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddResult_LastModified" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddResult.LastModified">LastModified</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the last modified time of the task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -234,7 +260,9 @@ public Nullable&lt;DateTime&gt; LastModified { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskAddResult_Location_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddResult.Location*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddResult_Location" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddResult.Location">Location</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the URL of the task, if the task was successfully
+added.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -260,7 +288,8 @@ public string Location { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskAddResult_Status_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddResult.Status*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddResult_Status" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddResult.Status">Status</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the status of the add task request.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -282,11 +311,15 @@ public Microsoft.Azure.Batch.Protocol.Models.TaskAddStatus Status { get; set; }<
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddResult_Status_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Possible values include: 'success', 'clientError', 'serverError'</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskAddResult_TaskId_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddResult.TaskId*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddResult_TaskId" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddResult.TaskId">TaskId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the ID of the task for which this is the result.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

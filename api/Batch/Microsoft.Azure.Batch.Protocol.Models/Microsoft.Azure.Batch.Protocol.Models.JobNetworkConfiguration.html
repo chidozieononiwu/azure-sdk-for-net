@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_JobNetworkConfiguration" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobNetworkConfiguration" class="text-break">Class JobNetworkConfiguration
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The network configuration for the job.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +93,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobNetworkConfiguration__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobNetworkConfiguration.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobNetworkConfiguration__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobNetworkConfiguration.#ctor">JobNetworkConfiguration()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the JobNetworkConfiguration class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -102,7 +104,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobNetworkConfiguration__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobNetworkConfiguration.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobNetworkConfiguration__ctor_System_String_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobNetworkConfiguration.#ctor(System.String)">JobNetworkConfiguration(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the JobNetworkConfiguration class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -121,7 +124,11 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">subnetId</span></td>
-        <td></td>
+        <td><p>The ARM resource identifier of the virtual
+network subnet which nodes running tasks from the job will join for
+the duration of the task. This will only work with a
+VirtualMachineConfiguration pool.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -131,7 +138,11 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobNetworkConfiguration_SubnetId_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobNetworkConfiguration.SubnetId*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobNetworkConfiguration_SubnetId" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobNetworkConfiguration.SubnetId">SubnetId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the ARM resource identifier of the virtual network
+subnet which nodes running tasks from the job will join for the
+duration of the task. This will only work with a
+VirtualMachineConfiguration pool.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -153,6 +164,29 @@ public string SubnetId { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobNetworkConfiguration_SubnetId_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The virtual network must be in the same region and subscription as</p>
+<p>the Azure Batch account. The specified subnet should have enough</p>
+<p>free IP addresses to accommodate the number of nodes which will run</p>
+<p>tasks from the job. This can be up to the number of nodes in the</p>
+<p>pool. The 'MicrosoftAzureBatch' service principal must have the</p>
+<p>'Classic Virtual Machine Contributor' Role-Based Access Control</p>
+<p>(RBAC) role for the specified VNet so that Azure Batch service can</p>
+<p>schedule tasks on the compute nodes. This can be verified by</p>
+<p>checking if the specified VNet has any associated Network Security</p>
+<p>Groups (NSG). If communication to the compute nodes in the</p>
+<p>specified subnet is denied by an NSG, then the Batch service will</p>
+<p>set the state of the compute nodes to unusable. This is of the form</p>
+<p>/subscriptions/{subscription}/resourceGroups/{group}/providers/{provider}/virtualNetworks/{network}/subnets/{subnet}.</p>
+<p>If the specified VNet has any associated Network Security Groups</p>
+<p>(NSG), then a few reserved system ports must be enabled for inbound</p>
+<p>communication from the Azure Batch service. For pools created with</p>
+<p>a Virtual Machine configuration, enable ports 29876 and 29877, as</p>
+<p>well as port 22 for Linux and port 3389 for Windows. Port 443 is</p>
+<p>also required to be open for outbound connections for</p>
+<p>communications to Azure Storage. For more details see:</p>
+<p><a href="https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#virtual-network-vnet-and-firewall-configuration">https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#virtual-network-vnet-and-firewall-configuration</a></p>
+</div>
 </article>
           </div>
           

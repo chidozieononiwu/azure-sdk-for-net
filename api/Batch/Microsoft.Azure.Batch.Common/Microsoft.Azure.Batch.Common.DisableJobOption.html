@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Common_DisableJobOption" data-uid="Microsoft.Azure.Batch.Common.DisableJobOption" class="text-break">Enum DisableJobOption
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Specifies what to do with active tasks during a disable job operation.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Common.html">Microsoft.Azure.Batch.Common</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
@@ -93,15 +94,19 @@
     <tbody>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_DisableJobOption_Requeue">Requeue</td>
-        <td></td>
+        <td><p>Terminate running tasks and requeue them. The tasks will run again
+when the job is enabled.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_DisableJobOption_Terminate">Terminate</td>
-        <td></td>
+        <td><p>Terminate running tasks. The tasks will not run again.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_DisableJobOption_Wait">Wait</td>
-        <td></td>
+        <td><p>Allow currently running tasks to complete.</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>

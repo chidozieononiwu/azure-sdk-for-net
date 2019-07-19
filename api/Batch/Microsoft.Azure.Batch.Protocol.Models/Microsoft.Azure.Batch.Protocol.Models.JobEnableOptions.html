@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_JobEnableOptions" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobEnableOptions" class="text-break">Class JobEnableOptions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Additional parameters for Enable operation.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -97,7 +98,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobEnableOptions__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobEnableOptions.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobEnableOptions__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobEnableOptions.#ctor">JobEnableOptions()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the JobEnableOptions class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -107,7 +109,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobEnableOptions__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobEnableOptions.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobEnableOptions__ctor_System_Nullable_System_Int32__System_Nullable_System_Guid__System_Nullable_System_Boolean__System_Nullable_System_DateTime__System_String_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobEnableOptions.#ctor(System.Nullable{System.Int32},System.Nullable{System.Guid},System.Nullable{System.Boolean},System.Nullable{System.DateTime},System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime})">JobEnableOptions(Nullable&lt;Int32&gt;, Nullable&lt;Guid&gt;, Nullable&lt;Boolean&gt;, Nullable&lt;DateTime&gt;, String, String, Nullable&lt;DateTime&gt;, Nullable&lt;DateTime&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the JobEnableOptions class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -126,42 +129,69 @@
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">timeout</span></td>
-        <td></td>
+        <td><p>The maximum time that the server can spend
+processing the request, in seconds. The default is 30
+seconds.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Guid</span>&gt;</td>
         <td><span class="parametername">clientRequestId</span></td>
-        <td></td>
+        <td><p>The caller-generated request
+identity, in the form of a GUID with no decoration such as curly
+braces, e.g. 9C4D50EE-2D56-4CD3-8152-34347DC9F2B0.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">returnClientRequestId</span></td>
-        <td></td>
+        <td><p>Whether the server should
+return the client-request-id in the response.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
         <td><span class="parametername">ocpDate</span></td>
-        <td></td>
+        <td><p>The time the request was issued. Client
+libraries typically set this to the current system clock time; set
+it explicitly if you are calling the REST API directly.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">ifMatch</span></td>
-        <td></td>
+        <td><p>An ETag value associated with the version of
+the resource known to the client. The operation will be performed
+only if the resource's current ETag on the service exactly matches
+the value specified by the client.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">ifNoneMatch</span></td>
-        <td></td>
+        <td><p>An ETag value associated with the version
+of the resource known to the client. The operation will be
+performed only if the resource's current ETag on the service does
+not match the value specified by the client.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
         <td><span class="parametername">ifModifiedSince</span></td>
-        <td></td>
+        <td><p>A timestamp indicating the last
+modified time of the resource known to the client. The operation
+will be performed only if the resource on the service has been
+modified since the specified time.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
         <td><span class="parametername">ifUnmodifiedSince</span></td>
-        <td></td>
+        <td><p>A timestamp indicating the last
+modified time of the resource known to the client. The operation
+will be performed only if the resource on the service has not been
+modified since the specified time.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -171,7 +201,10 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobEnableOptions_ClientRequestId_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobEnableOptions.ClientRequestId*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobEnableOptions_ClientRequestId" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobEnableOptions.ClientRequestId">ClientRequestId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the caller-generated request identity, in the form of
+a GUID with no decoration such as curly braces, e.g.
+9C4D50EE-2D56-4CD3-8152-34347DC9F2B0.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -197,7 +230,11 @@ public Nullable&lt;Guid&gt; ClientRequestId { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobEnableOptions_IfMatch_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobEnableOptions.IfMatch*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobEnableOptions_IfMatch" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobEnableOptions.IfMatch">IfMatch</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets an ETag value associated with the version of the
+resource known to the client. The operation will be performed only
+if the resource's current ETag on the service exactly matches the
+value specified by the client.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -223,7 +260,11 @@ public string IfMatch { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobEnableOptions_IfModifiedSince_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobEnableOptions.IfModifiedSince*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobEnableOptions_IfModifiedSince" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobEnableOptions.IfModifiedSince">IfModifiedSince</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a timestamp indicating the last modified time of the
+resource known to the client. The operation will be performed only
+if the resource on the service has been modified since the
+specified time.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -250,7 +291,11 @@ public Nullable&lt;DateTime&gt; IfModifiedSince { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobEnableOptions_IfNoneMatch_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobEnableOptions.IfNoneMatch*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobEnableOptions_IfNoneMatch" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobEnableOptions.IfNoneMatch">IfNoneMatch</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets an ETag value associated with the version of the
+resource known to the client. The operation will be performed only
+if the resource's current ETag on the service does not match the
+value specified by the client.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -276,7 +321,11 @@ public string IfNoneMatch { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobEnableOptions_IfUnmodifiedSince_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobEnableOptions.IfUnmodifiedSince*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobEnableOptions_IfUnmodifiedSince" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobEnableOptions.IfUnmodifiedSince">IfUnmodifiedSince</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a timestamp indicating the last modified time of the
+resource known to the client. The operation will be performed only
+if the resource on the service has not been modified since the
+specified time.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -303,7 +352,10 @@ public Nullable&lt;DateTime&gt; IfUnmodifiedSince { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobEnableOptions_OcpDate_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobEnableOptions.OcpDate*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobEnableOptions_OcpDate" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobEnableOptions.OcpDate">OcpDate</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the time the request was issued. Client libraries
+typically set this to the current system clock time; set it
+explicitly if you are calling the REST API directly.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -330,7 +382,9 @@ public Nullable&lt;DateTime&gt; OcpDate { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobEnableOptions_ReturnClientRequestId_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobEnableOptions.ReturnClientRequestId*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobEnableOptions_ReturnClientRequestId" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobEnableOptions.ReturnClientRequestId">ReturnClientRequestId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets whether the server should return the client-request-id
+in the response.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -356,7 +410,9 @@ public Nullable&lt;bool&gt; ReturnClientRequestId { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobEnableOptions_Timeout_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobEnableOptions.Timeout*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobEnableOptions_Timeout" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobEnableOptions.Timeout">Timeout</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the maximum time that the server can spend processing
+the request, in seconds. The default is 30 seconds.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

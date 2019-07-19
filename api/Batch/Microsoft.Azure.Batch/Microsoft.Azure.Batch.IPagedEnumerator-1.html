@@ -73,7 +73,12 @@
   
   <h1 id="Microsoft_Azure_Batch_IPagedEnumerator_1" data-uid="Microsoft.Azure.Batch.IPagedEnumerator`1" class="text-break">Interface IPagedEnumerator&lt;T&gt;
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>An enumerator which exposes an asynchronous mechanism for iteration.</p>
+<p>Enumerator instances are not threadsafe.</p>
+<p>Each enumerator fetches the collection from the server.
+As a consequence, each enumerator can see different data (collection size, contents, etc.).</p>
+<p>Care should be taken to avoid multiple retrievals of the data from the server via casual use of foreach/ForeachAsync and other collection operations.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -96,7 +101,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The type of the enumerator.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -106,7 +112,8 @@
   
   <a id="Microsoft_Azure_Batch_IPagedEnumerator_1_Current_" data-uid="Microsoft.Azure.Batch.IPagedEnumerator`1.Current*"></a>
   <h4 id="Microsoft_Azure_Batch_IPagedEnumerator_1_Current" data-uid="Microsoft.Azure.Batch.IPagedEnumerator`1.Current">Current</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the element in the collection at the current position of the enumerator.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -133,7 +140,8 @@
   
   <a id="Microsoft_Azure_Batch_IPagedEnumerator_1_MoveNextAsync_" data-uid="Microsoft.Azure.Batch.IPagedEnumerator`1.MoveNextAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_IPagedEnumerator_1_MoveNextAsync_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.IPagedEnumerator`1.MoveNextAsync(System.Threading.CancellationToken)">MoveNextAsync(CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Begins an asynchronous call to advance the enumerator to the next element of the collection.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -152,7 +160,8 @@
       <tr>
         <td><span class="xref">System.Threading.CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <span class="xref">System.Threading.CancellationToken</span> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -167,7 +176,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td></td>
+        <td><p>A <span class="xref">System.Threading.Tasks.Task</span> object that represents the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -175,7 +185,8 @@
   
   <a id="Microsoft_Azure_Batch_IPagedEnumerator_1_ResetAsync_" data-uid="Microsoft.Azure.Batch.IPagedEnumerator`1.ResetAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_IPagedEnumerator_1_ResetAsync_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.IPagedEnumerator`1.ResetAsync(System.Threading.CancellationToken)">ResetAsync(CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Begins an asynchronous call to set the enumerator to its initial position, which is before the first element in the collection.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -194,7 +205,8 @@
       <tr>
         <td><span class="xref">System.Threading.CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <span class="xref">System.Threading.CancellationToken</span> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -209,7 +221,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>A <span class="xref">System.Threading.Tasks.Task</span> object that represents the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>

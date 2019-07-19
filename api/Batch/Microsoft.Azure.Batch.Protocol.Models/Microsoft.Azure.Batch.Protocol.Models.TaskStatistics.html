@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_TaskStatistics" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskStatistics" class="text-break">Class TaskStatistics
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Resource usage statistics for a task.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +93,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskStatistics__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskStatistics.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskStatistics__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskStatistics.#ctor">TaskStatistics()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the TaskStatistics class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -102,7 +104,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskStatistics__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskStatistics.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskStatistics__ctor_System_String_System_DateTime_System_DateTime_System_TimeSpan_System_TimeSpan_System_TimeSpan_System_Int64_System_Int64_System_Double_System_Double_System_TimeSpan_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskStatistics.#ctor(System.String,System.DateTime,System.DateTime,System.TimeSpan,System.TimeSpan,System.TimeSpan,System.Int64,System.Int64,System.Double,System.Double,System.TimeSpan)">TaskStatistics(String, DateTime, DateTime, TimeSpan, TimeSpan, TimeSpan, Int64, Int64, Double, Double, TimeSpan)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the TaskStatistics class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -121,57 +124,84 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">url</span></td>
-        <td></td>
+        <td><p>The URL of the statistics.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.DateTime</span></td>
         <td><span class="parametername">startTime</span></td>
-        <td></td>
+        <td><p>The start time of the time range covered by
+the statistics.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.DateTime</span></td>
         <td><span class="parametername">lastUpdateTime</span></td>
-        <td></td>
+        <td><p>The time at which the statistics were
+last updated. All statistics are limited to the range between
+startTime and lastUpdateTime.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">userCPUTime</span></td>
-        <td></td>
+        <td><p>The total user mode CPU time (summed
+across all cores and all compute nodes) consumed by the
+task.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">kernelCPUTime</span></td>
-        <td></td>
+        <td><p>The total kernel mode CPU time (summed
+across all cores and all compute nodes) consumed by the
+task.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">wallClockTime</span></td>
-        <td></td>
+        <td><p>The total wall clock time of the
+task.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">readIOps</span></td>
-        <td></td>
+        <td><p>The total number of disk read operations
+made by the task.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">writeIOps</span></td>
-        <td></td>
+        <td><p>The total number of disk write operations
+made by the task.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">readIOGiB</span></td>
-        <td></td>
+        <td><p>The total gibibytes read from disk by the
+task.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">writeIOGiB</span></td>
-        <td></td>
+        <td><p>The total gibibytes written to disk by the
+task.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">waitTime</span></td>
-        <td></td>
+        <td><p>The total wait time of the task. The wait
+time for a task is defined as the elapsed time between the creation
+of the task and the start of task execution. (If the task is
+retried due to failures, the wait time is the time to the most
+recent task execution.)</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -181,7 +211,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskStatistics_KernelCPUTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskStatistics.KernelCPUTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskStatistics_KernelCPUTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskStatistics.KernelCPUTime">KernelCPUTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the total kernel mode CPU time (summed across all
+cores and all compute nodes) consumed by the task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -207,7 +239,10 @@ public TimeSpan KernelCPUTime { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskStatistics_LastUpdateTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskStatistics.LastUpdateTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskStatistics_LastUpdateTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskStatistics.LastUpdateTime">LastUpdateTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the time at which the statistics were last updated.
+All statistics are limited to the range between startTime and
+lastUpdateTime.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -233,7 +268,8 @@ public DateTime LastUpdateTime { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskStatistics_ReadIOGiB_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskStatistics.ReadIOGiB*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskStatistics_ReadIOGiB" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskStatistics.ReadIOGiB">ReadIOGiB</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the total gibibytes read from disk by the task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -259,7 +295,9 @@ public double ReadIOGiB { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskStatistics_ReadIOps_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskStatistics.ReadIOps*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskStatistics_ReadIOps" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskStatistics.ReadIOps">ReadIOps</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the total number of disk read operations made by the
+task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -285,7 +323,9 @@ public long ReadIOps { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskStatistics_StartTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskStatistics.StartTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskStatistics_StartTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskStatistics.StartTime">StartTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the start time of the time range covered by the
+statistics.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -311,7 +351,8 @@ public DateTime StartTime { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskStatistics_Url_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskStatistics.Url*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskStatistics_Url" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskStatistics.Url">Url</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the URL of the statistics.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -337,7 +378,9 @@ public string Url { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskStatistics_UserCPUTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskStatistics.UserCPUTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskStatistics_UserCPUTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskStatistics.UserCPUTime">UserCPUTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the total user mode CPU time (summed across all cores
+and all compute nodes) consumed by the task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -363,7 +406,12 @@ public TimeSpan UserCPUTime { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskStatistics_WaitTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskStatistics.WaitTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskStatistics_WaitTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskStatistics.WaitTime">WaitTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the total wait time of the task. The wait time for a
+task is defined as the elapsed time between the creation of the
+task and the start of task execution. (If the task is retried due
+to failures, the wait time is the time to the most recent task
+execution.)</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -389,7 +437,8 @@ public TimeSpan WaitTime { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskStatistics_WallClockTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskStatistics.WallClockTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskStatistics_WallClockTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskStatistics.WallClockTime">WallClockTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the total wall clock time of the task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -411,11 +460,19 @@ public TimeSpan WallClockTime { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskStatistics_WallClockTime_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The wall clock time is the elapsed time from when the task started</p>
+<p>running on a compute node to when it finished (or to the last time</p>
+<p>the statistics were updated, if the task had not finished by then).</p>
+<p>If the task was retried, this includes the wall clock time of all</p>
+<p>the task retries.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskStatistics_WriteIOGiB_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskStatistics.WriteIOGiB*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskStatistics_WriteIOGiB" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskStatistics.WriteIOGiB">WriteIOGiB</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the total gibibytes written to disk by the task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -441,7 +498,9 @@ public double WriteIOGiB { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskStatistics_WriteIOps_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskStatistics.WriteIOps*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskStatistics_WriteIOps" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskStatistics.WriteIOps">WriteIOps</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the total number of disk write operations made by the
+task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

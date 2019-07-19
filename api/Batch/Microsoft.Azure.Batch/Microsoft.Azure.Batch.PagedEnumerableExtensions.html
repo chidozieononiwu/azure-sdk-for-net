@@ -73,7 +73,9 @@
   
   <h1 id="Microsoft_Azure_Batch_PagedEnumerableExtensions" data-uid="Microsoft.Azure.Batch.PagedEnumerableExtensions" class="text-break">Class PagedEnumerableExtensions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Provides a set of static (Shared in Visual Basic) methods for working with sequences that
+implement <a class="xref" href="Microsoft.Azure.Batch.IPagedEnumerable-1.html">IPagedEnumerable&lt;T&gt;</a>.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +94,8 @@
   
   <a id="Microsoft_Azure_Batch_PagedEnumerableExtensions_ForEachAsync_" data-uid="Microsoft.Azure.Batch.PagedEnumerableExtensions.ForEachAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_PagedEnumerableExtensions_ForEachAsync__1_Microsoft_Azure_Batch_IPagedEnumerable___0__System_Action___0__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.PagedEnumerableExtensions.ForEachAsync``1(Microsoft.Azure.Batch.IPagedEnumerable{``0},System.Action{``0},System.Threading.CancellationToken)">ForEachAsync&lt;T&gt;(IPagedEnumerable&lt;T&gt;, Action&lt;T&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Iterates over an <a class="xref" href="Microsoft.Azure.Batch.IPagedEnumerable-1.html">IPagedEnumerable&lt;T&gt;</a> sequence, invoking a synchronous delegate for each element.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -112,17 +115,20 @@ public static System.Threading.Tasks.Task ForEachAsync&lt;T&gt; (this Microsoft.
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.IPagedEnumerable-1.html">IPagedEnumerable&lt;T&gt;</a></td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="Microsoft.Azure.Batch.IPagedEnumerable-1.html">IPagedEnumerable&lt;T&gt;</a> to iterate over.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">T</span>&gt;</td>
         <td><span class="parametername">body</span></td>
-        <td></td>
+        <td><p>The delegate to execute for each element in <code data-dev-comment-type="paramref">source</code>.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Threading.CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <span class="xref">System.Threading.CancellationToken</span> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -137,7 +143,9 @@ public static System.Threading.Tasks.Task ForEachAsync&lt;T&gt; (this Microsoft.
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>A <span class="xref">System.Threading.Tasks.Task</span> that represents the iteration operation. The task
+completes when iteration is complete.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -156,11 +164,17 @@ public static System.Threading.Tasks.Task ForEachAsync&lt;T&gt; (this Microsoft.
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_PagedEnumerableExtensions_ForEachAsync__1_Microsoft_Azure_Batch_IPagedEnumerable___0__System_Action___0__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method processes elements sequentially, not concurrently.  That is, for each element in the</p>
+<pre><code>        sequence, the method completes execution of the delegate before processing the next element.
+</code></pre>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_PagedEnumerableExtensions_ForEachAsync_" data-uid="Microsoft.Azure.Batch.PagedEnumerableExtensions.ForEachAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_PagedEnumerableExtensions_ForEachAsync__1_Microsoft_Azure_Batch_IPagedEnumerable___0__System_Func___0_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.PagedEnumerableExtensions.ForEachAsync``1(Microsoft.Azure.Batch.IPagedEnumerable{``0},System.Func{``0,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken)">ForEachAsync&lt;T&gt;(IPagedEnumerable&lt;T&gt;, Func&lt;T,CancellationToken,Task&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Iterates over an <a class="xref" href="Microsoft.Azure.Batch.IPagedEnumerable-1.html">IPagedEnumerable&lt;T&gt;</a> sequence, invoking an asynchronous delegate for each element.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -180,17 +194,20 @@ public static System.Threading.Tasks.Task ForEachAsync&lt;T&gt; (this Microsoft.
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.IPagedEnumerable-1.html">IPagedEnumerable&lt;T&gt;</a></td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="Microsoft.Azure.Batch.IPagedEnumerable-1.html">IPagedEnumerable&lt;T&gt;</a> to iterate over.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Func</span>&lt;<span class="xref">T</span>,<span class="xref">System.Threading.CancellationToken</span>,<span class="xref">System.Threading.Tasks.Task</span>&gt;</td>
         <td><span class="parametername">body</span></td>
-        <td></td>
+        <td><p>The asynchronous delegate to execute for each element in <code data-dev-comment-type="paramref">source</code>.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Threading.CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <span class="xref">System.Threading.CancellationToken</span> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -205,7 +222,9 @@ public static System.Threading.Tasks.Task ForEachAsync&lt;T&gt; (this Microsoft.
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>A <span class="xref">System.Threading.Tasks.Task</span> that represents the iteration operation. The task
+completes when iteration is complete.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -224,11 +243,17 @@ public static System.Threading.Tasks.Task ForEachAsync&lt;T&gt; (this Microsoft.
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_PagedEnumerableExtensions_ForEachAsync__1_Microsoft_Azure_Batch_IPagedEnumerable___0__System_Func___0_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method processes elements sequentially, not concurrently.  That is, for each element in the</p>
+<pre><code>        sequence, the method awaits the asynchronous delegate before processing the next element.
+</code></pre>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_PagedEnumerableExtensions_ForEachAsync_" data-uid="Microsoft.Azure.Batch.PagedEnumerableExtensions.ForEachAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_PagedEnumerableExtensions_ForEachAsync__1_Microsoft_Azure_Batch_IPagedEnumerable___0__System_Func___0_System_Threading_Tasks_Task__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.PagedEnumerableExtensions.ForEachAsync``1(Microsoft.Azure.Batch.IPagedEnumerable{``0},System.Func{``0,System.Threading.Tasks.Task},System.Threading.CancellationToken)">ForEachAsync&lt;T&gt;(IPagedEnumerable&lt;T&gt;, Func&lt;T,Task&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Iterates over an <a class="xref" href="Microsoft.Azure.Batch.IPagedEnumerable-1.html">IPagedEnumerable&lt;T&gt;</a> sequence, invoking an asynchronous delegate for each element.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -248,17 +273,20 @@ public static System.Threading.Tasks.Task ForEachAsync&lt;T&gt; (this Microsoft.
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.IPagedEnumerable-1.html">IPagedEnumerable&lt;T&gt;</a></td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="Microsoft.Azure.Batch.IPagedEnumerable-1.html">IPagedEnumerable&lt;T&gt;</a> to iterate over.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Func</span>&lt;<span class="xref">T</span>,<span class="xref">System.Threading.Tasks.Task</span>&gt;</td>
         <td><span class="parametername">body</span></td>
-        <td></td>
+        <td><p>The asynchronous delegate to execute for each element in <code data-dev-comment-type="paramref">source</code>.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Threading.CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <span class="xref">System.Threading.CancellationToken</span> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -273,7 +301,9 @@ public static System.Threading.Tasks.Task ForEachAsync&lt;T&gt; (this Microsoft.
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>A <span class="xref">System.Threading.Tasks.Task</span> that represents the iteration operation. The task
+completes when iteration is complete.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -292,11 +322,17 @@ public static System.Threading.Tasks.Task ForEachAsync&lt;T&gt; (this Microsoft.
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_PagedEnumerableExtensions_ForEachAsync__1_Microsoft_Azure_Batch_IPagedEnumerable___0__System_Func___0_System_Threading_Tasks_Task__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method processes elements sequentially, not concurrently.  That is, for each element in the</p>
+<pre><code>        sequence, the method awaits the asynchronous delegate before processing the next element.
+</code></pre>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_PagedEnumerableExtensions_ToListAsync_" data-uid="Microsoft.Azure.Batch.PagedEnumerableExtensions.ToListAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_PagedEnumerableExtensions_ToListAsync__1_Microsoft_Azure_Batch_IPagedEnumerable___0__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.PagedEnumerableExtensions.ToListAsync``1(Microsoft.Azure.Batch.IPagedEnumerable{``0},System.Threading.CancellationToken)">ToListAsync&lt;T&gt;(IPagedEnumerable&lt;T&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a <span class="xref">System.Collections.Generic.List</span> from an <a class="xref" href="Microsoft.Azure.Batch.IPagedEnumerable-1.html">IPagedEnumerable&lt;T&gt;</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -316,12 +352,14 @@ public static System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.IPagedEnumerable-1.html">IPagedEnumerable&lt;T&gt;</a></td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="Microsoft.Azure.Batch.IPagedEnumerable-1.html">IPagedEnumerable&lt;T&gt;</a> to create a list from.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Threading.CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <span class="xref">System.Threading.CancellationToken</span> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -336,7 +374,9 @@ public static System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">T</span>&gt;&gt;</td>
-        <td></td>
+        <td><p>A <span class="xref">System.Threading.Tasks.Task</span> that represents the asynchronous operation. The result
+of the task is a <span class="xref">System.Collections.Generic.List</span> containing all elements of the source sequence.</p>
+</td>
       </tr>
     </tbody>
   </table>

@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Common_DependencyAction" data-uid="Microsoft.Azure.Batch.Common.DependencyAction" class="text-break">Enum DependencyAction
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>An action that the Batch service should take on tasks that depend on the task specifying the action.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Common.html">Microsoft.Azure.Batch.Common</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
@@ -93,11 +94,13 @@
     <tbody>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_DependencyAction_Block">Block</td>
-        <td></td>
+        <td><p>The dependency is not satisfied. Dependent tasks will not become eligible to run.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_DependencyAction_Satisfy">Satisfy</td>
-        <td></td>
+        <td><p>The dependency is satisfied. Once all of a dependent task's dependencies are satisfied, the dependent task is eligible to run.</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>

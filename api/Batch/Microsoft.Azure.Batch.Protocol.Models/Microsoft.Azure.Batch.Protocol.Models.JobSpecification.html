@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification" class="text-break">Class JobSpecification
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Specifies details of the jobs to be created on a schedule.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +93,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.#ctor">JobSpecification()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the JobSpecification class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -102,7 +104,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification__ctor_Microsoft_Azure_Batch_Protocol_Models_PoolInformation_System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_Nullable_Microsoft_Azure_Batch_Protocol_Models_OnAllTasksComplete__System_Nullable_Microsoft_Azure_Batch_Protocol_Models_OnTaskFailure__Microsoft_Azure_Batch_Protocol_Models_JobNetworkConfiguration_Microsoft_Azure_Batch_Protocol_Models_JobConstraints_Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_EnvironmentSetting__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_MetadataItem__" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.#ctor(Microsoft.Azure.Batch.Protocol.Models.PoolInformation,System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.Nullable{Microsoft.Azure.Batch.Protocol.Models.OnAllTasksComplete},System.Nullable{Microsoft.Azure.Batch.Protocol.Models.OnTaskFailure},Microsoft.Azure.Batch.Protocol.Models.JobNetworkConfiguration,Microsoft.Azure.Batch.Protocol.Models.JobConstraints,Microsoft.Azure.Batch.Protocol.Models.JobManagerTask,Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask,Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask,System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting},System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.MetadataItem})">JobSpecification(PoolInformation, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, Nullable&lt;OnAllTasksComplete&gt;, Nullable&lt;OnTaskFailure&gt;, JobNetworkConfiguration, JobConstraints, JobManagerTask, JobPreparationTask, JobReleaseTask, IList&lt;EnvironmentSetting&gt;, IList&lt;MetadataItem&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the JobSpecification class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -121,67 +124,101 @@
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.PoolInformation.html">PoolInformation</a></td>
         <td><span class="parametername">poolInfo</span></td>
-        <td></td>
+        <td><p>The pool on which the Batch service runs the
+tasks of jobs created under this schedule.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">priority</span></td>
-        <td></td>
+        <td><p>The priority of jobs created under this
+schedule.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">displayName</span></td>
-        <td></td>
+        <td><p>The display name for jobs created under
+this schedule.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">usesTaskDependencies</span></td>
-        <td></td>
+        <td><p>Whether tasks in the job can
+define dependencies on each other. The default is false.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.OnAllTasksComplete.html">OnAllTasksComplete</a>&gt;</td>
         <td><span class="parametername">onAllTasksComplete</span></td>
-        <td></td>
+        <td><p>The action the Batch service
+should take when all tasks in a job created under this schedule are
+in the completed state.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.OnTaskFailure.html">OnTaskFailure</a>&gt;</td>
         <td><span class="parametername">onTaskFailure</span></td>
-        <td></td>
+        <td><p>The action the Batch service should
+take when any task fails in a job created under this schedule. A
+task is considered to have failed if it have failed if has a
+failureInfo. A failureInfo is set if the task completes with a
+non-zero exit code after exhausting its retry count, or if there
+was an error starting the task, for example due to a resource file
+download error.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.JobNetworkConfiguration.html">JobNetworkConfiguration</a></td>
         <td><span class="parametername">networkConfiguration</span></td>
-        <td></td>
+        <td><p>The network configuration for
+the job.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.JobConstraints.html">JobConstraints</a></td>
         <td><span class="parametername">constraints</span></td>
-        <td></td>
+        <td><p>The execution constraints for jobs
+created under this schedule.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.html">JobManagerTask</a></td>
         <td><span class="parametername">jobManagerTask</span></td>
-        <td></td>
+        <td><p>The details of a Job Manager task to
+be launched when a job is started under this schedule.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.html">JobPreparationTask</a></td>
         <td><span class="parametername">jobPreparationTask</span></td>
-        <td></td>
+        <td><p>The Job Preparation task for jobs
+created under this schedule.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.html">JobReleaseTask</a></td>
         <td><span class="parametername">jobReleaseTask</span></td>
-        <td></td>
+        <td><p>The Job Release task for jobs created
+under this schedule.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting.html">EnvironmentSetting</a>&gt;</td>
         <td><span class="parametername">commonEnvironmentSettings</span></td>
-        <td></td>
+        <td><p>A list of common
+environment variable settings. These environment variables are set
+for all tasks in jobs created under this schedule (including the
+Job Manager, Job Preparation and Job Release tasks).</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.MetadataItem.html">MetadataItem</a>&gt;</td>
         <td><span class="parametername">metadata</span></td>
-        <td></td>
+        <td><p>A list of name-value pairs associated with
+each job created under this schedule as metadata.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -191,7 +228,11 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_CommonEnvironmentSettings_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.CommonEnvironmentSettings*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_CommonEnvironmentSettings" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.CommonEnvironmentSettings">CommonEnvironmentSettings</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a list of common environment variable settings. These
+environment variables are set for all tasks in jobs created under
+this schedule (including the Job Manager, Job Preparation and Job
+Release tasks).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -213,11 +254,17 @@ public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_CommonEnvironmentSettings_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Individual tasks can override an environment setting specified here</p>
+<p>by specifying the same setting name with a different value.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_Constraints_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.Constraints*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_Constraints" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.Constraints">Constraints</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the execution constraints for jobs created under this
+schedule.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -243,7 +290,8 @@ public Microsoft.Azure.Batch.Protocol.Models.JobConstraints Constraints { get; s
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_DisplayName_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.DisplayName*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_DisplayName" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.DisplayName">DisplayName</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the display name for jobs created under this schedule.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -265,11 +313,17 @@ public string DisplayName { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_DisplayName_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The name need not be unique and can contain any Unicode characters</p>
+<p>up to a maximum length of 1024.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_JobManagerTask_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.JobManagerTask*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_JobManagerTask" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.JobManagerTask">JobManagerTask</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the details of a Job Manager task to be launched when
+a job is started under this schedule.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -291,11 +345,20 @@ public Microsoft.Azure.Batch.Protocol.Models.JobManagerTask JobManagerTask { get
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_JobManagerTask_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the job does not specify a Job Manager task, the user must</p>
+<p>explicitly add tasks to the job using the Task API. If the job does</p>
+<p>specify a Job Manager task, the Batch service creates the Job</p>
+<p>Manager task when the job is created, and will try to schedule the</p>
+<p>Job Manager task before scheduling other tasks in the job.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_JobPreparationTask_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.JobPreparationTask*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_JobPreparationTask" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.JobPreparationTask">JobPreparationTask</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the Job Preparation task for jobs created under this
+schedule.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -317,11 +380,18 @@ public Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask JobPreparationTa
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_JobPreparationTask_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If a job has a Job Preparation task, the Batch service will run the</p>
+<p>Job Preparation task on a compute node before starting any tasks of</p>
+<p>that job on that compute node.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_JobReleaseTask_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.JobReleaseTask*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_JobReleaseTask" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.JobReleaseTask">JobReleaseTask</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the Job Release task for jobs created under this
+schedule.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -343,11 +413,22 @@ public Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask JobReleaseTask { get
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_JobReleaseTask_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The primary purpose of the Job Release task is to undo changes to</p>
+<p>compute nodes made by the Job Preparation task. Example activities</p>
+<p>include deleting local files, or shutting down services that were</p>
+<p>started as part of job preparation. A Job Release task cannot be</p>
+<p>specified without also specifying a Job Preparation task for the</p>
+<p>job. The Batch service runs the Job Release task on the compute</p>
+<p>nodes that have run the Job Preparation task.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_Metadata_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.Metadata*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_Metadata" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.Metadata">Metadata</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a list of name-value pairs associated with each job
+created under this schedule as metadata.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -369,11 +450,16 @@ public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_Metadata_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Batch service does not assign any meaning to metadata; it is</p>
+<p>solely for the use of user code.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_NetworkConfiguration_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.NetworkConfiguration*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_NetworkConfiguration" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.NetworkConfiguration">NetworkConfiguration</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the network configuration for the job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -399,7 +485,10 @@ public Microsoft.Azure.Batch.Protocol.Models.JobNetworkConfiguration NetworkConf
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_OnAllTasksComplete_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.OnAllTasksComplete*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_OnAllTasksComplete" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.OnAllTasksComplete">OnAllTasksComplete</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the action the Batch service should take when all
+tasks in a job created under this schedule are in the completed
+state.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -421,11 +510,26 @@ public Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.OnAllTasksComplete&gt; 
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_OnAllTasksComplete_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note that if a job contains no tasks, then all tasks are considered</p>
+<p>complete. This option is therefore most commonly used with a Job</p>
+<p>Manager task; if you want to use automatic job termination without</p>
+<p>a Job Manager, you should initially set onAllTasksComplete to</p>
+<p>noaction and update the job properties to set onAllTasksComplete to</p>
+<p>terminatejob once you have finished adding tasks. The default is</p>
+<p>noaction. Possible values include: 'noAction', 'terminateJob'</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_OnTaskFailure_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.OnTaskFailure*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_OnTaskFailure" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.OnTaskFailure">OnTaskFailure</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the action the Batch service should take when any task
+fails in a job created under this schedule. A task is considered to
+have failed if it have failed if has a failureInfo. A failureInfo
+is set if the task completes with a non-zero exit code after
+exhausting its retry count, or if there was an error starting the
+task, for example due to a resource file download error.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -447,11 +551,17 @@ public Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.OnTaskFailure&gt; OnTas
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_OnTaskFailure_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default is noaction. Possible values include: 'noAction',</p>
+<p>'performExitOptionsJobAction'</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_PoolInfo_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.PoolInfo*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_PoolInfo" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.PoolInfo">PoolInfo</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the pool on which the Batch service runs the tasks of
+jobs created under this schedule.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -477,7 +587,8 @@ public Microsoft.Azure.Batch.Protocol.Models.PoolInformation PoolInfo { get; set
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_Priority_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.Priority*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_Priority" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.Priority">Priority</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the priority of jobs created under this schedule.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -499,11 +610,20 @@ public Nullable&lt;int&gt; Priority { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_Priority_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Priority values can range from -1000 to 1000, with -1000 being the</p>
+<p>lowest priority and 1000 being the highest priority. The default</p>
+<p>value is 0. This priority is used as the default for all jobs under</p>
+<p>the job schedule. You can update a job's priority after it has been</p>
+<p>created using by using the update job API.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_UsesTaskDependencies_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.UsesTaskDependencies*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobSpecification_UsesTaskDependencies" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.UsesTaskDependencies">UsesTaskDependencies</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets whether tasks in the job can define dependencies on
+each other. The default is false.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

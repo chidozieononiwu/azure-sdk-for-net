@@ -73,7 +73,9 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask" class="text-break">Class JobReleaseTask
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>A Job Release task to run on job completion on any compute node where
+the job has run.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -86,13 +88,33 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class JobReleaseTask</code></pre>
   </div>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The Job Release task runs when the job ends, because of one of the</p>
+<p>following: The user calls the Terminate Job API, or the Delete Job API</p>
+<p>while the job is still active, the job's maximum wall clock time</p>
+<p>constraint is reached, and the job is still active, or the job's Job</p>
+<p>Manager task completed, and the job is configured to terminate when the</p>
+<p>Job Manager completes. The Job Release task runs on each compute node</p>
+<p>where tasks of the job have run and the Job Preparation task ran and</p>
+<p>completed. If you reimage a compute node after it has run the Job</p>
+<p>Preparation task, and the job ends without any further tasks of the job</p>
+<p>running on that compute node (and hence the Job Preparation task does</p>
+<p>not re-run), then the Job Release task does not run on that node. If a</p>
+<p>compute node reboots while the Job Release task is still running, the</p>
+<p>Job Release task runs again when the compute node starts up. The job is</p>
+<p>not marked as complete until all Job Release tasks have completed. The</p>
+<p>Job Release task runs in the background. It does not occupy a</p>
+<p>scheduling slot; that is, it does not count towards the maxTasksPerNode</p>
+<p>limit specified on the pool.</p>
+</div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.#ctor">JobReleaseTask()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the JobReleaseTask class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -102,7 +124,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask__ctor_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskContainerSettings_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_ResourceFile__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_EnvironmentSetting__System_Nullable_System_TimeSpan__System_Nullable_System_TimeSpan__Microsoft_Azure_Batch_Protocol_Models_UserIdentity_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.#ctor(System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskContainerSettings,System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.ResourceFile},System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting},System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},Microsoft.Azure.Batch.Protocol.Models.UserIdentity)">JobReleaseTask(String, String, TaskContainerSettings, IList&lt;ResourceFile&gt;, IList&lt;EnvironmentSetting&gt;, Nullable&lt;TimeSpan&gt;, Nullable&lt;TimeSpan&gt;, UserIdentity)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the JobReleaseTask class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -121,42 +144,72 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">commandLine</span></td>
-        <td></td>
+        <td><p>The command line of the Job Release
+task.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">id</span></td>
-        <td></td>
+        <td><p>A string that uniquely identifies the Job Release
+task within the job.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskContainerSettings.html">TaskContainerSettings</a></td>
         <td><span class="parametername">containerSettings</span></td>
-        <td></td>
+        <td><p>The settings for the container
+under which the Job Release task runs.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ResourceFile.html">ResourceFile</a>&gt;</td>
         <td><span class="parametername">resourceFiles</span></td>
-        <td></td>
+        <td><p>A list of files that the Batch service
+will download to the compute node before running the command line.
+There is a maximum size for the list of resource files.  When the
+max size is exceeded, the request will fail and the response error
+code will be RequestEntityTooLarge. If this occurs, the collection
+of ResourceFiles must be reduced in size. This can be achieved
+using .zip files, Application Packages, or Docker
+Containers.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting.html">EnvironmentSetting</a>&gt;</td>
         <td><span class="parametername">environmentSettings</span></td>
-        <td></td>
+        <td><p>A list of environment variable
+settings for the Job Release task.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
         <td><span class="parametername">maxWallClockTime</span></td>
-        <td></td>
+        <td><p>The maximum elapsed time that the
+Job Release task may run on a given compute node, measured from the
+time the task starts. If the task does not complete within the time
+limit, the Batch service terminates it. The default value is 15
+minutes. You may not specify a timeout longer than 15 minutes. If
+you do, the Batch service rejects it with an error; if you are
+calling the REST API directly, the HTTP status code is 400 (Bad
+Request).</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
         <td><span class="parametername">retentionTime</span></td>
-        <td></td>
+        <td><p>The minimum time to retain the task
+directory for the Job Release task on the compute node. After this
+time, the Batch service may delete the task directory and all its
+contents.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.UserIdentity.html">UserIdentity</a></td>
         <td><span class="parametername">userIdentity</span></td>
-        <td></td>
+        <td><p>The user identity under which the Job
+Release task runs.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -166,7 +219,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_CommandLine_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.CommandLine*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_CommandLine" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.CommandLine">CommandLine</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the command line of the Job Release task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -188,11 +242,24 @@ public string CommandLine { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_CommandLine_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The command line does not run under a shell, and therefore cannot</p>
+<p>take advantage of shell features such as environment variable</p>
+<p>expansion. If you want to take advantage of such features, you</p>
+<p>should invoke the shell in the command line, for example using &quot;cmd</p>
+<p>/c MyCommand&quot; in Windows or &quot;/bin/sh -c MyCommand&quot; in Linux. If the</p>
+<p>command line refers to file paths, it should use a relative path</p>
+<p>(relative to the task working directory), or use the Batch provided</p>
+<p>environment variable</p>
+<p>(<a href="https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables">https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables</a>).</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_ContainerSettings_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.ContainerSettings*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_ContainerSettings" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.ContainerSettings">ContainerSettings</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the settings for the container under which the Job
+Release task runs.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -214,11 +281,23 @@ public Microsoft.Azure.Batch.Protocol.Models.TaskContainerSettings ContainerSett
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_ContainerSettings_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When this is specified, all directories recursively below the</p>
+<p>AZ_BATCH_NODE_ROOT_DIR (the root of Azure Batch directories on the</p>
+<p>node) are mapped into the container, all task environment variables</p>
+<p>are mapped into the container, and the task command line is</p>
+<p>executed in the container. Files produced in the container outside</p>
+<p>of AZ_BATCH_NODE_ROOT_DIR might not be reflected to the host disk,</p>
+<p>meaning that Batch file APIs will not be able to access those</p>
+<p>files.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_EnvironmentSettings_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.EnvironmentSettings*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_EnvironmentSettings" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.EnvironmentSettings">EnvironmentSettings</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a list of environment variable settings for the Job
+Release task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -244,7 +323,9 @@ public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_Id_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.Id*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_Id" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.Id">Id</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a string that uniquely identifies the Job Release task
+within the job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -266,11 +347,28 @@ public string Id { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_Id_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The ID can contain any combination of alphanumeric characters</p>
+<p>including hyphens and underscores and cannot contain more than 64</p>
+<p>characters. If you do not specify this property, the Batch service</p>
+<p>assigns a default value of 'jobrelease'. No other task in the job</p>
+<p>can have the same ID as the Job Release task. If you try to submit</p>
+<p>a task with the same id, the Batch service rejects the request with</p>
+<p>error code TaskIdSameAsJobReleaseTask; if you are calling the REST</p>
+<p>API directly, the HTTP status code is 409 (Conflict).</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_MaxWallClockTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.MaxWallClockTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_MaxWallClockTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.MaxWallClockTime">MaxWallClockTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the maximum elapsed time that the Job Release task may
+run on a given compute node, measured from the time the task
+starts. If the task does not complete within the time limit, the
+Batch service terminates it. The default value is 15 minutes. You
+may not specify a timeout longer than 15 minutes. If you do, the
+Batch service rejects it with an error; if you are calling the REST
+API directly, the HTTP status code is 400 (Bad Request).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -296,7 +394,14 @@ public Nullable&lt;TimeSpan&gt; MaxWallClockTime { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_ResourceFiles_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.ResourceFiles*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_ResourceFiles" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.ResourceFiles">ResourceFiles</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a list of files that the Batch service will download
+to the compute node before running the command line.  There is a
+maximum size for the list of resource files.  When the max size is
+exceeded, the request will fail and the response error code will be
+RequestEntityTooLarge. If this occurs, the collection of
+ResourceFiles must be reduced in size. This can be achieved using
+.zip files, Application Packages, or Docker Containers.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -318,11 +423,18 @@ public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_ResourceFiles_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Files listed under this element are located in the task's working</p>
+<p>directory.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_RetentionTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.RetentionTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_RetentionTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.RetentionTime">RetentionTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the minimum time to retain the task directory for the
+Job Release task on the compute node. After this time, the Batch
+service may delete the task directory and all its contents.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -344,11 +456,17 @@ public Nullable&lt;TimeSpan&gt; RetentionTime { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_RetentionTime_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default is 7 days, i.e. the task directory will be retained for</p>
+<p>7 days unless the compute node is removed or the job is deleted.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_UserIdentity_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.UserIdentity*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_UserIdentity" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.UserIdentity">UserIdentity</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the user identity under which the Job Release task
+runs.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -370,6 +488,10 @@ public Microsoft.Azure.Batch.Protocol.Models.UserIdentity UserIdentity { get; se
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_UserIdentity_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If omitted, the task runs as a non-administrative user unique to</p>
+<p>the task.</p>
+</div>
 </article>
           </div>
           

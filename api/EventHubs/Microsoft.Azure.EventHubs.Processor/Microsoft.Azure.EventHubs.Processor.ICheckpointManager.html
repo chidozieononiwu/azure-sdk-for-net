@@ -73,7 +73,13 @@
   
   <h1 id="Microsoft_Azure_EventHubs_Processor_ICheckpointManager" data-uid="Microsoft.Azure.EventHubs.Processor.ICheckpointManager" class="text-break">Interface ICheckpointManager
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>If you wish to have EventProcessorHost store checkpoints somewhere other than Azure Storage,
+you can write your own checkpoint manager using this interface.</p>
+<p>The Azure Storage managers use the same storage for both lease and checkpoints, so both
+interfaces are implemented by the same class. You are free to do the same thing if you have
+a unified store for both types of data.</p><p>This interface does not specify initialization methods because we have no way of knowing what
+information your implementation will require.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.EventHubs.Processor.html">Microsoft.Azure.EventHubs.Processor</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.EventHubs.Processor.dll</h6>
@@ -87,7 +93,8 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_ICheckpointManager_CheckpointStoreExistsAsync_" data-uid="Microsoft.Azure.EventHubs.Processor.ICheckpointManager.CheckpointStoreExistsAsync*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_ICheckpointManager_CheckpointStoreExistsAsync" data-uid="Microsoft.Azure.EventHubs.Processor.ICheckpointManager.CheckpointStoreExistsAsync">CheckpointStoreExistsAsync()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Does the checkpoint store exist?</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -104,7 +111,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td></td>
+        <td><p>true if it exists, false if not</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -112,7 +120,9 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_ICheckpointManager_CreateCheckpointIfNotExistsAsync_" data-uid="Microsoft.Azure.EventHubs.Processor.ICheckpointManager.CreateCheckpointIfNotExistsAsync*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_ICheckpointManager_CreateCheckpointIfNotExistsAsync_System_String_" data-uid="Microsoft.Azure.EventHubs.Processor.ICheckpointManager.CreateCheckpointIfNotExistsAsync(System.String)">CreateCheckpointIfNotExistsAsync(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Create the checkpoint for the given partition if it doesn't exist. Do nothing if it does exist.
+The offset/sequenceNumber for a freshly-created checkpoint should be set to StartOfStream/0.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -131,7 +141,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">partitionId</span></td>
-        <td></td>
+        <td><p>Id of partition to create the checkpoint for.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -146,7 +157,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.EventHubs.Processor.Checkpoint.html">Checkpoint</a>&gt;</td>
-        <td></td>
+        <td><p>The checkpoint for the given partition, whether newly created or already existing.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -154,7 +166,8 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_ICheckpointManager_CreateCheckpointStoreIfNotExistsAsync_" data-uid="Microsoft.Azure.EventHubs.Processor.ICheckpointManager.CreateCheckpointStoreIfNotExistsAsync*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_ICheckpointManager_CreateCheckpointStoreIfNotExistsAsync" data-uid="Microsoft.Azure.EventHubs.Processor.ICheckpointManager.CreateCheckpointStoreIfNotExistsAsync">CreateCheckpointStoreIfNotExistsAsync()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Create the checkpoint store if it doesn't exist. Do nothing if it does exist.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -171,7 +184,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td></td>
+        <td><p>true if the checkpoint store already exists or was created OK, false if there was a failure</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -179,7 +193,9 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_ICheckpointManager_DeleteCheckpointAsync_" data-uid="Microsoft.Azure.EventHubs.Processor.ICheckpointManager.DeleteCheckpointAsync*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_ICheckpointManager_DeleteCheckpointAsync_System_String_" data-uid="Microsoft.Azure.EventHubs.Processor.ICheckpointManager.DeleteCheckpointAsync(System.String)">DeleteCheckpointAsync(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Delete the stored checkpoint for the given partition. If there is no stored checkpoint for the
+given partition, that is treated as success.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -198,7 +214,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">partitionId</span></td>
-        <td></td>
+        <td><p>id of partition to delete checkpoint from store</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -221,7 +238,9 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_ICheckpointManager_GetCheckpointAsync_" data-uid="Microsoft.Azure.EventHubs.Processor.ICheckpointManager.GetCheckpointAsync*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_ICheckpointManager_GetCheckpointAsync_System_String_" data-uid="Microsoft.Azure.EventHubs.Processor.ICheckpointManager.GetCheckpointAsync(System.String)">GetCheckpointAsync(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get the checkpoint data associated with the given partition. Could return null if no checkpoint has
+been created for that partition.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -240,7 +259,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">partitionId</span></td>
-        <td></td>
+        <td><p>Id of partition to get checkpoint info for.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -255,7 +275,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.EventHubs.Processor.Checkpoint.html">Checkpoint</a>&gt;</td>
-        <td></td>
+        <td><p>Checkpoint info for the given partition, or null if none has been previously stored.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -263,7 +284,8 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_ICheckpointManager_UpdateCheckpointAsync_" data-uid="Microsoft.Azure.EventHubs.Processor.ICheckpointManager.UpdateCheckpointAsync*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_ICheckpointManager_UpdateCheckpointAsync_Microsoft_Azure_EventHubs_Processor_Lease_Microsoft_Azure_EventHubs_Processor_Checkpoint_" data-uid="Microsoft.Azure.EventHubs.Processor.ICheckpointManager.UpdateCheckpointAsync(Microsoft.Azure.EventHubs.Processor.Lease,Microsoft.Azure.EventHubs.Processor.Checkpoint)">UpdateCheckpointAsync(Lease, Checkpoint)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Update the checkpoint in the store with the offset/sequenceNumber in the provided checkpoint.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -282,12 +304,14 @@
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.Processor.Lease.html">Lease</a></td>
         <td><span class="parametername">lease</span></td>
-        <td></td>
+        <td><p>Partition information against which to perform a checkpoint.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.Processor.Checkpoint.html">Checkpoint</a></td>
         <td><span class="parametername">checkpoint</span></td>
-        <td></td>
+        <td><p>offset/sequeceNumber to update the store with.</p>
+</td>
       </tr>
     </tbody>
   </table>

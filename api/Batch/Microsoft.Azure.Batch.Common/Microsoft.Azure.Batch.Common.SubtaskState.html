@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Common_SubtaskState" data-uid="Microsoft.Azure.Batch.Common.SubtaskState" class="text-break">Enum SubtaskState
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The state of a subtask.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Common.html">Microsoft.Azure.Batch.Common</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
@@ -93,15 +94,23 @@
     <tbody>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_SubtaskState_Completed">Completed</td>
-        <td></td>
+        <td><p>The subtask is no longer eligible to run, usually because the it has
+finished successfully, or the subtask has finished unsuccessfully and
+has exhausted its retry limit.  A subtask is also marked as completed
+if an error occurred launching the subtask, or when the subtask has been
+terminated.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_SubtaskState_Preparing">Preparing</td>
-        <td></td>
+        <td><p>The subtask has been assigned to a compute node, but is waiting for a
+required Job Preparation task to complete on the node.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_SubtaskState_Running">Running</td>
-        <td></td>
+        <td><p>The subtask is running on a compute node.</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>

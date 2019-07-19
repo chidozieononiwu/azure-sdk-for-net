@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Conventions_Files_OutputFileReference" data-uid="Microsoft.Azure.Batch.Conventions.Files.OutputFileReference" class="text-break">Class OutputFileReference
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>A reference to a task or job output file in persistent storage.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +93,10 @@
   
   <a id="Microsoft_Azure_Batch_Conventions_Files_OutputFileReference_CloudBlob_" data-uid="Microsoft.Azure.Batch.Conventions.Files.OutputFileReference.CloudBlob*"></a>
   <h4 id="Microsoft_Azure_Batch_Conventions_Files_OutputFileReference_CloudBlob" data-uid="Microsoft.Azure.Batch.Conventions.Files.OutputFileReference.CloudBlob">CloudBlob</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a reference to the underlying <span class="xref">Microsoft.WindowsAzure.Storage.Blob.ICloudBlob</span> object representing the
+file in persistent storage. This can be used to invoke blob methods or overloads not surfaced
+by the <a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.OutputFileReference.html">OutputFileReference</a> abstraction.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -117,7 +121,8 @@
   
   <a id="Microsoft_Azure_Batch_Conventions_Files_OutputFileReference_FilePath_" data-uid="Microsoft.Azure.Batch.Conventions.Files.OutputFileReference.FilePath*"></a>
   <h4 id="Microsoft_Azure_Batch_Conventions_Files_OutputFileReference_FilePath" data-uid="Microsoft.Azure.Batch.Conventions.Files.OutputFileReference.FilePath">FilePath</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the path under which the file was stored.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -138,11 +143,19 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Conventions_Files_OutputFileReference_FilePath_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the file was stored under a directory path, the FilePath property uses the directory</p>
+<pre><code>        separator of the underlying blob storage (for example, mydirectory/myfile.txt). Such paths may
+
+        not be directly usable as Windows paths.
+</code></pre>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Conventions_Files_OutputFileReference_Uri_" data-uid="Microsoft.Azure.Batch.Conventions.Files.OutputFileReference.Uri*"></a>
   <h4 id="Microsoft_Azure_Batch_Conventions_Files_OutputFileReference_Uri" data-uid="Microsoft.Azure.Batch.Conventions.Files.OutputFileReference.Uri">Uri</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the URI of the file in persistent storage.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -169,7 +182,8 @@
   
   <a id="Microsoft_Azure_Batch_Conventions_Files_OutputFileReference_DeleteAsync_" data-uid="Microsoft.Azure.Batch.Conventions.Files.OutputFileReference.DeleteAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Conventions_Files_OutputFileReference_DeleteAsync_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Conventions.Files.OutputFileReference.DeleteAsync(System.Threading.CancellationToken)">DeleteAsync(CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deletes the file from persistent storage.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -189,7 +203,8 @@ public System.Threading.Tasks.Task DeleteAsync (System.Threading.CancellationTok
       <tr>
         <td><span class="xref">System.Threading.CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <span class="xref">System.Threading.CancellationToken</span> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -204,7 +219,8 @@ public System.Threading.Tasks.Task DeleteAsync (System.Threading.CancellationTok
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>A <span class="xref">System.Threading.Tasks.Task</span> that represents the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -212,7 +228,8 @@ public System.Threading.Tasks.Task DeleteAsync (System.Threading.CancellationTok
   
   <a id="Microsoft_Azure_Batch_Conventions_Files_OutputFileReference_DownloadToByteArrayAsync_" data-uid="Microsoft.Azure.Batch.Conventions.Files.OutputFileReference.DownloadToByteArrayAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Conventions_Files_OutputFileReference_DownloadToByteArrayAsync_System_Byte___System_Int32_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Conventions.Files.OutputFileReference.DownloadToByteArrayAsync(System.Byte[],System.Int32,System.Threading.CancellationToken)">DownloadToByteArrayAsync(Byte[], Int32, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Downloads the contents of the file to a byte array.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -232,17 +249,20 @@ public System.Threading.Tasks.Task&lt;int&gt; DownloadToByteArrayAsync (byte[] t
       <tr>
         <td><span class="xref">System.Byte</span>[]</td>
         <td><span class="parametername">target</span></td>
-        <td></td>
+        <td><p>The target byte array.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">index</span></td>
-        <td></td>
+        <td><p>The starting offset in the byte array</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Threading.CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <span class="xref">System.Threading.CancellationToken</span> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -257,7 +277,8 @@ public System.Threading.Tasks.Task&lt;int&gt; DownloadToByteArrayAsync (byte[] t
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
-        <td></td>
+        <td><p>The total number of bytes read into the buffer.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -265,7 +286,8 @@ public System.Threading.Tasks.Task&lt;int&gt; DownloadToByteArrayAsync (byte[] t
   
   <a id="Microsoft_Azure_Batch_Conventions_Files_OutputFileReference_DownloadToFileAsync_" data-uid="Microsoft.Azure.Batch.Conventions.Files.OutputFileReference.DownloadToFileAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Conventions_Files_OutputFileReference_DownloadToFileAsync_System_String_System_IO_FileMode_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Conventions.Files.OutputFileReference.DownloadToFileAsync(System.String,System.IO.FileMode,System.Threading.CancellationToken)">DownloadToFileAsync(String, FileMode, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Downloads the contents of the file to a specified path.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -285,17 +307,20 @@ public System.Threading.Tasks.Task DownloadToFileAsync (string path, System.IO.F
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">path</span></td>
-        <td></td>
+        <td><p>The path to which to download the file.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.IO.FileMode</span></td>
         <td><span class="parametername">mode</span></td>
-        <td></td>
+        <td><p>Specifies how to open or create the file.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Threading.CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <span class="xref">System.Threading.CancellationToken</span> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -310,7 +335,8 @@ public System.Threading.Tasks.Task DownloadToFileAsync (string path, System.IO.F
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>A <span class="xref">System.Threading.Tasks.Task</span> that represents the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -318,7 +344,8 @@ public System.Threading.Tasks.Task DownloadToFileAsync (string path, System.IO.F
   
   <a id="Microsoft_Azure_Batch_Conventions_Files_OutputFileReference_DownloadToStreamAsync_" data-uid="Microsoft.Azure.Batch.Conventions.Files.OutputFileReference.DownloadToStreamAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Conventions_Files_OutputFileReference_DownloadToStreamAsync_System_IO_Stream_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Conventions.Files.OutputFileReference.DownloadToStreamAsync(System.IO.Stream,System.Threading.CancellationToken)">DownloadToStreamAsync(Stream, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Downloads the contents of the file to a stream.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -338,12 +365,14 @@ public System.Threading.Tasks.Task DownloadToStreamAsync (System.IO.Stream targe
       <tr>
         <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">target</span></td>
-        <td></td>
+        <td><p>The target stream.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Threading.CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <span class="xref">System.Threading.CancellationToken</span> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -358,7 +387,8 @@ public System.Threading.Tasks.Task DownloadToStreamAsync (System.IO.Stream targe
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>A <span class="xref">System.Threading.Tasks.Task</span> that represents the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -366,7 +396,8 @@ public System.Threading.Tasks.Task DownloadToStreamAsync (System.IO.Stream targe
   
   <a id="Microsoft_Azure_Batch_Conventions_Files_OutputFileReference_OpenReadAsync_" data-uid="Microsoft.Azure.Batch.Conventions.Files.OutputFileReference.OpenReadAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Conventions_Files_OutputFileReference_OpenReadAsync_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Conventions.Files.OutputFileReference.OpenReadAsync(System.Threading.CancellationToken)">OpenReadAsync(CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Opens a stream for reading from the file in persistent storage.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -386,7 +417,8 @@ public System.Threading.Tasks.Task&lt;System.IO.Stream&gt; OpenReadAsync (System
       <tr>
         <td><span class="xref">System.Threading.CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <span class="xref">System.Threading.CancellationToken</span> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -401,7 +433,8 @@ public System.Threading.Tasks.Task&lt;System.IO.Stream&gt; OpenReadAsync (System
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.IO.Stream</span>&gt;</td>
-        <td></td>
+        <td><p>A stream to be used for reading from the blob.</p>
+</td>
       </tr>
     </tbody>
   </table>

@@ -73,7 +73,9 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_AutoPoolSpecification" data-uid="Microsoft.Azure.Batch.Protocol.Models.AutoPoolSpecification" class="text-break">Class AutoPoolSpecification
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Specifies characteristics for a temporary 'auto pool'. The Batch
+service will create this auto pool when the job is submitted.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +94,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_AutoPoolSpecification__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.AutoPoolSpecification.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_AutoPoolSpecification__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.AutoPoolSpecification.#ctor">AutoPoolSpecification()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the AutoPoolSpecification class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -102,7 +105,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_AutoPoolSpecification__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.AutoPoolSpecification.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_AutoPoolSpecification__ctor_Microsoft_Azure_Batch_Protocol_Models_PoolLifetimeOption_System_String_System_Nullable_System_Boolean__Microsoft_Azure_Batch_Protocol_Models_PoolSpecification_" data-uid="Microsoft.Azure.Batch.Protocol.Models.AutoPoolSpecification.#ctor(Microsoft.Azure.Batch.Protocol.Models.PoolLifetimeOption,System.String,System.Nullable{System.Boolean},Microsoft.Azure.Batch.Protocol.Models.PoolSpecification)">AutoPoolSpecification(PoolLifetimeOption, String, Nullable&lt;Boolean&gt;, PoolSpecification)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the AutoPoolSpecification class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -121,22 +125,31 @@
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.PoolLifetimeOption.html">PoolLifetimeOption</a></td>
         <td><span class="parametername">poolLifetimeOption</span></td>
-        <td></td>
+        <td><p>The minimum lifetime of created
+auto pools, and how multiple jobs on a schedule are assigned to
+pools.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">autoPoolIdPrefix</span></td>
-        <td></td>
+        <td><p>A prefix to be added to the unique
+identifier when a pool is automatically created.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">keepAlive</span></td>
-        <td></td>
+        <td><p>Whether to keep an auto pool alive after
+its lifetime expires.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.PoolSpecification.html">PoolSpecification</a></td>
         <td><span class="parametername">pool</span></td>
-        <td></td>
+        <td><p>The pool specification for the auto
+pool.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -146,7 +159,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_AutoPoolSpecification_AutoPoolIdPrefix_" data-uid="Microsoft.Azure.Batch.Protocol.Models.AutoPoolSpecification.AutoPoolIdPrefix*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_AutoPoolSpecification_AutoPoolIdPrefix" data-uid="Microsoft.Azure.Batch.Protocol.Models.AutoPoolSpecification.AutoPoolIdPrefix">AutoPoolIdPrefix</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a prefix to be added to the unique identifier when a
+pool is automatically created.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -168,11 +183,19 @@ public string AutoPoolIdPrefix { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_AutoPoolSpecification_AutoPoolIdPrefix_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Batch service assigns each auto pool a unique identifier on</p>
+<p>creation. To distinguish between pools created for different</p>
+<p>purposes, you can specify this element to add a prefix to the ID</p>
+<p>that is assigned. The prefix can be up to 20 characters long.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_AutoPoolSpecification_KeepAlive_" data-uid="Microsoft.Azure.Batch.Protocol.Models.AutoPoolSpecification.KeepAlive*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_AutoPoolSpecification_KeepAlive" data-uid="Microsoft.Azure.Batch.Protocol.Models.AutoPoolSpecification.KeepAlive">KeepAlive</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets whether to keep an auto pool alive after its lifetime
+expires.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -194,11 +217,19 @@ public Nullable&lt;bool&gt; KeepAlive { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_AutoPoolSpecification_KeepAlive_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If false, the Batch service deletes the pool once its lifetime (as</p>
+<p>determined by the poolLifetimeOption setting) expires; that is,</p>
+<p>when the job or job schedule completes. If true, the Batch service</p>
+<p>does not delete the pool automatically. It is up to the user to</p>
+<p>delete auto pools created with this option.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_AutoPoolSpecification_Pool_" data-uid="Microsoft.Azure.Batch.Protocol.Models.AutoPoolSpecification.Pool*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_AutoPoolSpecification_Pool" data-uid="Microsoft.Azure.Batch.Protocol.Models.AutoPoolSpecification.Pool">Pool</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the pool specification for the auto pool.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -224,7 +255,9 @@ public Microsoft.Azure.Batch.Protocol.Models.PoolSpecification Pool { get; set; 
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_AutoPoolSpecification_PoolLifetimeOption_" data-uid="Microsoft.Azure.Batch.Protocol.Models.AutoPoolSpecification.PoolLifetimeOption*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_AutoPoolSpecification_PoolLifetimeOption" data-uid="Microsoft.Azure.Batch.Protocol.Models.AutoPoolSpecification.PoolLifetimeOption">PoolLifetimeOption</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the minimum lifetime of created auto pools, and how
+multiple jobs on a schedule are assigned to pools.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -246,6 +279,9 @@ public Microsoft.Azure.Batch.Protocol.Models.PoolLifetimeOption PoolLifetimeOpti
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_AutoPoolSpecification_PoolLifetimeOption_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Possible values include: 'jobSchedule', 'job'</p>
+</div>
 </article>
           </div>
           

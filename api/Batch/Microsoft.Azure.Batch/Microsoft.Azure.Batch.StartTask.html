@@ -73,7 +73,9 @@
   
   <h1 id="Microsoft_Azure_Batch_StartTask" data-uid="Microsoft.Azure.Batch.StartTask" class="text-break">Class StartTask
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>A task which is run when a compute node joins a pool in the Azure Batch service, or when the compute node is rebooted
+or reimaged.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -86,6 +88,17 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class StartTask</code></pre>
   </div>
+  <h5 id="Microsoft_Azure_Batch_StartTask_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Batch will retry tasks when a recovery operation is triggered on a compute node. Examples of recovery operations 
+      include (but are not limited to) when an unhealthy compute node is rebooted or a compute node disappeared due to 
+      host failure. Retries due to recovery operations are independent of and are not counted against the <a class="xref" href="Microsoft.Azure.Batch.TaskConstraints.html#Microsoft_Azure_Batch_TaskConstraints_MaxTaskRetryCount">MaxTaskRetryCount</a>. Even if the <a class="xref" href="Microsoft.Azure.Batch.TaskConstraints.html#Microsoft_Azure_Batch_TaskConstraints_MaxTaskRetryCount">MaxTaskRetryCount</a> is 0, an internal retry due to a recovery operation 
+      may occur. Because of this, all tasks should be idempotent. This means tasks need to tolerate being interrupted and 
+      restarted without causing any corruption or duplicate data.</p>
+<p>The best practice for long running tasks 
+      is to use some form of checkpointing. Special care should be taken to avoid start tasks which create breakaway process 
+      or install/launch services from the start task working directory, as this will block Batch from being able to re-run 
+      the start task.</p>
+</div>
   <h3 id="constructors">Constructors
   </h3>
   
@@ -102,7 +115,8 @@
   
   <a id="Microsoft_Azure_Batch_StartTask__ctor_" data-uid="Microsoft.Azure.Batch.StartTask.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_StartTask__ctor_System_String_" data-uid="Microsoft.Azure.Batch.StartTask.#ctor(System.String)">StartTask(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.StartTask.html">StartTask</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -121,7 +135,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">commandLine</span></td>
-        <td></td>
+        <td><p>The command line of the task.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -131,7 +146,8 @@
   
   <a id="Microsoft_Azure_Batch_StartTask_CommandLine_" data-uid="Microsoft.Azure.Batch.StartTask.CommandLine*"></a>
   <h4 id="Microsoft_Azure_Batch_StartTask_CommandLine" data-uid="Microsoft.Azure.Batch.StartTask.CommandLine">CommandLine</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the command line of the task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -152,11 +168,19 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_StartTask_CommandLine_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The command line does not run under a shell, and therefore cannot take advantage of shell features such as environment</p>
+<p>variable expansion. If you want to take advantage of such features, you should invoke the shell in the command</p>
+<p>line, for example using &quot;cmd /c MyCommand&quot; in Windows or &quot;/bin/sh -c MyCommand&quot; in Linux. If the command line</p>
+<p>refers to file paths, it should use a relative path (relative to the task working directory), or use the Batch</p>
+<p>provided environment variables (<a href="https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables">https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables</a>).</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_StartTask_ContainerSettings_" data-uid="Microsoft.Azure.Batch.StartTask.ContainerSettings*"></a>
   <h4 id="Microsoft_Azure_Batch_StartTask_ContainerSettings" data-uid="Microsoft.Azure.Batch.StartTask.ContainerSettings">ContainerSettings</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the settings for the container under which the task runs.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -177,11 +201,18 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_StartTask_ContainerSettings_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When this is specified, all directories recursively below the AZ_BATCH_NODE_ROOT_DIR (the root of Azure Batch</p>
+<p>directories on the node) are mapped into the container, all task environment variables are mapped into the container,</p>
+<p>and the task command line is executed in the container. Files produced in the container outside of AZ_BATCH_NODE_ROOT_DIR</p>
+<p>might not be reflected to the host disk, meaning that Batch file APIs will not be able to access them.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_StartTask_EnvironmentSettings_" data-uid="Microsoft.Azure.Batch.StartTask.EnvironmentSettings*"></a>
   <h4 id="Microsoft_Azure_Batch_StartTask_EnvironmentSettings" data-uid="Microsoft.Azure.Batch.StartTask.EnvironmentSettings">EnvironmentSettings</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a set of environment settings for the start task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -206,7 +237,8 @@
   
   <a id="Microsoft_Azure_Batch_StartTask_MaxTaskRetryCount_" data-uid="Microsoft.Azure.Batch.StartTask.MaxTaskRetryCount*"></a>
   <h4 id="Microsoft_Azure_Batch_StartTask_MaxTaskRetryCount" data-uid="Microsoft.Azure.Batch.StartTask.MaxTaskRetryCount">MaxTaskRetryCount</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the maximum number of retries for the task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -231,7 +263,9 @@
   
   <a id="Microsoft_Azure_Batch_StartTask_ResourceFiles_" data-uid="Microsoft.Azure.Batch.StartTask.ResourceFiles*"></a>
   <h4 id="Microsoft_Azure_Batch_StartTask_ResourceFiles" data-uid="Microsoft.Azure.Batch.StartTask.ResourceFiles">ResourceFiles</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a list of files that the Batch service will download to the compute node before running the command
+line.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -252,11 +286,17 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_StartTask_ResourceFiles_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>There is a maximum size for the list of resource files. When the max size is exceeded, the request will fail</p>
+<p>and the response error code will be RequestEntityTooLarge. If this occurs, the collection of resource files must</p>
+<p>be reduced in size. This can be achieved using .zip files, Application Packages, or Docker Containers.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_StartTask_UserIdentity_" data-uid="Microsoft.Azure.Batch.StartTask.UserIdentity*"></a>
   <h4 id="Microsoft_Azure_Batch_StartTask_UserIdentity" data-uid="Microsoft.Azure.Batch.StartTask.UserIdentity">UserIdentity</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the user identity under which the task runs.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -277,11 +317,16 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_StartTask_UserIdentity_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If omitted, the task runs as a non-administrative user unique to the task.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_StartTask_WaitForSuccess_" data-uid="Microsoft.Azure.Batch.StartTask.WaitForSuccess*"></a>
   <h4 id="Microsoft_Azure_Batch_StartTask_WaitForSuccess" data-uid="Microsoft.Azure.Batch.StartTask.WaitForSuccess">WaitForSuccess</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the Batch service should wait for the start task to complete before scheduling
+any tasks on the compute node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -302,6 +347,9 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_StartTask_WaitForSuccess_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If this is not specified, the default is false.</p>
+</div>
 </article>
           </div>
           

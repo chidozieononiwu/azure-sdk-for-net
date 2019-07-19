@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_TaskInformation" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskInformation" class="text-break">Class TaskInformation
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Information about a task running on a compute node.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +93,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskInformation__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskInformation.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskInformation__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskInformation.#ctor">TaskInformation()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the TaskInformation class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -102,7 +104,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskInformation__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskInformation.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskInformation__ctor_Microsoft_Azure_Batch_Protocol_Models_TaskState_System_String_System_String_System_String_System_Nullable_System_Int32__Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskInformation.#ctor(Microsoft.Azure.Batch.Protocol.Models.TaskState,System.String,System.String,System.String,System.Nullable{System.Int32},Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation)">TaskInformation(TaskState, String, String, String, Nullable&lt;Int32&gt;, TaskExecutionInformation)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the TaskInformation class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -121,32 +124,41 @@
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskState.html">TaskState</a></td>
         <td><span class="parametername">taskState</span></td>
-        <td></td>
+        <td><p>The current state of the task.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">taskUrl</span></td>
-        <td></td>
+        <td><p>The URL of the task.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The ID of the job to which the task
+belongs.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The ID of the task.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">subtaskId</span></td>
-        <td></td>
+        <td><p>The ID of the subtask if the task is a
+multi-instance task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation.html">TaskExecutionInformation</a></td>
         <td><span class="parametername">executionInfo</span></td>
-        <td></td>
+        <td><p>Information about the execution of the
+task.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -156,7 +168,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskInformation_ExecutionInfo_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskInformation.ExecutionInfo*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskInformation_ExecutionInfo" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskInformation.ExecutionInfo">ExecutionInfo</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets information about the execution of the task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -182,7 +195,8 @@ public Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation ExecutionI
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskInformation_JobId_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskInformation.JobId*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskInformation_JobId" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskInformation.JobId">JobId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the ID of the job to which the task belongs.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -208,7 +222,9 @@ public string JobId { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskInformation_SubtaskId_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskInformation.SubtaskId*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskInformation_SubtaskId" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskInformation.SubtaskId">SubtaskId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the ID of the subtask if the task is a multi-instance
+task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -234,7 +250,8 @@ public Nullable&lt;int&gt; SubtaskId { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskInformation_TaskId_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskInformation.TaskId*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskInformation_TaskId" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskInformation.TaskId">TaskId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the ID of the task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -260,7 +277,8 @@ public string TaskId { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskInformation_TaskState_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskInformation.TaskState*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskInformation_TaskState" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskInformation.TaskState">TaskState</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the current state of the task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -282,11 +300,16 @@ public Microsoft.Azure.Batch.Protocol.Models.TaskState TaskState { get; set; }</
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskInformation_TaskState_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Possible values include: 'active', 'preparing', 'running',</p>
+<p>'completed'</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskInformation_TaskUrl_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskInformation.TaskUrl*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskInformation_TaskUrl" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskInformation.TaskUrl">TaskUrl</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the URL of the task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

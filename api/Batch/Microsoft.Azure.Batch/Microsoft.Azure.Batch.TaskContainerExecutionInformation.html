@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_TaskContainerExecutionInformation" data-uid="Microsoft.Azure.Batch.TaskContainerExecutionInformation" class="text-break">Class TaskContainerExecutionInformation
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Contains information about the container which a task is executing.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +93,8 @@
   
   <a id="Microsoft_Azure_Batch_TaskContainerExecutionInformation_ContainerId_" data-uid="Microsoft.Azure.Batch.TaskContainerExecutionInformation.ContainerId*"></a>
   <h4 id="Microsoft_Azure_Batch_TaskContainerExecutionInformation_ContainerId" data-uid="Microsoft.Azure.Batch.TaskContainerExecutionInformation.ContainerId">ContainerId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the ID of the container.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -117,7 +119,8 @@
   
   <a id="Microsoft_Azure_Batch_TaskContainerExecutionInformation_Error_" data-uid="Microsoft.Azure.Batch.TaskContainerExecutionInformation.Error*"></a>
   <h4 id="Microsoft_Azure_Batch_TaskContainerExecutionInformation_Error" data-uid="Microsoft.Azure.Batch.TaskContainerExecutionInformation.Error">Error</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets detailed error information about the container.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -138,11 +141,16 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_TaskContainerExecutionInformation_Error_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is the detailed error string from the Docker service, if available. It is equivilant to the error field</p>
+<p>returned by &quot;docker inspect&quot;.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_TaskContainerExecutionInformation_State_" data-uid="Microsoft.Azure.Batch.TaskContainerExecutionInformation.State*"></a>
   <h4 id="Microsoft_Azure_Batch_TaskContainerExecutionInformation_State" data-uid="Microsoft.Azure.Batch.TaskContainerExecutionInformation.State">State</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the state of the container.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -163,6 +171,10 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_TaskContainerExecutionInformation_State_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is the state of the container according to the Docker service. It is equivilant to the status field returned</p>
+<p>by &quot;docker inspect&quot;.</p>
+</div>
 </article>
           </div>
           

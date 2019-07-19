@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Common_CertificateState" data-uid="Microsoft.Azure.Batch.Common.CertificateState" class="text-break">Enum CertificateState
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The state of a certificate</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Common.html">Microsoft.Azure.Batch.Common</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
@@ -93,15 +94,22 @@
     <tbody>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_CertificateState_Active">Active</td>
-        <td></td>
+        <td><p>The certificate is available for use in pools.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_CertificateState_DeleteFailed">DeleteFailed</td>
-        <td></td>
+        <td><p>The user requested that the certificate be deleted, but there are
+pools that still have references to the certificate, or it is
+still installed on one or more compute nodes.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_CertificateState_Deleting">Deleting</td>
-        <td></td>
+        <td><p>The user has requested that the certificate be deleted, but the
+delete operation has not yet completed. You may not reference the
+certificate when creating or updating pools .</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>

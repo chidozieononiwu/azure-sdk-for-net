@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_FileListFromTaskOptions" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileListFromTaskOptions" class="text-break">Class FileListFromTaskOptions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Additional parameters for ListFromTask operation.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -98,7 +99,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_FileListFromTaskOptions__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileListFromTaskOptions.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_FileListFromTaskOptions__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileListFromTaskOptions.#ctor">FileListFromTaskOptions()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the FileListFromTaskOptions class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -108,7 +110,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_FileListFromTaskOptions__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileListFromTaskOptions.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_FileListFromTaskOptions__ctor_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Guid__System_Nullable_System_Boolean__System_Nullable_System_DateTime__" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileListFromTaskOptions.#ctor(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Guid},System.Nullable{System.Boolean},System.Nullable{System.DateTime})">FileListFromTaskOptions(String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Guid&gt;, Nullable&lt;Boolean&gt;, Nullable&lt;DateTime&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the FileListFromTaskOptions class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -127,32 +130,48 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">filter</span></td>
-        <td></td>
+        <td><p>An OData $filter clause. For more information
+on constructing this filter, see
+<a href="https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-task-files">https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-task-files</a>.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">maxResults</span></td>
-        <td></td>
+        <td><p>The maximum number of items to return in
+the response. A maximum of 1000 files can be returned.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">timeout</span></td>
-        <td></td>
+        <td><p>The maximum time that the server can spend
+processing the request, in seconds. The default is 30
+seconds.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Guid</span>&gt;</td>
         <td><span class="parametername">clientRequestId</span></td>
-        <td></td>
+        <td><p>The caller-generated request
+identity, in the form of a GUID with no decoration such as curly
+braces, e.g. 9C4D50EE-2D56-4CD3-8152-34347DC9F2B0.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">returnClientRequestId</span></td>
-        <td></td>
+        <td><p>Whether the server should
+return the client-request-id in the response.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
         <td><span class="parametername">ocpDate</span></td>
-        <td></td>
+        <td><p>The time the request was issued. Client
+libraries typically set this to the current system clock time; set
+it explicitly if you are calling the REST API directly.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -162,7 +181,10 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_FileListFromTaskOptions_ClientRequestId_" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileListFromTaskOptions.ClientRequestId*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_FileListFromTaskOptions_ClientRequestId" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileListFromTaskOptions.ClientRequestId">ClientRequestId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the caller-generated request identity, in the form of
+a GUID with no decoration such as curly braces, e.g.
+9C4D50EE-2D56-4CD3-8152-34347DC9F2B0.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -188,7 +210,10 @@ public Nullable&lt;Guid&gt; ClientRequestId { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_FileListFromTaskOptions_Filter_" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileListFromTaskOptions.Filter*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_FileListFromTaskOptions_Filter" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileListFromTaskOptions.Filter">Filter</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets an OData $filter clause. For more information on
+constructing this filter, see
+<a href="https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-task-files">https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-task-files</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -214,7 +239,9 @@ public string Filter { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_FileListFromTaskOptions_MaxResults_" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileListFromTaskOptions.MaxResults*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_FileListFromTaskOptions_MaxResults" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileListFromTaskOptions.MaxResults">MaxResults</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the maximum number of items to return in the response.
+A maximum of 1000 files can be returned.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -240,7 +267,10 @@ public Nullable&lt;int&gt; MaxResults { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_FileListFromTaskOptions_OcpDate_" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileListFromTaskOptions.OcpDate*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_FileListFromTaskOptions_OcpDate" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileListFromTaskOptions.OcpDate">OcpDate</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the time the request was issued. Client libraries
+typically set this to the current system clock time; set it
+explicitly if you are calling the REST API directly.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -267,7 +297,9 @@ public Nullable&lt;DateTime&gt; OcpDate { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_FileListFromTaskOptions_ReturnClientRequestId_" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileListFromTaskOptions.ReturnClientRequestId*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_FileListFromTaskOptions_ReturnClientRequestId" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileListFromTaskOptions.ReturnClientRequestId">ReturnClientRequestId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets whether the server should return the client-request-id
+in the response.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -293,7 +325,9 @@ public Nullable&lt;bool&gt; ReturnClientRequestId { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_FileListFromTaskOptions_Timeout_" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileListFromTaskOptions.Timeout*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_FileListFromTaskOptions_Timeout" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileListFromTaskOptions.Timeout">Timeout</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the maximum time that the server can spend processing
+the request, in seconds. The default is 30 seconds.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

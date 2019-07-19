@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics" class="text-break">Class JobScheduleStatistics
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Resource usage statistics for a job schedule.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +93,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.#ctor">JobScheduleStatistics()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the JobScheduleStatistics class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -102,7 +104,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics__ctor_System_String_System_DateTime_System_DateTime_System_TimeSpan_System_TimeSpan_System_TimeSpan_System_Int64_System_Int64_System_Double_System_Double_System_Int64_System_Int64_System_Int64_System_TimeSpan_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.#ctor(System.String,System.DateTime,System.DateTime,System.TimeSpan,System.TimeSpan,System.TimeSpan,System.Int64,System.Int64,System.Double,System.Double,System.Int64,System.Int64,System.Int64,System.TimeSpan)">JobScheduleStatistics(String, DateTime, DateTime, TimeSpan, TimeSpan, TimeSpan, Int64, Int64, Double, Double, Int64, Int64, Int64, TimeSpan)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the JobScheduleStatistics class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -121,72 +124,110 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">url</span></td>
-        <td></td>
+        <td><p>The URL of the statistics.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.DateTime</span></td>
         <td><span class="parametername">startTime</span></td>
-        <td></td>
+        <td><p>The start time of the time range covered by
+the statistics.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.DateTime</span></td>
         <td><span class="parametername">lastUpdateTime</span></td>
-        <td></td>
+        <td><p>The time at which the statistics were
+last updated. All statistics are limited to the range between
+startTime and lastUpdateTime.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">userCPUTime</span></td>
-        <td></td>
+        <td><p>The total user mode CPU time (summed
+across all cores and all compute nodes) consumed by all tasks in
+all jobs created under the schedule.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">kernelCPUTime</span></td>
-        <td></td>
+        <td><p>The total kernel mode CPU time (summed
+across all cores and all compute nodes) consumed by all tasks in
+all jobs created under the schedule.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">wallClockTime</span></td>
-        <td></td>
+        <td><p>The total wall clock time of all the
+tasks in all the jobs created under the schedule.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">readIOps</span></td>
-        <td></td>
+        <td><p>The total number of disk read operations
+made by all tasks in all jobs created under the schedule.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">writeIOps</span></td>
-        <td></td>
+        <td><p>The total number of disk write operations
+made by all tasks in all jobs created under the schedule.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">readIOGiB</span></td>
-        <td></td>
+        <td><p>The total gibibytes read from disk by all
+tasks in all jobs created under the schedule.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">writeIOGiB</span></td>
-        <td></td>
+        <td><p>The total gibibytes written to disk by all
+tasks in all jobs created under the schedule.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">numSucceededTasks</span></td>
-        <td></td>
+        <td><p>The total number of tasks
+successfully completed during the given time range in jobs created
+under the schedule. A task completes successfully if it returns
+exit code 0.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">numFailedTasks</span></td>
-        <td></td>
+        <td><p>The total number of tasks that failed
+during the given time range in jobs created under the schedule. A
+task fails if it exhausts its maximum retry count without returning
+exit code 0.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">numTaskRetries</span></td>
-        <td></td>
+        <td><p>The total number of retries during the
+given time range on all tasks in all jobs created under the
+schedule.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">waitTime</span></td>
-        <td></td>
+        <td><p>The total wait time of all tasks in all jobs
+created under the schedule. The wait time for a task is defined as
+the elapsed time between the creation of the task and the start of
+task execution. (If the task is retried due to failures, the wait
+time is the time to the most recent task execution.)</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -196,7 +237,10 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_KernelCPUTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.KernelCPUTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_KernelCPUTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.KernelCPUTime">KernelCPUTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the total kernel mode CPU time (summed across all
+cores and all compute nodes) consumed by all tasks in all jobs
+created under the schedule.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -222,7 +266,10 @@ public TimeSpan KernelCPUTime { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_LastUpdateTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.LastUpdateTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_LastUpdateTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.LastUpdateTime">LastUpdateTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the time at which the statistics were last updated.
+All statistics are limited to the range between startTime and
+lastUpdateTime.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -248,7 +295,10 @@ public DateTime LastUpdateTime { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_NumFailedTasks_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.NumFailedTasks*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_NumFailedTasks" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.NumFailedTasks">NumFailedTasks</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the total number of tasks that failed during the given
+time range in jobs created under the schedule. A task fails if it
+exhausts its maximum retry count without returning exit code 0.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -274,7 +324,10 @@ public long NumFailedTasks { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_NumSucceededTasks_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.NumSucceededTasks*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_NumSucceededTasks" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.NumSucceededTasks">NumSucceededTasks</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the total number of tasks successfully completed
+during the given time range in jobs created under the schedule. A
+task completes successfully if it returns exit code 0.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -300,7 +353,9 @@ public long NumSucceededTasks { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_NumTaskRetries_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.NumTaskRetries*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_NumTaskRetries" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.NumTaskRetries">NumTaskRetries</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the total number of retries during the given time
+range on all tasks in all jobs created under the schedule.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -326,7 +381,9 @@ public long NumTaskRetries { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_ReadIOGiB_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.ReadIOGiB*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_ReadIOGiB" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.ReadIOGiB">ReadIOGiB</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the total gibibytes read from disk by all tasks in all
+jobs created under the schedule.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -352,7 +409,9 @@ public double ReadIOGiB { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_ReadIOps_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.ReadIOps*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_ReadIOps" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.ReadIOps">ReadIOps</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the total number of disk read operations made by all
+tasks in all jobs created under the schedule.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -378,7 +437,9 @@ public long ReadIOps { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_StartTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.StartTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_StartTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.StartTime">StartTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the start time of the time range covered by the
+statistics.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -404,7 +465,8 @@ public DateTime StartTime { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_Url_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.Url*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_Url" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.Url">Url</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the URL of the statistics.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -430,7 +492,10 @@ public string Url { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_UserCPUTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.UserCPUTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_UserCPUTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.UserCPUTime">UserCPUTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the total user mode CPU time (summed across all cores
+and all compute nodes) consumed by all tasks in all jobs created
+under the schedule.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -456,7 +521,12 @@ public TimeSpan UserCPUTime { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_WaitTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.WaitTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_WaitTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.WaitTime">WaitTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the total wait time of all tasks in all jobs created
+under the schedule. The wait time for a task is defined as the
+elapsed time between the creation of the task and the start of task
+execution. (If the task is retried due to failures, the wait time
+is the time to the most recent task execution.)</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -478,11 +548,17 @@ public TimeSpan WaitTime { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_WaitTime_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value is only reported in the account lifetime statistics; it</p>
+<p>is not included in the job statistics.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_WallClockTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.WallClockTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_WallClockTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.WallClockTime">WallClockTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the total wall clock time of all the tasks in all the
+jobs created under the schedule.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -504,11 +580,20 @@ public TimeSpan WallClockTime { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_WallClockTime_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The wall clock time is the elapsed time from when the task started</p>
+<p>running on a compute node to when it finished (or to the last time</p>
+<p>the statistics were updated, if the task had not finished by then).</p>
+<p>If a task was retried, this includes the wall clock time of all the</p>
+<p>task retries.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_WriteIOGiB_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.WriteIOGiB*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_WriteIOGiB" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.WriteIOGiB">WriteIOGiB</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the total gibibytes written to disk by all tasks in
+all jobs created under the schedule.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -534,7 +619,9 @@ public double WriteIOGiB { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_WriteIOps_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.WriteIOps*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleStatistics_WriteIOps" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.WriteIOps">WriteIOps</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the total number of disk write operations made by all
+tasks in all jobs created under the schedule.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

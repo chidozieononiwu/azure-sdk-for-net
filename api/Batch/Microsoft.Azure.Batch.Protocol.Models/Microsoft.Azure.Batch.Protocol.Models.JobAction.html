@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_JobAction" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobAction" class="text-break">Enum JobAction
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Defines values for JobAction.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models.html">Microsoft.Azure.Batch.Protocol.Models</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
@@ -94,15 +95,20 @@ public enum JobAction</code></pre>
     <tbody>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_JobAction_Disable">Disable</td>
-        <td></td>
+        <td><p>Disable the job. This is equivalent to calling the disable job API,
+with a disableTasks value of requeue.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_JobAction_None">None</td>
-        <td></td>
+        <td><p>Take no action.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_JobAction_Terminate">Terminate</td>
-        <td></td>
+        <td><p>Terminate the job. The terminateReason in the job's executionInfo
+is set to &quot;TaskFailed&quot;.</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>

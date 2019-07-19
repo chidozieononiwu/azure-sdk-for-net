@@ -73,7 +73,9 @@
   
   <h1 id="Microsoft_Azure_Batch_AddTaskResultStatus" data-uid="Microsoft.Azure.Batch.AddTaskResultStatus" class="text-break">Enum AddTaskResultStatus
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Used by <a class="xref" href="Microsoft.Azure.Batch.AddTaskCollectionResultHandler.html">AddTaskCollectionResultHandler</a> to classify an <a class="xref" href="Microsoft.Azure.Batch.AddTaskResult.html">AddTaskResult</a> as successful or
+requiring a retry.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.html">Microsoft.Azure.Batch</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
@@ -81,6 +83,10 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public enum AddTaskResultStatus</code></pre>
   </div>
+  <h5 id="Microsoft_Azure_Batch_AddTaskResultStatus_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>AddTaskResultStatus is not used to report non-retryable failure; a result handler should throw
+<a class="xref" href="Microsoft.Azure.Batch.AddTaskCollectionTerminatedException.html">AddTaskCollectionTerminatedException</a> for that.</p>
+</div>
   <h3 id="fields">Fields
   </h3>
   <table class="table table-bordered table-striped table-condensed">
@@ -93,11 +99,13 @@
     <tbody>
       <tr>
         <td id="Microsoft_Azure_Batch_AddTaskResultStatus_Retry">Retry</td>
-        <td></td>
+        <td><p>Classifies the result as requiring a retry.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_AddTaskResultStatus_Success">Success</td>
-        <td></td>
+        <td><p>Classifies the result as a success.</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>

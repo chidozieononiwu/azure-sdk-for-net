@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_FileProperties" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileProperties" class="text-break">Class FileProperties
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The properties of a file on a compute node.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +93,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_FileProperties__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileProperties.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_FileProperties__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileProperties.#ctor">FileProperties()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the FileProperties class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -102,7 +104,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_FileProperties__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileProperties.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_FileProperties__ctor_System_DateTime_System_Int64_System_Nullable_System_DateTime__System_String_System_String_" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileProperties.#ctor(System.DateTime,System.Int64,System.Nullable{System.DateTime},System.String,System.String)">FileProperties(DateTime, Int64, Nullable&lt;DateTime&gt;, String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the FileProperties class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -121,27 +124,34 @@
       <tr>
         <td><span class="xref">System.DateTime</span></td>
         <td><span class="parametername">lastModified</span></td>
-        <td></td>
+        <td><p>The time at which the file was last
+modified.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">contentLength</span></td>
-        <td></td>
+        <td><p>The length of the file.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
         <td><span class="parametername">creationTime</span></td>
-        <td></td>
+        <td><p>The file creation time.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">contentType</span></td>
-        <td></td>
+        <td><p>The content type of the file.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">fileMode</span></td>
-        <td></td>
+        <td><p>The file mode attribute in octal
+format.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -151,7 +161,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_FileProperties_ContentLength_" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileProperties.ContentLength*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_FileProperties_ContentLength" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileProperties.ContentLength">ContentLength</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the length of the file.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -177,7 +188,8 @@ public long ContentLength { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_FileProperties_ContentType_" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileProperties.ContentType*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_FileProperties_ContentType" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileProperties.ContentType">ContentType</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the content type of the file.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -203,7 +215,8 @@ public string ContentType { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_FileProperties_CreationTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileProperties.CreationTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_FileProperties_CreationTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileProperties.CreationTime">CreationTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the file creation time.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -225,11 +238,15 @@ public Nullable&lt;DateTime&gt; CreationTime { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_FileProperties_CreationTime_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The creation time is not returned for files on Linux compute nodes.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_FileProperties_FileMode_" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileProperties.FileMode*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_FileProperties_FileMode" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileProperties.FileMode">FileMode</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the file mode attribute in octal format.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -251,11 +268,15 @@ public string FileMode { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_FileProperties_FileMode_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The file mode is returned only for files on Linux compute nodes.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_FileProperties_LastModified_" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileProperties.LastModified*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_FileProperties_LastModified" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileProperties.LastModified">LastModified</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the time at which the file was last modified.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

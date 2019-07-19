@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeListOptions" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeListOptions" class="text-break">Class ComputeNodeListOptions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Additional parameters for List operation.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -99,7 +100,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeListOptions__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeListOptions.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeListOptions__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeListOptions.#ctor">ComputeNodeListOptions()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ComputeNodeListOptions class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -109,7 +111,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeListOptions__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeListOptions.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeListOptions__ctor_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Guid__System_Nullable_System_Boolean__System_Nullable_System_DateTime__" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeListOptions.#ctor(System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Guid},System.Nullable{System.Boolean},System.Nullable{System.DateTime})">ComputeNodeListOptions(String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Guid&gt;, Nullable&lt;Boolean&gt;, Nullable&lt;DateTime&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ComputeNodeListOptions class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -128,37 +131,54 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">filter</span></td>
-        <td></td>
+        <td><p>An OData $filter clause. For more information
+on constructing this filter, see
+<a href="https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-nodes-in-a-pool">https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-nodes-in-a-pool</a>.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">select</span></td>
-        <td></td>
+        <td><p>An OData $select clause.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">maxResults</span></td>
-        <td></td>
+        <td><p>The maximum number of items to return in
+the response. A maximum of 1000 nodes can be returned.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">timeout</span></td>
-        <td></td>
+        <td><p>The maximum time that the server can spend
+processing the request, in seconds. The default is 30
+seconds.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Guid</span>&gt;</td>
         <td><span class="parametername">clientRequestId</span></td>
-        <td></td>
+        <td><p>The caller-generated request
+identity, in the form of a GUID with no decoration such as curly
+braces, e.g. 9C4D50EE-2D56-4CD3-8152-34347DC9F2B0.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">returnClientRequestId</span></td>
-        <td></td>
+        <td><p>Whether the server should
+return the client-request-id in the response.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
         <td><span class="parametername">ocpDate</span></td>
-        <td></td>
+        <td><p>The time the request was issued. Client
+libraries typically set this to the current system clock time; set
+it explicitly if you are calling the REST API directly.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -168,7 +188,10 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeListOptions_ClientRequestId_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeListOptions.ClientRequestId*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeListOptions_ClientRequestId" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeListOptions.ClientRequestId">ClientRequestId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the caller-generated request identity, in the form of
+a GUID with no decoration such as curly braces, e.g.
+9C4D50EE-2D56-4CD3-8152-34347DC9F2B0.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -194,7 +217,10 @@ public Nullable&lt;Guid&gt; ClientRequestId { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeListOptions_Filter_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeListOptions.Filter*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeListOptions_Filter" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeListOptions.Filter">Filter</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets an OData $filter clause. For more information on
+constructing this filter, see
+<a href="https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-nodes-in-a-pool">https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-nodes-in-a-pool</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -220,7 +246,9 @@ public string Filter { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeListOptions_MaxResults_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeListOptions.MaxResults*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeListOptions_MaxResults" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeListOptions.MaxResults">MaxResults</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the maximum number of items to return in the response.
+A maximum of 1000 nodes can be returned.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -246,7 +274,10 @@ public Nullable&lt;int&gt; MaxResults { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeListOptions_OcpDate_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeListOptions.OcpDate*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeListOptions_OcpDate" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeListOptions.OcpDate">OcpDate</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the time the request was issued. Client libraries
+typically set this to the current system clock time; set it
+explicitly if you are calling the REST API directly.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -273,7 +304,9 @@ public Nullable&lt;DateTime&gt; OcpDate { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeListOptions_ReturnClientRequestId_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeListOptions.ReturnClientRequestId*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeListOptions_ReturnClientRequestId" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeListOptions.ReturnClientRequestId">ReturnClientRequestId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets whether the server should return the client-request-id
+in the response.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -299,7 +332,8 @@ public Nullable&lt;bool&gt; ReturnClientRequestId { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeListOptions_Select_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeListOptions.Select*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeListOptions_Select" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeListOptions.Select">Select</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets an OData $select clause.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -325,7 +359,9 @@ public string Select { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeListOptions_Timeout_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeListOptions.Timeout*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeListOptions_Timeout" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeListOptions.Timeout">Timeout</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the maximum time that the server can spend processing
+the request, in seconds. The default is 30 seconds.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

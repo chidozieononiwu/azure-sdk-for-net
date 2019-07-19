@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_JobListFromJobScheduleHeaders" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobListFromJobScheduleHeaders" class="text-break">Class JobListFromJobScheduleHeaders
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Defines headers for ListFromJobSchedule operation.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +93,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobListFromJobScheduleHeaders__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobListFromJobScheduleHeaders.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobListFromJobScheduleHeaders__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobListFromJobScheduleHeaders.#ctor">JobListFromJobScheduleHeaders()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the JobListFromJobScheduleHeaders
+class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -102,7 +105,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobListFromJobScheduleHeaders__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobListFromJobScheduleHeaders.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobListFromJobScheduleHeaders__ctor_System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_System_Nullable_System_DateTime__" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobListFromJobScheduleHeaders.#ctor(System.Nullable{System.Guid},System.Nullable{System.Guid},System.String,System.Nullable{System.DateTime})">JobListFromJobScheduleHeaders(Nullable&lt;Guid&gt;, Nullable&lt;Guid&gt;, String, Nullable&lt;DateTime&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the JobListFromJobScheduleHeaders
+class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -121,22 +126,39 @@
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Guid</span>&gt;</td>
         <td><span class="parametername">clientRequestId</span></td>
-        <td></td>
+        <td><p>The client-request-id provided by the
+client during the request. This will be returned only if the
+return-client-request-id parameter was set to true.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Guid</span>&gt;</td>
         <td><span class="parametername">requestId</span></td>
-        <td></td>
+        <td><p>A unique identifier for the request that
+was made to the Batch service. If a request is consistently failing
+and you have verified that the request is properly formulated, you
+may use this value to report the error to Microsoft. In your
+report, include the value of this request ID, the approximate time
+that the request was made, the Batch account against which the
+request was made, and the region that account resides in.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">eTag</span></td>
-        <td></td>
+        <td><p>The ETag HTTP response header. This is an opaque
+string. You can use it to detect whether the resource has changed
+between requests. In particular, you can pass the ETag to one of
+the If-Modified-Since, If-Unmodified-Since, If-Match or
+If-None-Match headers.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
         <td><span class="parametername">lastModified</span></td>
-        <td></td>
+        <td><p>The time at which the resource was last
+modified.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -146,7 +168,10 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobListFromJobScheduleHeaders_ClientRequestId_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobListFromJobScheduleHeaders.ClientRequestId*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobListFromJobScheduleHeaders_ClientRequestId" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobListFromJobScheduleHeaders.ClientRequestId">ClientRequestId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the client-request-id provided by the client during
+the request. This will be returned only if the
+return-client-request-id parameter was set to true.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -172,7 +197,12 @@ public Nullable&lt;Guid&gt; ClientRequestId { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobListFromJobScheduleHeaders_ETag_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobListFromJobScheduleHeaders.ETag*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobListFromJobScheduleHeaders_ETag" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobListFromJobScheduleHeaders.ETag">ETag</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the ETag HTTP response header. This is an opaque
+string. You can use it to detect whether the resource has changed
+between requests. In particular, you can pass the ETag to one of
+the If-Modified-Since, If-Unmodified-Since, If-Match or
+If-None-Match headers.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -198,7 +228,8 @@ public string ETag { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobListFromJobScheduleHeaders_LastModified_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobListFromJobScheduleHeaders.LastModified*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobListFromJobScheduleHeaders_LastModified" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobListFromJobScheduleHeaders.LastModified">LastModified</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the time at which the resource was last modified.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -225,7 +256,14 @@ public Nullable&lt;DateTime&gt; LastModified { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobListFromJobScheduleHeaders_RequestId_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobListFromJobScheduleHeaders.RequestId*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobListFromJobScheduleHeaders_RequestId" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobListFromJobScheduleHeaders.RequestId">RequestId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a unique identifier for the request that was made to
+the Batch service. If a request is consistently failing and you
+have verified that the request is properly formulated, you may use
+this value to report the error to Microsoft. In your report,
+include the value of this request ID, the approximate time that the
+request was made, the Batch account against which the request was
+made, and the region that account resides in.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

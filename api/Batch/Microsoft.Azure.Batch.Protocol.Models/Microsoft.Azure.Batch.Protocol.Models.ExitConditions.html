@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_ExitConditions" data-uid="Microsoft.Azure.Batch.Protocol.Models.ExitConditions" class="text-break">Class ExitConditions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Specifies how the Batch service should respond when the task completes.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +93,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ExitConditions__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ExitConditions.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ExitConditions__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.ExitConditions.#ctor">ExitConditions()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ExitConditions class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -102,7 +104,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ExitConditions__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ExitConditions.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ExitConditions__ctor_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_ExitCodeMapping__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_ExitCodeRangeMapping__Microsoft_Azure_Batch_Protocol_Models_ExitOptions_Microsoft_Azure_Batch_Protocol_Models_ExitOptions_Microsoft_Azure_Batch_Protocol_Models_ExitOptions_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ExitConditions.#ctor(System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.ExitCodeMapping},System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.ExitCodeRangeMapping},Microsoft.Azure.Batch.Protocol.Models.ExitOptions,Microsoft.Azure.Batch.Protocol.Models.ExitOptions,Microsoft.Azure.Batch.Protocol.Models.ExitOptions)">ExitConditions(IList&lt;ExitCodeMapping&gt;, IList&lt;ExitCodeRangeMapping&gt;, ExitOptions, ExitOptions, ExitOptions)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ExitConditions class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -121,27 +124,38 @@
       <tr>
         <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ExitCodeMapping.html">ExitCodeMapping</a>&gt;</td>
         <td><span class="parametername">exitCodes</span></td>
-        <td></td>
+        <td><p>A list of individual task exit codes and
+how the Batch service should respond to them.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ExitCodeRangeMapping.html">ExitCodeRangeMapping</a>&gt;</td>
         <td><span class="parametername">exitCodeRanges</span></td>
-        <td></td>
+        <td><p>A list of task exit code ranges and
+how the Batch service should respond to them.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ExitOptions.html">ExitOptions</a></td>
         <td><span class="parametername">preProcessingError</span></td>
-        <td></td>
+        <td><p>How the Batch service should
+respond if the task fails to start due to an error.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ExitOptions.html">ExitOptions</a></td>
         <td><span class="parametername">fileUploadError</span></td>
-        <td></td>
+        <td><p>How the Batch service should respond
+if a file upload error occurs.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ExitOptions.html">ExitOptions</a></td>
         <td><span class="parametername">defaultProperty</span></td>
-        <td></td>
+        <td><p>How the Batch service should respond
+if the task fails with an exit condition not covered by any of the
+other properties.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -151,7 +165,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ExitConditions_DefaultProperty_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ExitConditions.DefaultProperty*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ExitConditions_DefaultProperty" data-uid="Microsoft.Azure.Batch.Protocol.Models.ExitConditions.DefaultProperty">DefaultProperty</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets how the Batch service should respond if the task fails
+with an exit condition not covered by any of the other properties.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -173,11 +189,22 @@ public Microsoft.Azure.Batch.Protocol.Models.ExitOptions DefaultProperty { get; 
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_ExitConditions_DefaultProperty_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value is used if the task exits with any nonzero exit code not</p>
+<p>listed in the exitCodes or exitCodeRanges collection, with a</p>
+<p>pre-processing error if the preProcessingError property is not</p>
+<p>present, or with a file upload error if the fileUploadError</p>
+<p>property is not present. If you want non-default behavior on exit</p>
+<p>code 0, you must list it explicitly using the exitCodes or</p>
+<p>exitCodeRanges collection.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ExitConditions_ExitCodeRanges_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ExitConditions.ExitCodeRanges*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ExitConditions_ExitCodeRanges" data-uid="Microsoft.Azure.Batch.Protocol.Models.ExitConditions.ExitCodeRanges">ExitCodeRanges</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a list of task exit code ranges and how the Batch
+service should respond to them.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -203,7 +230,9 @@ public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ExitConditions_ExitCodes_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ExitConditions.ExitCodes*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ExitConditions_ExitCodes" data-uid="Microsoft.Azure.Batch.Protocol.Models.ExitConditions.ExitCodes">ExitCodes</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a list of individual task exit codes and how the Batch
+service should respond to them.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -229,7 +258,9 @@ public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ExitConditions_FileUploadError_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ExitConditions.FileUploadError*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ExitConditions_FileUploadError" data-uid="Microsoft.Azure.Batch.Protocol.Models.ExitConditions.FileUploadError">FileUploadError</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets how the Batch service should respond if a file upload
+error occurs.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -251,11 +282,18 @@ public Microsoft.Azure.Batch.Protocol.Models.ExitOptions FileUploadError { get; 
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_ExitConditions_FileUploadError_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the task exited with an exit code that was specified via</p>
+<p>exitCodes or exitCodeRanges, and then encountered a file upload</p>
+<p>error, then the action specified by the exit code takes precedence.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ExitConditions_PreProcessingError_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ExitConditions.PreProcessingError*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ExitConditions_PreProcessingError" data-uid="Microsoft.Azure.Batch.Protocol.Models.ExitConditions.PreProcessingError">PreProcessingError</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets how the Batch service should respond if the task fails
+to start due to an error.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_DisableComputeNodeSchedulingOption" data-uid="Microsoft.Azure.Batch.Protocol.Models.DisableComputeNodeSchedulingOption" class="text-break">Enum DisableComputeNodeSchedulingOption
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Defines values for DisableComputeNodeSchedulingOption.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models.html">Microsoft.Azure.Batch.Protocol.Models</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
@@ -94,15 +95,24 @@ public enum DisableComputeNodeSchedulingOption</code></pre>
     <tbody>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_DisableComputeNodeSchedulingOption_Requeue">Requeue</td>
-        <td></td>
+        <td><p>Terminate running task processes and requeue the tasks. The tasks
+may run again on other compute nodes, or when task scheduling is
+re-enabled on this node. Enter offline state as soon as tasks have
+been terminated.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_DisableComputeNodeSchedulingOption_TaskCompletion">TaskCompletion</td>
-        <td></td>
+        <td><p>Allow currently running tasks to complete. Schedule no new tasks
+while waiting. Enter offline state when all tasks have completed.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_DisableComputeNodeSchedulingOption_Terminate">Terminate</td>
-        <td></td>
+        <td><p>Terminate running tasks. The tasks will be completed with
+failureInfo indicating that they were terminated, and will not run
+again. Enter offline state as soon as tasks have been terminated.</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>

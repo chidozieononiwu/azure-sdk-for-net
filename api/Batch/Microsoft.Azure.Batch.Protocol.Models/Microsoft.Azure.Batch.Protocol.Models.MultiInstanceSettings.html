@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_MultiInstanceSettings" data-uid="Microsoft.Azure.Batch.Protocol.Models.MultiInstanceSettings" class="text-break">Class MultiInstanceSettings
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Settings which specify how to run a multi-instance task.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -86,13 +87,21 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class MultiInstanceSettings</code></pre>
   </div>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_MultiInstanceSettings_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Multi-instance tasks are commonly used to support MPI tasks. In the MPI</p>
+<p>case, if any of the subtasks fail (for example due to exiting with a</p>
+<p>non-zero exit code) the entire multi-instance task fails. The</p>
+<p>multi-instance task is then terminated and retried, up to its retry</p>
+<p>limit.</p>
+</div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_MultiInstanceSettings__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.MultiInstanceSettings.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_MultiInstanceSettings__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.MultiInstanceSettings.#ctor">MultiInstanceSettings()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the MultiInstanceSettings class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -102,7 +111,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_MultiInstanceSettings__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.MultiInstanceSettings.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_MultiInstanceSettings__ctor_System_String_System_Nullable_System_Int32__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_ResourceFile__" data-uid="Microsoft.Azure.Batch.Protocol.Models.MultiInstanceSettings.#ctor(System.String,System.Nullable{System.Int32},System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.ResourceFile})">MultiInstanceSettings(String, Nullable&lt;Int32&gt;, IList&lt;ResourceFile&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the MultiInstanceSettings class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -121,17 +131,25 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">coordinationCommandLine</span></td>
-        <td></td>
+        <td><p>The command line to run on
+all the compute nodes to enable them to coordinate when the primary
+runs the main task command.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">numberOfInstances</span></td>
-        <td></td>
+        <td><p>The number of compute nodes
+required by the task.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ResourceFile.html">ResourceFile</a>&gt;</td>
         <td><span class="parametername">commonResourceFiles</span></td>
-        <td></td>
+        <td><p>A list of files that the Batch
+service will download before running the coordination command
+line.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -141,7 +159,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_MultiInstanceSettings_CommonResourceFiles_" data-uid="Microsoft.Azure.Batch.Protocol.Models.MultiInstanceSettings.CommonResourceFiles*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_MultiInstanceSettings_CommonResourceFiles" data-uid="Microsoft.Azure.Batch.Protocol.Models.MultiInstanceSettings.CommonResourceFiles">CommonResourceFiles</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a list of files that the Batch service will download
+before running the coordination command line.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -163,11 +183,28 @@ public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_MultiInstanceSettings_CommonResourceFiles_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The difference between common resource files and task resource</p>
+<p>files is that common resource files are downloaded for all subtasks</p>
+<p>including the primary, whereas task resource files are downloaded</p>
+<p>only for the primary. Also note that these resource files are not</p>
+<p>downloaded to the task working directory, but instead are</p>
+<p>downloaded to the task root directory (one directory above the</p>
+<p>working directory).  There is a maximum size for the list of</p>
+<p>resource files.  When the max size is exceeded, the request will</p>
+<p>fail and the response error code will be RequestEntityTooLarge. If</p>
+<p>this occurs, the collection of ResourceFiles must be reduced in</p>
+<p>size. This can be achieved using .zip files, Application Packages,</p>
+<p>or Docker Containers.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_MultiInstanceSettings_CoordinationCommandLine_" data-uid="Microsoft.Azure.Batch.Protocol.Models.MultiInstanceSettings.CoordinationCommandLine*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_MultiInstanceSettings_CoordinationCommandLine" data-uid="Microsoft.Azure.Batch.Protocol.Models.MultiInstanceSettings.CoordinationCommandLine">CoordinationCommandLine</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the command line to run on all the compute nodes to
+enable them to coordinate when the primary runs the main task
+command.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -189,11 +226,17 @@ public string CoordinationCommandLine { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_MultiInstanceSettings_CoordinationCommandLine_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A typical coordination command line launches a background service</p>
+<p>and verifies that the service is ready to process inter-node</p>
+<p>messages.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_MultiInstanceSettings_NumberOfInstances_" data-uid="Microsoft.Azure.Batch.Protocol.Models.MultiInstanceSettings.NumberOfInstances*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_MultiInstanceSettings_NumberOfInstances" data-uid="Microsoft.Azure.Batch.Protocol.Models.MultiInstanceSettings.NumberOfInstances">NumberOfInstances</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the number of compute nodes required by the task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -215,6 +258,9 @@ public Nullable&lt;int&gt; NumberOfInstances { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_MultiInstanceSettings_NumberOfInstances_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If omitted, the default is 1.</p>
+</div>
 </article>
           </div>
           

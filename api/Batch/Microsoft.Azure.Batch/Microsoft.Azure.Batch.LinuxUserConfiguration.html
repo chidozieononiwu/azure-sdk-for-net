@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_LinuxUserConfiguration" data-uid="Microsoft.Azure.Batch.LinuxUserConfiguration" class="text-break">Class LinuxUserConfiguration
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Properties used to create a user account on a Linux node.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +93,8 @@
   
   <a id="Microsoft_Azure_Batch_LinuxUserConfiguration__ctor_" data-uid="Microsoft.Azure.Batch.LinuxUserConfiguration.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_LinuxUserConfiguration__ctor_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_" data-uid="Microsoft.Azure.Batch.LinuxUserConfiguration.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">LinuxUserConfiguration(Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.LinuxUserConfiguration.html">LinuxUserConfiguration</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -111,17 +113,20 @@
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">uid</span></td>
-        <td></td>
+        <td><p>The user ID of the user account.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">gid</span></td>
-        <td></td>
+        <td><p>The group ID of the user account.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">sshPrivateKey</span></td>
-        <td></td>
+        <td><p>The SSH private key for the user account.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -131,7 +136,8 @@
   
   <a id="Microsoft_Azure_Batch_LinuxUserConfiguration_Gid_" data-uid="Microsoft.Azure.Batch.LinuxUserConfiguration.Gid*"></a>
   <h4 id="Microsoft_Azure_Batch_LinuxUserConfiguration_Gid" data-uid="Microsoft.Azure.Batch.LinuxUserConfiguration.Gid">Gid</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the group ID of the user account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -152,11 +158,16 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_LinuxUserConfiguration_Gid_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <a class="xref" href="Microsoft.Azure.Batch.LinuxUserConfiguration.html#Microsoft_Azure_Batch_LinuxUserConfiguration_Uid">Uid</a> and <a class="xref" href="Microsoft.Azure.Batch.LinuxUserConfiguration.html#Microsoft_Azure_Batch_LinuxUserConfiguration_Gid">Gid</a> properties must be specified together or not at all. If not specified,
+the underlying operating system picks the gid.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_LinuxUserConfiguration_SshPrivateKey_" data-uid="Microsoft.Azure.Batch.LinuxUserConfiguration.SshPrivateKey*"></a>
   <h4 id="Microsoft_Azure_Batch_LinuxUserConfiguration_SshPrivateKey" data-uid="Microsoft.Azure.Batch.LinuxUserConfiguration.SshPrivateKey">SshPrivateKey</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the SSH private key for the user account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -177,11 +188,19 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_LinuxUserConfiguration_SshPrivateKey_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The private key must not be password protected. The private key is used to automatically configure asymmetric-key
+based authentication for SSH between nodes in a Linux pool when the pool's <a class="xref" href="Microsoft.Azure.Batch.CloudPool.html#Microsoft_Azure_Batch_CloudPool_InterComputeNodeCommunicationEnabled">InterComputeNodeCommunicationEnabled</a>
+property is true (it is ignored if <a class="xref" href="Microsoft.Azure.Batch.CloudPool.html#Microsoft_Azure_Batch_CloudPool_InterComputeNodeCommunicationEnabled">InterComputeNodeCommunicationEnabled</a> is false). It
+does this by placing the key pair into the user's .ssh directory. If not specified, password-less SSH is not
+configured between nodes (no modification of the user's .ssh directory is done)</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_LinuxUserConfiguration_Uid_" data-uid="Microsoft.Azure.Batch.LinuxUserConfiguration.Uid*"></a>
   <h4 id="Microsoft_Azure_Batch_LinuxUserConfiguration_Uid" data-uid="Microsoft.Azure.Batch.LinuxUserConfiguration.Uid">Uid</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the user ID of the user account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -202,6 +221,10 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_LinuxUserConfiguration_Uid_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <a class="xref" href="Microsoft.Azure.Batch.LinuxUserConfiguration.html#Microsoft_Azure_Batch_LinuxUserConfiguration_Uid">Uid</a> and <a class="xref" href="Microsoft.Azure.Batch.LinuxUserConfiguration.html#Microsoft_Azure_Batch_LinuxUserConfiguration_Gid">Gid</a> properties must be specified together or not at all. If not specified,
+the underlying operating system picks the uid.</p>
+</div>
 </article>
           </div>
           

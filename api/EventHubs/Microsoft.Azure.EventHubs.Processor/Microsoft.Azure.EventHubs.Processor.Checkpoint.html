@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_EventHubs_Processor_Checkpoint" data-uid="Microsoft.Azure.EventHubs.Processor.Checkpoint" class="text-break">Class Checkpoint
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The context object used to preserve state in the stream.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +93,8 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_Checkpoint__ctor_" data-uid="Microsoft.Azure.EventHubs.Processor.Checkpoint.#ctor*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_Checkpoint__ctor_Microsoft_Azure_EventHubs_Processor_Checkpoint_" data-uid="Microsoft.Azure.EventHubs.Processor.Checkpoint.#ctor(Microsoft.Azure.EventHubs.Processor.Checkpoint)">Checkpoint(Checkpoint)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new Checkpoint from an existing checkpoint.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -111,7 +113,8 @@
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.Processor.Checkpoint.html">Checkpoint</a></td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The existing checkpoint to copy</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -119,7 +122,8 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_Checkpoint__ctor_" data-uid="Microsoft.Azure.EventHubs.Processor.Checkpoint.#ctor*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_Checkpoint__ctor_System_String_" data-uid="Microsoft.Azure.EventHubs.Processor.Checkpoint.#ctor(System.String)">Checkpoint(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new Checkpoint for a particular partition ID.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -138,7 +142,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">partitionId</span></td>
-        <td></td>
+        <td><p>The partition ID for the checkpoint</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -146,7 +151,8 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_Checkpoint__ctor_" data-uid="Microsoft.Azure.EventHubs.Processor.Checkpoint.#ctor*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_Checkpoint__ctor_System_String_System_String_System_Int64_" data-uid="Microsoft.Azure.EventHubs.Processor.Checkpoint.#ctor(System.String,System.String,System.Int64)">Checkpoint(String, String, Int64)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new Checkpoint for a particular partition ID, with the offset and sequence number.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -165,17 +171,20 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">partitionId</span></td>
-        <td></td>
+        <td><p>The partition ID for the checkpoint</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">offset</span></td>
-        <td></td>
+        <td><p>The offset for the last processed <a class="xref" href="../Microsoft.Azure.EventHubs/Microsoft.Azure.EventHubs.EventData.html">EventData</a></p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">sequenceNumber</span></td>
-        <td></td>
+        <td><p>The sequence number of the last processed <a class="xref" href="../Microsoft.Azure.EventHubs/Microsoft.Azure.EventHubs.EventData.html">EventData</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -185,7 +194,8 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_Checkpoint_Offset_" data-uid="Microsoft.Azure.EventHubs.Processor.Checkpoint.Offset*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_Checkpoint_Offset" data-uid="Microsoft.Azure.EventHubs.Processor.Checkpoint.Offset">Offset</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the offset of the last processed <a class="xref" href="../Microsoft.Azure.EventHubs/Microsoft.Azure.EventHubs.EventData.html">EventData</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -210,7 +220,8 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_Checkpoint_PartitionId_" data-uid="Microsoft.Azure.EventHubs.Processor.Checkpoint.PartitionId*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_Checkpoint_PartitionId" data-uid="Microsoft.Azure.EventHubs.Processor.Checkpoint.PartitionId">PartitionId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the partition ID for the corresponding checkpoint.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -235,7 +246,8 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_Checkpoint_SequenceNumber_" data-uid="Microsoft.Azure.EventHubs.Processor.Checkpoint.SequenceNumber*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_Checkpoint_SequenceNumber" data-uid="Microsoft.Azure.EventHubs.Processor.Checkpoint.SequenceNumber">SequenceNumber</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the sequence number of the last processed <a class="xref" href="../Microsoft.Azure.EventHubs/Microsoft.Azure.EventHubs.EventData.html">EventData</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

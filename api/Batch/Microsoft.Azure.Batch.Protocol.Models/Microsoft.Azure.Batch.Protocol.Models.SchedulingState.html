@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_SchedulingState" data-uid="Microsoft.Azure.Batch.Protocol.Models.SchedulingState" class="text-break">Enum SchedulingState
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Defines values for SchedulingState.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models.html">Microsoft.Azure.Batch.Protocol.Models</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
@@ -94,11 +95,15 @@ public enum SchedulingState</code></pre>
     <tbody>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_SchedulingState_Disabled">Disabled</td>
-        <td></td>
+        <td><p>No new tasks will be scheduled on the node. Tasks already running
+on the node may still run to completion. All nodes start with
+scheduling enabled.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_SchedulingState_Enabled">Enabled</td>
-        <td></td>
+        <td><p>Tasks can be scheduled on the node.</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>

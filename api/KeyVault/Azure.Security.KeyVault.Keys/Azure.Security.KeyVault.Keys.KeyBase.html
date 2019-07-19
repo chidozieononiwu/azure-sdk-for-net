@@ -73,7 +73,8 @@
   
   <h1 id="Azure_Security_KeyVault_Keys_KeyBase" data-uid="Azure.Security.KeyVault.Keys.KeyBase" class="text-break">Class KeyBase
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>KeyBase is the resource containing all the properties of the key except <a class="xref" href="Azure.Security.KeyVault.Keys.JsonWebKey.html">JsonWebKey</a> properties.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -94,7 +95,8 @@
   
   <a id="Azure_Security_KeyVault_Keys_KeyBase__ctor_" data-uid="Azure.Security.KeyVault.Keys.KeyBase.#ctor*"></a>
   <h4 id="Azure_Security_KeyVault_Keys_KeyBase__ctor_System_String_" data-uid="Azure.Security.KeyVault.Keys.KeyBase.#ctor(System.String)">KeyBase(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the KeyBase class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -113,7 +115,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">name</span></td>
-        <td></td>
+        <td><p>The name of the key.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -123,7 +126,8 @@
   
   <a id="Azure_Security_KeyVault_Keys_KeyBase_Created_" data-uid="Azure.Security.KeyVault.Keys.KeyBase.Created*"></a>
   <h4 id="Azure_Security_KeyVault_Keys_KeyBase_Created" data-uid="Azure.Security.KeyVault.Keys.KeyBase.Created">Created</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creation time in UTC.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -148,7 +152,8 @@
   
   <a id="Azure_Security_KeyVault_Keys_KeyBase_Enabled_" data-uid="Azure.Security.KeyVault.Keys.KeyBase.Enabled*"></a>
   <h4 id="Azure_Security_KeyVault_Keys_KeyBase_Enabled" data-uid="Azure.Security.KeyVault.Keys.KeyBase.Enabled">Enabled</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Specifies whether the key is enabled and useable for cryptographic operations.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -173,7 +178,8 @@
   
   <a id="Azure_Security_KeyVault_Keys_KeyBase_Expires_" data-uid="Azure.Security.KeyVault.Keys.KeyBase.Expires*"></a>
   <h4 id="Azure_Security_KeyVault_Keys_KeyBase_Expires" data-uid="Azure.Security.KeyVault.Keys.KeyBase.Expires">Expires</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Identifies the expiration time (in UTC) on or after which the key must not be used.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -198,7 +204,9 @@
   
   <a id="Azure_Security_KeyVault_Keys_KeyBase_Managed_" data-uid="Azure.Security.KeyVault.Keys.KeyBase.Managed*"></a>
   <h4 id="Azure_Security_KeyVault_Keys_KeyBase_Managed" data-uid="Azure.Security.KeyVault.Keys.KeyBase.Managed">Managed</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Set to true if the key's lifetime is managed by key vault. If this
+is a key backing a KV certificate, then managed will be true.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -223,7 +231,8 @@
   
   <a id="Azure_Security_KeyVault_Keys_KeyBase_Name_" data-uid="Azure.Security.KeyVault.Keys.KeyBase.Name*"></a>
   <h4 id="Azure_Security_KeyVault_Keys_KeyBase_Name" data-uid="Azure.Security.KeyVault.Keys.KeyBase.Name">Name</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Name of the key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -248,7 +257,8 @@
   
   <a id="Azure_Security_KeyVault_Keys_KeyBase_NotBefore_" data-uid="Azure.Security.KeyVault.Keys.KeyBase.NotBefore*"></a>
   <h4 id="Azure_Security_KeyVault_Keys_KeyBase_NotBefore" data-uid="Azure.Security.KeyVault.Keys.KeyBase.NotBefore">NotBefore</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Identifies the time (in UTC) before which the key must not be used for cryptographic operations.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -273,7 +283,14 @@
   
   <a id="Azure_Security_KeyVault_Keys_KeyBase_RecoveryLevel_" data-uid="Azure.Security.KeyVault.Keys.KeyBase.RecoveryLevel*"></a>
   <h4 id="Azure_Security_KeyVault_Keys_KeyBase_RecoveryLevel" data-uid="Azure.Security.KeyVault.Keys.KeyBase.RecoveryLevel">RecoveryLevel</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reflects the deletion recovery level currently in effect for
+keys in the current vault. If it contains 'Purgeable', the
+key can be permanently deleted by a privileged user; otherwise,
+only the system can purge the key, at the end of the retention
+interval. Possible values include: 'Purgeable',
+'Recoverable+Purgeable', 'Recoverable',
+'Recoverable+ProtectedSubscription'</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -298,7 +315,8 @@
   
   <a id="Azure_Security_KeyVault_Keys_KeyBase_Tags_" data-uid="Azure.Security.KeyVault.Keys.KeyBase.Tags*"></a>
   <h4 id="Azure_Security_KeyVault_Keys_KeyBase_Tags" data-uid="Azure.Security.KeyVault.Keys.KeyBase.Tags">Tags</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A dictionary of tags with specific metadata about the key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -323,7 +341,8 @@
   
   <a id="Azure_Security_KeyVault_Keys_KeyBase_Updated_" data-uid="Azure.Security.KeyVault.Keys.KeyBase.Updated*"></a>
   <h4 id="Azure_Security_KeyVault_Keys_KeyBase_Updated" data-uid="Azure.Security.KeyVault.Keys.KeyBase.Updated">Updated</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Last updated time in UTC.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -348,7 +367,8 @@
   
   <a id="Azure_Security_KeyVault_Keys_KeyBase_VaultId_" data-uid="Azure.Security.KeyVault.Keys.KeyBase.VaultId*"></a>
   <h4 id="Azure_Security_KeyVault_Keys_KeyBase_VaultId" data-uid="Azure.Security.KeyVault.Keys.KeyBase.VaultId">VaultId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Key identifier.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -373,7 +393,8 @@
   
   <a id="Azure_Security_KeyVault_Keys_KeyBase_VaultUri_" data-uid="Azure.Security.KeyVault.Keys.KeyBase.VaultUri*"></a>
   <h4 id="Azure_Security_KeyVault_Keys_KeyBase_VaultUri" data-uid="Azure.Security.KeyVault.Keys.KeyBase.VaultUri">VaultUri</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Vault base URL.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -398,7 +419,8 @@
   
   <a id="Azure_Security_KeyVault_Keys_KeyBase_Version_" data-uid="Azure.Security.KeyVault.Keys.KeyBase.Version*"></a>
   <h4 id="Azure_Security_KeyVault_Keys_KeyBase_Version" data-uid="Azure.Security.KeyVault.Keys.KeyBase.Version">Version</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Version of the key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -425,7 +447,8 @@
   
   <a id="Azure_Security_KeyVault_Keys_KeyBase_ParseId_" data-uid="Azure.Security.KeyVault.Keys.KeyBase.ParseId*"></a>
   <h4 id="Azure_Security_KeyVault_Keys_KeyBase_ParseId_System_String_" data-uid="Azure.Security.KeyVault.Keys.KeyBase.ParseId(System.String)">ParseId(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Parses the key identifier into the vaultUri, name, and version of the key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -444,7 +467,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">id</span></td>
-        <td></td>
+        <td><p>The key vault object identifier.</p>
+</td>
       </tr>
     </tbody>
   </table>

@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_JobDeleteHeaders" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobDeleteHeaders" class="text-break">Class JobDeleteHeaders
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Defines headers for Delete operation.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +93,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobDeleteHeaders__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobDeleteHeaders.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobDeleteHeaders__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobDeleteHeaders.#ctor">JobDeleteHeaders()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the JobDeleteHeaders class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -102,7 +104,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobDeleteHeaders__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobDeleteHeaders.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobDeleteHeaders__ctor_System_String_System_String_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobDeleteHeaders.#ctor(System.String,System.String)">JobDeleteHeaders(String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the JobDeleteHeaders class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -121,12 +124,22 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">clientRequestId</span></td>
-        <td></td>
+        <td><p>The client-request-id provided by the
+client during the request. This will be returned only if the
+return-client-request-id parameter was set to true.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">requestId</span></td>
-        <td></td>
+        <td><p>A unique identifier for the request that
+was made to the Batch service. If a request is consistently failing
+and you have verified that the request is properly formulated, you
+may use this value to report the error to Microsoft. In your
+report, include the value of this request ID, the approximate time
+that the request was made, the Batch account against which the
+request was made, and the region that account resides in.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -136,7 +149,10 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobDeleteHeaders_ClientRequestId_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobDeleteHeaders.ClientRequestId*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobDeleteHeaders_ClientRequestId" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobDeleteHeaders.ClientRequestId">ClientRequestId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the client-request-id provided by the client during
+the request. This will be returned only if the
+return-client-request-id parameter was set to true.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -162,7 +178,14 @@ public string ClientRequestId { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobDeleteHeaders_RequestId_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobDeleteHeaders.RequestId*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobDeleteHeaders_RequestId" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobDeleteHeaders.RequestId">RequestId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a unique identifier for the request that was made to
+the Batch service. If a request is consistently failing and you
+have verified that the request is properly formulated, you may use
+this value to report the error to Microsoft. In your report,
+include the value of this request ID, the approximate time that the
+request was made, the Batch account against which the request was
+made, and the region that account resides in.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

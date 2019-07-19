@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation" class="text-break">Class TaskExecutionInformation
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Information about the execution of a task.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +93,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation.#ctor">TaskExecutionInformation()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the TaskExecutionInformation class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -102,7 +104,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation__ctor_System_Int32_System_Int32_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Nullable_System_Int32__Microsoft_Azure_Batch_Protocol_Models_TaskContainerExecutionInformation_Microsoft_Azure_Batch_Protocol_Models_TaskFailureInformation_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Nullable_Microsoft_Azure_Batch_Protocol_Models_TaskExecutionResult__" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation.#ctor(System.Int32,System.Int32,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Int32},Microsoft.Azure.Batch.Protocol.Models.TaskContainerExecutionInformation,Microsoft.Azure.Batch.Protocol.Models.TaskFailureInformation,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{Microsoft.Azure.Batch.Protocol.Models.TaskExecutionResult})">TaskExecutionInformation(Int32, Int32, Nullable&lt;DateTime&gt;, Nullable&lt;DateTime&gt;, Nullable&lt;Int32&gt;, TaskContainerExecutionInformation, TaskFailureInformation, Nullable&lt;DateTime&gt;, Nullable&lt;DateTime&gt;, Nullable&lt;TaskExecutionResult&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the TaskExecutionInformation class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -121,52 +124,72 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">retryCount</span></td>
-        <td></td>
+        <td><p>The number of times the task has been
+retried by the Batch service.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">requeueCount</span></td>
-        <td></td>
+        <td><p>The number of times the task has been
+requeued by the Batch service as the result of a user
+request.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
         <td><span class="parametername">startTime</span></td>
-        <td></td>
+        <td><p>The time at which the task started
+running.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
         <td><span class="parametername">endTime</span></td>
-        <td></td>
+        <td><p>The time at which the task completed.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">exitCode</span></td>
-        <td></td>
+        <td><p>The exit code of the program specified on
+the task command line.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskContainerExecutionInformation.html">TaskContainerExecutionInformation</a></td>
         <td><span class="parametername">containerInfo</span></td>
-        <td></td>
+        <td><p>Information about the container under
+which the task is executing.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskFailureInformation.html">TaskFailureInformation</a></td>
         <td><span class="parametername">failureInfo</span></td>
-        <td></td>
+        <td><p>Information describing the task failure,
+if any.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
         <td><span class="parametername">lastRetryTime</span></td>
-        <td></td>
+        <td><p>The most recent time at which a retry
+of the task started running.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
         <td><span class="parametername">lastRequeueTime</span></td>
-        <td></td>
+        <td><p>The most recent time at which the
+task has been requeued by the Batch service as the result of a user
+request.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionResult.html">TaskExecutionResult</a>&gt;</td>
         <td><span class="parametername">result</span></td>
-        <td></td>
+        <td><p>The result of the task execution.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -176,7 +199,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_ContainerInfo_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation.ContainerInfo*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_ContainerInfo" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation.ContainerInfo">ContainerInfo</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets information about the container under which the task
+is executing.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -198,11 +223,15 @@ public Microsoft.Azure.Batch.Protocol.Models.TaskContainerExecutionInformation C
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_ContainerInfo_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is set only if the task runs in a container context.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_EndTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation.EndTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_EndTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation.EndTime">EndTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the time at which the task completed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -224,11 +253,16 @@ public Nullable&lt;DateTime&gt; EndTime { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_EndTime_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is set only if the task is in the Completed state.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_ExitCode_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation.ExitCode*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_ExitCode" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation.ExitCode">ExitCode</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the exit code of the program specified on the task
+command line.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -250,11 +284,22 @@ public Nullable&lt;int&gt; ExitCode { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_ExitCode_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is set only if the task is in the completed state. In</p>
+<p>general, the exit code for a process reflects the specific</p>
+<p>convention implemented by the application developer for that</p>
+<p>process. If you use the exit code value to make decisions in your</p>
+<p>code, be sure that you know the exit code convention used by the</p>
+<p>application process. However, if the Batch service terminates the</p>
+<p>task (due to timeout, or user termination via the API) you may see</p>
+<p>an operating system-defined exit code.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_FailureInfo_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation.FailureInfo*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_FailureInfo" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation.FailureInfo">FailureInfo</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets information describing the task failure, if any.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -276,11 +321,17 @@ public Microsoft.Azure.Batch.Protocol.Models.TaskFailureInformation FailureInfo 
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_FailureInfo_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is set only if the task is in the completed state and</p>
+<p>encountered a failure.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_LastRequeueTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation.LastRequeueTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_LastRequeueTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation.LastRequeueTime">LastRequeueTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the most recent time at which the task has been
+requeued by the Batch service as the result of a user request.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -302,11 +353,16 @@ public Nullable&lt;DateTime&gt; LastRequeueTime { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_LastRequeueTime_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is set only if the requeueCount is nonzero.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_LastRetryTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation.LastRetryTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_LastRetryTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation.LastRetryTime">LastRetryTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the most recent time at which a retry of the task
+started running.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -328,11 +384,21 @@ public Nullable&lt;DateTime&gt; LastRetryTime { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_LastRetryTime_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This element is present only if the task was retried (i.e.</p>
+<p>retryCount is nonzero). If present, this is typically the same as</p>
+<p>startTime, but may be different if the task has been restarted for</p>
+<p>reasons other than retry; for example, if the compute node was</p>
+<p>rebooted during a retry, then the startTime is updated but the</p>
+<p>lastRetryTime is not.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_RequeueCount_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation.RequeueCount*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_RequeueCount" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation.RequeueCount">RequeueCount</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the number of times the task has been requeued by the
+Batch service as the result of a user request.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -354,11 +420,18 @@ public int RequeueCount { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_RequeueCount_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When the user removes nodes from a pool (by resizing/shrinking the</p>
+<p>pool) or when the job is being disabled, the user can specify that</p>
+<p>running tasks on the nodes be requeued for execution. This count</p>
+<p>tracks how many times the task has been requeued for these reasons.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_Result_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation.Result*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_Result" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation.Result">Result</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the result of the task execution.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -380,11 +453,18 @@ public Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.TaskExecutionResult&gt;
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_Result_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the value is 'failed', then the details of the failure can be</p>
+<p>found in the failureInfo property. Possible values include:</p>
+<p>'success', 'failure'</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_RetryCount_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation.RetryCount*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_RetryCount" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation.RetryCount">RetryCount</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the number of times the task has been retried by the
+Batch service.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -406,11 +486,18 @@ public int RetryCount { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_RetryCount_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Task application failures (non-zero exit code) are retried,</p>
+<p>pre-processing errors (the task could not be run) and file upload</p>
+<p>errors are not retried. The Batch service will retry the task up to</p>
+<p>the limit specified by the constraints.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_StartTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation.StartTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_StartTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation.StartTime">StartTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the time at which the task started running.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -432,6 +519,15 @@ public Nullable&lt;DateTime&gt; StartTime { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskExecutionInformation_StartTime_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>'Running' corresponds to the running state, so if the task</p>
+<p>specifies resource files or application packages, then the start</p>
+<p>time reflects the time at which the task started downloading or</p>
+<p>deploying these. If the task has been restarted or retried, this is</p>
+<p>the most recent time at which the task started running. This</p>
+<p>property is present only for tasks that are in the running or</p>
+<p>completed state.</p>
+</div>
 </article>
           </div>
           

@@ -138,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Core.Extensions/Azure.Core.Extensions.AzureClientBuilderExtensions.html",
-          "hash": "20vcY/b8T+1WTdsaNwaOEQ=="
+          "hash": "dTICsMp3/8kbMpgOlAclFA=="
         }
       },
       "is_incremental": false,
@@ -174,7 +174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Core.Extensions/Azure.Core.Extensions.IAzureClientBuilder-2.html",
-          "hash": "Cu19hZz9QAxqahLWHzpZUA=="
+          "hash": "+RDy12lDKs0uhLwLkZfJBA=="
         }
       },
       "is_incremental": false,
@@ -17778,7 +17778,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models/Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.LanguageInput.html",
-          "hash": "hBKaukEi/fmDQAcrCuS6tA=="
+          "hash": "9jkgiDfj/obJPqUjMEfJTA=="
         }
       },
       "is_incremental": false,
@@ -17814,7 +17814,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models/Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.MultiLanguageInput.html",
-          "hash": "fTupkPU3j0n0+kHtQXltFA=="
+          "hash": "WsDHYPfs8lhw7yRDqVl7TQ=="
         }
       },
       "is_incremental": false,
@@ -17874,7 +17874,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Azure.CognitiveServices.Language.TextAnalytics/Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient.html",
-          "hash": "nu92DyWKRcXyeqq+UDU0qQ=="
+          "hash": "NXdEaLlPLuXstNu3w+X6rg=="
         }
       },
       "is_incremental": false,
@@ -17886,7 +17886,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Azure.CognitiveServices.Language.TextAnalytics/Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClient.html",
-          "hash": "WvwXrajsb8mDQJ5QT9N+oA=="
+          "hash": "FPQu8zF29CBPYAFZ94ryAQ=="
         }
       },
       "is_incremental": false,
@@ -17898,7 +17898,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Azure.CognitiveServices.Language.TextAnalytics/Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.html",
-          "hash": "TZ+BsZumy+EAEKe2QxTo9w=="
+          "hash": "+I18/AI9VDALHqPiDMjZPQ=="
         }
       },
       "is_incremental": false,

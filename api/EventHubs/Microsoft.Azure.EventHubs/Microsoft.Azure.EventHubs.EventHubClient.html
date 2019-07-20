@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class EventHubClient
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class EventHubClient
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../../toc.html">
     <meta property="docfx:tocrel" content="../../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -79,7 +89,7 @@ See <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsof
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><a class="xref" href="Microsoft.Azure.EventHubs.ClientEntity.html">ClientEntity</a></div>
     <div class="level2"><span class="xref">EventHubClient</span></div>
   </div>
@@ -133,7 +143,7 @@ See <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsof
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><p>true if a client wants to access <a class="xref" href="Microsoft.Azure.EventHubs.ReceiverRuntimeInformation.html">ReceiverRuntimeInformation</a> using <a class="xref" href="Microsoft.Azure.EventHubs.PartitionReceiver.html">PartitionReceiver</a>.</p>
 </td>
       </tr>
@@ -160,7 +170,7 @@ See <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsof
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -188,7 +198,7 @@ If not set, systemwide proxy settings will be honored.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Net.IWebProxy</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.iwebproxy">IWebProxy</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -217,7 +227,7 @@ public override sealed System.Threading.Tasks.Task CloseAsync ();</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -364,13 +374,13 @@ The receiver is created for a specific EventHub Partition from the specific cons
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">consumerGroupName</span></td>
         <td><p>the consumer group name that this receiver should be grouped under.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">partitionId</span></td>
         <td><p>the partition Id that the receiver belongs to. All data received will be from this partition only.</p>
 </td>
@@ -382,7 +392,7 @@ The receiver is created for a specific EventHub Partition from the specific cons
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Int64</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
         <td><span class="parametername">epoch</span></td>
         <td><p>a unique identifier (epoch value) that the service uses, to enforce partition/lease ownership.</p>
 </td>
@@ -437,7 +447,7 @@ The receiver is created for a specific EventHub Partition from the specific cons
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">connectionString</span></td>
         <td></td>
       </tr>
@@ -483,7 +493,7 @@ There are 3 patterns/ways to send to EventHubs:
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">partitionId</span></td>
         <td><p>partitionId of EventHub to send the <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>'s to.</p>
 </td>
@@ -533,13 +543,13 @@ The receiver is created for a specific EventHub Partition from the specific cons
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">consumerGroupName</span></td>
         <td><p>the consumer group name that this receiver should be grouped under.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">partitionId</span></td>
         <td><p>the partition Id that the receiver belongs to. All data received will be from this partition only.</p>
 </td>
@@ -601,13 +611,13 @@ The receiver is created for a specific EventHub Partition from the specific cons
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Uri</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
         <td><span class="parametername">endpointAddress</span></td>
         <td><p>Fully qualified domain name for Event Hubs. Most likely, {yournamespace}.servicebus.windows.net</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">path</span></td>
         <td><p>The path to the Event Hub.</p>
 </td>
@@ -619,13 +629,13 @@ The receiver is created for a specific EventHub Partition from the specific cons
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">authority</span></td>
         <td><p>Address of the authority to issue token.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
         <td><span class="parametername">operationTimeout</span></td>
         <td><p>Operation timeout for Event Hubs operations.</p>
 </td>
@@ -676,19 +686,19 @@ The receiver is created for a specific EventHub Partition from the specific cons
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Uri</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
         <td><span class="parametername">endpointAddress</span></td>
         <td><p>Fully qualified domain name for Event Hubs. Most likely, {yournamespace}.servicebus.windows.net</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">entityPath</span></td>
         <td><p>Event Hub path</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
         <td><span class="parametername">operationTimeout</span></td>
         <td><p>Operation timeout for Event Hubs operations.</p>
 </td>
@@ -738,13 +748,13 @@ The receiver is created for a specific EventHub Partition from the specific cons
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Uri</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
         <td><span class="parametername">endpointAddress</span></td>
         <td><p>Fully qualified domain name for Event Hubs. Most likely, {yournamespace}.servicebus.windows.net</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">entityPath</span></td>
         <td><p>Event Hub path</p>
 </td>
@@ -756,7 +766,7 @@ The receiver is created for a specific EventHub Partition from the specific cons
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
         <td><span class="parametername">operationTimeout</span></td>
         <td><p>Operation timeout for Event Hubs operations.</p>
 </td>
@@ -807,7 +817,7 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.EventHubs.EventHubPartitio
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">partitionId</span></td>
         <td><p>The partition ID.</p>
 </td>
@@ -824,7 +834,7 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.EventHubs.EventHubPartitio
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.EventHubs.EventHubPartitionRuntimeInformation.html">EventHubPartitionRuntimeInformation</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.EventHubs.EventHubPartitionRuntimeInformation.html">EventHubPartitionRuntimeInformation</a>&gt;</td>
         <td><p>Returns <a class="xref" href="Microsoft.Azure.EventHubs.EventHubPartitionRuntimeInformation.html">EventHubPartitionRuntimeInformation</a>.</p>
 </td>
       </tr>
@@ -852,7 +862,7 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.EventHubs.EventHubRuntimeI
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.EventHubs.EventHubRuntimeInformation.html">EventHubRuntimeInformation</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.EventHubs.EventHubRuntimeInformation.html">EventHubRuntimeInformation</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -877,7 +887,7 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.EventHubs.EventHubRuntimeI
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -903,12 +913,12 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.EventHubs.EventHubRuntimeI
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">consumerGroupName</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">partitionId</span></td>
         <td></td>
       </tr>
@@ -918,7 +928,7 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.EventHubs.EventHubRuntimeI
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
         <td><span class="parametername">epoch</span></td>
         <td></td>
       </tr>
@@ -965,7 +975,7 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.EventHubs.EventHubRuntimeI
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">partitionId</span></td>
         <td></td>
       </tr>
@@ -981,7 +991,7 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.EventHubs.EventHubRuntimeI
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.EventHubs.EventHubPartitionRuntimeInformation.html">EventHubPartitionRuntimeInformation</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.EventHubs.EventHubPartitionRuntimeInformation.html">EventHubPartitionRuntimeInformation</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1006,7 +1016,7 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.EventHubs.EventHubRuntimeI
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Azure.EventHubs.EventHubRuntimeInformation.html">EventHubRuntimeInformation</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.EventHubs.EventHubRuntimeInformation.html">EventHubRuntimeInformation</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1066,7 +1076,7 @@ Here's the message forwarding algorithm:
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td><p>A Task that completes when the send operations is done.</p>
 </td>
       </tr>
@@ -1117,7 +1127,7 @@ public System.Threading.Tasks.Task SendAsync (Microsoft.Azure.EventHubs.EventDat
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td><p>A Task that completes when the send operation is done.</p>
 </td>
       </tr>
@@ -1150,7 +1160,7 @@ This is the most recommended way to send to EventHub.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>&gt;</td>
         <td><span class="parametername">eventDatas</span></td>
         <td><p>A batch of events to send to EventHub</p>
 </td>
@@ -1167,7 +1177,7 @@ This is the most recommended way to send to EventHub.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td><p>A Task that completes when the send operations is done.</p>
 </td>
       </tr>
@@ -1235,7 +1245,7 @@ Using this type of send (Sending using a specific partitionKey) could sometimes 
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">partitionKey</span></td>
         <td><p>the partitionKey will be hashed to determine the partitionId to send the EventData to. On the Received message this can be accessed at <a class="xref" href="Microsoft.Azure.EventHubs.EventData.SystemPropertiesCollection.html#Microsoft_Azure_EventHubs_EventData_SystemPropertiesCollection_PartitionKey">PartitionKey</a>.</p>
 </td>
@@ -1252,7 +1262,7 @@ Using this type of send (Sending using a specific partitionKey) could sometimes 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td><p>A Task that completes when the send operation is done.</p>
 </td>
       </tr>
@@ -1293,13 +1303,13 @@ public System.Threading.Tasks.Task SendAsync (System.Collections.Generic.IEnumer
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>&gt;</td>
         <td><span class="parametername">eventDatas</span></td>
         <td><p>the batch of events to send to EventHub</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">partitionKey</span></td>
         <td><p>the partitionKey will be hashed to determine the partitionId to send the EventData to. On the Received message this can be accessed at <a class="xref" href="Microsoft.Azure.EventHubs.EventData.SystemPropertiesCollection.html#Microsoft_Azure_EventHubs_EventData_SystemPropertiesCollection_PartitionKey">PartitionKey</a>.</p>
 </td>
@@ -1316,7 +1326,7 @@ public System.Threading.Tasks.Task SendAsync (System.Collections.Generic.IEnumer
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td><p>A Task that completes when the send operation is done.</p>
 </td>
       </tr>
@@ -1350,8 +1360,8 @@ public System.Threading.Tasks.Task SendAsync (System.Collections.Generic.IEnumer
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

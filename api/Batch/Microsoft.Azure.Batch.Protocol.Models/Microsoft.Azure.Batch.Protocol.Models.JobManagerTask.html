@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class JobManagerTask
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class JobManagerTask
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../../toc.html">
     <meta property="docfx:tocrel" content="../../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -78,7 +88,7 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">JobManagerTask</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models.html">Microsoft.Azure.Batch.Protocol.Models</a></h6>
@@ -148,21 +158,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">id</span></td>
         <td><p>A string that uniquely identifies the Job Manager
 task within the job.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">commandLine</span></td>
         <td><p>The command line of the Job Manager
 task.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">displayName</span></td>
         <td><p>The display name of the Job Manager
 task.</p>
@@ -176,7 +186,7 @@ under which the Job Manager task runs.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ResourceFile.html">ResourceFile</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ResourceFile.html">ResourceFile</a>&gt;</td>
         <td><span class="parametername">resourceFiles</span></td>
         <td><p>A list of files that the Batch service
 will download to the compute node before running the command
@@ -184,7 +194,7 @@ line.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.OutputFile.html">OutputFile</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.OutputFile.html">OutputFile</a>&gt;</td>
         <td><span class="parametername">outputFiles</span></td>
         <td><p>A list of files that the Batch service
 will upload from the compute node after running the command
@@ -192,7 +202,7 @@ line.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting.html">EnvironmentSetting</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting.html">EnvironmentSetting</a>&gt;</td>
         <td><span class="parametername">environmentSettings</span></td>
         <td><p>A list of environment variable
 settings for the Job Manager task.</p>
@@ -206,7 +216,7 @@ task.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><span class="parametername">killJobOnCompletion</span></td>
         <td><p>Whether completion of the Job
 Manager task signifies completion of the entire job.</p>
@@ -220,14 +230,14 @@ Manager task runs.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><span class="parametername">runExclusive</span></td>
         <td><p>Whether the Job Manager task requires
 exclusive use of the compute node where it runs.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ApplicationPackageReference.html">ApplicationPackageReference</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ApplicationPackageReference.html">ApplicationPackageReference</a>&gt;</td>
         <td><span class="parametername">applicationPackageReferences</span></td>
         <td><p>A list of application
 packages that the Batch service will deploy to the compute node
@@ -243,7 +253,7 @@ operations.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><span class="parametername">allowLowPriorityNode</span></td>
         <td><p>Whether the Job Manager task may
 run on a low-priority compute node.</p>
@@ -276,7 +286,7 @@ public Nullable&lt;bool&gt; AllowLowPriorityNode { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -307,7 +317,7 @@ public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ApplicationPackageReference.html">ApplicationPackageReference</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ApplicationPackageReference.html">ApplicationPackageReference</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -381,7 +391,7 @@ public string CommandLine { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -487,7 +497,7 @@ public string DisplayName { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -519,7 +529,7 @@ public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting.html">EnvironmentSetting</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting.html">EnvironmentSetting</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -547,7 +557,7 @@ public string Id { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -580,7 +590,7 @@ public Nullable&lt;bool&gt; KillJobOnCompletion { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -623,7 +633,7 @@ public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.OutputFile.html">OutputFile</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.OutputFile.html">OutputFile</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -655,7 +665,7 @@ public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ResourceFile.html">ResourceFile</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ResourceFile.html">ResourceFile</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -692,7 +702,7 @@ public Nullable&lt;bool&gt; RunExclusive { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -761,8 +771,8 @@ public Microsoft.Azure.Batch.Protocol.Models.UserIdentity UserIdentity { get; se
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

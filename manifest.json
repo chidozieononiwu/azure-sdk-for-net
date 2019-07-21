@@ -35284,12 +35284,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "dkWPx37MOw4muTh69sKgEA=="
+          "hash": "HrcR4SJPWtDJs8rxxQi3tA=="
         }
       },
       "is_incremental": false,
@@ -35309,38 +35312,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/CONTRIBUTING.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/CONTRIBUTING.html",
-          "hash": "ucQWZ1BPxcHXjxysdaRrjg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "articles/intro.md",
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
           "hash": "G4Vc+JuD089NTt44cuz+wg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
-      "type": "Conceptual",
-      "source_relative_path": "articles/packages.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/packages.html",
-          "hash": "lQvMriMY1uPBO2WR3Yid2A=="
         }
       },
       "is_incremental": false,
@@ -35359,12 +35335,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "THutGnjolXhKAK4estiTGw=="
+          "hash": "A+CiF07vJ6H4Zh0WW6/BYA=="
         }
       },
       "is_incremental": false,
@@ -35376,7 +35355,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "sg3p87VbBWcK30qmego3TQ=="
+          "hash": "qk7PSzmhfRREVNJJf4Kbnw=="
         }
       },
       "is_incremental": false,
@@ -35404,7 +35383,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 5,
+          "total_file_count": 3,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {

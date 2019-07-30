@@ -83,8 +83,7 @@
   
   <h1 id="Microsoft_Azure_Batch_TaskStateMonitor" data-uid="Microsoft.Azure.Batch.TaskStateMonitor" class="text-break">Class TaskStateMonitor
   </h1>
-  <div class="markdown level0 summary"><p>Provides utilities to help monitor CloudTask states.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -107,9 +106,7 @@
   
   <a id="Microsoft_Azure_Batch_TaskStateMonitor_CustomBehaviors_" data-uid="Microsoft.Azure.Batch.TaskStateMonitor.CustomBehaviors*"></a>
   <h4 id="Microsoft_Azure_Batch_TaskStateMonitor_CustomBehaviors" data-uid="Microsoft.Azure.Batch.TaskStateMonitor.CustomBehaviors">CustomBehaviors</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a list of behaviors that modify or customize requests to the Batch service
-made via this <a class="xref" href="Microsoft.Azure.Batch.TaskStateMonitor.html">TaskStateMonitor</a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -130,18 +127,13 @@ made via this <a class="xref" href="Microsoft.Azure.Batch.TaskStateMonitor.html"
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_TaskStateMonitor_CustomBehaviors_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>These behaviors are inherited by child objects.</p>
-<p>Modifications are applied in the order of the collection. The last write wins.</p>
-</div>
   <h3 id="methods">Methods
   </h3>
   
   
   <a id="Microsoft_Azure_Batch_TaskStateMonitor_WaitAll_" data-uid="Microsoft.Azure.Batch.TaskStateMonitor.WaitAll*"></a>
   <h4 id="Microsoft_Azure_Batch_TaskStateMonitor_WaitAll_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_CloudTask__Microsoft_Azure_Batch_Common_TaskState_System_TimeSpan_Microsoft_Azure_Batch_ODATAMonitorControl_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.TaskStateMonitor.WaitAll(System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.CloudTask},Microsoft.Azure.Batch.Common.TaskState,System.TimeSpan,Microsoft.Azure.Batch.ODATAMonitorControl,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">WaitAll(IEnumerable&lt;CloudTask&gt;, TaskState, TimeSpan, ODATAMonitorControl, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
-  <div class="markdown level1 summary"><p>Monitors a <a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a> collection until each of its members has reached a desired state at least once.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -160,60 +152,27 @@ made via this <a class="xref" href="Microsoft.Azure.Batch.TaskStateMonitor.html"
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a>&gt;</td>
         <td><span class="parametername">tasksToMonitor</span></td>
-        <td><p>The collection of tasks to monitor.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.TaskState.html">TaskState</a></td>
         <td><span class="parametername">desiredState</span></td>
-        <td><p>The target state of the tasks. The method will exit when all tasks have reached this state at least once.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
         <td><span class="parametername">timeout</span></td>
-        <td><p>The maximum amount of time this call will wait before timing out.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.ODATAMonitorControl.html">ODATAMonitorControl</a></td>
         <td><span class="parametername">controlParams</span></td>
-        <td><p>Controls various settings of the monitor, such as delay between each poll.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.TaskStateMonitor.html#Microsoft_Azure_Batch_TaskStateMonitor_CustomBehaviors">CustomBehaviors</a>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Microsoft_Azure_Batch_TaskStateMonitor_WaitAll_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_CloudTask__Microsoft_Azure_Batch_Common_TaskState_System_TimeSpan_Microsoft_Azure_Batch_ODATAMonitorControl_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>
-  The state of each <a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a> instance is assumed to be authoritative at the time of the call.
-  Instances that are already at the <code data-dev-comment-type="paramref">desiredState</code> are ignored.
-  The <a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a> instances in the collection are treated as read-only.
-  This means that when the call completes (timeout or not) the <a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a> instances should be refreshed before using.
-</p>
-<p>
-  This is a blocking operation. For a non-blocking equivalent, see
-<a class="xref" href="Microsoft.Azure.Batch.TaskStateMonitor.html#Microsoft_Azure_Batch_TaskStateMonitor_WhenAll_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_CloudTask__Microsoft_Azure_Batch_Common_TaskState_System_TimeSpan_Microsoft_Azure_Batch_ODATAMonitorControl_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__">WhenAll(IEnumerable&lt;CloudTask&gt;, TaskState, TimeSpan, ODATAMonitorControl, IEnumerable&lt;BatchClientBehavior&gt;)</a>.
-</p>
-</div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timeoutexception">System.TimeoutException</a></td>
-        <td><p>Thrown if the <code data-dev-comment-type="paramref">timeout</code> has elapsed.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -221,8 +180,7 @@ made via this <a class="xref" href="Microsoft.Azure.Batch.TaskStateMonitor.html"
   
   <a id="Microsoft_Azure_Batch_TaskStateMonitor_WhenAll_" data-uid="Microsoft.Azure.Batch.TaskStateMonitor.WhenAll*"></a>
   <h4 id="Microsoft_Azure_Batch_TaskStateMonitor_WhenAll_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_CloudTask__Microsoft_Azure_Batch_Common_TaskState_System_Threading_CancellationToken_Microsoft_Azure_Batch_ODATAMonitorControl_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.TaskStateMonitor.WhenAll(System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.CloudTask},Microsoft.Azure.Batch.Common.TaskState,System.Threading.CancellationToken,Microsoft.Azure.Batch.ODATAMonitorControl,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">WhenAll(IEnumerable&lt;CloudTask&gt;, TaskState, CancellationToken, ODATAMonitorControl, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
-  <div class="markdown level1 summary"><p>Monitors a <a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a> collection until each of its members has reached a desired state at least once.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -242,32 +200,27 @@ public System.Threading.Tasks.Task WhenAll (System.Collections.Generic.IEnumerab
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a>&gt;</td>
         <td><span class="parametername">tasksToMonitor</span></td>
-        <td><p>The collection of tasks to monitor.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.TaskState.html">TaskState</a></td>
         <td><span class="parametername">desiredState</span></td>
-        <td><p>The target state of the tasks. The method will exit when all tasks have reached this state at least once.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> for controlling the lifetime of the asynchronous operation.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.ODATAMonitorControl.html">ODATAMonitorControl</a></td>
         <td><span class="parametername">controlParams</span></td>
-        <td><p>Controls various settings of the monitor, such as delay between each poll.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.TaskStateMonitor.html#Microsoft_Azure_Batch_TaskStateMonitor_CustomBehaviors">CustomBehaviors</a>.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -282,35 +235,7 @@ public System.Threading.Tasks.Task WhenAll (System.Collections.Generic.IEnumerab
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> that represents the asynchronous operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Microsoft_Azure_Batch_TaskStateMonitor_WhenAll_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_CloudTask__Microsoft_Azure_Batch_Common_TaskState_System_Threading_CancellationToken_Microsoft_Azure_Batch_ODATAMonitorControl_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>
-  The state of each <a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a> instance is assumed to be authoritative at the time of the call.
-  Instances that are already at the <code data-dev-comment-type="paramref">desiredState</code> are ignored.
-  The <a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a> instances in the collection are treated as read-only.
-  This means that when the call completes (timeout or not) the <a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a> instances should be refreshed before using.
-</p>
-<p>
-  This method runs asynchronously.
-</p>
-</div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.operationcanceledexception">System.OperationCanceledException</a></td>
-        <td><p>Thrown if the <code data-dev-comment-type="paramref">cancellationToken</code> was cancelled.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -318,8 +243,7 @@ public System.Threading.Tasks.Task WhenAll (System.Collections.Generic.IEnumerab
   
   <a id="Microsoft_Azure_Batch_TaskStateMonitor_WhenAll_" data-uid="Microsoft.Azure.Batch.TaskStateMonitor.WhenAll*"></a>
   <h4 id="Microsoft_Azure_Batch_TaskStateMonitor_WhenAll_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_CloudTask__Microsoft_Azure_Batch_Common_TaskState_System_TimeSpan_Microsoft_Azure_Batch_ODATAMonitorControl_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.TaskStateMonitor.WhenAll(System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.CloudTask},Microsoft.Azure.Batch.Common.TaskState,System.TimeSpan,Microsoft.Azure.Batch.ODATAMonitorControl,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">WhenAll(IEnumerable&lt;CloudTask&gt;, TaskState, TimeSpan, ODATAMonitorControl, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
-  <div class="markdown level1 summary"><p>Monitors a <a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a> collection until each of its members has reached a desired state at least once.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -339,32 +263,27 @@ public System.Threading.Tasks.Task WhenAll (System.Collections.Generic.IEnumerab
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a>&gt;</td>
         <td><span class="parametername">tasksToMonitor</span></td>
-        <td><p>The collection of tasks to monitor.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.TaskState.html">TaskState</a></td>
         <td><span class="parametername">desiredState</span></td>
-        <td><p>The target state of the tasks. The method will exit when all tasks have reached this state at least once.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
         <td><span class="parametername">timeout</span></td>
-        <td><p>The maximum amount of time this call will wait before timing out.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.ODATAMonitorControl.html">ODATAMonitorControl</a></td>
         <td><span class="parametername">controlParams</span></td>
-        <td><p>Controls various settings of the monitor, such as delay between each poll.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.TaskStateMonitor.html#Microsoft_Azure_Batch_TaskStateMonitor_CustomBehaviors">CustomBehaviors</a>.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -379,35 +298,7 @@ public System.Threading.Tasks.Task WhenAll (System.Collections.Generic.IEnumerab
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> that represents the asynchronous operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Microsoft_Azure_Batch_TaskStateMonitor_WhenAll_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_CloudTask__Microsoft_Azure_Batch_Common_TaskState_System_TimeSpan_Microsoft_Azure_Batch_ODATAMonitorControl_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>
-  The state of each <a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a> instance is assumed to be authoritative at the time of the call.
-  Instances that are already at the <code data-dev-comment-type="paramref">desiredState</code> are ignored.
-  The <a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a> instances in the collection are treated as read-only.
-  This means that when the call completes (timeout or not) the <a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a> instances should be refreshed before using.
-</p>
-<p>
-  This method runs asynchronously.
-</p>
-</div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timeoutexception">System.TimeoutException</a></td>
-        <td><p>Thrown if the <code data-dev-comment-type="paramref">timeout</code> has elapsed.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>

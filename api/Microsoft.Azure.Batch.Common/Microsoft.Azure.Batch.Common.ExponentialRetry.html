@@ -83,8 +83,7 @@
   
   <h1 id="Microsoft_Azure_Batch_Common_ExponentialRetry" data-uid="Microsoft.Azure.Batch.Common.ExponentialRetry" class="text-break">Class ExponentialRetry
   </h1>
-  <div class="markdown level0 summary"><p>Represents a retry policy that performs a specified number of retries, using an exponential backoff scheme to determine the interval between retries.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -107,8 +106,7 @@
   
   <a id="Microsoft_Azure_Batch_Common_ExponentialRetry__ctor_" data-uid="Microsoft.Azure.Batch.Common.ExponentialRetry.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Common_ExponentialRetry__ctor_System_TimeSpan_System_Int32_System_Nullable_System_TimeSpan__" data-uid="Microsoft.Azure.Batch.Common.ExponentialRetry.#ctor(System.TimeSpan,System.Int32,System.Nullable{System.TimeSpan})">ExponentialRetry(TimeSpan, Int32, Nullable&lt;TimeSpan&gt;)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.Common.ExponentialRetry.html">ExponentialRetry</a> class using the specified delta and maximum number of retries.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -127,20 +125,17 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
         <td><span class="parametername">deltaBackoff</span></td>
-        <td><p>The backoff interval between retries, where the resulting backoff is 2^n * deltaBackoff (where n is the number of retries)</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">maxRetries</span></td>
-        <td><p>The maximum number of retry attempts.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
         <td><span class="parametername">maxBackoff</span></td>
-        <td><p>The maximum duration to wait between retries.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -150,8 +145,7 @@
   
   <a id="Microsoft_Azure_Batch_Common_ExponentialRetry_DeltaBackoff_" data-uid="Microsoft.Azure.Batch.Common.ExponentialRetry.DeltaBackoff*"></a>
   <h4 id="Microsoft_Azure_Batch_Common_ExponentialRetry_DeltaBackoff" data-uid="Microsoft.Azure.Batch.Common.ExponentialRetry.DeltaBackoff">DeltaBackoff</h4>
-  <div class="markdown level1 summary"><p>Gets the backoff interval between retries, where the resulting backoff is 2^n * deltaBackoff (where n is the number of retries).</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -176,8 +170,7 @@
   
   <a id="Microsoft_Azure_Batch_Common_ExponentialRetry_MaxBackoff_" data-uid="Microsoft.Azure.Batch.Common.ExponentialRetry.MaxBackoff*"></a>
   <h4 id="Microsoft_Azure_Batch_Common_ExponentialRetry_MaxBackoff" data-uid="Microsoft.Azure.Batch.Common.ExponentialRetry.MaxBackoff">MaxBackoff</h4>
-  <div class="markdown level1 summary"><p>The maximum duration to wait between retries.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -202,8 +195,7 @@
   
   <a id="Microsoft_Azure_Batch_Common_ExponentialRetry_MaximumRetries_" data-uid="Microsoft.Azure.Batch.Common.ExponentialRetry.MaximumRetries*"></a>
   <h4 id="Microsoft_Azure_Batch_Common_ExponentialRetry_MaximumRetries" data-uid="Microsoft.Azure.Batch.Common.ExponentialRetry.MaximumRetries">MaximumRetries</h4>
-  <div class="markdown level1 summary"><p>Gets the maximum number of retry attempts.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -230,8 +222,7 @@
   
   <a id="Microsoft_Azure_Batch_Common_ExponentialRetry_ShouldRetryAsync_" data-uid="Microsoft.Azure.Batch.Common.ExponentialRetry.ShouldRetryAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Common_ExponentialRetry_ShouldRetryAsync_System_Exception_Microsoft_Azure_Batch_Common_OperationContext_" data-uid="Microsoft.Azure.Batch.Common.ExponentialRetry.ShouldRetryAsync(System.Exception,Microsoft.Azure.Batch.Common.OperationContext)">ShouldRetryAsync(Exception, OperationContext)</h4>
-  <div class="markdown level1 summary"><p>Determines if the operation should be retried and how long to wait until the next retry.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -250,14 +241,12 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a></td>
         <td><span class="parametername">exception</span></td>
-        <td><p>An <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a> object that represents the last exception encountered.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Common.OperationContext.html">OperationContext</a></td>
         <td><span class="parametername">operationContext</span></td>
-        <td><p>An <a class="xref" href="Microsoft.Azure.Batch.Common.OperationContext.html">OperationContext</a> object for tracking the current operation.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -272,8 +261,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Common.RetryDecision.html">RetryDecision</a>&gt;</td>
-        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.Common.RetryDecision.html">RetryDecision</a> object which specifies if a retry should be performed.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>

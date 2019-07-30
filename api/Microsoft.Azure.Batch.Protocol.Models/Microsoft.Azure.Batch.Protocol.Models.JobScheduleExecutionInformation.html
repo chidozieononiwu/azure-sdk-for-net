@@ -83,9 +83,7 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleExecutionInformation" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleExecutionInformation" class="text-break">Class JobScheduleExecutionInformation
   </h1>
-  <div class="markdown level0 summary"><p>Contains information about jobs that have been and will be run under a
-job schedule.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -104,9 +102,7 @@ job schedule.</p>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleExecutionInformation__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleExecutionInformation.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleExecutionInformation__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleExecutionInformation.#ctor">JobScheduleExecutionInformation()</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the JobScheduleExecutionInformation
-class.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -116,9 +112,7 @@ class.</p>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleExecutionInformation__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleExecutionInformation.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleExecutionInformation__ctor_System_Nullable_System_DateTime__Microsoft_Azure_Batch_Protocol_Models_RecentJob_System_Nullable_System_DateTime__" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleExecutionInformation.#ctor(System.Nullable{System.DateTime},Microsoft.Azure.Batch.Protocol.Models.RecentJob,System.Nullable{System.DateTime})">JobScheduleExecutionInformation(Nullable&lt;DateTime&gt;, RecentJob, Nullable&lt;DateTime&gt;)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the JobScheduleExecutionInformation
-class.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -137,22 +131,17 @@ class.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;</td>
         <td><span class="parametername">nextRunTime</span></td>
-        <td><p>The next time at which a job will be
-created under this schedule.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.RecentJob.html">RecentJob</a></td>
         <td><span class="parametername">recentJob</span></td>
-        <td><p>Information about the most recent job under
-the job schedule.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;</td>
         <td><span class="parametername">endTime</span></td>
-        <td><p>The time at which the schedule ended.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -162,8 +151,7 @@ the job schedule.</p>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleExecutionInformation_EndTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleExecutionInformation.EndTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleExecutionInformation_EndTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleExecutionInformation.EndTime">EndTime</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the time at which the schedule ended.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -185,17 +173,11 @@ public Nullable&lt;DateTime&gt; EndTime { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleExecutionInformation_EndTime_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This property is set only if the job schedule is in the completed</p>
-<p>state.</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleExecutionInformation_NextRunTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleExecutionInformation.NextRunTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleExecutionInformation_NextRunTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleExecutionInformation.NextRunTime">NextRunTime</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the next time at which a job will be created under
-this schedule.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -217,19 +199,11 @@ public Nullable&lt;DateTime&gt; NextRunTime { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleExecutionInformation_NextRunTime_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This property is meaningful only if the schedule is in the active</p>
-<p>state when the time comes around. For example, if the schedule is</p>
-<p>disabled, no job will be created at nextRunTime unless the job is</p>
-<p>enabled before then.</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleExecutionInformation_RecentJob_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleExecutionInformation.RecentJob*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleExecutionInformation_RecentJob" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleExecutionInformation.RecentJob">RecentJob</h4>
-  <div class="markdown level1 summary"><p>Gets or sets information about the most recent job under the job
-schedule.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -251,10 +225,6 @@ public Microsoft.Azure.Batch.Protocol.Models.RecentJob RecentJob { get; set; }</
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleExecutionInformation_RecentJob_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This property is present only if the at least one job has run under</p>
-<p>the schedule.</p>
-</div>
 </article>
           </div>
           

@@ -83,9 +83,7 @@
   
   <h1 id="Microsoft_Azure_Batch_TaskIdRange" data-uid="Microsoft.Azure.Batch.TaskIdRange" class="text-break">Class TaskIdRange
   </h1>
-  <div class="markdown level0 summary"><p>A range of task ids that a <a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a> depends on. All tasks with ids in the range must complete successfully
-before the dependent task can be scheduled.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -104,8 +102,7 @@ before the dependent task can be scheduled.</p>
   
   <a id="Microsoft_Azure_Batch_TaskIdRange__ctor_" data-uid="Microsoft.Azure.Batch.TaskIdRange.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_TaskIdRange__ctor_System_Int32_System_Int32_" data-uid="Microsoft.Azure.Batch.TaskIdRange.#ctor(System.Int32,System.Int32)">TaskIdRange(Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.TaskIdRange.html">TaskIdRange</a> class.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -124,39 +121,12 @@ before the dependent task can be scheduled.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">start</span></td>
-        <td><p>The first task id in the range.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">end</span></td>
-        <td><p>The last task id in the range.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Microsoft_Azure_Batch_TaskIdRange__ctor_System_Int32_System_Int32__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Ranges are inclusive. For example, if a task depends on a range with Start 8 and End 10, then tasks &quot;8&quot;, &quot;9&quot; and &quot;10&quot;</p>
-<p>must complete before the task can be scheduled.</p>
-</div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">System.ArgumentOutOfRangeException</a></td>
-        <td><p><code data-dev-comment-type="paramref">start</code> or <code data-dev-comment-type="paramref">end</code> is negative.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">System.ArgumentException</a></td>
-        <td><p><code data-dev-comment-type="paramref">end</code> is less than <code data-dev-comment-type="paramref">start</code>.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -166,8 +136,7 @@ before the dependent task can be scheduled.</p>
   
   <a id="Microsoft_Azure_Batch_TaskIdRange_End_" data-uid="Microsoft.Azure.Batch.TaskIdRange.End*"></a>
   <h4 id="Microsoft_Azure_Batch_TaskIdRange_End" data-uid="Microsoft.Azure.Batch.TaskIdRange.End">End</h4>
-  <div class="markdown level1 summary"><p>Gets the last task id in the range.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -188,16 +157,11 @@ before the dependent task can be scheduled.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_TaskIdRange_End_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Ranges are inclusive. For example, if a task depends on a range with End 12, then task &quot;12&quot; must complete before</p>
-<p>the task can be scheduled.</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_TaskIdRange_Start_" data-uid="Microsoft.Azure.Batch.TaskIdRange.Start*"></a>
   <h4 id="Microsoft_Azure_Batch_TaskIdRange_Start" data-uid="Microsoft.Azure.Batch.TaskIdRange.Start">Start</h4>
-  <div class="markdown level1 summary"><p>Gets the first task id in the range.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -218,10 +182,6 @@ before the dependent task can be scheduled.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_TaskIdRange_Start_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Ranges are inclusive. For example, if a task depends on a range with Start 8, then task &quot;8&quot; must complete before</p>
-<p>the task can be scheduled.</p>
-</div>
 </article>
           </div>
           

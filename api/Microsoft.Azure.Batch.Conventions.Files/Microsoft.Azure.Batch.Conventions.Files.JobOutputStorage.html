@@ -83,8 +83,7 @@
   
   <h1 id="Microsoft_Azure_Batch_Conventions_Files_JobOutputStorage" data-uid="Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage" class="text-break">Class JobOutputStorage
   </h1>
-  <div class="markdown level0 summary"><p>Represents persistent storage for the outputs of an Azure Batch job.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -97,21 +96,13 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class JobOutputStorage</code></pre>
   </div>
-  <h5 id="Microsoft_Azure_Batch_Conventions_Files_JobOutputStorage_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>Job outputs refer to output data logically associated with the entire job, rather than</p>
-<p>a particular task. For example, in a movie rendering job, if a task combined all the frames</p>
-<p>into a movie, that would logically be a job output. The purpose of categorising an</p>
-<p>output as a 'job' output is to save the client from having to know which task produced it.</p>
-</div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="Microsoft_Azure_Batch_Conventions_Files_JobOutputStorage__ctor_" data-uid="Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Conventions_Files_JobOutputStorage__ctor_System_Uri_" data-uid="Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.#ctor(System.Uri)">JobOutputStorage(Uri)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.html">JobOutputStorage</a> class from a URL representing
-the job output container.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -130,25 +121,15 @@ the job output container.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
         <td><span class="parametername">jobOutputContainerUri</span></td>
-        <td><p>The URL in Azure storage of the blob container to
-use for job outputs. This URL must contain a SAS (Shared Access Signature) granting
-access to the container, or the container must be public.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Conventions_Files_JobOutputStorage__ctor_System_Uri__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The container must already exist; the JobOutputStorage class does not create</p>
-<pre><code>        it for you.
-</code></pre>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_Conventions_Files_JobOutputStorage__ctor_" data-uid="Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Conventions_Files_JobOutputStorage__ctor_Microsoft_WindowsAzure_Storage_CloudStorageAccount_System_String_" data-uid="Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.#ctor(Microsoft.WindowsAzure.Storage.CloudStorageAccount,System.String)">JobOutputStorage(CloudStorageAccount, String)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.html">JobOutputStorage</a> class from a storage account
-and job id.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -167,29 +148,20 @@ and job id.</p>
       <tr>
         <td><span class="xref">Microsoft.WindowsAzure.Storage.CloudStorageAccount</span></td>
         <td><span class="parametername">storageAccount</span></td>
-        <td><p>The storage account linked to the Azure Batch account.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td><p>The id of the Azure Batch job.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Conventions_Files_JobOutputStorage__ctor_Microsoft_WindowsAzure_Storage_CloudStorageAccount_System_String__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The job output container must already exist; the JobOutputStorage class does not create</p>
-<pre><code>        it for you.
-</code></pre>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_Conventions_Files_JobOutputStorage__ctor_" data-uid="Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Conventions_Files_JobOutputStorage__ctor_System_Uri_Microsoft_WindowsAzure_Storage_RetryPolicies_IRetryPolicy_" data-uid="Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.#ctor(System.Uri,Microsoft.WindowsAzure.Storage.RetryPolicies.IRetryPolicy)">JobOutputStorage(Uri, IRetryPolicy)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.html">JobOutputStorage</a> class from a URL representing
-the job output container.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -208,31 +180,20 @@ the job output container.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
         <td><span class="parametername">jobOutputContainerUri</span></td>
-        <td><p>The URL in Azure storage of the blob container to
-use for job outputs. This URL must contain a SAS (Shared Access Signature) granting
-access to the container, or the container must be public.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">Microsoft.WindowsAzure.Storage.RetryPolicies.IRetryPolicy</span></td>
         <td><span class="parametername">storageRetryPolicy</span></td>
-        <td><p>The retry policy for storage requests.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Conventions_Files_JobOutputStorage__ctor_System_Uri_Microsoft_WindowsAzure_Storage_RetryPolicies_IRetryPolicy__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The container must already exist; the JobOutputStorage class does not create</p>
-<pre><code>        it for you.
-</code></pre>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_Conventions_Files_JobOutputStorage__ctor_" data-uid="Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Conventions_Files_JobOutputStorage__ctor_Microsoft_WindowsAzure_Storage_CloudStorageAccount_System_String_Microsoft_WindowsAzure_Storage_RetryPolicies_IRetryPolicy_" data-uid="Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.#ctor(Microsoft.WindowsAzure.Storage.CloudStorageAccount,System.String,Microsoft.WindowsAzure.Storage.RetryPolicies.IRetryPolicy)">JobOutputStorage(CloudStorageAccount, String, IRetryPolicy)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.html">JobOutputStorage</a> class from a storage account
-and job id.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -251,36 +212,27 @@ and job id.</p>
       <tr>
         <td><span class="xref">Microsoft.WindowsAzure.Storage.CloudStorageAccount</span></td>
         <td><span class="parametername">storageAccount</span></td>
-        <td><p>The storage account linked to the Azure Batch account.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td><p>The id of the Azure Batch job.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">Microsoft.WindowsAzure.Storage.RetryPolicies.IRetryPolicy</span></td>
         <td><span class="parametername">storageRetryPolicy</span></td>
-        <td><p>The retry policy for storage requests.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Conventions_Files_JobOutputStorage__ctor_Microsoft_WindowsAzure_Storage_CloudStorageAccount_System_String_Microsoft_WindowsAzure_Storage_RetryPolicies_IRetryPolicy__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The job output container must already exist; the JobOutputStorage class does not create</p>
-<pre><code>        it for you.
-</code></pre>
-</div>
   <h3 id="methods">Methods
   </h3>
   
   
   <a id="Microsoft_Azure_Batch_Conventions_Files_JobOutputStorage_GetOutputAsync_" data-uid="Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.GetOutputAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Conventions_Files_JobOutputStorage_GetOutputAsync_Microsoft_Azure_Batch_Conventions_Files_JobOutputKind_System_String_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.GetOutputAsync(Microsoft.Azure.Batch.Conventions.Files.JobOutputKind,System.String,System.Threading.CancellationToken)">GetOutputAsync(JobOutputKind, String, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Retrieves a job output from Azure blob storage by kind and path.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -300,21 +252,17 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Conventions.Files.Ou
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.JobOutputKind.html">JobOutputKind</a></td>
         <td><span class="parametername">kind</span></td>
-        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.JobOutputKind.html">JobOutputKind</a> representing the category of the output to
-retrieve, for example <a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.JobOutputKind.html#Microsoft_Azure_Batch_Conventions_Files_JobOutputKind_JobOutput">JobOutput</a> or <a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.JobOutputKind.html#Microsoft_Azure_Batch_Conventions_Files_JobOutputKind_JobPreview">JobPreview</a>.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">filePath</span></td>
-        <td><p>The path under which the output was persisted in blob storage.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> for controlling the lifetime of the asynchronous operation.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -329,8 +277,7 @@ retrieve, for example <a class="xref" href="Microsoft.Azure.Batch.Conventions.Fi
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.OutputFileReference.html">OutputFileReference</a>&gt;</td>
-        <td><p>A reference to the requested file in Azure blob storage.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -338,8 +285,7 @@ retrieve, for example <a class="xref" href="Microsoft.Azure.Batch.Conventions.Fi
   
   <a id="Microsoft_Azure_Batch_Conventions_Files_JobOutputStorage_ListOutputs_" data-uid="Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.ListOutputs*"></a>
   <h4 id="Microsoft_Azure_Batch_Conventions_Files_JobOutputStorage_ListOutputs_Microsoft_Azure_Batch_Conventions_Files_JobOutputKind_" data-uid="Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.ListOutputs(Microsoft.Azure.Batch.Conventions.Files.JobOutputKind)">ListOutputs(JobOutputKind)</h4>
-  <div class="markdown level1 summary"><p>Lists the job outputs of the specified kind.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -358,9 +304,7 @@ retrieve, for example <a class="xref" href="Microsoft.Azure.Batch.Conventions.Fi
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.JobOutputKind.html">JobOutputKind</a></td>
         <td><span class="parametername">kind</span></td>
-        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.JobOutputKind.html">JobOutputKind</a> representing the category of outputs to
-list, for example <a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.JobOutputKind.html#Microsoft_Azure_Batch_Conventions_Files_JobOutputKind_JobOutput">JobOutput</a> or <a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.JobOutputKind.html#Microsoft_Azure_Batch_Conventions_Files_JobOutputKind_JobPreview">JobPreview</a>.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -375,20 +319,15 @@ list, for example <a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.OutputFileReference.html">OutputFileReference</a>&gt;</td>
-        <td><p>A list of persisted job outputs of the specified kind.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Conventions_Files_JobOutputStorage_ListOutputs_Microsoft_Azure_Batch_Conventions_Files_JobOutputKind__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The list is retrieved lazily from Azure blob storage when it is enumerated.</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_Conventions_Files_JobOutputStorage_SaveAsync_" data-uid="Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.SaveAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Conventions_Files_JobOutputStorage_SaveAsync_Microsoft_Azure_Batch_Conventions_Files_JobOutputKind_System_String_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.SaveAsync(Microsoft.Azure.Batch.Conventions.Files.JobOutputKind,System.String,System.Threading.CancellationToken)">SaveAsync(JobOutputKind, String, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Saves the specified file to persistent storage.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -408,23 +347,17 @@ public System.Threading.Tasks.Task SaveAsync (Microsoft.Azure.Batch.Conventions.
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.JobOutputKind.html">JobOutputKind</a></td>
         <td><span class="parametername">kind</span></td>
-        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.JobOutputKind.html">JobOutputKind</a> representing the category under which to
-store this file, for example <a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.JobOutputKind.html#Microsoft_Azure_Batch_Conventions_Files_JobOutputKind_JobOutput">JobOutput</a> or <a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.JobOutputKind.html#Microsoft_Azure_Batch_Conventions_Files_JobOutputKind_JobPreview">JobPreview</a>.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">relativePath</span></td>
-        <td><p>The path of the file to save, relative to the current directory.
-If the file is in a subdirectory of the current directory, the relative path will be preserved
-in blob storage.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> for controlling the lifetime of the asynchronous operation.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -439,34 +372,7 @@ in blob storage.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> that represents the asynchronous operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Microsoft_Azure_Batch_Conventions_Files_JobOutputStorage_SaveAsync_Microsoft_Azure_Batch_Conventions_Files_JobOutputKind_System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If the file is outside the current directory, traversals up the directory tree are removed.
-For example, a <code data-dev-comment-type="paramref">relativePath</code> of &quot;..\ProcessEnv.cmd&quot; would be treated as &quot;ProcessEnv.cmd&quot;
-for the purposes of creating a blob name.</p>
-</div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">System.ArgumentNullException</a></td>
-        <td><p>The <code data-dev-comment-type="paramref">kind</code> or <code data-dev-comment-type="paramref">relativePath</code> argument is null.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">System.ArgumentException</a></td>
-        <td><p>The <code data-dev-comment-type="paramref">relativePath</code> argument is an absolute path, or is empty.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -474,8 +380,7 @@ for the purposes of creating a blob name.</p>
   
   <a id="Microsoft_Azure_Batch_Conventions_Files_JobOutputStorage_SaveAsync_" data-uid="Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.SaveAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Conventions_Files_JobOutputStorage_SaveAsync_Microsoft_Azure_Batch_Conventions_Files_JobOutputKind_System_String_System_String_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.SaveAsync(Microsoft.Azure.Batch.Conventions.Files.JobOutputKind,System.String,System.String,System.Threading.CancellationToken)">SaveAsync(JobOutputKind, String, String, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Saves the specified file to persistent storage.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -495,28 +400,22 @@ public System.Threading.Tasks.Task SaveAsync (Microsoft.Azure.Batch.Conventions.
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.JobOutputKind.html">JobOutputKind</a></td>
         <td><span class="parametername">kind</span></td>
-        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.JobOutputKind.html">JobOutputKind</a> representing the category under which to
-store this file, for example <a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.JobOutputKind.html#Microsoft_Azure_Batch_Conventions_Files_JobOutputKind_JobOutput">JobOutput</a> or <a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.JobOutputKind.html#Microsoft_Azure_Batch_Conventions_Files_JobOutputKind_JobPreview">JobPreview</a>.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">sourcePath</span></td>
-        <td><p>The path of the file to save.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">destinationRelativePath</span></td>
-        <td><p>The blob name under which to save the file. This may include a
-relative component, such as &quot;pointclouds/pointcloud_0001.txt&quot;.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> for controlling the lifetime of the asynchronous operation.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -531,29 +430,7 @@ relative component, such as &quot;pointclouds/pointcloud_0001.txt&quot;.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> that represents the asynchronous operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">System.ArgumentNullException</a></td>
-        <td><p>The <code data-dev-comment-type="paramref">kind</code>, <code data-dev-comment-type="paramref">sourcePath</code>, or <code data-dev-comment-type="paramref">destinationRelativePath</code> argument is null.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">System.ArgumentException</a></td>
-        <td><p>The <code data-dev-comment-type="paramref">sourcePath</code> or <code data-dev-comment-type="paramref">destinationRelativePath</code> argument is empty.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>

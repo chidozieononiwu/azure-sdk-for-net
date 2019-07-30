@@ -83,8 +83,7 @@
   
   <h1 id="Microsoft_Azure_Batch_ResourceFile" data-uid="Microsoft.Azure.Batch.ResourceFile" class="text-break">Class ResourceFile
   </h1>
-  <div class="markdown level0 summary"><p>A file to be downloaded to a compute node from Azure Blob Storage, such as task executables and task input data files.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -103,8 +102,7 @@
   
   <a id="Microsoft_Azure_Batch_ResourceFile_AutoStorageContainerName_" data-uid="Microsoft.Azure.Batch.ResourceFile.AutoStorageContainerName*"></a>
   <h4 id="Microsoft_Azure_Batch_ResourceFile_AutoStorageContainerName" data-uid="Microsoft.Azure.Batch.ResourceFile.AutoStorageContainerName">AutoStorageContainerName</h4>
-  <div class="markdown level1 summary"><p>Gets the storage container name in the auto storage account.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -129,9 +127,7 @@
   
   <a id="Microsoft_Azure_Batch_ResourceFile_BlobPrefix_" data-uid="Microsoft.Azure.Batch.ResourceFile.BlobPrefix*"></a>
   <h4 id="Microsoft_Azure_Batch_ResourceFile_BlobPrefix" data-uid="Microsoft.Azure.Batch.ResourceFile.BlobPrefix">BlobPrefix</h4>
-  <div class="markdown level1 summary"><p>Gets the blob prefix to use when downloading blobs from an Azure Storage container. Only the blobs whose names
-begin with the specified prefix will be downloaded.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -152,17 +148,11 @@ begin with the specified prefix will be downloaded.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_ResourceFile_BlobPrefix_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This property is valid only when <a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html#Microsoft_Azure_Batch_ResourceFile_AutoStorageContainerName">AutoStorageContainerName</a> or <a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html#Microsoft_Azure_Batch_ResourceFile_StorageContainerUrl">StorageContainerUrl</a>
-is used. This prefix can be a partial filename or a subdirectory. If a prefix is not specified, all the files
-in the container will be downloaded.</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_ResourceFile_FileMode_" data-uid="Microsoft.Azure.Batch.ResourceFile.FileMode*"></a>
   <h4 id="Microsoft_Azure_Batch_ResourceFile_FileMode" data-uid="Microsoft.Azure.Batch.ResourceFile.FileMode">FileMode</h4>
-  <div class="markdown level1 summary"><p>Gets the file permission mode attribute in octal format.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -183,17 +173,11 @@ in the container will be downloaded.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_ResourceFile_FileMode_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This property is applicable only if the resource file is downloaded to a Linux node. This property will 
-  be ignored if it is specified for a <a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html">ResourceFile</a> which will be downloaded to a Windows node. If 
-  this property is not specified for a Linux node, then the default value is 0770.</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_ResourceFile_FilePath_" data-uid="Microsoft.Azure.Batch.ResourceFile.FilePath*"></a>
   <h4 id="Microsoft_Azure_Batch_ResourceFile_FilePath" data-uid="Microsoft.Azure.Batch.ResourceFile.FilePath">FilePath</h4>
-  <div class="markdown level1 summary"><p>Gets the location on the compute node to which to download the file(s), relative to the task's working directory.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -214,19 +198,11 @@ in the container will be downloaded.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_ResourceFile_FilePath_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If the <a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html#Microsoft_Azure_Batch_ResourceFile_HttpUrl">HttpUrl</a> property is specified, this is required and describes the path which the file will
-be downloaded to, including the filename. Otherwise, if the <a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html#Microsoft_Azure_Batch_ResourceFile_AutoStorageContainerName">AutoStorageContainerName</a> or <a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html#Microsoft_Azure_Batch_ResourceFile_StorageContainerUrl">StorageContainerUrl</a> property is specified, this is optional and is the directory to download the files to. In the case where this
-is used as a directory, any directory structure already associated with the input data will be retained in full
-and appended to the specified <a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html#Microsoft_Azure_Batch_ResourceFile_FilePath">FilePath</a> directory. The specified relative path cannot break out
-of the task's working directory (for example by using '..').</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_ResourceFile_HttpUrl_" data-uid="Microsoft.Azure.Batch.ResourceFile.HttpUrl*"></a>
   <h4 id="Microsoft_Azure_Batch_ResourceFile_HttpUrl" data-uid="Microsoft.Azure.Batch.ResourceFile.HttpUrl">HttpUrl</h4>
-  <div class="markdown level1 summary"><p>Gets the URL of the file to download.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -247,18 +223,11 @@ of the task's working directory (for example by using '..').</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_ResourceFile_HttpUrl_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If the URL is Azure Blob Storage, it must be readable using anonymous access; that is, the Batch service does</p>
-<p>not present any credentials when downloading the blob. There are two ways to get such a URL for a blob in Azure</p>
-<p>storage: include a Shared Access Signature (SAS) granting read permissions on the blob, or set the ACL for the</p>
-<p>blob or its container to allow public access.</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_ResourceFile_StorageContainerUrl_" data-uid="Microsoft.Azure.Batch.ResourceFile.StorageContainerUrl*"></a>
   <h4 id="Microsoft_Azure_Batch_ResourceFile_StorageContainerUrl" data-uid="Microsoft.Azure.Batch.ResourceFile.StorageContainerUrl">StorageContainerUrl</h4>
-  <div class="markdown level1 summary"><p>Gets the URL of the blob container within Azure Blob Storage.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -279,20 +248,13 @@ of the task's working directory (for example by using '..').</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_ResourceFile_StorageContainerUrl_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This URL must be readable and listable using anonymous access; that is, the Batch service does not present any</p>
-<p>credentials when downloading blobs from the container. There are two ways to get such a URL for a container in</p>
-<p>Azure storage: include a Shared Access Signature (SAS) granting read permissions on the container, or set the</p>
-<p>ACL for the container to allow public access.</p>
-</div>
   <h3 id="methods">Methods
   </h3>
   
   
   <a id="Microsoft_Azure_Batch_ResourceFile_FromAutoStorageContainer_" data-uid="Microsoft.Azure.Batch.ResourceFile.FromAutoStorageContainer*"></a>
   <h4 id="Microsoft_Azure_Batch_ResourceFile_FromAutoStorageContainer_System_String_System_String_System_String_System_String_" data-uid="Microsoft.Azure.Batch.ResourceFile.FromAutoStorageContainer(System.String,System.String,System.String,System.String)">FromAutoStorageContainer(String, String, String, String)</h4>
-  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html">ResourceFile</a> from the specified auto storage container name.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -311,27 +273,22 @@ of the task's working directory (for example by using '..').</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">autoStorageContainerName</span></td>
-        <td><p>The storage container name in the auto storage account.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">filePath</span></td>
-        <td><p>The location on the compute node to which to download the file(s), relative to the task's working directory.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">blobPrefix</span></td>
-        <td><p>The blob prefix to use when downloading blobs from an Azure Storage container. Only the blobs whose names begin
-with the specified prefix will be downloaded.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">fileMode</span></td>
-        <td><p>The file permission mode attribute in octal format.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -346,8 +303,7 @@ with the specified prefix will be downloaded.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html">ResourceFile</a></td>
-        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html">ResourceFile</a> from the specified auto storage container name.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -355,8 +311,7 @@ with the specified prefix will be downloaded.</p>
   
   <a id="Microsoft_Azure_Batch_ResourceFile_FromStorageContainerUrl_" data-uid="Microsoft.Azure.Batch.ResourceFile.FromStorageContainerUrl*"></a>
   <h4 id="Microsoft_Azure_Batch_ResourceFile_FromStorageContainerUrl_System_String_System_String_System_String_System_String_" data-uid="Microsoft.Azure.Batch.ResourceFile.FromStorageContainerUrl(System.String,System.String,System.String,System.String)">FromStorageContainerUrl(String, String, String, String)</h4>
-  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html">ResourceFile</a> from the specified Azure Storage container URL.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -375,27 +330,22 @@ with the specified prefix will be downloaded.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">storageContainerUrl</span></td>
-        <td><p>The URL of the blob container within Azure Blob Storage.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">filePath</span></td>
-        <td><p>The location on the compute node to which to download the file(s), relative to the task's working directory.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">blobPrefix</span></td>
-        <td><p>The blob prefix to use when downloading blobs from an Azure Storage container. Only the blobs whose names begin
-with the specified prefix will be downloaded.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">fileMode</span></td>
-        <td><p>The file permission mode attribute in octal format.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -410,8 +360,7 @@ with the specified prefix will be downloaded.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html">ResourceFile</a></td>
-        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html">ResourceFile</a> from the specified Azure Storage container URL.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -419,8 +368,7 @@ with the specified prefix will be downloaded.</p>
   
   <a id="Microsoft_Azure_Batch_ResourceFile_FromUrl_" data-uid="Microsoft.Azure.Batch.ResourceFile.FromUrl*"></a>
   <h4 id="Microsoft_Azure_Batch_ResourceFile_FromUrl_System_String_System_String_System_String_" data-uid="Microsoft.Azure.Batch.ResourceFile.FromUrl(System.String,System.String,System.String)">FromUrl(String, String, String)</h4>
-  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html">ResourceFile</a> from the specified HTTP URL.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -439,20 +387,17 @@ with the specified prefix will be downloaded.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">httpUrl</span></td>
-        <td><p>The URL of the file to download.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">filePath</span></td>
-        <td><p>The file permission mode attribute in octal format.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">fileMode</span></td>
-        <td><p>The location on the compute node to which to download the file(s), relative to the task's working directory.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -467,8 +412,7 @@ with the specified prefix will be downloaded.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html">ResourceFile</a></td>
-        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html">ResourceFile</a> from the specified HTTP URL.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>

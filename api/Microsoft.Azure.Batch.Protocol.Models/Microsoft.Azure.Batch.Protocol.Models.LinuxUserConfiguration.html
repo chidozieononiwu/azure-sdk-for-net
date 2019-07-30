@@ -83,8 +83,7 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_LinuxUserConfiguration" data-uid="Microsoft.Azure.Batch.Protocol.Models.LinuxUserConfiguration" class="text-break">Class LinuxUserConfiguration
   </h1>
-  <div class="markdown level0 summary"><p>Properties used to create a user account on a Linux node.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -103,8 +102,7 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_LinuxUserConfiguration__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.LinuxUserConfiguration.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_LinuxUserConfiguration__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.LinuxUserConfiguration.#ctor">LinuxUserConfiguration()</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the LinuxUserConfiguration class.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -114,8 +112,7 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_LinuxUserConfiguration__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.LinuxUserConfiguration.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_LinuxUserConfiguration__ctor_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_" data-uid="Microsoft.Azure.Batch.Protocol.Models.LinuxUserConfiguration.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">LinuxUserConfiguration(Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the LinuxUserConfiguration class.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -134,21 +131,17 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
         <td><span class="parametername">uid</span></td>
-        <td><p>The user ID of the user account.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
         <td><span class="parametername">gid</span></td>
-        <td><p>The group ID for the user account.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">sshPrivateKey</span></td>
-        <td><p>The SSH private key for the user
-account.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -158,8 +151,7 @@ account.</p>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_LinuxUserConfiguration_Gid_" data-uid="Microsoft.Azure.Batch.Protocol.Models.LinuxUserConfiguration.Gid*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_LinuxUserConfiguration_Gid" data-uid="Microsoft.Azure.Batch.Protocol.Models.LinuxUserConfiguration.Gid">Gid</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the group ID for the user account.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -181,17 +173,11 @@ public Nullable&lt;int&gt; Gid { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_Models_LinuxUserConfiguration_Gid_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The uid and gid properties must be specified together or not at</p>
-<p>all. If not specified the underlying operating system picks the</p>
-<p>gid.</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_LinuxUserConfiguration_SshPrivateKey_" data-uid="Microsoft.Azure.Batch.Protocol.Models.LinuxUserConfiguration.SshPrivateKey*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_LinuxUserConfiguration_SshPrivateKey" data-uid="Microsoft.Azure.Batch.Protocol.Models.LinuxUserConfiguration.SshPrivateKey">SshPrivateKey</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the SSH private key for the user account.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -213,22 +199,11 @@ public string SshPrivateKey { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_Models_LinuxUserConfiguration_SshPrivateKey_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The private key must not be password protected. The private key is</p>
-<p>used to automatically configure asymmetric-key based authentication</p>
-<p>for SSH between nodes in a Linux pool when the pool's</p>
-<p>enableInterNodeCommunication property is true (it is ignored if</p>
-<p>enableInterNodeCommunication is false). It does this by placing the</p>
-<p>key pair into the user's .ssh directory. If not specified,</p>
-<p>password-less SSH is not configured between nodes (no modification</p>
-<p>of the user's .ssh directory is done).</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_LinuxUserConfiguration_Uid_" data-uid="Microsoft.Azure.Batch.Protocol.Models.LinuxUserConfiguration.Uid*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_LinuxUserConfiguration_Uid" data-uid="Microsoft.Azure.Batch.Protocol.Models.LinuxUserConfiguration.Uid">Uid</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the user ID of the user account.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -250,11 +225,6 @@ public Nullable&lt;int&gt; Uid { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_Models_LinuxUserConfiguration_Uid_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The uid and gid properties must be specified together or not at</p>
-<p>all. If not specified the underlying operating system picks the</p>
-<p>uid.</p>
-</div>
 </article>
           </div>
           

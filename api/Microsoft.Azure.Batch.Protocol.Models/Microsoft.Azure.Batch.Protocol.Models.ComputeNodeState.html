@@ -83,8 +83,7 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeState" class="text-break">Enum ComputeNodeState
   </h1>
-  <div class="markdown level0 summary"><p>Defines values for ComputeNodeState.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models.html">Microsoft.Azure.Batch.Protocol.Models</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
@@ -105,77 +104,55 @@ public enum ComputeNodeState</code></pre>
     <tbody>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Creating">Creating</td>
-        <td><p>The Batch service has obtained the underlying virtual machine from
-Azure Compute, but it has not yet started to join the pool.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Idle">Idle</td>
-        <td><p>The node is not currently running a task.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_LeavingPool">LeavingPool</td>
-        <td><p>The node is leaving the pool, either because the user explicitly
-removed it or because the pool is resizing or autoscaling down.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Offline">Offline</td>
-        <td><p>The node is not currently running a task, and scheduling of new
-tasks to the node is disabled.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Preempted">Preempted</td>
-        <td><p>The low-priority node has been preempted. Tasks which were running
-on the node when it was preempted will be rescheduled when another
-node becomes available.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Rebooting">Rebooting</td>
-        <td><p>The node is rebooting.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Reimaging">Reimaging</td>
-        <td><p>The node is reimaging.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Running">Running</td>
-        <td><p>The node is running one or more tasks (other than a start task).</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Starting">Starting</td>
-        <td><p>The Batch service is starting on the underlying virtual machine.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_StartTaskFailed">StartTaskFailed</td>
-        <td><p>The start task has failed on the compute node (and exhausted all
-retries), and waitForSuccess is set. The node is not usable for
-running tasks.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Unknown">Unknown</td>
-        <td><p>The Batch service has lost contact with the node, and does not know
-its true state.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Unusable">Unusable</td>
-        <td><p>The node cannot be used for task execution due to errors.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_WaitingForStartTask">WaitingForStartTask</td>
-        <td><p>The start task has started running on the compute node, but
-waitForSuccess is set and the start task has not yet completed.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </thead></thead></table>

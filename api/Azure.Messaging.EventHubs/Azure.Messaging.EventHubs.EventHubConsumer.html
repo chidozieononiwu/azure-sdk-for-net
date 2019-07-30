@@ -83,15 +83,7 @@
   
   <h1 id="Azure_Messaging_EventHubs_EventHubConsumer" data-uid="Azure.Messaging.EventHubs.EventHubConsumer" class="text-break">Class EventHubConsumer
   </h1>
-  <div class="markdown level0 summary"><p>A consumer responsible for reading <a class="xref" href="Azure.Messaging.EventHubs.EventData.html">EventData</a> from a specific Event Hub
-partition and as a member of a specific consumer group.</p>
-<p>A consumer may be exclusive, which asserts ownership over the partition for the consumer
-group to ensure that only one consumer from that group is reading the from the partition.
-These exclusive consumers are sometimes referred to as &quot;Epoch Consumers.&quot;</p>
-<p>A consumer may also be non-exclusive, allowing multiple consumers from the same consumer
-group to be actively reading events from the partition.  These non-exclusive consumers are
-sometimes referred to as &quot;Non-Epoch Consumers.&quot;</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -114,8 +106,7 @@ sometimes referred to as &quot;Non-Epoch Consumers.&quot;</p>
   
   <a id="Azure_Messaging_EventHubs_EventHubConsumer__ctor_" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.#ctor*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubConsumer__ctor" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.#ctor">EventHubConsumer()</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Messaging.EventHubs.EventHubConsumer.html">EventHubConsumer</a> class.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -126,8 +117,7 @@ sometimes referred to as &quot;Non-Epoch Consumers.&quot;</p>
   
   
   <h4 id="Azure_Messaging_EventHubs_EventHubConsumer_DefaultConsumerGroupName" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.DefaultConsumerGroupName">DefaultConsumerGroupName</h4>
-  <div class="markdown level1 summary"><p>The name of the default consumer group in the Event Hubs service.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -154,9 +144,7 @@ sometimes referred to as &quot;Non-Epoch Consumers.&quot;</p>
   
   <a id="Azure_Messaging_EventHubs_EventHubConsumer_ConsumerGroup_" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.ConsumerGroup*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubConsumer_ConsumerGroup" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.ConsumerGroup">ConsumerGroup</h4>
-  <div class="markdown level1 summary"><p>The name of the consumer group that this consumer is associated with.  Events will be read
-only in the context of this group.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -181,8 +169,7 @@ only in the context of this group.</p>
   
   <a id="Azure_Messaging_EventHubs_EventHubConsumer_Identifier_" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.Identifier*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubConsumer_Identifier" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.Identifier">Identifier</h4>
-  <div class="markdown level1 summary"><p>The text-based identifier label that has optionally been assigned to the consumer.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -207,13 +194,7 @@ only in the context of this group.</p>
   
   <a id="Azure_Messaging_EventHubs_EventHubConsumer_OwnerLevel_" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.OwnerLevel*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubConsumer_OwnerLevel" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.OwnerLevel">OwnerLevel</h4>
-  <div class="markdown level1 summary"><p>When populated, the priority indicates that a consumer is intended to be the only reader of events for the
-requested partition and an associated consumer group.  To do so, this consumer will attempt to assert ownership
-over the partition; in the case where more than one exclusive consumer attempts to assert ownership for the same
-partition/consumer group pair, the one having a larger onwership level value will &quot;win.&quot;</p>
-<p>When an exclusive consumer is used, those consumers which are not exclusive or which have a lower owner level will either
-not be allowed to be created, if they already exist, will encounter an exception during the next attempted operation.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -230,8 +211,7 @@ not be allowed to be created, if they already exist, will encounter an exception
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
-        <td><p>The priority to associated with an exclusive consumer; for a non-exclusive consumer, this value will be <code data-dev-comment-type="c">null</code>.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -239,9 +219,7 @@ not be allowed to be created, if they already exist, will encounter an exception
   
   <a id="Azure_Messaging_EventHubs_EventHubConsumer_PartitionId_" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.PartitionId*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubConsumer_PartitionId" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.PartitionId">PartitionId</h4>
-  <div class="markdown level1 summary"><p>The identifier of the Event Hub partition that this consumer is associated with.  Events will be read
-only from this partition.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -266,8 +244,7 @@ only from this partition.</p>
   
   <a id="Azure_Messaging_EventHubs_EventHubConsumer_RetryPolicy_" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.RetryPolicy*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubConsumer_RetryPolicy" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.RetryPolicy">RetryPolicy</h4>
-  <div class="markdown level1 summary"><p>The policy to use for determining retry behavior for when an operation fails.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -292,8 +269,7 @@ only from this partition.</p>
   
   <a id="Azure_Messaging_EventHubs_EventHubConsumer_StartingPosition_" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.StartingPosition*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubConsumer_StartingPosition" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.StartingPosition">StartingPosition</h4>
-  <div class="markdown level1 summary"><p>The position of the event in the partition where the consumer should begin reading.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -320,8 +296,7 @@ only from this partition.</p>
   
   <a id="Azure_Messaging_EventHubs_EventHubConsumer_Close_" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.Close*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubConsumer_Close_System_Threading_CancellationToken_" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.Close(System.Threading.CancellationToken)">Close(CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Closes the consumer.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -340,8 +315,7 @@ only from this partition.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>An optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> instance to signal the request to cancel the operation.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -349,8 +323,7 @@ only from this partition.</p>
   
   <a id="Azure_Messaging_EventHubs_EventHubConsumer_CloseAsync_" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.CloseAsync*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubConsumer_CloseAsync_System_Threading_CancellationToken_" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.CloseAsync(System.Threading.CancellationToken)">CloseAsync(CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Closes the consumer.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -369,8 +342,7 @@ only from this partition.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>An optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> instance to signal the request to cancel the operation.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -385,8 +357,7 @@ only from this partition.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td><p>A task to be resolved on when the operation has completed.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -394,9 +365,7 @@ only from this partition.</p>
   
   <a id="Azure_Messaging_EventHubs_EventHubConsumer_DisposeAsync_" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.DisposeAsync*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubConsumer_DisposeAsync" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.DisposeAsync">DisposeAsync()</h4>
-  <div class="markdown level1 summary"><p>Performs the task needed to clean up resources used by the <a class="xref" href="Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a>,
-including ensuring that the client itself has been closed.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -414,8 +383,7 @@ public virtual System.Threading.Tasks.ValueTask DisposeAsync ();</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a></td>
-        <td><p>A task to be resolved on when the operation has completed.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -423,8 +391,7 @@ public virtual System.Threading.Tasks.ValueTask DisposeAsync ();</code></pre>
   
   <a id="Azure_Messaging_EventHubs_EventHubConsumer_Equals_" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.Equals*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubConsumer_Equals_System_Object_" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.Equals(System.Object)">Equals(Object)</h4>
-  <div class="markdown level1 summary"><p>Determines whether the specified <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>, is equal to this instance.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -444,8 +411,7 @@ public override bool Equals (object obj);</code></pre>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
         <td><span class="parametername">obj</span></td>
-        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a> to compare with this instance.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -460,8 +426,7 @@ public override bool Equals (object obj);</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><code data-dev-comment-type="c">true</code> if the specified <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a> is equal to this instance; otherwise, <code data-dev-comment-type="c">false</code>.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -469,8 +434,7 @@ public override bool Equals (object obj);</code></pre>
   
   <a id="Azure_Messaging_EventHubs_EventHubConsumer_GetHashCode_" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.GetHashCode*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubConsumer_GetHashCode" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.GetHashCode">GetHashCode()</h4>
-  <div class="markdown level1 summary"><p>Returns a hash code for this instance.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -488,8 +452,7 @@ public override int GetHashCode ();</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><p>A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -497,8 +460,7 @@ public override int GetHashCode ();</code></pre>
   
   <a id="Azure_Messaging_EventHubs_EventHubConsumer_ReceiveAsync_" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.ReceiveAsync*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubConsumer_ReceiveAsync_System_Int32_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.ReceiveAsync(System.Int32,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)">ReceiveAsync(Int32, Nullable&lt;TimeSpan&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Receives a bach of <a class="xref" href="Azure.Messaging.EventHubs.EventData.html">EventData</a> from the Event Hub partition.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -517,20 +479,17 @@ public override int GetHashCode ();</code></pre>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">maximumMessageCount</span></td>
-        <td><p>The maximum number of messages to receive in this batch.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
         <td><span class="parametername">maximumWaitTime</span></td>
-        <td><p>The maximum amount of time to wait to build up the requested message count for the batch; if not specified, the default wait time specified when the consumer was created will be used.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>An optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> instance to signal the request to cancel the operation.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -545,8 +504,7 @@ public override int GetHashCode ();</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Azure.Messaging.EventHubs.EventData.html">EventData</a>&gt;&gt;</td>
-        <td><p>The batch of <a class="xref" href="Azure.Messaging.EventHubs.EventData.html">EventData</a> from the Event Hub partition this consumer is associated with.  If no events are present, an empty enumerable is returned.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -554,8 +512,7 @@ public override int GetHashCode ();</code></pre>
   
   <a id="Azure_Messaging_EventHubs_EventHubConsumer_ToString_" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.ToString*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubConsumer_ToString" data-uid="Azure.Messaging.EventHubs.EventHubConsumer.ToString">ToString()</h4>
-  <div class="markdown level1 summary"><p>Converts the instance to string representation.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -573,8 +530,7 @@ public override string ToString ();</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a> that represents this instance.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>

@@ -83,8 +83,7 @@
   
   <h1 id="Microsoft_Azure_Batch_Conventions_Files_CloudJobExtensions" data-uid="Microsoft.Azure.Batch.Conventions.Files.CloudJobExtensions" class="text-break">Class CloudJobExtensions
   </h1>
-  <div class="markdown level0 summary"><p>Provides methods for working with the outputs of a <a class="xref" href="../Microsoft.Azure.Batch/Microsoft.Azure.Batch.CloudJob.html">CloudJob</a>.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -103,11 +102,7 @@
   
   <a id="Microsoft_Azure_Batch_Conventions_Files_CloudJobExtensions_GetOutputStorageContainerUrl_" data-uid="Microsoft.Azure.Batch.Conventions.Files.CloudJobExtensions.GetOutputStorageContainerUrl*"></a>
   <h4 id="Microsoft_Azure_Batch_Conventions_Files_CloudJobExtensions_GetOutputStorageContainerUrl_Microsoft_Azure_Batch_CloudJob_Microsoft_WindowsAzure_Storage_CloudStorageAccount_" data-uid="Microsoft.Azure.Batch.Conventions.Files.CloudJobExtensions.GetOutputStorageContainerUrl(Microsoft.Azure.Batch.CloudJob,Microsoft.WindowsAzure.Storage.CloudStorageAccount)">GetOutputStorageContainerUrl(CloudJob, CloudStorageAccount)</h4>
-  <div class="markdown level1 summary"><p>Gets the URL, including a Shared Access Signature (SAS) that permits writing, for the job's
-output storage container in Azure blob storage. This URL is suitable for passing to tasks
-so they can use the <a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.html#Microsoft_Azure_Batch_Conventions_Files_JobOutputStorage__ctor_System_Uri_">JobOutputStorage(Uri)</a> or
-<a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.TaskOutputStorage.html#Microsoft_Azure_Batch_Conventions_Files_TaskOutputStorage__ctor_System_Uri_System_String_">TaskOutputStorage(Uri, String)</a> constructors that take a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -126,14 +121,12 @@ so they can use the <a class="xref" href="Microsoft.Azure.Batch.Conventions.File
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch/Microsoft.Azure.Batch.CloudJob.html">CloudJob</a></td>
         <td><span class="parametername">job</span></td>
-        <td><p>The job for which to create the container.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">Microsoft.WindowsAzure.Storage.CloudStorageAccount</span></td>
         <td><span class="parametername">storageAccount</span></td>
-        <td><p>The storage account linked to the Azure Batch account.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -148,25 +141,15 @@ so they can use the <a class="xref" href="Microsoft.Azure.Batch.Conventions.File
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p>The URL, including SAS, of the job output container.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Conventions_Files_CloudJobExtensions_GetOutputStorageContainerUrl_Microsoft_Azure_Batch_CloudJob_Microsoft_WindowsAzure_Storage_CloudStorageAccount__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The SAS expires after 7 days. This default is chosen to match the maximum time that</p>
-<pre><code>        tasks can remain active.
-</code></pre>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_Conventions_Files_CloudJobExtensions_GetOutputStorageContainerUrl_" data-uid="Microsoft.Azure.Batch.Conventions.Files.CloudJobExtensions.GetOutputStorageContainerUrl*"></a>
   <h4 id="Microsoft_Azure_Batch_Conventions_Files_CloudJobExtensions_GetOutputStorageContainerUrl_Microsoft_Azure_Batch_CloudJob_Microsoft_WindowsAzure_Storage_CloudStorageAccount_System_TimeSpan_" data-uid="Microsoft.Azure.Batch.Conventions.Files.CloudJobExtensions.GetOutputStorageContainerUrl(Microsoft.Azure.Batch.CloudJob,Microsoft.WindowsAzure.Storage.CloudStorageAccount,System.TimeSpan)">GetOutputStorageContainerUrl(CloudJob, CloudStorageAccount, TimeSpan)</h4>
-  <div class="markdown level1 summary"><p>Gets the URL, including a Shared Access Signature (SAS) that permits writing, for the job's
-output storage container in Azure blob storage. This URL is suitable for passing to tasks
-so they can use the <a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.html#Microsoft_Azure_Batch_Conventions_Files_JobOutputStorage__ctor_System_Uri_">JobOutputStorage(Uri)</a> or
-<a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.TaskOutputStorage.html#Microsoft_Azure_Batch_Conventions_Files_TaskOutputStorage__ctor_System_Uri_System_String_">TaskOutputStorage(Uri, String)</a> constructors that take a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -185,22 +168,17 @@ so they can use the <a class="xref" href="Microsoft.Azure.Batch.Conventions.File
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch/Microsoft.Azure.Batch.CloudJob.html">CloudJob</a></td>
         <td><span class="parametername">job</span></td>
-        <td><p>The job for which to create the container.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">Microsoft.WindowsAzure.Storage.CloudStorageAccount</span></td>
         <td><span class="parametername">storageAccount</span></td>
-        <td><p>The storage account linked to the Azure Batch account.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
         <td><span class="parametername">expiryTime</span></td>
-        <td><p>The duration for which the SAS is valid.  This should be long enough
-to allow all tasks of the job to be created and run to completion, including leeway for errors
-and retries.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -215,8 +193,7 @@ and retries.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p>The URL, including SAS, of the job output container.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -224,8 +201,7 @@ and retries.</p>
   
   <a id="Microsoft_Azure_Batch_Conventions_Files_CloudJobExtensions_OutputStorage_" data-uid="Microsoft.Azure.Batch.Conventions.Files.CloudJobExtensions.OutputStorage*"></a>
   <h4 id="Microsoft_Azure_Batch_Conventions_Files_CloudJobExtensions_OutputStorage_Microsoft_Azure_Batch_CloudJob_Microsoft_WindowsAzure_Storage_CloudStorageAccount_" data-uid="Microsoft.Azure.Batch.Conventions.Files.CloudJobExtensions.OutputStorage(Microsoft.Azure.Batch.CloudJob,Microsoft.WindowsAzure.Storage.CloudStorageAccount)">OutputStorage(CloudJob, CloudStorageAccount)</h4>
-  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.html">JobOutputStorage</a> for a specified <a class="xref" href="../Microsoft.Azure.Batch/Microsoft.Azure.Batch.CloudJob.html">CloudJob</a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -244,14 +220,12 @@ and retries.</p>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch/Microsoft.Azure.Batch.CloudJob.html">CloudJob</a></td>
         <td><span class="parametername">job</span></td>
-        <td><p>The job for which to get output storage.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">Microsoft.WindowsAzure.Storage.CloudStorageAccount</span></td>
         <td><span class="parametername">storageAccount</span></td>
-        <td><p>The storage account linked to the Azure Batch account.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -266,8 +240,7 @@ and retries.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Conventions.Files.JobOutputStorage.html">JobOutputStorage</a></td>
-        <td><p>A JobOutputStorage for the specified job.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -275,8 +248,7 @@ and retries.</p>
   
   <a id="Microsoft_Azure_Batch_Conventions_Files_CloudJobExtensions_OutputStorageContainerName_" data-uid="Microsoft.Azure.Batch.Conventions.Files.CloudJobExtensions.OutputStorageContainerName*"></a>
   <h4 id="Microsoft_Azure_Batch_Conventions_Files_CloudJobExtensions_OutputStorageContainerName_Microsoft_Azure_Batch_CloudJob_" data-uid="Microsoft.Azure.Batch.Conventions.Files.CloudJobExtensions.OutputStorageContainerName(Microsoft.Azure.Batch.CloudJob)">OutputStorageContainerName(CloudJob)</h4>
-  <div class="markdown level1 summary"><p>Gets the name of the Azure blob storage container for the outputs of a <a class="xref" href="../Microsoft.Azure.Batch/Microsoft.Azure.Batch.CloudJob.html">CloudJob</a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -295,8 +267,7 @@ and retries.</p>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch/Microsoft.Azure.Batch.CloudJob.html">CloudJob</a></td>
         <td><span class="parametername">job</span></td>
-        <td><p>The job for which to get the container name.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -311,8 +282,7 @@ and retries.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p>The name of the container in which to save the outputs of this job.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -320,8 +290,7 @@ and retries.</p>
   
   <a id="Microsoft_Azure_Batch_Conventions_Files_CloudJobExtensions_PrepareOutputStorageAsync_" data-uid="Microsoft.Azure.Batch.Conventions.Files.CloudJobExtensions.PrepareOutputStorageAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Conventions_Files_CloudJobExtensions_PrepareOutputStorageAsync_Microsoft_Azure_Batch_CloudJob_Microsoft_WindowsAzure_Storage_CloudStorageAccount_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Conventions.Files.CloudJobExtensions.PrepareOutputStorageAsync(Microsoft.Azure.Batch.CloudJob,Microsoft.WindowsAzure.Storage.CloudStorageAccount,System.Threading.CancellationToken)">PrepareOutputStorageAsync(CloudJob, CloudStorageAccount, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Creates an Azure blob storage container for the outputs of a <a class="xref" href="../Microsoft.Azure.Batch/Microsoft.Azure.Batch.CloudJob.html">CloudJob</a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -341,20 +310,17 @@ public static System.Threading.Tasks.Task PrepareOutputStorageAsync (this Micros
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch/Microsoft.Azure.Batch.CloudJob.html">CloudJob</a></td>
         <td><span class="parametername">job</span></td>
-        <td><p>The job for which to create the container.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">Microsoft.WindowsAzure.Storage.CloudStorageAccount</span></td>
         <td><span class="parametername">storageAccount</span></td>
-        <td><p>The storage account linked to the Azure Batch account.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> for controlling the lifetime of the asynchronous operation.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -369,8 +335,7 @@ public static System.Threading.Tasks.Task PrepareOutputStorageAsync (this Micros
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> that represents the asynchronous operation.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>

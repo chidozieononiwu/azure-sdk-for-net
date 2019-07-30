@@ -83,9 +83,7 @@
   
   <h1 id="Microsoft_Azure_Batch_AddTaskCollectionResultHandler" data-uid="Microsoft.Azure.Batch.AddTaskCollectionResultHandler" class="text-break">Class AddTaskCollectionResultHandler
   </h1>
-  <div class="markdown level0 summary"><p>A <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> which you can use to specify under what conditions an operation to
-add multiple tasks to a job should retry, terminate or be considered successful.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -99,19 +97,13 @@ add multiple tasks to a job should retry, terminate or be considered successful.
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class AddTaskCollectionResultHandler : Microsoft.Azure.Batch.BatchClientBehavior</code></pre>
   </div>
-  <h5 id="Microsoft_Azure_Batch_AddTaskCollectionResultHandler_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>You do not need to specify this behavior explicitly; if you do not, a default behavior
-is used.  This behavior uses the <a class="xref" href="Microsoft.Azure.Batch.AddTaskCollectionResultHandler.html#Microsoft_Azure_Batch_AddTaskCollectionResultHandler_DefaultAddTaskCollectionResultHandler_Microsoft_Azure_Batch_AddTaskResult_System_Threading_CancellationToken_">DefaultAddTaskCollectionResultHandler(AddTaskResult, CancellationToken)</a>
-criteria.</p>
-</div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="Microsoft_Azure_Batch_AddTaskCollectionResultHandler__ctor_" data-uid="Microsoft.Azure.Batch.AddTaskCollectionResultHandler.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_AddTaskCollectionResultHandler__ctor_System_Func_Microsoft_Azure_Batch_AddTaskResult_System_Threading_CancellationToken_Microsoft_Azure_Batch_AddTaskResultStatus__" data-uid="Microsoft.Azure.Batch.AddTaskCollectionResultHandler.#ctor(System.Func{Microsoft.Azure.Batch.AddTaskResult,System.Threading.CancellationToken,Microsoft.Azure.Batch.AddTaskResultStatus})">AddTaskCollectionResultHandler(Func&lt;AddTaskResult,CancellationToken,AddTaskResultStatus&gt;)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.AddTaskCollectionResultHandler.html">AddTaskCollectionResultHandler</a> class with the specified result handler function.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -130,9 +122,7 @@ criteria.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.AddTaskResult.html">AddTaskResult</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>,<a class="xref" href="Microsoft.Azure.Batch.AddTaskResultStatus.html">AddTaskResultStatus</a>&gt;</td>
         <td><span class="parametername">resultHandler</span></td>
-        <td><p>A function that defines whether a particular Add Task operation is considered
-successful or unsuccessful, and whether it may be retried.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -142,9 +132,7 @@ successful or unsuccessful, and whether it may be retried.</p>
   
   <a id="Microsoft_Azure_Batch_AddTaskCollectionResultHandler_ResultHandler_" data-uid="Microsoft.Azure.Batch.AddTaskCollectionResultHandler.ResultHandler*"></a>
   <h4 id="Microsoft_Azure_Batch_AddTaskCollectionResultHandler_ResultHandler" data-uid="Microsoft.Azure.Batch.AddTaskCollectionResultHandler.ResultHandler">ResultHandler</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the function that defines whether a particular Add Task operation is considered
-successful or unsuccessful, and whether it may be retried.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -171,10 +159,7 @@ successful or unsuccessful, and whether it may be retried.</p>
   
   <a id="Microsoft_Azure_Batch_AddTaskCollectionResultHandler_DefaultAddTaskCollectionResultHandler_" data-uid="Microsoft.Azure.Batch.AddTaskCollectionResultHandler.DefaultAddTaskCollectionResultHandler*"></a>
   <h4 id="Microsoft_Azure_Batch_AddTaskCollectionResultHandler_DefaultAddTaskCollectionResultHandler_Microsoft_Azure_Batch_AddTaskResult_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.AddTaskCollectionResultHandler.DefaultAddTaskCollectionResultHandler(Microsoft.Azure.Batch.AddTaskResult,System.Threading.CancellationToken)">DefaultAddTaskCollectionResultHandler(AddTaskResult, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The default result handler for the <a class="xref" href="Microsoft.Azure.Batch.AddTaskCollectionResultHandler.html">AddTaskCollectionResultHandler</a> behavior. This handler
-treats success and 'TaskExists' errors as successful, retries server errors (HTTP 5xx), and throws
-<a class="xref" href="Microsoft.Azure.Batch.AddTaskCollectionTerminatedException.html">AddTaskCollectionTerminatedException</a> on client error (HTTP 4xx).</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -193,14 +178,12 @@ treats success and 'TaskExists' errors as successful, retries server errors (HTT
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.AddTaskResult.html">AddTaskResult</a></td>
         <td><span class="parametername">addTaskResult</span></td>
-        <td><p>The result of a single Add Task operation.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>The cancellation token associated with the AddTaskCollection operation.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -215,9 +198,7 @@ treats success and 'TaskExists' errors as successful, retries server errors (HTT
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.AddTaskResultStatus.html">AddTaskResultStatus</a></td>
-        <td><p>An <a class="xref" href="Microsoft.Azure.Batch.AddTaskResultStatus.html">AddTaskResultStatus</a> which indicates whether the <code data-dev-comment-type="paramref">addTaskResult</code>
-is classified as a success or as requiring a retry.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>

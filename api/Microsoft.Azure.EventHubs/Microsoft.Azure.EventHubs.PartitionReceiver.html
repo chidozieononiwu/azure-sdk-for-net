@@ -83,14 +83,7 @@
   
   <h1 id="Microsoft_Azure_EventHubs_PartitionReceiver" data-uid="Microsoft.Azure.EventHubs.PartitionReceiver" class="text-break">Class PartitionReceiver
   </h1>
-  <div class="markdown level0 summary"><p>This is a logical representation of receiving from a EventHub partition.</p>
-<p>
-A PartitionReceiver is tied to a ConsumerGroup + Partition combination. If you are creating an epoch based
-PartitionReceiver (i.e. PartitionReceiver.Epoch != 0) you cannot have more than one active receiver per
-ConsumerGroup + Partition combo. You can have multiple receivers per ConsumerGroup + Partition combination with 
-non-epoch receivers.
-</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -187,8 +180,7 @@ non-epoch receivers.
   
   
   <h4 id="Microsoft_Azure_EventHubs_PartitionReceiver_DefaultConsumerGroupName" data-uid="Microsoft.Azure.EventHubs.PartitionReceiver.DefaultConsumerGroupName">DefaultConsumerGroupName</h4>
-  <div class="markdown level1 summary"><p>The default consumer group name: $Default.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -215,8 +207,7 @@ non-epoch receivers.
   
   <a id="Microsoft_Azure_EventHubs_PartitionReceiver_ConsumerGroupName_" data-uid="Microsoft.Azure.EventHubs.PartitionReceiver.ConsumerGroupName*"></a>
   <h4 id="Microsoft_Azure_EventHubs_PartitionReceiver_ConsumerGroupName" data-uid="Microsoft.Azure.EventHubs.PartitionReceiver.ConsumerGroupName">ConsumerGroupName</h4>
-  <div class="markdown level1 summary"><p>The Consumer Group Name</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -241,9 +232,7 @@ non-epoch receivers.
   
   <a id="Microsoft_Azure_EventHubs_PartitionReceiver_Epoch_" data-uid="Microsoft.Azure.EventHubs.PartitionReceiver.Epoch*"></a>
   <h4 id="Microsoft_Azure_EventHubs_PartitionReceiver_Epoch" data-uid="Microsoft.Azure.EventHubs.PartitionReceiver.Epoch">Epoch</h4>
-  <div class="markdown level1 summary"><p>Get the epoch value that this receiver is currently using for partition ownership.</p>
-<p>A value of null means this receiver is not an epoch-based receiver.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -260,8 +249,7 @@ non-epoch receivers.
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
-        <td><p>the epoch value that this receiver is currently using for partition ownership.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -269,8 +257,7 @@ non-epoch receivers.
   
   <a id="Microsoft_Azure_EventHubs_PartitionReceiver_EventHubClient_" data-uid="Microsoft.Azure.EventHubs.PartitionReceiver.EventHubClient*"></a>
   <h4 id="Microsoft_Azure_EventHubs_PartitionReceiver_EventHubClient" data-uid="Microsoft.Azure.EventHubs.PartitionReceiver.EventHubClient">EventHubClient</h4>
-  <div class="markdown level1 summary"><p>The EventHubClient this PartitionReceiver was created from.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -320,8 +307,7 @@ non-epoch receivers.
   
   <a id="Microsoft_Azure_EventHubs_PartitionReceiver_Identifier_" data-uid="Microsoft.Azure.EventHubs.PartitionReceiver.Identifier*"></a>
   <h4 id="Microsoft_Azure_EventHubs_PartitionReceiver_Identifier" data-uid="Microsoft.Azure.EventHubs.PartitionReceiver.Identifier">Identifier</h4>
-  <div class="markdown level1 summary"><p>Gets the identifier of a receiver which was set during the creation of the receiver.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -338,8 +324,7 @@ non-epoch receivers.
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p>A string representing the identifier of a receiver. It will return null if the identifier is not set.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -347,8 +332,7 @@ non-epoch receivers.
   
   <a id="Microsoft_Azure_EventHubs_PartitionReceiver_PartitionId_" data-uid="Microsoft.Azure.EventHubs.PartitionReceiver.PartitionId*"></a>
   <h4 id="Microsoft_Azure_EventHubs_PartitionReceiver_PartitionId" data-uid="Microsoft.Azure.EventHubs.PartitionReceiver.PartitionId">PartitionId</h4>
-  <div class="markdown level1 summary"><p>Get the EventHub partition identifier.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -365,8 +349,7 @@ non-epoch receivers.
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p>The identifier representing the partition from which this receiver is fetching data</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -374,8 +357,7 @@ non-epoch receivers.
   
   <a id="Microsoft_Azure_EventHubs_PartitionReceiver_PrefetchCount_" data-uid="Microsoft.Azure.EventHubs.PartitionReceiver.PrefetchCount*"></a>
   <h4 id="Microsoft_Azure_EventHubs_PartitionReceiver_PrefetchCount" data-uid="Microsoft.Azure.EventHubs.PartitionReceiver.PrefetchCount">PrefetchCount</h4>
-  <div class="markdown level1 summary"><p>Get Prefetch Count configured on the Receiver.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -392,8 +374,7 @@ non-epoch receivers.
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><p>The upper limit of events this receiver will actively receive regardless of whether a receive operation is pending.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -401,8 +382,7 @@ non-epoch receivers.
   
   <a id="Microsoft_Azure_EventHubs_PartitionReceiver_ReceiverRuntimeMetricEnabled_" data-uid="Microsoft.Azure.EventHubs.PartitionReceiver.ReceiverRuntimeMetricEnabled*"></a>
   <h4 id="Microsoft_Azure_EventHubs_PartitionReceiver_ReceiverRuntimeMetricEnabled" data-uid="Microsoft.Azure.EventHubs.PartitionReceiver.ReceiverRuntimeMetricEnabled">ReceiverRuntimeMetricEnabled</h4>
-  <div class="markdown level1 summary"><p>Gets a value indicating whether the runtime metric of a receiver is enabled.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -427,9 +407,7 @@ non-epoch receivers.
   
   <a id="Microsoft_Azure_EventHubs_PartitionReceiver_RuntimeInfo_" data-uid="Microsoft.Azure.EventHubs.PartitionReceiver.RuntimeInfo*"></a>
   <h4 id="Microsoft_Azure_EventHubs_PartitionReceiver_RuntimeInfo" data-uid="Microsoft.Azure.EventHubs.PartitionReceiver.RuntimeInfo">RuntimeInfo</h4>
-  <div class="markdown level1 summary"><p>Gets the approximate receiver runtime information for a logical partition of an Event Hub.
-To enable the setting, refer to <a class="xref" href="Microsoft.Azure.EventHubs.ReceiverOptions.html">ReceiverOptions</a> and <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_EnableReceiverRuntimeMetric">EnableReceiverRuntimeMetric</a></p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -456,8 +434,7 @@ To enable the setting, refer to <a class="xref" href="Microsoft.Azure.EventHubs.
   
   <a id="Microsoft_Azure_EventHubs_PartitionReceiver_CloseAsync_" data-uid="Microsoft.Azure.EventHubs.PartitionReceiver.CloseAsync*"></a>
   <h4 id="Microsoft_Azure_EventHubs_PartitionReceiver_CloseAsync" data-uid="Microsoft.Azure.EventHubs.PartitionReceiver.CloseAsync">CloseAsync()</h4>
-  <div class="markdown level1 summary"><p>Closes and releases resources associated with <a class="xref" href="Microsoft.Azure.EventHubs.PartitionReceiver.html">PartitionReceiver</a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -474,8 +451,7 @@ To enable the setting, refer to <a class="xref" href="Microsoft.Azure.EventHubs.
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td><p>An asynchronous operation</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -587,8 +563,7 @@ To enable the setting, refer to <a class="xref" href="Microsoft.Azure.EventHubs.
   
   <a id="Microsoft_Azure_EventHubs_PartitionReceiver_ReceiveAsync_" data-uid="Microsoft.Azure.EventHubs.PartitionReceiver.ReceiveAsync*"></a>
   <h4 id="Microsoft_Azure_EventHubs_PartitionReceiver_ReceiveAsync_System_Int32_" data-uid="Microsoft.Azure.EventHubs.PartitionReceiver.ReceiveAsync(System.Int32)">ReceiveAsync(Int32)</h4>
-  <div class="markdown level1 summary"><p>Receive a batch of <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>'s from an EventHub partition</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -622,45 +597,15 @@ To enable the setting, refer to <a class="xref" href="Microsoft.Azure.EventHubs.
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>&gt;&gt;</td>
-        <td><p>A Task that will yield a batch of <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a> from the partition on which this receiver is created. Returns 'null' if no EventData is present.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_EventHubs_PartitionReceiver_ReceiveAsync_System_Int32__examples">Examples</h5>
-  <p>Sample code:</p>
-<pre><code>
-EventHubClient client = EventHubClient.Create("__connectionString__");
-PartitionReceiver receiver = client.CreateReceiver("ConsumerGroup1", "1");
-IEnumerable&lt;EventData&gt; receivedEvents = await receiver.ReceiveAsync(BatchSize);
-     
-while (true)
-{
-    int batchSize = 0;
-    if (receivedEvents != null)
-    {
-        foreach (EventData receivedEvent in receivedEvents)
-        {
-            Console.WriteLine("Message Payload: {0}", Encoding.UTF8.GetString(receivedEvent.Body));
-            Console.WriteLine("Offset: {0}, SeqNo: {1}, EnqueueTime: {2}", 
-                receivedEvent.SystemProperties.Offset, 
-                receivedEvent.SystemProperties.SequenceNumber, 
-                receivedEvent.SystemProperties.EnqueuedTime);
-            batchSize++;
-        }
-    }
-         
-    Console.WriteLine("ReceivedBatch Size: {0}", batchSize);
-    receivedEvents = await receiver.ReceiveAsync();
-}
-</code></pre>
-
   
   
   <a id="Microsoft_Azure_EventHubs_PartitionReceiver_ReceiveAsync_" data-uid="Microsoft.Azure.EventHubs.PartitionReceiver.ReceiveAsync*"></a>
   <h4 id="Microsoft_Azure_EventHubs_PartitionReceiver_ReceiveAsync_System_Int32_System_TimeSpan_" data-uid="Microsoft.Azure.EventHubs.PartitionReceiver.ReceiveAsync(System.Int32,System.TimeSpan)">ReceiveAsync(Int32, TimeSpan)</h4>
-  <div class="markdown level1 summary"><p>Receive a batch of <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>'s from an EventHub partition by allowing wait time on each individual call.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -700,8 +645,7 @@ public System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>&gt;&gt;</td>
-        <td><p>A Task that will yield a batch of <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a> from the partition on which this receiver is created. Returns 'null' if no EventData is present.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -709,8 +653,7 @@ public System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;
   
   <a id="Microsoft_Azure_EventHubs_PartitionReceiver_SetReceiveHandler_" data-uid="Microsoft.Azure.EventHubs.PartitionReceiver.SetReceiveHandler*"></a>
   <h4 id="Microsoft_Azure_EventHubs_PartitionReceiver_SetReceiveHandler_Microsoft_Azure_EventHubs_IPartitionReceiveHandler_System_Boolean_" data-uid="Microsoft.Azure.EventHubs.PartitionReceiver.SetReceiveHandler(Microsoft.Azure.EventHubs.IPartitionReceiveHandler,System.Boolean)">SetReceiveHandler(IPartitionReceiveHandler, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Sets the <a class="xref" href="Microsoft.Azure.EventHubs.IPartitionReceiveHandler.html">IPartitionReceiveHandler</a> to process events.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -729,22 +672,15 @@ public System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.IPartitionReceiveHandler.html">IPartitionReceiveHandler</a></td>
         <td><span class="parametername">receiveHandler</span></td>
-        <td><p>The <a class="xref" href="Microsoft.Azure.EventHubs.IPartitionReceiveHandler.html">IPartitionReceiveHandler</a> used to process events.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><span class="parametername">invokeWhenNoEvents</span></td>
-        <td><p>Flag to indicate whether the handler should be invoked when the receive call times out.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="seealso">See Also</h3>
-  <div class="seealso">
-      <div></div>
-      <div></div>
-  </div>
 </article>
           </div>
           

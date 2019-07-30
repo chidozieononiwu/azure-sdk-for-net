@@ -83,16 +83,7 @@
   
   <h1 id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder" class="text-break">Class EventHubsConnectionStringBuilder
   </h1>
-  <div class="markdown level0 summary"><p>EventHubsConnectionStringBuilder can be used to construct a connection string which can establish communication with Event Hubs entities.
-It can also be used to perform basic validation on an existing connection string.</p>
-<p>
-A connection string is basically a string consisted of key-value pair separated by ";". 
-Basic format is "&lt;key&gt;=&lt;value&gt;[;&lt;key&gt;=&lt;value&gt;]" where supported key name are as follow:
-<p> Endpoint - the URL that contains the Event Hubs namespace
-<p> EntityPath - the path to the Event Hub entity
-<p> SharedAccessKeyName - the key name to the corresponding shared access policy rule for the namespace, or entity.
-<p> SharedAccessKey - the key for the corresponding shared access policy rule of the namespace or entity.
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -105,26 +96,13 @@ Basic format is "&lt;key&gt;=&lt;value&gt;[;&lt;key&gt;=&lt;value&gt;]" where su
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class EventHubsConnectionStringBuilder</code></pre>
   </div>
-  <h5 id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder_examples"><strong>Examples</strong></h5>
-  <p>Sample code:</p>
-<pre><code>
-var connectionStringBuiler = new EventHubsConnectionStringBuilder(
-    "amqps://EventHubsNamespaceName.servicebus.windows.net", 
-    "EventHubsEntityName", // Event Hub Name 
-    "SharedAccessSignatureKeyName", 
-    "SharedAccessSignatureKey");
- string connectionString = connectionStringBuiler.ToString();
-</code></pre>
-
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder__ctor_" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.#ctor*"></a>
   <h4 id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder__ctor_System_String_" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.#ctor(System.String)">EventHubsConnectionStringBuilder(String)</h4>
-  <div class="markdown level1 summary"><p>ConnectionString format:
-Endpoint=sb://namespace_DNS_Name;EntityPath=EVENT_HUB_NAME;SharedAccessKeyName=SHARED_ACCESS_KEY_NAME;SharedAccessKey=SHARED_ACCESS_KEY</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -143,8 +121,7 @@ Endpoint=sb://namespace_DNS_Name;EntityPath=EVENT_HUB_NAME;SharedAccessKeyName=S
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">connectionString</span></td>
-        <td><p>Event Hubs ConnectionString</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -152,8 +129,7 @@ Endpoint=sb://namespace_DNS_Name;EntityPath=EVENT_HUB_NAME;SharedAccessKeyName=S
   
   <a id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder__ctor_" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.#ctor*"></a>
   <h4 id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder__ctor_System_Uri_System_String_System_String_System_String_" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.#ctor(System.Uri,System.String,System.String,System.String)">EventHubsConnectionStringBuilder(Uri, String, String, String)</h4>
-  <div class="markdown level1 summary"><p>Build a connection string consumable by <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_CreateFromConnectionString_System_String_">CreateFromConnectionString(String)</a></p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -172,26 +148,22 @@ Endpoint=sb://namespace_DNS_Name;EntityPath=EVENT_HUB_NAME;SharedAccessKeyName=S
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
         <td><span class="parametername">endpointAddress</span></td>
-        <td><p>Fully qualified domain name for Event Hubs. Most likely, {yournamespace}.servicebus.windows.net</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">entityPath</span></td>
-        <td><p>Entity path or Event Hub name.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">sharedAccessKeyName</span></td>
-        <td><p>Shared Access Key name</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">sharedAccessKey</span></td>
-        <td><p>Shared Access Key</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -199,8 +171,7 @@ Endpoint=sb://namespace_DNS_Name;EntityPath=EVENT_HUB_NAME;SharedAccessKeyName=S
   
   <a id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder__ctor_" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.#ctor*"></a>
   <h4 id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder__ctor_System_Uri_System_String_System_String_System_TimeSpan_" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.#ctor(System.Uri,System.String,System.String,System.TimeSpan)">EventHubsConnectionStringBuilder(Uri, String, String, TimeSpan)</h4>
-  <div class="markdown level1 summary"><p>Build a connection string consumable by <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_CreateFromConnectionString_System_String_">CreateFromConnectionString(String)</a></p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -219,26 +190,22 @@ Endpoint=sb://namespace_DNS_Name;EntityPath=EVENT_HUB_NAME;SharedAccessKeyName=S
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
         <td><span class="parametername">endpointAddress</span></td>
-        <td><p>Fully qualified domain name for Event Hubs. Most likely, {yournamespace}.servicebus.windows.net</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">entityPath</span></td>
-        <td><p>Entity path or Event Hub name.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">sharedAccessSignature</span></td>
-        <td><p>Shared Access Signature</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
         <td><span class="parametername">operationTimeout</span></td>
-        <td><p>Operation timeout for Event Hubs operations</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -246,8 +213,7 @@ Endpoint=sb://namespace_DNS_Name;EntityPath=EVENT_HUB_NAME;SharedAccessKeyName=S
   
   <a id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder__ctor_" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.#ctor*"></a>
   <h4 id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder__ctor_System_Uri_System_String_System_String_System_String_System_TimeSpan_" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.#ctor(System.Uri,System.String,System.String,System.String,System.TimeSpan)">EventHubsConnectionStringBuilder(Uri, String, String, String, TimeSpan)</h4>
-  <div class="markdown level1 summary"><p>Build a connection string consumable by <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_CreateFromConnectionString_System_String_">CreateFromConnectionString(String)</a></p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -266,32 +232,27 @@ Endpoint=sb://namespace_DNS_Name;EntityPath=EVENT_HUB_NAME;SharedAccessKeyName=S
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
         <td><span class="parametername">endpointAddress</span></td>
-        <td><p>Fully qualified domain name for Event Hubs. Most likely, {yournamespace}.servicebus.windows.net</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">entityPath</span></td>
-        <td><p>Entity path or Event Hub name.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">sharedAccessKeyName</span></td>
-        <td><p>Shared Access Key name</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">sharedAccessKey</span></td>
-        <td><p>Shared Access Key</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
         <td><span class="parametername">operationTimeout</span></td>
-        <td><p>Operation timeout for Event Hubs operations</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -301,8 +262,7 @@ Endpoint=sb://namespace_DNS_Name;EntityPath=EVENT_HUB_NAME;SharedAccessKeyName=S
   
   <a id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder_Authentication_" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.Authentication*"></a>
   <h4 id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder_Authentication" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.Authentication">Authentication</h4>
-  <div class="markdown level1 summary"><p>Enables Azure Active Directory Managed Identity authentication when set to 'Managed Identity'</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -327,8 +287,7 @@ Endpoint=sb://namespace_DNS_Name;EntityPath=EVENT_HUB_NAME;SharedAccessKeyName=S
   
   <a id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder_Endpoint_" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.Endpoint*"></a>
   <h4 id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder_Endpoint" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.Endpoint">Endpoint</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the Event Hubs endpoint.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -353,8 +312,7 @@ Endpoint=sb://namespace_DNS_Name;EntityPath=EVENT_HUB_NAME;SharedAccessKeyName=S
   
   <a id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder_EntityPath_" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.EntityPath*"></a>
   <h4 id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder_EntityPath" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.EntityPath">EntityPath</h4>
-  <div class="markdown level1 summary"><p>Get the entity path value from the connection string</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -379,8 +337,7 @@ Endpoint=sb://namespace_DNS_Name;EntityPath=EVENT_HUB_NAME;SharedAccessKeyName=S
   
   <a id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder_OperationTimeout_" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.OperationTimeout*"></a>
   <h4 id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder_OperationTimeout" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.OperationTimeout">OperationTimeout</h4>
-  <div class="markdown level1 summary"><p>OperationTimeout is applied in erroneous situations to notify the caller about the relevant <a class="xref" href="Microsoft.Azure.EventHubs.EventHubsException.html">EventHubsException</a></p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -405,8 +362,7 @@ Endpoint=sb://namespace_DNS_Name;EntityPath=EVENT_HUB_NAME;SharedAccessKeyName=S
   
   <a id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder_SasKey_" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.SasKey*"></a>
   <h4 id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder_SasKey" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.SasKey">SasKey</h4>
-  <div class="markdown level1 summary"><p>Get the shared access policy key value from the connection string</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -423,8 +379,7 @@ Endpoint=sb://namespace_DNS_Name;EntityPath=EVENT_HUB_NAME;SharedAccessKeyName=S
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p>Shared Access Signature key</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -432,8 +387,7 @@ Endpoint=sb://namespace_DNS_Name;EntityPath=EVENT_HUB_NAME;SharedAccessKeyName=S
   
   <a id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder_SasKeyName_" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.SasKeyName*"></a>
   <h4 id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder_SasKeyName" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.SasKeyName">SasKeyName</h4>
-  <div class="markdown level1 summary"><p>Get the shared access policy owner name from the connection string</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -458,8 +412,7 @@ Endpoint=sb://namespace_DNS_Name;EntityPath=EVENT_HUB_NAME;SharedAccessKeyName=S
   
   <a id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder_SharedAccessSignature_" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.SharedAccessSignature*"></a>
   <h4 id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder_SharedAccessSignature" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.SharedAccessSignature">SharedAccessSignature</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the SAS access token.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -476,8 +429,7 @@ Endpoint=sb://namespace_DNS_Name;EntityPath=EVENT_HUB_NAME;SharedAccessKeyName=S
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p>Shared Access Signature</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -485,10 +437,7 @@ Endpoint=sb://namespace_DNS_Name;EntityPath=EVENT_HUB_NAME;SharedAccessKeyName=S
   
   <a id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder_TransportType_" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.TransportType*"></a>
   <h4 id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder_TransportType" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.TransportType">TransportType</h4>
-  <div class="markdown level1 summary"><p>Transport type for the client connection.
-Avaiable options are Amqp and AmqpWebSockets.
-Defaults to Amqp if not specified.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -515,8 +464,7 @@ Defaults to Amqp if not specified.</p>
   
   <a id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder_Clone_" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.Clone*"></a>
   <h4 id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder_Clone" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.Clone">Clone()</h4>
-  <div class="markdown level1 summary"><p>Creates a cloned object of the current <a class="xref" href="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.html">EventHubsConnectionStringBuilder</a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -533,8 +481,7 @@ Defaults to Amqp if not specified.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.html">EventHubsConnectionStringBuilder</a></td>
-        <td><p>A new <a class="xref" href="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.html">EventHubsConnectionStringBuilder</a></p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -542,8 +489,7 @@ Defaults to Amqp if not specified.</p>
   
   <a id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder_ToString_" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.ToString*"></a>
   <h4 id="Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder_ToString" data-uid="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.ToString">ToString()</h4>
-  <div class="markdown level1 summary"><p>Returns an interoperable connection string that can be used to connect to Event Hubs Namespace</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -560,8 +506,7 @@ Defaults to Amqp if not specified.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p>the connection string</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>

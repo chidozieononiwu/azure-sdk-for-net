@@ -83,8 +83,7 @@
   
   <h1 id="Microsoft_Azure_Batch_RetryPolicyProvider" data-uid="Microsoft.Azure.Batch.RetryPolicyProvider" class="text-break">Class RetryPolicyProvider
   </h1>
-  <div class="markdown level0 summary"><p>A RequestInterceptor that sets the RetryPolicy.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -115,8 +114,7 @@
   
   <a id="Microsoft_Azure_Batch_RetryPolicyProvider__ctor_" data-uid="Microsoft.Azure.Batch.RetryPolicyProvider.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_RetryPolicyProvider__ctor_Microsoft_Azure_Batch_Common_IRetryPolicy_" data-uid="Microsoft.Azure.Batch.RetryPolicyProvider.#ctor(Microsoft.Azure.Batch.Common.IRetryPolicy)">RetryPolicyProvider(IRetryPolicy)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new behavior to set the retry policy.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -135,8 +133,7 @@
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.IRetryPolicy.html">IRetryPolicy</a></td>
         <td><span class="parametername">retryPolicy</span></td>
-        <td><p>The retry policy to set.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -146,8 +143,7 @@
   
   <a id="Microsoft_Azure_Batch_RetryPolicyProvider_Policy_" data-uid="Microsoft.Azure.Batch.RetryPolicyProvider.Policy*"></a>
   <h4 id="Microsoft_Azure_Batch_RetryPolicyProvider_Policy" data-uid="Microsoft.Azure.Batch.RetryPolicyProvider.Policy">Policy</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the retry policy to use.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -174,8 +170,7 @@
   
   <a id="Microsoft_Azure_Batch_RetryPolicyProvider_ExponentialRetryProvider_" data-uid="Microsoft.Azure.Batch.RetryPolicyProvider.ExponentialRetryProvider*"></a>
   <h4 id="Microsoft_Azure_Batch_RetryPolicyProvider_ExponentialRetryProvider_System_TimeSpan_System_Int32_System_Nullable_System_TimeSpan__" data-uid="Microsoft.Azure.Batch.RetryPolicyProvider.ExponentialRetryProvider(System.TimeSpan,System.Int32,System.Nullable{System.TimeSpan})">ExponentialRetryProvider(TimeSpan, Int32, Nullable&lt;TimeSpan&gt;)</h4>
-  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="Microsoft.Azure.Batch.RetryPolicyProvider.html">RetryPolicyProvider</a> using the <a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.ExponentialRetry.html">ExponentialRetry</a> policy.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -194,20 +189,17 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
         <td><span class="parametername">deltaBackoff</span></td>
-        <td><p>The backoff interval between retries, where the resulting backoff is 2^n * deltaBackoff (where n is the number of retries)</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">maxRetries</span></td>
-        <td><p>The maximum number of retry attempts.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
         <td><span class="parametername">maxBackoff</span></td>
-        <td><p>The maximum amount of time to back off between attempts.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -222,8 +214,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.RetryPolicyProvider.html">RetryPolicyProvider</a></td>
-        <td><p>A provider configured to perform exponential retries using the specified backoff and max retries.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -231,8 +222,7 @@
   
   <a id="Microsoft_Azure_Batch_RetryPolicyProvider_LinearRetryProvider_" data-uid="Microsoft.Azure.Batch.RetryPolicyProvider.LinearRetryProvider*"></a>
   <h4 id="Microsoft_Azure_Batch_RetryPolicyProvider_LinearRetryProvider_System_TimeSpan_System_Int32_" data-uid="Microsoft.Azure.Batch.RetryPolicyProvider.LinearRetryProvider(System.TimeSpan,System.Int32)">LinearRetryProvider(TimeSpan, Int32)</h4>
-  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="Microsoft.Azure.Batch.RetryPolicyProvider.html">RetryPolicyProvider</a> using the <a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.LinearRetry.html">LinearRetry</a> policy.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -251,14 +241,12 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
         <td><span class="parametername">deltaBackoff</span></td>
-        <td><p>The backoff interval between retries.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">maxRetries</span></td>
-        <td><p>The maximum number of retry attempts.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -273,8 +261,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.RetryPolicyProvider.html">RetryPolicyProvider</a></td>
-        <td><p>A provider configured to perform linear retries using the specified backoff and max retries.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -282,8 +269,7 @@
   
   <a id="Microsoft_Azure_Batch_RetryPolicyProvider_NoRetryProvider_" data-uid="Microsoft.Azure.Batch.RetryPolicyProvider.NoRetryProvider*"></a>
   <h4 id="Microsoft_Azure_Batch_RetryPolicyProvider_NoRetryProvider" data-uid="Microsoft.Azure.Batch.RetryPolicyProvider.NoRetryProvider">NoRetryProvider()</h4>
-  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="Microsoft.Azure.Batch.RetryPolicyProvider.html">RetryPolicyProvider</a> using the <a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.NoRetry.html">NoRetry</a> policy.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -300,8 +286,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.RetryPolicyProvider.html">RetryPolicyProvider</a></td>
-        <td><p>A provider configured to perform no retries.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>

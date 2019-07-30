@@ -83,18 +83,7 @@
   
   <h1 id="Azure_Storage_Blobs_Specialized_PageBlobClient" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient" class="text-break">Class PageBlobClient
   </h1>
-  <div class="markdown level0 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html">PageBlobClient</a> allows you to manipulate Azure
-Storage page blobs.</p>
-<p>Page blobs are a collection of 512-byte pages optimized for random
-read and write operations. To create a page blob, you initialize the
-page blob and specify the maximum size the page blob will grow. To add
-or update the contents of a page blob, you write a page or pages by
-specifying an offset and a range that align to 512-byte page
-boundaries.  A write to a page blob can overwrite just one page, some
-pages, or up to 4 MB of the page blob.  Writes to page blobs happen
-in-place and are immediately committed to the blob. The maximum size
-for a page blob is 8 TB.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -201,9 +190,7 @@ for a page blob is 8 TB.</p>
   
   <a id="Azure_Storage_Blobs_Specialized_PageBlobClient__ctor_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.#ctor*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient__ctor" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.#ctor">PageBlobClient()</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html">PageBlobClient</a>
-class for mocking.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -213,9 +200,7 @@ class for mocking.</p>
   
   <a id="Azure_Storage_Blobs_Specialized_PageBlobClient__ctor_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.#ctor*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient__ctor_System_Uri_Azure_Storage_Blobs_BlobClientOptions_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.#ctor(System.Uri,Azure.Storage.Blobs.BlobClientOptions)">PageBlobClient(Uri, BlobClientOptions)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html">PageBlobClient</a>
-class.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -234,18 +219,12 @@ class.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
         <td><span class="parametername">blobUri</span></td>
-        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> referencing the page blob that includes the
-name of the account, the name of the container, and the name of
-the blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.BlobClientOptions.html">BlobClientOptions</a></td>
         <td><span class="parametername">options</span></td>
-        <td><p>Optional client options that define the transport pipeline
-policies for authentication, retries, etc., that are applied to
-every request.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -253,9 +232,7 @@ every request.</p>
   
   <a id="Azure_Storage_Blobs_Specialized_PageBlobClient__ctor_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.#ctor*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient__ctor_System_String_System_String_System_String_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.#ctor(System.String,System.String,System.String)">PageBlobClient(String, String, String)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html">PageBlobClient</a>
-class.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -274,23 +251,17 @@ class.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">connectionString</span></td>
-        <td><p>A connection string includes the authentication information
-required for your application to access data in an Azure Storage
-account at runtime.</p>
-<p>For more information, <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string"></a>.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">containerName</span></td>
-        <td><p>The name of the container containing this page blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">blobName</span></td>
-        <td><p>The name of this page blob.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -298,9 +269,7 @@ account at runtime.</p>
   
   <a id="Azure_Storage_Blobs_Specialized_PageBlobClient__ctor_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.#ctor*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient__ctor_System_Uri_Azure_Core_TokenCredential_Azure_Storage_Blobs_BlobClientOptions_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.#ctor(System.Uri,Azure.Core.TokenCredential,Azure.Storage.Blobs.BlobClientOptions)">PageBlobClient(Uri, TokenCredential, BlobClientOptions)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html">PageBlobClient</a>
-class.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -319,24 +288,17 @@ class.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
         <td><span class="parametername">blobUri</span></td>
-        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> referencing the page blob that includes the
-name of the account, the name of the container, and the name of
-the blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Azure.Core/Azure.Core.TokenCredential.html">TokenCredential</a></td>
         <td><span class="parametername">credential</span></td>
-        <td><p>The token credential used to sign requests.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.BlobClientOptions.html">BlobClientOptions</a></td>
         <td><span class="parametername">options</span></td>
-        <td><p>Optional client options that define the transport pipeline
-policies for authentication, retries, etc., that are applied to
-every request.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -344,9 +306,7 @@ every request.</p>
   
   <a id="Azure_Storage_Blobs_Specialized_PageBlobClient__ctor_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.#ctor*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient__ctor_System_Uri_Azure_Storage_StorageSharedKeyCredential_Azure_Storage_Blobs_BlobClientOptions_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.#ctor(System.Uri,Azure.Storage.StorageSharedKeyCredential,Azure.Storage.Blobs.BlobClientOptions)">PageBlobClient(Uri, StorageSharedKeyCredential, BlobClientOptions)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html">PageBlobClient</a>
-class.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -365,24 +325,17 @@ class.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
         <td><span class="parametername">blobUri</span></td>
-        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> referencing the page blob that includes the
-name of the account, the name of the container, and the name of
-the blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Azure.Storage/Azure.Storage.StorageSharedKeyCredential.html">StorageSharedKeyCredential</a></td>
         <td><span class="parametername">credential</span></td>
-        <td><p>The shared key credential used to sign requests.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.BlobClientOptions.html">BlobClientOptions</a></td>
         <td><span class="parametername">options</span></td>
-        <td><p>Optional client options that define the transport pipeline
-policies for authentication, retries, etc., that are applied to
-every request.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -390,9 +343,7 @@ every request.</p>
   
   <a id="Azure_Storage_Blobs_Specialized_PageBlobClient__ctor_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.#ctor*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient__ctor_System_String_System_String_System_String_Azure_Storage_Blobs_BlobClientOptions_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.#ctor(System.String,System.String,System.String,Azure.Storage.Blobs.BlobClientOptions)">PageBlobClient(String, String, String, BlobClientOptions)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html">PageBlobClient</a>
-class.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -411,31 +362,22 @@ class.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">connectionString</span></td>
-        <td><p>A connection string includes the authentication information
-required for your application to access data in an Azure Storage
-account at runtime.</p>
-<p>For more information, <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string"></a>.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">containerName</span></td>
-        <td><p>The name of the container containing this page blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">blobName</span></td>
-        <td><p>The name of this page blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.BlobClientOptions.html">BlobClientOptions</a></td>
         <td><span class="parametername">options</span></td>
-        <td><p>Optional client options that define the transport pipeline
-policies for authentication, retries, etc., that are applied to
-every request.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -444,10 +386,7 @@ every request.</p>
   
   
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_PageBlobMaxUploadPagesBytes" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.PageBlobMaxUploadPagesBytes">PageBlobMaxUploadPagesBytes</h4>
-  <div class="markdown level1 summary"><p><a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_PageBlobMaxUploadPagesBytes">PageBlobMaxUploadPagesBytes</a> indicates the maximum
-number of bytes that can be sent in a call to the
-<a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_UploadPagesAsync_System_IO_Stream_System_Int64_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">UploadPagesAsync(Stream, Int64, Byte[], Nullable&lt;PageBlobAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a> operation.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -471,9 +410,7 @@ number of bytes that can be sent in a call to the
   
   
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_PageBlobPageBytes" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.PageBlobPageBytes">PageBlobPageBytes</h4>
-  <div class="markdown level1 summary"><p><a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_PageBlobPageBytes">PageBlobPageBytes</a> indicates the number of bytes in a
-page (512).</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -500,10 +437,7 @@ page (512).</p>
   
   <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_ClearPages_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.ClearPages*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_ClearPages_Azure_Core_Http_HttpRange_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.ClearPages(Azure.Core.Http.HttpRange,System.Nullable{Azure.Storage.Blobs.Models.PageBlobAccessConditions},System.Threading.CancellationToken)">ClearPages(HttpRange, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_ClearPages_Azure_Core_Http_HttpRange_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">ClearPages(HttpRange, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a> operation clears one or more
-pages from the page blob, as specificed by the <code data-dev-comment-type="paramref">range</code>.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/put-page"></a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -522,28 +456,17 @@ pages from the page blob, as specificed by the <code data-dev-comment-type="para
       <tr>
         <td><a class="xref" href="../Azure.Core.Http/Azure.Core.Http.HttpRange.html">HttpRange</a></td>
         <td><span class="parametername">range</span></td>
-        <td><p>Specifies the range of bytes to be cleared. Both the start and
-end of the range must be specified.  For a page clear operation,
-the page range can be up to the value of the blob's full size.
-Given that pages must be aligned with 512-byte boundaries, the
-start of the range must be a modulus of 512 and the end of the
-range must be a modulus of 512 – 1.  Examples of valid byte ranges
-are 0-511, 512-1023, etc.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
         <td><span class="parametername">accessConditions</span></td>
-        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a> to add
-conditions on clearing pages from this page blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
-notifications that the operation should be cancelled.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -558,24 +481,15 @@ notifications that the operation should be cancelled.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageInfo.html">PageInfo</a>&gt;</td>
-        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
-state of the updated pages.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_PageBlobClient_ClearPages_Azure_Core_Http_HttpRange_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
-a failure occurs.</p>
-</div>
   
   
   <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_ClearPagesAsync_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.ClearPagesAsync*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_ClearPagesAsync_Azure_Core_Http_HttpRange_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.ClearPagesAsync(Azure.Core.Http.HttpRange,System.Nullable{Azure.Storage.Blobs.Models.PageBlobAccessConditions},System.Threading.CancellationToken)">ClearPagesAsync(HttpRange, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_ClearPagesAsync_Azure_Core_Http_HttpRange_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">ClearPagesAsync(HttpRange, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a> operation clears one or more
-pages from the page blob, as specificed by the <code data-dev-comment-type="paramref">range</code>.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/put-page"></a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -595,28 +509,17 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Bl
       <tr>
         <td><a class="xref" href="../Azure.Core.Http/Azure.Core.Http.HttpRange.html">HttpRange</a></td>
         <td><span class="parametername">range</span></td>
-        <td><p>Specifies the range of bytes to be cleared. Both the start and
-end of the range must be specified.  For a page clear operation,
-the page range can be up to the value of the blob's full size.
-Given that pages must be aligned with 512-byte boundaries, the
-start of the range must be a modulus of 512 and the end of the
-range must be a modulus of 512 – 1.  Examples of valid byte ranges
-are 0-511, 512-1023, etc.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
         <td><span class="parametername">accessConditions</span></td>
-        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a> to add
-conditions on clearing pages from this page blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
-notifications that the operation should be cancelled.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -631,27 +534,15 @@ notifications that the operation should be cancelled.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageInfo.html">PageInfo</a>&gt;&gt;</td>
-        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
-state of the updated pages.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_PageBlobClient_ClearPagesAsync_Azure_Core_Http_HttpRange_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
-a failure occurs.</p>
-</div>
   
   
   <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_Create_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.Create*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_Create_System_Int64_System_Nullable_System_Int64__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.Create(System.Int64,System.Nullable{System.Int64},System.Nullable{Azure.Storage.Blobs.Models.BlobHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{Azure.Storage.Blobs.Models.PageBlobAccessConditions},System.Threading.CancellationToken)">Create(Int64, Nullable&lt;Int64&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String,String&gt;, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_Create_System_Int64_System_Nullable_System_Int64__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">Create(Int64, Nullable&lt;Int64&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String,String&gt;, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a> operation creates a new page blob of
-the specified <code data-dev-comment-type="paramref">size</code>.  The content of any
-existing blob is overwritten with the newly initialized page blob
-To add content to the page blob, call the
-<a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_UploadPages_System_IO_Stream_System_Int64_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">UploadPages(Stream, Int64, Byte[], Nullable&lt;PageBlobAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a> operation.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/put-blob">https://docs.microsoft.com/rest/api/storageservices/put-blob</a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -670,44 +561,32 @@ To add content to the page blob, call the
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
         <td><span class="parametername">size</span></td>
-        <td><p>Specifies the maximum size for the page blob, up to 8 TB.  The
-size must be aligned to a 512-byte boundary.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
         <td><span class="parametername">sequenceNumber</span></td>
-        <td><p>Optional user-controlled value that you can use to track requests.
-The value of the <code data-dev-comment-type="paramref">sequenceNumber</code> must be between
-0 and 2^63 - 1.  The default value is 0.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobHttpHeaders.html">BlobHttpHeaders</a>&gt;</td>
         <td><span class="parametername">httpHeaders</span></td>
-        <td><p>Optional standard HTTP header properties that can be set for the
-new page blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td><span class="parametername">metadata</span></td>
-        <td><p>Optional custom metadata to set for this page blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
         <td><span class="parametername">accessConditions</span></td>
-        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a> to add
-conditions on the creation of this new page blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
-notifications that the operation should be cancelled.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -722,27 +601,15 @@ notifications that the operation should be cancelled.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobContentInfo.html">BlobContentInfo</a>&gt;</td>
-        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
-newly created page blob.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_PageBlobClient_Create_System_Int64_System_Nullable_System_Int64__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
-a failure occurs.</p>
-</div>
   
   
   <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_CreateAsync_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.CreateAsync*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_CreateAsync_System_Int64_System_Nullable_System_Int64__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.CreateAsync(System.Int64,System.Nullable{System.Int64},System.Nullable{Azure.Storage.Blobs.Models.BlobHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{Azure.Storage.Blobs.Models.PageBlobAccessConditions},System.Threading.CancellationToken)">CreateAsync(Int64, Nullable&lt;Int64&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String,String&gt;, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_CreateAsync_System_Int64_System_Nullable_System_Int64__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">CreateAsync(Int64, Nullable&lt;Int64&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String,String&gt;, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a> operation creates a new page blob of
-the specified <code data-dev-comment-type="paramref">size</code>.  The content of any
-existing blob is overwritten with the newly initialized page blob
-To add content to the page blob, call the
-<a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_UploadPagesAsync_System_IO_Stream_System_Int64_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">UploadPagesAsync(Stream, Int64, Byte[], Nullable&lt;PageBlobAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a> operation.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/put-blob">https://docs.microsoft.com/rest/api/storageservices/put-blob</a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -762,44 +629,32 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Bl
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
         <td><span class="parametername">size</span></td>
-        <td><p>Specifies the maximum size for the page blob, up to 8 TB.  The
-size must be aligned to a 512-byte boundary.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
         <td><span class="parametername">sequenceNumber</span></td>
-        <td><p>Optional user-controlled value that you can use to track requests.
-The value of the <code data-dev-comment-type="paramref">sequenceNumber</code> must be between
-0 and 2^63 - 1.  The default value is 0.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobHttpHeaders.html">BlobHttpHeaders</a>&gt;</td>
         <td><span class="parametername">httpHeaders</span></td>
-        <td><p>Optional standard HTTP header properties that can be set for the
-new page blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td><span class="parametername">metadata</span></td>
-        <td><p>Optional custom metadata to set for this page blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
         <td><span class="parametername">accessConditions</span></td>
-        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a> to add
-conditions on the creation of this new page blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
-notifications that the operation should be cancelled.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -814,24 +669,15 @@ notifications that the operation should be cancelled.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobContentInfo.html">BlobContentInfo</a>&gt;&gt;</td>
-        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
-newly created page blob.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_PageBlobClient_CreateAsync_System_Int64_System_Nullable_System_Int64__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
-a failure occurs.</p>
-</div>
   
   
   <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_GetPageRanges_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.GetPageRanges*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_GetPageRanges_System_Nullable_Azure_Core_Http_HttpRange__System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.GetPageRanges(System.Nullable{Azure.Core.Http.HttpRange},System.String,System.Nullable{Azure.Storage.Blobs.Models.PageBlobAccessConditions},System.Threading.CancellationToken)">GetPageRanges(Nullable&lt;HttpRange&gt;, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_GetPageRanges_System_Nullable_Azure_Core_Http_HttpRange__System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">GetPageRanges(Nullable&lt;HttpRange&gt;, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a> operation returns the list of
-valid page ranges for a page blob or snapshot of a page blob.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-page-ranges"></a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -850,31 +696,22 @@ valid page ranges for a page blob or snapshot of a page blob.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Core.Http/Azure.Core.Http.HttpRange.html">HttpRange</a>&gt;</td>
         <td><span class="parametername">range</span></td>
-        <td><p>Optionally specifies the range of bytes over which to list ranges,
-inclusively. If omitted, then all ranges for the blob are returned.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">snapshot</span></td>
-        <td><p>Optionally specifies the blob snapshot to retrieve page ranges
-information from. For more information on working with blob snapshots,
-<a href="https://docs.microsoft.com/en-us/rest/api/storageservices/creating-a-snapshot-of-a-blob"></a>.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
         <td><span class="parametername">accessConditions</span></td>
-        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a> to add
-conditions on getting page ranges for the this blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
-notifications that the operation should be cancelled.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -889,24 +726,15 @@ notifications that the operation should be cancelled.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageRangesInfo.html">PageRangesInfo</a>&gt;</td>
-        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
-valid page ranges for this blob.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_PageBlobClient_GetPageRanges_System_Nullable_Azure_Core_Http_HttpRange__System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
-a failure occurs.</p>
-</div>
   
   
   <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_GetPageRangesAsync_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.GetPageRangesAsync*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_GetPageRangesAsync_System_Nullable_Azure_Core_Http_HttpRange__System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.GetPageRangesAsync(System.Nullable{Azure.Core.Http.HttpRange},System.String,System.Nullable{Azure.Storage.Blobs.Models.PageBlobAccessConditions},System.Threading.CancellationToken)">GetPageRangesAsync(Nullable&lt;HttpRange&gt;, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_GetPageRangesAsync_System_Nullable_Azure_Core_Http_HttpRange__System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">GetPageRangesAsync(Nullable&lt;HttpRange&gt;, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a> operation returns the list of
-valid page ranges for a page blob or snapshot of a page blob.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-page-ranges"></a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -926,31 +754,22 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Bl
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Core.Http/Azure.Core.Http.HttpRange.html">HttpRange</a>&gt;</td>
         <td><span class="parametername">range</span></td>
-        <td><p>Optionally specifies the range of bytes over which to list ranges,
-inclusively. If omitted, then all ranges for the blob are returned.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">snapshot</span></td>
-        <td><p>Optionally specifies the blob snapshot to retrieve page ranges
-information from. For more information on working with blob snapshots,
-<a href="https://docs.microsoft.com/en-us/rest/api/storageservices/creating-a-snapshot-of-a-blob"></a>.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
         <td><span class="parametername">accessConditions</span></td>
-        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a> to add
-conditions on getting page ranges for the this blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
-notifications that the operation should be cancelled.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -965,26 +784,15 @@ notifications that the operation should be cancelled.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageRangesInfo.html">PageRangesInfo</a>&gt;&gt;</td>
-        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
-valid page ranges for this blob.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_PageBlobClient_GetPageRangesAsync_System_Nullable_Azure_Core_Http_HttpRange__System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
-a failure occurs.</p>
-</div>
   
   
   <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_GetPageRangesDiff_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.GetPageRangesDiff*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_GetPageRangesDiff_System_Nullable_Azure_Core_Http_HttpRange__System_String_System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.GetPageRangesDiff(System.Nullable{Azure.Core.Http.HttpRange},System.String,System.String,System.Nullable{Azure.Storage.Blobs.Models.PageBlobAccessConditions},System.Threading.CancellationToken)">GetPageRangesDiff(Nullable&lt;HttpRange&gt;, String, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_GetPageRangesDiff_System_Nullable_Azure_Core_Http_HttpRange__System_String_System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">GetPageRangesDiff(Nullable&lt;HttpRange&gt;, String, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a> operation returns the
-list of page ranges that differ between a
-<code data-dev-comment-type="paramref">previousSnapshot</code> and this page blob. Changed pages
-include both updated and cleared pages.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-page-ranges"></a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1003,41 +811,27 @@ include both updated and cleared pages.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Core.Http/Azure.Core.Http.HttpRange.html">HttpRange</a>&gt;</td>
         <td><span class="parametername">range</span></td>
-        <td><p>Optionally specifies the range of bytes over which to list ranges,
-inclusively. If omitted, then all ranges for the blob are returned.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">snapshot</span></td>
-        <td><p>Optionally specifies the blob snapshot to retrieve page ranges
-information from. For more information on working with blob snapshots,
-<a href="https://docs.microsoft.com/en-us/rest/api/storageservices/creating-a-snapshot-of-a-blob"></a>.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">previousSnapshot</span></td>
-        <td><p>Specifies that the response will contain only pages that were
-changed between target blob and previous snapshot.  Changed pages
-include both updated and cleared pages. The target blob may be a
-snapshot, as long as the snapshot specified by
-<code data-dev-comment-type="paramref">previousSnapshot</code> is the older of the two.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
         <td><span class="parametername">accessConditions</span></td>
-        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a> to add
-conditions on getting page ranges for the this blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
-notifications that the operation should be cancelled.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1052,26 +846,15 @@ notifications that the operation should be cancelled.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageRangesInfo.html">PageRangesInfo</a>&gt;</td>
-        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
-valid page ranges for this blob.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_PageBlobClient_GetPageRangesDiff_System_Nullable_Azure_Core_Http_HttpRange__System_String_System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
-a failure occurs.</p>
-</div>
   
   
   <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_GetPageRangesDiffAsync_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.GetPageRangesDiffAsync*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_GetPageRangesDiffAsync_System_Nullable_Azure_Core_Http_HttpRange__System_String_System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.GetPageRangesDiffAsync(System.Nullable{Azure.Core.Http.HttpRange},System.String,System.String,System.Nullable{Azure.Storage.Blobs.Models.PageBlobAccessConditions},System.Threading.CancellationToken)">GetPageRangesDiffAsync(Nullable&lt;HttpRange&gt;, String, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_GetPageRangesDiffAsync_System_Nullable_Azure_Core_Http_HttpRange__System_String_System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">GetPageRangesDiffAsync(Nullable&lt;HttpRange&gt;, String, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a> operation returns the
-list of page ranges that differ between a
-<code data-dev-comment-type="paramref">previousSnapshot</code> and this page blob. Changed pages
-include both updated and cleared pages.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-page-ranges"></a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1091,41 +874,27 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Bl
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Core.Http/Azure.Core.Http.HttpRange.html">HttpRange</a>&gt;</td>
         <td><span class="parametername">range</span></td>
-        <td><p>Optionally specifies the range of bytes over which to list ranges,
-inclusively. If omitted, then all ranges for the blob are returned.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">snapshot</span></td>
-        <td><p>Optionally specifies the blob snapshot to retrieve page ranges
-information from. For more information on working with blob snapshots,
-<a href="https://docs.microsoft.com/en-us/rest/api/storageservices/creating-a-snapshot-of-a-blob"></a>.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">previousSnapshot</span></td>
-        <td><p>Specifies that the response will contain only pages that were
-changed between target blob and previous snapshot.  Changed pages
-include both updated and cleared pages. The target blob may be a
-snapshot, as long as the snapshot specified by
-<code data-dev-comment-type="paramref">previousSnapshot</code> is the older of the two.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
         <td><span class="parametername">accessConditions</span></td>
-        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a> to add
-conditions on getting page ranges for the this blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
-notifications that the operation should be cancelled.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1140,26 +909,15 @@ notifications that the operation should be cancelled.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageRangesInfo.html">PageRangesInfo</a>&gt;&gt;</td>
-        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
-valid page ranges for this blob.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_PageBlobClient_GetPageRangesDiffAsync_System_Nullable_Azure_Core_Http_HttpRange__System_String_System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
-a failure occurs.</p>
-</div>
   
   
   <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_Resize_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.Resize*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_Resize_System_Int64_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.Resize(System.Int64,System.Nullable{Azure.Storage.Blobs.Models.PageBlobAccessConditions},System.Threading.CancellationToken)">Resize(Int64, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_Resize_System_Int64_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">Resize(Int64, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a> operation resizes the page blob to
-the specified size (which must be a multiple of 512).  If the
-specified value is less than the current size of the blob, then
-all pages above the specified value are cleared.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/set-blob-properties"></a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1178,25 +936,17 @@ all pages above the specified value are cleared.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
         <td><span class="parametername">size</span></td>
-        <td><p>Specifies the maximum size for the page blob, up to 8 TB.  The
-size must be aligned to a 512-byte boundary.  If the specified
-value is less than the current size of the blob, then all pages
-above the specified value are cleared.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
         <td><span class="parametername">accessConditions</span></td>
-        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a> to add
-conditions on the resize of this page blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
-notifications that the operation should be cancelled.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1211,26 +961,15 @@ notifications that the operation should be cancelled.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobInfo.html">PageBlobInfo</a>&gt;</td>
-        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the resized
-page blob.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_PageBlobClient_Resize_System_Int64_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
-a failure occurs.</p>
-</div>
   
   
   <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_ResizeAsync_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.ResizeAsync*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_ResizeAsync_System_Int64_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.ResizeAsync(System.Int64,System.Nullable{Azure.Storage.Blobs.Models.PageBlobAccessConditions},System.Threading.CancellationToken)">ResizeAsync(Int64, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_ResizeAsync_System_Int64_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">ResizeAsync(Int64, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a> operation resizes the page blob to
-the specified size (which must be a multiple of 512).  If the
-specified value is less than the current size of the blob, then
-all pages above the specified value are cleared.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/set-blob-properties"></a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1250,25 +989,17 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Bl
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
         <td><span class="parametername">size</span></td>
-        <td><p>Specifies the maximum size for the page blob, up to 8 TB.  The
-size must be aligned to a 512-byte boundary.  If the specified
-value is less than the current size of the blob, then all pages
-above the specified value are cleared.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
         <td><span class="parametername">accessConditions</span></td>
-        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a> to add
-conditions on the resize of this page blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
-notifications that the operation should be cancelled.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1283,26 +1014,15 @@ notifications that the operation should be cancelled.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobInfo.html">PageBlobInfo</a>&gt;&gt;</td>
-        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the resized
-page blob.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_PageBlobClient_ResizeAsync_System_Int64_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
-a failure occurs.</p>
-</div>
   
   
   <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_StartCopyIncremental_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.StartCopyIncremental*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_StartCopyIncremental_System_String_System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.StartCopyIncremental(System.String,System.Threading.CancellationToken)">StartCopyIncremental(String, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_StartCopyIncremental_System_String_System_Threading_CancellationToken_">StartCopyIncremental(String, CancellationToken)</a>
-operation gets the status of an existing copy operation, specified
-by the <code data-dev-comment-type="paramref">copyId</code>.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/incremental-copy-blob"></a>
-and <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/incremental-snapshots"></a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1321,15 +1041,12 @@ and <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/inc
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">copyId</span></td>
-        <td><p>The ID of a copy operation that's already beeen started.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
-notifications that the operation should be cancelled.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1344,32 +1061,15 @@ notifications that the operation should be cancelled.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.CopyFromUriOperation.html">CopyFromUriOperation</a></td>
-        <td><p>A <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.CopyFromUriOperation.html">CopyFromUriOperation</a> referencing the incremental
-copy operation.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_PageBlobClient_StartCopyIncremental_System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
-a failure occurs.</p>
-</div>
   
   
   <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_StartCopyIncremental_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.StartCopyIncremental*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_StartCopyIncremental_System_Uri_System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.StartCopyIncremental(System.Uri,System.String,System.Nullable{Azure.Storage.Blobs.Models.PageBlobAccessConditions},System.Threading.CancellationToken)">StartCopyIncremental(Uri, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_StartCopyIncremental_System_Uri_System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">StartCopyIncremental(Uri, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a>
-operation starts copying a snapshot of the sourceUri page blob to
-this page blob.  The snapshot is copied such that only the
-differential changes between the previously copied snapshot are
-transferred to the destination.  The copied snapshots are complete
-copies of the original snapshot and can be read or copied from as
-usual.  You can check the <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobProperties.html#Azure_Storage_Blobs_Models_BlobProperties_CopyStatus">CopyStatus</a>
-returned from the <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_GetProperties_System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Threading_CancellationToken_">GetProperties(Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a> to
-determine if the copy has completed.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/incremental-copy-blob"></a>
-and <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/incremental-snapshots"></a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1388,31 +1088,22 @@ and <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/inc
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
         <td><span class="parametername">sourceUri</span></td>
-        <td><p>Specifies the to the source page blob as a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> up to
-2 KB in length.  The source blob must either be public or must be
-authenticated via a shared access signature.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">snapshot</span></td>
-        <td><p>The name of a snapshot to start copying from
-sourceUri.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
         <td><span class="parametername">accessConditions</span></td>
-        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a> to add
-conditions on the incremental copy into this page blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
-notifications that the operation should be cancelled.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1427,67 +1118,15 @@ notifications that the operation should be cancelled.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.CopyFromUriOperation.html">CopyFromUriOperation</a></td>
-        <td><p>A <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.CopyFromUriOperation.html">CopyFromUriOperation</a> referencing the incremental
-copy operation.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_PageBlobClient_StartCopyIncremental_System_Uri_System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
-a failure occurs.</p>
-<p>The destination of an incremental copy must either not exist, or
-must have been created with a previous incremental copy from the
-same source blob.  Once created, the destination blob is
-permanently associated with the source and may only be used for
-incremental copies.</p>
-<p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_GetProperties_System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Threading_CancellationToken_">GetProperties(Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>,
-<a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.BlobContainerClient.html#Azure_Storage_Blobs_BlobContainerClient_GetBlobs_System_Nullable_Azure_Storage_Blobs_Models_GetBlobsOptions__System_Threading_CancellationToken_">GetBlobs(Nullable&lt;GetBlobsOptions&gt;, CancellationToken)</a>, and
-<a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.BlobContainerClient.html#Azure_Storage_Blobs_BlobContainerClient_GetBlobsByHierarchy_System_String_System_Nullable_Azure_Storage_Blobs_Models_GetBlobsOptions__System_Threading_CancellationToken_">GetBlobsByHierarchy(String, Nullable&lt;GetBlobsOptions&gt;, CancellationToken)</a>
-operations indicate whether the blob is an incremental copy blob
-created in this way.  Incremental copy blobs may not be downloaded
-directly.  The only supported operations are
-<a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_GetProperties_System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Threading_CancellationToken_">GetProperties(Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>,
-<a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_StartCopyIncremental_System_Uri_System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">StartCopyIncremental(Uri, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a>,
-and <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_Delete_System_Nullable_Azure_Storage_Blobs_Models_DeleteSnapshotsOption__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Threading_CancellationToken_">Delete(Nullable&lt;DeleteSnapshotsOption&gt;, Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>.  The copied snapshots may
-be read and deleted as usual.</p>
-<p>An incremental copy is performed asynchronously on the service and
-must be polled for completion.  You can poll
-<a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_GetProperties_System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Threading_CancellationToken_">GetProperties(Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a> and check
-<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobProperties.html#Azure_Storage_Blobs_Models_BlobProperties_CopyStatus">CopyStatus</a> to determine when the copy
-has completed.  When the copy completes, the destination blob will
-contain a new snapshot.  The <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_GetProperties_System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Threading_CancellationToken_">GetProperties(Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>
-operation returns the snapshot time of the newly created snapshot.</p>
-<p>The first time an incremental copy is performed on a destination
-blob, a new blob is created with a snapshot that is fully copied
-from the source.  Each subsequent call to <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_StartCopyIncremental_System_Uri_System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">StartCopyIncremental(Uri, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a>
-will create a new snapshot by copying only the differential
-changes from the previously copied snapshot.  The differential
-changes are computed on the server by issuing a <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_GetPageRanges_System_Nullable_Azure_Core_Http_HttpRange__System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">GetPageRanges(Nullable&lt;HttpRange&gt;, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a>
-call on the source blob snapshot with prevSnapshot set to the most
-recently copied snapshot. Therefore, the same restrictions on
-<a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_GetPageRanges_System_Nullable_Azure_Core_Http_HttpRange__System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">GetPageRanges(Nullable&lt;HttpRange&gt;, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a> apply to
-<a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_StartCopyIncremental_System_Uri_System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">StartCopyIncremental(Uri, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a>.
-Specifically, snapshots must be copied in ascending order and if
-the source blob is recreated using <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_UploadPages_System_IO_Stream_System_Int64_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">UploadPages(Stream, Int64, Byte[], Nullable&lt;PageBlobAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a> or
-<a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_StartCopyFromUri_System_Uri_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Threading_CancellationToken_">StartCopyFromUri(Uri, IDictionary&lt;String,String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>
-then  <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_StartCopyIncremental_System_Uri_System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">StartCopyIncremental(Uri, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a>
-on new snapshots will fail.</p>
-<p>The additional storage space consumed by the copied snapshot is
-the size of the differential data transferred during the copy.
-This can be determined by performing a <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_GetPageRangesDiff_System_Nullable_Azure_Core_Http_HttpRange__System_String_System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">GetPageRangesDiff(Nullable&lt;HttpRange&gt;, String, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a>
-call on the snapshot to compare it to the previous snapshot.</p>
-</div>
   
   
   <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_StartCopyIncrementalAsync_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.StartCopyIncrementalAsync*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_StartCopyIncrementalAsync_System_String_System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.StartCopyIncrementalAsync(System.String,System.Threading.CancellationToken)">StartCopyIncrementalAsync(String, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_StartCopyIncrementalAsync_System_String_System_Threading_CancellationToken_">StartCopyIncrementalAsync(String, CancellationToken)</a>
-operation gets the status of an existing copy operation, specified
-by the <code data-dev-comment-type="paramref">copyId</code>.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/incremental-copy-blob"></a>
-and <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/incremental-snapshots"></a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1507,15 +1146,12 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Storage.Blobs.Models.CopyFro
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">copyId</span></td>
-        <td><p>The ID of a copy operation that's already beeen started.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
-notifications that the operation should be cancelled.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1530,32 +1166,15 @@ notifications that the operation should be cancelled.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.CopyFromUriOperation.html">CopyFromUriOperation</a>&gt;</td>
-        <td><p>A <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.CopyFromUriOperation.html">CopyFromUriOperation</a> describing the
-state of the incremental copy operation.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_PageBlobClient_StartCopyIncrementalAsync_System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
-a failure occurs.</p>
-</div>
   
   
   <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_StartCopyIncrementalAsync_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.StartCopyIncrementalAsync*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_StartCopyIncrementalAsync_System_Uri_System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.StartCopyIncrementalAsync(System.Uri,System.String,System.Nullable{Azure.Storage.Blobs.Models.PageBlobAccessConditions},System.Threading.CancellationToken)">StartCopyIncrementalAsync(Uri, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_StartCopyIncrementalAsync_System_Uri_System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">StartCopyIncrementalAsync(Uri, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a>
-operation starts copying a snapshot of the sourceUri page blob to
-this page blob.  The snapshot is copied such that only the
-differential changes between the previously copied snapshot are
-transferred to the destination. The copied snapshots are complete
-copies of the original snapshot and can be read or copied from as
-usual.  You can check the <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobProperties.html#Azure_Storage_Blobs_Models_BlobProperties_CopyStatus">CopyStatus</a>
-returned from the <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_GetPropertiesAsync_System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Threading_CancellationToken_">GetPropertiesAsync(Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>
-to determine if thecopy has completed.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/incremental-copy-blob"></a>
-and <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/incremental-snapshots"></a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1575,31 +1194,22 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Storage.Blobs.Models.CopyFro
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
         <td><span class="parametername">sourceUri</span></td>
-        <td><p>Specifies the to the source page blob as a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> up to
-2 KB in length.  The source blob must either be public or must be
-authenticated via a shared access signature.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">snapshot</span></td>
-        <td><p>The name of a snapshot to start copying from
-sourceUri.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
         <td><span class="parametername">accessConditions</span></td>
-        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a> to add
-conditions on the incremental copy into this page blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
-notifications that the operation should be cancelled.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1614,66 +1224,15 @@ notifications that the operation should be cancelled.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.CopyFromUriOperation.html">CopyFromUriOperation</a>&gt;</td>
-        <td><p>A <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.CopyFromUriOperation.html">CopyFromUriOperation</a> describing the
-state of the incremental copy operation.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_PageBlobClient_StartCopyIncrementalAsync_System_Uri_System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
-a failure occurs.</p>
-<p>The destination of an incremental copy must either not exist, or
-must have been created with a previous incremental copy from the
-same source blob.  Once created, the destination blob is
-permanently associated with the source and may only be used for
-incremental copies.</p>
-<p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_GetPropertiesAsync_System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Threading_CancellationToken_">GetPropertiesAsync(Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>,
-<a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.BlobContainerClient.html#Azure_Storage_Blobs_BlobContainerClient_GetBlobsAsync_System_Nullable_Azure_Storage_Blobs_Models_GetBlobsOptions__System_Threading_CancellationToken_">GetBlobsAsync(Nullable&lt;GetBlobsOptions&gt;, CancellationToken)</a>, and
-<a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.BlobContainerClient.html#Azure_Storage_Blobs_BlobContainerClient_GetBlobsByHierarchyAsync_System_String_System_Nullable_Azure_Storage_Blobs_Models_GetBlobsOptions__System_Threading_CancellationToken_">GetBlobsByHierarchyAsync(String, Nullable&lt;GetBlobsOptions&gt;, CancellationToken)</a>
-operations indicate whether the blob is an incremental copy blob
-created in this way.  Incremental copy blobs may not be downloaded
-directly.  The only supported operations are
-<a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_GetPropertiesAsync_System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Threading_CancellationToken_">GetPropertiesAsync(Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>,
-<a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_StartCopyIncrementalAsync_System_Uri_System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">StartCopyIncrementalAsync(Uri, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a>,
-and  <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_DeleteAsync_System_Nullable_Azure_Storage_Blobs_Models_DeleteSnapshotsOption__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Threading_CancellationToken_">DeleteAsync(Nullable&lt;DeleteSnapshotsOption&gt;, Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>.  The copied
-snapshots may be read and deleted as usual.</p>
-<p>An incremental copy is performed asynchronously on the service and
-must be polled for completion.  You can poll
-<a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_GetPropertiesAsync_System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Threading_CancellationToken_">GetPropertiesAsync(Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a> and check
-<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobProperties.html#Azure_Storage_Blobs_Models_BlobProperties_CopyStatus">CopyStatus</a> to determine when the copy
-has completed.  When the copy completes, the destination blob will
-contain a new snapshot.  The <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_GetPropertiesAsync_System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Threading_CancellationToken_">GetPropertiesAsync(Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>
-operation returns the snapshot time of the newly created snapshot.</p>
-<p>The first time an incremental copy is performed on a destination
-blob, a new blob is created with a snapshot that is fully copied
-from the source.  Each subsequent call to <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_StartCopyIncrementalAsync_System_Uri_System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">StartCopyIncrementalAsync(Uri, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a>
-will create a new snapshot by copying only the differential
-changes from the previously copied snapshot.  The differential
-changes are computed on the server by issuing a <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_GetPageRangesAsync_System_Nullable_Azure_Core_Http_HttpRange__System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">GetPageRangesAsync(Nullable&lt;HttpRange&gt;, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a>
-call on the source blob snapshot with prevSnapshot set to the most
-recently copied snapshot. Therefore, the same restrictions on
-<a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_GetPageRangesAsync_System_Nullable_Azure_Core_Http_HttpRange__System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">GetPageRangesAsync(Nullable&lt;HttpRange&gt;, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a> apply to
-<a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_StartCopyIncrementalAsync_System_Uri_System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">StartCopyIncrementalAsync(Uri, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a>.
-Specifically, snapshots must be copied in ascending order and if
-the source blob is recreated using <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_UploadPagesAsync_System_IO_Stream_System_Int64_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">UploadPagesAsync(Stream, Int64, Byte[], Nullable&lt;PageBlobAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a> or
-<a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_StartCopyFromUriAsync_System_Uri_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Threading_CancellationToken_">StartCopyFromUriAsync(Uri, IDictionary&lt;String,String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>
-then <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_StartCopyIncrementalAsync_System_Uri_System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">StartCopyIncrementalAsync(Uri, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a>
-on new snapshots will fail.</p>
-<p>The additional storage space consumed by the copied snapshot is
-the size of the differential data transferred during the copy.
-This can be determined by performing a <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_GetPageRangesDiffAsync_System_Nullable_Azure_Core_Http_HttpRange__System_String_System_String_System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">GetPageRangesDiffAsync(Nullable&lt;HttpRange&gt;, String, String, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a>
-call on the snapshot to compare it to the previous snapshot.</p>
-</div>
   
   
   <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_UpdateSequenceNumber_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.UpdateSequenceNumber*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_UpdateSequenceNumber_Azure_Storage_Blobs_Models_SequenceNumberAction_System_Nullable_System_Int64__System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.UpdateSequenceNumber(Azure.Storage.Blobs.Models.SequenceNumberAction,System.Nullable{System.Int64},System.Nullable{Azure.Storage.Blobs.Models.PageBlobAccessConditions},System.Threading.CancellationToken)">UpdateSequenceNumber(SequenceNumberAction, Nullable&lt;Int64&gt;, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_UpdateSequenceNumber_Azure_Storage_Blobs_Models_SequenceNumberAction_System_Nullable_System_Int64__System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">UpdateSequenceNumber(SequenceNumberAction, Nullable&lt;Int64&gt;, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a> operation changes the
-sequence number <code data-dev-comment-type="paramref">action</code> and <code data-dev-comment-type="paramref">sequenceNumber</code>
-for this page blob.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/set-blob-properties"></a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1692,43 +1251,22 @@ for this page blob.</p>
       <tr>
         <td><a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.SequenceNumberAction.html">SequenceNumberAction</a></td>
         <td><span class="parametername">action</span></td>
-        <td><p>Specifies how the service should modify the blob's sequence number.
-<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.SequenceNumberAction.html#Azure_Storage_Blobs_Models_SequenceNumberAction_Max">Max</a> sets the sequence number to
-be the higher of the value included with the request and the value
-currently stored for the blob.  <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.SequenceNumberAction.html#Azure_Storage_Blobs_Models_SequenceNumberAction_Update">Update</a>
-sets the sequence number to the <code data-dev-comment-type="paramref">sequenceNumber</code>
-value.  <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.SequenceNumberAction.html#Azure_Storage_Blobs_Models_SequenceNumberAction_Increment">Increment</a> increments
-the value of the sequence number by 1.  If specifying
-<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.SequenceNumberAction.html#Azure_Storage_Blobs_Models_SequenceNumberAction_Increment">Increment</a>, do not include the
-<code data-dev-comment-type="paramref">sequenceNumber</code> because that will throw a
-<a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a>.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
         <td><span class="parametername">sequenceNumber</span></td>
-        <td><p>An updated sequence number of your choosing, if
-<code data-dev-comment-type="paramref">action</code> is <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.SequenceNumberAction.html#Azure_Storage_Blobs_Models_SequenceNumberAction_Max">Max</a>
-or <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.SequenceNumberAction.html#Azure_Storage_Blobs_Models_SequenceNumberAction_Update">Update</a>.  The value should
-not be provided if <code data-dev-comment-type="paramref">action</code> is
-<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.SequenceNumberAction.html#Azure_Storage_Blobs_Models_SequenceNumberAction_Increment">Increment</a>.  The sequence number
-is a user-controlled property that you can use to track requests
-and manage concurrency issues via <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a>.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
         <td><span class="parametername">accessConditions</span></td>
-        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a> to add conditions
-on updating the sequence number of this page blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
-notifications that the operation should be cancelled.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1743,25 +1281,15 @@ notifications that the operation should be cancelled.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobInfo.html">PageBlobInfo</a>&gt;</td>
-        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the updated
-page blob.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_PageBlobClient_UpdateSequenceNumber_Azure_Storage_Blobs_Models_SequenceNumberAction_System_Nullable_System_Int64__System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
-a failure occurs.</p>
-</div>
   
   
   <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_UpdateSequenceNumberAsync_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.UpdateSequenceNumberAsync*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_UpdateSequenceNumberAsync_Azure_Storage_Blobs_Models_SequenceNumberAction_System_Nullable_System_Int64__System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.UpdateSequenceNumberAsync(Azure.Storage.Blobs.Models.SequenceNumberAction,System.Nullable{System.Int64},System.Nullable{Azure.Storage.Blobs.Models.PageBlobAccessConditions},System.Threading.CancellationToken)">UpdateSequenceNumberAsync(SequenceNumberAction, Nullable&lt;Int64&gt;, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_UpdateSequenceNumberAsync_Azure_Storage_Blobs_Models_SequenceNumberAction_System_Nullable_System_Int64__System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">UpdateSequenceNumberAsync(SequenceNumberAction, Nullable&lt;Int64&gt;, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a> operation changes the
-sequence number <code data-dev-comment-type="paramref">action</code> and <code data-dev-comment-type="paramref">sequenceNumber</code>
-for this page blob.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/set-blob-properties"></a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1781,43 +1309,22 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Bl
       <tr>
         <td><a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.SequenceNumberAction.html">SequenceNumberAction</a></td>
         <td><span class="parametername">action</span></td>
-        <td><p>Specifies how the service should modify the blob's sequence number.
-<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.SequenceNumberAction.html#Azure_Storage_Blobs_Models_SequenceNumberAction_Max">Max</a> sets the sequence number to
-be the higher of the value included with the request and the value
-currently stored for the blob.  <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.SequenceNumberAction.html#Azure_Storage_Blobs_Models_SequenceNumberAction_Update">Update</a>
-sets the sequence number to the <code data-dev-comment-type="paramref">sequenceNumber</code>
-value.  <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.SequenceNumberAction.html#Azure_Storage_Blobs_Models_SequenceNumberAction_Increment">Increment</a> increments
-the value of the sequence number by 1.  If specifying
-<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.SequenceNumberAction.html#Azure_Storage_Blobs_Models_SequenceNumberAction_Increment">Increment</a>, do not include the
-<code data-dev-comment-type="paramref">sequenceNumber</code> because that will throw a
-<a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a>.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
         <td><span class="parametername">sequenceNumber</span></td>
-        <td><p>An updated sequence number of your choosing, if
-<code data-dev-comment-type="paramref">action</code> is <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.SequenceNumberAction.html#Azure_Storage_Blobs_Models_SequenceNumberAction_Max">Max</a>
-or <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.SequenceNumberAction.html#Azure_Storage_Blobs_Models_SequenceNumberAction_Update">Update</a>.  The value should
-not be provided if <code data-dev-comment-type="paramref">action</code> is
-<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.SequenceNumberAction.html#Azure_Storage_Blobs_Models_SequenceNumberAction_Increment">Increment</a>.  The sequence number
-is a user-controlled property that you can use to track requests
-and manage concurrency issues via <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a>.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
         <td><span class="parametername">accessConditions</span></td>
-        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a> to add conditions
-on updating the sequence number of this page blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
-notifications that the operation should be cancelled.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1832,25 +1339,15 @@ notifications that the operation should be cancelled.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobInfo.html">PageBlobInfo</a>&gt;&gt;</td>
-        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the updated
-page blob.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_PageBlobClient_UpdateSequenceNumberAsync_Azure_Storage_Blobs_Models_SequenceNumberAction_System_Nullable_System_Int64__System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
-a failure occurs.</p>
-</div>
   
   
   <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_UploadPages_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.UploadPages*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_UploadPages_System_IO_Stream_System_Int64_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.UploadPages(System.IO.Stream,System.Int64,System.Byte[],System.Nullable{Azure.Storage.Blobs.Models.PageBlobAccessConditions},System.IProgress{Azure.Storage.Common.StorageProgress},System.Threading.CancellationToken)">UploadPages(Stream, Int64, Byte[], Nullable&lt;PageBlobAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_UploadPages_System_IO_Stream_System_Int64_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">UploadPages(Stream, Int64, Byte[], Nullable&lt;PageBlobAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a> operation writes
-<code data-dev-comment-type="paramref">content</code> to a range of pages in a page blob,
-starting at <code data-dev-comment-type="paramref">offset</code>.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/put-page"></a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1869,49 +1366,32 @@ starting at <code data-dev-comment-type="paramref">offset</code>.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
         <td><span class="parametername">content</span></td>
-        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a> containing the content of the pages to
-upload.  The content can be up to 4 MB in size.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
         <td><span class="parametername">offset</span></td>
-        <td><p>Specifies the starting offset for the <code data-dev-comment-type="paramref">content</code>
-to be written as a page.  Given that pages must be aligned with
-512-byte boundaries, the start offset must be a modulus of 512.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
         <td><span class="parametername">transactionalContentHash</span></td>
-        <td><p>Optional MD5 hash of the block content.  This hash is used to
-verify the integrity of the block during transport. When this hash
-is specified, the storage service compares the hash of the content
-that has arrived with this value.  Note that this MD5 hash is not
-stored with the blob.  If the two hashes do not match, the
-operation will fail with a <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a>.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
         <td><span class="parametername">accessConditions</span></td>
-        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a> to add
-conditions on uploading pages to this page blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iprogress-1">IProgress</a>&lt;<a class="xref" href="../Azure.Storage.Common/Azure.Storage.Common.StorageProgress.html">StorageProgress</a>&gt;</td>
         <td><span class="parametername">progressHandler</span></td>
-        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iprogress-1">IProgress&lt;T&gt;</a> to provide
-progress updates about data transfers.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
-notifications that the operation should be cancelled.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1926,25 +1406,15 @@ notifications that the operation should be cancelled.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageInfo.html">PageInfo</a>&gt;</td>
-        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
-state of the updated pages.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_PageBlobClient_UploadPages_System_IO_Stream_System_Int64_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
-a failure occurs.</p>
-</div>
   
   
   <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_UploadPagesAsync_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.UploadPagesAsync*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_UploadPagesAsync_System_IO_Stream_System_Int64_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.UploadPagesAsync(System.IO.Stream,System.Int64,System.Byte[],System.Nullable{Azure.Storage.Blobs.Models.PageBlobAccessConditions},System.IProgress{Azure.Storage.Common.StorageProgress},System.Threading.CancellationToken)">UploadPagesAsync(Stream, Int64, Byte[], Nullable&lt;PageBlobAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_UploadPagesAsync_System_IO_Stream_System_Int64_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">UploadPagesAsync(Stream, Int64, Byte[], Nullable&lt;PageBlobAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a> operation writes
-<code data-dev-comment-type="paramref">content</code> to a range of pages in a page blob,
-starting at <code data-dev-comment-type="paramref">offset</code>.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/put-page"></a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1964,49 +1434,32 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Bl
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
         <td><span class="parametername">content</span></td>
-        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a> containing the content of the pages to
-upload.  The content can be up to 4 MB in size.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
         <td><span class="parametername">offset</span></td>
-        <td><p>Specifies the starting offset for the <code data-dev-comment-type="paramref">content</code>
-to be written as a page.  Given that pages must be aligned with
-512-byte boundaries, the start offset must be a modulus of 512.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
         <td><span class="parametername">transactionalContentHash</span></td>
-        <td><p>Optional MD5 hash of the block content.  This hash is used to
-verify the integrity of the block during transport. When this hash
-is specified, the storage service compares the hash of the content
-that has arrived with this value.  Note that this MD5 hash is not
-stored with the blob.  If the two hashes do not match, the
-operation will fail with a <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a>.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
         <td><span class="parametername">accessConditions</span></td>
-        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a> to add
-conditions on uploading pages to this page blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iprogress-1">IProgress</a>&lt;<a class="xref" href="../Azure.Storage.Common/Azure.Storage.Common.StorageProgress.html">StorageProgress</a>&gt;</td>
         <td><span class="parametername">progressHandler</span></td>
-        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iprogress-1">IProgress&lt;T&gt;</a> to provide
-progress updates about data transfers.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
-notifications that the operation should be cancelled.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -2021,25 +1474,15 @@ notifications that the operation should be cancelled.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageInfo.html">PageInfo</a>&gt;&gt;</td>
-        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
-state of the updated pages.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_PageBlobClient_UploadPagesAsync_System_IO_Stream_System_Int64_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
-a failure occurs.</p>
-</div>
   
   
   <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_UploadPagesFromUri_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.UploadPagesFromUri*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_UploadPagesFromUri_System_Uri_Azure_Core_Http_HttpRange_Azure_Core_Http_HttpRange_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.UploadPagesFromUri(System.Uri,Azure.Core.Http.HttpRange,Azure.Core.Http.HttpRange,System.Byte[],System.Nullable{Azure.Storage.Blobs.Models.PageBlobAccessConditions},System.Nullable{Azure.Storage.Blobs.Models.PageBlobAccessConditions},System.Threading.CancellationToken)">UploadPagesFromUri(Uri, HttpRange, HttpRange, Byte[], Nullable&lt;PageBlobAccessConditions&gt;, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_UploadPagesFromUri_System_Uri_Azure_Core_Http_HttpRange_Azure_Core_Http_HttpRange_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">UploadPagesFromUri(Uri, HttpRange, HttpRange, Byte[], Nullable&lt;PageBlobAccessConditions&gt;, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a> operation writes a range
-of pages to a page blob where the contents are read from
-sourceUri.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/put-page-from-url"></a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -2058,64 +1501,37 @@ sourceUri.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
         <td><span class="parametername">sourceUri</span></td>
-        <td><p>Specifies the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> of the source blob.  The value may
-be a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> of up to 2 KB in length that specifies a
-blob.  The source blob must either be public or must be
-authenticated via a shared access signature.  If the source blob
-is public, no authentication is required to perform the operation.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Azure.Core.Http/Azure.Core.Http.HttpRange.html">HttpRange</a></td>
         <td><span class="parametername">sourceRange</span></td>
-        <td><p>Optionally only upload the bytes of the blob in the
-sourceUri in the specified range.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Azure.Core.Http/Azure.Core.Http.HttpRange.html">HttpRange</a></td>
         <td><span class="parametername">range</span></td>
-        <td><p>Specifies the range to be written as a page. Both the start and
-end of the range must be specified and can be up to 4MB in size.
-Given that pages must be aligned with 512-byte boundaries, the
-start of the range must be a modulus of 512 and the end of the
-range must be a modulus of 512 – 1.  Examples of valid byte ranges
-are 0-511, 512-1023, etc.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
         <td><span class="parametername">sourceContentHash</span></td>
-        <td><p>Optional MD5 hash of the page block content from the
-sourceUri.  This hash is used to verify the
-integrity of the block during transport of the data from the Uri.
-When this hash is specified, the storage service compares the hash
-of the content that has arrived from the sourceUri
-with this value.  Note that this md5 hash is not stored with the
-blob.  If the two hashes do not match, the operation will fail
-with a <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a>.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
         <td><span class="parametername">accessConditions</span></td>
-        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.AppendBlobAccessConditions.html">AppendBlobAccessConditions</a> to add
-conditions on the copying of data to this page blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
         <td><span class="parametername">sourceAccessConditions</span></td>
-        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.AppendBlobAccessConditions.html">AppendBlobAccessConditions</a> to add
-conditions on the copying of data from this source blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
-notifications that the operation should be cancelled.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -2130,25 +1546,15 @@ notifications that the operation should be cancelled.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageInfo.html">PageInfo</a>&gt;</td>
-        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
-state of the updated pages.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_PageBlobClient_UploadPagesFromUri_System_Uri_Azure_Core_Http_HttpRange_Azure_Core_Http_HttpRange_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
-a failure occurs.</p>
-</div>
   
   
   <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_UploadPagesFromUriAsync_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.UploadPagesFromUriAsync*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_UploadPagesFromUriAsync_System_Uri_Azure_Core_Http_HttpRange_Azure_Core_Http_HttpRange_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.UploadPagesFromUriAsync(System.Uri,Azure.Core.Http.HttpRange,Azure.Core.Http.HttpRange,System.Byte[],System.Nullable{Azure.Storage.Blobs.Models.PageBlobAccessConditions},System.Nullable{Azure.Storage.Blobs.Models.PageBlobAccessConditions},System.Threading.CancellationToken)">UploadPagesFromUriAsync(Uri, HttpRange, HttpRange, Byte[], Nullable&lt;PageBlobAccessConditions&gt;, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html#Azure_Storage_Blobs_Specialized_PageBlobClient_UploadPagesFromUriAsync_System_Uri_Azure_Core_Http_HttpRange_Azure_Core_Http_HttpRange_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken_">UploadPagesFromUriAsync(Uri, HttpRange, HttpRange, Byte[], Nullable&lt;PageBlobAccessConditions&gt;, Nullable&lt;PageBlobAccessConditions&gt;, CancellationToken)</a> operation writes a range
-of pages to a page blob where the contents are read from
-sourceUri.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/put-page-from-url"></a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -2168,64 +1574,37 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Bl
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
         <td><span class="parametername">sourceUri</span></td>
-        <td><p>Specifies the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> of the source blob.  The value may
-be a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> of up to 2 KB in length that specifies a
-blob.  The source blob must either be public or must be
-authenticated via a shared access signature.  If the source blob
-is public, no authentication is required to perform the operation.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Azure.Core.Http/Azure.Core.Http.HttpRange.html">HttpRange</a></td>
         <td><span class="parametername">sourceRange</span></td>
-        <td><p>Optionally only upload the bytes of the blob in the
-sourceUri in the specified range.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Azure.Core.Http/Azure.Core.Http.HttpRange.html">HttpRange</a></td>
         <td><span class="parametername">range</span></td>
-        <td><p>Specifies the range to be written as a page. Both the start and
-end of the range must be specified and can be up to 4MB in size.
-Given that pages must be aligned with 512-byte boundaries, the
-start of the range must be a modulus of 512 and the end of the
-range must be a modulus of 512 – 1.  Examples of valid byte ranges
-are 0-511, 512-1023, etc.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
         <td><span class="parametername">sourceContentHash</span></td>
-        <td><p>Optional MD5 hash of the page block content from the
-sourceUri.  This hash is used to verify the
-integrity of the block during transport of the data from the Uri.
-When this hash is specified, the storage service compares the hash
-of the content that has arrived from the sourceUri
-with this value.  Note that this md5 hash is not stored with the
-blob.  If the two hashes do not match, the operation will fail
-with a <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a>.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
         <td><span class="parametername">accessConditions</span></td>
-        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.AppendBlobAccessConditions.html">AppendBlobAccessConditions</a> to add
-conditions on the copying of data to this page blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageBlobAccessConditions.html">PageBlobAccessConditions</a>&gt;</td>
         <td><span class="parametername">sourceAccessConditions</span></td>
-        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.AppendBlobAccessConditions.html">AppendBlobAccessConditions</a> to add
-conditions on the copying of data from this source blob.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
-notifications that the operation should be cancelled.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -2240,25 +1619,15 @@ notifications that the operation should be cancelled.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageInfo.html">PageInfo</a>&gt;&gt;</td>
-        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
-state of the updated pages.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_PageBlobClient_UploadPagesFromUriAsync_System_Uri_Azure_Core_Http_HttpRange_Azure_Core_Http_HttpRange_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_PageBlobAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
-a failure occurs.</p>
-</div>
   
   
   <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_WithSnapshot_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.WithSnapshot*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_WithSnapshot_System_String_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.WithSnapshot(System.String)">WithSnapshot(String)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html">PageBlobClient</a>
-class with an identical <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> source but the specified
-snapshot timestamp.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/creating-a-snapshot-of-a-blob"></a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -2277,8 +1646,7 @@ snapshot timestamp.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">snapshot</span></td>
-        <td><p>The snapshot identifier.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -2293,23 +1661,15 @@ snapshot timestamp.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html">PageBlobClient</a></td>
-        <td><p>A new <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html">PageBlobClient</a> instance.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_PageBlobClient_WithSnapshot_System_String__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Pass null or empty string to remove the snapshot returning a URL</p>
-<p>to the base blob.</p>
-</div>
   
   
   <a id="Azure_Storage_Blobs_Specialized_PageBlobClient_WithSnapshotImpl_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.WithSnapshotImpl*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_PageBlobClient_WithSnapshotImpl_System_String_" data-uid="Azure.Storage.Blobs.Specialized.PageBlobClient.WithSnapshotImpl(System.String)">WithSnapshotImpl(String)</h4>
-  <div class="markdown level1 summary"><p>Creates a new instance of the <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html">PageBlobClient</a> class
-with an identical <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> source but the specified
-snapshot timestamp.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -2328,8 +1688,7 @@ snapshot timestamp.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">snapshot</span></td>
-        <td><p>The snapshot identifier.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -2344,8 +1703,7 @@ snapshot timestamp.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html">BlobBaseClient</a></td>
-        <td><p>A new <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html">PageBlobClient</a> instance.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>

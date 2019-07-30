@@ -83,8 +83,7 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations" data-uid="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations" class="text-break">Interface IComputeNodeOperations
   </h1>
-  <div class="markdown level0 summary"><p>ComputeNodeOperations operations.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Protocol.html">Microsoft.Azure.Batch.Protocol</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
@@ -98,8 +97,7 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_AddUserWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations.AddUserWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_AddUserWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_ComputeNodeUser_Microsoft_Azure_Batch_Protocol_Models_ComputeNodeAddUserOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations.AddUserWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.ComputeNodeUser,Microsoft.Azure.Batch.Protocol.Models.ComputeNodeAddUserOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">AddUserWithHttpMessagesAsync(String, String, ComputeNodeUser, ComputeNodeAddUserOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Adds a user account to the specified compute node.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -118,38 +116,32 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">poolId</span></td>
-        <td><p>The ID of the pool that contains the compute node.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">nodeId</span></td>
-        <td><p>The ID of the machine on which you want to create a user account.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ComputeNodeUser.html">ComputeNodeUser</a></td>
         <td><span class="parametername">user</span></td>
-        <td><p>The user account to be created.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ComputeNodeAddUserOptions.html">ComputeNodeAddUserOptions</a></td>
         <td><span class="parametername">computeNodeAddUserOptions</span></td>
-        <td><p>Additional parameters for the operation</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td><p>The headers that will be added to request.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>The cancellation token.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -168,37 +160,11 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_AddUserWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_ComputeNodeUser_Microsoft_Azure_Batch_Protocol_Models_ComputeNodeAddUserOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>You can add a user account to a node only when it is in the idle or</p>
-<p>running state.</p>
-</div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
-        <td><p>Thrown when the operation returned an invalid status code</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
-        <td><p>Thrown when a required parameter is null</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_DeleteUserWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations.DeleteUserWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_DeleteUserWithHttpMessagesAsync_System_String_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_ComputeNodeDeleteUserOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations.DeleteUserWithHttpMessagesAsync(System.String,System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.ComputeNodeDeleteUserOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">DeleteUserWithHttpMessagesAsync(String, String, String, ComputeNodeDeleteUserOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Deletes a user account from the specified compute node.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -217,38 +183,32 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">poolId</span></td>
-        <td><p>The ID of the pool that contains the compute node.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">nodeId</span></td>
-        <td><p>The ID of the machine on which you want to delete a user account.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">userName</span></td>
-        <td><p>The name of the user account to delete.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ComputeNodeDeleteUserOptions.html">ComputeNodeDeleteUserOptions</a></td>
         <td><span class="parametername">computeNodeDeleteUserOptions</span></td>
-        <td><p>Additional parameters for the operation</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td><p>The headers that will be added to request.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>The cancellation token.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -267,37 +227,11 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_DeleteUserWithHttpMessagesAsync_System_String_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_ComputeNodeDeleteUserOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>You can delete a user account to a node only when it is in the idle</p>
-<p>or running state.</p>
-</div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
-        <td><p>Thrown when the operation returned an invalid status code</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
-        <td><p>Thrown when a required parameter is null</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_DisableSchedulingWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations.DisableSchedulingWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_DisableSchedulingWithHttpMessagesAsync_System_String_System_String_System_Nullable_Microsoft_Azure_Batch_Protocol_Models_DisableComputeNodeSchedulingOption__Microsoft_Azure_Batch_Protocol_Models_ComputeNodeDisableSchedulingOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations.DisableSchedulingWithHttpMessagesAsync(System.String,System.String,System.Nullable{Microsoft.Azure.Batch.Protocol.Models.DisableComputeNodeSchedulingOption},Microsoft.Azure.Batch.Protocol.Models.ComputeNodeDisableSchedulingOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">DisableSchedulingWithHttpMessagesAsync(String, String, Nullable&lt;DisableComputeNodeSchedulingOption&gt;, ComputeNodeDisableSchedulingOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Disables task scheduling on the specified compute node.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -316,41 +250,32 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">poolId</span></td>
-        <td><p>The ID of the pool that contains the compute node.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">nodeId</span></td>
-        <td><p>The ID of the compute node on which you want to disable task
-scheduling.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.DisableComputeNodeSchedulingOption.html">DisableComputeNodeSchedulingOption</a>&gt;</td>
         <td><span class="parametername">nodeDisableSchedulingOption</span></td>
-        <td><p>What to do with currently running tasks when disabling task
-scheduling on the compute node. The default value is requeue.
-Possible values include: 'requeue', 'terminate', 'taskCompletion'</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ComputeNodeDisableSchedulingOptions.html">ComputeNodeDisableSchedulingOptions</a></td>
         <td><span class="parametername">computeNodeDisableSchedulingOptions</span></td>
-        <td><p>Additional parameters for the operation</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td><p>The headers that will be added to request.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>The cancellation token.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -369,37 +294,11 @@ Possible values include: 'requeue', 'terminate', 'taskCompletion'</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_DisableSchedulingWithHttpMessagesAsync_System_String_System_String_System_Nullable_Microsoft_Azure_Batch_Protocol_Models_DisableComputeNodeSchedulingOption__Microsoft_Azure_Batch_Protocol_Models_ComputeNodeDisableSchedulingOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>You can disable task scheduling on a node only if its current</p>
-<p>scheduling state is enabled.</p>
-</div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
-        <td><p>Thrown when the operation returned an invalid status code</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
-        <td><p>Thrown when a required parameter is null</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_EnableSchedulingWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations.EnableSchedulingWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_EnableSchedulingWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_ComputeNodeEnableSchedulingOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations.EnableSchedulingWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.ComputeNodeEnableSchedulingOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">EnableSchedulingWithHttpMessagesAsync(String, String, ComputeNodeEnableSchedulingOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Enables task scheduling on the specified compute node.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -418,33 +317,27 @@ Possible values include: 'requeue', 'terminate', 'taskCompletion'</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">poolId</span></td>
-        <td><p>The ID of the pool that contains the compute node.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">nodeId</span></td>
-        <td><p>The ID of the compute node on which you want to enable task
-scheduling.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ComputeNodeEnableSchedulingOptions.html">ComputeNodeEnableSchedulingOptions</a></td>
         <td><span class="parametername">computeNodeEnableSchedulingOptions</span></td>
-        <td><p>Additional parameters for the operation</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td><p>The headers that will be added to request.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>The cancellation token.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -463,38 +356,11 @@ scheduling.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_EnableSchedulingWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_ComputeNodeEnableSchedulingOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>You can enable task scheduling on a node only if its current</p>
-<p>scheduling state is disabled</p>
-</div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
-        <td><p>Thrown when the operation returned an invalid status code</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
-        <td><p>Thrown when a required parameter is null</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_GetRemoteDesktopWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations.GetRemoteDesktopWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_GetRemoteDesktopWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_ComputeNodeGetRemoteDesktopOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations.GetRemoteDesktopWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.ComputeNodeGetRemoteDesktopOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetRemoteDesktopWithHttpMessagesAsync(String, String, ComputeNodeGetRemoteDesktopOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Gets the Remote Desktop Protocol file for the specified compute
-node.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -513,33 +379,27 @@ node.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">poolId</span></td>
-        <td><p>The ID of the pool that contains the compute node.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">nodeId</span></td>
-        <td><p>The ID of the compute node for which you want to get the Remote
-Desktop Protocol file.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ComputeNodeGetRemoteDesktopOptions.html">ComputeNodeGetRemoteDesktopOptions</a></td>
         <td><span class="parametername">computeNodeGetRemoteDesktopOptions</span></td>
-        <td><p>Additional parameters for the operation</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td><p>The headers that will be added to request.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>The cancellation token.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -558,45 +418,11 @@ Desktop Protocol file.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_GetRemoteDesktopWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_ComputeNodeGetRemoteDesktopOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Before you can access a node by using the RDP file, you must create</p>
-<p>a user account on the node. This API can only be invoked on pools</p>
-<p>created with a cloud service configuration. For pools created with</p>
-<p>a virtual machine configuration, see the GetRemoteLoginSettings</p>
-<p>API.</p>
-</div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
-        <td><p>Thrown when the operation returned an invalid status code</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
-        <td><p>Thrown when unable to deserialize the response</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
-        <td><p>Thrown when a required parameter is null</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_GetRemoteLoginSettingsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations.GetRemoteLoginSettingsWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_GetRemoteLoginSettingsWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_ComputeNodeGetRemoteLoginSettingsOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations.GetRemoteLoginSettingsWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.ComputeNodeGetRemoteLoginSettingsOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetRemoteLoginSettingsWithHttpMessagesAsync(String, String, ComputeNodeGetRemoteLoginSettingsOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Gets the settings required for remote login to a compute node.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -615,33 +441,27 @@ Desktop Protocol file.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">poolId</span></td>
-        <td><p>The ID of the pool that contains the compute node.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">nodeId</span></td>
-        <td><p>The ID of the compute node for which to obtain the remote login
-settings.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ComputeNodeGetRemoteLoginSettingsOptions.html">ComputeNodeGetRemoteLoginSettingsOptions</a></td>
         <td><span class="parametername">computeNodeGetRemoteLoginSettingsOptions</span></td>
-        <td><p>Additional parameters for the operation</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td><p>The headers that will be added to request.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>The cancellation token.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -660,45 +480,11 @@ settings.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_GetRemoteLoginSettingsWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_ComputeNodeGetRemoteLoginSettingsOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Before you can remotely login to a node using the remote login</p>
-<p>settings, you must create a user account on the node. This API can</p>
-<p>be invoked only on pools created with the virtual machine</p>
-<p>configuration property. For pools created with a cloud service</p>
-<p>configuration, see the GetRemoteDesktop API.</p>
-</div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
-        <td><p>Thrown when the operation returned an invalid status code</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
-        <td><p>Thrown when unable to deserialize the response</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
-        <td><p>Thrown when a required parameter is null</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_GetWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations.GetWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_GetWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_ComputeNodeGetOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations.GetWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.ComputeNodeGetOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetWithHttpMessagesAsync(String, String, ComputeNodeGetOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Gets information about the specified compute node.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -717,32 +503,27 @@ settings.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">poolId</span></td>
-        <td><p>The ID of the pool that contains the compute node.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">nodeId</span></td>
-        <td><p>The ID of the compute node that you want to get information about.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ComputeNodeGetOptions.html">ComputeNodeGetOptions</a></td>
         <td><span class="parametername">computeNodeGetOptions</span></td>
-        <td><p>Additional parameters for the operation</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td><p>The headers that will be added to request.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>The cancellation token.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -761,38 +542,11 @@ settings.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
-        <td><p>Thrown when the operation returned an invalid status code</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
-        <td><p>Thrown when unable to deserialize the response</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
-        <td><p>Thrown when a required parameter is null</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_ListNextWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations.ListNextWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_ListNextWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_ComputeNodeListNextOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations.ListNextWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.ComputeNodeListNextOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListNextWithHttpMessagesAsync(String, ComputeNodeListNextOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Lists the compute nodes in the specified pool.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -811,26 +565,22 @@ settings.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">nextPageLink</span></td>
-        <td><p>The NextLink from the previous successful call to List operation.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ComputeNodeListNextOptions.html">ComputeNodeListNextOptions</a></td>
         <td><span class="parametername">computeNodeListNextOptions</span></td>
-        <td><p>Additional parameters for the operation</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td><p>The headers that will be added to request.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>The cancellation token.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -849,38 +599,11 @@ settings.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
-        <td><p>Thrown when the operation returned an invalid status code</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
-        <td><p>Thrown when unable to deserialize the response</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
-        <td><p>Thrown when a required parameter is null</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_ListWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations.ListWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_ListWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_ComputeNodeListOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations.ListWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.ComputeNodeListOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListWithHttpMessagesAsync(String, ComputeNodeListOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Lists the compute nodes in the specified pool.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -899,26 +622,22 @@ settings.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">poolId</span></td>
-        <td><p>The ID of the pool from which you want to list nodes.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ComputeNodeListOptions.html">ComputeNodeListOptions</a></td>
         <td><span class="parametername">computeNodeListOptions</span></td>
-        <td><p>Additional parameters for the operation</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td><p>The headers that will be added to request.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>The cancellation token.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -937,38 +656,11 @@ settings.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
-        <td><p>Thrown when the operation returned an invalid status code</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
-        <td><p>Thrown when unable to deserialize the response</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
-        <td><p>Thrown when a required parameter is null</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_RebootWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations.RebootWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_RebootWithHttpMessagesAsync_System_String_System_String_System_Nullable_Microsoft_Azure_Batch_Protocol_Models_ComputeNodeRebootOption__Microsoft_Azure_Batch_Protocol_Models_ComputeNodeRebootOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations.RebootWithHttpMessagesAsync(System.String,System.String,System.Nullable{Microsoft.Azure.Batch.Protocol.Models.ComputeNodeRebootOption},Microsoft.Azure.Batch.Protocol.Models.ComputeNodeRebootOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">RebootWithHttpMessagesAsync(String, String, Nullable&lt;ComputeNodeRebootOption&gt;, ComputeNodeRebootOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Restarts the specified compute node.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -987,40 +679,32 @@ settings.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">poolId</span></td>
-        <td><p>The ID of the pool that contains the compute node.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">nodeId</span></td>
-        <td><p>The ID of the compute node that you want to restart.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ComputeNodeRebootOption.html">ComputeNodeRebootOption</a>&gt;</td>
         <td><span class="parametername">nodeRebootOption</span></td>
-        <td><p>When to reboot the compute node and what to do with currently
-running tasks. The default value is requeue. Possible values
-include: 'requeue', 'terminate', 'taskCompletion', 'retainedData'</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ComputeNodeRebootOptions.html">ComputeNodeRebootOptions</a></td>
         <td><span class="parametername">computeNodeRebootOptions</span></td>
-        <td><p>Additional parameters for the operation</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td><p>The headers that will be added to request.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>The cancellation token.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1039,36 +723,11 @@ include: 'requeue', 'terminate', 'taskCompletion', 'retainedData'</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_RebootWithHttpMessagesAsync_System_String_System_String_System_Nullable_Microsoft_Azure_Batch_Protocol_Models_ComputeNodeRebootOption__Microsoft_Azure_Batch_Protocol_Models_ComputeNodeRebootOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>You can restart a node only if it is in an idle or running state.</p>
-</div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
-        <td><p>Thrown when the operation returned an invalid status code</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
-        <td><p>Thrown when a required parameter is null</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_ReimageWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations.ReimageWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_ReimageWithHttpMessagesAsync_System_String_System_String_System_Nullable_Microsoft_Azure_Batch_Protocol_Models_ComputeNodeReimageOption__Microsoft_Azure_Batch_Protocol_Models_ComputeNodeReimageOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations.ReimageWithHttpMessagesAsync(System.String,System.String,System.Nullable{Microsoft.Azure.Batch.Protocol.Models.ComputeNodeReimageOption},Microsoft.Azure.Batch.Protocol.Models.ComputeNodeReimageOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ReimageWithHttpMessagesAsync(String, String, Nullable&lt;ComputeNodeReimageOption&gt;, ComputeNodeReimageOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Reinstalls the operating system on the specified compute node.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1087,40 +746,32 @@ include: 'requeue', 'terminate', 'taskCompletion', 'retainedData'</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">poolId</span></td>
-        <td><p>The ID of the pool that contains the compute node.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">nodeId</span></td>
-        <td><p>The ID of the compute node that you want to restart.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ComputeNodeReimageOption.html">ComputeNodeReimageOption</a>&gt;</td>
         <td><span class="parametername">nodeReimageOption</span></td>
-        <td><p>When to reimage the compute node and what to do with currently
-running tasks. The default value is requeue. Possible values
-include: 'requeue', 'terminate', 'taskCompletion', 'retainedData'</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ComputeNodeReimageOptions.html">ComputeNodeReimageOptions</a></td>
         <td><span class="parametername">computeNodeReimageOptions</span></td>
-        <td><p>Additional parameters for the operation</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td><p>The headers that will be added to request.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>The cancellation token.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1139,39 +790,11 @@ include: 'requeue', 'terminate', 'taskCompletion', 'retainedData'</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_ReimageWithHttpMessagesAsync_System_String_System_String_System_Nullable_Microsoft_Azure_Batch_Protocol_Models_ComputeNodeReimageOption__Microsoft_Azure_Batch_Protocol_Models_ComputeNodeReimageOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>You can reinstall the operating system on a node only if it is in</p>
-<p>an idle or running state. This API can be invoked only on pools</p>
-<p>created with the cloud service configuration property.</p>
-</div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
-        <td><p>Thrown when the operation returned an invalid status code</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
-        <td><p>Thrown when a required parameter is null</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_UpdateUserWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations.UpdateUserWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_UpdateUserWithHttpMessagesAsync_System_String_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_NodeUpdateUserParameter_Microsoft_Azure_Batch_Protocol_Models_ComputeNodeUpdateUserOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations.UpdateUserWithHttpMessagesAsync(System.String,System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.NodeUpdateUserParameter,Microsoft.Azure.Batch.Protocol.Models.ComputeNodeUpdateUserOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">UpdateUserWithHttpMessagesAsync(String, String, String, NodeUpdateUserParameter, ComputeNodeUpdateUserOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Updates the password and expiration time of a user account on the
-specified compute node.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1190,44 +813,37 @@ specified compute node.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">poolId</span></td>
-        <td><p>The ID of the pool that contains the compute node.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">nodeId</span></td>
-        <td><p>The ID of the machine on which you want to update a user account.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">userName</span></td>
-        <td><p>The name of the user account to update.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.NodeUpdateUserParameter.html">NodeUpdateUserParameter</a></td>
         <td><span class="parametername">nodeUpdateUserParameter</span></td>
-        <td><p>The parameters for the request.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ComputeNodeUpdateUserOptions.html">ComputeNodeUpdateUserOptions</a></td>
         <td><span class="parametername">computeNodeUpdateUserOptions</span></td>
-        <td><p>Additional parameters for the operation</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td><p>The headers that will be added to request.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>The cancellation token.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1246,41 +862,11 @@ specified compute node.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_UpdateUserWithHttpMessagesAsync_System_String_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_NodeUpdateUserParameter_Microsoft_Azure_Batch_Protocol_Models_ComputeNodeUpdateUserOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This operation replaces of all the updatable properties of the</p>
-<p>account. For example, if the expiryTime element is not specified,</p>
-<p>the current value is replaced with the default value, not left</p>
-<p>unmodified. You can update a user account on a node only when it is</p>
-<p>in the idle or running state.</p>
-</div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
-        <td><p>Thrown when the operation returned an invalid status code</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
-        <td><p>Thrown when a required parameter is null</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_UploadBatchServiceLogsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations.UploadBatchServiceLogsWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_UploadBatchServiceLogsWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_UploadBatchServiceLogsConfiguration_Microsoft_Azure_Batch_Protocol_Models_ComputeNodeUploadBatchServiceLogsOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations.UploadBatchServiceLogsWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsConfiguration,Microsoft.Azure.Batch.Protocol.Models.ComputeNodeUploadBatchServiceLogsOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">UploadBatchServiceLogsWithHttpMessagesAsync(String, String, UploadBatchServiceLogsConfiguration, ComputeNodeUploadBatchServiceLogsOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Upload Azure Batch service log files from the specified compute
-node to Azure Blob Storage.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1299,39 +885,32 @@ node to Azure Blob Storage.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">poolId</span></td>
-        <td><p>The ID of the pool that contains the compute node.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">nodeId</span></td>
-        <td><p>The ID of the compute node from which you want to upload the Azure
-Batch service log files.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsConfiguration.html">UploadBatchServiceLogsConfiguration</a></td>
         <td><span class="parametername">uploadBatchServiceLogsConfiguration</span></td>
-        <td><p>The Azure Batch service log files upload configuration.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ComputeNodeUploadBatchServiceLogsOptions.html">ComputeNodeUploadBatchServiceLogsOptions</a></td>
         <td><span class="parametername">computeNodeUploadBatchServiceLogsOptions</span></td>
-        <td><p>Additional parameters for the operation</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td><p>The headers that will be added to request.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>The cancellation token.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1347,39 +926,6 @@ Batch service log files.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsResult.html">UploadBatchServiceLogsResult</a>,<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ComputeNodeUploadBatchServiceLogsHeaders.html">ComputeNodeUploadBatchServiceLogsHeaders</a>&gt;&gt;</td>
         <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_IComputeNodeOperations_UploadBatchServiceLogsWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_UploadBatchServiceLogsConfiguration_Microsoft_Azure_Batch_Protocol_Models_ComputeNodeUploadBatchServiceLogsOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This is for gathering Azure Batch service log files in an automated</p>
-<p>fashion from nodes if you are experiencing an error and wish to</p>
-<p>escalate to Azure support. The Azure Batch service log files should</p>
-<p>be shared with Azure support to aid in debugging issues with the</p>
-<p>Batch service.</p>
-</div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
-        <td><p>Thrown when the operation returned an invalid status code</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
-        <td><p>Thrown when unable to deserialize the response</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
-        <td><p>Thrown when a required parameter is null</p>
-</td>
       </tr>
     </tbody>
   </table>

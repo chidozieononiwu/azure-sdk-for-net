@@ -83,8 +83,7 @@
   
   <h1 id="Microsoft_Azure_Batch_JobManagerTask" data-uid="Microsoft.Azure.Batch.JobManagerTask" class="text-break">Class JobManagerTask
   </h1>
-  <div class="markdown level0 summary"><p>Represents an Azure Batch JobManager task.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -97,14 +96,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class JobManagerTask</code></pre>
   </div>
-  <h5 id="Microsoft_Azure_Batch_JobManagerTask_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>Batch will retry tasks when a recovery operation is triggered on a compute node. Examples of recovery operations
-include (but are not limited to) when an unhealthy compute node is rebooted or a compute node disappeared due to
-host failure. Retries due to recovery operations are independent of and are not counted against the <a class="xref" href="Microsoft.Azure.Batch.TaskConstraints.html#Microsoft_Azure_Batch_TaskConstraints_MaxTaskRetryCount">MaxTaskRetryCount</a>. Even if the <a class="xref" href="Microsoft.Azure.Batch.TaskConstraints.html#Microsoft_Azure_Batch_TaskConstraints_MaxTaskRetryCount">MaxTaskRetryCount</a> is 0, an internal retry due to a recovery operation
-may occur. Because of this, all tasks should be idempotent. This means tasks need to tolerate being interrupted and
-restarted without causing any corruption or duplicate data. The best practice for long running tasks is to use some
-form of checkpointing.</p>
-</div>
   <h3 id="constructors">Constructors
   </h3>
   
@@ -121,8 +112,7 @@ form of checkpointing.</p>
   
   <a id="Microsoft_Azure_Batch_JobManagerTask__ctor_" data-uid="Microsoft.Azure.Batch.JobManagerTask.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_JobManagerTask__ctor_System_String_System_String_" data-uid="Microsoft.Azure.Batch.JobManagerTask.#ctor(System.String,System.String)">JobManagerTask(String, String)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.JobManagerTask.html">JobManagerTask</a> class.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -141,14 +131,12 @@ form of checkpointing.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">id</span></td>
-        <td><p>The id of the task.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">commandLine</span></td>
-        <td><p>The command line of the task.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -158,9 +146,7 @@ form of checkpointing.</p>
   
   <a id="Microsoft_Azure_Batch_JobManagerTask_AllowLowPriorityNode_" data-uid="Microsoft.Azure.Batch.JobManagerTask.AllowLowPriorityNode*"></a>
   <h4 id="Microsoft_Azure_Batch_JobManagerTask_AllowLowPriorityNode" data-uid="Microsoft.Azure.Batch.JobManagerTask.AllowLowPriorityNode">AllowLowPriorityNode</h4>
-  <div class="markdown level1 summary"><p>Gets or sets whether the Job Manager task may run on a low-priority compute node. If omitted, the default is
-true.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -185,9 +171,7 @@ true.</p>
   
   <a id="Microsoft_Azure_Batch_JobManagerTask_ApplicationPackageReferences_" data-uid="Microsoft.Azure.Batch.JobManagerTask.ApplicationPackageReferences*"></a>
   <h4 id="Microsoft_Azure_Batch_JobManagerTask_ApplicationPackageReferences" data-uid="Microsoft.Azure.Batch.JobManagerTask.ApplicationPackageReferences">ApplicationPackageReferences</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a list of application packages that the Batch service will deploy to the compute node before running
-the command line.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -212,8 +196,7 @@ the command line.</p>
   
   <a id="Microsoft_Azure_Batch_JobManagerTask_AuthenticationTokenSettings_" data-uid="Microsoft.Azure.Batch.JobManagerTask.AuthenticationTokenSettings*"></a>
   <h4 id="Microsoft_Azure_Batch_JobManagerTask_AuthenticationTokenSettings" data-uid="Microsoft.Azure.Batch.JobManagerTask.AuthenticationTokenSettings">AuthenticationTokenSettings</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the settings for an authentication token that the task can use to perform Batch service operations.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -234,19 +217,11 @@ the command line.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_JobManagerTask_AuthenticationTokenSettings_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If this property is set, the Batch service provides the task with an authentication token which can be used to</p>
-<p>authenticate Batch service operations without requiring an account access key. The token is provided via the</p>
-<p>AZ_BATCH_AUTHENTICATION_TOKEN environment variable. The operations that the task can carry out using the token</p>
-<p>depend on the settings. For example, a task can request job permissions in order to add other tasks to the job,</p>
-<p>or check the status of the job or of other tasks.</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_JobManagerTask_CommandLine_" data-uid="Microsoft.Azure.Batch.JobManagerTask.CommandLine*"></a>
   <h4 id="Microsoft_Azure_Batch_JobManagerTask_CommandLine" data-uid="Microsoft.Azure.Batch.JobManagerTask.CommandLine">CommandLine</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the command line of the task.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -267,19 +242,11 @@ the command line.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_JobManagerTask_CommandLine_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The command line does not run under a shell, and therefore cannot take advantage of shell features such as environment</p>
-<p>variable expansion. If you want to take advantage of such features, you should invoke the shell in the command</p>
-<p>line, for example using &quot;cmd /c MyCommand&quot; in Windows or &quot;/bin/sh -c MyCommand&quot; in Linux. If the command line</p>
-<p>refers to file paths, it should use a relative path (relative to the task working directory), or use the Batch</p>
-<p>provided environment variables (<a href="https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables">https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables</a>).</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_JobManagerTask_Constraints_" data-uid="Microsoft.Azure.Batch.JobManagerTask.Constraints*"></a>
   <h4 id="Microsoft_Azure_Batch_JobManagerTask_Constraints" data-uid="Microsoft.Azure.Batch.JobManagerTask.Constraints">Constraints</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the execution constraints for this JobManager task.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -304,8 +271,7 @@ the command line.</p>
   
   <a id="Microsoft_Azure_Batch_JobManagerTask_ContainerSettings_" data-uid="Microsoft.Azure.Batch.JobManagerTask.ContainerSettings*"></a>
   <h4 id="Microsoft_Azure_Batch_JobManagerTask_ContainerSettings" data-uid="Microsoft.Azure.Batch.JobManagerTask.ContainerSettings">ContainerSettings</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the settings for the container under which the task runs.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -326,21 +292,11 @@ the command line.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_JobManagerTask_ContainerSettings_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If the pool that will run this task has <a class="xref" href="Microsoft.Azure.Batch.VirtualMachineConfiguration.html#Microsoft_Azure_Batch_VirtualMachineConfiguration_ContainerConfiguration">ContainerConfiguration</a> set,
-this must be set as well. If the pool that will run this task doesn't have <a class="xref" href="Microsoft.Azure.Batch.VirtualMachineConfiguration.html#Microsoft_Azure_Batch_VirtualMachineConfiguration_ContainerConfiguration">ContainerConfiguration</a>
-set, this must not be set. When this is specified, all directories recursively below the AZ_BATCH_NODE_ROOT_DIR
-(the root of Azure Batch directories on the node) are mapped into the container, all task environment variables
-are mapped into the container, and the task command line is executed in the container. Files produced in the
-container outside of AZ_BATCH_NODE_ROOT_DIR might not be reflected to the host disk, meaning that Batch file
-APIs will not be able to access them.</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_JobManagerTask_DisplayName_" data-uid="Microsoft.Azure.Batch.JobManagerTask.DisplayName*"></a>
   <h4 id="Microsoft_Azure_Batch_JobManagerTask_DisplayName" data-uid="Microsoft.Azure.Batch.JobManagerTask.DisplayName">DisplayName</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the display name of the JobManager task.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -365,8 +321,7 @@ APIs will not be able to access them.</p>
   
   <a id="Microsoft_Azure_Batch_JobManagerTask_EnvironmentSettings_" data-uid="Microsoft.Azure.Batch.JobManagerTask.EnvironmentSettings*"></a>
   <h4 id="Microsoft_Azure_Batch_JobManagerTask_EnvironmentSettings" data-uid="Microsoft.Azure.Batch.JobManagerTask.EnvironmentSettings">EnvironmentSettings</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a set of environment settings for the JobManager task.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -391,8 +346,7 @@ APIs will not be able to access them.</p>
   
   <a id="Microsoft_Azure_Batch_JobManagerTask_Id_" data-uid="Microsoft.Azure.Batch.JobManagerTask.Id*"></a>
   <h4 id="Microsoft_Azure_Batch_JobManagerTask_Id" data-uid="Microsoft.Azure.Batch.JobManagerTask.Id">Id</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the id of the task.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -417,9 +371,7 @@ APIs will not be able to access them.</p>
   
   <a id="Microsoft_Azure_Batch_JobManagerTask_KillJobOnCompletion_" data-uid="Microsoft.Azure.Batch.JobManagerTask.KillJobOnCompletion*"></a>
   <h4 id="Microsoft_Azure_Batch_JobManagerTask_KillJobOnCompletion" data-uid="Microsoft.Azure.Batch.JobManagerTask.KillJobOnCompletion">KillJobOnCompletion</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a value that indicates whether to terminate all tasks in the job and complete the job when the job
-manager task completes.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -444,9 +396,7 @@ manager task completes.</p>
   
   <a id="Microsoft_Azure_Batch_JobManagerTask_OutputFiles_" data-uid="Microsoft.Azure.Batch.JobManagerTask.OutputFiles*"></a>
   <h4 id="Microsoft_Azure_Batch_JobManagerTask_OutputFiles" data-uid="Microsoft.Azure.Batch.JobManagerTask.OutputFiles">OutputFiles</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a list of files that the Batch service will upload from the compute node after running the command
-line.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -471,9 +421,7 @@ line.</p>
   
   <a id="Microsoft_Azure_Batch_JobManagerTask_ResourceFiles_" data-uid="Microsoft.Azure.Batch.JobManagerTask.ResourceFiles*"></a>
   <h4 id="Microsoft_Azure_Batch_JobManagerTask_ResourceFiles" data-uid="Microsoft.Azure.Batch.JobManagerTask.ResourceFiles">ResourceFiles</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a list of files that the Batch service will download to the compute node before running the command
-line.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -494,17 +442,11 @@ line.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_JobManagerTask_ResourceFiles_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>There is a maximum size for the list of resource files. When the max size is exceeded, the request will fail</p>
-<p>and the response error code will be RequestEntityTooLarge. If this occurs, the collection of resource files must</p>
-<p>be reduced in size. This can be achieved using .zip files, Application Packages, or Docker Containers.</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_JobManagerTask_RunExclusive_" data-uid="Microsoft.Azure.Batch.JobManagerTask.RunExclusive*"></a>
   <h4 id="Microsoft_Azure_Batch_JobManagerTask_RunExclusive" data-uid="Microsoft.Azure.Batch.JobManagerTask.RunExclusive">RunExclusive</h4>
-  <div class="markdown level1 summary"><p>Gets or sets whether the Job Manager task requires exclusive use of the compute node where it runs.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -529,8 +471,7 @@ line.</p>
   
   <a id="Microsoft_Azure_Batch_JobManagerTask_UserIdentity_" data-uid="Microsoft.Azure.Batch.JobManagerTask.UserIdentity*"></a>
   <h4 id="Microsoft_Azure_Batch_JobManagerTask_UserIdentity" data-uid="Microsoft.Azure.Batch.JobManagerTask.UserIdentity">UserIdentity</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the user identity under which the task runs.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -551,9 +492,6 @@ line.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_JobManagerTask_UserIdentity_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If omitted, the task runs as a non-administrative user unique to the task.</p>
-</div>
 </article>
           </div>
           

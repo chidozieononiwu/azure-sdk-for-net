@@ -83,9 +83,7 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_OutputFileBlobContainerDestination" data-uid="Microsoft.Azure.Batch.Protocol.Models.OutputFileBlobContainerDestination" class="text-break">Class OutputFileBlobContainerDestination
   </h1>
-  <div class="markdown level0 summary"><p>Specifies a file upload destination within an Azure blob storage
-container.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -104,9 +102,7 @@ container.</p>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_OutputFileBlobContainerDestination__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.OutputFileBlobContainerDestination.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_OutputFileBlobContainerDestination__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.OutputFileBlobContainerDestination.#ctor">OutputFileBlobContainerDestination()</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the
-OutputFileBlobContainerDestination class.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -116,9 +112,7 @@ OutputFileBlobContainerDestination class.</p>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_OutputFileBlobContainerDestination__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.OutputFileBlobContainerDestination.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_OutputFileBlobContainerDestination__ctor_System_String_System_String_" data-uid="Microsoft.Azure.Batch.Protocol.Models.OutputFileBlobContainerDestination.#ctor(System.String,System.String)">OutputFileBlobContainerDestination(String, String)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the
-OutputFileBlobContainerDestination class.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -137,16 +131,12 @@ OutputFileBlobContainerDestination class.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">containerUrl</span></td>
-        <td><p>The URL of the container within Azure
-Blob Storage to which to upload the file(s).</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">path</span></td>
-        <td><p>The destination blob or virtual directory within
-the Azure Storage container.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -156,9 +146,7 @@ the Azure Storage container.</p>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_OutputFileBlobContainerDestination_ContainerUrl_" data-uid="Microsoft.Azure.Batch.Protocol.Models.OutputFileBlobContainerDestination.ContainerUrl*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_OutputFileBlobContainerDestination_ContainerUrl" data-uid="Microsoft.Azure.Batch.Protocol.Models.OutputFileBlobContainerDestination.ContainerUrl">ContainerUrl</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the URL of the container within Azure Blob Storage to
-which to upload the file(s).</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -180,17 +168,11 @@ public string ContainerUrl { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_Models_OutputFileBlobContainerDestination_ContainerUrl_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The URL must include a Shared Access Signature (SAS) granting write</p>
-<p>permissions to the container.</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_OutputFileBlobContainerDestination_Path_" data-uid="Microsoft.Azure.Batch.Protocol.Models.OutputFileBlobContainerDestination.Path*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_OutputFileBlobContainerDestination_Path" data-uid="Microsoft.Azure.Batch.Protocol.Models.OutputFileBlobContainerDestination.Path">Path</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the destination blob or virtual directory within the
-Azure Storage container.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -212,16 +194,6 @@ public string Path { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_Models_OutputFileBlobContainerDestination_Path_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If filePattern refers to a specific file (i.e. contains no</p>
-<p>wildcards), then path is the name of the blob to which to upload</p>
-<p>that file. If filePattern contains one or more wildcards (and</p>
-<p>therefore may match multiple files), then path is the name of the</p>
-<p>blob virtual directory (which is prepended to each blob name) to</p>
-<p>which to upload the file(s). If omitted, file(s) are uploaded to</p>
-<p>the root of the container with a blob name matching their file</p>
-<p>name.</p>
-</div>
 </article>
           </div>
           

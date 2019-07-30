@@ -83,8 +83,7 @@
   
   <h1 id="Microsoft_Azure_Batch_ExitConditions" data-uid="Microsoft.Azure.Batch.ExitConditions" class="text-break">Class ExitConditions
   </h1>
-  <div class="markdown level0 summary"><p>How the Batch service should respond when a task completes.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -103,8 +102,7 @@
   
   <a id="Microsoft_Azure_Batch_ExitConditions__ctor_" data-uid="Microsoft.Azure.Batch.ExitConditions.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_ExitConditions__ctor" data-uid="Microsoft.Azure.Batch.ExitConditions.#ctor">ExitConditions()</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.ExitConditions.html">ExitConditions</a> class.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -116,9 +114,7 @@
   
   <a id="Microsoft_Azure_Batch_ExitConditions_Default_" data-uid="Microsoft.Azure.Batch.ExitConditions.Default*"></a>
   <h4 id="Microsoft_Azure_Batch_ExitConditions_Default" data-uid="Microsoft.Azure.Batch.ExitConditions.Default">Default</h4>
-  <div class="markdown level1 summary"><p>Gets or sets how the Batch service should respond if the task fails with an exit condition not covered by any
-of the other properties.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -139,17 +135,11 @@ of the other properties.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_ExitConditions_Default_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This value is used if the task exits with any nonzero exit code not listed in the <a class="xref" href="Microsoft.Azure.Batch.ExitConditions.html#Microsoft_Azure_Batch_ExitConditions_ExitCodes">ExitCodes</a> or
-<a class="xref" href="Microsoft.Azure.Batch.ExitConditions.html#Microsoft_Azure_Batch_ExitConditions_ExitCodeRanges">ExitCodeRanges</a> collection, with a preprocessing error if the <a class="xref" href="Microsoft.Azure.Batch.ExitConditions.html#Microsoft_Azure_Batch_ExitConditions_PreProcessingError">PreProcessingError</a> property
-is not present, or with a file upload failure if the <a class="xref" href="Microsoft.Azure.Batch.ExitConditions.html#Microsoft_Azure_Batch_ExitConditions_FileUploadError">FileUploadError</a> property is not present.</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_ExitConditions_ExitCodeRanges_" data-uid="Microsoft.Azure.Batch.ExitConditions.ExitCodeRanges*"></a>
   <h4 id="Microsoft_Azure_Batch_ExitConditions_ExitCodeRanges" data-uid="Microsoft.Azure.Batch.ExitConditions.ExitCodeRanges">ExitCodeRanges</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a list of task exit code ranges and how the Batch service should respond to them.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -174,8 +164,7 @@ is not present, or with a file upload failure if the <a class="xref" href="Micro
   
   <a id="Microsoft_Azure_Batch_ExitConditions_ExitCodes_" data-uid="Microsoft.Azure.Batch.ExitConditions.ExitCodes*"></a>
   <h4 id="Microsoft_Azure_Batch_ExitConditions_ExitCodes" data-uid="Microsoft.Azure.Batch.ExitConditions.ExitCodes">ExitCodes</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a list of task exit codes and how the Batch service should respond to them.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -200,8 +189,7 @@ is not present, or with a file upload failure if the <a class="xref" href="Micro
   
   <a id="Microsoft_Azure_Batch_ExitConditions_FileUploadError_" data-uid="Microsoft.Azure.Batch.ExitConditions.FileUploadError*"></a>
   <h4 id="Microsoft_Azure_Batch_ExitConditions_FileUploadError" data-uid="Microsoft.Azure.Batch.ExitConditions.FileUploadError">FileUploadError</h4>
-  <div class="markdown level1 summary"><p>Gets or sets how the Batch service should respond if a file upload error occurs.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -222,15 +210,11 @@ is not present, or with a file upload failure if the <a class="xref" href="Micro
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_ExitConditions_FileUploadError_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If the task exited with an exit code that was specified via <a class="xref" href="Microsoft.Azure.Batch.ExitConditions.html#Microsoft_Azure_Batch_ExitConditions_ExitCodes">ExitCodes</a> or <a class="xref" href="Microsoft.Azure.Batch.ExitConditions.html#Microsoft_Azure_Batch_ExitConditions_ExitCodeRanges">ExitCodeRanges</a>, and then encountered a file upload error, then the action specified by the exit code takes precedence.</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_ExitConditions_PreProcessingError_" data-uid="Microsoft.Azure.Batch.ExitConditions.PreProcessingError*"></a>
   <h4 id="Microsoft_Azure_Batch_ExitConditions_PreProcessingError" data-uid="Microsoft.Azure.Batch.ExitConditions.PreProcessingError">PreProcessingError</h4>
-  <div class="markdown level1 summary"><p>Gets or sets how the Batch service should respond if the task fails to start due to an error.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

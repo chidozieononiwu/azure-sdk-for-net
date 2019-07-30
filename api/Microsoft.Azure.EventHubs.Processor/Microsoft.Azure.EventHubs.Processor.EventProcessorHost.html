@@ -83,8 +83,7 @@
   
   <h1 id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost" class="text-break">Class EventProcessorHost
   </h1>
-  <div class="markdown level0 summary"><p>Represents a host for processing Event Hubs event data.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -103,15 +102,7 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost__ctor_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.#ctor*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost__ctor_System_String_System_String_System_String_System_String_System_String_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.#ctor(System.String,System.String,System.String,System.String,System.String)">EventProcessorHost(String, String, String, String, String)</h4>
-  <div class="markdown level1 summary"><p>Create a new host to process events from an Event Hub.</p>
- <p>Since Event Hubs are frequently used for scale-out, high-traffic scenarios, generally there will
- be only one host per process, and the processes will be run on separate machines. However, it is
- supported to run multiple hosts on one machine, or even within one process, if throughput is not
- a concern.</p>
-<p>This overload of the constructor uses the default, built-in lease and checkpoint managers. The
-Azure Storage account specified by the storageConnectionString parameter is used by the built-in
-managers to record leases and checkpoints.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -130,32 +121,27 @@ managers to record leases and checkpoints.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">eventHubPath</span></td>
-        <td><p>The name of the EventHub.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">consumerGroupName</span></td>
-        <td><p>The name of the consumer group within the Event Hub.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">eventHubConnectionString</span></td>
-        <td><p>Connection string for the Event Hub to receive from.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">storageConnectionString</span></td>
-        <td><p>Connection string to Azure Storage account used for leases and checkpointing.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">leaseContainerName</span></td>
-        <td><p>Azure Storage container name for use by built-in lease and checkpoint manager.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -163,12 +149,7 @@ managers to record leases and checkpoints.</p>
   
   <a id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost__ctor_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.#ctor*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost__ctor_System_String_System_String_System_String_System_String_Microsoft_Azure_EventHubs_Processor_ICheckpointManager_Microsoft_Azure_EventHubs_Processor_ILeaseManager_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.#ctor(System.String,System.String,System.String,System.String,Microsoft.Azure.EventHubs.Processor.ICheckpointManager,Microsoft.Azure.EventHubs.Processor.ILeaseManager)">EventProcessorHost(String, String, String, String, ICheckpointManager, ILeaseManager)</h4>
-  <div class="markdown level1 summary"><p>Create a new host to process events from an Event Hub.</p>
-<p>This overload of the constructor allows maximum flexibility.
-This one allows the caller to specify the name of the processor host as well.
-The overload also allows the caller to provide their own lease and checkpoint managers to replace the built-in
-ones based on Azure Storage.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -187,38 +168,32 @@ ones based on Azure Storage.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">hostName</span></td>
-        <td><p>Name of the processor host. MUST BE UNIQUE. Strongly recommend including a Guid to ensure uniqueness.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">eventHubPath</span></td>
-        <td><p>The name of the EventHub.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">consumerGroupName</span></td>
-        <td><p>The name of the consumer group within the Event Hub.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">eventHubConnectionString</span></td>
-        <td><p>Connection string for the Event Hub to receive from.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.Processor.ICheckpointManager.html">ICheckpointManager</a></td>
         <td><span class="parametername">checkpointManager</span></td>
-        <td><p>Object implementing ICheckpointManager which handles partition checkpointing.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.Processor.ILeaseManager.html">ILeaseManager</a></td>
         <td><span class="parametername">leaseManager</span></td>
-        <td><p>Object implementing ILeaseManager which handles leases for partitions.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -226,8 +201,7 @@ ones based on Azure Storage.</p>
   
   <a id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost__ctor_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.#ctor*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost__ctor_System_Uri_System_String_System_String_Microsoft_Azure_EventHubs_ITokenProvider_Microsoft_WindowsAzure_Storage_CloudStorageAccount_System_String_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.#ctor(System.Uri,System.String,System.String,Microsoft.Azure.EventHubs.ITokenProvider,Microsoft.WindowsAzure.Storage.CloudStorageAccount,System.String)">EventProcessorHost(Uri, String, String, ITokenProvider, CloudStorageAccount, String)</h4>
-  <div class="markdown level1 summary"><p>Create a new host to process events from an Event Hub with provided <a class="xref" href="../Microsoft.Azure.EventHubs/Microsoft.Azure.EventHubs.TokenProvider.html">TokenProvider</a></p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -246,38 +220,32 @@ ones based on Azure Storage.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
         <td><span class="parametername">endpointAddress</span></td>
-        <td><p>Fully qualified domain name for Event Hubs. Most likely, {yournamespace}.servicebus.windows.net</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">eventHubPath</span></td>
-        <td><p>The name of the EventHub.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">consumerGroupName</span></td>
-        <td><p>The name of the consumer group within the Event Hub.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.EventHubs/Microsoft.Azure.EventHubs.ITokenProvider.html">ITokenProvider</a></td>
         <td><span class="parametername">tokenProvider</span></td>
-        <td><p>Token provider which will generate security tokens for authorization.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">Microsoft.WindowsAzure.Storage.CloudStorageAccount</span></td>
         <td><span class="parametername">cloudStorageAccount</span></td>
-        <td><p>Azure Storage account used for leases and checkpointing.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">leaseContainerName</span></td>
-        <td><p>Azure Storage container name for use by built-in lease and checkpoint manager.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -285,9 +253,7 @@ ones based on Azure Storage.</p>
   
   <a id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost__ctor_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.#ctor*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost__ctor_System_String_System_String_System_String_System_String_System_String_System_String_System_String_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">EventProcessorHost(String, String, String, String, String, String, String)</h4>
-  <div class="markdown level1 summary"><p>Create a new host to process events from an Event Hub.</p>
-<p>This overload of the constructor uses the default, built-in lease and checkpoint managers.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -306,44 +272,37 @@ ones based on Azure Storage.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">hostName</span></td>
-        <td><p>A name for this event processor host. See method notes.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">eventHubPath</span></td>
-        <td><p>The name of the EventHub.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">consumerGroupName</span></td>
-        <td><p>The name of the consumer group within the Event Hub.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">eventHubConnectionString</span></td>
-        <td><p>Connection string for the Event Hub to receive from.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">storageConnectionString</span></td>
-        <td><p>Connection string to Azure Storage account used for leases and checkpointing.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">leaseContainerName</span></td>
-        <td><p>Azure Storage container name for use by built-in lease and checkpoint manager.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">storageBlobPrefix</span></td>
-        <td><p>Prefix used when naming blobs within the storage container.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -351,8 +310,7 @@ ones based on Azure Storage.</p>
   
   <a id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost__ctor_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.#ctor*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost__ctor_System_String_System_Uri_System_String_System_String_Microsoft_Azure_EventHubs_ITokenProvider_Microsoft_WindowsAzure_Storage_CloudStorageAccount_System_String_System_String_System_Nullable_System_TimeSpan__Microsoft_Azure_EventHubs_TransportType_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.#ctor(System.String,System.Uri,System.String,System.String,Microsoft.Azure.EventHubs.ITokenProvider,Microsoft.WindowsAzure.Storage.CloudStorageAccount,System.String,System.String,System.Nullable{System.TimeSpan},Microsoft.Azure.EventHubs.TransportType)">EventProcessorHost(String, Uri, String, String, ITokenProvider, CloudStorageAccount, String, String, Nullable&lt;TimeSpan&gt;, TransportType)</h4>
-  <div class="markdown level1 summary"><p>Create a new host to process events from an Event Hub with provided <a class="xref" href="../Microsoft.Azure.EventHubs/Microsoft.Azure.EventHubs.TokenProvider.html">TokenProvider</a></p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -371,62 +329,52 @@ ones based on Azure Storage.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">hostName</span></td>
-        <td><p>Name of the processor host. MUST BE UNIQUE. Strongly recommend including a Guid to ensure uniqueness.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
         <td><span class="parametername">endpointAddress</span></td>
-        <td><p>Fully qualified domain name for Event Hubs. Most likely, {yournamespace}.servicebus.windows.net</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">eventHubPath</span></td>
-        <td><p>The name of the EventHub.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">consumerGroupName</span></td>
-        <td><p>The name of the consumer group within the Event Hub.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.EventHubs/Microsoft.Azure.EventHubs.ITokenProvider.html">ITokenProvider</a></td>
         <td><span class="parametername">tokenProvider</span></td>
-        <td><p>Token provider which will generate security tokens for authorization.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">Microsoft.WindowsAzure.Storage.CloudStorageAccount</span></td>
         <td><span class="parametername">cloudStorageAccount</span></td>
-        <td><p>Azure Storage account used for leases and checkpointing.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">leaseContainerName</span></td>
-        <td><p>Azure Storage container name for use by built-in lease and checkpoint manager.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">storageBlobPrefix</span></td>
-        <td><p>Prefix used when naming blobs within the storage container.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
         <td><span class="parametername">operationTimeout</span></td>
-        <td><p>Operation timeout for Event Hubs operations.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.EventHubs/Microsoft.Azure.EventHubs.TransportType.html">TransportType</a></td>
         <td><span class="parametername">transportType</span></td>
-        <td><p>Transport type on connection.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -436,8 +384,7 @@ ones based on Azure Storage.</p>
   
   <a id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost_ConsumerGroupName_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.ConsumerGroupName*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost_ConsumerGroupName" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.ConsumerGroupName">ConsumerGroupName</h4>
-  <div class="markdown level1 summary"><p>Gets the consumer group name.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -462,8 +409,7 @@ ones based on Azure Storage.</p>
   
   <a id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost_EndpointAddress_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.EndpointAddress*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost_EndpointAddress" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.EndpointAddress">EndpointAddress</h4>
-  <div class="markdown level1 summary"><p>Gets the event endpoint URI.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -488,8 +434,7 @@ ones based on Azure Storage.</p>
   
   <a id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost_EventHubPath_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.EventHubPath*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost_EventHubPath" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.EventHubPath">EventHubPath</h4>
-  <div class="markdown level1 summary"><p>Gets the event hub path.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -514,9 +459,7 @@ ones based on Azure Storage.</p>
   
   <a id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost_HostName_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.HostName*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost_HostName" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.HostName">HostName</h4>
-  <div class="markdown level1 summary"><p>Returns processor host name.
-If the processor host name was automatically generated, this is the only way to get it.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -541,8 +484,7 @@ If the processor host name was automatically generated, this is the only way to 
   
   <a id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost_OperationTimeout_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.OperationTimeout*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost_OperationTimeout" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.OperationTimeout">OperationTimeout</h4>
-  <div class="markdown level1 summary"><p>Gets the operation timeout.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -567,10 +509,7 @@ If the processor host name was automatically generated, this is the only way to 
   
   <a id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost_PartitionManagerOptions_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.PartitionManagerOptions*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost_PartitionManagerOptions" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.PartitionManagerOptions">PartitionManagerOptions</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the
-<a class="xref" href="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.html#Microsoft_Azure_EventHubs_Processor_EventProcessorHost_PartitionManagerOptions">PartitionManagerOptions</a> instance used by the
-<a class="xref" href="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.html">EventProcessorHost</a> object.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -587,8 +526,7 @@ If the processor host name was automatically generated, this is the only way to 
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.Processor.PartitionManagerOptions.html">PartitionManagerOptions</a></td>
-        <td><p>The <a class="xref" href="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.html#Microsoft_Azure_EventHubs_Processor_EventProcessorHost_PartitionManagerOptions">PartitionManagerOptions</a> instance.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -596,8 +534,7 @@ If the processor host name was automatically generated, this is the only way to 
   
   <a id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost_TransportType_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.TransportType*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost_TransportType" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.TransportType">TransportType</h4>
-  <div class="markdown level1 summary"><p>Gets the transport type.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -624,9 +561,7 @@ If the processor host name was automatically generated, this is the only way to 
   
   <a id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost_RegisterEventProcessorAsync_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.RegisterEventProcessorAsync*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost_RegisterEventProcessorAsync__1" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.RegisterEventProcessorAsync``1">RegisterEventProcessorAsync&lt;T&gt;()</h4>
-  <div class="markdown level1 summary"><p>This registers <a class="xref" href="Microsoft.Azure.EventHubs.Processor.IEventProcessor.html">IEventProcessor</a> implementation with the host using <span class="xref">Microsoft.Azure.EventHubs.Processor.DefaultEventProcessorFactory`1</span>.<br>
-This also starts the host and causes it to start participating in the partition distribution process.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -643,8 +578,7 @@ This also starts the host and causes it to start participating in the partition 
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td><p>A task to indicate EventProcessorHost instance is started.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -659,8 +593,7 @@ This also starts the host and causes it to start participating in the partition 
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td><p>Implementation of your application specific <a class="xref" href="Microsoft.Azure.EventHubs.Processor.IEventProcessor.html">IEventProcessor</a>.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -668,9 +601,7 @@ This also starts the host and causes it to start participating in the partition 
   
   <a id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost_RegisterEventProcessorAsync_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.RegisterEventProcessorAsync*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost_RegisterEventProcessorAsync__1_Microsoft_Azure_EventHubs_Processor_EventProcessorOptions_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.RegisterEventProcessorAsync``1(Microsoft.Azure.EventHubs.Processor.EventProcessorOptions)">RegisterEventProcessorAsync&lt;T&gt;(EventProcessorOptions)</h4>
-  <div class="markdown level1 summary"><p>This registers <a class="xref" href="Microsoft.Azure.EventHubs.Processor.IEventProcessor.html">IEventProcessor</a> implementation with the host using <span class="xref">Microsoft.Azure.EventHubs.Processor.DefaultEventProcessorFactory`1</span>.<br>
-This also starts the host and causes it to start participating in the partition distribution process.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -689,9 +620,7 @@ This also starts the host and causes it to start participating in the partition 
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.Processor.EventProcessorOptions.html">EventProcessorOptions</a></td>
         <td><span class="parametername">processorOptions</span></td>
-        <td><p><span class="xref">Microsoft.Azure.EventHubs.Processor.EventProcessorHost.EventProcessorOptions</span> to control various aspects of message pump created when ownership
-is acquired for a particular partition of EventHub.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -706,8 +635,7 @@ is acquired for a particular partition of EventHub.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td><p>A task to indicate EventProcessorHost instance is started.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -722,8 +650,7 @@ is acquired for a particular partition of EventHub.</p>
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td><p>Implementation of your application specific <a class="xref" href="Microsoft.Azure.EventHubs.Processor.IEventProcessor.html">IEventProcessor</a>.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -731,10 +658,7 @@ is acquired for a particular partition of EventHub.</p>
   
   <a id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost_RegisterEventProcessorFactoryAsync_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.RegisterEventProcessorFactoryAsync*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost_RegisterEventProcessorFactoryAsync_Microsoft_Azure_EventHubs_Processor_IEventProcessorFactory_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.RegisterEventProcessorFactoryAsync(Microsoft.Azure.EventHubs.Processor.IEventProcessorFactory)">RegisterEventProcessorFactoryAsync(IEventProcessorFactory)</h4>
-  <div class="markdown level1 summary"><p>This registers <a class="xref" href="Microsoft.Azure.EventHubs.Processor.IEventProcessorFactory.html">IEventProcessorFactory</a> implementation with the host which is used to create an instance of
-<a class="xref" href="Microsoft.Azure.EventHubs.Processor.IEventProcessor.html">IEventProcessor</a> when it takes ownership of a partition.  This also starts the host and causes it to start participating
-in the partition distribution process.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -753,8 +677,7 @@ in the partition distribution process.</p>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.Processor.IEventProcessorFactory.html">IEventProcessorFactory</a></td>
         <td><span class="parametername">factory</span></td>
-        <td><p>Instance of <a class="xref" href="Microsoft.Azure.EventHubs.Processor.IEventProcessorFactory.html">IEventProcessorFactory</a> implementation.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -769,8 +692,7 @@ in the partition distribution process.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td><p>A task to indicate EventProcessorHost instance is started.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -778,10 +700,7 @@ in the partition distribution process.</p>
   
   <a id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost_RegisterEventProcessorFactoryAsync_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.RegisterEventProcessorFactoryAsync*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost_RegisterEventProcessorFactoryAsync_Microsoft_Azure_EventHubs_Processor_IEventProcessorFactory_Microsoft_Azure_EventHubs_Processor_EventProcessorOptions_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.RegisterEventProcessorFactoryAsync(Microsoft.Azure.EventHubs.Processor.IEventProcessorFactory,Microsoft.Azure.EventHubs.Processor.EventProcessorOptions)">RegisterEventProcessorFactoryAsync(IEventProcessorFactory, EventProcessorOptions)</h4>
-  <div class="markdown level1 summary"><p>This registers <a class="xref" href="Microsoft.Azure.EventHubs.Processor.IEventProcessorFactory.html">IEventProcessorFactory</a> implementation with the host which is used to create an instance of
-<a class="xref" href="Microsoft.Azure.EventHubs.Processor.IEventProcessor.html">IEventProcessor</a> when it takes ownership of a partition.  This also starts the host and causes it to start participating
-in the partition distribution process.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -801,15 +720,12 @@ public System.Threading.Tasks.Task RegisterEventProcessorFactoryAsync (Microsoft
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.Processor.IEventProcessorFactory.html">IEventProcessorFactory</a></td>
         <td><span class="parametername">factory</span></td>
-        <td><p>Instance of <a class="xref" href="Microsoft.Azure.EventHubs.Processor.IEventProcessorFactory.html">IEventProcessorFactory</a> implementation.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.Processor.EventProcessorOptions.html">EventProcessorOptions</a></td>
         <td><span class="parametername">processorOptions</span></td>
-        <td><p><span class="xref">Microsoft.Azure.EventHubs.Processor.EventProcessorHost.EventProcessorOptions</span> to control various aspects of message pump created when ownership
-is acquired for a particular partition of EventHub.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -824,8 +740,7 @@ is acquired for a particular partition of EventHub.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td><p>A task to indicate EventProcessorHost instance is started.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -833,8 +748,7 @@ is acquired for a particular partition of EventHub.</p>
   
   <a id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost_UnregisterEventProcessorAsync_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.UnregisterEventProcessorAsync*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_EventProcessorHost_UnregisterEventProcessorAsync" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.UnregisterEventProcessorAsync">UnregisterEventProcessorAsync()</h4>
-  <div class="markdown level1 summary"><p>Stop processing events.  Does not return until the shutdown is complete.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

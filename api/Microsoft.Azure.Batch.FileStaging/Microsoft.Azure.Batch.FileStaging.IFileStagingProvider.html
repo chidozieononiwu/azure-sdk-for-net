@@ -83,8 +83,7 @@
   
   <h1 id="Microsoft_Azure_Batch_FileStaging_IFileStagingProvider" data-uid="Microsoft.Azure.Batch.FileStaging.IFileStagingProvider" class="text-break">Interface IFileStagingProvider
   </h1>
-  <div class="markdown level0 summary"><p>Provides basic file staging features.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.FileStaging.html">Microsoft.Azure.Batch.FileStaging</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
@@ -98,9 +97,7 @@
   
   <a id="Microsoft_Azure_Batch_FileStaging_IFileStagingProvider_StagedFiles_" data-uid="Microsoft.Azure.Batch.FileStaging.IFileStagingProvider.StagedFiles*"></a>
   <h4 id="Microsoft_Azure_Batch_FileStaging_IFileStagingProvider_StagedFiles" data-uid="Microsoft.Azure.Batch.FileStaging.IFileStagingProvider.StagedFiles">StagedFiles</h4>
-  <div class="markdown level1 summary"><p>The collection of ResourceFile objects that are the result of file staging.<br>
-Must be set by the IFileStagingProvider.StageFilesAsync() method.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -127,9 +124,7 @@ Must be set by the IFileStagingProvider.StageFilesAsync() method.</p>
   
   <a id="Microsoft_Azure_Batch_FileStaging_IFileStagingProvider_CreateStagingArtifact_" data-uid="Microsoft.Azure.Batch.FileStaging.IFileStagingProvider.CreateStagingArtifact*"></a>
   <h4 id="Microsoft_Azure_Batch_FileStaging_IFileStagingProvider_CreateStagingArtifact" data-uid="Microsoft.Azure.Batch.FileStaging.IFileStagingProvider.CreateStagingArtifact">CreateStagingArtifact()</h4>
-  <div class="markdown level1 summary"><p>Returns an instance of IFileStagingArtifact with whatever values the implementation requires.
-This will be called during file staging whenever a staging artifact has not been otherwise provided.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -146,8 +141,7 @@ This will be called during file staging whenever a staging artifact has not been
     <tbody>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch/Microsoft.Azure.Batch.IFileStagingArtifact.html">IFileStagingArtifact</a></td>
-        <td><p>An instance of IFileStagingArtifact with whatever values the implementation requires.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -155,12 +149,7 @@ This will be called during file staging whenever a staging artifact has not been
   
   <a id="Microsoft_Azure_Batch_FileStaging_IFileStagingProvider_StageFilesAsync_" data-uid="Microsoft.Azure.Batch.FileStaging.IFileStagingProvider.StageFilesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_FileStaging_IFileStagingProvider_StageFilesAsync_System_Collections_Generic_List_Microsoft_Azure_Batch_FileStaging_IFileStagingProvider__Microsoft_Azure_Batch_IFileStagingArtifact_" data-uid="Microsoft.Azure.Batch.FileStaging.IFileStagingProvider.StageFilesAsync(System.Collections.Generic.List{Microsoft.Azure.Batch.FileStaging.IFileStagingProvider},Microsoft.Azure.Batch.IFileStagingArtifact)">StageFilesAsync(List&lt;IFileStagingProvider&gt;, IFileStagingArtifact)</h4>
-  <div class="markdown level1 summary"><p>Begins an asynchronous operation to stage all of the files in the given collection.
-When file staging begins, all instances of IFileStagingProvider are bucketized by their implementation type.
-This produces one collection of instances per implementation.
-Each implmentation of IFileStagingProvider has a StageFilesAsync() method.  That method is called once with the
-collection produced by the bucketization step oulined above.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -179,14 +168,12 @@ collection produced by the bucketization step oulined above.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.FileStaging.IFileStagingProvider.html">IFileStagingProvider</a>&gt;</td>
         <td><span class="parametername">filesToStage</span></td>
-        <td><p>Collection of all file staging objects to be staged.  All instances must have the same implementation type.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch/Microsoft.Azure.Batch.IFileStagingArtifact.html">IFileStagingArtifact</a></td>
         <td><span class="parametername">fileStagingArtifact</span></td>
-        <td><p>IFileStagingProvider specific staging artifacts including error/progress.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -201,8 +188,7 @@ collection produced by the bucketization step oulined above.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> object that represents the asynchronous operation.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -210,8 +196,7 @@ collection produced by the bucketization step oulined above.</p>
   
   <a id="Microsoft_Azure_Batch_FileStaging_IFileStagingProvider_Validate_" data-uid="Microsoft.Azure.Batch.FileStaging.IFileStagingProvider.Validate*"></a>
   <h4 id="Microsoft_Azure_Batch_FileStaging_IFileStagingProvider_Validate" data-uid="Microsoft.Azure.Batch.FileStaging.IFileStagingProvider.Validate">Validate()</h4>
-  <div class="markdown level1 summary"><p>Performs client-side validation on the current object.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

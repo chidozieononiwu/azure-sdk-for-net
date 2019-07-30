@@ -83,8 +83,7 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter" class="text-break">Class TaskAddParameter
   </h1>
-  <div class="markdown level0 summary"><p>An Azure Batch task to add.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -97,27 +96,13 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class TaskAddParameter</code></pre>
   </div>
-  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>Batch will retry tasks when a recovery operation is triggered on a</p>
-<p>compute node. Examples of recovery operations include (but are not</p>
-<p>limited to) when an unhealthy compute node is rebooted or a compute</p>
-<p>node disappeared due to host failure. Retries due to recovery</p>
-<p>operations are independent of and are not counted against the</p>
-<p>maxTaskRetryCount. Even if the maxTaskRetryCount is 0, an internal</p>
-<p>retry due to a recovery operation may occur. Because of this, all tasks</p>
-<p>should be idempotent. This means tasks need to tolerate being</p>
-<p>interrupted and restarted without causing any corruption or duplicate</p>
-<p>data. The best practice for long running tasks is to use some form of</p>
-<p>checkpointing.</p>
-</div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.#ctor">TaskAddParameter()</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the TaskAddParameter class.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -127,8 +112,7 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter__ctor_System_String_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskContainerSettings_Microsoft_Azure_Batch_Protocol_Models_ExitConditions_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_ResourceFile__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_OutputFile__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_EnvironmentSetting__Microsoft_Azure_Batch_Protocol_Models_AffinityInformation_Microsoft_Azure_Batch_Protocol_Models_TaskConstraints_Microsoft_Azure_Batch_Protocol_Models_UserIdentity_Microsoft_Azure_Batch_Protocol_Models_MultiInstanceSettings_Microsoft_Azure_Batch_Protocol_Models_TaskDependencies_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_ApplicationPackageReference__Microsoft_Azure_Batch_Protocol_Models_AuthenticationTokenSettings_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.#ctor(System.String,System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskContainerSettings,Microsoft.Azure.Batch.Protocol.Models.ExitConditions,System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.ResourceFile},System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.OutputFile},System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting},Microsoft.Azure.Batch.Protocol.Models.AffinityInformation,Microsoft.Azure.Batch.Protocol.Models.TaskConstraints,Microsoft.Azure.Batch.Protocol.Models.UserIdentity,Microsoft.Azure.Batch.Protocol.Models.MultiInstanceSettings,Microsoft.Azure.Batch.Protocol.Models.TaskDependencies,System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.ApplicationPackageReference},Microsoft.Azure.Batch.Protocol.Models.AuthenticationTokenSettings)">TaskAddParameter(String, String, String, TaskContainerSettings, ExitConditions, IList&lt;ResourceFile&gt;, IList&lt;OutputFile&gt;, IList&lt;EnvironmentSetting&gt;, AffinityInformation, TaskConstraints, UserIdentity, MultiInstanceSettings, TaskDependencies, IList&lt;ApplicationPackageReference&gt;, AuthenticationTokenSettings)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the TaskAddParameter class.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -147,111 +131,77 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">id</span></td>
-        <td><p>A string that uniquely identifies the task within
-the job.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">commandLine</span></td>
-        <td><p>The command line of the task.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">displayName</span></td>
-        <td><p>A display name for the task.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskContainerSettings.html">TaskContainerSettings</a></td>
         <td><span class="parametername">containerSettings</span></td>
-        <td><p>The settings for the container
-under which the task runs.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ExitConditions.html">ExitConditions</a></td>
         <td><span class="parametername">exitConditions</span></td>
-        <td><p>How the Batch service should respond
-when the task completes.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ResourceFile.html">ResourceFile</a>&gt;</td>
         <td><span class="parametername">resourceFiles</span></td>
-        <td><p>A list of files that the Batch service
-will download to the compute node before running the command
-line.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.OutputFile.html">OutputFile</a>&gt;</td>
         <td><span class="parametername">outputFiles</span></td>
-        <td><p>A list of files that the Batch service
-will upload from the compute node after running the command
-line.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting.html">EnvironmentSetting</a>&gt;</td>
         <td><span class="parametername">environmentSettings</span></td>
-        <td><p>A list of environment variable
-settings for the task.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.AffinityInformation.html">AffinityInformation</a></td>
         <td><span class="parametername">affinityInfo</span></td>
-        <td><p>A locality hint that can be used by the
-Batch service to select a compute node on which to start the new
-task.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskConstraints.html">TaskConstraints</a></td>
         <td><span class="parametername">constraints</span></td>
-        <td><p>The execution constraints that apply to
-this task.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.UserIdentity.html">UserIdentity</a></td>
         <td><span class="parametername">userIdentity</span></td>
-        <td><p>The user identity under which the task
-runs.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.MultiInstanceSettings.html">MultiInstanceSettings</a></td>
         <td><span class="parametername">multiInstanceSettings</span></td>
-        <td><p>An object that indicates that
-the task is a multi-instance task, and contains information about
-how to run the multi-instance task.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskDependencies.html">TaskDependencies</a></td>
         <td><span class="parametername">dependsOn</span></td>
-        <td><p>The tasks that this task depends
-on.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ApplicationPackageReference.html">ApplicationPackageReference</a>&gt;</td>
         <td><span class="parametername">applicationPackageReferences</span></td>
-        <td><p>A list of application
-packages that the Batch service will deploy to the compute node
-before running the command line.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.AuthenticationTokenSettings.html">AuthenticationTokenSettings</a></td>
         <td><span class="parametername">authenticationTokenSettings</span></td>
-        <td><p>The settings for an
-authentication token that the task can use to perform Batch service
-operations.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -261,9 +211,7 @@ operations.</p>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_AffinityInfo_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.AffinityInfo*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_AffinityInfo" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.AffinityInfo">AffinityInfo</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a locality hint that can be used by the Batch service
-to select a compute node on which to start the new task.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -289,9 +237,7 @@ public Microsoft.Azure.Batch.Protocol.Models.AffinityInformation AffinityInfo { 
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_ApplicationPackageReferences_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.ApplicationPackageReferences*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_ApplicationPackageReferences" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.ApplicationPackageReferences">ApplicationPackageReferences</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a list of application packages that the Batch service
-will deploy to the compute node before running the command line.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -313,22 +259,11 @@ public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_ApplicationPackageReferences_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Application packages are downloaded and deployed to a shared</p>
-<p>directory, not the task working directory. Therefore, if a</p>
-<p>referenced package is already on the compute node, and is up to</p>
-<p>date, then it is not re-downloaded; the existing copy on the</p>
-<p>compute node is used. If a referenced application package cannot be</p>
-<p>installed, for example because the package has been deleted or</p>
-<p>because download failed, the task fails.</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_AuthenticationTokenSettings_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.AuthenticationTokenSettings*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_AuthenticationTokenSettings" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.AuthenticationTokenSettings">AuthenticationTokenSettings</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the settings for an authentication token that the task
-can use to perform Batch service operations.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -350,22 +285,11 @@ public Microsoft.Azure.Batch.Protocol.Models.AuthenticationTokenSettings Authent
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_AuthenticationTokenSettings_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If this property is set, the Batch service provides the task with</p>
-<p>an authentication token which can be used to authenticate Batch</p>
-<p>service operations without requiring an account access key. The</p>
-<p>token is provided via the AZ_BATCH_AUTHENTICATION_TOKEN environment</p>
-<p>variable. The operations that the task can carry out using the</p>
-<p>token depend on the settings. For example, a task can request job</p>
-<p>permissions in order to add other tasks to the job, or check the</p>
-<p>status of the job or of other tasks under the job.</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_CommandLine_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.CommandLine*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_CommandLine" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.CommandLine">CommandLine</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the command line of the task.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -387,25 +311,11 @@ public string CommandLine { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_CommandLine_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>For multi-instance tasks, the command line is executed as the</p>
-<p>primary task, after the primary task and all subtasks have finished</p>
-<p>executing the coordination command line. The command line does not</p>
-<p>run under a shell, and therefore cannot take advantage of shell</p>
-<p>features such as environment variable expansion. If you want to</p>
-<p>take advantage of such features, you should invoke the shell in the</p>
-<p>command line, for example using &quot;cmd /c MyCommand&quot; in Windows or</p>
-<p>&quot;/bin/sh -c MyCommand&quot; in Linux. If the command line refers to file</p>
-<p>paths, it should use a relative path (relative to the task working</p>
-<p>directory), or use the Batch provided environment variable</p>
-<p>(<a href="https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables">https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables</a>).</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_Constraints_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.Constraints*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_Constraints" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.Constraints">Constraints</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the execution constraints that apply to this task.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -427,18 +337,11 @@ public Microsoft.Azure.Batch.Protocol.Models.TaskConstraints Constraints { get; 
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_Constraints_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If you do not specify constraints, the maxTaskRetryCount is the</p>
-<p>maxTaskRetryCount specified for the job, the maxWallClockTime is</p>
-<p>infinite, and the retentionTime is 7 days.</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_ContainerSettings_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.ContainerSettings*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_ContainerSettings" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.ContainerSettings">ContainerSettings</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the settings for the container under which the task
-runs.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -460,25 +363,11 @@ public Microsoft.Azure.Batch.Protocol.Models.TaskContainerSettings ContainerSett
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_ContainerSettings_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If the pool that will run this task has containerConfiguration set,</p>
-<p>this must be set as well. If the pool that will run this task</p>
-<p>doesn't have containerConfiguration set, this must not be set. When</p>
-<p>this is specified, all directories recursively below the</p>
-<p>AZ_BATCH_NODE_ROOT_DIR (the root of Azure Batch directories on the</p>
-<p>node) are mapped into the container, all task environment variables</p>
-<p>are mapped into the container, and the task command line is</p>
-<p>executed in the container. Files produced in the container outside</p>
-<p>of AZ_BATCH_NODE_ROOT_DIR might not be reflected to the host disk,</p>
-<p>meaning that Batch file APIs will not be able to access those</p>
-<p>files.</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_DependsOn_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.DependsOn*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_DependsOn" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.DependsOn">DependsOn</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the tasks that this task depends on.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -500,20 +389,11 @@ public Microsoft.Azure.Batch.Protocol.Models.TaskDependencies DependsOn { get; s
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_DependsOn_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This task will not be scheduled until all tasks that it depends on</p>
-<p>have completed successfully. If any of those tasks fail and exhaust</p>
-<p>their retry counts, this task will never be scheduled. If the job</p>
-<p>does not have usesTaskDependencies set to true, and this element is</p>
-<p>present, the request fails with error code</p>
-<p>TaskDependenciesNotSpecifiedOnJob.</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_DisplayName_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.DisplayName*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_DisplayName" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.DisplayName">DisplayName</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a display name for the task.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -535,16 +415,11 @@ public string DisplayName { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_DisplayName_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The display name need not be unique and can contain any Unicode</p>
-<p>characters up to a maximum length of 1024.</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_EnvironmentSettings_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.EnvironmentSettings*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_EnvironmentSettings" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.EnvironmentSettings">EnvironmentSettings</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a list of environment variable settings for the task.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -570,9 +445,7 @@ public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_ExitConditions_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.ExitConditions*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_ExitConditions" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.ExitConditions">ExitConditions</h4>
-  <div class="markdown level1 summary"><p>Gets or sets how the Batch service should respond when the task
-completes.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -598,9 +471,7 @@ public Microsoft.Azure.Batch.Protocol.Models.ExitConditions ExitConditions { get
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_Id_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.Id*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_Id" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.Id">Id</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a string that uniquely identifies the task within the
-job.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -622,21 +493,11 @@ public string Id { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_Id_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The ID can contain any combination of alphanumeric characters</p>
-<p>including hyphens and underscores, and cannot contain more than 64</p>
-<p>characters. The ID is case-preserving and case-insensitive (that</p>
-<p>is, you may not have two IDs within a job that differ only by</p>
-<p>case).</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_MultiInstanceSettings_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.MultiInstanceSettings*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_MultiInstanceSettings" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.MultiInstanceSettings">MultiInstanceSettings</h4>
-  <div class="markdown level1 summary"><p>Gets or sets an object that indicates that the task is a
-multi-instance task, and contains information about how to run the
-multi-instance task.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -662,9 +523,7 @@ public Microsoft.Azure.Batch.Protocol.Models.MultiInstanceSettings MultiInstance
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_OutputFiles_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.OutputFiles*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_OutputFiles" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.OutputFiles">OutputFiles</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a list of files that the Batch service will upload
-from the compute node after running the command line.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -686,17 +545,11 @@ public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_OutputFiles_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>For multi-instance tasks, the files will only be uploaded from the</p>
-<p>compute node on which the primary task is executed.</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_ResourceFiles_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.ResourceFiles*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_ResourceFiles" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.ResourceFiles">ResourceFiles</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a list of files that the Batch service will download
-to the compute node before running the command line.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -718,22 +571,11 @@ public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_ResourceFiles_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>For multi-instance tasks, the resource files will only be</p>
-<p>downloaded to the compute node on which the primary task is</p>
-<p>executed. There is a maximum size for the list of resource files.</p>
-<p>When the max size is exceeded, the request will fail and the</p>
-<p>response error code will be RequestEntityTooLarge. If this occurs,</p>
-<p>the collection of ResourceFiles must be reduced in size. This can</p>
-<p>be achieved using .zip files, Application Packages, or Docker</p>
-<p>Containers.</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_UserIdentity_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.UserIdentity*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_UserIdentity" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.UserIdentity">UserIdentity</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the user identity under which the task runs.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -755,10 +597,6 @@ public Microsoft.Azure.Batch.Protocol.Models.UserIdentity UserIdentity { get; se
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_UserIdentity_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If omitted, the task runs as a non-administrative user unique to</p>
-<p>the task.</p>
-</div>
 </article>
           </div>
           

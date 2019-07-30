@@ -83,8 +83,7 @@
   
   <h1 id="Microsoft_Azure_Batch_NetworkConfiguration" data-uid="Microsoft.Azure.Batch.NetworkConfiguration" class="text-break">Class NetworkConfiguration
   </h1>
-  <div class="markdown level0 summary"><p>The network configuration for a pool.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -103,8 +102,7 @@
   
   <a id="Microsoft_Azure_Batch_NetworkConfiguration__ctor_" data-uid="Microsoft.Azure.Batch.NetworkConfiguration.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_NetworkConfiguration__ctor" data-uid="Microsoft.Azure.Batch.NetworkConfiguration.#ctor">NetworkConfiguration()</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.NetworkConfiguration.html">NetworkConfiguration</a> class.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -116,8 +114,7 @@
   
   <a id="Microsoft_Azure_Batch_NetworkConfiguration_DynamicVNetAssignmentScope_" data-uid="Microsoft.Azure.Batch.NetworkConfiguration.DynamicVNetAssignmentScope*"></a>
   <h4 id="Microsoft_Azure_Batch_NetworkConfiguration_DynamicVNetAssignmentScope" data-uid="Microsoft.Azure.Batch.NetworkConfiguration.DynamicVNetAssignmentScope">DynamicVNetAssignmentScope</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the scope of the dynamic VNet assignment.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -138,15 +135,11 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_NetworkConfiguration_DynamicVNetAssignmentScope_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This property can only be specified for pools created with a <a class="xref" href="Microsoft.Azure.Batch.CloudPool.html#Microsoft_Azure_Batch_CloudPool_VirtualMachineConfiguration">VirtualMachineConfiguration</a>.</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_NetworkConfiguration_EndpointConfiguration_" data-uid="Microsoft.Azure.Batch.NetworkConfiguration.EndpointConfiguration*"></a>
   <h4 id="Microsoft_Azure_Batch_NetworkConfiguration_EndpointConfiguration" data-uid="Microsoft.Azure.Batch.NetworkConfiguration.EndpointConfiguration">EndpointConfiguration</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the configuration for endpoints on compute nodes in the Batch pool.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -167,16 +160,11 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_NetworkConfiguration_EndpointConfiguration_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This property can only be specified for pools created with a <a class="xref" href="Microsoft.Azure.Batch.CloudPool.html#Microsoft_Azure_Batch_CloudPool_VirtualMachineConfiguration">VirtualMachineConfiguration</a>.</p>
-</div>
   
   
   <a id="Microsoft_Azure_Batch_NetworkConfiguration_SubnetId_" data-uid="Microsoft.Azure.Batch.NetworkConfiguration.SubnetId*"></a>
   <h4 id="Microsoft_Azure_Batch_NetworkConfiguration_SubnetId" data-uid="Microsoft.Azure.Batch.NetworkConfiguration.SubnetId">SubnetId</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the ARM resource identifier of the virtual network subnet which the compute nodes of the pool will
-join.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -197,23 +185,6 @@ join.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_NetworkConfiguration_SubnetId_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The virtual network must be in the same region and subscription as the Azure Batch account. The specified subnet
-should have enough free IP addresses to accommodate the number of nodes in the pool. If the subnet doesn't have
-enough free IP addresses, the pool will partially allocate compute nodes, and a resize error will occur. The
-'MicrosoftAzureBatch' service principal must have the 'Classic Virtual Machine Contributor' Role-Based Access
-Control (RBAC) role for the specified VNet. The specified subnet must allow communication from the Azure Batch
-service to be able to schedule tasks on the compute nodes. This can be verified by checking if the specified
-VNet has any associated Network Security Groups (NSG). If communication to the compute nodes in the specified
-subnet is denied by an NSG, then the Batch service will set the state of the compute nodes to unusable. For pools
-created via <a class="xref" href="Microsoft.Azure.Batch.CloudPool.html#Microsoft_Azure_Batch_CloudPool_VirtualMachineConfiguration">VirtualMachineConfiguration</a> only  only ARM virtual networks ('Microsoft.Network/virtualNetworks')
-are supported, but for pools created with <a class="xref" href="Microsoft.Azure.Batch.CloudPool.html#Microsoft_Azure_Batch_CloudPool_CloudServiceConfiguration">CloudServiceConfiguration</a> both ARM and classic
-virtual networks are supported. If the specified VNet has any associated Network Security Groups (NSG), then
-a few reserved system ports must be enabled for inbound communication. For pools created with a <a class="xref" href="Microsoft.Azure.Batch.CloudPool.html#Microsoft_Azure_Batch_CloudPool_VirtualMachineConfiguration">VirtualMachineConfiguration</a>,
-enable ports 29876 and 29877, as well as port 22 for Linux and port 3389 for Windows. For pools created with
-a <a class="xref" href="Microsoft.Azure.Batch.CloudPool.html#Microsoft_Azure_Batch_CloudPool_CloudServiceConfiguration">CloudServiceConfiguration</a>, enable ports 10100, 20100, and 30100. Also enable outbound
-connections to Azure Storage on port 443. For more details see: <a href="https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#virtual-network-vnet-and-firewall-configuration">https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#virtual-network-vnet-and-firewall-configuration</a>.</p>
-</div>
 </article>
           </div>
           

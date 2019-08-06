@@ -5,6 +5,8 @@ jobs:
     pool:
       vmImage: vs2017-win2016
     steps:
+      - checkout: self
+        path: gitcheckoutpath
       - pwsh: |
           echo "##vso[build.addbuildtag]Scheduled"
         displayName: "Tag scheduled builds"

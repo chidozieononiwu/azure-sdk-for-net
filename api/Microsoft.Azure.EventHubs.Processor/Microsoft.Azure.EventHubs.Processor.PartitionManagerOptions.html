@@ -83,7 +83,8 @@
   
   <h1 id="Microsoft_Azure_EventHubs_Processor_PartitionManagerOptions" data-uid="Microsoft.Azure.EventHubs.Processor.PartitionManagerOptions" class="text-break">Class PartitionManagerOptions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Options to control various aspects of partition distribution happening within <a class="xref" href="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.html">EventProcessorHost</a> instance.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -114,7 +115,9 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_PartitionManagerOptions_LeaseDuration_" data-uid="Microsoft.Azure.EventHubs.Processor.PartitionManagerOptions.LeaseDuration*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_PartitionManagerOptions_LeaseDuration" data-uid="Microsoft.Azure.EventHubs.Processor.PartitionManagerOptions.LeaseDuration">LeaseDuration</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Interval for which the lease is taken on Azure Blob representing an EventHub partition.  If the lease is not renewed within this
+interval, it will cause it to expire and ownership of the partition will move to another <a class="xref" href="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.html">EventProcessorHost</a> instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -139,7 +142,8 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_PartitionManagerOptions_RenewInterval_" data-uid="Microsoft.Azure.EventHubs.Processor.PartitionManagerOptions.RenewInterval*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_PartitionManagerOptions_RenewInterval" data-uid="Microsoft.Azure.EventHubs.Processor.PartitionManagerOptions.RenewInterval">RenewInterval</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Renew interval for all leases for partitions currently held by <a class="xref" href="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.html">EventProcessorHost</a> instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

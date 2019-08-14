@@ -83,7 +83,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_IJobOperations" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations" class="text-break">Interface IJobOperations
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>JobOperations operations.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Protocol.html">Microsoft.Azure.Batch.Protocol</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
@@ -97,7 +98,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_IJobOperations_AddWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.AddWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IJobOperations_AddWithHttpMessagesAsync_Microsoft_Azure_Batch_Protocol_Models_JobAddParameter_Microsoft_Azure_Batch_Protocol_Models_JobAddOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.AddWithHttpMessagesAsync(Microsoft.Azure.Batch.Protocol.Models.JobAddParameter,Microsoft.Azure.Batch.Protocol.Models.JobAddOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">AddWithHttpMessagesAsync(JobAddParameter, JobAddOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a Job to the specified Account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -116,22 +118,26 @@
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.JobAddParameter.html">JobAddParameter</a></td>
         <td><span class="parametername">job</span></td>
-        <td></td>
+        <td><p>The Job to be added.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.JobAddOptions.html">JobAddOptions</a></td>
         <td><span class="parametername">jobAddOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -150,11 +156,45 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IJobOperations_AddWithHttpMessagesAsync_Microsoft_Azure_Batch_Protocol_Models_JobAddParameter_Microsoft_Azure_Batch_Protocol_Models_JobAddOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Batch service supports two ways to control the work done as</p>
+<p>part of a Job. In the first approach, the user specifies a Job</p>
+<p>Manager Task. The Batch service launches this Task when it is ready</p>
+<p>to start the Job. The Job Manager Task controls all other Tasks</p>
+<p>that run under this Job, by using the Task APIs. In the second</p>
+<p>approach, the user directly controls the execution of Tasks under</p>
+<p>an active Job, by using the Task APIs. Also note: when naming Jobs,</p>
+<p>avoid including sensitive information such as user names or secret</p>
+<p>project names. This information may appear in telemetry logs</p>
+<p>accessible to Microsoft Support engineers.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_IJobOperations_DeleteWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.DeleteWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IJobOperations_DeleteWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_JobDeleteOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.DeleteWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.JobDeleteOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">DeleteWithHttpMessagesAsync(String, JobDeleteOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deletes a Job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -173,22 +213,26 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The ID of the Job to delete.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.JobDeleteOptions.html">JobDeleteOptions</a></td>
         <td><span class="parametername">jobDeleteOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -207,11 +251,44 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IJobOperations_DeleteWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_JobDeleteOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Deleting a Job also deletes all Tasks that are part of that Job,</p>
+<p>and all Job statistics. This also overrides the retention period</p>
+<p>for Task data; that is, if the Job contains Tasks which are still</p>
+<p>retained on Compute Nodes, the Batch services deletes those Tasks'</p>
+<p>working directories and all their contents.  When a Delete Job</p>
+<p>request is received, the Batch service sets the Job to the deleting</p>
+<p>state. All update operations on a Job that is in deleting state</p>
+<p>will fail with status code 409 (Conflict), with additional</p>
+<p>information indicating that the Job is being deleted.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_IJobOperations_DisableWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.DisableWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IJobOperations_DisableWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_DisableJobOption_Microsoft_Azure_Batch_Protocol_Models_JobDisableOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.DisableWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.DisableJobOption,Microsoft.Azure.Batch.Protocol.Models.JobDisableOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">DisableWithHttpMessagesAsync(String, DisableJobOption, JobDisableOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Disables the specified Job, preventing new Tasks from running.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -230,27 +307,33 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The ID of the Job to disable.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.DisableJobOption.html">DisableJobOption</a></td>
         <td><span class="parametername">disableTasks</span></td>
-        <td></td>
+        <td><p>What to do with active Tasks associated with the Job. Possible
+values include: 'requeue', 'terminate', 'wait'</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.JobDisableOptions.html">JobDisableOptions</a></td>
         <td><span class="parametername">jobDisableOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -269,11 +352,44 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IJobOperations_DisableWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_DisableJobOption_Microsoft_Azure_Batch_Protocol_Models_JobDisableOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Batch Service immediately moves the Job to the disabling state.</p>
+<p>Batch then uses the disableTasks parameter to determine what to do</p>
+<p>with the currently running Tasks of the Job. The Job remains in the</p>
+<p>disabling state until the disable operation is completed and all</p>
+<p>Tasks have been dealt with according to the disableTasks option;</p>
+<p>the Job then moves to the disabled state. No new Tasks are started</p>
+<p>under the Job until it moves back to active state. If you try to</p>
+<p>disable a Job that is in any state other than active, disabling, or</p>
+<p>disabled, the request fails with status code 409.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_IJobOperations_EnableWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.EnableWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IJobOperations_EnableWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_JobEnableOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.EnableWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.JobEnableOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">EnableWithHttpMessagesAsync(String, JobEnableOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Enables the specified Job, allowing new Tasks to run.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -292,22 +408,26 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The ID of the Job to enable.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.JobEnableOptions.html">JobEnableOptions</a></td>
         <td><span class="parametername">jobEnableOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -326,11 +446,43 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IJobOperations_EnableWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_JobEnableOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When you call this API, the Batch service sets a disabled Job to</p>
+<p>the enabling state. After the this operation is completed, the Job</p>
+<p>moves to the active state, and scheduling of new Tasks under the</p>
+<p>Job resumes. The Batch service does not allow a Task to remain in</p>
+<p>the active state for more than 180 days. Therefore, if you enable a</p>
+<p>Job containing active Tasks which were added more than 180 days</p>
+<p>ago, those Tasks will not run.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_IJobOperations_GetAllLifetimeStatisticsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.GetAllLifetimeStatisticsWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IJobOperations_GetAllLifetimeStatisticsWithHttpMessagesAsync_Microsoft_Azure_Batch_Protocol_Models_JobGetAllLifetimeStatisticsOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.GetAllLifetimeStatisticsWithHttpMessagesAsync(Microsoft.Azure.Batch.Protocol.Models.JobGetAllLifetimeStatisticsOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetAllLifetimeStatisticsWithHttpMessagesAsync(JobGetAllLifetimeStatisticsOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets lifetime summary statistics for all of the Jobs in the
+specified Account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -349,17 +501,20 @@
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.JobGetAllLifetimeStatisticsOptions.html">JobGetAllLifetimeStatisticsOptions</a></td>
         <td><span class="parametername">jobGetAllLifetimeStatisticsOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -378,11 +533,45 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IJobOperations_GetAllLifetimeStatisticsWithHttpMessagesAsync_Microsoft_Azure_Batch_Protocol_Models_JobGetAllLifetimeStatisticsOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Statistics are aggregated across all Jobs that have ever existed in</p>
+<p>the Account, from Account creation to the last update time of the</p>
+<p>statistics. The statistics may not be immediately available. The</p>
+<p>Batch service performs periodic roll-up of statistics. The typical</p>
+<p>delay is about 30 minutes.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_IJobOperations_GetTaskCountsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.GetTaskCountsWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IJobOperations_GetTaskCountsWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_JobGetTaskCountsOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.GetTaskCountsWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.JobGetTaskCountsOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetTaskCountsWithHttpMessagesAsync(String, JobGetTaskCountsOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the Task counts for the specified Job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -401,22 +590,26 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The ID of the Job.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.JobGetTaskCountsOptions.html">JobGetTaskCountsOptions</a></td>
         <td><span class="parametername">jobGetTaskCountsOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -435,11 +628,43 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IJobOperations_GetTaskCountsWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_JobGetTaskCountsOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Task counts provide a count of the Tasks by active, running or</p>
+<p>completed Task state, and a count of Tasks which succeeded or</p>
+<p>failed. Tasks in the preparing state are counted as running.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_IJobOperations_GetWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.GetWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IJobOperations_GetWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_JobGetOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.GetWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.JobGetOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetWithHttpMessagesAsync(String, JobGetOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets information about the specified Job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -458,22 +683,26 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The ID of the Job.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.JobGetOptions.html">JobGetOptions</a></td>
         <td><span class="parametername">jobGetOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -492,11 +721,39 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_IJobOperations_ListFromJobScheduleNextWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.ListFromJobScheduleNextWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IJobOperations_ListFromJobScheduleNextWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_JobListFromJobScheduleNextOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.ListFromJobScheduleNextWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.JobListFromJobScheduleNextOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListFromJobScheduleNextWithHttpMessagesAsync(String, JobListFromJobScheduleNextOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Lists the Jobs that have been created under the specified Job
+Schedule.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -515,22 +772,26 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">nextPageLink</span></td>
-        <td></td>
+        <td><p>The NextLink from the previous successful call to List operation.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.JobListFromJobScheduleNextOptions.html">JobListFromJobScheduleNextOptions</a></td>
         <td><span class="parametername">jobListFromJobScheduleNextOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -549,11 +810,39 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_IJobOperations_ListFromJobScheduleWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.ListFromJobScheduleWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IJobOperations_ListFromJobScheduleWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_JobListFromJobScheduleOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.ListFromJobScheduleWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.JobListFromJobScheduleOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListFromJobScheduleWithHttpMessagesAsync(String, JobListFromJobScheduleOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Lists the Jobs that have been created under the specified Job
+Schedule.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -572,22 +861,27 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobScheduleId</span></td>
-        <td></td>
+        <td><p>The ID of the Job Schedule from which you want to get a list of
+Jobs.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.JobListFromJobScheduleOptions.html">JobListFromJobScheduleOptions</a></td>
         <td><span class="parametername">jobListFromJobScheduleOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -606,11 +900,38 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_IJobOperations_ListNextWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.ListNextWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IJobOperations_ListNextWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_JobListNextOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.ListNextWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.JobListNextOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListNextWithHttpMessagesAsync(String, JobListNextOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Lists all of the Jobs in the specified Account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -629,22 +950,26 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">nextPageLink</span></td>
-        <td></td>
+        <td><p>The NextLink from the previous successful call to List operation.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.JobListNextOptions.html">JobListNextOptions</a></td>
         <td><span class="parametername">jobListNextOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -663,11 +988,40 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_IJobOperations_ListPreparationAndReleaseTaskStatusNextWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.ListPreparationAndReleaseTaskStatusNextWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IJobOperations_ListPreparationAndReleaseTaskStatusNextWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_JobListPreparationAndReleaseTaskStatusNextOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.ListPreparationAndReleaseTaskStatusNextWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.JobListPreparationAndReleaseTaskStatusNextOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListPreparationAndReleaseTaskStatusNextWithHttpMessagesAsync(String, JobListPreparationAndReleaseTaskStatusNextOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Lists the execution status of the Job Preparation and Job Release
+Task for the specified Job across the Compute Nodes where the Job
+has run.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -686,22 +1040,26 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">nextPageLink</span></td>
-        <td></td>
+        <td><p>The NextLink from the previous successful call to List operation.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.JobListPreparationAndReleaseTaskStatusNextOptions.html">JobListPreparationAndReleaseTaskStatusNextOptions</a></td>
         <td><span class="parametername">jobListPreparationAndReleaseTaskStatusNextOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -720,11 +1078,49 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IJobOperations_ListPreparationAndReleaseTaskStatusNextWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_JobListPreparationAndReleaseTaskStatusNextOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This API returns the Job Preparation and Job Release Task status on</p>
+<p>all Compute Nodes that have run the Job Preparation or Job Release</p>
+<p>Task. This includes Compute Nodes which have since been removed</p>
+<p>from the Pool. If this API is invoked on a Job which has no Job</p>
+<p>Preparation or Job Release Task, the Batch service returns HTTP</p>
+<p>status code 409 (Conflict) with an error code of</p>
+<p>JobPreparationTaskNotSpecified.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_IJobOperations_ListPreparationAndReleaseTaskStatusWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.ListPreparationAndReleaseTaskStatusWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IJobOperations_ListPreparationAndReleaseTaskStatusWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_JobListPreparationAndReleaseTaskStatusOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.ListPreparationAndReleaseTaskStatusWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.JobListPreparationAndReleaseTaskStatusOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListPreparationAndReleaseTaskStatusWithHttpMessagesAsync(String, JobListPreparationAndReleaseTaskStatusOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Lists the execution status of the Job Preparation and Job Release
+Task for the specified Job across the Compute Nodes where the Job
+has run.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -743,22 +1139,26 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The ID of the Job.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.JobListPreparationAndReleaseTaskStatusOptions.html">JobListPreparationAndReleaseTaskStatusOptions</a></td>
         <td><span class="parametername">jobListPreparationAndReleaseTaskStatusOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -777,11 +1177,47 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IJobOperations_ListPreparationAndReleaseTaskStatusWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_JobListPreparationAndReleaseTaskStatusOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This API returns the Job Preparation and Job Release Task status on</p>
+<p>all Compute Nodes that have run the Job Preparation or Job Release</p>
+<p>Task. This includes Compute Nodes which have since been removed</p>
+<p>from the Pool. If this API is invoked on a Job which has no Job</p>
+<p>Preparation or Job Release Task, the Batch service returns HTTP</p>
+<p>status code 409 (Conflict) with an error code of</p>
+<p>JobPreparationTaskNotSpecified.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_IJobOperations_ListWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.ListWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IJobOperations_ListWithHttpMessagesAsync_Microsoft_Azure_Batch_Protocol_Models_JobListOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.ListWithHttpMessagesAsync(Microsoft.Azure.Batch.Protocol.Models.JobListOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListWithHttpMessagesAsync(JobListOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Lists all of the Jobs in the specified Account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -800,17 +1236,20 @@
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.JobListOptions.html">JobListOptions</a></td>
         <td><span class="parametername">jobListOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -829,11 +1268,38 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_IJobOperations_PatchWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.PatchWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IJobOperations_PatchWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_JobPatchParameter_Microsoft_Azure_Batch_Protocol_Models_JobPatchOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.PatchWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.JobPatchParameter,Microsoft.Azure.Batch.Protocol.Models.JobPatchOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">PatchWithHttpMessagesAsync(String, JobPatchParameter, JobPatchOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Updates the properties of the specified Job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -852,27 +1318,32 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The ID of the Job whose properties you want to update.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.JobPatchParameter.html">JobPatchParameter</a></td>
         <td><span class="parametername">jobPatchParameter</span></td>
-        <td></td>
+        <td><p>The parameters for the request.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.JobPatchOptions.html">JobPatchOptions</a></td>
         <td><span class="parametername">jobPatchOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -891,11 +1362,39 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IJobOperations_PatchWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_JobPatchParameter_Microsoft_Azure_Batch_Protocol_Models_JobPatchOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This replaces only the Job properties specified in the request. For</p>
+<p>example, if the Job has constraints, and a request does not specify</p>
+<p>the constraints element, then the Job keeps the existing</p>
+<p>constraints.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_IJobOperations_TerminateWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.TerminateWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IJobOperations_TerminateWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_JobTerminateOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.TerminateWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.JobTerminateOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">TerminateWithHttpMessagesAsync(String, String, JobTerminateOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Terminates the specified Job, marking it as completed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -914,27 +1413,33 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The ID of the Job to terminate.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">terminateReason</span></td>
-        <td></td>
+        <td><p>The text you want to appear as the Job's TerminateReason. The
+default is 'UserTerminate'.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.JobTerminateOptions.html">JobTerminateOptions</a></td>
         <td><span class="parametername">jobTerminateOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -953,11 +1458,43 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IJobOperations_TerminateWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_JobTerminateOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When a Terminate Job request is received, the Batch service sets</p>
+<p>the Job to the terminating state. The Batch service then terminates</p>
+<p>any running Tasks associated with the Job and runs any required Job</p>
+<p>release Tasks. Then the Job moves into the completed state. If</p>
+<p>there are any Tasks in the Job in the active state, they will</p>
+<p>remain in the active state. Once a Job is terminated, new Tasks</p>
+<p>cannot be added and any remaining active Tasks will not be</p>
+<p>scheduled.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_IJobOperations_UpdateWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.UpdateWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_IJobOperations_UpdateWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_JobUpdateParameter_Microsoft_Azure_Batch_Protocol_Models_JobUpdateOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IJobOperations.UpdateWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.JobUpdateParameter,Microsoft.Azure.Batch.Protocol.Models.JobUpdateOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">UpdateWithHttpMessagesAsync(String, JobUpdateParameter, JobUpdateOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Updates the properties of the specified Job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -976,27 +1513,32 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The ID of the Job whose properties you want to update.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.JobUpdateParameter.html">JobUpdateParameter</a></td>
         <td><span class="parametername">jobUpdateParameter</span></td>
-        <td></td>
+        <td><p>The parameters for the request.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.JobUpdateOptions.html">JobUpdateOptions</a></td>
         <td><span class="parametername">jobUpdateOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1012,6 +1554,33 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationHeaderResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.JobUpdateHeaders.html">JobUpdateHeaders</a>&gt;&gt;</td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IJobOperations_UpdateWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_JobUpdateParameter_Microsoft_Azure_Batch_Protocol_Models_JobUpdateOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This fully replaces all the updatable properties of the Job. For</p>
+<p>example, if the Job has constraints associated with it and if</p>
+<p>constraints is not specified with this request, then the Batch</p>
+<p>service will remove the existing constraints.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
       </tr>
     </tbody>
   </table>

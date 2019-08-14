@@ -83,7 +83,9 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_OutputFileUploadOptions" data-uid="Microsoft.Azure.Batch.Protocol.Models.OutputFileUploadOptions" class="text-break">Class OutputFileUploadOptions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Details about an output file upload operation, including under what
+conditions to perform the upload.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -102,7 +104,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_OutputFileUploadOptions__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.OutputFileUploadOptions.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_OutputFileUploadOptions__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.OutputFileUploadOptions.#ctor">OutputFileUploadOptions()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the OutputFileUploadOptions class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -112,7 +115,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_OutputFileUploadOptions__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.OutputFileUploadOptions.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_OutputFileUploadOptions__ctor_Microsoft_Azure_Batch_Protocol_Models_OutputFileUploadCondition_" data-uid="Microsoft.Azure.Batch.Protocol.Models.OutputFileUploadOptions.#ctor(Microsoft.Azure.Batch.Protocol.Models.OutputFileUploadCondition)">OutputFileUploadOptions(OutputFileUploadCondition)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the OutputFileUploadOptions class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -131,7 +135,9 @@
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.OutputFileUploadCondition.html">OutputFileUploadCondition</a></td>
         <td><span class="parametername">uploadCondition</span></td>
-        <td></td>
+        <td><p>The conditions under which the Task
+output file or set of files should be uploaded.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -141,7 +147,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_OutputFileUploadOptions_UploadCondition_" data-uid="Microsoft.Azure.Batch.Protocol.Models.OutputFileUploadOptions.UploadCondition*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_OutputFileUploadOptions_UploadCondition" data-uid="Microsoft.Azure.Batch.Protocol.Models.OutputFileUploadOptions.UploadCondition">UploadCondition</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the conditions under which the Task output file or set
+of files should be uploaded.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -163,6 +171,10 @@ public Microsoft.Azure.Batch.Protocol.Models.OutputFileUploadCondition UploadCon
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_OutputFileUploadOptions_UploadCondition_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default is taskcompletion. Possible values include:</p>
+<p>'taskSuccess', 'taskFailure', 'taskCompletion'</p>
+</div>
 </article>
           </div>
           

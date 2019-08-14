@@ -83,7 +83,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_JobConstraints" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobConstraints" class="text-break">Class JobConstraints
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The execution constraints for a Job.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -102,7 +103,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobConstraints__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobConstraints.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobConstraints__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobConstraints.#ctor">JobConstraints()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the JobConstraints class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -112,7 +114,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobConstraints__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobConstraints.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobConstraints__ctor_System_Nullable_System_TimeSpan__System_Nullable_System_Int32__" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobConstraints.#ctor(System.Nullable{System.TimeSpan},System.Nullable{System.Int32})">JobConstraints(Nullable&lt;TimeSpan&gt;, Nullable&lt;Int32&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the JobConstraints class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -131,12 +134,17 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
         <td><span class="parametername">maxWallClockTime</span></td>
-        <td></td>
+        <td><p>The maximum elapsed time that the
+Job may run, measured from the time the Job is created.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
         <td><span class="parametername">maxTaskRetryCount</span></td>
-        <td></td>
+        <td><p>The maximum number of times each
+Task may be retried. The Batch service retries a Task if its exit
+code is nonzero.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -146,7 +154,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobConstraints_MaxTaskRetryCount_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobConstraints.MaxTaskRetryCount*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobConstraints_MaxTaskRetryCount" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobConstraints.MaxTaskRetryCount">MaxTaskRetryCount</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the maximum number of times each Task may be retried.
+The Batch service retries a Task if its exit code is nonzero.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -168,11 +178,22 @@ public Nullable&lt;int&gt; MaxTaskRetryCount { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobConstraints_MaxTaskRetryCount_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note that this value specifically controls the number of retries.</p>
+<p>The Batch service will try each Task once, and may then retry up to</p>
+<p>this limit. For example, if the maximum retry count is 3, Batch</p>
+<p>tries a Task up to 4 times (one initial try and 3 retries). If the</p>
+<p>maximum retry count is 0, the Batch service does not retry Tasks.</p>
+<p>If the maximum retry count is -1, the Batch service retries Tasks</p>
+<p>without limit. The default value is 0 (no retries).</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobConstraints_MaxWallClockTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobConstraints.MaxWallClockTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobConstraints_MaxWallClockTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobConstraints.MaxWallClockTime">MaxWallClockTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the maximum elapsed time that the Job may run,
+measured from the time the Job is created.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -194,6 +215,13 @@ public Nullable&lt;TimeSpan&gt; MaxWallClockTime { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobConstraints_MaxWallClockTime_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the Job does not complete within the time limit, the Batch</p>
+<p>service terminates it and any Tasks that are still running. In this</p>
+<p>case, the termination reason will be MaxWallClockTimeExpiry. If</p>
+<p>this property is not specified, there is no time limit on how long</p>
+<p>the Job may run.</p>
+</div>
 </article>
           </div>
           

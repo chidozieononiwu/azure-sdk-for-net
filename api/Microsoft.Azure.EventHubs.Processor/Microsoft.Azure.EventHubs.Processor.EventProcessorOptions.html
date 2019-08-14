@@ -83,7 +83,8 @@
   
   <h1 id="Microsoft_Azure_EventHubs_Processor_EventProcessorOptions" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorOptions" class="text-break">Class EventProcessorOptions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Defines the runtime options when registering an <a class="xref" href="Microsoft.Azure.EventHubs.Processor.IEventProcessor.html">IEventProcessor</a> interface with an EventHubConsumerGroup. This is also the mechanism for catching exceptions from an IEventProcessor instance used by an <a class="xref" href="Microsoft.Azure.EventHubs.Processor.EventProcessorHost.html">EventProcessorHost</a> object.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -102,7 +103,8 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_EventProcessorOptions__ctor_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorOptions.#ctor*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_EventProcessorOptions__ctor" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorOptions.#ctor">EventProcessorOptions()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="Microsoft.Azure.EventHubs.Processor.EventProcessorOptions.html">EventProcessorOptions</a> object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -114,7 +116,10 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_EventProcessorOptions_DefaultOptions_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorOptions.DefaultOptions*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_EventProcessorOptions_DefaultOptions" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorOptions.DefaultOptions">DefaultOptions</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns an EventProcessorOptions instance with all options set to the default values.
+The default values are:</p>
+<p>MaxBatchSize: 10</p><p>ReceiveTimeOut: 1 minute</p><p>PrefetchCount: 300</p><p>InitialOffsetProvider: uses the last offset checkpointed, or StartOfStream</p><p>InvokeProcessorAfterReceiveTimeout: false</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -131,7 +136,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.Processor.EventProcessorOptions.html">EventProcessorOptions</a></td>
-        <td></td>
+        <td><p>an EventProcessorOptions instance with all options set to the default values</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -139,7 +145,8 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_EventProcessorOptions_EnableReceiverRuntimeMetric_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorOptions.EnableReceiverRuntimeMetric*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_EventProcessorOptions_EnableReceiverRuntimeMetric" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorOptions.EnableReceiverRuntimeMetric">EnableReceiverRuntimeMetric</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the runtime metric of a receiver is enabled.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -156,7 +163,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
+        <td><p>true if a client wants to access <a class="xref" href="../Microsoft.Azure.EventHubs/Microsoft.Azure.EventHubs.ReceiverRuntimeInformation.html">ReceiverRuntimeInformation</a> using <a class="xref" href="Microsoft.Azure.EventHubs.Processor.PartitionContext.html">PartitionContext</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -164,7 +172,10 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_EventProcessorOptions_InitialOffsetProvider_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorOptions.InitialOffsetProvider*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_EventProcessorOptions_InitialOffsetProvider" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorOptions.InitialOffsetProvider">InitialOffsetProvider</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a delegate which is used to get the initial position for a given partition to create <a class="xref" href="../Microsoft.Azure.EventHubs/Microsoft.Azure.EventHubs.PartitionReceiver.html">PartitionReceiver</a>.
+Delegate is invoked by passing in PartitionId and then user can return <a class="xref" href="../Microsoft.Azure.EventHubs/Microsoft.Azure.EventHubs.PartitionReceiver.html">PartitionReceiver</a> for receiving messages.
+This is only used when <a class="xref" href="Microsoft.Azure.EventHubs.Processor.Lease.html#Microsoft_Azure_EventHubs_Processor_Lease_Offset">Offset</a> is not provided and receiver is being created for the very first time.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -189,7 +200,9 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_EventProcessorOptions_InvokeProcessorAfterReceiveTimeout_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorOptions.InvokeProcessorAfterReceiveTimeout*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_EventProcessorOptions_InvokeProcessorAfterReceiveTimeout" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorOptions.InvokeProcessorAfterReceiveTimeout">InvokeProcessorAfterReceiveTimeout</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns whether the EventProcessorHost will call IEventProcessor.OnEvents(null) when a receive
+timeout occurs (true) or not (false).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -214,7 +227,8 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_EventProcessorOptions_MaxBatchSize_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorOptions.MaxBatchSize*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_EventProcessorOptions_MaxBatchSize" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorOptions.MaxBatchSize">MaxBatchSize</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the maximum size of an event batch that IEventProcessor.ProcessEventsAsync will be called with</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -239,7 +253,9 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_EventProcessorOptions_PrefetchCount_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorOptions.PrefetchCount*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_EventProcessorOptions_PrefetchCount" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorOptions.PrefetchCount">PrefetchCount</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the current prefetch count for the underlying client.
+The default is 300.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -264,7 +280,8 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_EventProcessorOptions_ReceiveTimeout_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorOptions.ReceiveTimeout*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_EventProcessorOptions_ReceiveTimeout" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorOptions.ReceiveTimeout">ReceiveTimeout</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the timeout length for receive operations.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -289,7 +306,9 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_EventProcessorOptions_WebProxy_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorOptions.WebProxy*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_EventProcessorOptions_WebProxy" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorOptions.WebProxy">WebProxy</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the web proxy.
+A proxy is applicable only when transport type is set to AmqpWebSockets.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -316,7 +335,12 @@
   
   <a id="Microsoft_Azure_EventHubs_Processor_EventProcessorOptions_SetExceptionHandler_" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorOptions.SetExceptionHandler*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Processor_EventProcessorOptions_SetExceptionHandler_System_Action_Microsoft_Azure_EventHubs_Processor_ExceptionReceivedEventArgs__" data-uid="Microsoft.Azure.EventHubs.Processor.EventProcessorOptions.SetExceptionHandler(System.Action{Microsoft.Azure.EventHubs.Processor.ExceptionReceivedEventArgs})">SetExceptionHandler(Action&lt;ExceptionReceivedEventArgs&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets a handler which receives notification of general exceptions.</p>
+<p>Exceptions which occur while processing events from a particular Event Hub partition are delivered
+to the onError method of the event processor for that partition. This handler is called on occasions
+when there is no event processor associated with the throwing activity, or the event processor could
+not be created.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -335,7 +359,8 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Microsoft.Azure.EventHubs.Processor.ExceptionReceivedEventArgs.html">ExceptionReceivedEventArgs</a>&gt;</td>
         <td><span class="parametername">exceptionHandler</span></td>
-        <td></td>
+        <td><p>Handler which is called when an exception occurs. Set to null to stop handling.</p>
+</td>
       </tr>
     </tbody>
   </table>

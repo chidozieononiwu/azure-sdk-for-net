@@ -83,7 +83,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Common_ComputeNodeState" data-uid="Microsoft.Azure.Batch.Common.ComputeNodeState" class="text-break">Enum ComputeNodeState
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The state of a compute node.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Common.html">Microsoft.Azure.Batch.Common</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
@@ -103,55 +104,77 @@
     <tbody>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_ComputeNodeState_Creating">Creating</td>
-        <td></td>
+        <td><p>The Batch service has obtained the underlying virtual machine from
+Azure Compute, but it has not yet started to join a pool.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_ComputeNodeState_Idle">Idle</td>
-        <td></td>
+        <td><p>The compute node is not currently running a task.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_ComputeNodeState_LeavingPool">LeavingPool</td>
-        <td></td>
+        <td><p>The compute node is leaving the pool, either because the user
+explicitly removed it or because the pool is resizing or
+autoscaling down.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_ComputeNodeState_Offline">Offline</td>
-        <td></td>
+        <td><p>The Batch service will not schedule any new tasks on the compute
+node.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_ComputeNodeState_Preempted">Preempted</td>
-        <td></td>
+        <td><p>The compute node has been preempted.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_ComputeNodeState_Rebooting">Rebooting</td>
-        <td></td>
+        <td><p>The compute node is rebooting.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_ComputeNodeState_Reimaging">Reimaging</td>
-        <td></td>
+        <td><p>The compute node is being reimaged.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_ComputeNodeState_Running">Running</td>
-        <td></td>
+        <td><p>The compute node is running one or more tasks (other than the start
+task).</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_ComputeNodeState_Starting">Starting</td>
-        <td></td>
+        <td><p>The Batch service is starting on the underlying virtual machine.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_ComputeNodeState_StartTaskFailed">StartTaskFailed</td>
-        <td></td>
+        <td><p>The start task has failed on the compute node (and exhausted all
+retries), and waitForSuccess is set.  The node is not usable for
+running tasks.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_ComputeNodeState_Unknown">Unknown</td>
-        <td></td>
+        <td><p>The Batch service has lost contact with the compute node, and does
+not know its true state.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_ComputeNodeState_Unusable">Unusable</td>
-        <td></td>
+        <td><p>The compute node cannot be used for task execution due to errors.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_ComputeNodeState_WaitingForStartTask">WaitingForStartTask</td>
-        <td></td>
+        <td><p>The start task has started running on the compute node, but
+waitForSuccess is set and the start task has not yet completed.</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>

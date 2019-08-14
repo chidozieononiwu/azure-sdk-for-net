@@ -83,7 +83,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_OnTaskFailure" data-uid="Microsoft.Azure.Batch.Protocol.Models.OnTaskFailure" class="text-break">Enum OnTaskFailure
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Defines values for OnTaskFailure.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models.html">Microsoft.Azure.Batch.Protocol.Models</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
@@ -104,11 +105,16 @@ public enum OnTaskFailure</code></pre>
     <tbody>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_OnTaskFailure_NoAction">NoAction</td>
-        <td></td>
+        <td><p>Do nothing. The Job remains active unless terminated or disabled by
+some other means.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_OnTaskFailure_PerformExitOptionsJobAction">PerformExitOptionsJobAction</td>
-        <td></td>
+        <td><p>Take the action associated with the Task exit condition in the
+Task's exitConditions collection. (This may still result in no
+action being taken, if that is what the Task specifies.)</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>

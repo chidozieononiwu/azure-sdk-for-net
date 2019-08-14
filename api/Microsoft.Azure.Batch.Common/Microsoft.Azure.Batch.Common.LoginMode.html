@@ -83,7 +83,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Common_LoginMode" data-uid="Microsoft.Azure.Batch.Common.LoginMode" class="text-break">Enum LoginMode
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The mode to use when logging in to a Windows user.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Common.html">Microsoft.Azure.Batch.Common</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
@@ -103,11 +104,17 @@
     <tbody>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_LoginMode_Batch">Batch</td>
-        <td></td>
+        <td><p>The LOGON32_LOGON_BATCH Win32 login mode. The batch login mode is
+recommended for long running parallel processes.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_LoginMode_Interactive">Interactive</td>
-        <td></td>
+        <td><p>The LOGON32_LOGON_INTERACTIVE Win32 login mode. Some applications
+require having permissions associated with the interactive login
+mode. If this is the case for an application used in your task,
+then this option is recommended.</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>

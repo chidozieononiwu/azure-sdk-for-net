@@ -83,7 +83,8 @@
   
   <h1 id="Azure_Storage_Common_StorageSharedKeyPipelinePolicy" data-uid="Azure.Storage.Common.StorageSharedKeyPipelinePolicy" class="text-break">Class StorageSharedKeyPipelinePolicy
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>HttpPipelinePolicy to sign requests using an Azure Storage shared key.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -116,7 +117,8 @@
   
   <a id="Azure_Storage_Common_StorageSharedKeyPipelinePolicy__ctor_" data-uid="Azure.Storage.Common.StorageSharedKeyPipelinePolicy.#ctor*"></a>
   <h4 id="Azure_Storage_Common_StorageSharedKeyPipelinePolicy__ctor_Azure_Storage_StorageSharedKeyCredential_" data-uid="Azure.Storage.Common.StorageSharedKeyPipelinePolicy.#ctor(Azure.Storage.StorageSharedKeyCredential)">StorageSharedKeyPipelinePolicy(StorageSharedKeyCredential)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Create a new SharedKeyPipelinePolicy</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -135,7 +137,8 @@
       <tr>
         <td><a class="xref" href="../Azure.Storage/Azure.Storage.StorageSharedKeyCredential.html">StorageSharedKeyCredential</a></td>
         <td><span class="parametername">credentials</span></td>
-        <td></td>
+        <td><p>SharedKeyCredentials to authenticate requests.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -145,7 +148,8 @@
   
   <a id="Azure_Storage_Common_StorageSharedKeyPipelinePolicy_OnSendingRequest_" data-uid="Azure.Storage.Common.StorageSharedKeyPipelinePolicy.OnSendingRequest*"></a>
   <h4 id="Azure_Storage_Common_StorageSharedKeyPipelinePolicy_OnSendingRequest_Azure_Core_Pipeline_HttpPipelineMessage_" data-uid="Azure.Storage.Common.StorageSharedKeyPipelinePolicy.OnSendingRequest(Azure.Core.Pipeline.HttpPipelineMessage)">OnSendingRequest(HttpPipelineMessage)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sign the request using the shared key credentials.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -164,7 +168,8 @@
       <tr>
         <td><a class="xref" href="../Azure.Core.Pipeline/Azure.Core.Pipeline.HttpPipelineMessage.html">HttpPipelineMessage</a></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>The message with the request to sign.</p>
+</td>
       </tr>
     </tbody>
   </table>

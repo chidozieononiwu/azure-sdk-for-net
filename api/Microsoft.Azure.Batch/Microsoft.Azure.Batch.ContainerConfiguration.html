@@ -83,7 +83,8 @@
   
   <h1 id="Microsoft_Azure_Batch_ContainerConfiguration" data-uid="Microsoft.Azure.Batch.ContainerConfiguration" class="text-break">Class ContainerConfiguration
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The configuration for container-enabled pools.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -102,7 +103,8 @@
   
   <a id="Microsoft_Azure_Batch_ContainerConfiguration__ctor_" data-uid="Microsoft.Azure.Batch.ContainerConfiguration.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_ContainerConfiguration__ctor" data-uid="Microsoft.Azure.Batch.ContainerConfiguration.#ctor">ContainerConfiguration()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.ContainerConfiguration.html">ContainerConfiguration</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -114,7 +116,8 @@
   
   <a id="Microsoft_Azure_Batch_ContainerConfiguration_ContainerImageNames_" data-uid="Microsoft.Azure.Batch.ContainerConfiguration.ContainerImageNames*"></a>
   <h4 id="Microsoft_Azure_Batch_ContainerConfiguration_ContainerImageNames" data-uid="Microsoft.Azure.Batch.ContainerConfiguration.ContainerImageNames">ContainerImageNames</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the collection of container images.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -135,11 +138,16 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_ContainerConfiguration_ContainerImageNames_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is the full image reference, as would be specified to &quot;docker pull&quot;. An image will be sourced from the default</p>
+<p>Docker registry unless the image is fully qualified with an alternative registry.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_ContainerConfiguration_ContainerRegistries_" data-uid="Microsoft.Azure.Batch.ContainerConfiguration.ContainerRegistries*"></a>
   <h4 id="Microsoft_Azure_Batch_ContainerConfiguration_ContainerRegistries" data-uid="Microsoft.Azure.Batch.ContainerConfiguration.ContainerRegistries">ContainerRegistries</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets additional private registries which containers can be pulled from.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -160,6 +168,10 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_ContainerConfiguration_ContainerRegistries_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If any images must be downloaded from a private registry which requires credentials, then those credentials must</p>
+<p>be provided here.</p>
+</div>
 </article>
           </div>
           

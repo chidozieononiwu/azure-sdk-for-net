@@ -83,7 +83,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_StartTaskState" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTaskState" class="text-break">Enum StartTaskState
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Defines values for StartTaskState.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models.html">Microsoft.Azure.Batch.Protocol.Models</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
@@ -104,11 +105,16 @@ public enum StartTaskState</code></pre>
     <tbody>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_StartTaskState_Completed">Completed</td>
-        <td></td>
+        <td><p>The StartTask has exited with exit code 0, or the StartTask has
+failed and the retry limit has reached, or the StartTask process
+did not run due to Task preparation errors (such as resource file
+download failures).</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_StartTaskState_Running">Running</td>
-        <td></td>
+        <td><p>The StartTask is currently running.</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>

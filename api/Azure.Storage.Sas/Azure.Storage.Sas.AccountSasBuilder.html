@@ -83,7 +83,11 @@
   
   <h1 id="Azure_Storage_Sas_AccountSasBuilder" data-uid="Azure.Storage.Sas.AccountSasBuilder" class="text-break">Struct AccountSasBuilder
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p><a class="xref" href="Azure.Storage.Sas.AccountSasBuilder.html">AccountSasBuilder</a> is used to generate an account level
+Shared Access Signature (SAS) for Azure Storage services.
+For more information, see
+<a href="https://docs.microsoft.com/rest/api/storageservices/constructing-an-account-sas"></a>.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -101,7 +105,10 @@
   
   <a id="Azure_Storage_Sas_AccountSasBuilder_ExpiryTime_" data-uid="Azure.Storage.Sas.AccountSasBuilder.ExpiryTime*"></a>
   <h4 id="Azure_Storage_Sas_AccountSasBuilder_ExpiryTime" data-uid="Azure.Storage.Sas.AccountSasBuilder.ExpiryTime">ExpiryTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The time at which the shared access signature becomes invalid.
+This field must be omitted if it has been specified in an
+associated stored access policy.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -126,7 +133,13 @@
   
   <a id="Azure_Storage_Sas_AccountSasBuilder_IPRange_" data-uid="Azure.Storage.Sas.AccountSasBuilder.IPRange*"></a>
   <h4 id="Azure_Storage_Sas_AccountSasBuilder_IPRange" data-uid="Azure.Storage.Sas.AccountSasBuilder.IPRange">IPRange</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Specifies an IP address or a range of IP addresses from which to
+accept requests. If the IP address from which the request
+originates does not match the IP address or address range
+specified on the SAS token, the request is not authenticated.
+When specifying a range of IP addresses, note that the range is
+inclusive.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -151,7 +164,11 @@
   
   <a id="Azure_Storage_Sas_AccountSasBuilder_Permissions_" data-uid="Azure.Storage.Sas.AccountSasBuilder.Permissions*"></a>
   <h4 id="Azure_Storage_Sas_AccountSasBuilder_Permissions" data-uid="Azure.Storage.Sas.AccountSasBuilder.Permissions">Permissions</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The permissions associated with the shared access signature. The
+user is restricted to operations allowed by the permissions. The
+<a class="xref" href="Azure.Storage.Sas.AccountSasPermissions.html">AccountSasPermissions</a> type can be used to create the
+permissions string.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -176,7 +193,12 @@
   
   <a id="Azure_Storage_Sas_AccountSasBuilder_Protocol_" data-uid="Azure.Storage.Sas.AccountSasBuilder.Protocol*"></a>
   <h4 id="Azure_Storage_Sas_AccountSasBuilder_Protocol" data-uid="Azure.Storage.Sas.AccountSasBuilder.Protocol">Protocol</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The optional signed protocol field specifies the protocol
+permitted for a request made with the SAS.  Possible values are
+<a class="xref" href="Azure.Storage.Sas.SasProtocol.html#Azure_Storage_Sas_SasProtocol_HttpsAndHttp">HttpsAndHttp</a>,
+<a class="xref" href="Azure.Storage.Sas.SasProtocol.html#Azure_Storage_Sas_SasProtocol_Https">Https</a>, and
+<a class="xref" href="Azure.Storage.Sas.SasProtocol.html#Azure_Storage_Sas_SasProtocol_None">None</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -201,7 +223,11 @@
   
   <a id="Azure_Storage_Sas_AccountSasBuilder_ResourceTypes_" data-uid="Azure.Storage.Sas.AccountSasBuilder.ResourceTypes*"></a>
   <h4 id="Azure_Storage_Sas_AccountSasBuilder_ResourceTypes" data-uid="Azure.Storage.Sas.AccountSasBuilder.ResourceTypes">ResourceTypes</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The resource types associated with the shared access signature. The
+user is restricted to operations on the specified resources. The
+<a class="xref" href="Azure.Storage.Sas.AccountSasResourceTypes.html">AccountSasResourceTypes</a> type can be used to create
+the resource types string.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -226,7 +252,11 @@
   
   <a id="Azure_Storage_Sas_AccountSasBuilder_Services_" data-uid="Azure.Storage.Sas.AccountSasBuilder.Services*"></a>
   <h4 id="Azure_Storage_Sas_AccountSasBuilder_Services" data-uid="Azure.Storage.Sas.AccountSasBuilder.Services">Services</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The services associated with the shared access signature. The
+user is restricted to operations with the specified services. The
+<a class="xref" href="Azure.Storage.Sas.AccountSasServices.html">AccountSasServices</a> type can be used to create the
+services string.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -251,7 +281,11 @@
   
   <a id="Azure_Storage_Sas_AccountSasBuilder_StartTime_" data-uid="Azure.Storage.Sas.AccountSasBuilder.StartTime*"></a>
   <h4 id="Azure_Storage_Sas_AccountSasBuilder_StartTime" data-uid="Azure.Storage.Sas.AccountSasBuilder.StartTime">StartTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Optionally specify the time at which the shared access signature
+becomes valid.  If omitted when DateTimeOffset.MinValue is used,
+start time for this call is assumed to be the time when the
+storage service receives the request.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -276,7 +310,10 @@
   
   <a id="Azure_Storage_Sas_AccountSasBuilder_Version_" data-uid="Azure.Storage.Sas.AccountSasBuilder.Version*"></a>
   <h4 id="Azure_Storage_Sas_AccountSasBuilder_Version" data-uid="Azure.Storage.Sas.AccountSasBuilder.Version">Version</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The storage service version to use to authenticate requests made
+with this shared access signature, and the service version to use
+when handling requests made with this shared access signature.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -303,7 +340,8 @@
   
   <a id="Azure_Storage_Sas_AccountSasBuilder_Equals_" data-uid="Azure.Storage.Sas.AccountSasBuilder.Equals*"></a>
   <h4 id="Azure_Storage_Sas_AccountSasBuilder_Equals_Azure_Storage_Sas_AccountSasBuilder_" data-uid="Azure.Storage.Sas.AccountSasBuilder.Equals(Azure.Storage.Sas.AccountSasBuilder)">Equals(AccountSasBuilder)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Check if two <a class="xref" href="Azure.Storage.Sas.AccountSasBuilder.html">AccountSasBuilder</a> instances are equal.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -322,7 +360,8 @@
       <tr>
         <td><a class="xref" href="Azure.Storage.Sas.AccountSasBuilder.html">AccountSasBuilder</a></td>
         <td><span class="parametername">other</span></td>
-        <td></td>
+        <td><p>The instance to compare to.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -337,7 +376,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
+        <td><p>True if they're equal, false otherwise.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -345,7 +385,8 @@
   
   <a id="Azure_Storage_Sas_AccountSasBuilder_Equals_" data-uid="Azure.Storage.Sas.AccountSasBuilder.Equals*"></a>
   <h4 id="Azure_Storage_Sas_AccountSasBuilder_Equals_System_Object_" data-uid="Azure.Storage.Sas.AccountSasBuilder.Equals(System.Object)">Equals(Object)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Check if two <a class="xref" href="Azure.Storage.Sas.AccountSasBuilder.html">AccountSasBuilder</a> instances are equal.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -365,7 +406,8 @@ public override bool Equals (object obj);</code></pre>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
         <td><span class="parametername">obj</span></td>
-        <td></td>
+        <td><p>The instance to compare to.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -380,7 +422,8 @@ public override bool Equals (object obj);</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
+        <td><p>True if they're equal, false otherwise.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -388,7 +431,8 @@ public override bool Equals (object obj);</code></pre>
   
   <a id="Azure_Storage_Sas_AccountSasBuilder_GetHashCode_" data-uid="Azure.Storage.Sas.AccountSasBuilder.GetHashCode*"></a>
   <h4 id="Azure_Storage_Sas_AccountSasBuilder_GetHashCode" data-uid="Azure.Storage.Sas.AccountSasBuilder.GetHashCode">GetHashCode()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get a hash code for the <a class="xref" href="Azure.Storage.Sas.AccountSasBuilder.html">AccountSasBuilder</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -406,7 +450,8 @@ public override int GetHashCode ();</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td></td>
+        <td><p>Hash code for the <a class="xref" href="Azure.Storage.Sas.AccountSasBuilder.html">AccountSasBuilder</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -414,7 +459,10 @@ public override int GetHashCode ();</code></pre>
   
   <a id="Azure_Storage_Sas_AccountSasBuilder_ToSasQueryParameters_" data-uid="Azure.Storage.Sas.AccountSasBuilder.ToSasQueryParameters*"></a>
   <h4 id="Azure_Storage_Sas_AccountSasBuilder_ToSasQueryParameters_Azure_Storage_StorageSharedKeyCredential_" data-uid="Azure.Storage.Sas.AccountSasBuilder.ToSasQueryParameters(Azure.Storage.StorageSharedKeyCredential)">ToSasQueryParameters(StorageSharedKeyCredential)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Use an account's <a class="xref" href="../Azure.Storage/Azure.Storage.StorageSharedKeyCredential.html">StorageSharedKeyCredential</a> to sign this
+shared access signature values to produce the proper SAS query
+parameters for authenticating requests.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -433,7 +481,8 @@ public override int GetHashCode ();</code></pre>
       <tr>
         <td><a class="xref" href="../Azure.Storage/Azure.Storage.StorageSharedKeyCredential.html">StorageSharedKeyCredential</a></td>
         <td><span class="parametername">sharedKeyCredential</span></td>
-        <td></td>
+        <td><p>The storage account's <a class="xref" href="../Azure.Storage/Azure.Storage.StorageSharedKeyCredential.html">StorageSharedKeyCredential</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -448,7 +497,9 @@ public override int GetHashCode ();</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="Azure.Storage.Sas.SasQueryParameters.html">SasQueryParameters</a></td>
-        <td></td>
+        <td><p>The <a class="xref" href="Azure.Storage.Sas.SasQueryParameters.html">SasQueryParameters</a> used for authenticating
+requests.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -456,7 +507,8 @@ public override int GetHashCode ();</code></pre>
   
   <a id="Azure_Storage_Sas_AccountSasBuilder_ToString_" data-uid="Azure.Storage.Sas.AccountSasBuilder.ToString*"></a>
   <h4 id="Azure_Storage_Sas_AccountSasBuilder_ToString" data-uid="Azure.Storage.Sas.AccountSasBuilder.ToString">ToString()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -474,7 +526,8 @@ public override string ToString ();</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
+        <td><p>A string that represents the current object.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -484,7 +537,8 @@ public override string ToString ();</code></pre>
   
   <a id="Azure_Storage_Sas_AccountSasBuilder_op_Equality_" data-uid="Azure.Storage.Sas.AccountSasBuilder.op_Equality*"></a>
   <h4 id="Azure_Storage_Sas_AccountSasBuilder_op_Equality_Azure_Storage_Sas_AccountSasBuilder_Azure_Storage_Sas_AccountSasBuilder_" data-uid="Azure.Storage.Sas.AccountSasBuilder.op_Equality(Azure.Storage.Sas.AccountSasBuilder,Azure.Storage.Sas.AccountSasBuilder)">Equality(AccountSasBuilder, AccountSasBuilder)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Check if two <a class="xref" href="Azure.Storage.Sas.AccountSasBuilder.html">AccountSasBuilder</a> instances are equal.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -503,12 +557,14 @@ public override string ToString ();</code></pre>
       <tr>
         <td><a class="xref" href="Azure.Storage.Sas.AccountSasBuilder.html">AccountSasBuilder</a></td>
         <td><span class="parametername">left</span></td>
-        <td></td>
+        <td><p>The first instance to compare.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Azure.Storage.Sas.AccountSasBuilder.html">AccountSasBuilder</a></td>
         <td><span class="parametername">right</span></td>
-        <td></td>
+        <td><p>The second instance to compare.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -523,7 +579,8 @@ public override string ToString ();</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
+        <td><p>True if they're equal, false otherwise.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -531,7 +588,9 @@ public override string ToString ();</code></pre>
   
   <a id="Azure_Storage_Sas_AccountSasBuilder_op_Inequality_" data-uid="Azure.Storage.Sas.AccountSasBuilder.op_Inequality*"></a>
   <h4 id="Azure_Storage_Sas_AccountSasBuilder_op_Inequality_Azure_Storage_Sas_AccountSasBuilder_Azure_Storage_Sas_AccountSasBuilder_" data-uid="Azure.Storage.Sas.AccountSasBuilder.op_Inequality(Azure.Storage.Sas.AccountSasBuilder,Azure.Storage.Sas.AccountSasBuilder)">Inequality(AccountSasBuilder, AccountSasBuilder)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Check if two <a class="xref" href="Azure.Storage.Sas.AccountSasBuilder.html">AccountSasBuilder</a> instances are not
+equal.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -550,12 +609,14 @@ public override string ToString ();</code></pre>
       <tr>
         <td><a class="xref" href="Azure.Storage.Sas.AccountSasBuilder.html">AccountSasBuilder</a></td>
         <td><span class="parametername">left</span></td>
-        <td></td>
+        <td><p>The first instance to compare.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Azure.Storage.Sas.AccountSasBuilder.html">AccountSasBuilder</a></td>
         <td><span class="parametername">right</span></td>
-        <td></td>
+        <td><p>The second instance to compare.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -570,7 +631,8 @@ public override string ToString ();</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
+        <td><p>True if they're not equal, false otherwise.</p>
+</td>
       </tr>
     </tbody>
   </table>

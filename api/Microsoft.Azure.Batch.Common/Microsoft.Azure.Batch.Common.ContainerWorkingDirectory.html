@@ -83,7 +83,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Common_ContainerWorkingDirectory" data-uid="Microsoft.Azure.Batch.Common.ContainerWorkingDirectory" class="text-break">Enum ContainerWorkingDirectory
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Specifies the location of the container working directory.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Common.html">Microsoft.Azure.Batch.Common</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
@@ -103,11 +104,15 @@
     <tbody>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_ContainerWorkingDirectory_ContainerImageDefault">ContainerImageDefault</td>
-        <td></td>
+        <td><p>Use the working directory defined in the container image. Beware
+that this directory will not contain the Resource Files downloaded
+by Batch.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_ContainerWorkingDirectory_TaskWorkingDirectory">TaskWorkingDirectory</td>
-        <td></td>
+        <td><p>Use the standard Batch service task working directory, which will contain the Task Resource Files populated by Batch.</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>

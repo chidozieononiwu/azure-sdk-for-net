@@ -83,7 +83,9 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_UserAccount" data-uid="Microsoft.Azure.Batch.Protocol.Models.UserAccount" class="text-break">Class UserAccount
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Properties used to create a user used to execute Tasks on an Azure
+Batch Compute Node.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -102,7 +104,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_UserAccount__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.UserAccount.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_UserAccount__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.UserAccount.#ctor">UserAccount()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the UserAccount class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -112,7 +115,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_UserAccount__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.UserAccount.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_UserAccount__ctor_System_String_System_String_System_Nullable_Microsoft_Azure_Batch_Protocol_Models_ElevationLevel__Microsoft_Azure_Batch_Protocol_Models_LinuxUserConfiguration_Microsoft_Azure_Batch_Protocol_Models_WindowsUserConfiguration_" data-uid="Microsoft.Azure.Batch.Protocol.Models.UserAccount.#ctor(System.String,System.String,System.Nullable{Microsoft.Azure.Batch.Protocol.Models.ElevationLevel},Microsoft.Azure.Batch.Protocol.Models.LinuxUserConfiguration,Microsoft.Azure.Batch.Protocol.Models.WindowsUserConfiguration)">UserAccount(String, String, Nullable&lt;ElevationLevel&gt;, LinuxUserConfiguration, WindowsUserConfiguration)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the UserAccount class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -131,27 +135,35 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
-        <td></td>
+        <td><p>The name of the user Account.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">password</span></td>
-        <td></td>
+        <td><p>The password for the user Account.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ElevationLevel.html">ElevationLevel</a>&gt;</td>
         <td><span class="parametername">elevationLevel</span></td>
-        <td></td>
+        <td><p>The elevation level of the user
+Account.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.LinuxUserConfiguration.html">LinuxUserConfiguration</a></td>
         <td><span class="parametername">linuxUserConfiguration</span></td>
-        <td></td>
+        <td><p>The Linux-specific user
+configuration for the user Account.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.WindowsUserConfiguration.html">WindowsUserConfiguration</a></td>
         <td><span class="parametername">windowsUserConfiguration</span></td>
-        <td></td>
+        <td><p>The Windows-specific user
+configuration for the user Account.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -161,7 +173,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_UserAccount_ElevationLevel_" data-uid="Microsoft.Azure.Batch.Protocol.Models.UserAccount.ElevationLevel*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_UserAccount_ElevationLevel" data-uid="Microsoft.Azure.Batch.Protocol.Models.UserAccount.ElevationLevel">ElevationLevel</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the elevation level of the user Account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -183,11 +196,17 @@ public Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.ElevationLevel&gt; Elev
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_UserAccount_ElevationLevel_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default value is nonAdmin. Possible values include: 'nonAdmin',</p>
+<p>'admin'</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_UserAccount_LinuxUserConfiguration_" data-uid="Microsoft.Azure.Batch.Protocol.Models.UserAccount.LinuxUserConfiguration*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_UserAccount_LinuxUserConfiguration" data-uid="Microsoft.Azure.Batch.Protocol.Models.UserAccount.LinuxUserConfiguration">LinuxUserConfiguration</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the Linux-specific user configuration for the user
+Account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -209,11 +228,16 @@ public Microsoft.Azure.Batch.Protocol.Models.LinuxUserConfiguration LinuxUserCon
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_UserAccount_LinuxUserConfiguration_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is ignored if specified on a Windows Pool. If not</p>
+<p>specified, the user is created with the default options.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_UserAccount_Name_" data-uid="Microsoft.Azure.Batch.Protocol.Models.UserAccount.Name*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_UserAccount_Name" data-uid="Microsoft.Azure.Batch.Protocol.Models.UserAccount.Name">Name</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the name of the user Account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -239,7 +263,8 @@ public string Name { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_UserAccount_Password_" data-uid="Microsoft.Azure.Batch.Protocol.Models.UserAccount.Password*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_UserAccount_Password" data-uid="Microsoft.Azure.Batch.Protocol.Models.UserAccount.Password">Password</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the password for the user Account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -265,7 +290,9 @@ public string Password { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_UserAccount_WindowsUserConfiguration_" data-uid="Microsoft.Azure.Batch.Protocol.Models.UserAccount.WindowsUserConfiguration*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_UserAccount_WindowsUserConfiguration" data-uid="Microsoft.Azure.Batch.Protocol.Models.UserAccount.WindowsUserConfiguration">WindowsUserConfiguration</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the Windows-specific user configuration for the user
+Account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -287,6 +314,11 @@ public Microsoft.Azure.Batch.Protocol.Models.WindowsUserConfiguration WindowsUse
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_UserAccount_WindowsUserConfiguration_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property can only be specified if the user is on a Windows</p>
+<p>Pool. If not specified and on a Windows Pool, the user is created</p>
+<p>with the default options.</p>
+</div>
 </article>
           </div>
           

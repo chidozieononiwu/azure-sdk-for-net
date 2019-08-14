@@ -83,7 +83,8 @@
   
   <h1 id="Microsoft_Azure_EventHubs_EventPosition" data-uid="Microsoft.Azure.EventHubs.EventPosition" class="text-break">Class EventPosition
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Represents options can be set during the creation of a event hub receiver.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -102,7 +103,9 @@
   
   <a id="Microsoft_Azure_EventHubs_EventPosition_SequenceNumber_" data-uid="Microsoft.Azure.EventHubs.EventPosition.SequenceNumber*"></a>
   <h4 id="Microsoft_Azure_EventHubs_EventPosition_SequenceNumber" data-uid="Microsoft.Azure.EventHubs.EventPosition.SequenceNumber">SequenceNumber</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the sequence number of the event at the position. It can be null if the position is just created
+from an offset or an enqueued time.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -129,7 +132,9 @@
   
   <a id="Microsoft_Azure_EventHubs_EventPosition_FromEnd_" data-uid="Microsoft.Azure.EventHubs.EventPosition.FromEnd*"></a>
   <h4 id="Microsoft_Azure_EventHubs_EventPosition_FromEnd" data-uid="Microsoft.Azure.EventHubs.EventPosition.FromEnd">FromEnd()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the position for the end of a stream. Provide this position in receiver creation
+to start receiving from the next available event in the partition after the receiver is created.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -154,7 +159,8 @@
   
   <a id="Microsoft_Azure_EventHubs_EventPosition_FromEnqueuedTime_" data-uid="Microsoft.Azure.EventHubs.EventPosition.FromEnqueuedTime*"></a>
   <h4 id="Microsoft_Azure_EventHubs_EventPosition_FromEnqueuedTime_System_DateTime_" data-uid="Microsoft.Azure.EventHubs.EventPosition.FromEnqueuedTime(System.DateTime)">FromEnqueuedTime(DateTime)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a position at the given offset.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -173,7 +179,8 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
         <td><span class="parametername">enqueuedTimeUtc</span></td>
-        <td></td>
+        <td><p><a class="xref" href="Microsoft.Azure.EventHubs.EventData.SystemPropertiesCollection.html#Microsoft_Azure_EventHubs_EventData_SystemPropertiesCollection_EnqueuedTimeUtc">EnqueuedTimeUtc</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -188,7 +195,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.EventPosition.html">EventPosition</a></td>
-        <td></td>
+        <td><p>An <a class="xref" href="Microsoft.Azure.EventHubs.EventPosition.html">EventPosition</a> object.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -196,7 +204,8 @@
   
   <a id="Microsoft_Azure_EventHubs_EventPosition_FromOffset_" data-uid="Microsoft.Azure.EventHubs.EventPosition.FromOffset*"></a>
   <h4 id="Microsoft_Azure_EventHubs_EventPosition_FromOffset_System_String_System_Boolean_" data-uid="Microsoft.Azure.EventHubs.EventPosition.FromOffset(System.String,System.Boolean)">FromOffset(String, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a position at the given offset.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -215,12 +224,14 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">offset</span></td>
-        <td></td>
+        <td><p><a class="xref" href="Microsoft.Azure.EventHubs.EventData.SystemPropertiesCollection.html#Microsoft_Azure_EventHubs_EventData_SystemPropertiesCollection_Offset">Offset</a></p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><span class="parametername">inclusive</span></td>
-        <td></td>
+        <td><p>If true, the specified event is included; otherwise the next event is returned.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -235,7 +246,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.EventPosition.html">EventPosition</a></td>
-        <td></td>
+        <td><p>An <a class="xref" href="Microsoft.Azure.EventHubs.EventPosition.html">EventPosition</a> object.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -243,7 +255,8 @@
   
   <a id="Microsoft_Azure_EventHubs_EventPosition_FromSequenceNumber_" data-uid="Microsoft.Azure.EventHubs.EventPosition.FromSequenceNumber*"></a>
   <h4 id="Microsoft_Azure_EventHubs_EventPosition_FromSequenceNumber_System_Int64_System_Boolean_" data-uid="Microsoft.Azure.EventHubs.EventPosition.FromSequenceNumber(System.Int64,System.Boolean)">FromSequenceNumber(Int64, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a position at the given offset.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -262,12 +275,14 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
         <td><span class="parametername">sequenceNumber</span></td>
-        <td></td>
+        <td><p><a class="xref" href="Microsoft.Azure.EventHubs.EventData.SystemPropertiesCollection.html#Microsoft_Azure_EventHubs_EventData_SystemPropertiesCollection_SequenceNumber">SequenceNumber</a></p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><span class="parametername">inclusive</span></td>
-        <td></td>
+        <td><p>If true, the specified event is included; otherwise the next event is returned.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -282,7 +297,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.EventPosition.html">EventPosition</a></td>
-        <td></td>
+        <td><p>An <a class="xref" href="Microsoft.Azure.EventHubs.EventPosition.html">EventPosition</a> object.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -290,7 +306,9 @@
   
   <a id="Microsoft_Azure_EventHubs_EventPosition_FromStart_" data-uid="Microsoft.Azure.EventHubs.EventPosition.FromStart*"></a>
   <h4 id="Microsoft_Azure_EventHubs_EventPosition_FromStart" data-uid="Microsoft.Azure.EventHubs.EventPosition.FromStart">FromStart()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the position for the start of a stream. Provide this position in receiver creation
+to starting receiving from the first available event in the partition.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

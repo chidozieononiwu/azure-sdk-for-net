@@ -83,7 +83,8 @@
   
   <h1 id="Microsoft_Azure_EventHubs_Core_EventHubsPlugin" data-uid="Microsoft.Azure.EventHubs.Core.EventHubsPlugin" class="text-break">Class EventHubsPlugin
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>This class provides methods that can be overridden to manipulate messages for custom plugin functionality.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -114,7 +115,8 @@
   
   <a id="Microsoft_Azure_EventHubs_Core_EventHubsPlugin_Name_" data-uid="Microsoft.Azure.EventHubs.Core.EventHubsPlugin.Name*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Core_EventHubsPlugin_Name" data-uid="Microsoft.Azure.EventHubs.Core.EventHubsPlugin.Name">Name</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the name of the <a class="xref" href="Microsoft.Azure.EventHubs.Core.EventHubsPlugin.html">EventHubsPlugin</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -135,11 +137,15 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_EventHubs_Core_EventHubsPlugin_Name_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This name is used to identify the plugin, and prevent a plugin from being registered multiple times.</p>
+</div>
   
   
   <a id="Microsoft_Azure_EventHubs_Core_EventHubsPlugin_ShouldContinueOnException_" data-uid="Microsoft.Azure.EventHubs.Core.EventHubsPlugin.ShouldContinueOnException*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Core_EventHubsPlugin_ShouldContinueOnException" data-uid="Microsoft.Azure.EventHubs.Core.EventHubsPlugin.ShouldContinueOnException">ShouldContinueOnException</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Determines whether or an exception in the plugin should prevent a send or receive operation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -166,7 +172,8 @@
   
   <a id="Microsoft_Azure_EventHubs_Core_EventHubsPlugin_BeforeEventSend_" data-uid="Microsoft.Azure.EventHubs.Core.EventHubsPlugin.BeforeEventSend*"></a>
   <h4 id="Microsoft_Azure_EventHubs_Core_EventHubsPlugin_BeforeEventSend_Microsoft_Azure_EventHubs_EventData_" data-uid="Microsoft.Azure.EventHubs.Core.EventHubsPlugin.BeforeEventSend(Microsoft.Azure.EventHubs.EventData)">BeforeEventSend(EventData)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This operation is called before an event is sent.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -185,7 +192,8 @@
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.EventHubs/Microsoft.Azure.EventHubs.EventData.html">EventData</a></td>
         <td><span class="parametername">eventData</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="../Microsoft.Azure.EventHubs/Microsoft.Azure.EventHubs.EventData.html">EventData</a> to be modified by the plugin</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -200,7 +208,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Microsoft.Azure.EventHubs/Microsoft.Azure.EventHubs.EventData.html">EventData</a>&gt;</td>
-        <td></td>
+        <td><p>The modified event <a class="xref" href="../Microsoft.Azure.EventHubs/Microsoft.Azure.EventHubs.EventData.html">EventData</a></p>
+</td>
       </tr>
     </tbody>
   </table>

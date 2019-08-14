@@ -83,7 +83,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_ICertificateOperations" data-uid="Microsoft.Azure.Batch.Protocol.ICertificateOperations" class="text-break">Interface ICertificateOperations
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>CertificateOperations operations.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Protocol.html">Microsoft.Azure.Batch.Protocol</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
@@ -97,7 +98,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_ICertificateOperations_AddWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.ICertificateOperations.AddWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_ICertificateOperations_AddWithHttpMessagesAsync_Microsoft_Azure_Batch_Protocol_Models_CertificateAddParameter_Microsoft_Azure_Batch_Protocol_Models_CertificateAddOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.ICertificateOperations.AddWithHttpMessagesAsync(Microsoft.Azure.Batch.Protocol.Models.CertificateAddParameter,Microsoft.Azure.Batch.Protocol.Models.CertificateAddOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">AddWithHttpMessagesAsync(CertificateAddParameter, CertificateAddOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a Certificate to the specified Account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -116,22 +118,26 @@
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.CertificateAddParameter.html">CertificateAddParameter</a></td>
         <td><span class="parametername">certificate</span></td>
-        <td></td>
+        <td><p>The Certificate to be added.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.CertificateAddOptions.html">CertificateAddOptions</a></td>
         <td><span class="parametername">certificateAddOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -150,11 +156,34 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_ICertificateOperations_CancelDeletionWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.ICertificateOperations.CancelDeletionWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_ICertificateOperations_CancelDeletionWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_CertificateCancelDeletionOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.ICertificateOperations.CancelDeletionWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.CertificateCancelDeletionOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">CancelDeletionWithHttpMessagesAsync(String, String, CertificateCancelDeletionOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Cancels a failed deletion of a Certificate from the specified
+Account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -173,27 +202,33 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">thumbprintAlgorithm</span></td>
-        <td></td>
+        <td><p>The algorithm used to derive the thumbprint parameter. This must be
+sha1.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">thumbprint</span></td>
-        <td></td>
+        <td><p>The thumbprint of the Certificate being deleted.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.CertificateCancelDeletionOptions.html">CertificateCancelDeletionOptions</a></td>
         <td><span class="parametername">certificateCancelDeletionOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -212,11 +247,44 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_ICertificateOperations_CancelDeletionWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_CertificateCancelDeletionOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If you try to delete a Certificate that is being used by a Pool or</p>
+<p>Compute Node, the status of the Certificate changes to</p>
+<p>deleteFailed. If you decide that you want to continue using the</p>
+<p>Certificate, you can use this operation to set the status of the</p>
+<p>Certificate back to active. If you intend to delete the</p>
+<p>Certificate, you do not need to run this operation after the</p>
+<p>deletion failed. You must make sure that the Certificate is not</p>
+<p>being used by any resources, and then you can try again to delete</p>
+<p>the Certificate.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_ICertificateOperations_DeleteWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.ICertificateOperations.DeleteWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_ICertificateOperations_DeleteWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_CertificateDeleteOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.ICertificateOperations.DeleteWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.CertificateDeleteOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">DeleteWithHttpMessagesAsync(String, String, CertificateDeleteOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deletes a Certificate from the specified Account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -235,27 +303,33 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">thumbprintAlgorithm</span></td>
-        <td></td>
+        <td><p>The algorithm used to derive the thumbprint parameter. This must be
+sha1.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">thumbprint</span></td>
-        <td></td>
+        <td><p>The thumbprint of the Certificate to be deleted.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.CertificateDeleteOptions.html">CertificateDeleteOptions</a></td>
         <td><span class="parametername">certificateDeleteOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -274,11 +348,46 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_ICertificateOperations_DeleteWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_CertificateDeleteOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You cannot delete a Certificate if a resource (Pool or Compute</p>
+<p>Node) is using it. Before you can delete a Certificate, you must</p>
+<p>therefore make sure that the Certificate is not associated with any</p>
+<p>existing Pools, the Certificate is not installed on any Nodes (even</p>
+<p>if you remove a Certificate from a Pool, it is not removed from</p>
+<p>existing Compute Nodes in that Pool until they restart), and no</p>
+<p>running Tasks depend on the Certificate. If you try to delete a</p>
+<p>Certificate that is in use, the deletion fails. The Certificate</p>
+<p>status changes to deleteFailed. You can use Cancel Delete</p>
+<p>Certificate to set the status back to active if you decide that you</p>
+<p>want to continue using the Certificate.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_ICertificateOperations_GetWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.ICertificateOperations.GetWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_ICertificateOperations_GetWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_CertificateGetOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.ICertificateOperations.GetWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.CertificateGetOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetWithHttpMessagesAsync(String, String, CertificateGetOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets information about the specified Certificate.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -297,27 +406,33 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">thumbprintAlgorithm</span></td>
-        <td></td>
+        <td><p>The algorithm used to derive the thumbprint parameter. This must be
+sha1.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">thumbprint</span></td>
-        <td></td>
+        <td><p>The thumbprint of the Certificate to get.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.CertificateGetOptions.html">CertificateGetOptions</a></td>
         <td><span class="parametername">certificateGetOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -336,11 +451,39 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_ICertificateOperations_ListNextWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.ICertificateOperations.ListNextWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_ICertificateOperations_ListNextWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_CertificateListNextOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.ICertificateOperations.ListNextWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.CertificateListNextOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListNextWithHttpMessagesAsync(String, CertificateListNextOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Lists all of the Certificates that have been added to the specified
+Account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -359,22 +502,26 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">nextPageLink</span></td>
-        <td></td>
+        <td><p>The NextLink from the previous successful call to List operation.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.CertificateListNextOptions.html">CertificateListNextOptions</a></td>
         <td><span class="parametername">certificateListNextOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -393,11 +540,39 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_ICertificateOperations_ListWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.ICertificateOperations.ListWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_ICertificateOperations_ListWithHttpMessagesAsync_Microsoft_Azure_Batch_Protocol_Models_CertificateListOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.ICertificateOperations.ListWithHttpMessagesAsync(Microsoft.Azure.Batch.Protocol.Models.CertificateListOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListWithHttpMessagesAsync(CertificateListOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Lists all of the Certificates that have been added to the specified
+Account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -416,17 +591,20 @@
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.CertificateListOptions.html">CertificateListOptions</a></td>
         <td><span class="parametername">certificateListOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
-        <td></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -442,6 +620,32 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationResponse</span>&lt;<span class="xref">Microsoft.Rest.Azure.IPage</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.Certificate.html">Certificate</a>&gt;,<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.CertificateListHeaders.html">CertificateListHeaders</a>&gt;&gt;</td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
       </tr>
     </tbody>
   </table>

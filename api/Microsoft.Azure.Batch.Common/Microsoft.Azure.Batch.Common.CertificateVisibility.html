@@ -83,7 +83,9 @@
   
   <h1 id="Microsoft_Azure_Batch_Common_CertificateVisibility" data-uid="Microsoft.Azure.Batch.Common.CertificateVisibility" class="text-break">Enum CertificateVisibility
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Specifies which user accounts on a compute node should have access to
+the private data of a certificate.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Common.html">Microsoft.Azure.Batch.Common</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
@@ -104,19 +106,24 @@ public enum CertificateVisibility</code></pre>
     <tbody>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_CertificateVisibility_None">None</td>
-        <td></td>
+        <td><p>The certificate has no visibility.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_CertificateVisibility_RemoteUser">RemoteUser</td>
-        <td></td>
+        <td><p>The accounts under which users remotely access the node (using
+Remote Desktop).</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_CertificateVisibility_StartTask">StartTask</td>
-        <td></td>
+        <td><p>The user account under which the start task is run.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_CertificateVisibility_Task">Task</td>
-        <td></td>
+        <td><p>The accounts under which job tasks are run.</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>

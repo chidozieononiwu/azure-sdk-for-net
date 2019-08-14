@@ -83,7 +83,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_DisableJobOption" data-uid="Microsoft.Azure.Batch.Protocol.Models.DisableJobOption" class="text-break">Enum DisableJobOption
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Defines values for DisableJobOption.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models.html">Microsoft.Azure.Batch.Protocol.Models</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
@@ -104,15 +105,21 @@ public enum DisableJobOption</code></pre>
     <tbody>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_DisableJobOption_Requeue">Requeue</td>
-        <td></td>
+        <td><p>Terminate running Tasks and requeue them. The Tasks will run again
+when the Job is enabled.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_DisableJobOption_Terminate">Terminate</td>
-        <td></td>
+        <td><p>Terminate running Tasks. The Tasks will be completed with
+failureInfo indicating that they were terminated, and will not run
+again.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_DisableJobOption_Wait">Wait</td>
-        <td></td>
+        <td><p>Allow currently running Tasks to complete.</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>

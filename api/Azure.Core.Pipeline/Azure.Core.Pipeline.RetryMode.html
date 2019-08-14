@@ -83,7 +83,9 @@
   
   <h1 id="Azure_Core_Pipeline_RetryMode" data-uid="Azure.Core.Pipeline.RetryMode" class="text-break">Enum RetryMode
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The type of approach to apply when calculating the delay
+between retry attempts.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Azure.Core.Pipeline.html">Azure.Core.Pipeline</a></h6>
   <h6><strong>Assembly</strong>: Azure.Core.dll</h6>
@@ -103,11 +105,14 @@
     <tbody>
       <tr>
         <td id="Azure_Core_Pipeline_RetryMode_Exponential">Exponential</td>
-        <td></td>
+        <td><p>Retry attempts will delay based on a backoff strategy, where each attempt will increase
+the duration that it waits before retrying.</p>
+</td>
       </tr>
       <tr>
         <td id="Azure_Core_Pipeline_RetryMode_Fixed">Fixed</td>
-        <td></td>
+        <td><p>Retry attempts happen at fixed intervals; each delay is a consistent duration.</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>

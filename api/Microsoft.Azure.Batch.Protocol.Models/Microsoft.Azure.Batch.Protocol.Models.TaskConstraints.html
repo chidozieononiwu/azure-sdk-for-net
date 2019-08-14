@@ -83,7 +83,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_TaskConstraints" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskConstraints" class="text-break">Class TaskConstraints
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Execution constraints to apply to a Task.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -102,7 +103,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskConstraints__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskConstraints.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskConstraints__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskConstraints.#ctor">TaskConstraints()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the TaskConstraints class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -112,7 +114,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskConstraints__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskConstraints.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskConstraints__ctor_System_Nullable_System_TimeSpan__System_Nullable_System_TimeSpan__System_Nullable_System_Int32__" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskConstraints.#ctor(System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Nullable{System.Int32})">TaskConstraints(Nullable&lt;TimeSpan&gt;, Nullable&lt;TimeSpan&gt;, Nullable&lt;Int32&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the TaskConstraints class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -131,17 +134,28 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
         <td><span class="parametername">maxWallClockTime</span></td>
-        <td></td>
+        <td><p>The maximum elapsed time that the
+Task may run, measured from the time the Task starts. If the Task
+does not complete within the time limit, the Batch service
+terminates it.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
         <td><span class="parametername">retentionTime</span></td>
-        <td></td>
+        <td><p>The minimum time to retain the Task
+directory on the Compute Node where it ran, from the time it
+completes execution. After this time, the Batch service may delete
+the Task directory and all its contents.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
         <td><span class="parametername">maxTaskRetryCount</span></td>
-        <td></td>
+        <td><p>The maximum number of times the
+Task may be retried. The Batch service retries a Task if its exit
+code is nonzero.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -151,7 +165,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskConstraints_MaxTaskRetryCount_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskConstraints.MaxTaskRetryCount*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskConstraints_MaxTaskRetryCount" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskConstraints.MaxTaskRetryCount">MaxTaskRetryCount</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the maximum number of times the Task may be retried.
+The Batch service retries a Task if its exit code is nonzero.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -173,11 +189,24 @@ public Nullable&lt;int&gt; MaxTaskRetryCount { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskConstraints_MaxTaskRetryCount_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note that this value specifically controls the number of retries</p>
+<p>for the Task executable due to a nonzero exit code. The Batch</p>
+<p>service will try the Task once, and may then retry up to this</p>
+<p>limit. For example, if the maximum retry count is 3, Batch tries</p>
+<p>the Task up to 4 times (one initial try and 3 retries). If the</p>
+<p>maximum retry count is 0, the Batch service does not retry the Task</p>
+<p>after the first attempt. If the maximum retry count is -1, the</p>
+<p>Batch service retries the Task without limit.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskConstraints_MaxWallClockTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskConstraints.MaxWallClockTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskConstraints_MaxWallClockTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskConstraints.MaxWallClockTime">MaxWallClockTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the maximum elapsed time that the Task may run,
+measured from the time the Task starts. If the Task does not
+complete within the time limit, the Batch service terminates it.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -199,11 +228,19 @@ public Nullable&lt;TimeSpan&gt; MaxWallClockTime { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskConstraints_MaxWallClockTime_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If this is not specified, there is no time limit on how long the</p>
+<p>Task may run.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_TaskConstraints_RetentionTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskConstraints.RetentionTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_TaskConstraints_RetentionTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.TaskConstraints.RetentionTime">RetentionTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the minimum time to retain the Task directory on the
+Compute Node where it ran, from the time it completes execution.
+After this time, the Batch service may delete the Task directory
+and all its contents.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -225,6 +262,10 @@ public Nullable&lt;TimeSpan&gt; RetentionTime { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_TaskConstraints_RetentionTime_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default is 7 days, i.e. the Task directory will be retained for</p>
+<p>7 days unless the Compute Node is removed or the Job is deleted.</p>
+</div>
 </article>
           </div>
           

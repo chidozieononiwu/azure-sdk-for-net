@@ -83,7 +83,8 @@
   
   <h1 id="Azure_Storage_Blobs_AzureClientBuilderExtensions" data-uid="Azure.Storage.Blobs.AzureClientBuilderExtensions" class="text-break">Class AzureClientBuilderExtensions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Extension methods to add <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueClientOptions.html">QueueClientOptions</a> client to clients builder</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -102,7 +103,8 @@
   
   <a id="Azure_Storage_Blobs_AzureClientBuilderExtensions_AddQueueServiceClient_" data-uid="Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient*"></a>
   <h4 id="Azure_Storage_Blobs_AzureClientBuilderExtensions_AddQueueServiceClient__2___0___1_" data-uid="Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient``2(``0,``1)">AddQueueServiceClient&lt;TBuilder,TConfiguration&gt;(TBuilder, TConfiguration)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Registers a <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueServiceClient.html">QueueServiceClient</a> instance with connection options loaded from the provided <code data-dev-comment-type="paramref">configuration</code> instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -168,7 +170,8 @@
   
   <a id="Azure_Storage_Blobs_AzureClientBuilderExtensions_AddQueueServiceClient_" data-uid="Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient*"></a>
   <h4 id="Azure_Storage_Blobs_AzureClientBuilderExtensions_AddQueueServiceClient__1___0_System_String_" data-uid="Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient``1(``0,System.String)">AddQueueServiceClient&lt;TBuilder&gt;(TBuilder, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Registers a <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueServiceClient.html">QueueServiceClient</a> instance with the provided <code data-dev-comment-type="paramref">connectionString</code></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -230,11 +233,12 @@
   
   <a id="Azure_Storage_Blobs_AzureClientBuilderExtensions_AddQueueServiceClient_" data-uid="Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient*"></a>
   <h4 id="Azure_Storage_Blobs_AzureClientBuilderExtensions_AddQueueServiceClient__1___0_System_Uri_" data-uid="Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient``1(``0,System.Uri)">AddQueueServiceClient&lt;TBuilder&gt;(TBuilder, Uri)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Registers a <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueServiceClient.html">QueueServiceClient</a> instance with the provided <code data-dev-comment-type="paramref">serviceUri</code></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Azure.Core.Extensions.IAzureClientBuilder&lt;Azure.Storage.Queues.QueueServiceClient,Azure.Storage.Queues.QueueClientOptions&gt; AddQueueServiceClient&lt;TBuilder&gt; (this TBuilder builder, Uri serviceUri) where TBuilder : Azure.Core.Extensions.IAzureClientFactoryBuilder;</code></pre>
+    <pre><code class="lang-csharp hljs">public static Azure.Core.Extensions.IAzureClientBuilder&lt;Azure.Storage.Queues.QueueServiceClient,Azure.Storage.Queues.QueueClientOptions&gt; AddQueueServiceClient&lt;TBuilder&gt; (this TBuilder builder, Uri serviceUri) where TBuilder : Azure.Core.Extensions.IAzureClientFactoryBuilderWithCredential;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -292,7 +296,8 @@
   
   <a id="Azure_Storage_Blobs_AzureClientBuilderExtensions_AddQueueServiceClient_" data-uid="Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient*"></a>
   <h4 id="Azure_Storage_Blobs_AzureClientBuilderExtensions_AddQueueServiceClient__1___0_System_Uri_Azure_Storage_StorageSharedKeyCredential_" data-uid="Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient``1(``0,System.Uri,Azure.Storage.StorageSharedKeyCredential)">AddQueueServiceClient&lt;TBuilder&gt;(TBuilder, Uri, StorageSharedKeyCredential)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Registers a <a class="xref" href="../Azure.Storage.Queues/Azure.Storage.Queues.QueueServiceClient.html">QueueServiceClient</a> instance with the provided <code data-dev-comment-type="paramref">serviceUri</code> and <code data-dev-comment-type="paramref">sharedKeyCredential</code></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

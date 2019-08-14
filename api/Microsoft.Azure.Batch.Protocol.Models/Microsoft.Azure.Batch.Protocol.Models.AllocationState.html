@@ -83,7 +83,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_AllocationState" data-uid="Microsoft.Azure.Batch.Protocol.Models.AllocationState" class="text-break">Enum AllocationState
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Defines values for AllocationState.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models.html">Microsoft.Azure.Batch.Protocol.Models</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
@@ -104,15 +105,23 @@ public enum AllocationState</code></pre>
     <tbody>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_AllocationState_Resizing">Resizing</td>
-        <td></td>
+        <td><p>The Pool is resizing; that is, Compute Nodes are being added to or
+removed from the Pool.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_AllocationState_Steady">Steady</td>
-        <td></td>
+        <td><p>The Pool is not resizing. There are no changes to the number of
+Compute Nodes in the Pool in progress. A Pool enters this state
+when it is created and when no operations are being performed on
+the Pool to change the number of Compute Nodes.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_AllocationState_Stopping">Stopping</td>
-        <td></td>
+        <td><p>The Pool was resizing, but the user has requested that the resize
+be stopped, but the stop request has not yet been completed.</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>

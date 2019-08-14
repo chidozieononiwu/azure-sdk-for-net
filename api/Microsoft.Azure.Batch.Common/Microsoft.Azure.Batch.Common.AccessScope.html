@@ -83,7 +83,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Common_AccessScope" data-uid="Microsoft.Azure.Batch.Common.AccessScope" class="text-break">Enum AccessScope
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The Batch resources that can be accessed by a task using an authentication token provided via the <a class="xref" href="../Microsoft.Azure.Batch/Microsoft.Azure.Batch.CloudTask.html#Microsoft_Azure_Batch_CloudTask_AuthenticationTokenSettings">AuthenticationTokenSettings</a> property.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Common.html">Microsoft.Azure.Batch.Common</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
@@ -104,11 +105,13 @@ public enum AccessScope</code></pre>
     <tbody>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_AccessScope_Job">Job</td>
-        <td></td>
+        <td><p>The authentication token permits access to the job that contains the task.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_AccessScope_None">None</td>
-        <td></td>
+        <td><p>The authentication token does not grant access to any resources.</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>

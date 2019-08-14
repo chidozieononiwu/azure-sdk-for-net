@@ -83,7 +83,9 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_UploadBatchServiceLogsConfiguration" data-uid="Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsConfiguration" class="text-break">Class UploadBatchServiceLogsConfiguration
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The Azure Batch service log files upload configuration for a Compute
+Node.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -102,7 +104,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_UploadBatchServiceLogsConfiguration__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsConfiguration.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_UploadBatchServiceLogsConfiguration__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsConfiguration.#ctor">UploadBatchServiceLogsConfiguration()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the
+UploadBatchServiceLogsConfiguration class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -112,7 +116,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_UploadBatchServiceLogsConfiguration__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsConfiguration.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_UploadBatchServiceLogsConfiguration__ctor_System_String_System_DateTime_System_Nullable_System_DateTime__" data-uid="Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsConfiguration.#ctor(System.String,System.DateTime,System.Nullable{System.DateTime})">UploadBatchServiceLogsConfiguration(String, DateTime, Nullable&lt;DateTime&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the
+UploadBatchServiceLogsConfiguration class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -131,17 +137,24 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">containerUrl</span></td>
-        <td></td>
+        <td><p>The URL of the container within Azure
+Blob Storage to which to upload the Batch Service log
+file(s).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
         <td><span class="parametername">startTime</span></td>
-        <td></td>
+        <td><p>The start of the time range from which to
+upload Batch Service log file(s).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;</td>
         <td><span class="parametername">endTime</span></td>
-        <td></td>
+        <td><p>The end of the time range from which to
+upload Batch Service log file(s).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -151,7 +164,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_UploadBatchServiceLogsConfiguration_ContainerUrl_" data-uid="Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsConfiguration.ContainerUrl*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_UploadBatchServiceLogsConfiguration_ContainerUrl" data-uid="Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsConfiguration.ContainerUrl">ContainerUrl</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the URL of the container within Azure Blob Storage to
+which to upload the Batch Service log file(s).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -173,11 +188,19 @@ public string ContainerUrl { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_UploadBatchServiceLogsConfiguration_ContainerUrl_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The URL must include a Shared Access Signature (SAS) granting write</p>
+<p>permissions to the container. The SAS duration must allow enough</p>
+<p>time for the upload to finish. The start time for SAS is optional</p>
+<p>and recommended to not be specified.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_UploadBatchServiceLogsConfiguration_EndTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsConfiguration.EndTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_UploadBatchServiceLogsConfiguration_EndTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsConfiguration.EndTime">EndTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the end of the time range from which to upload Batch
+Service log file(s).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -199,11 +222,21 @@ public Nullable&lt;DateTime&gt; EndTime { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_UploadBatchServiceLogsConfiguration_EndTime_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Any log file containing a log message in the time range will be</p>
+<p>uploaded. This means that the operation might retrieve more logs</p>
+<p>than have been requested since the entire log file is always</p>
+<p>uploaded, but the operation should not retrieve fewer logs than</p>
+<p>have been requested. If omitted, the default is to upload all logs</p>
+<p>available after the startTime.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_UploadBatchServiceLogsConfiguration_StartTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsConfiguration.StartTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_UploadBatchServiceLogsConfiguration_StartTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsConfiguration.StartTime">StartTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the start of the time range from which to upload Batch
+Service log file(s).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -225,6 +258,13 @@ public DateTime StartTime { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_UploadBatchServiceLogsConfiguration_StartTime_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Any log file containing a log message in the time range will be</p>
+<p>uploaded. This means that the operation might retrieve more logs</p>
+<p>than have been requested since the entire log file is always</p>
+<p>uploaded, but the operation should not retrieve fewer logs than</p>
+<p>have been requested.</p>
+</div>
 </article>
           </div>
           

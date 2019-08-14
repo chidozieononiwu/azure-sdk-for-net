@@ -83,7 +83,8 @@
   
   <h1 id="Microsoft_Azure_Batch_AuthenticationTokenSettings" data-uid="Microsoft.Azure.Batch.AuthenticationTokenSettings" class="text-break">Class AuthenticationTokenSettings
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The settings for an authentication token that the task can use to perform Batch service operations.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -102,7 +103,8 @@
   
   <a id="Microsoft_Azure_Batch_AuthenticationTokenSettings__ctor_" data-uid="Microsoft.Azure.Batch.AuthenticationTokenSettings.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_AuthenticationTokenSettings__ctor" data-uid="Microsoft.Azure.Batch.AuthenticationTokenSettings.#ctor">AuthenticationTokenSettings()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.AuthenticationTokenSettings.html">AuthenticationTokenSettings</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -114,7 +116,8 @@
   
   <a id="Microsoft_Azure_Batch_AuthenticationTokenSettings_Access_" data-uid="Microsoft.Azure.Batch.AuthenticationTokenSettings.Access*"></a>
   <h4 id="Microsoft_Azure_Batch_AuthenticationTokenSettings_Access" data-uid="Microsoft.Azure.Batch.AuthenticationTokenSettings.Access">Access</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the Batch resources to which the token grants access.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -135,6 +138,11 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_AuthenticationTokenSettings_Access_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The authentication token grants access only to a limited set of Batch service operations. Currently the only
+supported value for the Access property is <a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.AccessScope.html#Microsoft_Azure_Batch_Common_AccessScope_Job">Job</a>, which grants access to all operations
+related to the job which contains the task.</p>
+</div>
 </article>
           </div>
           

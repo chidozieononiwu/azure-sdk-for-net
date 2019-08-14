@@ -83,7 +83,8 @@
   
   <h1 id="Microsoft_Azure_Batch_JobOperations" data-uid="Microsoft.Azure.Batch.JobOperations" class="text-break">Class JobOperations
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Performs operations on Azure Batch jobs.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -106,7 +107,9 @@
   
   <a id="Microsoft_Azure_Batch_JobOperations_CustomBehaviors_" data-uid="Microsoft.Azure.Batch.JobOperations.CustomBehaviors*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_CustomBehaviors" data-uid="Microsoft.Azure.Batch.JobOperations.CustomBehaviors">CustomBehaviors</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a list of behaviors that modify or customize requests to the Batch service
+made via this <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html">JobOperations</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -127,13 +130,19 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_CustomBehaviors_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>These behaviors are inherited by child objects.</p>
+<p>Modifications are applied in the order of the collection. The last write wins.</p>
+</div>
   <h3 id="methods">Methods
   </h3>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_AddTask_" data-uid="Microsoft.Azure.Batch.JobOperations.AddTask*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_AddTask_System_String_Microsoft_Azure_Batch_CloudTask_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.JobOperations.AddTask(System.String,Microsoft.Azure.Batch.CloudTask,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">AddTask(String, CloudTask, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a single task to a job.  To add multiple tasks,
+use <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_AddTask_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_CloudTask__Microsoft_Azure_Batch_BatchClientParallelOptions_System_Collections_Concurrent_ConcurrentBag_System_Collections_Concurrent_ConcurrentDictionary_System_Type_Microsoft_Azure_Batch_IFileStagingArtifact___System_Nullable_System_TimeSpan__System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__">AddTask(String, IEnumerable&lt;CloudTask&gt;, BatchClientParallelOptions, ConcurrentBag&lt;ConcurrentDictionary&lt;Type,IFileStagingArtifact&gt;&gt;, Nullable&lt;TimeSpan&gt;, IEnumerable&lt;BatchClientBehavior&gt;)</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -152,17 +161,20 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job to which to add the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a></td>
         <td><span class="parametername">taskToAdd</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a> to add.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -177,15 +189,26 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2">ConcurrentDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a>,<a class="xref" href="Microsoft.Azure.Batch.IFileStagingArtifact.html">IFileStagingArtifact</a>&gt;</td>
-        <td></td>
+        <td><p>A collection of information about the file staging process (see <a class="xref" href="Microsoft.Azure.Batch.CloudTask.html#Microsoft_Azure_Batch_CloudTask_FilesToStage">FilesToStage</a>).
+For more information see <a class="xref" href="Microsoft.Azure.Batch.IFileStagingArtifact.html">IFileStagingArtifact</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_AddTask_System_String_Microsoft_Azure_Batch_CloudTask_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Each call to this method incurs a request to the Batch service. Therefore, using this method to add
+  multiple tasks is less efficient than using a bulk add method, and can incur HTTP connection restrictions.
+  If you are performing many of these operations in parallel and are seeing client side timeouts, please see 
+  http://msdn.microsoft.com/en-us/library/system.net.servicepointmanager.defaultconnectionlimit%28v=vs.110%29.aspx
+  or use the multiple-task overload of AddTask.</p>
+<p>This is a blocking operation. For a non-blocking equivalent, see <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_AddTaskAsync_System_String_Microsoft_Azure_Batch_CloudTask_System_Collections_Concurrent_ConcurrentDictionary_System_Type_Microsoft_Azure_Batch_IFileStagingArtifact__System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_">AddTaskAsync(String, CloudTask, ConcurrentDictionary&lt;Type,IFileStagingArtifact&gt;, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</a>.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_AddTask_" data-uid="Microsoft.Azure.Batch.JobOperations.AddTask*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_AddTask_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_CloudTask__Microsoft_Azure_Batch_BatchClientParallelOptions_System_Collections_Concurrent_ConcurrentBag_System_Collections_Concurrent_ConcurrentDictionary_System_Type_Microsoft_Azure_Batch_IFileStagingArtifact___System_Nullable_System_TimeSpan__System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.JobOperations.AddTask(System.String,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.CloudTask},Microsoft.Azure.Batch.BatchClientParallelOptions,System.Collections.Concurrent.ConcurrentBag{System.Collections.Concurrent.ConcurrentDictionary{System.Type,Microsoft.Azure.Batch.IFileStagingArtifact}},System.Nullable{System.TimeSpan},System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">AddTask(String, IEnumerable&lt;CloudTask&gt;, BatchClientParallelOptions, ConcurrentBag&lt;ConcurrentDictionary&lt;Type,IFileStagingArtifact&gt;&gt;, Nullable&lt;TimeSpan&gt;, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds tasks to a job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -204,32 +227,75 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job to which to add the tasks.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a>&gt;</td>
         <td><span class="parametername">tasksToAdd</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a>s to add.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.BatchClientParallelOptions.html">BatchClientParallelOptions</a></td>
         <td><span class="parametername">parallelOptions</span></td>
-        <td></td>
+        <td><p>Controls the number of simultaneous parallel AddTaskCollection requests issued to the Batch service.  Each AddTaskCollection request contains at most
+<a class="xref" href="Microsoft.Azure.Batch.Constants.html#Microsoft_Azure_Batch_Constants_MaxTasksInSingleAddTaskCollectionRequest">MaxTasksInSingleAddTaskCollectionRequest</a> tasks in it.
+Also controls the cancellation token for the operation.
+If omitted, the default is used (see <a class="xref" href="Microsoft.Azure.Batch.BatchClientParallelOptions.html">BatchClientParallelOptions</a>.)</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.concurrent.concurrentbag-1">ConcurrentBag</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2">ConcurrentDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a>,<a class="xref" href="Microsoft.Azure.Batch.IFileStagingArtifact.html">IFileStagingArtifact</a>&gt;&gt;</td>
         <td><span class="parametername">fileStagingArtifacts</span></td>
-        <td></td>
+        <td><p>An optional collection to receive information about the file staging process (see <a class="xref" href="Microsoft.Azure.Batch.CloudTask.html#Microsoft_Azure_Batch_CloudTask_FilesToStage">FilesToStage</a>).
+An entry is added to the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.concurrent.concurrentbag-1">ConcurrentBag&lt;T&gt;</a> for each set of tasks grouped for submission to the Batch service.
+Unlike single-task adds, you cannot use this parameter to customize the file staging process.
+For more information about the format of each entry, see <a class="xref" href="Microsoft.Azure.Batch.IFileStagingArtifact.html">IFileStagingArtifact</a>.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
         <td><span class="parametername">timeout</span></td>
-        <td></td>
+        <td><p>The amount of time after which the operation times out.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_AddTask_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_CloudTask__Microsoft_Azure_Batch_BatchClientParallelOptions_System_Collections_Concurrent_ConcurrentBag_System_Collections_Concurrent_ConcurrentDictionary_System_Type_Microsoft_Azure_Batch_IFileStagingArtifact___System_Nullable_System_TimeSpan__System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is a blocking operation; for a non-blocking equivalent, see <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_AddTaskAsync_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_CloudTask__Microsoft_Azure_Batch_BatchClientParallelOptions_System_Collections_Concurrent_ConcurrentBag_System_Collections_Concurrent_ConcurrentDictionary_System_Type_Microsoft_Azure_Batch_IFileStagingArtifact___System_Nullable_System_TimeSpan__System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__">AddTaskAsync(String, IEnumerable&lt;CloudTask&gt;, BatchClientParallelOptions, ConcurrentBag&lt;ConcurrentDictionary&lt;Type,IFileStagingArtifact&gt;&gt;, Nullable&lt;TimeSpan&gt;, IEnumerable&lt;BatchClientBehavior&gt;)</a>.</p>
+<p>This method is not atomic; that is, it is possible for the method to start adding tasks and
+  then fail. The collection of tasks to add is broken down into chunks of size at most <a class="xref" href="Microsoft.Azure.Batch.Constants.html#Microsoft_Azure_Batch_Constants_MaxTasksInSingleAddTaskCollectionRequest">MaxTasksInSingleAddTaskCollectionRequest</a>,
+  and an AddTaskCollection request is issued for each chunk.  Requests may be issued in parallel according to
+  the <code data-dev-comment-type="paramref">parallelOptions</code>.</p>
+<p>Issuing a large number of simultaneous requests to the Batch service can incur HTTP connection restrictions.
+  If you are performing many of these operations in parallel (or have specified a large MaxDegreeOfParallelism in
+  the parallelOptions) and are seeing client side timeouts, please see 
+  http://msdn.microsoft.com/en-us/library/system.net.servicepointmanager.defaultconnectionlimit%28v=vs.110%29.aspx .</p>
+<p>The progress of the operation in the face of errors is determined by <a class="xref" href="Microsoft.Azure.Batch.AddTaskCollectionResultHandler.html">AddTaskCollectionResultHandler</a> behavior.
+  You do not normally need to specify this behavior, as the Batch client uses a default which works in normal circumstances.
+  If you do want to customize this behavior, specify an AddTaskCollectionResultHandler in the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>
+  or <code data-dev-comment-type="paramref">additionalBehaviors</code> collections.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.ParallelOperationsException.html">ParallelOperationsException</a></td>
+        <td><p>Thrown if one or more requests to the Batch service fail.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -237,7 +303,9 @@
   
   <a id="Microsoft_Azure_Batch_JobOperations_AddTaskAsync_" data-uid="Microsoft.Azure.Batch.JobOperations.AddTaskAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_AddTaskAsync_System_String_Microsoft_Azure_Batch_CloudTask_System_Collections_Concurrent_ConcurrentDictionary_System_Type_Microsoft_Azure_Batch_IFileStagingArtifact__System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.JobOperations.AddTaskAsync(System.String,Microsoft.Azure.Batch.CloudTask,System.Collections.Concurrent.ConcurrentDictionary{System.Type,Microsoft.Azure.Batch.IFileStagingArtifact},System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)">AddTaskAsync(String, CloudTask, ConcurrentDictionary&lt;Type,IFileStagingArtifact&gt;, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a single task to a job.  To add multiple tasks,
+use <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_AddTaskAsync_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_CloudTask__Microsoft_Azure_Batch_BatchClientParallelOptions_System_Collections_Concurrent_ConcurrentBag_System_Collections_Concurrent_ConcurrentDictionary_System_Type_Microsoft_Azure_Batch_IFileStagingArtifact___System_Nullable_System_TimeSpan__System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__">AddTaskAsync(String, IEnumerable&lt;CloudTask&gt;, BatchClientParallelOptions, ConcurrentBag&lt;ConcurrentDictionary&lt;Type,IFileStagingArtifact&gt;&gt;, Nullable&lt;TimeSpan&gt;, IEnumerable&lt;BatchClientBehavior&gt;)</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -256,27 +324,33 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job to which to add the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a></td>
         <td><span class="parametername">taskToAdd</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a> to add.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2">ConcurrentDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a>,<a class="xref" href="Microsoft.Azure.Batch.IFileStagingArtifact.html">IFileStagingArtifact</a>&gt;</td>
         <td><span class="parametername">allFileStagingArtifacts</span></td>
-        <td></td>
+        <td><p>An optional collection to customize and receive information about the file staging process (see <a class="xref" href="Microsoft.Azure.Batch.CloudTask.html#Microsoft_Azure_Batch_CloudTask_FilesToStage">FilesToStage</a>).
+For more information see <a class="xref" href="Microsoft.Azure.Batch.IFileStagingArtifact.html">IFileStagingArtifact</a>.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -291,15 +365,25 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> object that represents the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_AddTaskAsync_System_String_Microsoft_Azure_Batch_CloudTask_System_Collections_Concurrent_ConcurrentDictionary_System_Type_Microsoft_Azure_Batch_IFileStagingArtifact__System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Each call to this method incurs a request to the Batch service. Therefore, using this method to add
+  multiple tasks is less efficient than using a bulk add method, and can incur HTTP connection restrictions.
+  If you are performing many of these operations in parallel and are seeing client side timeouts, please see 
+  http://msdn.microsoft.com/en-us/library/system.net.servicepointmanager.defaultconnectionlimit%28v=vs.110%29.aspx
+  or use the multiple-task overload of AddTaskAsync.</p>
+<p>The add task operation runs asynchronously.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_AddTaskAsync_" data-uid="Microsoft.Azure.Batch.JobOperations.AddTaskAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_AddTaskAsync_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_CloudTask__Microsoft_Azure_Batch_BatchClientParallelOptions_System_Collections_Concurrent_ConcurrentBag_System_Collections_Concurrent_ConcurrentDictionary_System_Type_Microsoft_Azure_Batch_IFileStagingArtifact___System_Nullable_System_TimeSpan__System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.JobOperations.AddTaskAsync(System.String,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.CloudTask},Microsoft.Azure.Batch.BatchClientParallelOptions,System.Collections.Concurrent.ConcurrentBag{System.Collections.Concurrent.ConcurrentDictionary{System.Type,Microsoft.Azure.Batch.IFileStagingArtifact}},System.Nullable{System.TimeSpan},System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">AddTaskAsync(String, IEnumerable&lt;CloudTask&gt;, BatchClientParallelOptions, ConcurrentBag&lt;ConcurrentDictionary&lt;Type,IFileStagingArtifact&gt;&gt;, Nullable&lt;TimeSpan&gt;, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds tasks to a job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -319,32 +403,44 @@ public System.Threading.Tasks.Task AddTaskAsync (string jobId, System.Collection
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job to which to add the tasks.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a>&gt;</td>
         <td><span class="parametername">tasksToAdd</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a>s to add.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.BatchClientParallelOptions.html">BatchClientParallelOptions</a></td>
         <td><span class="parametername">parallelOptions</span></td>
-        <td></td>
+        <td><p>Controls the number of simultaneous parallel AddTaskCollection requests issued to the Batch service.  Each AddTaskCollection request contains at most
+<a class="xref" href="Microsoft.Azure.Batch.Constants.html#Microsoft_Azure_Batch_Constants_MaxTasksInSingleAddTaskCollectionRequest">MaxTasksInSingleAddTaskCollectionRequest</a> tasks in it.
+Also controls the cancellation token for the operation.
+If omitted, the default is used (see <a class="xref" href="Microsoft.Azure.Batch.BatchClientParallelOptions.html">BatchClientParallelOptions</a>.)</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.concurrent.concurrentbag-1">ConcurrentBag</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2">ConcurrentDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a>,<a class="xref" href="Microsoft.Azure.Batch.IFileStagingArtifact.html">IFileStagingArtifact</a>&gt;&gt;</td>
         <td><span class="parametername">fileStagingArtifacts</span></td>
-        <td></td>
+        <td><p>An optional collection to receive information about the file staging process (see <a class="xref" href="Microsoft.Azure.Batch.CloudTask.html#Microsoft_Azure_Batch_CloudTask_FilesToStage">FilesToStage</a>).
+An entry is added to the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.concurrent.concurrentbag-1">ConcurrentBag&lt;T&gt;</a> for each set of tasks grouped for submission to the Batch service.
+Unlike single-task adds, you cannot use this parameter to customize the file staging process.
+For more information about the format of each entry, see <a class="xref" href="Microsoft.Azure.Batch.IFileStagingArtifact.html">IFileStagingArtifact</a>.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
         <td><span class="parametername">timeout</span></td>
-        <td></td>
+        <td><p>The amount of time after which the operation times out.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -359,7 +455,39 @@ public System.Threading.Tasks.Task AddTaskAsync (string jobId, System.Collection
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> object that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_AddTaskAsync_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_CloudTask__Microsoft_Azure_Batch_BatchClientParallelOptions_System_Collections_Concurrent_ConcurrentBag_System_Collections_Concurrent_ConcurrentDictionary_System_Type_Microsoft_Azure_Batch_IFileStagingArtifact___System_Nullable_System_TimeSpan__System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The add task operation runs asynchronously.</p>
+<p>This method is not atomic; that is, it is possible for the method to start adding tasks and
+  then fail. The collection of tasks to add is broken down into chunks of size at most <a class="xref" href="Microsoft.Azure.Batch.Constants.html#Microsoft_Azure_Batch_Constants_MaxTasksInSingleAddTaskCollectionRequest">MaxTasksInSingleAddTaskCollectionRequest</a>,
+  and an AddTaskCollection request is issued for each chunk.  Requests may be issued in parallel according to
+  the <code data-dev-comment-type="paramref">parallelOptions</code>.</p>
+<p>Issuing a large number of simultaneous requests to the Batch service can incur HTTP connection restrictions.
+  If you are performing many of these operations in parallel (or have specified a large MaxDegreeOfParallelism in
+  the parallelOptions) and are seeing client side timeouts, please see 
+  http://msdn.microsoft.com/en-us/library/system.net.servicepointmanager.defaultconnectionlimit%28v=vs.110%29.aspx .</p>
+<p>The progress of the operation in the face of errors is determined by <a class="xref" href="Microsoft.Azure.Batch.AddTaskCollectionResultHandler.html">AddTaskCollectionResultHandler</a> behavior.
+  You do not normally need to specify this behavior, as the Batch client uses a default which works in normal circumstances.
+  If you do want to customize this behavior, specify an AddTaskCollectionResultHandler in the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>
+  or <code data-dev-comment-type="paramref">additionalBehaviors</code> collections.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.ParallelOperationsException.html">ParallelOperationsException</a></td>
+        <td><p>Thrown if one or more requests to the Batch service fail.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -367,7 +495,8 @@ public System.Threading.Tasks.Task AddTaskAsync (string jobId, System.Collection
   
   <a id="Microsoft_Azure_Batch_JobOperations_CopyNodeFileContentToStream_" data-uid="Microsoft.Azure.Batch.JobOperations.CopyNodeFileContentToStream*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_CopyNodeFileContentToStream_System_String_System_String_System_String_System_IO_Stream_Microsoft_Azure_Batch_GetFileRequestByteRange_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.JobOperations.CopyNodeFileContentToStream(System.String,System.String,System.String,System.IO.Stream,Microsoft.Azure.Batch.GetFileRequestByteRange,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">CopyNodeFileContentToStream(String, String, String, Stream, GetFileRequestByteRange, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Copies the contents of a file from the specified task's directory on its compute node to the given <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -386,40 +515,50 @@ public System.Threading.Tasks.Task AddTaskAsync (string jobId, System.Collection
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job containing the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The id of the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">filePath</span></td>
-        <td></td>
+        <td><p>The path of the file to retrieve.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
         <td><span class="parametername">stream</span></td>
-        <td></td>
+        <td><p>The stream to copy the file contents to.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.GetFileRequestByteRange.html">GetFileRequestByteRange</a></td>
         <td><span class="parametername">byteRange</span></td>
-        <td></td>
+        <td><p>A byte range defining what section of the file to copy. If omitted, the entire file is downloaded.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_CopyNodeFileContentToStream_System_String_System_String_System_String_System_IO_Stream_Microsoft_Azure_Batch_GetFileRequestByteRange_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is a blocking operation.  For a non-blocking equivalent, see <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CopyNodeFileContentToStreamAsync_System_String_System_String_System_String_System_IO_Stream_Microsoft_Azure_Batch_GetFileRequestByteRange_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_">CopyNodeFileContentToStreamAsync(String, String, String, Stream, GetFileRequestByteRange, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</a>.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_CopyNodeFileContentToStreamAsync_" data-uid="Microsoft.Azure.Batch.JobOperations.CopyNodeFileContentToStreamAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_CopyNodeFileContentToStreamAsync_System_String_System_String_System_String_System_IO_Stream_Microsoft_Azure_Batch_GetFileRequestByteRange_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.JobOperations.CopyNodeFileContentToStreamAsync(System.String,System.String,System.String,System.IO.Stream,Microsoft.Azure.Batch.GetFileRequestByteRange,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)">CopyNodeFileContentToStreamAsync(String, String, String, Stream, GetFileRequestByteRange, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Copies the contents of a file from the specified task's directory on its compute node to the given <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -438,37 +577,44 @@ public System.Threading.Tasks.Task AddTaskAsync (string jobId, System.Collection
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job containing the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The id of the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">filePath</span></td>
-        <td></td>
+        <td><p>The path of the file to retrieve.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
         <td><span class="parametername">stream</span></td>
-        <td></td>
+        <td><p>The stream to copy the file contents to.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.GetFileRequestByteRange.html">GetFileRequestByteRange</a></td>
         <td><span class="parametername">byteRange</span></td>
-        <td></td>
+        <td><p>A byte range defining what section of the file to copy. If omitted, the entire file is downloaded.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -487,11 +633,15 @@ public System.Threading.Tasks.Task AddTaskAsync (string jobId, System.Collection
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_CopyNodeFileContentToStreamAsync_System_String_System_String_System_String_System_IO_Stream_Microsoft_Azure_Batch_GetFileRequestByteRange_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The get file operation runs asynchronously.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_CopyNodeFileContentToString_" data-uid="Microsoft.Azure.Batch.JobOperations.CopyNodeFileContentToString*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_CopyNodeFileContentToString_System_String_System_String_System_String_System_Text_Encoding_Microsoft_Azure_Batch_GetFileRequestByteRange_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.JobOperations.CopyNodeFileContentToString(System.String,System.String,System.String,System.Text.Encoding,Microsoft.Azure.Batch.GetFileRequestByteRange,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">CopyNodeFileContentToString(String, String, String, Encoding, GetFileRequestByteRange, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reads the contents of a file from the specified task's directory on its compute node into a string.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -510,32 +660,38 @@ public System.Threading.Tasks.Task AddTaskAsync (string jobId, System.Collection
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job containing the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The id of the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">filePath</span></td>
-        <td></td>
+        <td><p>The path of the file to retrieve.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></td>
         <td><span class="parametername">encoding</span></td>
-        <td></td>
+        <td><p>The encoding to use. If no value or null is specified, UTF8 is used.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.GetFileRequestByteRange.html">GetFileRequestByteRange</a></td>
         <td><span class="parametername">byteRange</span></td>
-        <td></td>
+        <td><p>A byte range defining what section of the file to copy. If omitted, the entire file is downloaded.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -550,7 +706,8 @@ public System.Threading.Tasks.Task AddTaskAsync (string jobId, System.Collection
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
+        <td><p>The contents of the file, as a string</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -558,7 +715,8 @@ public System.Threading.Tasks.Task AddTaskAsync (string jobId, System.Collection
   
   <a id="Microsoft_Azure_Batch_JobOperations_CopyNodeFileContentToStringAsync_" data-uid="Microsoft.Azure.Batch.JobOperations.CopyNodeFileContentToStringAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_CopyNodeFileContentToStringAsync_System_String_System_String_System_String_System_Text_Encoding_Microsoft_Azure_Batch_GetFileRequestByteRange_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.JobOperations.CopyNodeFileContentToStringAsync(System.String,System.String,System.String,System.Text.Encoding,Microsoft.Azure.Batch.GetFileRequestByteRange,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)">CopyNodeFileContentToStringAsync(String, String, String, Encoding, GetFileRequestByteRange, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reads the contents of a file from the specified task's directory on its compute node into a string.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -577,37 +735,44 @@ public System.Threading.Tasks.Task AddTaskAsync (string jobId, System.Collection
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job containing the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The id of the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">filePath</span></td>
-        <td></td>
+        <td><p>The path of the file to retrieve.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></td>
         <td><span class="parametername">encoding</span></td>
-        <td></td>
+        <td><p>The encoding to use. If no value or null is specified, UTF8 is used.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.GetFileRequestByteRange.html">GetFileRequestByteRange</a></td>
         <td><span class="parametername">byteRange</span></td>
-        <td></td>
+        <td><p>A byte range defining what section of the file to copy. If omitted, the entire file is downloaded.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -622,7 +787,8 @@ public System.Threading.Tasks.Task AddTaskAsync (string jobId, System.Collection
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
-        <td></td>
+        <td><p>The contents of the file, as a string</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -630,7 +796,8 @@ public System.Threading.Tasks.Task AddTaskAsync (string jobId, System.Collection
   
   <a id="Microsoft_Azure_Batch_JobOperations_CreateJob_" data-uid="Microsoft.Azure.Batch.JobOperations.CreateJob*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_CreateJob_System_String_Microsoft_Azure_Batch_PoolInformation_" data-uid="Microsoft.Azure.Batch.JobOperations.CreateJob(System.String,Microsoft.Azure.Batch.PoolInformation)">CreateJob(String, PoolInformation)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates an instance of CloudJob that is unbound and does not have a consistency relationship to any job in the Batch Service.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -649,12 +816,14 @@ public System.Threading.Tasks.Task AddTaskAsync (string jobId, System.Collection
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The Id of the job.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.PoolInformation.html">PoolInformation</a></td>
         <td><span class="parametername">poolInformation</span></td>
-        <td></td>
+        <td><p>The information about the pool the job will run on.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -669,7 +838,8 @@ public System.Threading.Tasks.Task AddTaskAsync (string jobId, System.Collection
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.CloudJob.html">CloudJob</a></td>
-        <td></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.CloudJob.html">CloudJob</a> representing a new job that has not been submitted to the Batch service.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -677,7 +847,8 @@ public System.Threading.Tasks.Task AddTaskAsync (string jobId, System.Collection
   
   <a id="Microsoft_Azure_Batch_JobOperations_CreateJob_" data-uid="Microsoft.Azure.Batch.JobOperations.CreateJob*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_CreateJob" data-uid="Microsoft.Azure.Batch.JobOperations.CreateJob">CreateJob()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates an instance of CloudJob that is unbound and does not have a consistency relationship to any job in the Batch Service.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -694,7 +865,8 @@ public System.Threading.Tasks.Task AddTaskAsync (string jobId, System.Collection
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.CloudJob.html">CloudJob</a></td>
-        <td></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.CloudJob.html">CloudJob</a> representing a new job that has not been submitted to the Batch service.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -702,7 +874,8 @@ public System.Threading.Tasks.Task AddTaskAsync (string jobId, System.Collection
   
   <a id="Microsoft_Azure_Batch_JobOperations_DeleteJob_" data-uid="Microsoft.Azure.Batch.JobOperations.DeleteJob*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_DeleteJob_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.JobOperations.DeleteJob(System.String,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">DeleteJob(String, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deletes the specified job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -721,20 +894,28 @@ public System.Threading.Tasks.Task AddTaskAsync (string jobId, System.Collection
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_DeleteJob_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The delete operation requests that the job be deleted.  The request puts the job in the <a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.JobState.html#Microsoft_Azure_Batch_Common_JobState_Deleting">Deleting</a> state.
+  The Batch service will stop any running tasks and perform the actual job deletion without any further client action.</p>
+<p>This is a blocking operation. For a non-blocking equivalent, see <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_DeleteJobAsync_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_">DeleteJobAsync(String, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</a>.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_DeleteJobAsync_" data-uid="Microsoft.Azure.Batch.JobOperations.DeleteJobAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_DeleteJobAsync_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.JobOperations.DeleteJobAsync(System.String,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)">DeleteJobAsync(String, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deletes the specified job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -754,17 +935,20 @@ public System.Threading.Tasks.Task DeleteJobAsync (string jobId, System.Collecti
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -779,15 +963,22 @@ public System.Threading.Tasks.Task DeleteJobAsync (string jobId, System.Collecti
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> that represents the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_DeleteJobAsync_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The delete operation requests that the job be deleted.  The request puts the job in the <a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.JobState.html#Microsoft_Azure_Batch_Common_JobState_Deleting">Deleting</a> state.
+  The Batch service will stop any running tasks and perform the actual job deletion without any further client action.</p>
+<p>The delete operation runs asynchronously.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_DeleteNodeFile_" data-uid="Microsoft.Azure.Batch.JobOperations.DeleteNodeFile*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_DeleteNodeFile_System_String_System_String_System_String_System_Nullable_System_Boolean__System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.JobOperations.DeleteNodeFile(System.String,System.String,System.String,System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">DeleteNodeFile(String, String, String, Nullable&lt;Boolean&gt;, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deletes the specified file from the task's directory on its compute node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -806,35 +997,46 @@ public System.Threading.Tasks.Task DeleteJobAsync (string jobId, System.Collecti
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job containing the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The id of the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">filePath</span></td>
-        <td></td>
+        <td><p>The path of the file to delete.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><span class="parametername">recursive</span></td>
-        <td></td>
+        <td><p>If the file-path parameter represents a directory instead of a file, you can set the optional
+recursive parameter to true to delete the directory and all of the files and subdirectories in it. If recursive is false
+then the directory must be empty or deletion will fail.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_DeleteNodeFile_System_String_System_String_System_String_System_Nullable_System_Boolean__System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is a blocking operation.  For a non-blocking equivalent, see <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_DeleteNodeFileAsync_System_String_System_String_System_String_System_Nullable_System_Boolean__System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_">DeleteNodeFileAsync(String, String, String, Nullable&lt;Boolean&gt;, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</a>.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_DeleteNodeFileAsync_" data-uid="Microsoft.Azure.Batch.JobOperations.DeleteNodeFileAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_DeleteNodeFileAsync_System_String_System_String_System_String_System_Nullable_System_Boolean__System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.JobOperations.DeleteNodeFileAsync(System.String,System.String,System.String,System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)">DeleteNodeFileAsync(String, String, String, Nullable&lt;Boolean&gt;, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deletes the specified file from the task's directory on its compute node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -854,32 +1056,40 @@ public System.Threading.Tasks.Task DeleteNodeFileAsync (string jobId, string tas
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job containing the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The id of the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">filePath</span></td>
-        <td></td>
+        <td><p>The path of the file to delete.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><span class="parametername">recursive</span></td>
-        <td></td>
+        <td><p>If the file-path parameter represents a directory instead of a file, you can set the optional
+recursive parameter to true to delete the directory and all of the files and subdirectories in it. If recursive is false
+then the directory must be empty or deletion will fail.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -894,15 +1104,20 @@ public System.Threading.Tasks.Task DeleteNodeFileAsync (string jobId, string tas
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> that represents the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_DeleteNodeFileAsync_System_String_System_String_System_String_System_Nullable_System_Boolean__System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The delete operation runs asynchronously.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_DeleteTask_" data-uid="Microsoft.Azure.Batch.JobOperations.DeleteTask*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_DeleteTask_System_String_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.JobOperations.DeleteTask(System.String,System.String,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">DeleteTask(String, String, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deletes the specified task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -921,25 +1136,32 @@ public System.Threading.Tasks.Task DeleteNodeFileAsync (string jobId, string tas
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job containing the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The id of the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_DeleteTask_System_String_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is a blocking operation.  For a non-blocking equivalent, see <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_DeleteTaskAsync_System_String_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_">DeleteTaskAsync(String, String, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</a>.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_DeleteTaskAsync_" data-uid="Microsoft.Azure.Batch.JobOperations.DeleteTaskAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_DeleteTaskAsync_System_String_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.JobOperations.DeleteTaskAsync(System.String,System.String,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)">DeleteTaskAsync(String, String, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deletes the specified task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -958,22 +1180,26 @@ public System.Threading.Tasks.Task DeleteNodeFileAsync (string jobId, string tas
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job containing the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The id of the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -988,15 +1214,20 @@ public System.Threading.Tasks.Task DeleteNodeFileAsync (string jobId, string tas
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> that represents the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_DeleteTaskAsync_System_String_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The delete operation runs asynchronously.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_DisableJob_" data-uid="Microsoft.Azure.Batch.JobOperations.DisableJob*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_DisableJob_System_String_Microsoft_Azure_Batch_Common_DisableJobOption_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.JobOperations.DisableJob(System.String,Microsoft.Azure.Batch.Common.DisableJobOption,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">DisableJob(String, DisableJobOption, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Disables the specified job.  Disabled jobs do not run new tasks, but may be re-enabled later.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1015,25 +1246,32 @@ public System.Threading.Tasks.Task DeleteNodeFileAsync (string jobId, string tas
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.DisableJobOption.html">DisableJobOption</a></td>
         <td><span class="parametername">disableJobOption</span></td>
-        <td></td>
+        <td><p>Specifies what to do with active tasks associated with the job.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_DisableJob_System_String_Microsoft_Azure_Batch_Common_DisableJobOption_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is a blocking operation. For a non-blocking equivalent, see <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_DisableJobAsync_System_String_Microsoft_Azure_Batch_Common_DisableJobOption_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_">DisableJobAsync(String, DisableJobOption, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</a>.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_DisableJobAsync_" data-uid="Microsoft.Azure.Batch.JobOperations.DisableJobAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_DisableJobAsync_System_String_Microsoft_Azure_Batch_Common_DisableJobOption_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.JobOperations.DisableJobAsync(System.String,Microsoft.Azure.Batch.Common.DisableJobOption,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)">DisableJobAsync(String, DisableJobOption, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Disables the specified job.  Disabled jobs do not run new tasks, but may be re-enabled later.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1053,22 +1291,26 @@ public System.Threading.Tasks.Task DisableJobAsync (string jobId, Microsoft.Azur
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.DisableJobOption.html">DisableJobOption</a></td>
         <td><span class="parametername">disableJobOption</span></td>
-        <td></td>
+        <td><p>Specifies what to do with active tasks associated with the job.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1083,15 +1325,20 @@ public System.Threading.Tasks.Task DisableJobAsync (string jobId, Microsoft.Azur
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> that represents the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_DisableJobAsync_System_String_Microsoft_Azure_Batch_Common_DisableJobOption_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The disable operation runs asynchronously.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_EnableJob_" data-uid="Microsoft.Azure.Batch.JobOperations.EnableJob*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_EnableJob_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.JobOperations.EnableJob(System.String,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">EnableJob(String, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Enables the specified job, allowing new tasks to run.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1110,20 +1357,26 @@ public System.Threading.Tasks.Task DisableJobAsync (string jobId, Microsoft.Azur
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_EnableJob_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is a blocking operation. For a non-blocking equivalent, see <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_EnableJobAsync_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_">EnableJobAsync(String, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</a>.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_EnableJobAsync_" data-uid="Microsoft.Azure.Batch.JobOperations.EnableJobAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_EnableJobAsync_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.JobOperations.EnableJobAsync(System.String,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)">EnableJobAsync(String, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Enables the specified job, allowing new tasks to run.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1143,17 +1396,20 @@ public System.Threading.Tasks.Task EnableJobAsync (string jobId, System.Collecti
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1168,15 +1424,22 @@ public System.Threading.Tasks.Task EnableJobAsync (string jobId, System.Collecti
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> that represents the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_EnableJobAsync_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The enable operation runs asynchronously.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_GetAllLifetimeStatistics_" data-uid="Microsoft.Azure.Batch.JobOperations.GetAllLifetimeStatistics*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_GetAllLifetimeStatistics_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.JobOperations.GetAllLifetimeStatistics(System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">GetAllLifetimeStatistics(IEnumerable&lt;BatchClientBehavior&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets lifetime summary statistics for all of the jobs in the current account.<br>
+Statistics are aggregated across all jobs that have ever existed in the account, from account creation to the last update time of the statistics. The statistics may not be immediately available. The
+Batch service performs periodic roll-up of statistics. The typical delay is about 30 minutes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1195,7 +1458,8 @@ public System.Threading.Tasks.Task EnableJobAsync (string jobId, System.Collecti
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1210,15 +1474,22 @@ public System.Threading.Tasks.Task EnableJobAsync (string jobId, System.Collecti
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.JobStatistics.html">JobStatistics</a></td>
-        <td></td>
+        <td><p>The aggregated job statistics.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_GetAllLifetimeStatistics_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is a blocking operation; for a non-blocking equivalent, see <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_GetAllLifetimeStatisticsAsync_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_">GetAllLifetimeStatisticsAsync(IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</a>.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_GetAllLifetimeStatisticsAsync_" data-uid="Microsoft.Azure.Batch.JobOperations.GetAllLifetimeStatisticsAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_GetAllLifetimeStatisticsAsync_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.JobOperations.GetAllLifetimeStatisticsAsync(System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)">GetAllLifetimeStatisticsAsync(IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets lifetime summary statistics for all of the jobs in the current account.
+Statistics are aggregated across all jobs that have ever existed in the account, from account creation to the last update time of the statistics. The statistics may not be immediately available. The
+Batch service performs periodic roll-up of statistics. The typical delay is about 30 minutes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1238,12 +1509,14 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.JobStatistics&gt; Ge
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1258,15 +1531,20 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.JobStatistics&gt; Ge
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.JobStatistics.html">JobStatistics</a>&gt;</td>
-        <td></td>
+        <td><p>The aggregated job statistics.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_GetAllLifetimeStatisticsAsync_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The get statistics operation runs asynchronously.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_GetJob_" data-uid="Microsoft.Azure.Batch.JobOperations.GetJob*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_GetJob_System_String_Microsoft_Azure_Batch_DetailLevel_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.JobOperations.GetJob(System.String,Microsoft.Azure.Batch.DetailLevel,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">GetJob(String, DetailLevel, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the specified <a class="xref" href="Microsoft.Azure.Batch.CloudJob.html">CloudJob</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1285,17 +1563,20 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.JobStatistics&gt; Ge
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job to get.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.DetailLevel.html">DetailLevel</a></td>
         <td><span class="parametername">detailLevel</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.DetailLevel.html">DetailLevel</a> used for controlling which properties are retrieved from the service.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a> and <code data-dev-comment-type="paramref">detailLevel</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1310,15 +1591,20 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.JobStatistics&gt; Ge
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.CloudJob.html">CloudJob</a></td>
-        <td></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.CloudJob.html">CloudJob</a> containing information about the specified Azure Batch job.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_GetJob_System_String_Microsoft_Azure_Batch_DetailLevel_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is a blocking operation. For a non-blocking equivalent, see <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_GetJobAsync_System_String_Microsoft_Azure_Batch_DetailLevel_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_">GetJobAsync(String, DetailLevel, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</a>.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_GetJobAsync_" data-uid="Microsoft.Azure.Batch.JobOperations.GetJobAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_GetJobAsync_System_String_Microsoft_Azure_Batch_DetailLevel_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.JobOperations.GetJobAsync(System.String,Microsoft.Azure.Batch.DetailLevel,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)">GetJobAsync(String, DetailLevel, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the specified <a class="xref" href="Microsoft.Azure.Batch.CloudJob.html">CloudJob</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1338,22 +1624,26 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.CloudJob&gt; GetJobA
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job to get.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.DetailLevel.html">DetailLevel</a></td>
         <td><span class="parametername">detailLevel</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.DetailLevel.html">DetailLevel</a> used for controlling which properties are retrieved from the service.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a> and <code data-dev-comment-type="paramref">detailLevel</code>.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1368,15 +1658,20 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.CloudJob&gt; GetJobA
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.CloudJob.html">CloudJob</a>&gt;</td>
-        <td></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.CloudJob.html">CloudJob</a> containing information about the specified Azure Batch job.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_GetJobAsync_System_String_Microsoft_Azure_Batch_DetailLevel_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The get job operation runs asynchronously.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_GetJobTaskCounts_" data-uid="Microsoft.Azure.Batch.JobOperations.GetJobTaskCounts*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_GetJobTaskCounts_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.JobOperations.GetJobTaskCounts(System.String,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">GetJobTaskCounts(String, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the task counts for the specified job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1395,12 +1690,14 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.CloudJob&gt; GetJobA
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1415,15 +1712,20 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.CloudJob&gt; GetJobA
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.TaskCounts.html">TaskCounts</a></td>
-        <td></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.TaskCounts.html">TaskCounts</a> object containing the task counts for the job.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_GetJobTaskCounts_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is a blocking operation. For a non-blocking equivalent, see <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_GetJobTaskCountsAsync_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_">GetJobTaskCountsAsync(String, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</a>.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_GetJobTaskCountsAsync_" data-uid="Microsoft.Azure.Batch.JobOperations.GetJobTaskCountsAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_GetJobTaskCountsAsync_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.JobOperations.GetJobTaskCountsAsync(System.String,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)">GetJobTaskCountsAsync(String, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the task counts for the specified job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1443,17 +1745,20 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.TaskCounts&gt; GetJo
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1468,15 +1773,20 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.TaskCounts&gt; GetJo
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.TaskCounts.html">TaskCounts</a>&gt;</td>
-        <td></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.TaskCounts.html">TaskCounts</a> object containing the task counts for the job.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_GetJobTaskCountsAsync_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The get job task counts operation runs asynchronously.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_GetNodeFile_" data-uid="Microsoft.Azure.Batch.JobOperations.GetNodeFile*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_GetNodeFile_System_String_System_String_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.JobOperations.GetNodeFile(System.String,System.String,System.String,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">GetNodeFile(String, String, String, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the specified <a class="xref" href="Microsoft.Azure.Batch.NodeFile.html">NodeFile</a> from the specified task's directory on its compute node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1495,22 +1805,26 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.TaskCounts&gt; GetJo
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job containing the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The id of the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">filePath</span></td>
-        <td></td>
+        <td><p>The path of the file to retrieve.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1525,15 +1839,20 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.TaskCounts&gt; GetJo
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.NodeFile.html">NodeFile</a></td>
-        <td></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.NodeFile.html">NodeFile</a> representing the specified file.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_GetNodeFile_System_String_System_String_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is a blocking operation.  For a non-blocking equivalent, see <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_GetNodeFileAsync_System_String_System_String_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_">GetNodeFileAsync(String, String, String, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</a>.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_GetNodeFileAsync_" data-uid="Microsoft.Azure.Batch.JobOperations.GetNodeFileAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_GetNodeFileAsync_System_String_System_String_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.JobOperations.GetNodeFileAsync(System.String,System.String,System.String,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)">GetNodeFileAsync(String, String, String, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the specified <a class="xref" href="Microsoft.Azure.Batch.NodeFile.html">NodeFile</a> from the specified task's directory on its compute node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1552,27 +1871,32 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.TaskCounts&gt; GetJo
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job containing the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The id of the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">filePath</span></td>
-        <td></td>
+        <td><p>The path of the file to retrieve.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1587,15 +1911,20 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.TaskCounts&gt; GetJo
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.NodeFile.html">NodeFile</a>&gt;</td>
-        <td></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.NodeFile.html">NodeFile</a> representing the specified file.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_GetNodeFileAsync_System_String_System_String_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The get file operation runs asynchronously.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_GetTask_" data-uid="Microsoft.Azure.Batch.JobOperations.GetTask*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_GetTask_System_String_System_String_Microsoft_Azure_Batch_DetailLevel_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.JobOperations.GetTask(System.String,System.String,Microsoft.Azure.Batch.DetailLevel,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">GetTask(String, String, DetailLevel, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the specified <a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1614,22 +1943,26 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.TaskCounts&gt; GetJo
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job from which to get the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The id of the task to get.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.DetailLevel.html">DetailLevel</a></td>
         <td><span class="parametername">detailLevel</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.DetailLevel.html">DetailLevel</a> used for controlling which properties are retrieved from the service.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a> and <code data-dev-comment-type="paramref">detailLevel</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1644,15 +1977,20 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.TaskCounts&gt; GetJo
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a></td>
-        <td></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a> containing information about the specified Azure Batch task.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_GetTask_System_String_System_String_Microsoft_Azure_Batch_DetailLevel_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is a blocking operation. For a non-blocking equivalent, see <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_GetTaskAsync_System_String_System_String_Microsoft_Azure_Batch_DetailLevel_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_">GetTaskAsync(String, String, DetailLevel, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</a>.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_GetTaskAsync_" data-uid="Microsoft.Azure.Batch.JobOperations.GetTaskAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_GetTaskAsync_System_String_System_String_Microsoft_Azure_Batch_DetailLevel_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.JobOperations.GetTaskAsync(System.String,System.String,Microsoft.Azure.Batch.DetailLevel,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)">GetTaskAsync(String, String, DetailLevel, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the specified <a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1671,27 +2009,32 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.TaskCounts&gt; GetJo
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job from which to get the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The id of the task to get.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.DetailLevel.html">DetailLevel</a></td>
         <td><span class="parametername">detailLevel</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.DetailLevel.html">DetailLevel</a> used for controlling which properties are retrieved from the service.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a> and <code data-dev-comment-type="paramref">detailLevel</code>.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1706,15 +2049,20 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.TaskCounts&gt; GetJo
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a>&gt;</td>
-        <td></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a> containing information about the specified Azure Batch task.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_GetTaskAsync_System_String_System_String_Microsoft_Azure_Batch_DetailLevel_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The get task operation runs asynchronously.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_ListJobPreparationAndReleaseTaskStatus_" data-uid="Microsoft.Azure.Batch.JobOperations.ListJobPreparationAndReleaseTaskStatus*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_ListJobPreparationAndReleaseTaskStatus_System_String_Microsoft_Azure_Batch_DetailLevel_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.JobOperations.ListJobPreparationAndReleaseTaskStatus(System.String,Microsoft.Azure.Batch.DetailLevel,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">ListJobPreparationAndReleaseTaskStatus(String, DetailLevel, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Enumerates the status of <a class="xref" href="Microsoft.Azure.Batch.CloudJob.html#Microsoft_Azure_Batch_CloudJob_JobPreparationTask">JobPreparationTask</a> and <a class="xref" href="Microsoft.Azure.Batch.CloudJob.html#Microsoft_Azure_Batch_CloudJob_JobReleaseTask">JobReleaseTask</a> tasks for the specified job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1733,17 +2081,20 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.TaskCounts&gt; GetJo
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.DetailLevel.html">DetailLevel</a></td>
         <td><span class="parametername">detailLevel</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.DetailLevel.html">DetailLevel</a> used for filtering the list and for controlling which properties are retrieved from the service.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a> and <code data-dev-comment-type="paramref">detailLevel</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1758,15 +2109,22 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.TaskCounts&gt; GetJo
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.IPagedEnumerable-1.html">IPagedEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.JobPreparationAndReleaseTaskExecutionInformation.html">JobPreparationAndReleaseTaskExecutionInformation</a>&gt;</td>
-        <td></td>
+        <td><p>An <a class="xref" href="Microsoft.Azure.Batch.IPagedEnumerable-1.html">IPagedEnumerable&lt;T&gt;</a> that can be used to enumerate statuses asynchronously or synchronously.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_ListJobPreparationAndReleaseTaskStatus_System_String_Microsoft_Azure_Batch_DetailLevel_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method returns immediately; the statuses are retrieved from the Batch service only when the collection is enumerated.</p>
+<pre><code>        Retrieval is non-atomic; statuses are retrieved in pages during enumeration of the collection.
+</code></pre>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_ListJobs_" data-uid="Microsoft.Azure.Batch.JobOperations.ListJobs*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_ListJobs_Microsoft_Azure_Batch_DetailLevel_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.JobOperations.ListJobs(Microsoft.Azure.Batch.DetailLevel,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">ListJobs(DetailLevel, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Enumerates the <a class="xref" href="Microsoft.Azure.Batch.CloudJob.html">CloudJob</a> in the Batch account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1785,12 +2143,14 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.TaskCounts&gt; GetJo
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.DetailLevel.html">DetailLevel</a></td>
         <td><span class="parametername">detailLevel</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.DetailLevel.html">DetailLevel</a> used for filtering the list and for controlling which properties are retrieved from the service.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a> and <code data-dev-comment-type="paramref">detailLevel</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1805,15 +2165,22 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.TaskCounts&gt; GetJo
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.IPagedEnumerable-1.html">IPagedEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.CloudJob.html">CloudJob</a>&gt;</td>
-        <td></td>
+        <td><p>An <a class="xref" href="Microsoft.Azure.Batch.IPagedEnumerable-1.html">IPagedEnumerable&lt;T&gt;</a> that can be used to enumerate jobs asynchronously or synchronously.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_ListJobs_Microsoft_Azure_Batch_DetailLevel_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method returns immediately; the jobs are retrieved from the Batch service only when the collection is enumerated.</p>
+<pre><code>        Retrieval is non-atomic; jobs are retrieved in pages during enumeration of the collection.
+</code></pre>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_ListNodeFiles_" data-uid="Microsoft.Azure.Batch.JobOperations.ListNodeFiles*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_ListNodeFiles_System_String_System_String_System_Nullable_System_Boolean__Microsoft_Azure_Batch_DetailLevel_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.JobOperations.ListNodeFiles(System.String,System.String,System.Nullable{System.Boolean},Microsoft.Azure.Batch.DetailLevel,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">ListNodeFiles(String, String, Nullable&lt;Boolean&gt;, DetailLevel, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Enumerates the <a class="xref" href="Microsoft.Azure.Batch.NodeFile.html">NodeFile</a> in the specified task's directory on its compute node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1832,27 +2199,32 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.TaskCounts&gt; GetJo
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The id of the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><span class="parametername">recursive</span></td>
-        <td></td>
+        <td><p>If true, performs a recursive list of all files of the task. If false, returns only the files in the root task directory.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.DetailLevel.html">DetailLevel</a></td>
         <td><span class="parametername">detailLevel</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.DetailLevel.html">DetailLevel</a> used for filtering the list and for controlling which properties are retrieved from the service.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a> and <code data-dev-comment-type="paramref">detailLevel</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1867,15 +2239,22 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.TaskCounts&gt; GetJo
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.IPagedEnumerable-1.html">IPagedEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.NodeFile.html">NodeFile</a>&gt;</td>
-        <td></td>
+        <td><p>An <a class="xref" href="Microsoft.Azure.Batch.IPagedEnumerable-1.html">IPagedEnumerable&lt;T&gt;</a> that can be used to enumerate files asynchronously or synchronously.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_ListNodeFiles_System_String_System_String_System_Nullable_System_Boolean__Microsoft_Azure_Batch_DetailLevel_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method returns immediately; the file data is retrieved from the Batch service only when the collection is enumerated.</p>
+<pre><code>        Retrieval is non-atomic; file data is retrieved in pages during enumeration of the collection.
+</code></pre>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_ListSubtasks_" data-uid="Microsoft.Azure.Batch.JobOperations.ListSubtasks*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_ListSubtasks_System_String_System_String_Microsoft_Azure_Batch_DetailLevel_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.JobOperations.ListSubtasks(System.String,System.String,Microsoft.Azure.Batch.DetailLevel,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">ListSubtasks(String, String, DetailLevel, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Enumerates the <a class="xref" href="Microsoft.Azure.Batch.SubtaskInformation.html">SubtaskInformation</a> of the specified task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1894,22 +2273,26 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.TaskCounts&gt; GetJo
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The id of the task to get.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.DetailLevel.html">DetailLevel</a></td>
         <td><span class="parametername">detailLevel</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.DetailLevel.html">DetailLevel</a> used for filtering the list and for controlling which properties are retrieved from the service.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a> and <code data-dev-comment-type="paramref">detailLevel</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1924,15 +2307,22 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.TaskCounts&gt; GetJo
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.IPagedEnumerable-1.html">IPagedEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.SubtaskInformation.html">SubtaskInformation</a>&gt;</td>
-        <td></td>
+        <td><p>An <a class="xref" href="Microsoft.Azure.Batch.IPagedEnumerable-1.html">IPagedEnumerable&lt;T&gt;</a> that can be used to enumerate subtasks asynchronously or synchronously.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_ListSubtasks_System_String_System_String_Microsoft_Azure_Batch_DetailLevel_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method returns immediately; the tasks are retrieved from the Batch service only when the collection is enumerated.</p>
+<pre><code>        Retrieval is non-atomic; tasks are retrieved in pages during enumeration of the collection.
+</code></pre>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_ListTasks_" data-uid="Microsoft.Azure.Batch.JobOperations.ListTasks*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_ListTasks_System_String_Microsoft_Azure_Batch_DetailLevel_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.JobOperations.ListTasks(System.String,Microsoft.Azure.Batch.DetailLevel,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">ListTasks(String, DetailLevel, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Enumerates the <a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a> of the specified job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1951,17 +2341,20 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.TaskCounts&gt; GetJo
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.DetailLevel.html">DetailLevel</a></td>
         <td><span class="parametername">detailLevel</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.DetailLevel.html">DetailLevel</a> used for filtering the list and for controlling which properties are retrieved from the service.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a> and <code data-dev-comment-type="paramref">detailLevel</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1976,15 +2369,22 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.TaskCounts&gt; GetJo
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.IPagedEnumerable-1.html">IPagedEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a>&gt;</td>
-        <td></td>
+        <td><p>An <a class="xref" href="Microsoft.Azure.Batch.IPagedEnumerable-1.html">IPagedEnumerable&lt;T&gt;</a> that can be used to enumerate tasks asynchronously or synchronously.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_ListTasks_System_String_Microsoft_Azure_Batch_DetailLevel_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method returns immediately; the tasks are retrieved from the Batch service only when the collection is enumerated.</p>
+<pre><code>        Retrieval is non-atomic; tasks are retrieved in pages during enumeration of the collection.
+</code></pre>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_ReactivateTask_" data-uid="Microsoft.Azure.Batch.JobOperations.ReactivateTask*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_ReactivateTask_System_String_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.JobOperations.ReactivateTask(System.String,System.String,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">ReactivateTask(String, String, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reactivates a task, allowing it to run again even if its retry count has been exhausted.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -2003,25 +2403,41 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.TaskCounts&gt; GetJo
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job containing the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The id of the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_ReactivateTask_System_String_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+  Reactivation makes a task eligible to be retried again up to its maximum retry count.
+</p>
+<p>
+  This operation will fail for tasks that are not completed or that previously completed successfully (with an exit code of 0).
+</p>
+<p>
+  Additionally, this will fail if the job is in the <a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.JobState.html#Microsoft_Azure_Batch_Common_JobState_Completed">Completed</a> or <a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.JobState.html#Microsoft_Azure_Batch_Common_JobState_Terminating">Terminating</a> or <a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.JobState.html#Microsoft_Azure_Batch_Common_JobState_Deleting">Deleting</a> state.
+  This is a blocking operation. For a non-blocking equivalent, see <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_ReactivateTaskAsync_System_String_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_">ReactivateTaskAsync(String, String, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</a>.
+</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_ReactivateTaskAsync_" data-uid="Microsoft.Azure.Batch.JobOperations.ReactivateTaskAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_ReactivateTaskAsync_System_String_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.JobOperations.ReactivateTaskAsync(System.String,System.String,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)">ReactivateTaskAsync(String, String, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reactivates a task, allowing it to run again even if its retry count has been exhausted.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -2040,22 +2456,26 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.TaskCounts&gt; GetJo
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job containing the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The id of the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2070,15 +2490,29 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.TaskCounts&gt; GetJo
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> that represents the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_ReactivateTaskAsync_System_String_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+  Reactivation makes a task eligible to be retried again up to its maximum retry count.
+</p>
+<p>
+  Additionally, this will fail if the job is in the <a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.JobState.html#Microsoft_Azure_Batch_Common_JobState_Completed">Completed</a> or <a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.JobState.html#Microsoft_Azure_Batch_Common_JobState_Terminating">Terminating</a> or <a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.JobState.html#Microsoft_Azure_Batch_Common_JobState_Deleting">Deleting</a> state.
+  This is a blocking operation. For a non-blocking equivalent, see <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_ReactivateTaskAsync_System_String_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_">ReactivateTaskAsync(String, String, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</a>.
+</p>
+<p>
+  The reactivate operation runs asynchronously.
+</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_TerminateJob_" data-uid="Microsoft.Azure.Batch.JobOperations.TerminateJob*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_TerminateJob_System_String_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.JobOperations.TerminateJob(System.String,System.String,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">TerminateJob(String, String, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Terminates the specified job, marking it as completed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -2097,25 +2531,32 @@ public System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.TaskCounts&gt; GetJo
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">terminateReason</span></td>
-        <td></td>
+        <td><p>The text you want to appear as the job's <a class="xref" href="Microsoft.Azure.Batch.JobExecutionInformation.html#Microsoft_Azure_Batch_JobExecutionInformation_TerminateReason">TerminateReason</a>.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_TerminateJob_System_String_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is a blocking operation. For a non-blocking equivalent, see <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_TerminateJobAsync_System_String_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_">TerminateJobAsync(String, String, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</a>.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_TerminateJobAsync_" data-uid="Microsoft.Azure.Batch.JobOperations.TerminateJobAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_TerminateJobAsync_System_String_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.JobOperations.TerminateJobAsync(System.String,System.String,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)">TerminateJobAsync(String, String, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Terminates the specified job, marking it as completed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -2135,22 +2576,26 @@ public System.Threading.Tasks.Task TerminateJobAsync (string jobId, string termi
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">terminateReason</span></td>
-        <td></td>
+        <td><p>The text you want to appear as the job's <a class="xref" href="Microsoft.Azure.Batch.JobExecutionInformation.html#Microsoft_Azure_Batch_JobExecutionInformation_TerminateReason">TerminateReason</a>.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2165,15 +2610,20 @@ public System.Threading.Tasks.Task TerminateJobAsync (string jobId, string termi
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> object that represents the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_TerminateJobAsync_System_String_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The terminate operation runs asynchronously.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_TerminateTask_" data-uid="Microsoft.Azure.Batch.JobOperations.TerminateTask*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_TerminateTask_System_String_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.JobOperations.TerminateTask(System.String,System.String,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">TerminateTask(String, String, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Terminates the specified task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -2192,25 +2642,32 @@ public System.Threading.Tasks.Task TerminateJobAsync (string jobId, string termi
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job containing the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The id of the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_TerminateTask_System_String_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is a blocking operation.  For a non-blocking equivalent, see <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_TerminateTaskAsync_System_String_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_">TerminateTaskAsync(String, String, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</a>.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobOperations_TerminateTaskAsync_" data-uid="Microsoft.Azure.Batch.JobOperations.TerminateTaskAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_JobOperations_TerminateTaskAsync_System_String_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.JobOperations.TerminateTaskAsync(System.String,System.String,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)">TerminateTaskAsync(String, String, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Terminates the specified task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -2229,22 +2686,26 @@ public System.Threading.Tasks.Task TerminateJobAsync (string jobId, string termi
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The id of the job containing the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The id of the task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of <a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a> instances that are applied to the Batch service request after the <a class="xref" href="Microsoft.Azure.Batch.JobOperations.html#Microsoft_Azure_Batch_JobOperations_CustomBehaviors">CustomBehaviors</a>.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2259,13 +2720,21 @@ public System.Threading.Tasks.Task TerminateJobAsync (string jobId, string termi
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> that represents the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobOperations_TerminateTaskAsync_System_String_System_String_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The terminate operation runs asynchronously.</p>
+</div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="Microsoft.Azure.Batch.IInheritedBehaviors.html">Microsoft.Azure.Batch.IInheritedBehaviors</a>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="Microsoft.Azure.Batch.CloudJob.html">CloudJob</a></div>
   </div>
 </article>
           </div>

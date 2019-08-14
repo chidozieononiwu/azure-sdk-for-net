@@ -83,7 +83,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_PoolEndpointConfiguration" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolEndpointConfiguration" class="text-break">Class PoolEndpointConfiguration
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The endpoint configuration for a Pool.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -102,7 +103,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_PoolEndpointConfiguration__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolEndpointConfiguration.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_PoolEndpointConfiguration__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolEndpointConfiguration.#ctor">PoolEndpointConfiguration()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the PoolEndpointConfiguration class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -112,7 +114,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_PoolEndpointConfiguration__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolEndpointConfiguration.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_PoolEndpointConfiguration__ctor_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_InboundNATPool__" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolEndpointConfiguration.#ctor(System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.InboundNATPool})">PoolEndpointConfiguration(IList&lt;InboundNATPool&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the PoolEndpointConfiguration class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -131,7 +134,10 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.InboundNATPool.html">InboundNATPool</a>&gt;</td>
         <td><span class="parametername">inboundNATPools</span></td>
-        <td></td>
+        <td><p>A list of inbound NAT Pools that can
+be used to address specific ports on an individual Compute Node
+externally.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -141,7 +147,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_PoolEndpointConfiguration_InboundNATPools_" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolEndpointConfiguration.InboundNATPools*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_PoolEndpointConfiguration_InboundNATPools" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolEndpointConfiguration.InboundNATPools">InboundNATPools</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a list of inbound NAT Pools that can be used to
+address specific ports on an individual Compute Node externally.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -163,6 +171,11 @@ public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_PoolEndpointConfiguration_InboundNATPools_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The maximum number of inbound NAT Pools per Batch Pool is 5. If the</p>
+<p>maximum number of inbound NAT Pools is exceeded the request fails</p>
+<p>with HTTP status code 400.</p>
+</div>
 </article>
           </div>
           

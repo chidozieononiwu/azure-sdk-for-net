@@ -83,7 +83,8 @@
   
   <h1 id="Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions" data-uid="Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions" class="text-break">Class AzureClientBuilderExtensions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Extension methods to add <a class="xref" href="../Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a> client to clients builder</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -100,13 +101,14 @@
   </h3>
   
   
-  <a id="Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddConfigurationClient_" data-uid="Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.AddConfigurationClient*"></a>
-  <h4 id="Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddConfigurationClient__2___0___1_" data-uid="Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.AddConfigurationClient``2(``0,``1)">AddConfigurationClient&lt;TBuilder,TConfiguration&gt;(TBuilder, TConfiguration)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient_" data-uid="Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.AddEventHubClient*"></a>
+  <h4 id="Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_" data-uid="Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.AddEventHubClient``2(``0,``1)">AddEventHubClient&lt;TBuilder,TConfiguration&gt;(TBuilder, TConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Registers a <a class="xref" href="../Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a> instance with connection options loaded from the provided <code data-dev-comment-type="paramref">configuration</code> instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Azure.Core.Extensions.IAzureClientBuilder&lt;Azure.ApplicationModel.Configuration.ConfigurationClient,Azure.ApplicationModel.Configuration.ConfigurationClientOptions&gt; AddConfigurationClient&lt;TBuilder,TConfiguration&gt; (this TBuilder builder, TConfiguration configuration) where TBuilder : Azure.Core.Extensions.IAzureClientFactoryBuilderWithConfiguration&lt;TConfiguration&gt;;</code></pre>
+    <pre><code class="lang-csharp hljs">public static Azure.Core.Extensions.IAzureClientBuilder&lt;Azure.Messaging.EventHubs.EventHubClient,Azure.Messaging.EventHubs.EventHubClientOptions&gt; AddEventHubClient&lt;TBuilder,TConfiguration&gt; (this TBuilder builder, TConfiguration configuration) where TBuilder : Azure.Core.Extensions.IAzureClientFactoryBuilderWithConfiguration&lt;TConfiguration&gt;;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -140,7 +142,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="../Azure.Core.Extensions/Azure.Core.Extensions.IAzureClientBuilder-2.html">IAzureClientBuilder</a>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationClient.html">ConfigurationClient</a>,<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationClientOptions.html">ConfigurationClientOptions</a>&gt;</td>
+        <td><a class="xref" href="../Azure.Core.Extensions/Azure.Core.Extensions.IAzureClientBuilder-2.html">IAzureClientBuilder</a>&lt;<a class="xref" href="../Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a>,<a class="xref" href="../Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubClientOptions.html">EventHubClientOptions</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -166,13 +168,14 @@
   </table>
   
   
-  <a id="Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddConfigurationClient_" data-uid="Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.AddConfigurationClient*"></a>
-  <h4 id="Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddConfigurationClient__1___0_System_String_" data-uid="Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.AddConfigurationClient``1(``0,System.String)">AddConfigurationClient&lt;TBuilder&gt;(TBuilder, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient_" data-uid="Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.AddEventHubClient*"></a>
+  <h4 id="Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__1___0_System_String_" data-uid="Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.AddEventHubClient``1(``0,System.String)">AddEventHubClient&lt;TBuilder&gt;(TBuilder, String)</h4>
+  <div class="markdown level1 summary"><p>Registers a <a class="xref" href="../Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a> instance with the provided <code data-dev-comment-type="paramref">connectionString</code></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Azure.Core.Extensions.IAzureClientBuilder&lt;Azure.ApplicationModel.Configuration.ConfigurationClient,Azure.ApplicationModel.Configuration.ConfigurationClientOptions&gt; AddConfigurationClient&lt;TBuilder&gt; (this TBuilder builder, string connectionString) where TBuilder : Azure.Core.Extensions.IAzureClientFactoryBuilder;</code></pre>
+    <pre><code class="lang-csharp hljs">public static Azure.Core.Extensions.IAzureClientBuilder&lt;Azure.Messaging.EventHubs.EventHubClient,Azure.Messaging.EventHubs.EventHubClientOptions&gt; AddEventHubClient&lt;TBuilder&gt; (this TBuilder builder, string connectionString) where TBuilder : Azure.Core.Extensions.IAzureClientFactoryBuilder;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -206,7 +209,143 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="../Azure.Core.Extensions/Azure.Core.Extensions.IAzureClientBuilder-2.html">IAzureClientBuilder</a>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationClient.html">ConfigurationClient</a>,<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationClientOptions.html">ConfigurationClientOptions</a>&gt;</td>
+        <td><a class="xref" href="../Azure.Core.Extensions/Azure.Core.Extensions.IAzureClientBuilder-2.html">IAzureClientBuilder</a>&lt;<a class="xref" href="../Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a>,<a class="xref" href="../Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubClientOptions.html">EventHubClientOptions</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TBuilder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient_" data-uid="Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.AddEventHubClient*"></a>
+  <h4 id="Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__1___0_System_String_System_String_" data-uid="Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.AddEventHubClient``1(``0,System.String,System.String)">AddEventHubClient&lt;TBuilder&gt;(TBuilder, String, String)</h4>
+  <div class="markdown level1 summary"><p>Registers a <a class="xref" href="../Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a> instance with the provided <code data-dev-comment-type="paramref">connectionString</code> and <code data-dev-comment-type="paramref">eventHubName</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Azure.Core.Extensions.IAzureClientBuilder&lt;Azure.Messaging.EventHubs.EventHubClient,Azure.Messaging.EventHubs.EventHubClientOptions&gt; AddEventHubClient&lt;TBuilder&gt; (this TBuilder builder, string connectionString, string eventHubName) where TBuilder : Azure.Core.Extensions.IAzureClientFactoryBuilder;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td><span class="parametername">builder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">connectionString</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">eventHubName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure.Core.Extensions/Azure.Core.Extensions.IAzureClientBuilder-2.html">IAzureClientBuilder</a>&lt;<a class="xref" href="../Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a>,<a class="xref" href="../Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubClientOptions.html">EventHubClientOptions</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TBuilder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClientWithHost_" data-uid="Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.AddEventHubClientWithHost*"></a>
+  <h4 id="Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClientWithHost__1___0_System_String_System_String_" data-uid="Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.AddEventHubClientWithHost``1(``0,System.String,System.String)">AddEventHubClientWithHost&lt;TBuilder&gt;(TBuilder, String, String)</h4>
+  <div class="markdown level1 summary"><p>Registers a <a class="xref" href="../Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a> instance with the provided <code data-dev-comment-type="paramref">host</code> and <code data-dev-comment-type="paramref">eventHubName</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Azure.Core.Extensions.IAzureClientBuilder&lt;Azure.Messaging.EventHubs.EventHubClient,Azure.Messaging.EventHubs.EventHubClientOptions&gt; AddEventHubClientWithHost&lt;TBuilder&gt; (this TBuilder builder, string host, string eventHubName) where TBuilder : Azure.Core.Extensions.IAzureClientFactoryBuilderWithCredential;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td><span class="parametername">builder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">host</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">eventHubName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure.Core.Extensions/Azure.Core.Extensions.IAzureClientBuilder-2.html">IAzureClientBuilder</a>&lt;<a class="xref" href="../Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a>,<a class="xref" href="../Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubClientOptions.html">EventHubClientOptions</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

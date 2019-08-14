@@ -83,7 +83,9 @@
   
   <h1 id="Microsoft_Azure_Batch_AutoPoolSpecification" data-uid="Microsoft.Azure.Batch.AutoPoolSpecification" class="text-break">Class AutoPoolSpecification
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Specifies characteristics for a temporary 'auto pool'. The Batch service will create this auto pool, run all the
+tasks for the job on it, and by default delete the pool once the job has completed.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -102,7 +104,8 @@
   
   <a id="Microsoft_Azure_Batch_AutoPoolSpecification__ctor_" data-uid="Microsoft.Azure.Batch.AutoPoolSpecification.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_AutoPoolSpecification__ctor" data-uid="Microsoft.Azure.Batch.AutoPoolSpecification.#ctor">AutoPoolSpecification()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.AutoPoolSpecification.html">AutoPoolSpecification</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -114,7 +117,8 @@
   
   <a id="Microsoft_Azure_Batch_AutoPoolSpecification_AutoPoolIdPrefix_" data-uid="Microsoft.Azure.Batch.AutoPoolSpecification.AutoPoolIdPrefix*"></a>
   <h4 id="Microsoft_Azure_Batch_AutoPoolSpecification_AutoPoolIdPrefix" data-uid="Microsoft.Azure.Batch.AutoPoolSpecification.AutoPoolIdPrefix">AutoPoolIdPrefix</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a prefix to be added to the unique identifier when a pool is automatically created.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -135,11 +139,16 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_AutoPoolSpecification_AutoPoolIdPrefix_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The prefix is optional. If present, it can be up to 20 characters long and must adhere to the usual rules for</p>
+<p>ids (alphanumeric characters, hyphens and underscores only).</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_AutoPoolSpecification_KeepAlive_" data-uid="Microsoft.Azure.Batch.AutoPoolSpecification.KeepAlive*"></a>
   <h4 id="Microsoft_Azure_Batch_AutoPoolSpecification_KeepAlive" data-uid="Microsoft.Azure.Batch.AutoPoolSpecification.KeepAlive">KeepAlive</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets whether to keep the auto pool alive after its <a class="xref" href="Microsoft.Azure.Batch.AutoPoolSpecification.html#Microsoft_Azure_Batch_AutoPoolSpecification_PoolLifetimeOption">PoolLifetimeOption</a> expires.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -160,11 +169,16 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_AutoPoolSpecification_KeepAlive_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default value is false.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_AutoPoolSpecification_PoolLifetimeOption_" data-uid="Microsoft.Azure.Batch.AutoPoolSpecification.PoolLifetimeOption*"></a>
   <h4 id="Microsoft_Azure_Batch_AutoPoolSpecification_PoolLifetimeOption" data-uid="Microsoft.Azure.Batch.AutoPoolSpecification.PoolLifetimeOption">PoolLifetimeOption</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the minimum lifetime of created auto pools, and how multiple jobs on a schedule are assigned to
+pools.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -185,11 +199,15 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_AutoPoolSpecification_PoolLifetimeOption_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>An auto pool may live longer than its PoolLifetimeOption if <a class="xref" href="Microsoft.Azure.Batch.AutoPoolSpecification.html#Microsoft_Azure_Batch_AutoPoolSpecification_KeepAlive">KeepAlive</a> is set.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_AutoPoolSpecification_PoolSpecification_" data-uid="Microsoft.Azure.Batch.AutoPoolSpecification.PoolSpecification*"></a>
   <h4 id="Microsoft_Azure_Batch_AutoPoolSpecification_PoolSpecification" data-uid="Microsoft.Azure.Batch.AutoPoolSpecification.PoolSpecification">PoolSpecification</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the pool specification for the auto pool.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

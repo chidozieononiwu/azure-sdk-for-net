@@ -83,7 +83,8 @@
   
   <h1 id="Microsoft_Azure_Batch_JobNetworkConfiguration" data-uid="Microsoft.Azure.Batch.JobNetworkConfiguration" class="text-break">Class JobNetworkConfiguration
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The network configuration for a job.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -102,7 +103,8 @@
   
   <a id="Microsoft_Azure_Batch_JobNetworkConfiguration__ctor_" data-uid="Microsoft.Azure.Batch.JobNetworkConfiguration.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_JobNetworkConfiguration__ctor_System_String_" data-uid="Microsoft.Azure.Batch.JobNetworkConfiguration.#ctor(System.String)">JobNetworkConfiguration(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.JobNetworkConfiguration.html">JobNetworkConfiguration</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -121,7 +123,9 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">subnetId</span></td>
-        <td></td>
+        <td><p>The ARM resource identifier of the virtual network subnet which nodes running tasks from the job will join for
+the duration of the task.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -131,7 +135,9 @@
   
   <a id="Microsoft_Azure_Batch_JobNetworkConfiguration_SubnetId_" data-uid="Microsoft.Azure.Batch.JobNetworkConfiguration.SubnetId*"></a>
   <h4 id="Microsoft_Azure_Batch_JobNetworkConfiguration_SubnetId" data-uid="Microsoft.Azure.Batch.JobNetworkConfiguration.SubnetId">SubnetId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the ARM resource identifier of the virtual network subnet which nodes running tasks from the job will join
+for the duration of the task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -152,6 +158,25 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobNetworkConfiguration_SubnetId_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The specified subnet should have enough free IP addresses to accommodate the number of nodes which will 
+  run tasks from the job. This can be up to the number of nodes in the pool.</p>
+<p>This will only work on 
+  pools with the <a class="xref" href="Microsoft.Azure.Batch.CloudPool.html#Microsoft_Azure_Batch_CloudPool_VirtualMachineConfiguration">VirtualMachineConfiguration</a> property.</p>
+<p>This is of the form 
+  /subscriptions/{subscription}/resourceGroups/{group}/providers/{provider}/virtualNetworks/{network}/subnets/{subnet}.</p>
+<p>The 
+  virtual network must be in the same region and subscription as the Azure Batch account. The 'MicrosoftAzureBatch' 
+  service principal must have the 'Classic Virtual Machine Contributor' Role-Based Access Control (RBAC) role for 
+  the specified VNet. The specified subnet must allow communication from the Azure Batch service to be able to 
+  schedule tasks on the compute nodes. This can be verified by checking if the specified VNet has any associated 
+  Network Security Groups (NSG). If communication to the compute nodes in the specified subnet is denied by an 
+  NSG, then the Batch service will set the state of the compute nodes to unusable. Only ARM virtual networks ('Microsoft.Network/virtualNetworks') 
+  are supported. If the specified VNet has any associated Network Security Groups (NSG), then a few reserved system 
+  ports must be enabled for inbound communication - ports 29876 and 29877, as well as port 22 for Linux and port 
+  3389 for Windows. Also enable outbound connections to Azure Storage on port 443. For more details see: https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#virtual-network-vnet-and-firewall-configuration 
+</p>
+</div>
 </article>
           </div>
           

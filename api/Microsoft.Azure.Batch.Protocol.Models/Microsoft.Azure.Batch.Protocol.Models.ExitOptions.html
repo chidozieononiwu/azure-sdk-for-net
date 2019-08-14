@@ -83,7 +83,9 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_ExitOptions" data-uid="Microsoft.Azure.Batch.Protocol.Models.ExitOptions" class="text-break">Class ExitOptions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Specifies how the Batch service responds to a particular exit
+condition.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -102,7 +104,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ExitOptions__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ExitOptions.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ExitOptions__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.ExitOptions.#ctor">ExitOptions()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ExitOptions class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -112,7 +115,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ExitOptions__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ExitOptions.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ExitOptions__ctor_System_Nullable_Microsoft_Azure_Batch_Protocol_Models_JobAction__System_Nullable_Microsoft_Azure_Batch_Protocol_Models_DependencyAction__" data-uid="Microsoft.Azure.Batch.Protocol.Models.ExitOptions.#ctor(System.Nullable{Microsoft.Azure.Batch.Protocol.Models.JobAction},System.Nullable{Microsoft.Azure.Batch.Protocol.Models.DependencyAction})">ExitOptions(Nullable&lt;JobAction&gt;, Nullable&lt;DependencyAction&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ExitOptions class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -131,12 +135,18 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.JobAction.html">JobAction</a>&gt;</td>
         <td><span class="parametername">jobAction</span></td>
-        <td></td>
+        <td><p>An action to take on the Job containing the
+Task, if the Task completes with the given exit condition and the
+Job's onTaskFailed property is
+'performExitOptionsJobAction'.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.DependencyAction.html">DependencyAction</a>&gt;</td>
         <td><span class="parametername">dependencyAction</span></td>
-        <td></td>
+        <td><p>An action that the Batch service
+performs on Tasks that depend on this Task.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -146,7 +156,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ExitOptions_DependencyAction_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ExitOptions.DependencyAction*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ExitOptions_DependencyAction" data-uid="Microsoft.Azure.Batch.Protocol.Models.ExitOptions.DependencyAction">DependencyAction</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets an action that the Batch service performs on Tasks
+that depend on this Task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -168,11 +180,20 @@ public Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.DependencyAction&gt; De
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_ExitOptions_DependencyAction_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Possible values are 'satisfy' (allowing dependent tasks to</p>
+<p>progress) and 'block' (dependent tasks continue to wait). Batch</p>
+<p>does not yet support cancellation of dependent tasks. Possible</p>
+<p>values include: 'satisfy', 'block'</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ExitOptions_JobAction_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ExitOptions.JobAction*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ExitOptions_JobAction" data-uid="Microsoft.Azure.Batch.Protocol.Models.ExitOptions.JobAction">JobAction</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets an action to take on the Job containing the Task, if
+the Task completes with the given exit condition and the Job's
+onTaskFailed property is 'performExitOptionsJobAction'.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -194,6 +215,14 @@ public Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.JobAction&gt; JobAction
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_ExitOptions_JobAction_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default is none for exit code 0 and terminate for all other</p>
+<p>exit conditions. If the Job's onTaskFailed property is noaction,</p>
+<p>then specifying this property returns an error and the add Task</p>
+<p>request fails with an invalid property value error; if you are</p>
+<p>calling the REST API directly, the HTTP status code is 400 (Bad</p>
+<p>Request). Possible values include: 'none', 'disable', 'terminate'</p>
+</div>
 </article>
           </div>
           

@@ -83,7 +83,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Common_AllocationState" data-uid="Microsoft.Azure.Batch.Common.AllocationState" class="text-break">Enum AllocationState
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Indicates whether a pool is resizing.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Common.html">Microsoft.Azure.Batch.Common</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
@@ -103,15 +104,21 @@
     <tbody>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_AllocationState_Resizing">Resizing</td>
-        <td></td>
+        <td><p>The pool is resizing; that is, compute nodes are being added to or
+removed from the pool.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_AllocationState_Steady">Steady</td>
-        <td></td>
+        <td><p>The pool is not resizing. There are no changes to the number of
+nodes in the pool in progress.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Common_AllocationState_Stopping">Stopping</td>
-        <td></td>
+        <td><p>The pool was resizing, but the user has requested that the resize
+be stopped, but the stop request has not yet been completed.</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>

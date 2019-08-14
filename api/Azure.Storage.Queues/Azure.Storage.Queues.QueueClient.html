@@ -83,7 +83,8 @@
   
   <h1 id="Azure_Storage_Queues_QueueClient" data-uid="Azure.Storage.Queues.QueueClient" class="text-break">Class QueueClient
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>A QueueClient represents a URI to the Azure Storage Queue service allowing you to manipulate a queue.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -102,7 +103,9 @@
   
   <a id="Azure_Storage_Queues_QueueClient__ctor_" data-uid="Azure.Storage.Queues.QueueClient.#ctor*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient__ctor" data-uid="Azure.Storage.Queues.QueueClient.#ctor">QueueClient()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Queues.QueueClient.html">QueueClient</a>
+class for mocking.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -112,7 +115,9 @@
   
   <a id="Azure_Storage_Queues_QueueClient__ctor_" data-uid="Azure.Storage.Queues.QueueClient.#ctor*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient__ctor_System_String_System_String_" data-uid="Azure.Storage.Queues.QueueClient.#ctor(System.String,System.String)">QueueClient(String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Queues.QueueClient.html">QueueClient</a>
+class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -131,12 +136,17 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">connectionString</span></td>
-        <td></td>
+        <td><p>A connection string includes the authentication information
+required for your application to access data in an Azure Storage
+account at runtime.</p>
+<p>For more information, <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string"></a>.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">queueName</span></td>
-        <td></td>
+        <td><p>The name of the queue in the storage account to reference.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -144,7 +154,9 @@
   
   <a id="Azure_Storage_Queues_QueueClient__ctor_" data-uid="Azure.Storage.Queues.QueueClient.#ctor*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient__ctor_System_Uri_Azure_Storage_Queues_QueueClientOptions_" data-uid="Azure.Storage.Queues.QueueClient.#ctor(System.Uri,Azure.Storage.Queues.QueueClientOptions)">QueueClient(Uri, QueueClientOptions)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Queues.QueueClient.html">QueueClient</a>
+class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -163,12 +175,17 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
         <td><span class="parametername">queueUri</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_Uri">Uri</a> referencing the queue that includes the
+name of the account, and the name of the queue.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Azure.Storage.Queues.QueueClientOptions.html">QueueClientOptions</a></td>
         <td><span class="parametername">options</span></td>
-        <td></td>
+        <td><p>Optional client options that define the transport pipeline
+policies for authentication, retries, etc., that are applied to
+every request.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -176,7 +193,9 @@
   
   <a id="Azure_Storage_Queues_QueueClient__ctor_" data-uid="Azure.Storage.Queues.QueueClient.#ctor*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient__ctor_System_String_System_String_Azure_Storage_Queues_QueueClientOptions_" data-uid="Azure.Storage.Queues.QueueClient.#ctor(System.String,System.String,Azure.Storage.Queues.QueueClientOptions)">QueueClient(String, String, QueueClientOptions)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Queues.QueueClient.html">QueueClient</a>
+class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -195,17 +214,25 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">connectionString</span></td>
-        <td></td>
+        <td><p>A connection string includes the authentication information
+required for your application to access data in an Azure Storage
+account at runtime.</p>
+<p>For more information, <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string"></a>.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">queueName</span></td>
-        <td></td>
+        <td><p>The name of the queue in the storage account to reference.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Azure.Storage.Queues.QueueClientOptions.html">QueueClientOptions</a></td>
         <td><span class="parametername">options</span></td>
-        <td></td>
+        <td><p>Optional client options that define the transport pipeline
+policies for authentication, retries, etc., that are applied to
+every request.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -213,7 +240,9 @@
   
   <a id="Azure_Storage_Queues_QueueClient__ctor_" data-uid="Azure.Storage.Queues.QueueClient.#ctor*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient__ctor_System_Uri_Azure_Core_TokenCredential_Azure_Storage_Queues_QueueClientOptions_" data-uid="Azure.Storage.Queues.QueueClient.#ctor(System.Uri,Azure.Core.TokenCredential,Azure.Storage.Queues.QueueClientOptions)">QueueClient(Uri, TokenCredential, QueueClientOptions)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Queues.QueueClient.html">QueueClient</a>
+class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -232,17 +261,23 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
         <td><span class="parametername">queueUri</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_Uri">Uri</a> referencing the queue that includes the
+name of the account, and the name of the queue.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Azure.Core/Azure.Core.TokenCredential.html">TokenCredential</a></td>
         <td><span class="parametername">credential</span></td>
-        <td></td>
+        <td><p>The token credential used to sign requests.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Azure.Storage.Queues.QueueClientOptions.html">QueueClientOptions</a></td>
         <td><span class="parametername">options</span></td>
-        <td></td>
+        <td><p>Optional client options that define the transport pipeline
+policies for authentication, retries, etc., that are applied to
+every request.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -250,7 +285,9 @@
   
   <a id="Azure_Storage_Queues_QueueClient__ctor_" data-uid="Azure.Storage.Queues.QueueClient.#ctor*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient__ctor_System_Uri_Azure_Storage_StorageSharedKeyCredential_Azure_Storage_Queues_QueueClientOptions_" data-uid="Azure.Storage.Queues.QueueClient.#ctor(System.Uri,Azure.Storage.StorageSharedKeyCredential,Azure.Storage.Queues.QueueClientOptions)">QueueClient(Uri, StorageSharedKeyCredential, QueueClientOptions)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Queues.QueueClient.html">QueueClient</a>
+class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -269,17 +306,23 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
         <td><span class="parametername">queueUri</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="Azure.Storage.Queues.QueueClient.html#Azure_Storage_Queues_QueueClient_Uri">Uri</a> referencing the queue that includes the
+name of the account, and the name of the queue.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Azure.Storage/Azure.Storage.StorageSharedKeyCredential.html">StorageSharedKeyCredential</a></td>
         <td><span class="parametername">credential</span></td>
-        <td></td>
+        <td><p>The shared key credential used to sign requests.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Azure.Storage.Queues.QueueClientOptions.html">QueueClientOptions</a></td>
         <td><span class="parametername">options</span></td>
-        <td></td>
+        <td><p>Optional client options that define the transport pipeline
+policies for authentication, retries, etc., that are applied to
+every request.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -287,32 +330,10 @@
   </h3>
   
   
-  <h4 id="Azure_Storage_Queues_QueueClient_MaxMessagesDequeue" data-uid="Azure.Storage.Queues.QueueClient.MaxMessagesDequeue">MaxMessagesDequeue</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int MaxMessagesDequeue = 32;</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <h4 id="Azure_Storage_Queues_QueueClient_MaxMessagesPeek" data-uid="Azure.Storage.Queues.QueueClient.MaxMessagesPeek">MaxMessagesPeek</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>QueueMaxMessagesPeek indicates the maximum number of messages
+you can retrieve with each call to Peek.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -336,7 +357,8 @@
   
   
   <h4 id="Azure_Storage_Queues_QueueClient_MessageMaxBytes" data-uid="Azure.Storage.Queues.QueueClient.MessageMaxBytes">MessageMaxBytes</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>QueueMessageMaxBytes indicates the maximum number of bytes allowed for a message's UTF-8 text.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -363,7 +385,8 @@
   
   <a id="Azure_Storage_Queues_QueueClient_MessagesUri_" data-uid="Azure.Storage.Queues.QueueClient.MessagesUri*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient_MessagesUri" data-uid="Azure.Storage.Queues.QueueClient.MessagesUri">MessagesUri</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the Uri endpoint used by the object's messages.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -388,7 +411,8 @@
   
   <a id="Azure_Storage_Queues_QueueClient_Pipeline_" data-uid="Azure.Storage.Queues.QueueClient.Pipeline*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient_Pipeline" data-uid="Azure.Storage.Queues.QueueClient.Pipeline">Pipeline</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the HttpPipeline used to send REST requests.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -413,7 +437,8 @@
   
   <a id="Azure_Storage_Queues_QueueClient_Uri_" data-uid="Azure.Storage.Queues.QueueClient.Uri*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient_Uri" data-uid="Azure.Storage.Queues.QueueClient.Uri">Uri</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the Uri endpoint used by the object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -440,7 +465,9 @@
   
   <a id="Azure_Storage_Queues_QueueClient_ClearMessages_" data-uid="Azure.Storage.Queues.QueueClient.ClearMessages*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient_ClearMessages_System_Threading_CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.ClearMessages(System.Threading.CancellationToken)">ClearMessages(CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Clear deletes all messages from a queue.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/clear-messages"></a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -459,7 +486,8 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -474,7 +502,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="../Azure/Azure.Response.html">Response</a></td>
-        <td></td>
+        <td><p><a class="xref" href="../Azure/Azure.Response.html">Response</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -482,7 +511,9 @@
   
   <a id="Azure_Storage_Queues_QueueClient_ClearMessagesAsync_" data-uid="Azure.Storage.Queues.QueueClient.ClearMessagesAsync*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient_ClearMessagesAsync_System_Threading_CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.ClearMessagesAsync(System.Threading.CancellationToken)">ClearMessagesAsync(CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Clear deletes all messages from a queue.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/clear-messages"></a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -502,7 +533,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; ClearMessagesAs
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -517,7 +549,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; ClearMessagesAs
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response.html">Response</a>&gt;</td>
-        <td></td>
+        <td><p><a class="xref" href="../Azure/Azure.Response.html">Response</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -525,7 +558,9 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; ClearMessagesAs
   
   <a id="Azure_Storage_Queues_QueueClient_Create_" data-uid="Azure.Storage.Queues.QueueClient.Create*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient_Create_System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.Create(System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)">Create(IDictionary&lt;String,String&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a queue.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/create-queue4"></a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -544,12 +579,14 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; ClearMessagesAs
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td><span class="parametername">metadata</span></td>
-        <td></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey,TValue&gt;</a>.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -564,7 +601,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; ClearMessagesAs
     <tbody>
       <tr>
         <td><a class="xref" href="../Azure/Azure.Response.html">Response</a></td>
-        <td></td>
+        <td><p><a class="xref" href="../Azure/Azure.Response.html">Response</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -572,7 +610,9 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; ClearMessagesAs
   
   <a id="Azure_Storage_Queues_QueueClient_CreateAsync_" data-uid="Azure.Storage.Queues.QueueClient.CreateAsync*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient_CreateAsync_System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.CreateAsync(System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)">CreateAsync(IDictionary&lt;String,String&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a queue.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/create-queue4"></a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -592,12 +632,14 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; CreateAsync (Sy
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td><span class="parametername">metadata</span></td>
-        <td></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey,TValue&gt;</a>.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -612,7 +654,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; CreateAsync (Sy
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response.html">Response</a>&gt;</td>
-        <td></td>
+        <td><p><a class="xref" href="../Azure/Azure.Response.html">Response</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -620,7 +663,9 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; CreateAsync (Sy
   
   <a id="Azure_Storage_Queues_QueueClient_Delete_" data-uid="Azure.Storage.Queues.QueueClient.Delete*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient_Delete_System_Threading_CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.Delete(System.Threading.CancellationToken)">Delete(CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deletes a queue.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/delete-queue3"></a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -639,7 +684,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; CreateAsync (Sy
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -654,7 +700,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; CreateAsync (Sy
     <tbody>
       <tr>
         <td><a class="xref" href="../Azure/Azure.Response.html">Response</a></td>
-        <td></td>
+        <td><p><a class="xref" href="../Azure/Azure.Response.html">Response</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -662,7 +709,9 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; CreateAsync (Sy
   
   <a id="Azure_Storage_Queues_QueueClient_DeleteAsync_" data-uid="Azure.Storage.Queues.QueueClient.DeleteAsync*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient_DeleteAsync_System_Threading_CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.DeleteAsync(System.Threading.CancellationToken)">DeleteAsync(CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deletes a queue.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/delete-queue3"></a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -682,7 +731,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteAsync (Sy
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -697,7 +747,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteAsync (Sy
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response.html">Response</a>&gt;</td>
-        <td></td>
+        <td><p><a class="xref" href="../Azure/Azure.Response.html">Response</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -705,7 +756,9 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteAsync (Sy
   
   <a id="Azure_Storage_Queues_QueueClient_DeleteMessage_" data-uid="Azure.Storage.Queues.QueueClient.DeleteMessage*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient_DeleteMessage_System_String_System_String_System_Threading_CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.DeleteMessage(System.String,System.String,System.Threading.CancellationToken)">DeleteMessage(String, String, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Permanently removes the specified message from its queue.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/delete-message2"></a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -724,17 +777,20 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteAsync (Sy
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">messageId</span></td>
-        <td></td>
+        <td><p>ID of the message to delete.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">popReceipt</span></td>
-        <td></td>
+        <td><p>Required. A valid pop receipt value returned from an earlier call to the Get Messages or Update Message operation.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -749,7 +805,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteAsync (Sy
     <tbody>
       <tr>
         <td><a class="xref" href="../Azure/Azure.Response.html">Response</a></td>
-        <td></td>
+        <td><p><a class="xref" href="../Azure/Azure.Response.html">Response</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -757,7 +814,9 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteAsync (Sy
   
   <a id="Azure_Storage_Queues_QueueClient_DeleteMessageAsync_" data-uid="Azure.Storage.Queues.QueueClient.DeleteMessageAsync*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient_DeleteMessageAsync_System_String_System_String_System_Threading_CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.DeleteMessageAsync(System.String,System.String,System.Threading.CancellationToken)">DeleteMessageAsync(String, String, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Permanently removes the specified message from its queue.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/delete-message2"></a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -777,17 +836,20 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteMessageAs
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">messageId</span></td>
-        <td></td>
+        <td><p>ID of the message to delete.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">popReceipt</span></td>
-        <td></td>
+        <td><p>Required. A valid pop receipt value returned from an earlier call to the Get Messages or Update Message operation.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -802,7 +864,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteMessageAs
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response.html">Response</a>&gt;</td>
-        <td></td>
+        <td><p><a class="xref" href="../Azure/Azure.Response.html">Response</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -810,7 +873,9 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteMessageAs
   
   <a id="Azure_Storage_Queues_QueueClient_DequeueMessages_" data-uid="Azure.Storage.Queues.QueueClient.DequeueMessages*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient_DequeueMessages_System_Nullable_System_Int32__System_Nullable_System_TimeSpan__System_Threading_CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.DequeueMessages(System.Nullable{System.Int32},System.Nullable{System.TimeSpan},System.Threading.CancellationToken)">DequeueMessages(Nullable&lt;Int32&gt;, Nullable&lt;TimeSpan&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieves one or more messages from the front of the queue.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-messages"></a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -829,17 +894,21 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteMessageAs
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
         <td><span class="parametername">maxMessages</span></td>
-        <td></td>
+        <td><p>Optional. A nonzero integer value that specifies the number of messages to retrieve from the queue, up to a maximum of 32.
+If fewer are visible, the visible messages are returned. By default, a single message is retrieved from the queue with this operation.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
         <td><span class="parametername">visibilityTimeout</span></td>
-        <td></td>
+        <td><p>Optional. Specifies the new visibility timeout value, in seconds, relative to server time. The default value is 30 seconds.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -854,7 +923,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteMessageAs
     <tbody>
       <tr>
         <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="../Azure.Storage.Queues.Models/Azure.Storage.Queues.Models.DequeuedMessage.html">DequeuedMessage</a>&gt;&gt;</td>
-        <td></td>
+        <td><p><a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -862,7 +932,9 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteMessageAs
   
   <a id="Azure_Storage_Queues_QueueClient_DequeueMessagesAsync_" data-uid="Azure.Storage.Queues.QueueClient.DequeueMessagesAsync*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient_DequeueMessagesAsync_System_Nullable_System_Int32__System_Nullable_System_TimeSpan__System_Threading_CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.DequeueMessagesAsync(System.Nullable{System.Int32},System.Nullable{System.TimeSpan},System.Threading.CancellationToken)">DequeueMessagesAsync(Nullable&lt;Int32&gt;, Nullable&lt;TimeSpan&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieves one or more messages from the front of the queue.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-messages"></a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -882,17 +954,21 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collectio
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
         <td><span class="parametername">maxMessages</span></td>
-        <td></td>
+        <td><p>Optional. A nonzero integer value that specifies the number of messages to retrieve from the queue, up to a maximum of 32.
+If fewer are visible, the visible messages are returned. By default, a single message is retrieved from the queue with this operation.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
         <td><span class="parametername">visibilityTimeout</span></td>
-        <td></td>
+        <td><p>Optional. Specifies the new visibility timeout value, in seconds, relative to server time. The default value is 30 seconds.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -907,7 +983,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collectio
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="../Azure.Storage.Queues.Models/Azure.Storage.Queues.Models.DequeuedMessage.html">DequeuedMessage</a>&gt;&gt;&gt;</td>
-        <td></td>
+        <td><p><a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -915,7 +992,10 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collectio
   
   <a id="Azure_Storage_Queues_QueueClient_EnqueueMessage_" data-uid="Azure.Storage.Queues.QueueClient.EnqueueMessage*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient_EnqueueMessage_System_String_System_Nullable_System_TimeSpan__System_Nullable_System_TimeSpan__System_Threading_CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.EnqueueMessage(System.String,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Threading.CancellationToken)">EnqueueMessage(String, Nullable&lt;TimeSpan&gt;, Nullable&lt;TimeSpan&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a new message to the back of a queue. The visibility timeout specifies how long the message should be invisible
+to Dequeue and Peek operations. The message content must be a UTF-8 encoded string that is up to 64KB in size.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/put-message"></a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -934,22 +1014,26 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collectio
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">messageText</span></td>
-        <td></td>
+        <td><p>Message text.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
         <td><span class="parametername">visibilityTimeout</span></td>
-        <td></td>
+        <td><p>Visibility timeout.  Optional with a default value of 0.  Cannot be larger than 7 days.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
         <td><span class="parametername">timeToLive</span></td>
-        <td></td>
+        <td><p>Optional. Specifies the time-to-live interval for the message</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -964,7 +1048,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collectio
     <tbody>
       <tr>
         <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Queues.Models/Azure.Storage.Queues.Models.EnqueuedMessage.html">EnqueuedMessage</a>&gt;</td>
-        <td></td>
+        <td><p><a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -972,7 +1057,10 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collectio
   
   <a id="Azure_Storage_Queues_QueueClient_EnqueueMessageAsync_" data-uid="Azure.Storage.Queues.QueueClient.EnqueueMessageAsync*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient_EnqueueMessageAsync_System_String_System_Nullable_System_TimeSpan__System_Nullable_System_TimeSpan__System_Threading_CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.EnqueueMessageAsync(System.String,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Threading.CancellationToken)">EnqueueMessageAsync(String, Nullable&lt;TimeSpan&gt;, Nullable&lt;TimeSpan&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a new message to the back of a queue. The visibility timeout specifies how long the message should be invisible
+to Dequeue and Peek operations. The message content must be a UTF-8 encoded string that is up to 64KB in size.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/put-message"></a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -992,22 +1080,26 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Qu
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">messageText</span></td>
-        <td></td>
+        <td><p>Message text.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
         <td><span class="parametername">visibilityTimeout</span></td>
-        <td></td>
+        <td><p>Visibility timeout.  Optional with a default value of 0.  Cannot be larger than 7 days.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
         <td><span class="parametername">timeToLive</span></td>
-        <td></td>
+        <td><p>Optional. Specifies the time-to-live interval for the message</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1022,7 +1114,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Qu
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Queues.Models/Azure.Storage.Queues.Models.EnqueuedMessage.html">EnqueuedMessage</a>&gt;&gt;</td>
-        <td></td>
+        <td><p><a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1030,7 +1123,10 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Qu
   
   <a id="Azure_Storage_Queues_QueueClient_GetAccessPolicy_" data-uid="Azure.Storage.Queues.QueueClient.GetAccessPolicy*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient_GetAccessPolicy_System_Threading_CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.GetAccessPolicy(System.Threading.CancellationToken)">GetAccessPolicy(CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns details about any stored access policies specified on the queue that may be used with
+Shared Access Signatures.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-queue-acl"></a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1049,7 +1145,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Qu
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1064,7 +1161,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Qu
     <tbody>
       <tr>
         <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="../Azure.Storage.Queues.Models/Azure.Storage.Queues.Models.SignedIdentifier.html">SignedIdentifier</a>&gt;&gt;</td>
-        <td></td>
+        <td><p><a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1072,7 +1170,10 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Qu
   
   <a id="Azure_Storage_Queues_QueueClient_GetAccessPolicyAsync_" data-uid="Azure.Storage.Queues.QueueClient.GetAccessPolicyAsync*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient_GetAccessPolicyAsync_System_Threading_CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.GetAccessPolicyAsync(System.Threading.CancellationToken)">GetAccessPolicyAsync(CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns details about any stored access policies specified on the queue that may be used with
+Shared Access Signatures.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-queue-acl"></a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1092,7 +1193,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collectio
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1107,7 +1209,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collectio
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="../Azure.Storage.Queues.Models/Azure.Storage.Queues.Models.SignedIdentifier.html">SignedIdentifier</a>&gt;&gt;&gt;</td>
-        <td></td>
+        <td><p><a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1115,7 +1218,10 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collectio
   
   <a id="Azure_Storage_Queues_QueueClient_GetProperties_" data-uid="Azure.Storage.Queues.QueueClient.GetProperties*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient_GetProperties_System_Threading_CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.GetProperties(System.Threading.CancellationToken)">GetProperties(CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieves queue properties and user-defined metadata and properties on the specified queue.
+Metadata is associated with the queue as name-values pairs.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-queue-metadata"></a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1134,7 +1240,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collectio
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1149,7 +1256,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collectio
     <tbody>
       <tr>
         <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Queues.Models/Azure.Storage.Queues.Models.QueueProperties.html">QueueProperties</a>&gt;</td>
-        <td></td>
+        <td><p><a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1157,7 +1265,10 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collectio
   
   <a id="Azure_Storage_Queues_QueueClient_GetPropertiesAsync_" data-uid="Azure.Storage.Queues.QueueClient.GetPropertiesAsync*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient_GetPropertiesAsync_System_Threading_CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.GetPropertiesAsync(System.Threading.CancellationToken)">GetPropertiesAsync(CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieves queue properties and user-defined metadata and properties on the specified queue.
+Metadata is associated with the queue as name-values pairs.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-queue-metadata"></a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1177,7 +1288,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Qu
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1192,7 +1304,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Qu
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Queues.Models/Azure.Storage.Queues.Models.QueueProperties.html">QueueProperties</a>&gt;&gt;</td>
-        <td></td>
+        <td><p><a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1200,7 +1313,9 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Qu
   
   <a id="Azure_Storage_Queues_QueueClient_PeekMessages_" data-uid="Azure.Storage.Queues.QueueClient.PeekMessages*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient_PeekMessages_System_Nullable_System_Int32__System_Threading_CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.PeekMessages(System.Nullable{System.Int32},System.Threading.CancellationToken)">PeekMessages(Nullable&lt;Int32&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieves one or more messages from the front of the queue but does not alter the visibility of the message.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/peek-messages"></a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1219,12 +1334,15 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Qu
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
         <td><span class="parametername">maxMessages</span></td>
-        <td></td>
+        <td><p>Optional. A nonzero integer value that specifies the number of messages to peek from the queue, up to a maximum of 32.
+By default, a single message is peeked from the queue with this operation.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1239,7 +1357,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Qu
     <tbody>
       <tr>
         <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="../Azure.Storage.Queues.Models/Azure.Storage.Queues.Models.PeekedMessage.html">PeekedMessage</a>&gt;&gt;</td>
-        <td></td>
+        <td><p><a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1247,7 +1366,9 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Qu
   
   <a id="Azure_Storage_Queues_QueueClient_PeekMessagesAsync_" data-uid="Azure.Storage.Queues.QueueClient.PeekMessagesAsync*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient_PeekMessagesAsync_System_Nullable_System_Int32__System_Threading_CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.PeekMessagesAsync(System.Nullable{System.Int32},System.Threading.CancellationToken)">PeekMessagesAsync(Nullable&lt;Int32&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieves one or more messages from the front of the queue but does not alter the visibility of the message.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/peek-messages"></a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1267,12 +1388,15 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collectio
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
         <td><span class="parametername">maxMessages</span></td>
-        <td></td>
+        <td><p>Optional. A nonzero integer value that specifies the number of messages to peek from the queue, up to a maximum of 32.
+By default, a single message is peeked from the queue with this operation.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1287,7 +1411,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collectio
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="../Azure.Storage.Queues.Models/Azure.Storage.Queues.Models.PeekedMessage.html">PeekedMessage</a>&gt;&gt;&gt;</td>
-        <td></td>
+        <td><p><a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1295,7 +1420,9 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collectio
   
   <a id="Azure_Storage_Queues_QueueClient_SetAccessPolicy_" data-uid="Azure.Storage.Queues.QueueClient.SetAccessPolicy*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient_SetAccessPolicy_System_Collections_Generic_IEnumerable_Azure_Storage_Queues_Models_SignedIdentifier__System_Threading_CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.SetAccessPolicy(System.Collections.Generic.IEnumerable{Azure.Storage.Queues.Models.SignedIdentifier},System.Threading.CancellationToken)">SetAccessPolicy(IEnumerable&lt;SignedIdentifier&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>SetAccessPolicyAsync sets stored access policies for the queue that may be used with Shared Access Signatures.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/set-queue-acl"></a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1314,12 +1441,14 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collectio
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="../Azure.Storage.Queues.Models/Azure.Storage.Queues.Models.SignedIdentifier.html">SignedIdentifier</a>&gt;</td>
         <td><span class="parametername">permissions</span></td>
-        <td></td>
+        <td><p>IEnumerable of <a class="xref" href="../Azure.Storage.Queues.Models/Azure.Storage.Queues.Models.SignedIdentifier.html">SignedIdentifier</a></p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1334,7 +1463,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collectio
     <tbody>
       <tr>
         <td><a class="xref" href="../Azure/Azure.Response.html">Response</a></td>
-        <td></td>
+        <td><p><a class="xref" href="../Azure/Azure.Response.html">Response</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1342,7 +1472,9 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;System.Collectio
   
   <a id="Azure_Storage_Queues_QueueClient_SetAccessPolicyAsync_" data-uid="Azure.Storage.Queues.QueueClient.SetAccessPolicyAsync*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient_SetAccessPolicyAsync_System_Collections_Generic_IEnumerable_Azure_Storage_Queues_Models_SignedIdentifier__System_Threading_CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.SetAccessPolicyAsync(System.Collections.Generic.IEnumerable{Azure.Storage.Queues.Models.SignedIdentifier},System.Threading.CancellationToken)">SetAccessPolicyAsync(IEnumerable&lt;SignedIdentifier&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>SetAccessPolicyAsync sets stored access policies for the queue that may be used with Shared Access Signatures.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/set-queue-acl"></a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1362,12 +1494,14 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; SetAccessPolicy
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="../Azure.Storage.Queues.Models/Azure.Storage.Queues.Models.SignedIdentifier.html">SignedIdentifier</a>&gt;</td>
         <td><span class="parametername">permissions</span></td>
-        <td></td>
+        <td><p>IEnumerable of <a class="xref" href="../Azure.Storage.Queues.Models/Azure.Storage.Queues.Models.SignedIdentifier.html">SignedIdentifier</a></p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1382,7 +1516,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; SetAccessPolicy
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response.html">Response</a>&gt;</td>
-        <td></td>
+        <td><p><a class="xref" href="../Azure/Azure.Response.html">Response</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1390,7 +1525,9 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; SetAccessPolicy
   
   <a id="Azure_Storage_Queues_QueueClient_SetMetadata_" data-uid="Azure.Storage.Queues.QueueClient.SetMetadata*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient_SetMetadata_System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.SetMetadata(System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)">SetMetadata(IDictionary&lt;String,String&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets user-defined metadata on the specified queue. Metadata is associated with the queue as name-value pairs.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/set-queue-metadata"></a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1409,12 +1546,14 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; SetAccessPolicy
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td><span class="parametername">metadata</span></td>
-        <td></td>
+        <td><p><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey,TValue&gt;</a></p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1429,7 +1568,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; SetAccessPolicy
     <tbody>
       <tr>
         <td><a class="xref" href="../Azure/Azure.Response.html">Response</a></td>
-        <td></td>
+        <td><p><a class="xref" href="../Azure/Azure.Response.html">Response</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1437,7 +1577,9 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; SetAccessPolicy
   
   <a id="Azure_Storage_Queues_QueueClient_SetMetadataAsync_" data-uid="Azure.Storage.Queues.QueueClient.SetMetadataAsync*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient_SetMetadataAsync_System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.SetMetadataAsync(System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)">SetMetadataAsync(IDictionary&lt;String,String&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets user-defined metadata on the specified queue. Metadata is associated with the queue as name-value pairs.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/set-queue-metadata"></a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1457,12 +1599,14 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; SetMetadataAsyn
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td><span class="parametername">metadata</span></td>
-        <td></td>
+        <td><p><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey,TValue&gt;</a></p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1477,7 +1621,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; SetMetadataAsyn
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response.html">Response</a>&gt;</td>
-        <td></td>
+        <td><p><a class="xref" href="../Azure/Azure.Response.html">Response</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1485,7 +1630,9 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; SetMetadataAsyn
   
   <a id="Azure_Storage_Queues_QueueClient_UpdateMessage_" data-uid="Azure.Storage.Queues.QueueClient.UpdateMessage*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient_UpdateMessage_System_String_System_String_System_String_System_TimeSpan_System_Threading_CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.UpdateMessage(System.String,System.String,System.String,System.TimeSpan,System.Threading.CancellationToken)">UpdateMessage(String, String, String, TimeSpan, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Changes a message's visibility timeout and contents. The message content must be a UTF-8 encoded string that is up to 64KB in size.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/update-message"></a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1504,27 +1651,34 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; SetMetadataAsyn
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">messageText</span></td>
-        <td></td>
+        <td><p>Updated message text.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">messageId</span></td>
-        <td></td>
+        <td><p>ID of the message to update.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">popReceipt</span></td>
-        <td></td>
+        <td><p>Required. Specifies the valid pop receipt value returned from an earlier call to the Get Messages or Update Message operation.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
         <td><span class="parametername">visibilityTimeout</span></td>
-        <td></td>
+        <td><p>Required. Specifies the new visibility timeout value, in seconds, relative to server time. The new value must be larger than
+or equal to 0, and cannot be larger than 7 days. The visibility timeout of a message cannot be set to a value later than the
+expiry time. A message can be updated until it has been deleted or has expired.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1539,7 +1693,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; SetMetadataAsyn
     <tbody>
       <tr>
         <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Queues.Models/Azure.Storage.Queues.Models.UpdatedMessage.html">UpdatedMessage</a>&gt;</td>
-        <td></td>
+        <td><p><a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1547,7 +1702,9 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; SetMetadataAsyn
   
   <a id="Azure_Storage_Queues_QueueClient_UpdateMessageAsync_" data-uid="Azure.Storage.Queues.QueueClient.UpdateMessageAsync*"></a>
   <h4 id="Azure_Storage_Queues_QueueClient_UpdateMessageAsync_System_String_System_String_System_String_System_TimeSpan_System_Threading_CancellationToken_" data-uid="Azure.Storage.Queues.QueueClient.UpdateMessageAsync(System.String,System.String,System.String,System.TimeSpan,System.Threading.CancellationToken)">UpdateMessageAsync(String, String, String, TimeSpan, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Changes a message's visibility timeout and contents. The message content must be a UTF-8 encoded string that is up to 64KB in size.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/update-message"></a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1567,27 +1724,34 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Qu
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">messageText</span></td>
-        <td></td>
+        <td><p>Updated message text.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">messageId</span></td>
-        <td></td>
+        <td><p>ID of the message to update.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">popReceipt</span></td>
-        <td></td>
+        <td><p>Required. Specifies the valid pop receipt value returned from an earlier call to the Get Messages or Update Message operation.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
         <td><span class="parametername">visibilityTimeout</span></td>
-        <td></td>
+        <td><p>Required. Specifies the new visibility timeout value, in seconds, relative to server time. The new value must be larger than
+or equal to 0, and cannot be larger than 7 days. The visibility timeout of a message cannot be set to a value later than the
+expiry time. A message can be updated until it has been deleted or has expired.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1602,7 +1766,8 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Qu
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Queues.Models/Azure.Storage.Queues.Models.UpdatedMessage.html">UpdatedMessage</a>&gt;&gt;</td>
-        <td></td>
+        <td><p><a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>

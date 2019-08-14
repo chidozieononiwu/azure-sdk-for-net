@@ -83,7 +83,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_ApplicationPackageReference" data-uid="Microsoft.Azure.Batch.Protocol.Models.ApplicationPackageReference" class="text-break">Class ApplicationPackageReference
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>A reference to an Package to be deployed to Compute Nodes.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -102,7 +103,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ApplicationPackageReference__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ApplicationPackageReference.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ApplicationPackageReference__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.ApplicationPackageReference.#ctor">ApplicationPackageReference()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ApplicationPackageReference
+class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -112,7 +115,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ApplicationPackageReference__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ApplicationPackageReference.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ApplicationPackageReference__ctor_System_String_System_String_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ApplicationPackageReference.#ctor(System.String,System.String)">ApplicationPackageReference(String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ApplicationPackageReference
+class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -131,12 +136,16 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">applicationId</span></td>
-        <td></td>
+        <td><p>The ID of the application to
+deploy.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">version</span></td>
-        <td></td>
+        <td><p>The version of the application to deploy. If
+omitted, the default version is deployed.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -146,7 +155,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ApplicationPackageReference_ApplicationId_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ApplicationPackageReference.ApplicationId*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ApplicationPackageReference_ApplicationId" data-uid="Microsoft.Azure.Batch.Protocol.Models.ApplicationPackageReference.ApplicationId">ApplicationId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the ID of the application to deploy.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -172,7 +182,9 @@ public string ApplicationId { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ApplicationPackageReference_Version_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ApplicationPackageReference.Version*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ApplicationPackageReference_Version" data-uid="Microsoft.Azure.Batch.Protocol.Models.ApplicationPackageReference.Version">Version</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the version of the application to deploy. If omitted,
+the default version is deployed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -194,6 +206,13 @@ public string Version { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_ApplicationPackageReference_Version_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If this is omitted on a Pool, and no default version is specified</p>
+<p>for this application, the request fails with the error code</p>
+<p>InvalidApplicationPackageReferences and HTTP status code 409. If</p>
+<p>this is omitted on a Task, and no default version is specified for</p>
+<p>this application, the Task fails with a pre-processing error.</p>
+</div>
 </article>
           </div>
           

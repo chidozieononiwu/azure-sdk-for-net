@@ -83,7 +83,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeInformation" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeInformation" class="text-break">Class ComputeNodeInformation
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Information about the Compute Node on which a Task ran.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -102,7 +103,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeInformation__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeInformation.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeInformation__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeInformation.#ctor">ComputeNodeInformation()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ComputeNodeInformation class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -112,7 +114,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeInformation__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeInformation.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeInformation__ctor_System_String_System_String_System_String_System_String_System_String_System_String_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeInformation.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)">ComputeNodeInformation(String, String, String, String, String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ComputeNodeInformation class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -131,32 +134,45 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">affinityId</span></td>
-        <td></td>
+        <td><p>An identifier for the Node on which the
+Task ran, which can be passed when adding a Task to request that
+the Task be scheduled on this Compute Node.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">nodeUrl</span></td>
-        <td></td>
+        <td><p>The URL of the Compute Node on which the Task
+ran.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">poolId</span></td>
-        <td></td>
+        <td><p>The ID of the Pool on which the Task
+ran.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">nodeId</span></td>
-        <td></td>
+        <td><p>The ID of the Compute Node on which the Task
+ran.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskRootDirectory</span></td>
-        <td></td>
+        <td><p>The root directory of the Task on
+the Compute Node.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskRootDirectoryUrl</span></td>
-        <td></td>
+        <td><p>The URL to the root directory of
+the Task on the Compute Node.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -166,7 +182,10 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeInformation_AffinityId_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeInformation.AffinityId*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeInformation_AffinityId" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeInformation.AffinityId">AffinityId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets an identifier for the Node on which the Task ran,
+which can be passed when adding a Task to request that the Task be
+scheduled on this Compute Node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -192,7 +211,8 @@ public string AffinityId { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeInformation_NodeId_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeInformation.NodeId*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeInformation_NodeId" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeInformation.NodeId">NodeId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the ID of the Compute Node on which the Task ran.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -218,7 +238,8 @@ public string NodeId { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeInformation_NodeUrl_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeInformation.NodeUrl*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeInformation_NodeUrl" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeInformation.NodeUrl">NodeUrl</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the URL of the Compute Node on which the Task ran.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -244,7 +265,8 @@ public string NodeUrl { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeInformation_PoolId_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeInformation.PoolId*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeInformation_PoolId" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeInformation.PoolId">PoolId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the ID of the Pool on which the Task ran.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -270,7 +292,8 @@ public string PoolId { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeInformation_TaskRootDirectory_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeInformation.TaskRootDirectory*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeInformation_TaskRootDirectory" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeInformation.TaskRootDirectory">TaskRootDirectory</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the root directory of the Task on the Compute Node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -296,7 +319,9 @@ public string TaskRootDirectory { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeInformation_TaskRootDirectoryUrl_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeInformation.TaskRootDirectoryUrl*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeInformation_TaskRootDirectoryUrl" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeInformation.TaskRootDirectoryUrl">TaskRootDirectoryUrl</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the URL to the root directory of the Task on the
+Compute Node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

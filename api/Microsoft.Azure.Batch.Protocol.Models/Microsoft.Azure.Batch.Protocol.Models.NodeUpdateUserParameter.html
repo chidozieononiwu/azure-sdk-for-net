@@ -83,7 +83,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_NodeUpdateUserParameter" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeUpdateUserParameter" class="text-break">Class NodeUpdateUserParameter
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The set of changes to be made to a user Account on a Compute Node.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -102,7 +103,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_NodeUpdateUserParameter__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeUpdateUserParameter.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_NodeUpdateUserParameter__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeUpdateUserParameter.#ctor">NodeUpdateUserParameter()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the NodeUpdateUserParameter class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -112,7 +114,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_NodeUpdateUserParameter__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeUpdateUserParameter.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_NodeUpdateUserParameter__ctor_System_String_System_Nullable_System_DateTime__System_String_" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeUpdateUserParameter.#ctor(System.String,System.Nullable{System.DateTime},System.String)">NodeUpdateUserParameter(String, Nullable&lt;DateTime&gt;, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the NodeUpdateUserParameter class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -131,17 +134,22 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">password</span></td>
-        <td></td>
+        <td><p>The password of the Account.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;</td>
         <td><span class="parametername">expiryTime</span></td>
-        <td></td>
+        <td><p>The time at which the Account should
+expire.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">sshPublicKey</span></td>
-        <td></td>
+        <td><p>The SSH public key that can be used for
+remote login to the Compute Node.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -151,7 +159,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_NodeUpdateUserParameter_ExpiryTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeUpdateUserParameter.ExpiryTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_NodeUpdateUserParameter_ExpiryTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeUpdateUserParameter.ExpiryTime">ExpiryTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the time at which the Account should expire.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -173,11 +182,16 @@ public Nullable&lt;DateTime&gt; ExpiryTime { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_NodeUpdateUserParameter_ExpiryTime_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If omitted, the default is 1 day from the current time. For Linux</p>
+<p>Compute Nodes, the expiryTime has a precision up to a day.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_NodeUpdateUserParameter_Password_" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeUpdateUserParameter.Password*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_NodeUpdateUserParameter_Password" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeUpdateUserParameter.Password">Password</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the password of the Account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -199,11 +213,21 @@ public string Password { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_NodeUpdateUserParameter_Password_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The password is required for Windows Compute Nodes (those created</p>
+<p>with 'cloudServiceConfiguration', or created with</p>
+<p>'virtualMachineConfiguration' using a Windows Image reference). For</p>
+<p>Linux Compute Nodes, the password can optionally be specified along</p>
+<p>with the sshPublicKey property. If omitted, any existing password</p>
+<p>is removed.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_NodeUpdateUserParameter_SshPublicKey_" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeUpdateUserParameter.SshPublicKey*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_NodeUpdateUserParameter_SshPublicKey" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeUpdateUserParameter.SshPublicKey">SshPublicKey</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the SSH public key that can be used for remote login
+to the Compute Node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -225,6 +249,14 @@ public string SshPublicKey { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_NodeUpdateUserParameter_SshPublicKey_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The public key should be compatible with OpenSSH encoding and</p>
+<p>should be base 64 encoded. This property can be specified only for</p>
+<p>Linux Compute Nodes. If this is specified for a Windows Compute</p>
+<p>Node, then the Batch service rejects the request; if you are</p>
+<p>calling the REST API directly, the HTTP status code is 400 (Bad</p>
+<p>Request). If omitted, any existing SSH public key is removed.</p>
+</div>
 </article>
           </div>
           

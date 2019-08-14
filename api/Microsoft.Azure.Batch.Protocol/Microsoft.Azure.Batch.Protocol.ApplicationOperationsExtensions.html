@@ -83,7 +83,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_ApplicationOperationsExtensions" data-uid="Microsoft.Azure.Batch.Protocol.ApplicationOperationsExtensions" class="text-break">Class ApplicationOperationsExtensions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Extension methods for ApplicationOperations.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -102,7 +103,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_ApplicationOperationsExtensions_Get_" data-uid="Microsoft.Azure.Batch.Protocol.ApplicationOperationsExtensions.Get*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_ApplicationOperationsExtensions_Get_Microsoft_Azure_Batch_Protocol_IApplicationOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_ApplicationGetOptions_" data-uid="Microsoft.Azure.Batch.Protocol.ApplicationOperationsExtensions.Get(Microsoft.Azure.Batch.Protocol.IApplicationOperations,System.String,Microsoft.Azure.Batch.Protocol.Models.ApplicationGetOptions)">Get(IApplicationOperations, String, ApplicationGetOptions)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets information about the specified Application.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -121,17 +123,20 @@
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.IApplicationOperations.html">IApplicationOperations</a></td>
         <td><span class="parametername">operations</span></td>
-        <td></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">applicationId</span></td>
-        <td></td>
+        <td><p>The ID of the Application.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ApplicationGetOptions.html">ApplicationGetOptions</a></td>
         <td><span class="parametername">applicationGetOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -150,11 +155,19 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_ApplicationOperationsExtensions_Get_Microsoft_Azure_Batch_Protocol_IApplicationOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_ApplicationGetOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This operation returns only Applications and versions that are available</p>
+<p>for use on Compute Nodes; that is, that can be used in an Package</p>
+<p>reference. For administrator information about Applications and versions</p>
+<p>that are not yet available to Compute Nodes, use the Azure portal or the</p>
+<p>Azure Resource Manager API.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_ApplicationOperationsExtensions_GetAsync_" data-uid="Microsoft.Azure.Batch.Protocol.ApplicationOperationsExtensions.GetAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_ApplicationOperationsExtensions_GetAsync_Microsoft_Azure_Batch_Protocol_IApplicationOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_ApplicationGetOptions_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.ApplicationOperationsExtensions.GetAsync(Microsoft.Azure.Batch.Protocol.IApplicationOperations,System.String,Microsoft.Azure.Batch.Protocol.Models.ApplicationGetOptions,System.Threading.CancellationToken)">GetAsync(IApplicationOperations, String, ApplicationGetOptions, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets information about the specified Application.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -174,22 +187,26 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.IApplicationOperations.html">IApplicationOperations</a></td>
         <td><span class="parametername">operations</span></td>
-        <td></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">applicationId</span></td>
-        <td></td>
+        <td><p>The ID of the Application.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ApplicationGetOptions.html">ApplicationGetOptions</a></td>
         <td><span class="parametername">applicationGetOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -208,11 +225,19 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_ApplicationOperationsExtensions_GetAsync_Microsoft_Azure_Batch_Protocol_IApplicationOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_ApplicationGetOptions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This operation returns only Applications and versions that are available</p>
+<p>for use on Compute Nodes; that is, that can be used in an Package</p>
+<p>reference. For administrator information about Applications and versions</p>
+<p>that are not yet available to Compute Nodes, use the Azure portal or the</p>
+<p>Azure Resource Manager API.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_ApplicationOperationsExtensions_List_" data-uid="Microsoft.Azure.Batch.Protocol.ApplicationOperationsExtensions.List*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_ApplicationOperationsExtensions_List_Microsoft_Azure_Batch_Protocol_IApplicationOperations_Microsoft_Azure_Batch_Protocol_Models_ApplicationListOptions_" data-uid="Microsoft.Azure.Batch.Protocol.ApplicationOperationsExtensions.List(Microsoft.Azure.Batch.Protocol.IApplicationOperations,Microsoft.Azure.Batch.Protocol.Models.ApplicationListOptions)">List(IApplicationOperations, ApplicationListOptions)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Lists all of the applications available in the specified Account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -231,12 +256,14 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.IApplicationOperations.html">IApplicationOperations</a></td>
         <td><span class="parametername">operations</span></td>
-        <td></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ApplicationListOptions.html">ApplicationListOptions</a></td>
         <td><span class="parametername">applicationListOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -255,11 +282,19 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_ApplicationOperationsExtensions_List_Microsoft_Azure_Batch_Protocol_IApplicationOperations_Microsoft_Azure_Batch_Protocol_Models_ApplicationListOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This operation returns only Applications and versions that are available</p>
+<p>for use on Compute Nodes; that is, that can be used in an Package</p>
+<p>reference. For administrator information about applications and versions</p>
+<p>that are not yet available to Compute Nodes, use the Azure portal or the</p>
+<p>Azure Resource Manager API.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_ApplicationOperationsExtensions_ListAsync_" data-uid="Microsoft.Azure.Batch.Protocol.ApplicationOperationsExtensions.ListAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_ApplicationOperationsExtensions_ListAsync_Microsoft_Azure_Batch_Protocol_IApplicationOperations_Microsoft_Azure_Batch_Protocol_Models_ApplicationListOptions_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.ApplicationOperationsExtensions.ListAsync(Microsoft.Azure.Batch.Protocol.IApplicationOperations,Microsoft.Azure.Batch.Protocol.Models.ApplicationListOptions,System.Threading.CancellationToken)">ListAsync(IApplicationOperations, ApplicationListOptions, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Lists all of the applications available in the specified Account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -279,17 +314,20 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Micro
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.IApplicationOperations.html">IApplicationOperations</a></td>
         <td><span class="parametername">operations</span></td>
-        <td></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ApplicationListOptions.html">ApplicationListOptions</a></td>
         <td><span class="parametername">applicationListOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -308,11 +346,19 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Micro
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_ApplicationOperationsExtensions_ListAsync_Microsoft_Azure_Batch_Protocol_IApplicationOperations_Microsoft_Azure_Batch_Protocol_Models_ApplicationListOptions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This operation returns only Applications and versions that are available</p>
+<p>for use on Compute Nodes; that is, that can be used in an Package</p>
+<p>reference. For administrator information about applications and versions</p>
+<p>that are not yet available to Compute Nodes, use the Azure portal or the</p>
+<p>Azure Resource Manager API.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_ApplicationOperationsExtensions_ListNext_" data-uid="Microsoft.Azure.Batch.Protocol.ApplicationOperationsExtensions.ListNext*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_ApplicationOperationsExtensions_ListNext_Microsoft_Azure_Batch_Protocol_IApplicationOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_ApplicationListNextOptions_" data-uid="Microsoft.Azure.Batch.Protocol.ApplicationOperationsExtensions.ListNext(Microsoft.Azure.Batch.Protocol.IApplicationOperations,System.String,Microsoft.Azure.Batch.Protocol.Models.ApplicationListNextOptions)">ListNext(IApplicationOperations, String, ApplicationListNextOptions)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Lists all of the applications available in the specified Account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -331,17 +377,20 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Micro
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.IApplicationOperations.html">IApplicationOperations</a></td>
         <td><span class="parametername">operations</span></td>
-        <td></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">nextPageLink</span></td>
-        <td></td>
+        <td><p>The NextLink from the previous successful call to List operation.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ApplicationListNextOptions.html">ApplicationListNextOptions</a></td>
         <td><span class="parametername">applicationListNextOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -360,11 +409,19 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Micro
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_ApplicationOperationsExtensions_ListNext_Microsoft_Azure_Batch_Protocol_IApplicationOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_ApplicationListNextOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This operation returns only Applications and versions that are available</p>
+<p>for use on Compute Nodes; that is, that can be used in an Package</p>
+<p>reference. For administrator information about applications and versions</p>
+<p>that are not yet available to Compute Nodes, use the Azure portal or the</p>
+<p>Azure Resource Manager API.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_ApplicationOperationsExtensions_ListNextAsync_" data-uid="Microsoft.Azure.Batch.Protocol.ApplicationOperationsExtensions.ListNextAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_ApplicationOperationsExtensions_ListNextAsync_Microsoft_Azure_Batch_Protocol_IApplicationOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_ApplicationListNextOptions_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.ApplicationOperationsExtensions.ListNextAsync(Microsoft.Azure.Batch.Protocol.IApplicationOperations,System.String,Microsoft.Azure.Batch.Protocol.Models.ApplicationListNextOptions,System.Threading.CancellationToken)">ListNextAsync(IApplicationOperations, String, ApplicationListNextOptions, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Lists all of the applications available in the specified Account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -384,22 +441,26 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Micro
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.IApplicationOperations.html">IApplicationOperations</a></td>
         <td><span class="parametername">operations</span></td>
-        <td></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">nextPageLink</span></td>
-        <td></td>
+        <td><p>The NextLink from the previous successful call to List operation.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ApplicationListNextOptions.html">ApplicationListNextOptions</a></td>
         <td><span class="parametername">applicationListNextOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -418,6 +479,13 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Micro
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_ApplicationOperationsExtensions_ListNextAsync_Microsoft_Azure_Batch_Protocol_IApplicationOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_ApplicationListNextOptions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This operation returns only Applications and versions that are available</p>
+<p>for use on Compute Nodes; that is, that can be used in an Package</p>
+<p>reference. For administrator information about applications and versions</p>
+<p>that are not yet available to Compute Nodes, use the Azure portal or the</p>
+<p>Azure Resource Manager API.</p>
+</div>
 </article>
           </div>
           

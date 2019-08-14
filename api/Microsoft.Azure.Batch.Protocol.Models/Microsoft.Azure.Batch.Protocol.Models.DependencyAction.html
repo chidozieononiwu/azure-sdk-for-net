@@ -83,7 +83,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_DependencyAction" data-uid="Microsoft.Azure.Batch.Protocol.Models.DependencyAction" class="text-break">Enum DependencyAction
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Defines values for DependencyAction.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models.html">Microsoft.Azure.Batch.Protocol.Models</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
@@ -104,11 +105,15 @@ public enum DependencyAction</code></pre>
     <tbody>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_DependencyAction_Block">Block</td>
-        <td></td>
+        <td><p>Blocks tasks waiting on this task, preventing them from being
+scheduled.</p>
+</td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_DependencyAction_Satisfy">Satisfy</td>
-        <td></td>
+        <td><p>Satisfy tasks waiting on this task; once all dependencies are
+satisfied, the task will be scheduled to run.</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>

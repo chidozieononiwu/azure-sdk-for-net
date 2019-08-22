@@ -60,14 +60,13 @@ jobs:
           filePath: "tools/AnalyzeDeps/AnalyzeDeps.ps1"
           arguments: '-PackagesPath "$(Pipeline.Workspace)/packages/*.nupkg" -LockfilePath "$(Build.SourcesDirectory)/eng/Packages.Data.props" -OutPath "$(Build.ArtifactStagingDirectory)/dependencies.html"'
           pwsh: true
-      - pwsh: |
-          $ServiceDir = If ( '${{parameters.ServiceDirectory}}' -eq '*') {'sdk'} Else { '${{parameters.ServiceDirectory}}' }
-          Write-Output "Analyzing Path Lengths..."; $LongestPath = ''; $LongestPathLength = 0
-          Get-ChildItem -Path "$(Build.SourcesDirectory)/$($ServiceDir)" -Recurse -File | ForEach-Object {
-          if ($_.FullName.Length -gt $LongestPathLength) { $LongestPathLength = $_.FullName.Length; $LongestPath = $_.FullName 
-          if ($LongestPathLength -gt 260) { Write-Output "$($LongestPath) : is greater than 260 Character. Reduce path length"; exit 1 }}}
-          Write-Output "The Longest path : $($LongestPath) is $($LongestPathLength) characters long"
-        workingDirectory: $(Build.SourcesDirectory)
+      - task: PowerShell@2
+        inputs:
+          targetType: filePath
+          filePath: "./VerifyPathLength.ps1"
+          arguements: "-ServiceDirectory ${{parameters.ServiceDirectory}}"
+          pwsh: true
+          workingDirectory: $(Build.SourcesDirectory)
         displayName: Analyze Path Lengths
       - task: ms.vss-governance-buildtask.governance-build-task-component-detection.ComponentGovernanceComponentDetection@0
         displayName: "Component Detection"

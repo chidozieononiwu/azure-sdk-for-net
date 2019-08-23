@@ -60,14 +60,11 @@ jobs:
           filePath: "tools/AnalyzeDeps/AnalyzeDeps.ps1"
           arguments: '-PackagesPath "$(Pipeline.Workspace)/packages/*.nupkg" -LockfilePath "$(Build.SourcesDirectory)/eng/Packages.Data.props" -OutPath "$(Build.ArtifactStagingDirectory)/dependencies.html"'
           pwsh: true
-      - task: PowerShell@2
+      - task: PythonScript@0
+        displayName: "Analyze Path Lengths"
         inputs:
-          targetType: filePath
-          filePath: "./VerifyPathLength.ps1"
-          arguements: "-ServiceDirectory ${{parameters.ServiceDirectory}}"
-          pwsh: true
-          workingDirectory: $(Build.SourcesDirectory)
-        displayName: Analyze Path Lengths
+          scriptPath: "$(Build.SourcesDirectory)/VerifyPathLength.py"
+          arguments: $(Build.SourcesDirectory)
       - task: ms.vss-governance-buildtask.governance-build-task-component-detection.ComponentGovernanceComponentDetection@0
         displayName: "Component Detection"
         # ComponentGovernance is currently unable to run on pull requests of public projects.  Running on

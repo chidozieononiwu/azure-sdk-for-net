@@ -455,7 +455,7 @@ public virtual System.Threading.Tasks.ValueTask DisposeAsync ();</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
+    <pre><code class="lang-csharp hljs">[System.ComponentModel.EditorBrowsable]
 public override bool Equals (object obj);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -501,7 +501,7 @@ public override bool Equals (object obj);</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
+    <pre><code class="lang-csharp hljs">[System.ComponentModel.EditorBrowsable]
 public override int GetHashCode ();</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
@@ -650,7 +650,8 @@ indeterminate length of time.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual System.Collections.Generic.IAsyncEnumerable&lt;Azure.Messaging.EventHubs.EventData&gt; SubscribeToEvents (Nullable&lt;TimeSpan&gt; maximumWaitTime, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+    <pre><code class="lang-csharp hljs">[System.Runtime.CompilerServices.AsyncIteratorStateMachine(typeof(Azure.Messaging.EventHubs.EventHubConsumer/&lt;SubscribeToEvents&gt;d__39))]
+public virtual System.Collections.Generic.IAsyncEnumerable&lt;Azure.Messaging.EventHubs.EventData&gt; SubscribeToEvents (Nullable&lt;TimeSpan&gt; maximumWaitTime, System.Threading.CancellationToken cancellationToken = null);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -711,7 +712,7 @@ events or explicitly receive batches, but do not use both approaches concurrentl
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
+    <pre><code class="lang-csharp hljs">[System.ComponentModel.EditorBrowsable]
 public override string ToString ();</code></pre>
   </div>
   <h5 class="returns">Returns</h5>

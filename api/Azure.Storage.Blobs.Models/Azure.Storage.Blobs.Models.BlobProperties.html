@@ -402,7 +402,7 @@
   
   <a id="Azure_Storage_Blobs_Models_BlobProperties_ContentHash_" data-uid="Azure.Storage.Blobs.Models.BlobProperties.ContentHash*"></a>
   <h4 id="Azure_Storage_Blobs_Models_BlobProperties_ContentHash" data-uid="Azure.Storage.Blobs.Models.BlobProperties.ContentHash">ContentHash</h4>
-  <div class="markdown level1 summary"><p>If the blob has an Hash hash and this operation is to read the full blob, this response header is returned so that the client can check for message content integrity.</p>
+  <div class="markdown level1 summary"><p>If the blob has an MD5 hash and this operation is to read the full blob, this response header is returned so that the client can check for message content integrity.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -694,6 +694,32 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string DestinationSnapshot { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_Models_BlobProperties_EncryptionKeySha256_" data-uid="Azure.Storage.Blobs.Models.BlobProperties.EncryptionKeySha256*"></a>
+  <h4 id="Azure_Storage_Blobs_Models_BlobProperties_EncryptionKeySha256" data-uid="Azure.Storage.Blobs.Models.BlobProperties.EncryptionKeySha256">EncryptionKeySha256</h4>
+  <div class="markdown level1 summary"><p>The SHA-256 hash of the encryption key used to encrypt the metadata. This header is only returned when the metadata was encrypted with a customer-provided key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string EncryptionKeySha256 { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">

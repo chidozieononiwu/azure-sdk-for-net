@@ -83,7 +83,7 @@
   
   <h1 id="Azure_Storage_Files_Models_StorageDirectoryInfo" data-uid="Azure.Storage.Files.Models.StorageDirectoryInfo" class="text-break">Class StorageDirectoryInfo
   </h1>
-  <div class="markdown level0 summary"><p>StorageDirectoryInfo</p>
+  <div class="markdown level0 summary"><p>Subset of the directory's properties.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -96,18 +96,6 @@
   <h5 id="Azure_Storage_Files_Models_StorageDirectoryInfo_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class StorageDirectoryInfo</code></pre>
-  </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  
-  
-  <a id="Azure_Storage_Files_Models_StorageDirectoryInfo__ctor_" data-uid="Azure.Storage.Files.Models.StorageDirectoryInfo.#ctor*"></a>
-  <h4 id="Azure_Storage_Files_Models_StorageDirectoryInfo__ctor" data-uid="Azure.Storage.Files.Models.StorageDirectoryInfo.#ctor">StorageDirectoryInfo()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public StorageDirectoryInfo ();</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -141,7 +129,8 @@
   
   <a id="Azure_Storage_Files_Models_StorageDirectoryInfo_LastModified_" data-uid="Azure.Storage.Files.Models.StorageDirectoryInfo.LastModified*"></a>
   <h4 id="Azure_Storage_Files_Models_StorageDirectoryInfo_LastModified" data-uid="Azure.Storage.Files.Models.StorageDirectoryInfo.LastModified">LastModified</h4>
-  <div class="markdown level1 summary"><p>Returns the date and time the share was last modified. Any operation that modifies the directory or its properties updates the last modified time. Operations on files do not affect the last modified time of the directory.</p>
+  <div class="markdown level1 summary"><p>Returns the date and time the directory was last modified. Any operation that modifies the directory or
+its properties updates the last modified time. Operations on files do not affect the last modified time of the directory.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -159,6 +148,32 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Files_Models_StorageDirectoryInfo_SmbProperties_" data-uid="Azure.Storage.Files.Models.StorageDirectoryInfo.SmbProperties*"></a>
+  <h4 id="Azure_Storage_Files_Models_StorageDirectoryInfo_SmbProperties" data-uid="Azure.Storage.Files.Models.StorageDirectoryInfo.SmbProperties">SmbProperties</h4>
+  <div class="markdown level1 summary"><p>The directory's SMB properties.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Nullable&lt;Azure.Storage.Files.Models.FileSmbProperties&gt; SmbProperties { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.FileSmbProperties.html">FileSmbProperties</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.ApplicationModel.Configuration.html",
-          "hash": "MC7rUKoNy3LMb3GdbiVPnA=="
+          "hash": "e0WoDdcspz9pKR0hqXvcAA=="
         }
       },
       "is_incremental": false,
@@ -30,91 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.html",
-          "hash": "JHJmBkG0Ffd9d8xm/yN5lg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Azure.ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.ConfigurationClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Azure.ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.ConfigurationClient.html",
-          "hash": "Xhg29nHPjdaisoOSZZH5iA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Azure.ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.ConfigurationClientOptions.ServiceVersion.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Azure.ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.ConfigurationClientOptions.ServiceVersion.html",
-          "hash": "HXGNsv0WFDRf+U0029cirw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Azure.ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.ConfigurationClientOptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Azure.ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.ConfigurationClientOptions.html",
-          "hash": "AtOfNm5JmiZVZvebqPm8WA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Azure.ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.ConfigurationModelFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Azure.ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.ConfigurationModelFactory.html",
-          "hash": "lMCYAB1wSAEs7Fvkkwi2wQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Azure.ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.ConfigurationSetting.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Azure.ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.ConfigurationSetting.html",
-          "hash": "AIpHfzg27xK0IjL0Zph/DA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Azure.ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.SettingFields.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Azure.ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.SettingFields.html",
-          "hash": "BNNFbJpVIYNz/3GD+t/O6Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Azure.ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.SettingSelector.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Azure.ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.SettingSelector.html",
-          "hash": "C4CeYIWV6E8Iirc/+VFkog=="
+          "hash": "ZNqGr6rXRKV3QlHlSUKqBA=="
         }
       },
       "is_incremental": false,
@@ -246,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Core.Http/Azure.Core.Http.HttpRange.html",
-          "hash": "7GB/tx02CjRbwi7b1NGxRQ=="
+          "hash": "iqXHLmPGOMe+7732H+kpLQ=="
         }
       },
       "is_incremental": false,
@@ -342,7 +258,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Core.Pipeline/Azure.Core.Pipeline.ClientOptions.html",
-          "hash": "nq+cDWo+p+0rFk+mbbRpCw=="
+          "hash": "X2sz33qVfyFASzxIwNmgfg=="
         }
       },
       "is_incremental": false,
@@ -590,6 +506,114 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Data.AppConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Data.AppConfiguration.html",
+          "hash": "cOhp3H0qZ9f3cK9Tzce8Qw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Data.AppConfiguration/Azure.Data.AppConfiguration.AzureClientBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Data.AppConfiguration/Azure.Data.AppConfiguration.AzureClientBuilderExtensions.html",
+          "hash": "EEMS55uy+KOxDHV/QNXeXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Data.AppConfiguration/Azure.Data.AppConfiguration.ConfigurationClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Data.AppConfiguration/Azure.Data.AppConfiguration.ConfigurationClient.html",
+          "hash": "MKXDkcXLq0oIpWqhQiFRlw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Data.AppConfiguration/Azure.Data.AppConfiguration.ConfigurationClientOptions.ServiceVersion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Data.AppConfiguration/Azure.Data.AppConfiguration.ConfigurationClientOptions.ServiceVersion.html",
+          "hash": "hg6JQHvfWq2ygDXrNu+1zg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Data.AppConfiguration/Azure.Data.AppConfiguration.ConfigurationClientOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Data.AppConfiguration/Azure.Data.AppConfiguration.ConfigurationClientOptions.html",
+          "hash": "fxESWaJYlZeCDI19KPjJ+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Data.AppConfiguration/Azure.Data.AppConfiguration.ConfigurationModelFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Data.AppConfiguration/Azure.Data.AppConfiguration.ConfigurationModelFactory.html",
+          "hash": "MtrfxQIrnR7Z5RVxNgIWOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Data.AppConfiguration/Azure.Data.AppConfiguration.ConfigurationSetting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Data.AppConfiguration/Azure.Data.AppConfiguration.ConfigurationSetting.html",
+          "hash": "EYz8iXoumm6hCD3NC6xK7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Data.AppConfiguration/Azure.Data.AppConfiguration.SettingFields.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Data.AppConfiguration/Azure.Data.AppConfiguration.SettingFields.html",
+          "hash": "9PPeS9Qh9oF821hVvzrh4A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Data.AppConfiguration/Azure.Data.AppConfiguration.SettingSelector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Data.AppConfiguration/Azure.Data.AppConfiguration.SettingSelector.html",
+          "hash": "1murnV9wuhGMiODD3gquQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Azure.Data.yml",
       "output": {
         ".html": {
@@ -786,7 +810,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Messaging.EventHubs.Authorization/Azure.Messaging.EventHubs.Authorization.EventHubSharedKeyCredential.html",
-          "hash": "Jb5y1+6gQ0/edrin0Afzlg=="
+          "hash": "Gd2/tD9uxKampR8J91lF3w=="
         }
       },
       "is_incremental": false,
@@ -1062,7 +1086,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Messaging.EventHubs.Processor/Azure.Messaging.EventHubs.Processor.PartitionProcessorCloseReason.html",
-          "hash": "stzrESmR27UEpl2gT9yLHA=="
+          "hash": "zqqAo4gSHL3oCTtbdnUyCg=="
         }
       },
       "is_incremental": false,
@@ -1074,7 +1098,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Messaging.EventHubs.html",
-          "hash": "icW2TBfj9g5rW3wAEuDEnQ=="
+          "hash": "DEXaRIWWxK9HR2ebuo79KQ=="
         }
       },
       "is_incremental": false,
@@ -1086,7 +1110,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.BatchOptions.html",
-          "hash": "0n+xeJ/6oAn6vvcc6aXXVQ=="
+          "hash": "QaQM6/IwJhgS5CeuCrG3lg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventData.SystemEventProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventData.SystemEventProperties.html",
+          "hash": "vX2QfUZ0gF7ft+/alipqRA=="
         }
       },
       "is_incremental": false,
@@ -1098,7 +1134,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventData.html",
-          "hash": "4tYqfV0nxzZJaMsinjcQig=="
+          "hash": "HYR/hgx8EXF8Ck+hr/9X+w=="
         }
       },
       "is_incremental": false,
@@ -1122,7 +1158,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubClient.html",
-          "hash": "BRQCtiFDimtMy2tMUjQRUg=="
+          "hash": "KAZ+seMydpYEgy4hvWrOfw=="
         }
       },
       "is_incremental": false,
@@ -1134,7 +1170,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubClientOptions.html",
-          "hash": "9Ub0vTKfYGEEMlqWC2UcIA=="
+          "hash": "AZABryURRntNu4C7/wTJ+g=="
         }
       },
       "is_incremental": false,
@@ -1146,7 +1182,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubConsumer.html",
-          "hash": "kL+naf71Q3SH2QQWNUsKpw=="
+          "hash": "/oqhQkxjf+wFy3QHNLaWPg=="
         }
       },
       "is_incremental": false,
@@ -1158,7 +1194,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubConsumerOptions.html",
-          "hash": "rO7cwvTy0vCN8+RHKWE4RQ=="
+          "hash": "fXnTc02pdxp0GE0izwSxTw=="
         }
       },
       "is_incremental": false,
@@ -1170,7 +1206,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubProducer.html",
-          "hash": "Kx026/xsoqrfCunCD/mz8A=="
+          "hash": "2O9wpjowcBt9YpmL0mHSfQ=="
         }
       },
       "is_incremental": false,
@@ -1182,7 +1218,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubProducerOptions.html",
-          "hash": "GnSRs2/ToHOi35M6679QnA=="
+          "hash": "POmqRzWv1mWNsm73gxcgrw=="
         }
       },
       "is_incremental": false,
@@ -1194,7 +1230,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubRetryPolicy.html",
-          "hash": "gowQKdbFgBA5M+ou/OgAEA=="
+          "hash": "wDuJ3E0vhGk8gKqUPmPThA=="
         }
       },
       "is_incremental": false,
@@ -1206,7 +1242,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventPosition.html",
-          "hash": "4iclN8LBFHS9BvZKnKdmcg=="
+          "hash": "dt5z1rBmmWLn8Yd58iV24w=="
         }
       },
       "is_incremental": false,
@@ -1242,7 +1278,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.SendOptions.html",
-          "hash": "UhyHsTtsczwXhfc90ypWKQ=="
+          "hash": "DFPPlbKrVfoxk68uSZcnlw=="
         }
       },
       "is_incremental": false,
@@ -1254,7 +1290,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.TransportType.html",
-          "hash": "j+TU596CclPDOkC5hFBszA=="
+          "hash": "8i6lovKTvtcmQzL5lgv2SA=="
         }
       },
       "is_incremental": false,
@@ -1974,7 +2010,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Blobs.Models.html",
-          "hash": "C441ySRYIBWgOSI+dlo0kg=="
+          "hash": "bvBj2rmafcoVdYdpnFt7Ew=="
         }
       },
       "is_incremental": false,
@@ -1998,7 +2034,31 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.AccessTier.html",
-          "hash": "OFPlmpB7JwwFuZaCVKcnHQ=="
+          "hash": "Rxa6yb4A/dYjZBGCDsFbag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.AccessTierOptional.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.AccessTierOptional.html",
+          "hash": "i/SiWd7BGsHLysMNwUfPtQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.AccessTierRequired.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.AccessTierRequired.html",
+          "hash": "yd1IMFWfBIsK66cN1Vnpig=="
         }
       },
       "is_incremental": false,
@@ -2070,7 +2130,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobAppendInfo.html",
-          "hash": "eSZk7FSBFPEjKDcLY+wu1g=="
+          "hash": "N4mFK4g+COlV9rPapved4w=="
         }
       },
       "is_incremental": false,
@@ -2082,7 +2142,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobContentInfo.html",
-          "hash": "uVkTg0Z5Xj+t2Gu4fn0Jvg=="
+          "hash": "CegniOXcy7YdJmiyeSjulQ=="
         }
       },
       "is_incremental": false,
@@ -2118,7 +2178,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobDownloadProperties.html",
-          "hash": "A4f6/1/Gmlw2lXIHJEeY7Q=="
+          "hash": "nIo8AkiCd+Tj5S0we5eLuQ=="
         }
       },
       "is_incremental": false,
@@ -2131,6 +2191,18 @@
         ".html": {
           "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobErrorCode.html",
           "hash": "17I8zT1cCgS0glj72AUxEQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobGetAccessControlResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobGetAccessControlResult.html",
+          "hash": "gYMqYfv2Psjod8+iYkPUhw=="
         }
       },
       "is_incremental": false,
@@ -2190,7 +2262,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobItemProperties.html",
-          "hash": "6OGPCkhwgTVzCbNgbMCi1A=="
+          "hash": "ItiG47MtVxnbmi4dyc2mCw=="
         }
       },
       "is_incremental": false,
@@ -2202,7 +2274,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobProperties.html",
-          "hash": "ajRvBwbbw+sWsoEUG6QC3w=="
+          "hash": "E9ZyIDkz0cojHYOXAwkblA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobRenameResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobRenameResult.html",
+          "hash": "P4v2RuClS5baQo5wtAQJPQ=="
         }
       },
       "is_incremental": false,
@@ -2234,11 +2318,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobSetAccessControlResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobSetAccessControlResult.html",
+          "hash": "78t7wFlTRP317IDVQcqtGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobSnapshotInfo.yml",
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobSnapshotInfo.html",
-          "hash": "7QWiryko0okrjinmV/MrBA=="
+          "hash": "y4CWT7LX8kZ8flD0KNPYBw=="
         }
       },
       "is_incremental": false,
@@ -2262,7 +2358,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobsModelFactory.html",
-          "hash": "d8hMtim3MOYyuauFRKeOgQ=="
+          "hash": "UAJz/R3cLzIZ+4UrWAs6Vg=="
         }
       },
       "is_incremental": false,
@@ -2286,7 +2382,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlockInfo.html",
-          "hash": "LbYmv4pFVSELJTPTiYgO2Q=="
+          "hash": "FMLuFxR18zVhk1Ii1XtakA=="
         }
       },
       "is_incremental": false,
@@ -2426,6 +2522,90 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.DirectoryCreateResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.DirectoryCreateResult.html",
+          "hash": "BZllrfj/4lmVFAXFiwxU0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.DirectoryDeleteResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.DirectoryDeleteResult.html",
+          "hash": "66jNc5TJWpvkyWVfbCOWaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.DirectoryGetAccessControlResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.DirectoryGetAccessControlResult.html",
+          "hash": "PFjVNZGejVD1XNemyKeZKQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.DirectoryRenameResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.DirectoryRenameResult.html",
+          "hash": "um6ObAsu/ZsGaeLohxyHpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.DirectorySetAccessControlResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.DirectorySetAccessControlResult.html",
+          "hash": "M5Z7sf7y4ye7dn4YsAMbNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.EncryptionAlgorithmType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.EncryptionAlgorithmType.html",
+          "hash": "fdju0ePbMFPWOBjpFoFkJQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.Error.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.Error.html",
+          "hash": "17f8OVfbkx44VCRDafs/pA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.GeoReplication.yml",
       "output": {
         ".html": {
@@ -2454,7 +2634,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.GetBlobsOptions.html",
-          "hash": "/XxccUmkvdtelFcs0QQ/RA=="
+          "hash": "Vtdi0+ZiGcIgzk4pnFoQ6g=="
         }
       },
       "is_incremental": false,
@@ -2466,7 +2646,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.GetContainersOptions.html",
-          "hash": "wZwgaMREHXUp6Rodh+o4iw=="
+          "hash": "hYB11VocrmLiegnxXDEYDA=="
         }
       },
       "is_incremental": false,
@@ -2490,7 +2670,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.Lease.html",
-          "hash": "b5JmxZBaaH578S1w0K6bqQ=="
+          "hash": "Nfa+dUtOKgxor8206+sLzA=="
         }
       },
       "is_incremental": false,
@@ -2598,7 +2778,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PageInfo.html",
-          "hash": "GyoeeJZHuSi6+hFIN8fe4w=="
+          "hash": "EIdEvi0An7P9jb1reHYS0Q=="
         }
       },
       "is_incremental": false,
@@ -2642,6 +2822,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PathRenameMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PathRenameMode.html",
+          "hash": "rQSRaC6/Yb50uEXUpy0CMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PublicAccessType.yml",
       "output": {
         ".html": {
@@ -2654,11 +2846,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.RehydratePriority.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.RehydratePriority.html",
+          "hash": "7nE5tIMISbkMKHQ9lPUq5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.ReleasedObjectInfo.yml",
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.ReleasedObjectInfo.html",
-          "hash": "LnG0nIRtJN456K4Evo0qkg=="
+          "hash": "zjMTwqU7/czAIzjBH772Fw=="
         }
       },
       "is_incremental": false,
@@ -2683,6 +2887,18 @@
         ".html": {
           "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.SequenceNumberAction.html",
           "hash": "2F8BRkVrxFqMaBN3EKa9Cg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.ServiceSubmitBatchResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.ServiceSubmitBatchResult.html",
+          "hash": "b/PFjhghNmK2C59T3B4crQ=="
         }
       },
       "is_incremental": false,
@@ -2865,7 +3081,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Blobs/Azure.Storage.Blobs.BlobClient.html",
-          "hash": "Nws/4A0k2YRHhG+zGsL4lw=="
+          "hash": "PkaPbQFAyUOp3J23avbKzA=="
         }
       },
       "is_incremental": false,
@@ -2925,7 +3141,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Common.html",
-          "hash": "gO5NVbbX17daWSp4/Q7Lbg=="
+          "hash": "LaX6jo7EHPmcpe5Qbroyrw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Storage.Common/Azure.Storage.Common.ParallelTransferOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Storage.Common/Azure.Storage.Common.ParallelTransferOptions.html",
+          "hash": "i2z3R2YIs7SjesDzikMtEQ=="
         }
       },
       "is_incremental": false,
@@ -2961,7 +3189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Files.Models.html",
-          "hash": "7Gu/cuWvIeXE6RK+I2EuwA=="
+          "hash": "FqjUEp9Ga6S/OwgPAJlxlQ=="
         }
       },
       "is_incremental": false,
@@ -3065,11 +3293,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Storage.Files.Models/Azure.Storage.Files.Models.FileSmbProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Storage.Files.Models/Azure.Storage.Files.Models.FileSmbProperties.html",
+          "hash": "pkwM3z7xjvFzJ/zGgN7IdQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Storage.Files.Models/Azure.Storage.Files.Models.FileUploadRangeFromURLResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Storage.Files.Models/Azure.Storage.Files.Models.FileUploadRangeFromURLResult.html",
+          "hash": "UP38Nbrw5C5jOZi7Bo4uGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Azure.Storage.Files.Models/Azure.Storage.Files.Models.FilesModelFactory.yml",
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Files.Models/Azure.Storage.Files.Models.FilesModelFactory.html",
-          "hash": "Jw8YahW3qNZ7Hb/kDjgrEQ=="
+          "hash": "hREuvKhegM0eyal1ACLeOw=="
         }
       },
       "is_incremental": false,
@@ -3081,7 +3333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Files.Models/Azure.Storage.Files.Models.GetFilesAndDirectoriesOptions.html",
-          "hash": "/BeXHdVhxk1nOmzarqKCAA=="
+          "hash": "ReySlzrUdPjphpFnAuPr/w=="
         }
       },
       "is_incremental": false,
@@ -3093,7 +3345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Files.Models/Azure.Storage.Files.Models.GetSharesOptions.html",
-          "hash": "Z/UbtvXKnQWKIPGfB6iXwQ=="
+          "hash": "eBsE+iizGSpjpfRYueMFlw=="
         }
       },
       "is_incremental": false,
@@ -3137,6 +3389,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Storage.Files.Models/Azure.Storage.Files.Models.NtfsFileAttributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Storage.Files.Models/Azure.Storage.Files.Models.NtfsFileAttributes.html",
+          "hash": "kQv7/hfNmPvnL78LtzRsDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Azure.Storage.Files.Models/Azure.Storage.Files.Models.Range.yml",
       "output": {
         ".html": {
@@ -3149,11 +3413,71 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Storage.Files.Models/Azure.Storage.Files.Models.RawStorageDirectoryInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Storage.Files.Models/Azure.Storage.Files.Models.RawStorageDirectoryInfo.html",
+          "hash": "BXDETs04/7hXdDJH7bSQuA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Storage.Files.Models/Azure.Storage.Files.Models.RawStorageDirectoryProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Storage.Files.Models/Azure.Storage.Files.Models.RawStorageDirectoryProperties.html",
+          "hash": "o5cx4sR2XCMsSxjh/S3mSg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Storage.Files.Models/Azure.Storage.Files.Models.RawStorageFileInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Storage.Files.Models/Azure.Storage.Files.Models.RawStorageFileInfo.html",
+          "hash": "Hm5BZfB2g+WL1aAEfp3tuQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Storage.Files.Models/Azure.Storage.Files.Models.RawStorageFileProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Storage.Files.Models/Azure.Storage.Files.Models.RawStorageFileProperties.html",
+          "hash": "nlt0nMxLTMtwhHf3Splu6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Azure.Storage.Files.Models/Azure.Storage.Files.Models.RetentionPolicy.yml",
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Files.Models/Azure.Storage.Files.Models.RetentionPolicy.html",
           "hash": "IeloqTL6mH45feQLBQLeHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Storage.Files.Models/Azure.Storage.Files.Models.ShareCreatePermissionResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Storage.Files.Models/Azure.Storage.Files.Models.ShareCreatePermissionResult.html",
+          "hash": "SDyZZiARmuDY7SwYswSWOA=="
         }
       },
       "is_incremental": false,
@@ -3261,7 +3585,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Files.Models/Azure.Storage.Files.Models.StorageDirectoryInfo.html",
-          "hash": "fjnolBDddo+rcaXzsoFU8w=="
+          "hash": "M+phZyQNXP0I6eQlqIyaCA=="
         }
       },
       "is_incremental": false,
@@ -3273,7 +3597,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Files.Models/Azure.Storage.Files.Models.StorageDirectoryProperties.html",
-          "hash": "qLCBtMEEQTe5F4eZsCiY+Q=="
+          "hash": "9Tkr4K8xZ3ei+a3LYU3nUw=="
         }
       },
       "is_incremental": false,
@@ -3309,7 +3633,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Files.Models/Azure.Storage.Files.Models.StorageFileDownloadProperties.html",
-          "hash": "pROb0ledg4BsH+cJhSHhrA=="
+          "hash": "otQmIGE34DTsVqLRqsgwxQ=="
         }
       },
       "is_incremental": false,
@@ -3321,7 +3645,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Files.Models/Azure.Storage.Files.Models.StorageFileInfo.html",
-          "hash": "GdfUV0e0E3CQ3mfv0g3xMg=="
+          "hash": "IrYdZoyjBomRBLSr7MREwg=="
         }
       },
       "is_incremental": false,
@@ -3345,7 +3669,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Files.Models/Azure.Storage.Files.Models.StorageFileProperties.html",
-          "hash": "4Zup3x8jX75s/EXxulN+aw=="
+          "hash": "QhAugPek4c03Lu1lD+n7HQ=="
         }
       },
       "is_incremental": false,
@@ -3405,7 +3729,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Files/Azure.Storage.Files.DirectoryClient.html",
-          "hash": "oTDkPtiY45Gf7aszsXYurg=="
+          "hash": "oKDjFQwaResHZIP6xfRfdg=="
         }
       },
       "is_incremental": false,
@@ -3417,7 +3741,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Files/Azure.Storage.Files.FileClient.html",
-          "hash": "1wCYfK1BqCmgwCtVEIa2FA=="
+          "hash": "qKQgx7kNdjkLgtCV1g+4Ww=="
         }
       },
       "is_incremental": false,
@@ -3465,7 +3789,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Files/Azure.Storage.Files.ShareClient.html",
-          "hash": "3ZhbxNqIfhd7gCRVDA1dmA=="
+          "hash": "65c183JRgomcPl6koT0rFQ=="
         }
       },
       "is_incremental": false,
@@ -3513,7 +3837,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Queues.Models/Azure.Storage.Queues.Models.DequeuedMessage.html",
-          "hash": "dgc0ykK8rVro1lx7FrEhvg=="
+          "hash": "4JSXFMpa0W0KpouEto/2jw=="
         }
       },
       "is_incremental": false,
@@ -3561,7 +3885,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Queues.Models/Azure.Storage.Queues.Models.GetQueuesOptions.html",
-          "hash": "GPI2QyxJsAeZ+A80dcVDjA=="
+          "hash": "8v5mhAphc37HqimaszYEzA=="
         }
       },
       "is_incremental": false,
@@ -3729,7 +4053,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Queues/Azure.Storage.Queues.QueueClient.html",
-          "hash": "M6tai0bZVOARS60MhfBVLA=="
+          "hash": "fKiYBl1bJriZgB5JyyYcqw=="
         }
       },
       "is_incremental": false,
@@ -3789,7 +4113,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Sas/Azure.Storage.Sas.AccountSasBuilder.html",
-          "hash": "RKVnwnAqzf0o+i5yHOV24A=="
+          "hash": "EBEfG/sj9MrIrpVr0NjRhw=="
         }
       },
       "is_incremental": false,
@@ -3801,7 +4125,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Sas/Azure.Storage.Sas.AccountSasPermissions.html",
-          "hash": "ZB+f6USVGsTM3eEXJtQ4pA=="
+          "hash": "E2SdYHywHV8ZYb7tb7wV/A=="
         }
       },
       "is_incremental": false,
@@ -3813,7 +4137,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Sas/Azure.Storage.Sas.AccountSasResourceTypes.html",
-          "hash": "Fp1QkXZoCREVaku3Ly4hbQ=="
+          "hash": "rihYUUMqLxWyjxC/KoaRdw=="
         }
       },
       "is_incremental": false,
@@ -3825,7 +4149,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Sas/Azure.Storage.Sas.AccountSasServices.html",
-          "hash": "mH0zZjZqFw0O4QPomk4UNA=="
+          "hash": "6PbjoaHtml+lB2W1qFRzhw=="
         }
       },
       "is_incremental": false,
@@ -3837,7 +4161,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Sas/Azure.Storage.Sas.BlobAccountSasPermissions.html",
-          "hash": "rqC+6Ju2Bloo+BNz/rYq5A=="
+          "hash": "iwfZFRr1v9NBc8FhnkQkIQ=="
         }
       },
       "is_incremental": false,
@@ -3849,7 +4173,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Sas/Azure.Storage.Sas.BlobSasBuilder.html",
-          "hash": "vbqvPQEFmiAxF4cojwoTGA=="
+          "hash": "LR8BENg/MoY4DN+fmWHyoA=="
         }
       },
       "is_incremental": false,
@@ -3861,7 +4185,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Sas/Azure.Storage.Sas.BlobSasPermissions.html",
-          "hash": "QIrJAwmt6EWgJ00NdpuHgw=="
+          "hash": "DxHdiiT3lt/QJu8Pbp6mXQ=="
         }
       },
       "is_incremental": false,
@@ -3885,7 +4209,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Sas/Azure.Storage.Sas.ContainerSasPermissions.html",
-          "hash": "KxB2WcHz0at/fm0Fda3RlA=="
+          "hash": "Z4k3Yl7MkJ7APKcJbw/X+A=="
         }
       },
       "is_incremental": false,
@@ -3897,7 +4221,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Sas/Azure.Storage.Sas.FileAccountSasPermissions.html",
-          "hash": "xff6+TcA3XL/1OIP14C8QQ=="
+          "hash": "oy02ImOzV4NGL/q8Nw75Jg=="
         }
       },
       "is_incremental": false,
@@ -3909,7 +4233,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Sas/Azure.Storage.Sas.FileSasBuilder.html",
-          "hash": "s1n1FFwlXfCtAp6LLp/bfA=="
+          "hash": "6eVZBfIZxoFdumwbF1W7Sw=="
         }
       },
       "is_incremental": false,
@@ -3921,7 +4245,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Sas/Azure.Storage.Sas.FileSasPermissions.html",
-          "hash": "vyfTwyhvNesHRM0DgmGEEw=="
+          "hash": "mh9dBsJFBSjNc08B98l2/Q=="
         }
       },
       "is_incremental": false,
@@ -3933,7 +4257,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Sas/Azure.Storage.Sas.IPRange.html",
-          "hash": "TtZYqilR0NP77707vzc9qA=="
+          "hash": "S0UoPZ+q5P0MHBuSLljZ7Q=="
         }
       },
       "is_incremental": false,
@@ -3945,7 +4269,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Sas/Azure.Storage.Sas.QueueAccountSasPermissions.html",
-          "hash": "UxH6ACoH7E8dREtgo3LR6A=="
+          "hash": "UzyEqmmtHurj98ivhc1LcA=="
         }
       },
       "is_incremental": false,
@@ -3957,7 +4281,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Sas/Azure.Storage.Sas.QueueSasBuilder.html",
-          "hash": "wTqaUTN4Z1a8QZ85L4U+Ig=="
+          "hash": "WtIMeA3jzvix2odA94hH9g=="
         }
       },
       "is_incremental": false,
@@ -3969,7 +4293,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Sas/Azure.Storage.Sas.QueueSasPermissions.html",
-          "hash": "QPfJad3if6/l5DKOOEJIJw=="
+          "hash": "IKURuCaK3tUYa/y7t2P/NA=="
         }
       },
       "is_incremental": false,
@@ -3981,7 +4305,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Sas/Azure.Storage.Sas.SasProtocol.html",
-          "hash": "un0vvf7Su8jB/3qXFCOwwQ=="
+          "hash": "YTNaH6jRfkOWtUvVapdwcQ=="
         }
       },
       "is_incremental": false,
@@ -4005,7 +4329,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Sas/Azure.Storage.Sas.ShareSasPermissions.html",
-          "hash": "sCPEoA2wgU2vAXugPGodIw=="
+          "hash": "LtolHjFizijgflSSEElcAw=="
         }
       },
       "is_incremental": false,
@@ -4017,7 +4341,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure.Storage.Sas/Azure.Storage.Sas.SnapshotSasPermissions.html",
-          "hash": "kIOysPertihns+FWBIpt5A=="
+          "hash": "ckkNBmNFUtFFZn29/tsm0w=="
         }
       },
       "is_incremental": false,
@@ -4077,7 +4401,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure/Azure.AsyncCollection-1.html",
-          "hash": "MvXEmWsBVbpF/IZrT0L+Xg=="
+          "hash": "mSM9jUouKQHWNYSbihy8Ag=="
         }
       },
       "is_incremental": false,
@@ -4101,7 +4425,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure/Azure.Operation-1.html",
-          "hash": "WVcslRsuzg86qQh4jXZdTA=="
+          "hash": "MO6J4w9nUiHAIMG/vuleXQ=="
         }
       },
       "is_incremental": false,
@@ -4113,7 +4437,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure/Azure.Page-1.html",
-          "hash": "lTW8p9MltSXoAlkTH+3xAQ=="
+          "hash": "JPLD12KPCKvVSzYKjNO7AQ=="
         }
       },
       "is_incremental": false,
@@ -4137,7 +4461,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Azure/Azure.Response-1.html",
-          "hash": "DophXWN9K4AecXyfKb0rRQ=="
+          "hash": "N4jBNJh1cuc9emZxLHbIjw=="
         }
       },
       "is_incremental": false,
@@ -11973,7 +12297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Azure.Batch/Microsoft.Azure.Batch.BatchErrorMessages.html",
-          "hash": "k6OkgLt7yrGKy79KrYMzww=="
+          "hash": "DtkWqmdRF/YzO4RDwghfag=="
         }
       },
       "is_incremental": false,
@@ -28242,7 +28566,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Azure.EventHubs/Microsoft.Azure.EventHubs.ClientEntity.html",
-          "hash": "AOGjXkVqztrQNmK88k1New=="
+          "hash": "CZ6s0L2M6Disyw8h8fLhHQ=="
         }
       },
       "is_incremental": false,
@@ -28302,7 +28626,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Azure.EventHubs/Microsoft.Azure.EventHubs.EventHubClient.html",
-          "hash": "A70+2l3Wn2I8FfEXC7vI+g=="
+          "hash": "P69vY2DbHxlHi79+W9NPzQ=="
         }
       },
       "is_incremental": false,
@@ -28482,7 +28806,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Azure.EventHubs/Microsoft.Azure.EventHubs.PartitionReceiver.html",
-          "hash": "l8WYWdv5AATomanmq+E5JA=="
+          "hash": "S7d2N2eT27uZN96NfxfSAA=="
         }
       },
       "is_incremental": false,
@@ -28494,7 +28818,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Azure.EventHubs/Microsoft.Azure.EventHubs.PartitionSender.html",
-          "hash": "OaYftGvokdTunYkYbgNviw=="
+          "hash": "7suB7vHHvmS/+UyXgYr+MA=="
         }
       },
       "is_incremental": false,
@@ -32214,7 +32538,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.ConditionalSkill.html",
-          "hash": "ZBaPdTr2xAgdWpwWje16aw=="
+          "hash": "A6Us0x2OL91ttaKph3jmgA=="
         }
       },
       "is_incremental": false,
@@ -32538,7 +32862,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.EntityRecognitionSkill.html",
-          "hash": "dFxJQfJi2ve1F3Q/uagaXw=="
+          "hash": "tB9xH6MJp8d2kb0VZOu1zQ=="
         }
       },
       "is_incremental": false,
@@ -32670,7 +32994,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.ImageAnalysisSkill.html",
-          "hash": "V4viXhJMOBt2lmh5x2Bn9A=="
+          "hash": "3kHrQbn+8Y7fa3otUVQrrw=="
         }
       },
       "is_incremental": false,
@@ -32946,7 +33270,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.ItemError.html",
-          "hash": "6LEAYZErgS4eRFkuHnxbIg=="
+          "hash": "Mhq2RzM9CRMAF26UE3YVWQ=="
         }
       },
       "is_incremental": false,
@@ -32958,7 +33282,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.ItemWarning.html",
-          "hash": "p2rEk1Q6MzEy2Wl5Wxg3xQ=="
+          "hash": "UaZXmK6KZNCevXVVKV+3rA=="
         }
       },
       "is_incremental": false,
@@ -32982,7 +33306,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.KeyPhraseExtractionSkill.html",
-          "hash": "Xz5/9dW2dS1dDkZN0sncDA=="
+          "hash": "OlVTZV+DoXAvSiGdHBVxPQ=="
         }
       },
       "is_incremental": false,
@@ -33042,7 +33366,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.LanguageDetectionSkill.html",
-          "hash": "4njqFE+LkXEI7tSqbmRfjw=="
+          "hash": "hCZTEEB4klirc3EUEEpkvA=="
         }
       },
       "is_incremental": false,
@@ -33114,7 +33438,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.MergeSkill.html",
-          "hash": "WzLWAs30pCZxftAOFsXwlQ=="
+          "hash": "JbA5gRxbl7XBtGGw0ee3nA=="
         }
       },
       "is_incremental": false,
@@ -33222,7 +33546,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.NamedEntityRecognitionSkill.html",
-          "hash": "eovOqekQzzyCLpId7NyF7g=="
+          "hash": "BgJtVhN1r8S63tokbkRs1g=="
         }
       },
       "is_incremental": false,
@@ -33246,7 +33570,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.OcrSkill.html",
-          "hash": "nJUIYwta1kYdFfwMdubNAA=="
+          "hash": "ozRstPyDcYXQpKg58lv3bg=="
         }
       },
       "is_incremental": false,
@@ -33558,7 +33882,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.SentimentSkill.html",
-          "hash": "Q8wV0r/etyAukz/OrdvDiQ=="
+          "hash": "mo1GdujT2rGB8UPJi96k6g=="
         }
       },
       "is_incremental": false,
@@ -33630,7 +33954,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.ShaperSkill.html",
-          "hash": "R349GUDyyEP3jYdstZxIkg=="
+          "hash": "+/JqaPdGVj0AxqBNVb2CaA=="
         }
       },
       "is_incremental": false,
@@ -33654,7 +33978,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.Skill.html",
-          "hash": "MPBwHki0RgdafEVviZoniw=="
+          "hash": "/xFG1ZXnarBmhko34y3MgA=="
         }
       },
       "is_incremental": false,
@@ -33726,7 +34050,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.SplitSkill.html",
-          "hash": "ocgVcXtlCGCD+YIWe8KMcQ=="
+          "hash": "gSFYMI2GoK7p3erwENZspg=="
         }
       },
       "is_incremental": false,
@@ -33990,7 +34314,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.TextTranslationSkill.html",
-          "hash": "Ywmsm+kTZgd6ElhthX5u1w=="
+          "hash": "ZokzeqvhidMLH7z2jpBuvA=="
         }
       },
       "is_incremental": false,
@@ -34158,7 +34482,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Azure.Search.Models/Microsoft.Azure.Search.Models.WebApiSkill.html",
-          "hash": "I2HepmS4KNKwTXGCvMGiRg=="
+          "hash": "xF+fvHqOXoDeFZMvR72Nrw=="
         }
       },
       "is_incremental": false,
@@ -35847,7 +36171,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "B0EDoCS+6ye40A20O35Esw=="
+          "hash": "DRRJpGbSKRoYKla8OopDAw=="
         }
       },
       "is_incremental": false,
@@ -35859,7 +36183,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "pXe6MW0kG3N6IHP5/39Q8w=="
+          "hash": "fNE2za4WIKSiJycTAbfr7A=="
         }
       },
       "is_incremental": false,
@@ -35898,7 +36222,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "GWEL9gTtfk4JJfyUjhgvkA=="
+          "hash": "8mv1Fek46zgbunyHU4YCxg=="
         }
       },
       "is_incremental": false,
@@ -35944,7 +36268,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 2984,
+          "total_file_count": 3011,
           "skipped_file_count": 0
         }
       }

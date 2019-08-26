@@ -175,7 +175,7 @@ as an aid to consumers who wish to deserialize the binary data.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTimeOffset EnqueuedTime { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Nullable&lt;DateTimeOffset&gt; EnqueuedTime { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -187,11 +187,14 @@ as an aid to consumers who wish to deserialize the binary data.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Azure_Messaging_EventHubs_EventData_EnqueuedTime_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is only populated for events received from the Event Hubs service.</p>
+</div>
   
   
   <a id="Azure_Messaging_EventHubs_EventData_Offset_" data-uid="Azure.Messaging.EventHubs.EventData.Offset*"></a>
@@ -201,7 +204,7 @@ as an aid to consumers who wish to deserialize the binary data.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public long Offset { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Nullable&lt;long&gt; Offset { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -213,11 +216,14 @@ as an aid to consumers who wish to deserialize the binary data.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Azure_Messaging_EventHubs_EventData_Offset_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is only populated for events received from the Event Hubs service.</p>
+</div>
   
   
   <a id="Azure_Messaging_EventHubs_EventData_PartitionKey_" data-uid="Azure.Messaging.EventHubs.EventData.PartitionKey*"></a>
@@ -244,6 +250,9 @@ as an aid to consumers who wish to deserialize the binary data.</p>
       </tr>
     </tbody>
   </table>
+  <h5 id="Azure_Messaging_EventHubs_EventData_PartitionKey_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is only populated for events received from the Event Hubs service.</p>
+</div>
   
   
   <a id="Azure_Messaging_EventHubs_EventData_Properties_" data-uid="Azure.Messaging.EventHubs.EventData.Properties*"></a>
@@ -290,7 +299,7 @@ as an aid to consumers who wish to deserialize the binary data.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public long SequenceNumber { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Nullable&lt;long&gt; SequenceNumber { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -302,7 +311,37 @@ as an aid to consumers who wish to deserialize the binary data.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Messaging_EventHubs_EventData_SequenceNumber_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is only populated for events received from the Event Hubs service.</p>
+</div>
+  
+  
+  <a id="Azure_Messaging_EventHubs_EventData_SystemProperties_" data-uid="Azure.Messaging.EventHubs.EventData.SystemProperties*"></a>
+  <h4 id="Azure_Messaging_EventHubs_EventData_SystemProperties" data-uid="Azure.Messaging.EventHubs.EventData.SystemProperties">SystemProperties</h4>
+  <div class="markdown level1 summary"><p>The set of event properties which are owned and populated by the Event Hubs service during
+operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected internal Azure.Messaging.EventHubs.EventData.SystemEventProperties SystemProperties { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Messaging.EventHubs.EventData.SystemEventProperties.html">EventData.SystemEventProperties</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -318,7 +357,7 @@ as an aid to consumers who wish to deserialize the binary data.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
+    <pre><code class="lang-csharp hljs">[System.ComponentModel.EditorBrowsable]
 public override bool Equals (object obj);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -364,7 +403,7 @@ public override bool Equals (object obj);</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
+    <pre><code class="lang-csharp hljs">[System.ComponentModel.EditorBrowsable]
 public override int GetHashCode ();</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
@@ -392,7 +431,7 @@ public override int GetHashCode ();</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
+    <pre><code class="lang-csharp hljs">[System.ComponentModel.EditorBrowsable]
 public override string ToString ();</code></pre>
   </div>
   <h5 class="returns">Returns</h5>

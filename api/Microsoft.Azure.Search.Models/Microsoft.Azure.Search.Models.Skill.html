@@ -124,12 +124,12 @@
   
   
   <a id="Microsoft_Azure_Search_Models_Skill__ctor_" data-uid="Microsoft.Azure.Search.Models.Skill.#ctor*"></a>
-  <h4 id="Microsoft_Azure_Search_Models_Skill__ctor_System_Collections_Generic_IList_Microsoft_Azure_Search_Models_InputFieldMappingEntry__System_Collections_Generic_IList_Microsoft_Azure_Search_Models_OutputFieldMappingEntry__System_String_System_String_" data-uid="Microsoft.Azure.Search.Models.Skill.#ctor(System.Collections.Generic.IList{Microsoft.Azure.Search.Models.InputFieldMappingEntry},System.Collections.Generic.IList{Microsoft.Azure.Search.Models.OutputFieldMappingEntry},System.String,System.String)">Skill(IList&lt;InputFieldMappingEntry&gt;, IList&lt;OutputFieldMappingEntry&gt;, String, String)</h4>
+  <h4 id="Microsoft_Azure_Search_Models_Skill__ctor_System_Collections_Generic_IList_Microsoft_Azure_Search_Models_InputFieldMappingEntry__System_Collections_Generic_IList_Microsoft_Azure_Search_Models_OutputFieldMappingEntry__System_String_System_String_System_String_" data-uid="Microsoft.Azure.Search.Models.Skill.#ctor(System.Collections.Generic.IList{Microsoft.Azure.Search.Models.InputFieldMappingEntry},System.Collections.Generic.IList{Microsoft.Azure.Search.Models.OutputFieldMappingEntry},System.String,System.String,System.String)">Skill(IList&lt;InputFieldMappingEntry&gt;, IList&lt;OutputFieldMappingEntry&gt;, String, String, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Skill (System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.InputFieldMappingEntry&gt; inputs, System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.OutputFieldMappingEntry&gt; outputs, string description = null, string context = null);</code></pre>
+    <pre><code class="lang-csharp hljs">public Skill (System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.InputFieldMappingEntry&gt; inputs, System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.OutputFieldMappingEntry&gt; outputs, string name = null, string description = null, string context = null);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -149,6 +149,11 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Search.Models.OutputFieldMappingEntry.html">OutputFieldMappingEntry</a>&gt;</td>
         <td><span class="parametername">outputs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
         <td></td>
       </tr>
       <tr>
@@ -239,6 +244,32 @@ public System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.InputFi
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Search.Models.InputFieldMappingEntry.html">InputFieldMappingEntry</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Search_Models_Skill_Name_" data-uid="Microsoft.Azure.Search.Models.Skill.Name*"></a>
+  <h4 id="Microsoft_Azure_Search_Models_Skill_Name" data-uid="Microsoft.Azure.Search.Models.Skill.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Newtonsoft.Json.JsonProperty(PropertyName=&quot;name&quot;)]
+public string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>

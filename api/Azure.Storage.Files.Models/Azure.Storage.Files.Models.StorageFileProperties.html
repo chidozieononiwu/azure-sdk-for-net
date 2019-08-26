@@ -83,7 +83,7 @@
   
   <h1 id="Azure_Storage_Files_Models_StorageFileProperties" data-uid="Azure.Storage.Files.Models.StorageFileProperties" class="text-break">Class StorageFileProperties
   </h1>
-  <div class="markdown level0 summary"><p>StorageFileProperties</p>
+  <div class="markdown level0 summary"><p>Properties for a file.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -96,19 +96,6 @@
   <h5 id="Azure_Storage_Files_Models_StorageFileProperties_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class StorageFileProperties</code></pre>
-  </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  
-  
-  <a id="Azure_Storage_Files_Models_StorageFileProperties__ctor_" data-uid="Azure.Storage.Files.Models.StorageFileProperties.#ctor*"></a>
-  <h4 id="Azure_Storage_Files_Models_StorageFileProperties__ctor" data-uid="Azure.Storage.Files.Models.StorageFileProperties.#ctor">StorageFileProperties()</h4>
-  <div class="markdown level1 summary"><p>Creates a new StorageFileProperties instance</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public StorageFileProperties ();</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -246,7 +233,7 @@
   
   <a id="Azure_Storage_Files_Models_StorageFileProperties_ContentLength_" data-uid="Azure.Storage.Files.Models.StorageFileProperties.ContentLength*"></a>
   <h4 id="Azure_Storage_Files_Models_StorageFileProperties_ContentLength" data-uid="Azure.Storage.Files.Models.StorageFileProperties.ContentLength">ContentLength</h4>
-  <div class="markdown level1 summary"><p>The size of the file in bytes. This header returns the value of the 'x-ms-content-length' header that is stored with the file.</p>
+  <div class="markdown level1 summary"><p>The size of the file in bytes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -532,7 +519,7 @@
   
   <a id="Azure_Storage_Files_Models_StorageFileProperties_LastModified_" data-uid="Azure.Storage.Files.Models.StorageFileProperties.LastModified*"></a>
   <h4 id="Azure_Storage_Files_Models_StorageFileProperties_LastModified" data-uid="Azure.Storage.Files.Models.StorageFileProperties.LastModified">LastModified</h4>
-  <div class="markdown level1 summary"><p>Returns the date and time the file was last modified. The date format follows RFC 1123. Any operation that modifies the file or its properties updates the last modified time.</p>
+  <div class="markdown level1 summary"><p>The DateTimeOffset when the file was last modified.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -576,6 +563,32 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Files_Models_StorageFileProperties_SmbProperties_" data-uid="Azure.Storage.Files.Models.StorageFileProperties.SmbProperties*"></a>
+  <h4 id="Azure_Storage_Files_Models_StorageFileProperties_SmbProperties" data-uid="Azure.Storage.Files.Models.StorageFileProperties.SmbProperties">SmbProperties</h4>
+  <div class="markdown level1 summary"><p>The SMB properties for the file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Azure.Storage.Files.Models.FileSmbProperties SmbProperties { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Files.Models.FileSmbProperties.html">FileSmbProperties</a></td>
         <td></td>
       </tr>
     </tbody>

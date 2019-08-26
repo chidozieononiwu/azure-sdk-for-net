@@ -111,12 +111,12 @@
   
   
   <a id="Microsoft_Azure_Search_Models_ItemError__ctor_" data-uid="Microsoft.Azure.Search.Models.ItemError.#ctor*"></a>
-  <h4 id="Microsoft_Azure_Search_Models_ItemError__ctor_System_String_System_String_System_Int32_" data-uid="Microsoft.Azure.Search.Models.ItemError.#ctor(System.String,System.String,System.Int32)">ItemError(String, String, Int32)</h4>
+  <h4 id="Microsoft_Azure_Search_Models_ItemError__ctor_System_String_System_String_System_Int32_System_String_System_String_System_String_" data-uid="Microsoft.Azure.Search.Models.ItemError.#ctor(System.String,System.String,System.Int32,System.String,System.String,System.String)">ItemError(String, String, Int32, String, String, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ItemError (string key = null, string errorMessage = null, int statusCode = 0);</code></pre>
+    <pre><code class="lang-csharp hljs">public ItemError (string key = null, string errorMessage = null, int statusCode = 0, string name = null, string details = null, string documentationLink = null);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -143,10 +143,77 @@
         <td><span class="parametername">statusCode</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">details</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">documentationLink</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h3 id="properties">Properties
   </h3>
+  
+  
+  <a id="Microsoft_Azure_Search_Models_ItemError_Details_" data-uid="Microsoft.Azure.Search.Models.ItemError.Details*"></a>
+  <h4 id="Microsoft_Azure_Search_Models_ItemError_Details" data-uid="Microsoft.Azure.Search.Models.ItemError.Details">Details</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Newtonsoft.Json.JsonProperty(PropertyName=&quot;details&quot;)]
+public string Details { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Search_Models_ItemError_DocumentationLink_" data-uid="Microsoft.Azure.Search.Models.ItemError.DocumentationLink*"></a>
+  <h4 id="Microsoft_Azure_Search_Models_ItemError_DocumentationLink" data-uid="Microsoft.Azure.Search.Models.ItemError.DocumentationLink">DocumentationLink</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Newtonsoft.Json.JsonProperty(PropertyName=&quot;documentationLink&quot;)]
+public string DocumentationLink { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Microsoft_Azure_Search_Models_ItemError_ErrorMessage_" data-uid="Microsoft.Azure.Search.Models.ItemError.ErrorMessage*"></a>
@@ -183,6 +250,32 @@ public string ErrorMessage { get; }</code></pre>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Newtonsoft.Json.JsonProperty(PropertyName=&quot;key&quot;)]
 public string Key { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Search_Models_ItemError_Name_" data-uid="Microsoft.Azure.Search.Models.ItemError.Name*"></a>
+  <h4 id="Microsoft_Azure_Search_Models_ItemError_Name" data-uid="Microsoft.Azure.Search.Models.ItemError.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Newtonsoft.Json.JsonProperty(PropertyName=&quot;name&quot;)]
+public string Name { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">

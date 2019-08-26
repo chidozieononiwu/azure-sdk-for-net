@@ -353,15 +353,15 @@ every request.</p>
   
   
   <a id="Azure_Storage_Files_DirectoryClient_Create_" data-uid="Azure.Storage.Files.DirectoryClient.Create*"></a>
-  <h4 id="Azure_Storage_Files_DirectoryClient_Create_System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.Create(System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)">Create(IDictionary&lt;String,String&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_Create_System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_">Create(IDictionary&lt;String,String&gt;, CancellationToken)</a> operation creates a new directory
+  <h4 id="Azure_Storage_Files_DirectoryClient_Create_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.Create(System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{Azure.Storage.Files.Models.FileSmbProperties},System.String,System.Threading.CancellationToken)">Create(IDictionary&lt;String,String&gt;, Nullable&lt;FileSmbProperties&gt;, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_Create_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken_">Create(IDictionary&lt;String,String&gt;, Nullable&lt;FileSmbProperties&gt;, String, CancellationToken)</a> operation creates a new directory
 at the specified <a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_Uri">Uri</a>.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/create-directory"></a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Storage.Files.Models.StorageDirectoryInfo&gt; Create (System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Storage.Files.Models.StorageDirectoryInfo&gt; Create (System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, Nullable&lt;Azure.Storage.Files.Models.FileSmbProperties&gt; smbProperties = null, string filePermission = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -377,6 +377,18 @@ at the specified <a class="xref" href="Azure.Storage.Files.DirectoryClient.html#
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td><span class="parametername">metadata</span></td>
         <td><p>Optional custom metadata to set for this directory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Files.Models/Azure.Storage.Files.Models.FileSmbProperties.html">FileSmbProperties</a>&gt;</td>
+        <td><span class="parametername">smbProperties</span></td>
+        <td><p>Optional SMB properties to set for the directory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filePermission</span></td>
+        <td><p>Optional file permission to set on the directory.</p>
 </td>
       </tr>
       <tr>
@@ -405,15 +417,15 @@ created directory.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Files_DirectoryClient_Create_System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <h5 id="Azure_Storage_Files_DirectoryClient_Create_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
 a failure occurs.</p>
 </div>
   
   
   <a id="Azure_Storage_Files_DirectoryClient_CreateAsync_" data-uid="Azure.Storage.Files.DirectoryClient.CreateAsync*"></a>
-  <h4 id="Azure_Storage_Files_DirectoryClient_CreateAsync_System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.CreateAsync(System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)">CreateAsync(IDictionary&lt;String,String&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_CreateAsync_System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_">CreateAsync(IDictionary&lt;String,String&gt;, CancellationToken)</a> operation creates a new directory
+  <h4 id="Azure_Storage_Files_DirectoryClient_CreateAsync_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.CreateAsync(System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{Azure.Storage.Files.Models.FileSmbProperties},System.String,System.Threading.CancellationToken)">CreateAsync(IDictionary&lt;String,String&gt;, Nullable&lt;FileSmbProperties&gt;, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_CreateAsync_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken_">CreateAsync(IDictionary&lt;String,String&gt;, Nullable&lt;FileSmbProperties&gt;, String, CancellationToken)</a> operation creates a new directory
 at the specified <a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_Uri">Uri</a>.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/create-directory"></a>.</p>
 </div>
@@ -421,7 +433,7 @@ at the specified <a class="xref" href="Azure.Storage.Files.DirectoryClient.html#
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
-public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Models.StorageDirectoryInfo&gt;&gt; CreateAsync (System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Models.StorageDirectoryInfo&gt;&gt; CreateAsync (System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, Nullable&lt;Azure.Storage.Files.Models.FileSmbProperties&gt; smbProperties = null, string filePermission = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -437,6 +449,18 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Fi
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td><span class="parametername">metadata</span></td>
         <td><p>Optional custom metadata to set for this directory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Files.Models/Azure.Storage.Files.Models.FileSmbProperties.html">FileSmbProperties</a>&gt;</td>
+        <td><span class="parametername">smbProperties</span></td>
+        <td><p>Optional SMB properties to set for the directory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filePermission</span></td>
+        <td><p>Optional file permission to set on the directory.</p>
 </td>
       </tr>
       <tr>
@@ -465,14 +489,14 @@ created directory.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Files_DirectoryClient_CreateAsync_System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <h5 id="Azure_Storage_Files_DirectoryClient_CreateAsync_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
 a failure occurs.</p>
 </div>
   
   
   <a id="Azure_Storage_Files_DirectoryClient_CreateFile_" data-uid="Azure.Storage.Files.DirectoryClient.CreateFile*"></a>
-  <h4 id="Azure_Storage_Files_DirectoryClient_CreateFile_System_String_System_Int64_System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.CreateFile(System.String,System.Int64,System.Nullable{Azure.Storage.Files.Models.FileHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)">CreateFile(String, Int64, Nullable&lt;FileHttpHeaders&gt;, IDictionary&lt;String,String&gt;, CancellationToken)</h4>
+  <h4 id="Azure_Storage_Files_DirectoryClient_CreateFile_System_String_System_Int64_System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.CreateFile(System.String,System.Int64,System.Nullable{Azure.Storage.Files.Models.FileHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{Azure.Storage.Files.Models.FileSmbProperties},System.String,System.Threading.CancellationToken)">CreateFile(String, Int64, Nullable&lt;FileHttpHeaders&gt;, IDictionary&lt;String,String&gt;, Nullable&lt;FileSmbProperties&gt;, String, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Creates a new file or replaces an existing file.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/create-file"></a>.</p>
 </div>
@@ -480,7 +504,7 @@ a failure occurs.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Azure.Core.ForwardsClientCalls]
-public virtual Azure.Response&lt;Azure.Storage.Files.FileClient&gt; CreateFile (string fileName, long maxSize, Nullable&lt;Azure.Storage.Files.Models.FileHttpHeaders&gt; httpHeaders = null, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+public virtual Azure.Response&lt;Azure.Storage.Files.FileClient&gt; CreateFile (string fileName, long maxSize, Nullable&lt;Azure.Storage.Files.Models.FileHttpHeaders&gt; httpHeaders = null, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, Nullable&lt;Azure.Storage.Files.Models.FileSmbProperties&gt; smbProperties = null, string filePermission = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -514,6 +538,18 @@ public virtual Azure.Response&lt;Azure.Storage.Files.FileClient&gt; CreateFile (
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td><span class="parametername">metadata</span></td>
         <td><p>Optional custom metadata to set for the file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Files.Models/Azure.Storage.Files.Models.FileSmbProperties.html">FileSmbProperties</a>&gt;</td>
+        <td><span class="parametername">smbProperties</span></td>
+        <td><p>Optional SMB properties to set for the file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filePermission</span></td>
+        <td><p>Optional file permission to set for the file.</p>
 </td>
       </tr>
       <tr>
@@ -541,14 +577,14 @@ notifications that the operation should be cancelled.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Files_DirectoryClient_CreateFile_System_String_System_Int64_System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <h5 id="Azure_Storage_Files_DirectoryClient_CreateFile_System_String_System_Int64_System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method only initializes the file.
 To add content, use <a class="xref" href="Azure.Storage.Files.FileClient.html#Azure_Storage_Files_FileClient_UploadRangeAsync_Azure_Storage_Files_Models_FileRangeWriteType_Azure_Core_Http_HttpRange_System_IO_Stream_System_Byte___System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">UploadRangeAsync(FileRangeWriteType, HttpRange, Stream, Byte[], IProgress&lt;StorageProgress&gt;, CancellationToken)</a>.</p>
 </div>
   
   
   <a id="Azure_Storage_Files_DirectoryClient_CreateFileAsync_" data-uid="Azure.Storage.Files.DirectoryClient.CreateFileAsync*"></a>
-  <h4 id="Azure_Storage_Files_DirectoryClient_CreateFileAsync_System_String_System_Int64_System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.CreateFileAsync(System.String,System.Int64,System.Nullable{Azure.Storage.Files.Models.FileHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)">CreateFileAsync(String, Int64, Nullable&lt;FileHttpHeaders&gt;, IDictionary&lt;String,String&gt;, CancellationToken)</h4>
+  <h4 id="Azure_Storage_Files_DirectoryClient_CreateFileAsync_System_String_System_Int64_System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.CreateFileAsync(System.String,System.Int64,System.Nullable{Azure.Storage.Files.Models.FileHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{Azure.Storage.Files.Models.FileSmbProperties},System.String,System.Threading.CancellationToken)">CreateFileAsync(String, Int64, Nullable&lt;FileHttpHeaders&gt;, IDictionary&lt;String,String&gt;, Nullable&lt;FileSmbProperties&gt;, String, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Creates a new file or replaces an existing file.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/create-file"></a>.</p>
 </div>
@@ -557,7 +593,7 @@ To add content, use <a class="xref" href="Azure.Storage.Files.FileClient.html#Az
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Azure.Core.ForwardsClientCalls]
 [System.Diagnostics.DebuggerStepThrough]
-public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.FileClient&gt;&gt; CreateFileAsync (string fileName, long maxSize, Nullable&lt;Azure.Storage.Files.Models.FileHttpHeaders&gt; httpHeaders = null, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.FileClient&gt;&gt; CreateFileAsync (string fileName, long maxSize, Nullable&lt;Azure.Storage.Files.Models.FileHttpHeaders&gt; httpHeaders = null, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, Nullable&lt;Azure.Storage.Files.Models.FileSmbProperties&gt; smbProperties = null, string filePermission = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -594,6 +630,18 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Fi
 </td>
       </tr>
       <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Files.Models/Azure.Storage.Files.Models.FileSmbProperties.html">FileSmbProperties</a>&gt;</td>
+        <td><span class="parametername">smbProperties</span></td>
+        <td><p>Optional SMB properties to set for the file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filePermission</span></td>
+        <td><p>Optional file permission to set for the file.</p>
+</td>
+      </tr>
+      <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
@@ -618,15 +666,15 @@ notifications that the operation should be cancelled.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Files_DirectoryClient_CreateFileAsync_System_String_System_Int64_System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <h5 id="Azure_Storage_Files_DirectoryClient_CreateFileAsync_System_String_System_Int64_System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method only initializes the file.
 To add content, use <a class="xref" href="Azure.Storage.Files.FileClient.html#Azure_Storage_Files_FileClient_UploadRangeAsync_Azure_Storage_Files_Models_FileRangeWriteType_Azure_Core_Http_HttpRange_System_IO_Stream_System_Byte___System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">UploadRangeAsync(FileRangeWriteType, HttpRange, Stream, Byte[], IProgress&lt;StorageProgress&gt;, CancellationToken)</a>.</p>
 </div>
   
   
   <a id="Azure_Storage_Files_DirectoryClient_CreateSubdirectory_" data-uid="Azure.Storage.Files.DirectoryClient.CreateSubdirectory*"></a>
-  <h4 id="Azure_Storage_Files_DirectoryClient_CreateSubdirectory_System_String_System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.CreateSubdirectory(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)">CreateSubdirectory(String, IDictionary&lt;String,String&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_CreateSubdirectory_System_String_System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_">CreateSubdirectory(String, IDictionary&lt;String,String&gt;, CancellationToken)</a> operation creates a new
+  <h4 id="Azure_Storage_Files_DirectoryClient_CreateSubdirectory_System_String_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.CreateSubdirectory(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{Azure.Storage.Files.Models.FileSmbProperties},System.String,System.Threading.CancellationToken)">CreateSubdirectory(String, IDictionary&lt;String,String&gt;, Nullable&lt;FileSmbProperties&gt;, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_CreateSubdirectory_System_String_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken_">CreateSubdirectory(String, IDictionary&lt;String,String&gt;, Nullable&lt;FileSmbProperties&gt;, String, CancellationToken)</a> operation creates a new
 subdirectory under this directory.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/create-directory"></a>.</p>
 </div>
@@ -634,7 +682,7 @@ subdirectory under this directory.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Azure.Core.ForwardsClientCalls]
-public virtual Azure.Response&lt;Azure.Storage.Files.DirectoryClient&gt; CreateSubdirectory (string subdirectoryName, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+public virtual Azure.Response&lt;Azure.Storage.Files.DirectoryClient&gt; CreateSubdirectory (string subdirectoryName, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, Nullable&lt;Azure.Storage.Files.Models.FileSmbProperties&gt; smbProperties = null, string filePermission = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -656,6 +704,18 @@ public virtual Azure.Response&lt;Azure.Storage.Files.DirectoryClient&gt; CreateS
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td><span class="parametername">metadata</span></td>
         <td><p>Optional custom metadata to set for this directory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Files.Models/Azure.Storage.Files.Models.FileSmbProperties.html">FileSmbProperties</a>&gt;</td>
+        <td><span class="parametername">smbProperties</span></td>
+        <td><p>Optional SMB properties to set for the subdirectory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filePermission</span></td>
+        <td><p>Optional file permission to set for the subdirectory.</p>
 </td>
       </tr>
       <tr>
@@ -684,15 +744,15 @@ newly created directory.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Files_DirectoryClient_CreateSubdirectory_System_String_System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <h5 id="Azure_Storage_Files_DirectoryClient_CreateSubdirectory_System_String_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
 a failure occurs.</p>
 </div>
   
   
   <a id="Azure_Storage_Files_DirectoryClient_CreateSubdirectoryAsync_" data-uid="Azure.Storage.Files.DirectoryClient.CreateSubdirectoryAsync*"></a>
-  <h4 id="Azure_Storage_Files_DirectoryClient_CreateSubdirectoryAsync_System_String_System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.CreateSubdirectoryAsync(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)">CreateSubdirectoryAsync(String, IDictionary&lt;String,String&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_CreateSubdirectoryAsync_System_String_System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_">CreateSubdirectoryAsync(String, IDictionary&lt;String,String&gt;, CancellationToken)</a> operation creates a new
+  <h4 id="Azure_Storage_Files_DirectoryClient_CreateSubdirectoryAsync_System_String_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.CreateSubdirectoryAsync(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{Azure.Storage.Files.Models.FileSmbProperties},System.String,System.Threading.CancellationToken)">CreateSubdirectoryAsync(String, IDictionary&lt;String,String&gt;, Nullable&lt;FileSmbProperties&gt;, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_CreateSubdirectoryAsync_System_String_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken_">CreateSubdirectoryAsync(String, IDictionary&lt;String,String&gt;, Nullable&lt;FileSmbProperties&gt;, String, CancellationToken)</a> operation creates a new
 subdirectory under this directory.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/create-directory"></a>.</p>
 </div>
@@ -701,7 +761,7 @@ subdirectory under this directory.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Azure.Core.ForwardsClientCalls]
 [System.Diagnostics.DebuggerStepThrough]
-public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DirectoryClient&gt;&gt; CreateSubdirectoryAsync (string subdirectoryName, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DirectoryClient&gt;&gt; CreateSubdirectoryAsync (string subdirectoryName, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, Nullable&lt;Azure.Storage.Files.Models.FileSmbProperties&gt; smbProperties = null, string filePermission = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -722,7 +782,19 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Fi
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td><span class="parametername">metadata</span></td>
-        <td><p>Optional custom metadata to set for this directory.</p>
+        <td><p>Optional custom metadata to set for the subdirectory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Files.Models/Azure.Storage.Files.Models.FileSmbProperties.html">FileSmbProperties</a>&gt;</td>
+        <td><span class="parametername">smbProperties</span></td>
+        <td><p>Optional SMB properties to set for the subdirectory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filePermission</span></td>
+        <td><p>Optional file permission to set for the subdirectory.</p>
 </td>
       </tr>
       <tr>
@@ -751,7 +823,7 @@ newly created directory.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Files_DirectoryClient_CreateSubdirectoryAsync_System_String_System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <h5 id="Azure_Storage_Files_DirectoryClient_CreateSubdirectoryAsync_System_String_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
 a failure occurs.</p>
 </div>
@@ -1728,6 +1800,137 @@ pipeline as the <a class="xref" href="Azure.Storage.Files.DirectoryClient.html">
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="Azure_Storage_Files_DirectoryClient_SetHttpHeaders_" data-uid="Azure.Storage.Files.DirectoryClient.SetHttpHeaders*"></a>
+  <h4 id="Azure_Storage_Files_DirectoryClient_SetHttpHeaders_System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.SetHttpHeaders(System.Nullable{Azure.Storage.Files.Models.FileSmbProperties},System.String,System.Threading.CancellationToken)">SetHttpHeaders(Nullable&lt;FileSmbProperties&gt;, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_SetHttpHeaders_System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken_">SetHttpHeaders(Nullable&lt;FileSmbProperties&gt;, String, CancellationToken)</a> operation sets system
+properties on the directory.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/set-directory-properties"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Storage.Files.Models.StorageDirectoryInfo&gt; SetHttpHeaders (Nullable&lt;Azure.Storage.Files.Models.FileSmbProperties&gt; smbProperties = null, string filePermission = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Files.Models/Azure.Storage.Files.Models.FileSmbProperties.html">FileSmbProperties</a>&gt;</td>
+        <td><span class="parametername">smbProperties</span></td>
+        <td><p>Optional SMB properties to set for the directory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filePermission</span></td>
+        <td><p>Optional file permission to set for the directory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Files.Models/Azure.Storage.Files.Models.StorageDirectoryInfo.html">StorageDirectoryInfo</a>&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
+state of the file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Files_DirectoryClient_SetHttpHeaders_System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Files_DirectoryClient_SetHttpHeadersAsync_" data-uid="Azure.Storage.Files.DirectoryClient.SetHttpHeadersAsync*"></a>
+  <h4 id="Azure_Storage_Files_DirectoryClient_SetHttpHeadersAsync_System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.SetHttpHeadersAsync(System.Nullable{Azure.Storage.Files.Models.FileSmbProperties},System.String,System.Threading.CancellationToken)">SetHttpHeadersAsync(Nullable&lt;FileSmbProperties&gt;, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_SetHttpHeadersAsync_System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken_">SetHttpHeadersAsync(Nullable&lt;FileSmbProperties&gt;, String, CancellationToken)</a> operation sets system
+properties on the directory.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/set-directory-properties"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Models.StorageDirectoryInfo&gt;&gt; SetHttpHeadersAsync (Nullable&lt;Azure.Storage.Files.Models.FileSmbProperties&gt; smbProperties = null, string filePermission = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Files.Models/Azure.Storage.Files.Models.FileSmbProperties.html">FileSmbProperties</a>&gt;</td>
+        <td><span class="parametername">smbProperties</span></td>
+        <td><p>Optional SMB properties to set for the directory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filePermission</span></td>
+        <td><p>Optional file permission to set for the directory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Files.Models/Azure.Storage.Files.Models.StorageDirectoryInfo.html">StorageDirectoryInfo</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
+state of the file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Files_DirectoryClient_SetHttpHeadersAsync_System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
   
   
   <a id="Azure_Storage_Files_DirectoryClient_SetMetadata_" data-uid="Azure.Storage.Files.DirectoryClient.SetMetadata*"></a>

@@ -435,7 +435,7 @@ public virtual System.Threading.Tasks.ValueTask DisposeAsync ();</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
+    <pre><code class="lang-csharp hljs">[System.ComponentModel.EditorBrowsable]
 public override bool Equals (object obj);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -481,7 +481,7 @@ public override bool Equals (object obj);</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
+    <pre><code class="lang-csharp hljs">[System.ComponentModel.EditorBrowsable]
 public override int GetHashCode ();</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
@@ -568,7 +568,8 @@ maximum size of a single batch, an exception will be triggered and the send will
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual System.Threading.Tasks.Task SendAsync (Azure.Messaging.EventHubs.EventDataBatch eventBatch, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task SendAsync (Azure.Messaging.EventHubs.EventDataBatch eventBatch, System.Threading.CancellationToken cancellationToken = null);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -748,7 +749,8 @@ maximum size of a single batch, an exception will be triggered and the send will
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual System.Threading.Tasks.Task SendAsync (System.Collections.Generic.IEnumerable&lt;Azure.Messaging.EventHubs.EventData&gt; events, Azure.Messaging.EventHubs.SendOptions options, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task SendAsync (System.Collections.Generic.IEnumerable&lt;Azure.Messaging.EventHubs.EventData&gt; events, Azure.Messaging.EventHubs.SendOptions options, System.Threading.CancellationToken cancellationToken = null);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -812,7 +814,7 @@ maximum size of a single batch, an exception will be triggered and the send will
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
+    <pre><code class="lang-csharp hljs">[System.ComponentModel.EditorBrowsable]
 public override string ToString ();</code></pre>
   </div>
   <h5 class="returns">Returns</h5>

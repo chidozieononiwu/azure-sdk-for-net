@@ -466,14 +466,14 @@ a failure occurs.</p>
   
   
   <a id="Azure_Storage_Files_FileClient_Create_" data-uid="Azure.Storage.Files.FileClient.Create*"></a>
-  <h4 id="Azure_Storage_Files_FileClient_Create_System_Int64_System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.FileClient.Create(System.Int64,System.Nullable{Azure.Storage.Files.Models.FileHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)">Create(Int64, Nullable&lt;FileHttpHeaders&gt;, IDictionary&lt;String,String&gt;, CancellationToken)</h4>
+  <h4 id="Azure_Storage_Files_FileClient_Create_System_Int64_System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.FileClient.Create(System.Int64,System.Nullable{Azure.Storage.Files.Models.FileHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{Azure.Storage.Files.Models.FileSmbProperties},System.String,System.Threading.CancellationToken)">Create(Int64, Nullable&lt;FileHttpHeaders&gt;, IDictionary&lt;String,String&gt;, Nullable&lt;FileSmbProperties&gt;, String, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Creates a new file or replaces an existing file.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/create-file"></a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Storage.Files.Models.StorageFileInfo&gt; Create (long maxSize, Nullable&lt;Azure.Storage.Files.Models.FileHttpHeaders&gt; httpHeaders = null, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Storage.Files.Models.StorageFileInfo&gt; Create (long maxSize, Nullable&lt;Azure.Storage.Files.Models.FileHttpHeaders&gt; httpHeaders = null, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, Nullable&lt;Azure.Storage.Files.Models.FileSmbProperties&gt; smbProperties = null, string filePermission = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -501,6 +501,18 @@ a failure occurs.</p>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td><span class="parametername">metadata</span></td>
         <td><p>Optional custom metadata to set for the file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Files.Models/Azure.Storage.Files.Models.FileSmbProperties.html">FileSmbProperties</a>&gt;</td>
+        <td><span class="parametername">smbProperties</span></td>
+        <td><p>Optional SMB properties to set for the file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filePermission</span></td>
+        <td><p>Optional file permission to set for the file.</p>
 </td>
       </tr>
       <tr>
@@ -529,14 +541,14 @@ state of the file.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Files_FileClient_Create_System_Int64_System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <h5 id="Azure_Storage_Files_FileClient_Create_System_Int64_System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method only initializes the file.
 To add content, use <a class="xref" href="Azure.Storage.Files.FileClient.html#Azure_Storage_Files_FileClient_UploadRange_Azure_Storage_Files_Models_FileRangeWriteType_Azure_Core_Http_HttpRange_System_IO_Stream_System_Byte___System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">UploadRange(FileRangeWriteType, HttpRange, Stream, Byte[], IProgress&lt;StorageProgress&gt;, CancellationToken)</a>.</p>
 </div>
   
   
   <a id="Azure_Storage_Files_FileClient_CreateAsync_" data-uid="Azure.Storage.Files.FileClient.CreateAsync*"></a>
-  <h4 id="Azure_Storage_Files_FileClient_CreateAsync_System_Int64_System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.FileClient.CreateAsync(System.Int64,System.Nullable{Azure.Storage.Files.Models.FileHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)">CreateAsync(Int64, Nullable&lt;FileHttpHeaders&gt;, IDictionary&lt;String,String&gt;, CancellationToken)</h4>
+  <h4 id="Azure_Storage_Files_FileClient_CreateAsync_System_Int64_System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.FileClient.CreateAsync(System.Int64,System.Nullable{Azure.Storage.Files.Models.FileHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{Azure.Storage.Files.Models.FileSmbProperties},System.String,System.Threading.CancellationToken)">CreateAsync(Int64, Nullable&lt;FileHttpHeaders&gt;, IDictionary&lt;String,String&gt;, Nullable&lt;FileSmbProperties&gt;, String, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Creates a new file or replaces an existing file.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/create-file"></a>.</p>
 </div>
@@ -544,7 +556,7 @@ To add content, use <a class="xref" href="Azure.Storage.Files.FileClient.html#Az
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
-public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Models.StorageFileInfo&gt;&gt; CreateAsync (long maxSize, Nullable&lt;Azure.Storage.Files.Models.FileHttpHeaders&gt; httpHeaders = null, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Models.StorageFileInfo&gt;&gt; CreateAsync (long maxSize, Nullable&lt;Azure.Storage.Files.Models.FileHttpHeaders&gt; httpHeaders = null, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, Nullable&lt;Azure.Storage.Files.Models.FileSmbProperties&gt; smbProperties = null, string filePermission = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -575,6 +587,18 @@ public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Fi
 </td>
       </tr>
       <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Files.Models/Azure.Storage.Files.Models.FileSmbProperties.html">FileSmbProperties</a>&gt;</td>
+        <td><span class="parametername">smbProperties</span></td>
+        <td><p>Optional SMB properties to set for the file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filePermission</span></td>
+        <td><p>Optional file permission to set for the file.</p>
+</td>
+      </tr>
+      <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
@@ -600,7 +624,7 @@ state of the file.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Files_FileClient_CreateAsync_System_Int64_System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <h5 id="Azure_Storage_Files_FileClient_CreateAsync_System_Int64_System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method only initializes the file.
 To add content, use <a class="xref" href="Azure.Storage.Files.FileClient.html#Azure_Storage_Files_FileClient_UploadRangeAsync_Azure_Storage_Files_Models_FileRangeWriteType_Azure_Core_Http_HttpRange_System_IO_Stream_System_Byte___System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">UploadRangeAsync(FileRangeWriteType, HttpRange, Stream, Byte[], IProgress&lt;StorageProgress&gt;, CancellationToken)</a>.</p>
 </div>
@@ -1370,15 +1394,15 @@ a failure occurs.</p>
   
   
   <a id="Azure_Storage_Files_FileClient_SetHttpHeaders_" data-uid="Azure.Storage.Files.FileClient.SetHttpHeaders*"></a>
-  <h4 id="Azure_Storage_Files_FileClient_SetHttpHeaders_System_Nullable_System_Int64__System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.FileClient.SetHttpHeaders(System.Nullable{System.Int64},System.Nullable{Azure.Storage.Files.Models.FileHttpHeaders},System.Threading.CancellationToken)">SetHttpHeaders(Nullable&lt;Int64&gt;, Nullable&lt;FileHttpHeaders&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.FileClient.html#Azure_Storage_Files_FileClient_SetHttpHeaders_System_Nullable_System_Int64__System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Threading_CancellationToken_">SetHttpHeaders(Nullable&lt;Int64&gt;, Nullable&lt;FileHttpHeaders&gt;, CancellationToken)</a> operation sets system
+  <h4 id="Azure_Storage_Files_FileClient_SetHttpHeaders_System_Nullable_System_Int64__System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.FileClient.SetHttpHeaders(System.Nullable{System.Int64},System.Nullable{Azure.Storage.Files.Models.FileHttpHeaders},System.Nullable{Azure.Storage.Files.Models.FileSmbProperties},System.String,System.Threading.CancellationToken)">SetHttpHeaders(Nullable&lt;Int64&gt;, Nullable&lt;FileHttpHeaders&gt;, Nullable&lt;FileSmbProperties&gt;, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.FileClient.html#Azure_Storage_Files_FileClient_SetHttpHeaders_System_Nullable_System_Int64__System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken_">SetHttpHeaders(Nullable&lt;Int64&gt;, Nullable&lt;FileHttpHeaders&gt;, Nullable&lt;FileSmbProperties&gt;, String, CancellationToken)</a> operation sets system
 properties on the file.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/set-file-properties"></a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Storage.Files.Models.StorageFileInfo&gt; SetHttpHeaders (Nullable&lt;long&gt; newSize = null, Nullable&lt;Azure.Storage.Files.Models.FileHttpHeaders&gt; httpHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Storage.Files.Models.StorageFileInfo&gt; SetHttpHeaders (Nullable&lt;long&gt; newSize = null, Nullable&lt;Azure.Storage.Files.Models.FileHttpHeaders&gt; httpHeaders = null, Nullable&lt;Azure.Storage.Files.Models.FileSmbProperties&gt; smbProperties = null, string filePermission = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1403,6 +1427,18 @@ are cleared.</p>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Files.Models/Azure.Storage.Files.Models.FileHttpHeaders.html">FileHttpHeaders</a>&gt;</td>
         <td><span class="parametername">httpHeaders</span></td>
         <td><p>Optional. The standard HTTP header system properties to set.  If not specified, existing values will be cleared.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Files.Models/Azure.Storage.Files.Models.FileSmbProperties.html">FileSmbProperties</a>&gt;</td>
+        <td><span class="parametername">smbProperties</span></td>
+        <td><p>Optional SMB properties to set for the file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filePermission</span></td>
+        <td><p>Optional file permission to set for the file.</p>
 </td>
       </tr>
       <tr>
@@ -1431,15 +1467,15 @@ state of the file.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Files_FileClient_SetHttpHeaders_System_Nullable_System_Int64__System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <h5 id="Azure_Storage_Files_FileClient_SetHttpHeaders_System_Nullable_System_Int64__System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
 a failure occurs.</p>
 </div>
   
   
   <a id="Azure_Storage_Files_FileClient_SetHttpHeadersAsync_" data-uid="Azure.Storage.Files.FileClient.SetHttpHeadersAsync*"></a>
-  <h4 id="Azure_Storage_Files_FileClient_SetHttpHeadersAsync_System_Nullable_System_Int64__System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.FileClient.SetHttpHeadersAsync(System.Nullable{System.Int64},System.Nullable{Azure.Storage.Files.Models.FileHttpHeaders},System.Threading.CancellationToken)">SetHttpHeadersAsync(Nullable&lt;Int64&gt;, Nullable&lt;FileHttpHeaders&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.FileClient.html#Azure_Storage_Files_FileClient_SetHttpHeadersAsync_System_Nullable_System_Int64__System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Threading_CancellationToken_">SetHttpHeadersAsync(Nullable&lt;Int64&gt;, Nullable&lt;FileHttpHeaders&gt;, CancellationToken)</a> operation sets system
+  <h4 id="Azure_Storage_Files_FileClient_SetHttpHeadersAsync_System_Nullable_System_Int64__System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.FileClient.SetHttpHeadersAsync(System.Nullable{System.Int64},System.Nullable{Azure.Storage.Files.Models.FileHttpHeaders},System.Nullable{Azure.Storage.Files.Models.FileSmbProperties},System.String,System.Threading.CancellationToken)">SetHttpHeadersAsync(Nullable&lt;Int64&gt;, Nullable&lt;FileHttpHeaders&gt;, Nullable&lt;FileSmbProperties&gt;, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.FileClient.html#Azure_Storage_Files_FileClient_SetHttpHeadersAsync_System_Nullable_System_Int64__System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken_">SetHttpHeadersAsync(Nullable&lt;Int64&gt;, Nullable&lt;FileHttpHeaders&gt;, Nullable&lt;FileSmbProperties&gt;, String, CancellationToken)</a> operation sets system
 properties on the file.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/set-file-properties"></a>.</p>
 </div>
@@ -1447,7 +1483,7 @@ properties on the file.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
-public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Models.StorageFileInfo&gt;&gt; SetHttpHeadersAsync (Nullable&lt;long&gt; newSize = null, Nullable&lt;Azure.Storage.Files.Models.FileHttpHeaders&gt; httpHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.Models.StorageFileInfo&gt;&gt; SetHttpHeadersAsync (Nullable&lt;long&gt; newSize = null, Nullable&lt;Azure.Storage.Files.Models.FileHttpHeaders&gt; httpHeaders = null, Nullable&lt;Azure.Storage.Files.Models.FileSmbProperties&gt; smbProperties = null, string filePermission = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1472,6 +1508,18 @@ are cleared.</p>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Files.Models/Azure.Storage.Files.Models.FileHttpHeaders.html">FileHttpHeaders</a>&gt;</td>
         <td><span class="parametername">httpHeaders</span></td>
         <td><p>Optional. The standard HTTP header system properties to set.  If not specified, existing values will be cleared.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Files.Models/Azure.Storage.Files.Models.FileSmbProperties.html">FileSmbProperties</a>&gt;</td>
+        <td><span class="parametername">smbProperties</span></td>
+        <td><p>Optional SMB properties to set for the file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filePermission</span></td>
+        <td><p>Optional file permission to set for the file.</p>
 </td>
       </tr>
       <tr>
@@ -1500,7 +1548,7 @@ state of the file.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Files_FileClient_SetHttpHeadersAsync_System_Nullable_System_Int64__System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <h5 id="Azure_Storage_Files_FileClient_SetHttpHeadersAsync_System_Nullable_System_Int64__System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Nullable_Azure_Storage_Files_Models_FileSmbProperties__System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
 a failure occurs.</p>
 </div>

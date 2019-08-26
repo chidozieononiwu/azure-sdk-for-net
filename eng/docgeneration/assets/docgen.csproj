@@ -19,7 +19,7 @@
   </ItemGroup>
   <Target Name="CopyTools" AfterTargets="Restore">
     <PropertyGroup>
-      <BclAsyncInterfacesPath>$(NuGetPackageRoot)\microsoft.bcl.asyncinterfaces\$(BclAsyncInterfacesVersion)\ref\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.dll</BclAsyncInterfacesPath>
+      <BclAsyncInterfacesPath>$(NuGetPackageRoot)\microsoft.bcl.asyncinterfaces\$(BclAsyncInterfacesVersion)\ref\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll</BclAsyncInterfacesPath>
       <NETStandardPath>$(NuGetPackageRoot)\netstandard.library\$(NETStandardVersion)\build\netstandard2.0\ref\*</NETStandardPath>
       <ECMA2YmlPath>$(NuGetPackageRoot)\microsoft.docascode.ecma2yaml\$(ECMA2YmlVersion)\tools\*</ECMA2YmlPath>
       <PopImportPath>$(NuGetPackageRoot)\popimport\$(PopImportVersion)\Release\*</PopImportPath>

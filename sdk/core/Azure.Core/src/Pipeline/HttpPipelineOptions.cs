@@ -61,4 +61,3 @@ namespace Azure.Core.Pipeline
         #endregion
     }
 }
-

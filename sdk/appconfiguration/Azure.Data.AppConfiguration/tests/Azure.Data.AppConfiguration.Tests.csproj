@@ -3,8 +3,8 @@
     <TargetFrameworks>$(RequiredTargetFrameworks)</TargetFrameworks>
     <GenerateProgramFile>false</GenerateProgramFile>
   </PropertyGroup>
-  
-   <!-- Disable StyleCop -->
+
+  <!-- Disable StyleCop -->
   <PropertyGroup>
     <CodeAnalysisRuleSet>$(RepoEngPath)\CodeAnalysisDefault.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>

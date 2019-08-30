@@ -2,6 +2,10 @@
   <PropertyGroup>
     <TargetFrameworks>$(RequiredTargetFrameworks)</TargetFrameworks>
   </PropertyGroup>
+  <!-- Disable StyleCop -->
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>$(RepoEngPath)\CodeAnalysisDefault.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="nunit" />
     <PackageReference Include="NUnit3TestAdapter" />
@@ -11,9 +15,4 @@
   <ItemGroup>
     <ProjectReference Include="..\src\Azure.Data.AppConfiguration.csproj" />
   </ItemGroup>
-
-  <!-- Disable StyleCop -->
-  <PropertyGroup>
-    <CodeAnalysisRuleSet>$(RepoEngPath)\CodeAnalysisDefault.ruleset</CodeAnalysisRuleSet>
-  </PropertyGroup>
 </Project>

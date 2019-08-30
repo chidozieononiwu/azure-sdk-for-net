@@ -2,6 +2,12 @@
   <PropertyGroup>
     <TargetFrameworks>$(RequiredTargetFrameworks)</TargetFrameworks>
   </PropertyGroup>
+
+  <!-- Disable StyleCop -->
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>$(RepoEngPath)\CodeAnalysisDefault.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
   <PropertyGroup>
     <AssemblyTitle>Microsoft Azure.Storage.Files client library</AssemblyTitle>
     <DefineConstants>FileSDK;$(DefineConstants)</DefineConstants>

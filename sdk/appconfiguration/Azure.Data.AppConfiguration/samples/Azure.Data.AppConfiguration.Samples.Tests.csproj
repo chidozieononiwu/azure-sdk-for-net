@@ -11,4 +11,9 @@
   <ItemGroup>
     <ProjectReference Include="..\src\Azure.Data.AppConfiguration.csproj" />
   </ItemGroup>
+
+  <!-- Disable StyleCop -->
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>$(RepoEngPath)\CodeAnalysisDefault.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
 </Project>

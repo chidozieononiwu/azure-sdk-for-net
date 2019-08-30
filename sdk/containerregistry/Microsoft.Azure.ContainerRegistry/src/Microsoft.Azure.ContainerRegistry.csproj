@@ -6,6 +6,12 @@
     <PackageTags>Microsoft Azure Container Registry;Container Registry;</PackageTags>
     <PackageReleaseNotes>Added capabilities to manage repository, tag and manifest.</PackageReleaseNotes>
   </PropertyGroup>
+
+  <!-- Disable StyleCop -->
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>$(RepoEngPath)\CodeAnalysisDefault.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
   <PropertyGroup>
     <TargetFrameworks>$(RequiredTargetFrameworks)</TargetFrameworks>
   </PropertyGroup>

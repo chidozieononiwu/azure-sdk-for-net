@@ -4,9 +4,16 @@
     <AssemblyTitle>Microsoft Azure CognitiveServices ContentModerator Tests</AssemblyTitle>
     <Description>Microsoft Azure CognitiveServices ContentModerator Tests Class Library</Description>
   </PropertyGroup>
+
+  <!-- Disable StyleCop -->
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>$(RepoEngPath)\CodeAnalysisDefault.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
   <PropertyGroup>
     <TargetFrameworks>$(RequiredTargetFrameworks)</TargetFrameworks>
   </PropertyGroup>
+  
   <ItemGroup>
     <None Update="TestDataSources\NormalImages*.*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

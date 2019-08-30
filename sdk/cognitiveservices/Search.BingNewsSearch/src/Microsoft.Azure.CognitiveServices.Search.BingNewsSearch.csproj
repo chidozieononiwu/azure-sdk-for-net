@@ -10,7 +10,12 @@
     1. Support overriding the default endpoint.
     2. Change client class name to `NewsSearchClient`.
     ]]>
-	</PackageReleaseNotes>
+  </PackageReleaseNotes>
+  </PropertyGroup>
+
+  <!-- Disable StyleCop -->
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>$(RepoEngPath)\CodeAnalysisDefault.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
 
   <PropertyGroup>

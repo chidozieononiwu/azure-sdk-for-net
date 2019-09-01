@@ -21,6 +21,11 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
+  <!-- Disable StyleCop -->
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>$(RepoEngPath)\CodeAnalysisDefault.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="WindowsAzure.Storage" />
     <PackageReference Include="Microsoft.Azure.Batch" />

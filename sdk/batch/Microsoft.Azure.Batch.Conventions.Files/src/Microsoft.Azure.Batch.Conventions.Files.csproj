@@ -18,6 +18,11 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
 
+  <!-- Disable StyleCop -->
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>$(RepoEngPath)\CodeAnalysisDefault.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Microsoft.Azure.Batch" />
     <PackageReference Include="WindowsAzure.Storage" />

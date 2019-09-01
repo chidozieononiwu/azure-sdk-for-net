@@ -40,7 +40,6 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; reliability</IncludeAssets>
     </PackageReference>
-    <PackageReference Remove="StyleCop.Analyzers" />
   </ItemGroup>
   <PropertyGroup>
     <CodeAnalysisRuleSet>AzureBatch.ruleset</CodeAnalysisRuleSet>

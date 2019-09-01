@@ -17,6 +17,11 @@
     <OutputPath>bin\$(Configuration)\</OutputPath>
   </PropertyGroup>
 
+  <!-- Disable StyleCop -->
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>$(RepoEngPath)\CodeAnalysisDefault.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
   <PropertyGroup Condition=" '$(TargetFramework)' == 'netcoreapp1.1' ">
     <DefineConstants>netcoreapp11</DefineConstants>
     <OutputPath>bin\$(Configuration)\</OutputPath>

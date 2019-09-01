@@ -14,6 +14,11 @@
     <DocumentationFile></DocumentationFile>
   </PropertyGroup>
 
+  <!-- Disable StyleCop -->
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>$(RepoEngPath)\CodeAnalysisDefault.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
   <ItemGroup>
     <None Remove="TestResources\Data.txt" />
     <None Remove="TestResources\localWords.txt" />

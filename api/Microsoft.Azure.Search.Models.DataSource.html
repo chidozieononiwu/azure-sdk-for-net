@@ -6,11 +6,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class DataSource
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DataSource
-   ">
-    <meta name="generator" content="docfx 2.43.0.0">
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -79,23 +89,52 @@ to configure an indexer.</p>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">DataSource</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Microsoft.Azure.Search.Models.IResourceWithETag.html">IResourceWithETag</a></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.Search.Models.html">Microsoft.Azure.Search.Models</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Search.Service.dll</h6>
   <h5 id="Microsoft_Azure_Search_Models_DataSource_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DataSource : object, IResourceWithETag</code></pre>
+    <pre><code class="lang-csharp hljs">public class DataSource : IResourceWithETag</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Search_Models_DataSource__ctor.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.Models.DataSource.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/search/Microsoft.Azure.Search.Service/src/Generated/Models/DataSource.cs/#L26">View Source</a>
+  </span>
   <a id="Microsoft_Azure_Search_Models_DataSource__ctor_" data-uid="Microsoft.Azure.Search.Models.DataSource.#ctor*"></a>
   <h4 id="Microsoft_Azure_Search_Models_DataSource__ctor" data-uid="Microsoft.Azure.Search.Models.DataSource.#ctor">DataSource()</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the DataSource class.</p>
@@ -105,8 +144,13 @@ to configure an indexer.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public DataSource()</code></pre>
   </div>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Search_Models_DataSource__ctor_System_String_Microsoft_Azure_Search_Models_DataSourceType_Microsoft_Azure_Search_Models_DataSourceCredentials_Microsoft_Azure_Search_Models_DataContainer_System_String_Microsoft_Azure_Search_Models_DataChangeDetectionPolicy_Microsoft_Azure_Search_Models_DataDeletionDetectionPolicy_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.Models.DataSource.%23ctor(System.String%2CMicrosoft.Azure.Search.Models.DataSourceType%2CMicrosoft.Azure.Search.Models.DataSourceCredentials%2CMicrosoft.Azure.Search.Models.DataContainer%2CSystem.String%2CMicrosoft.Azure.Search.Models.DataChangeDetectionPolicy%2CMicrosoft.Azure.Search.Models.DataDeletionDetectionPolicy%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/search/Microsoft.Azure.Search.Service/src/Generated/Models/DataSource.cs/#L47">View Source</a>
+  </span>
   <a id="Microsoft_Azure_Search_Models_DataSource__ctor_" data-uid="Microsoft.Azure.Search.Models.DataSource.#ctor*"></a>
   <h4 id="Microsoft_Azure_Search_Models_DataSource__ctor_System_String_Microsoft_Azure_Search_Models_DataSourceType_Microsoft_Azure_Search_Models_DataSourceCredentials_Microsoft_Azure_Search_Models_DataContainer_System_String_Microsoft_Azure_Search_Models_DataChangeDetectionPolicy_Microsoft_Azure_Search_Models_DataDeletionDetectionPolicy_System_String_" data-uid="Microsoft.Azure.Search.Models.DataSource.#ctor(System.String,Microsoft.Azure.Search.Models.DataSourceType,Microsoft.Azure.Search.Models.DataSourceCredentials,Microsoft.Azure.Search.Models.DataContainer,System.String,Microsoft.Azure.Search.Models.DataChangeDetectionPolicy,Microsoft.Azure.Search.Models.DataDeletionDetectionPolicy,System.String)">DataSource(String, DataSourceType, DataSourceCredentials, DataContainer, String, DataChangeDetectionPolicy, DataDeletionDetectionPolicy, String)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the DataSource class.</p>
@@ -127,7 +171,7 @@ to configure an indexer.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>The name of the datasource.</p>
 </td>
@@ -153,7 +197,7 @@ datasource.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">description</span></td>
         <td><p>The description of the
 datasource.</p>
@@ -174,7 +218,7 @@ detection policy for the datasource.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">eTag</span></td>
         <td><p>The ETag of the DataSource.</p>
 </td>
@@ -183,8 +227,13 @@ detection policy for the datasource.</p>
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Search_Models_DataSource_Container.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.Models.DataSource.Container%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/search/Microsoft.Azure.Search.Service/src/Generated/Models/DataSource.cs/#L93">View Source</a>
+  </span>
   <a id="Microsoft_Azure_Search_Models_DataSource_Container_" data-uid="Microsoft.Azure.Search.Models.DataSource.Container*"></a>
   <h4 id="Microsoft_Azure_Search_Models_DataSource_Container" data-uid="Microsoft.Azure.Search.Models.DataSource.Container">Container</h4>
   <div class="markdown level1 summary"><p>Gets or sets the data container for the datasource.</p>
@@ -209,8 +258,13 @@ detection policy for the datasource.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Search_Models_DataSource_Credentials.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.Models.DataSource.Credentials%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/search/Microsoft.Azure.Search.Service/src/Generated/Models/DataSource.cs/#L87">View Source</a>
+  </span>
   <a id="Microsoft_Azure_Search_Models_DataSource_Credentials_" data-uid="Microsoft.Azure.Search.Models.DataSource.Credentials*"></a>
   <h4 id="Microsoft_Azure_Search_Models_DataSource_Credentials" data-uid="Microsoft.Azure.Search.Models.DataSource.Credentials">Credentials</h4>
   <div class="markdown level1 summary"><p>Gets or sets credentials for the datasource.</p>
@@ -235,8 +289,13 @@ detection policy for the datasource.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Search_Models_DataSource_DataChangeDetectionPolicy.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.Models.DataSource.DataChangeDetectionPolicy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/search/Microsoft.Azure.Search.Service/src/Generated/Models/DataSource.cs/#L99">View Source</a>
+  </span>
   <a id="Microsoft_Azure_Search_Models_DataSource_DataChangeDetectionPolicy_" data-uid="Microsoft.Azure.Search.Models.DataSource.DataChangeDetectionPolicy*"></a>
   <h4 id="Microsoft_Azure_Search_Models_DataSource_DataChangeDetectionPolicy" data-uid="Microsoft.Azure.Search.Models.DataSource.DataChangeDetectionPolicy">DataChangeDetectionPolicy</h4>
   <div class="markdown level1 summary"><p>Gets or sets the data change detection policy for the datasource.</p>
@@ -261,8 +320,13 @@ detection policy for the datasource.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Search_Models_DataSource_DataDeletionDetectionPolicy.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.Models.DataSource.DataDeletionDetectionPolicy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/search/Microsoft.Azure.Search.Service/src/Generated/Models/DataSource.cs/#L105">View Source</a>
+  </span>
   <a id="Microsoft_Azure_Search_Models_DataSource_DataDeletionDetectionPolicy_" data-uid="Microsoft.Azure.Search.Models.DataSource.DataDeletionDetectionPolicy*"></a>
   <h4 id="Microsoft_Azure_Search_Models_DataSource_DataDeletionDetectionPolicy" data-uid="Microsoft.Azure.Search.Models.DataSource.DataDeletionDetectionPolicy">DataDeletionDetectionPolicy</h4>
   <div class="markdown level1 summary"><p>Gets or sets the data deletion detection policy for the datasource.</p>
@@ -287,8 +351,13 @@ detection policy for the datasource.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Search_Models_DataSource_Description.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.Models.DataSource.Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/search/Microsoft.Azure.Search.Service/src/Generated/Models/DataSource.cs/#L74">View Source</a>
+  </span>
   <a id="Microsoft_Azure_Search_Models_DataSource_Description_" data-uid="Microsoft.Azure.Search.Models.DataSource.Description*"></a>
   <h4 id="Microsoft_Azure_Search_Models_DataSource_Description" data-uid="Microsoft.Azure.Search.Models.DataSource.Description">Description</h4>
   <div class="markdown level1 summary"><p>Gets or sets the description of the datasource.</p>
@@ -308,13 +377,18 @@ detection policy for the datasource.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Search_Models_DataSource_ETag.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.Models.DataSource.ETag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/search/Microsoft.Azure.Search.Service/src/Generated/Models/DataSource.cs/#L111">View Source</a>
+  </span>
   <a id="Microsoft_Azure_Search_Models_DataSource_ETag_" data-uid="Microsoft.Azure.Search.Models.DataSource.ETag*"></a>
   <h4 id="Microsoft_Azure_Search_Models_DataSource_ETag" data-uid="Microsoft.Azure.Search.Models.DataSource.ETag">ETag</h4>
   <div class="markdown level1 summary"><p>Gets or sets the ETag of the DataSource.</p>
@@ -334,13 +408,18 @@ detection policy for the datasource.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Search_Models_DataSource_Name.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.Models.DataSource.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/search/Microsoft.Azure.Search.Service/src/Generated/Models/DataSource.cs/#L68">View Source</a>
+  </span>
   <a id="Microsoft_Azure_Search_Models_DataSource_Name_" data-uid="Microsoft.Azure.Search.Models.DataSource.Name*"></a>
   <h4 id="Microsoft_Azure_Search_Models_DataSource_Name" data-uid="Microsoft.Azure.Search.Models.DataSource.Name">Name</h4>
   <div class="markdown level1 summary"><p>Gets or sets the name of the datasource.</p>
@@ -360,13 +439,18 @@ detection policy for the datasource.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Search_Models_DataSource_Type.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.Models.DataSource.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/search/Microsoft.Azure.Search.Service/src/Generated/Models/DataSource.cs/#L81">View Source</a>
+  </span>
   <a id="Microsoft_Azure_Search_Models_DataSource_Type_" data-uid="Microsoft.Azure.Search.Models.DataSource.Type*"></a>
   <h4 id="Microsoft_Azure_Search_Models_DataSource_Type" data-uid="Microsoft.Azure.Search.Models.DataSource.Type">Type</h4>
   <div class="markdown level1 summary"><p>Gets or sets the type of the datasource. Possible values include:
@@ -394,8 +478,13 @@ detection policy for the datasource.</p>
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Search_Models_DataSource_AzureBlobStorage_System_String_System_String_System_String_System_String_Microsoft_Azure_Search_Models_DataDeletionDetectionPolicy_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.Models.DataSource.AzureBlobStorage(System.String%2CSystem.String%2CSystem.String%2CSystem.String%2CMicrosoft.Azure.Search.Models.DataDeletionDetectionPolicy%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/search/Microsoft.Azure.Search.Service/src/Customizations/DataSources/Models/DataSource.Customization.cs/#L231">View Source</a>
+  </span>
   <a id="Microsoft_Azure_Search_Models_DataSource_AzureBlobStorage_" data-uid="Microsoft.Azure.Search.Models.DataSource.AzureBlobStorage*"></a>
   <h4 id="Microsoft_Azure_Search_Models_DataSource_AzureBlobStorage_System_String_System_String_System_String_System_String_Microsoft_Azure_Search_Models_DataDeletionDetectionPolicy_System_String_" data-uid="Microsoft.Azure.Search.Models.DataSource.AzureBlobStorage(System.String,System.String,System.String,System.String,Microsoft.Azure.Search.Models.DataDeletionDetectionPolicy,System.String)">AzureBlobStorage(String, String, String, String, DataDeletionDetectionPolicy, String)</h4>
   <div class="markdown level1 summary"><p>Creates a new DataSource to connect to an Azure Blob container.</p>
@@ -416,26 +505,26 @@ detection policy for the datasource.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>The name of the datasource.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">storageConnectionString</span></td>
         <td><p>The connection string for the Azure Storage account. It must follow this format:
 &quot;DefaultEndpointsProtocol=https;AccountName=[your storage account];AccountKey=[your account key];&quot; Note that HTTPS is required.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">containerName</span></td>
         <td><p>The name of the container from which to read blobs.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">pathPrefix</span></td>
         <td><p>Optional. If specified, the datasource will include only blobs with names starting with this prefix. This is
 useful when blobs are organized into &quot;virtual folders&quot;, for example.</p>
@@ -448,7 +537,7 @@ useful when blobs are organized into &quot;virtual folders&quot;, for example.</
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">description</span></td>
         <td><p>Optional. Description of the datasource.</p>
 </td>
@@ -471,8 +560,13 @@ useful when blobs are organized into &quot;virtual folders&quot;, for example.</
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Search_Models_DataSource_AzureSql_System_String_System_String_System_String_Microsoft_Azure_Search_Models_DataChangeDetectionPolicy_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.Models.DataSource.AzureSql(System.String%2CSystem.String%2CSystem.String%2CMicrosoft.Azure.Search.Models.DataChangeDetectionPolicy%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/search/Microsoft.Azure.Search.Service/src/Customizations/DataSources/Models/DataSource.Customization.cs/#L40">View Source</a>
+  </span>
   <a id="Microsoft_Azure_Search_Models_DataSource_AzureSql_" data-uid="Microsoft.Azure.Search.Models.DataSource.AzureSql*"></a>
   <h4 id="Microsoft_Azure_Search_Models_DataSource_AzureSql_System_String_System_String_System_String_Microsoft_Azure_Search_Models_DataChangeDetectionPolicy_System_String_" data-uid="Microsoft.Azure.Search.Models.DataSource.AzureSql(System.String,System.String,System.String,Microsoft.Azure.Search.Models.DataChangeDetectionPolicy,System.String)">AzureSql(String, String, String, DataChangeDetectionPolicy, String)</h4>
   <div class="markdown level1 summary"><p>Creates a new DataSource to connect to an Azure SQL database with change detection enabled.</p>
@@ -493,19 +587,19 @@ useful when blobs are organized into &quot;virtual folders&quot;, for example.</
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>The name of the datasource.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">sqlConnectionString</span></td>
         <td><p>The connection string for the Azure SQL database.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">tableOrViewName</span></td>
         <td><p>The name of the table or view from which to read rows.</p>
 </td>
@@ -517,7 +611,7 @@ useful when blobs are organized into &quot;virtual folders&quot;, for example.</
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">description</span></td>
         <td><p>Optional. Description of the datasource.</p>
 </td>
@@ -540,8 +634,13 @@ useful when blobs are organized into &quot;virtual folders&quot;, for example.</
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Search_Models_DataSource_AzureSql_System_String_System_String_System_String_Microsoft_Azure_Search_Models_DataDeletionDetectionPolicy_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.Models.DataSource.AzureSql(System.String%2CSystem.String%2CSystem.String%2CMicrosoft.Azure.Search.Models.DataDeletionDetectionPolicy%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/search/Microsoft.Azure.Search.Service/src/Customizations/DataSources/Models/DataSource.Customization.cs/#L21">View Source</a>
+  </span>
   <a id="Microsoft_Azure_Search_Models_DataSource_AzureSql_" data-uid="Microsoft.Azure.Search.Models.DataSource.AzureSql*"></a>
   <h4 id="Microsoft_Azure_Search_Models_DataSource_AzureSql_System_String_System_String_System_String_Microsoft_Azure_Search_Models_DataDeletionDetectionPolicy_System_String_" data-uid="Microsoft.Azure.Search.Models.DataSource.AzureSql(System.String,System.String,System.String,Microsoft.Azure.Search.Models.DataDeletionDetectionPolicy,System.String)">AzureSql(String, String, String, DataDeletionDetectionPolicy, String)</h4>
   <div class="markdown level1 summary"><p>Creates a new DataSource to connect to an Azure SQL database.</p>
@@ -562,19 +661,19 @@ useful when blobs are organized into &quot;virtual folders&quot;, for example.</
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>The name of the datasource.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">sqlConnectionString</span></td>
         <td><p>The connection string for the Azure SQL database.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">tableOrViewName</span></td>
         <td><p>The name of the table or view from which to read rows.</p>
 </td>
@@ -586,7 +685,7 @@ useful when blobs are organized into &quot;virtual folders&quot;, for example.</
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">description</span></td>
         <td><p>Optional. Description of the datasource.</p>
 </td>
@@ -609,8 +708,13 @@ useful when blobs are organized into &quot;virtual folders&quot;, for example.</
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Search_Models_DataSource_AzureSql_System_String_System_String_System_String_Microsoft_Azure_Search_Models_HighWaterMarkChangeDetectionPolicy_Microsoft_Azure_Search_Models_DataDeletionDetectionPolicy_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.Models.DataSource.AzureSql(System.String%2CSystem.String%2CSystem.String%2CMicrosoft.Azure.Search.Models.HighWaterMarkChangeDetectionPolicy%2CMicrosoft.Azure.Search.Models.DataDeletionDetectionPolicy%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/search/Microsoft.Azure.Search.Service/src/Customizations/DataSources/Models/DataSource.Customization.cs/#L62">View Source</a>
+  </span>
   <a id="Microsoft_Azure_Search_Models_DataSource_AzureSql_" data-uid="Microsoft.Azure.Search.Models.DataSource.AzureSql*"></a>
   <h4 id="Microsoft_Azure_Search_Models_DataSource_AzureSql_System_String_System_String_System_String_Microsoft_Azure_Search_Models_HighWaterMarkChangeDetectionPolicy_Microsoft_Azure_Search_Models_DataDeletionDetectionPolicy_System_String_" data-uid="Microsoft.Azure.Search.Models.DataSource.AzureSql(System.String,System.String,System.String,Microsoft.Azure.Search.Models.HighWaterMarkChangeDetectionPolicy,Microsoft.Azure.Search.Models.DataDeletionDetectionPolicy,System.String)">AzureSql(String, String, String, HighWaterMarkChangeDetectionPolicy, DataDeletionDetectionPolicy, String)</h4>
   <div class="markdown level1 summary"><p>Creates a new DataSource to connect to an Azure SQL database with change detection and deletion detection enabled.</p>
@@ -631,19 +735,19 @@ useful when blobs are organized into &quot;virtual folders&quot;, for example.</
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>The name of the datasource.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">sqlConnectionString</span></td>
         <td><p>The connection string for the Azure SQL database.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">tableOrViewName</span></td>
         <td><p>The name of the table or view from which to read rows.</p>
 </td>
@@ -662,7 +766,7 @@ allowed for Azure SQL when deletion detection is enabled.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">description</span></td>
         <td><p>Optional. Description of the datasource.</p>
 </td>
@@ -685,8 +789,13 @@ allowed for Azure SQL when deletion detection is enabled.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Search_Models_DataSource_AzureTableStorage_System_String_System_String_System_String_System_String_Microsoft_Azure_Search_Models_DataDeletionDetectionPolicy_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.Models.DataSource.AzureTableStorage(System.String%2CSystem.String%2CSystem.String%2CSystem.String%2CMicrosoft.Azure.Search.Models.DataDeletionDetectionPolicy%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/search/Microsoft.Azure.Search.Service/src/Customizations/DataSources/Models/DataSource.Customization.cs/#L269">View Source</a>
+  </span>
   <a id="Microsoft_Azure_Search_Models_DataSource_AzureTableStorage_" data-uid="Microsoft.Azure.Search.Models.DataSource.AzureTableStorage*"></a>
   <h4 id="Microsoft_Azure_Search_Models_DataSource_AzureTableStorage_System_String_System_String_System_String_System_String_Microsoft_Azure_Search_Models_DataDeletionDetectionPolicy_System_String_" data-uid="Microsoft.Azure.Search.Models.DataSource.AzureTableStorage(System.String,System.String,System.String,System.String,Microsoft.Azure.Search.Models.DataDeletionDetectionPolicy,System.String)">AzureTableStorage(String, String, String, String, DataDeletionDetectionPolicy, String)</h4>
   <div class="markdown level1 summary"><p>Creates a new DataSource to connect to an Azure Table.</p>
@@ -707,26 +816,26 @@ allowed for Azure SQL when deletion detection is enabled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>The name of the datasource.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">storageConnectionString</span></td>
         <td><p>The connection string for the Azure Storage account. It must follow this format:
 &quot;DefaultEndpointsProtocol=https;AccountName=[your storage account];AccountKey=[your account key];&quot; Note that HTTPS is required.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">tableName</span></td>
         <td><p>The name of the table from which to read rows.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">query</span></td>
         <td><p>Optional. A query that is applied to the table when reading rows.</p>
 </td>
@@ -738,7 +847,7 @@ allowed for Azure SQL when deletion detection is enabled.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">description</span></td>
         <td><p>Optional. Description of the datasource.</p>
 </td>
@@ -761,8 +870,13 @@ allowed for Azure SQL when deletion detection is enabled.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Search_Models_DataSource_CosmosDb_System_String_System_String_System_String_System_String_System_Boolean_Microsoft_Azure_Search_Models_DataDeletionDetectionPolicy_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.Models.DataSource.CosmosDb(System.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.Boolean%2CMicrosoft.Azure.Search.Models.DataDeletionDetectionPolicy%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/search/Microsoft.Azure.Search.Service/src/Customizations/DataSources/Models/DataSource.Customization.cs/#L148">View Source</a>
+  </span>
   <a id="Microsoft_Azure_Search_Models_DataSource_CosmosDb_" data-uid="Microsoft.Azure.Search.Models.DataSource.CosmosDb*"></a>
   <h4 id="Microsoft_Azure_Search_Models_DataSource_CosmosDb_System_String_System_String_System_String_System_String_System_Boolean_Microsoft_Azure_Search_Models_DataDeletionDetectionPolicy_System_String_" data-uid="Microsoft.Azure.Search.Models.DataSource.CosmosDb(System.String,System.String,System.String,System.String,System.Boolean,Microsoft.Azure.Search.Models.DataDeletionDetectionPolicy,System.String)">CosmosDb(String, String, String, String, Boolean, DataDeletionDetectionPolicy, String)</h4>
   <div class="markdown level1 summary"><p>Creates a new DataSource to connect to a CosmosDb database.</p>
@@ -783,32 +897,32 @@ allowed for Azure SQL when deletion detection is enabled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>The name of the datasource.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">cosmosDbConnectionString</span></td>
         <td><p>The connection string for the CosmosDb database. It must follow this format:
 &quot;AccountName|AccountEndpoint=[your account name or endpoint];AccountKey=[your account key];Database=[your database name]&quot;</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">collectionName</span></td>
         <td><p>The name of the collection from which to read documents.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">query</span></td>
         <td><p>Optional. A query that is applied to the collection when reading documents.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><span class="parametername">useChangeDetection</span></td>
         <td><p>Optional. Indicates whether to use change detection when indexing. Default is true.</p>
 </td>
@@ -820,7 +934,7 @@ allowed for Azure SQL when deletion detection is enabled.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">description</span></td>
         <td><p>Optional. Description of the datasource.</p>
 </td>
@@ -843,8 +957,13 @@ allowed for Azure SQL when deletion detection is enabled.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Search_Models_DataSource_DocumentDb_System_String_System_String_System_String_System_String_System_Boolean_Microsoft_Azure_Search_Models_DataDeletionDetectionPolicy_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.Models.DataSource.DocumentDb(System.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.Boolean%2CMicrosoft.Azure.Search.Models.DataDeletionDetectionPolicy%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/search/Microsoft.Azure.Search.Service/src/Customizations/DataSources/Models/DataSource.Customization.cs/#L189">View Source</a>
+  </span>
   <a id="Microsoft_Azure_Search_Models_DataSource_DocumentDb_" data-uid="Microsoft.Azure.Search.Models.DataSource.DocumentDb*"></a>
   <h4 id="Microsoft_Azure_Search_Models_DataSource_DocumentDb_System_String_System_String_System_String_System_String_System_Boolean_Microsoft_Azure_Search_Models_DataDeletionDetectionPolicy_System_String_" data-uid="Microsoft.Azure.Search.Models.DataSource.DocumentDb(System.String,System.String,System.String,System.String,System.Boolean,Microsoft.Azure.Search.Models.DataDeletionDetectionPolicy,System.String)">DocumentDb(String, String, String, String, Boolean, DataDeletionDetectionPolicy, String)</h4>
   <div class="markdown level1 summary"><p>Creates a new DataSource to connect to a DocumentDb database.</p>
@@ -852,7 +971,8 @@ allowed for Azure SQL when deletion detection is enabled.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DataSource DocumentDb(string name, string documentDbConnectionString, string collectionName, string query = null, bool useChangeDetection = true, DataDeletionDetectionPolicy deletionDetectionPolicy = null, string description = null)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use CosmosDb instead.&quot;)]
+public static DataSource DocumentDb(string name, string documentDbConnectionString, string collectionName, string query = null, bool useChangeDetection = true, DataDeletionDetectionPolicy deletionDetectionPolicy = null, string description = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -865,32 +985,32 @@ allowed for Azure SQL when deletion detection is enabled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>The name of the datasource.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">documentDbConnectionString</span></td>
         <td><p>The connection string for the DocumentDb database. It must follow this format:
 &quot;AccountName|AccountEndpoint=[your account name or endpoint];AccountKey=[your account key];Database=[your database name]&quot;</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">collectionName</span></td>
         <td><p>The name of the collection from which to read documents.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">query</span></td>
         <td><p>Optional. A query that is applied to the collection when reading documents.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><span class="parametername">useChangeDetection</span></td>
         <td><p>Optional. Indicates whether to use change detection when indexing. Default is true.</p>
 </td>
@@ -902,7 +1022,7 @@ allowed for Azure SQL when deletion detection is enabled.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">description</span></td>
         <td><p>Optional. Description of the datasource.</p>
 </td>
@@ -925,8 +1045,13 @@ allowed for Azure SQL when deletion detection is enabled.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Search_Models_DataSource_SqlServerOnAzureVM_System_String_System_String_System_String_Microsoft_Azure_Search_Models_DataChangeDetectionPolicy_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.Models.DataSource.SqlServerOnAzureVM(System.String%2CSystem.String%2CSystem.String%2CMicrosoft.Azure.Search.Models.DataChangeDetectionPolicy%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/search/Microsoft.Azure.Search.Service/src/Customizations/DataSources/Models/DataSource.Customization.cs/#L104">View Source</a>
+  </span>
   <a id="Microsoft_Azure_Search_Models_DataSource_SqlServerOnAzureVM_" data-uid="Microsoft.Azure.Search.Models.DataSource.SqlServerOnAzureVM*"></a>
   <h4 id="Microsoft_Azure_Search_Models_DataSource_SqlServerOnAzureVM_System_String_System_String_System_String_Microsoft_Azure_Search_Models_DataChangeDetectionPolicy_System_String_" data-uid="Microsoft.Azure.Search.Models.DataSource.SqlServerOnAzureVM(System.String,System.String,System.String,Microsoft.Azure.Search.Models.DataChangeDetectionPolicy,System.String)">SqlServerOnAzureVM(String, String, String, DataChangeDetectionPolicy, String)</h4>
   <div class="markdown level1 summary"><p>Creates a new DataSource to connect to a VM-hosted SQL Server database with change detection enabled.</p>
@@ -947,19 +1072,19 @@ allowed for Azure SQL when deletion detection is enabled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>The name of the datasource.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">sqlConnectionString</span></td>
         <td><p>The connection string for the SQL Server database.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">tableOrViewName</span></td>
         <td><p>The name of the table or view from which to read rows.</p>
 </td>
@@ -971,7 +1096,7 @@ allowed for Azure SQL when deletion detection is enabled.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">description</span></td>
         <td><p>Optional. Description of the datasource.</p>
 </td>
@@ -994,8 +1119,13 @@ allowed for Azure SQL when deletion detection is enabled.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Search_Models_DataSource_SqlServerOnAzureVM_System_String_System_String_System_String_Microsoft_Azure_Search_Models_DataDeletionDetectionPolicy_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.Models.DataSource.SqlServerOnAzureVM(System.String%2CSystem.String%2CSystem.String%2CMicrosoft.Azure.Search.Models.DataDeletionDetectionPolicy%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/search/Microsoft.Azure.Search.Service/src/Customizations/DataSources/Models/DataSource.Customization.cs/#L85">View Source</a>
+  </span>
   <a id="Microsoft_Azure_Search_Models_DataSource_SqlServerOnAzureVM_" data-uid="Microsoft.Azure.Search.Models.DataSource.SqlServerOnAzureVM*"></a>
   <h4 id="Microsoft_Azure_Search_Models_DataSource_SqlServerOnAzureVM_System_String_System_String_System_String_Microsoft_Azure_Search_Models_DataDeletionDetectionPolicy_System_String_" data-uid="Microsoft.Azure.Search.Models.DataSource.SqlServerOnAzureVM(System.String,System.String,System.String,Microsoft.Azure.Search.Models.DataDeletionDetectionPolicy,System.String)">SqlServerOnAzureVM(String, String, String, DataDeletionDetectionPolicy, String)</h4>
   <div class="markdown level1 summary"><p>Creates a new DataSource to connect to a VM-hosted SQL Server database.</p>
@@ -1016,19 +1146,19 @@ allowed for Azure SQL when deletion detection is enabled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>The name of the datasource.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">sqlConnectionString</span></td>
         <td><p>The connection string for the SQL Server database.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">tableOrViewName</span></td>
         <td><p>The name of the table or view from which to read rows.</p>
 </td>
@@ -1040,7 +1170,7 @@ allowed for Azure SQL when deletion detection is enabled.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">description</span></td>
         <td><p>Optional. Description of the datasource.</p>
 </td>
@@ -1063,8 +1193,13 @@ allowed for Azure SQL when deletion detection is enabled.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Search_Models_DataSource_SqlServerOnAzureVM_System_String_System_String_System_String_Microsoft_Azure_Search_Models_HighWaterMarkChangeDetectionPolicy_Microsoft_Azure_Search_Models_DataDeletionDetectionPolicy_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.Models.DataSource.SqlServerOnAzureVM(System.String%2CSystem.String%2CSystem.String%2CMicrosoft.Azure.Search.Models.HighWaterMarkChangeDetectionPolicy%2CMicrosoft.Azure.Search.Models.DataDeletionDetectionPolicy%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/search/Microsoft.Azure.Search.Service/src/Customizations/DataSources/Models/DataSource.Customization.cs/#L125">View Source</a>
+  </span>
   <a id="Microsoft_Azure_Search_Models_DataSource_SqlServerOnAzureVM_" data-uid="Microsoft.Azure.Search.Models.DataSource.SqlServerOnAzureVM*"></a>
   <h4 id="Microsoft_Azure_Search_Models_DataSource_SqlServerOnAzureVM_System_String_System_String_System_String_Microsoft_Azure_Search_Models_HighWaterMarkChangeDetectionPolicy_Microsoft_Azure_Search_Models_DataDeletionDetectionPolicy_System_String_" data-uid="Microsoft.Azure.Search.Models.DataSource.SqlServerOnAzureVM(System.String,System.String,System.String,Microsoft.Azure.Search.Models.HighWaterMarkChangeDetectionPolicy,Microsoft.Azure.Search.Models.DataDeletionDetectionPolicy,System.String)">SqlServerOnAzureVM(String, String, String, HighWaterMarkChangeDetectionPolicy, DataDeletionDetectionPolicy, String)</h4>
   <div class="markdown level1 summary"><p>Creates a new DataSource to connect to a VM-hosted SQL Server database with change detection and deletion detection enabled.</p>
@@ -1085,19 +1220,19 @@ allowed for Azure SQL when deletion detection is enabled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>The name of the datasource.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">sqlConnectionString</span></td>
         <td><p>The connection string for the SQL Server database.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">tableOrViewName</span></td>
         <td><p>The name of the table or view from which to read rows.</p>
 </td>
@@ -1116,7 +1251,7 @@ allowed for SQL Server when deletion detection is enabled.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">description</span></td>
         <td><p>Optional. Description of the datasource.</p>
 </td>
@@ -1139,8 +1274,13 @@ allowed for SQL Server when deletion detection is enabled.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Search_Models_DataSource_Validate.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.Models.DataSource.Validate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/search/Microsoft.Azure.Search.Service/src/Generated/Models/DataSource.cs/#L120">View Source</a>
+  </span>
   <a id="Microsoft_Azure_Search_Models_DataSource_Validate_" data-uid="Microsoft.Azure.Search.Models.DataSource.Validate*"></a>
   <h4 id="Microsoft_Azure_Search_Models_DataSource_Validate" data-uid="Microsoft.Azure.Search.Models.DataSource.Validate">Validate()</h4>
   <div class="markdown level1 summary"><p>Validate the object.</p>
@@ -1154,6 +1294,25 @@ allowed for SQL Server when deletion detection is enabled.</p>
   <div>
       <a class="xref" href="Microsoft.Azure.Search.Models.IResourceWithETag.html">IResourceWithETag</a>
   </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="Azure.Security.KeyVault.Secrets.AzureClientBuilderExtensions.html#Azure_Security_KeyVault_Secrets_AzureClientBuilderExtensions_AddSecretClient__2___0___1_">AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="Azure.Data.AppConfiguration.AzureClientBuilderExtensions.html#Azure_Data_AppConfiguration_AzureClientBuilderExtensions_AddConfigurationClient__2___0___1_">AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="Azure.Storage.Blobs.AzureClientBuilderExtensions.html#Azure_Storage_Blobs_AzureClientBuilderExtensions_AddBlobServiceClient__2___0___1_">AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
 </article>
           </div>
           
@@ -1161,6 +1320,12 @@ allowed for SQL Server when deletion detection is enabled.</p>
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Search_Models_DataSource.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.Models.DataSource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/search/Microsoft.Azure.Search.Service/src/Generated/Models/DataSource.cs/#L21" class="contribution-link">View Source</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
@@ -1178,8 +1343,8 @@ allowed for SQL Server when deletion detection is enabled.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

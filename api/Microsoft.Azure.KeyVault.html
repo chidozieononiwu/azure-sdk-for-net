@@ -87,58 +87,87 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault/Microsoft.Azure.KeyVault.AggregateKeyResolver.html">AggregateKeyResolver</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault/Microsoft.Azure.KeyVault.CachingKeyResolver.html">CachingKeyResolver</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault/Microsoft.Azure.KeyVault.CertificateIdentifier.html">CertificateIdentifier</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault/Microsoft.Azure.KeyVault.CertificateIssuerIdentifier.html">CertificateIssuerIdentifier</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault/Microsoft.Azure.KeyVault.CertificateOperationIdentifier.html">CertificateOperationIdentifier</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault/Microsoft.Azure.KeyVault.DeletedCertificateIdentifier.html">DeletedCertificateIdentifier</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault/Microsoft.Azure.KeyVault.DeletedKeyIdentifier.html">DeletedKeyIdentifier</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault/Microsoft.Azure.KeyVault.DeletedSecretIdentifier.html">DeletedSecretIdentifier</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault/Microsoft.Azure.KeyVault.EcKey.html">EcKey</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault/Microsoft.Azure.KeyVault.HttpBearerChallenge.html">HttpBearerChallenge</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault/Microsoft.Azure.KeyVault.HttpBearerChallengeCache.html">HttpBearerChallengeCache</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault/Microsoft.Azure.KeyVault.KeyIdentifier.html">KeyIdentifier</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault/Microsoft.Azure.KeyVault.KeyVaultClient.html">KeyVaultClient</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault/Microsoft.Azure.KeyVault.KeyVaultClientExtensions.html">KeyVaultClientExtensions</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault/Microsoft.Azure.KeyVault.KeyVaultCredential.html">KeyVaultCredential</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault/Microsoft.Azure.KeyVault.KeyVaultKeyResolver.html">KeyVaultKeyResolver</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault/Microsoft.Azure.KeyVault.ObjectIdentifier.html">ObjectIdentifier</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault/Microsoft.Azure.KeyVault.RsaKey.html">RsaKey</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault/Microsoft.Azure.KeyVault.SasDefinitionIdentifier.html">SasDefinitionIdentifier</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault/Microsoft.Azure.KeyVault.SecretIdentifier.html">SecretIdentifier</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault/Microsoft.Azure.KeyVault.StorageAccountIdentifier.html">StorageAccountIdentifier</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault/Microsoft.Azure.KeyVault.SymmetricKey.html">SymmetricKey</a></h4>
-      <section></section>
+      <h4><a class="xref" href="Microsoft.Azure.KeyVault.AggregateKeyResolver.html">AggregateKeyResolver</a></h4>
+      <section><p>The collection of key resolvers that would iterate on a key id to resolve to <a class="xref" href="Microsoft.Azure.KeyVault.Core.IKey.html">IKey</a>.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.KeyVault.CachingKeyResolver.html">CachingKeyResolver</a></h4>
+      <section><p>A simple caching Key Resolver using a LRU cache</p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.KeyVault.CertificateIdentifier.html">CertificateIdentifier</a></h4>
+      <section><p>The Key Vault certificate identifier.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.KeyVault.CertificateIssuerIdentifier.html">CertificateIssuerIdentifier</a></h4>
+      <section><p>The Key Vault issuer identifier.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.KeyVault.CertificateOperationIdentifier.html">CertificateOperationIdentifier</a></h4>
+      <section><p>The Key Vault certificate operation identifier.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.KeyVault.DeletedCertificateIdentifier.html">DeletedCertificateIdentifier</a></h4>
+      <section><p>The Key Vault deleted certificate identifier. Aka the recoveryId.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.KeyVault.DeletedKeyIdentifier.html">DeletedKeyIdentifier</a></h4>
+      <section><p>The Key Vault deleted key identifier. Aka the recoveryId.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.KeyVault.DeletedSecretIdentifier.html">DeletedSecretIdentifier</a></h4>
+      <section><p>The Key Vault deleted secret identifier. Aka the recoveryId.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.KeyVault.EcKey.html">EcKey</a></h4>
+      <section><p>An elliptic curve key.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.KeyVault.HttpBearerChallenge.html">HttpBearerChallenge</a></h4>
+      <section><p>Handles http bearer challenge operations</p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.KeyVault.HttpBearerChallengeCache.html">HttpBearerChallengeCache</a></h4>
+      <section><p>Singleton class for handling caching of the http bearer challenge</p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.KeyVault.KeyIdentifier.html">KeyIdentifier</a></h4>
+      <section><p>The Key Vault key identifier.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.KeyVault.KeyVaultClient.html">KeyVaultClient</a></h4>
+      <section><p>Client class to perform cryptographic key operations and vault
+operations against the Key Vault service.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.KeyVault.KeyVaultClientExtensions.html">KeyVaultClientExtensions</a></h4>
+      <section><p>Extension methods for KeyVaultClient.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.KeyVault.KeyVaultCredential.html">KeyVaultCredential</a></h4>
+      <section><p>The Key Vault credential class that implements <see cref="!:ServiceClientCredentials"></see></p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.KeyVault.KeyVaultKeyResolver.html">KeyVaultKeyResolver</a></h4>
+      <section><p>Azure Key Vault KeyResolver. This class resolves Key Vault Key Identifiers and
+Secret Identifiers to implementations of IKey. Secret Identifiers can only
+be resolved if the Secret is a byte array with a length matching one of the AES
+key lengths (128, 192, 256) and the content-type of the secret is application/octet-stream.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.KeyVault.ObjectIdentifier.html">ObjectIdentifier</a></h4>
+      <section><p>The Key Vault object identifier.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.KeyVault.RsaKey.html">RsaKey</a></h4>
+      <section><p>An RSA key.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.KeyVault.SasDefinitionIdentifier.html">SasDefinitionIdentifier</a></h4>
+      <section><p>The Key Vault storage SAS definition identifier.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.KeyVault.SecretIdentifier.html">SecretIdentifier</a></h4>
+      <section><p>The Key Vault secret identifier.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.KeyVault.StorageAccountIdentifier.html">StorageAccountIdentifier</a></h4>
+      <section><p>The Key Vault storage account identifier.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.Azure.KeyVault.SymmetricKey.html">SymmetricKey</a></h4>
+      <section><p>A simple Symmetric Key</p>
+</section>
     <h3 id="interfaces">Interfaces
   </h3>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault/Microsoft.Azure.KeyVault.IKeyVaultClient.html">IKeyVaultClient</a></h4>
-      <section></section>
+      <h4><a class="xref" href="Microsoft.Azure.KeyVault.IKeyVaultClient.html">IKeyVaultClient</a></h4>
+      <section><p>Client class to perform cryptographic key operations and vault
+operations against the Key Vault service.</p>
+</section>
     <h3 id="delegates">Delegates
   </h3>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault/Microsoft.Azure.KeyVault.KeyVaultClient.AuthenticationCallback.html">KeyVaultClient.AuthenticationCallback</a></h4>
-      <section></section>
+      <h4><a class="xref" href="Microsoft.Azure.KeyVault.KeyVaultClient.AuthenticationCallback.html">KeyVaultClient.AuthenticationCallback</a></h4>
+      <section><p>The authentication callback delegate which is to be implemented by the client code</p>
+</section>
 </article>
           </div>
           

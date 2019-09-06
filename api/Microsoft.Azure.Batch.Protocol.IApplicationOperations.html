@@ -6,11 +6,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Interface IApplicationOperations
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IApplicationOperations
-   ">
-    <meta name="generator" content="docfx 2.43.0.0">
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -84,16 +94,21 @@
   </div>
   <h3 id="methods">Methods
   </h3>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_IApplicationOperations_GetWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_ApplicationGetOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.IApplicationOperations.GetWithHttpMessagesAsync(System.String%2CMicrosoft.Azure.Batch.Protocol.Models.ApplicationGetOptions%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/IApplicationOperations.cs/#L86">View Source</a>
+  </span>
   <a id="Microsoft_Azure_Batch_Protocol_IApplicationOperations_GetWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IApplicationOperations.GetWithHttpMessagesAsync*"></a>
-  <h4 id="Microsoft_Azure_Batch_Protocol_IApplicationOperations_GetWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_ApplicationGetOptions_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IApplicationOperations.GetWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.ApplicationGetOptions,Dictionary{System.String,List{System.String}},CancellationToken)">GetWithHttpMessagesAsync(String, ApplicationGetOptions, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Gets information about the specified application.</p>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IApplicationOperations_GetWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_ApplicationGetOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IApplicationOperations.GetWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.ApplicationGetOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetWithHttpMessagesAsync(String, ApplicationGetOptions, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets information about the specified Application.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&lt;ApplicationSummary, ApplicationGetHeaders&gt;&gt; GetWithHttpMessagesAsync(string applicationId, ApplicationGetOptions applicationGetOptions = null, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&lt;ApplicationSummary, ApplicationGetHeaders&gt;&gt; GetWithHttpMessagesAsync(string applicationId, ApplicationGetOptions applicationGetOptions = null, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -106,9 +121,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">applicationId</span></td>
-        <td><p>The ID of the application.</p>
+        <td><p>The ID of the Application.</p>
 </td>
       </tr>
       <tr>
@@ -118,13 +133,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
         <td><p>The headers that will be added to request.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The cancellation token.</p>
 </td>
@@ -141,17 +156,17 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ApplicationSummary.html">ApplicationSummary</a>, <a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ApplicationGetHeaders.html">ApplicationGetHeaders</a>&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">AzureOperationResponse</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ApplicationSummary.html">ApplicationSummary</a>, <a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ApplicationGetHeaders.html">ApplicationGetHeaders</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_IApplicationOperations_GetWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_ApplicationGetOptions_Dictionary_System_String_List_System_String___CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This operation returns only applications and versions that are
-available for use on compute nodes; that is, that can be used in an
-application package reference. For administrator information about
-applications and versions that are not yet available to compute
-nodes, use the Azure portal or the Azure Resource Manager API.</p>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IApplicationOperations_GetWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_ApplicationGetOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This operation returns only Applications and versions that are
+available for use on Compute Nodes; that is, that can be used in an
+Package reference. For administrator information about Applications
+and versions that are not yet available to Compute Nodes, use the
+Azure portal or the Azure Resource Manager API.</p>
 </div>
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -169,16 +184,21 @@ nodes, use the Azure portal or the Azure Resource Manager API.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_IApplicationOperations_ListNextWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_ApplicationListNextOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.IApplicationOperations.ListNextWithHttpMessagesAsync(System.String%2CMicrosoft.Azure.Batch.Protocol.Models.ApplicationListNextOptions%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/IApplicationOperations.cs/#L118">View Source</a>
+  </span>
   <a id="Microsoft_Azure_Batch_Protocol_IApplicationOperations_ListNextWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IApplicationOperations.ListNextWithHttpMessagesAsync*"></a>
-  <h4 id="Microsoft_Azure_Batch_Protocol_IApplicationOperations_ListNextWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_ApplicationListNextOptions_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IApplicationOperations.ListNextWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.ApplicationListNextOptions,Dictionary{System.String,List{System.String}},CancellationToken)">ListNextWithHttpMessagesAsync(String, ApplicationListNextOptions, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Lists all of the applications available in the specified account.</p>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IApplicationOperations_ListNextWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_ApplicationListNextOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IApplicationOperations.ListNextWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.ApplicationListNextOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListNextWithHttpMessagesAsync(String, ApplicationListNextOptions, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Lists all of the applications available in the specified Account.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&lt;IPage&lt;ApplicationSummary&gt;, ApplicationListHeaders&gt;&gt; ListNextWithHttpMessagesAsync(string nextPageLink, ApplicationListNextOptions applicationListNextOptions = null, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&lt;IPage&lt;ApplicationSummary&gt;, ApplicationListHeaders&gt;&gt; ListNextWithHttpMessagesAsync(string nextPageLink, ApplicationListNextOptions applicationListNextOptions = null, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -191,7 +211,7 @@ nodes, use the Azure portal or the Azure Resource Manager API.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">nextPageLink</span></td>
         <td><p>The NextLink from the previous successful call to List operation.</p>
 </td>
@@ -203,13 +223,13 @@ nodes, use the Azure portal or the Azure Resource Manager API.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
         <td><p>The headers that will be added to request.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The cancellation token.</p>
 </td>
@@ -226,17 +246,17 @@ nodes, use the Azure portal or the Azure Resource Manager API.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&lt;<span class="xref">IPage</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ApplicationSummary.html">ApplicationSummary</a>&gt;, <a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ApplicationListHeaders.html">ApplicationListHeaders</a>&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">AzureOperationResponse</span>&lt;<span class="xref">IPage</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ApplicationSummary.html">ApplicationSummary</a>&gt;, <a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ApplicationListHeaders.html">ApplicationListHeaders</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_IApplicationOperations_ListNextWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_ApplicationListNextOptions_Dictionary_System_String_List_System_String___CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This operation returns only applications and versions that are
-available for use on compute nodes; that is, that can be used in an
-application package reference. For administrator information about
-applications and versions that are not yet available to compute
-nodes, use the Azure portal or the Azure Resource Manager API.</p>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IApplicationOperations_ListNextWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_ApplicationListNextOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This operation returns only Applications and versions that are
+available for use on Compute Nodes; that is, that can be used in an
+Package reference. For administrator information about applications
+and versions that are not yet available to Compute Nodes, use the
+Azure portal or the Azure Resource Manager API.</p>
 </div>
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -254,16 +274,21 @@ nodes, use the Azure portal or the Azure Resource Manager API.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_IApplicationOperations_ListWithHttpMessagesAsync_Microsoft_Azure_Batch_Protocol_Models_ApplicationListOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.IApplicationOperations.ListWithHttpMessagesAsync(Microsoft.Azure.Batch.Protocol.Models.ApplicationListOptions%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/IApplicationOperations.cs/#L54">View Source</a>
+  </span>
   <a id="Microsoft_Azure_Batch_Protocol_IApplicationOperations_ListWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IApplicationOperations.ListWithHttpMessagesAsync*"></a>
-  <h4 id="Microsoft_Azure_Batch_Protocol_IApplicationOperations_ListWithHttpMessagesAsync_Microsoft_Azure_Batch_Protocol_Models_ApplicationListOptions_Dictionary_System_String_List_System_String___CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IApplicationOperations.ListWithHttpMessagesAsync(Microsoft.Azure.Batch.Protocol.Models.ApplicationListOptions,Dictionary{System.String,List{System.String}},CancellationToken)">ListWithHttpMessagesAsync(ApplicationListOptions, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Lists all of the applications available in the specified account.</p>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IApplicationOperations_ListWithHttpMessagesAsync_Microsoft_Azure_Batch_Protocol_Models_ApplicationListOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IApplicationOperations.ListWithHttpMessagesAsync(Microsoft.Azure.Batch.Protocol.Models.ApplicationListOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListWithHttpMessagesAsync(ApplicationListOptions, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Lists all of the applications available in the specified Account.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&lt;IPage&lt;ApplicationSummary&gt;, ApplicationListHeaders&gt;&gt; ListWithHttpMessagesAsync(ApplicationListOptions applicationListOptions = null, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;AzureOperationResponse&lt;IPage&lt;ApplicationSummary&gt;, ApplicationListHeaders&gt;&gt; ListWithHttpMessagesAsync(ApplicationListOptions applicationListOptions = null, Dictionary&lt;string, List&lt;string&gt;&gt; customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -282,13 +307,13 @@ nodes, use the Azure portal or the Azure Resource Manager API.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td><span class="parametername">customHeaders</span></td>
         <td><p>The headers that will be added to request.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The cancellation token.</p>
 </td>
@@ -305,17 +330,17 @@ nodes, use the Azure portal or the Azure Resource Manager API.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">AzureOperationResponse</span>&lt;<span class="xref">IPage</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ApplicationSummary.html">ApplicationSummary</a>&gt;, <a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ApplicationListHeaders.html">ApplicationListHeaders</a>&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">AzureOperationResponse</span>&lt;<span class="xref">IPage</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ApplicationSummary.html">ApplicationSummary</a>&gt;, <a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ApplicationListHeaders.html">ApplicationListHeaders</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_Batch_Protocol_IApplicationOperations_ListWithHttpMessagesAsync_Microsoft_Azure_Batch_Protocol_Models_ApplicationListOptions_Dictionary_System_String_List_System_String___CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This operation returns only applications and versions that are
-available for use on compute nodes; that is, that can be used in an
-application package reference. For administrator information about
-applications and versions that are not yet available to compute
-nodes, use the Azure portal or the Azure Resource Manager API.</p>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IApplicationOperations_ListWithHttpMessagesAsync_Microsoft_Azure_Batch_Protocol_Models_ApplicationListOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This operation returns only Applications and versions that are
+available for use on Compute Nodes; that is, that can be used in an
+Package reference. For administrator information about applications
+and versions that are not yet available to Compute Nodes, use the
+Azure portal or the Azure Resource Manager API.</p>
 </div>
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -335,22 +360,40 @@ nodes, use the Azure portal or the Azure Resource Manager API.</p>
   </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
+      <a class="xref" href="Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="Azure.Security.KeyVault.Secrets.AzureClientBuilderExtensions.html#Azure_Security_KeyVault_Secrets_AzureClientBuilderExtensions_AddSecretClient__2___0___1_">AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="Azure.Data.AppConfiguration.AzureClientBuilderExtensions.html#Azure_Data_AppConfiguration_AzureClientBuilderExtensions_AddConfigurationClient__2___0___1_">AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="Azure.Storage.Blobs.AzureClientBuilderExtensions.html#Azure_Storage_Blobs_AzureClientBuilderExtensions_AddBlobServiceClient__2___0___1_">AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
+  <div>
       <a class="xref" href="Microsoft.Azure.Batch.Protocol.ApplicationOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_ApplicationOperationsExtensions_List_Microsoft_Azure_Batch_Protocol_IApplicationOperations_Microsoft_Azure_Batch_Protocol_Models_ApplicationListOptions_">ApplicationOperationsExtensions.List(IApplicationOperations, ApplicationListOptions)</a>
   </div>
   <div>
-      <a class="xref" href="Microsoft.Azure.Batch.Protocol.ApplicationOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_ApplicationOperationsExtensions_ListAsync_Microsoft_Azure_Batch_Protocol_IApplicationOperations_Microsoft_Azure_Batch_Protocol_Models_ApplicationListOptions_CancellationToken_">ApplicationOperationsExtensions.ListAsync(IApplicationOperations, ApplicationListOptions, CancellationToken)</a>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.ApplicationOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_ApplicationOperationsExtensions_ListAsync_Microsoft_Azure_Batch_Protocol_IApplicationOperations_Microsoft_Azure_Batch_Protocol_Models_ApplicationListOptions_System_Threading_CancellationToken_">ApplicationOperationsExtensions.ListAsync(IApplicationOperations, ApplicationListOptions, CancellationToken)</a>
   </div>
   <div>
       <a class="xref" href="Microsoft.Azure.Batch.Protocol.ApplicationOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_ApplicationOperationsExtensions_Get_Microsoft_Azure_Batch_Protocol_IApplicationOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_ApplicationGetOptions_">ApplicationOperationsExtensions.Get(IApplicationOperations, String, ApplicationGetOptions)</a>
   </div>
   <div>
-      <a class="xref" href="Microsoft.Azure.Batch.Protocol.ApplicationOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_ApplicationOperationsExtensions_GetAsync_Microsoft_Azure_Batch_Protocol_IApplicationOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_ApplicationGetOptions_CancellationToken_">ApplicationOperationsExtensions.GetAsync(IApplicationOperations, String, ApplicationGetOptions, CancellationToken)</a>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.ApplicationOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_ApplicationOperationsExtensions_GetAsync_Microsoft_Azure_Batch_Protocol_IApplicationOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_ApplicationGetOptions_System_Threading_CancellationToken_">ApplicationOperationsExtensions.GetAsync(IApplicationOperations, String, ApplicationGetOptions, CancellationToken)</a>
   </div>
   <div>
       <a class="xref" href="Microsoft.Azure.Batch.Protocol.ApplicationOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_ApplicationOperationsExtensions_ListNext_Microsoft_Azure_Batch_Protocol_IApplicationOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_ApplicationListNextOptions_">ApplicationOperationsExtensions.ListNext(IApplicationOperations, String, ApplicationListNextOptions)</a>
   </div>
   <div>
-      <a class="xref" href="Microsoft.Azure.Batch.Protocol.ApplicationOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_ApplicationOperationsExtensions_ListNextAsync_Microsoft_Azure_Batch_Protocol_IApplicationOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_ApplicationListNextOptions_CancellationToken_">ApplicationOperationsExtensions.ListNextAsync(IApplicationOperations, String, ApplicationListNextOptions, CancellationToken)</a>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.ApplicationOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_ApplicationOperationsExtensions_ListNextAsync_Microsoft_Azure_Batch_Protocol_IApplicationOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_ApplicationListNextOptions_System_Threading_CancellationToken_">ApplicationOperationsExtensions.ListNextAsync(IApplicationOperations, String, ApplicationListNextOptions, CancellationToken)</a>
   </div>
 </article>
           </div>
@@ -359,6 +402,12 @@ nodes, use the Azure portal or the Azure Resource Manager API.</p>
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_IApplicationOperations.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.IApplicationOperations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/IApplicationOperations.cs/#L24" class="contribution-link">View Source</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
@@ -376,8 +425,8 @@ nodes, use the Azure portal or the Azure Resource Manager API.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

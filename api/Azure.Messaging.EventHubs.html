@@ -87,32 +87,29 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.BatchOptions.html">BatchOptions</a></h4>
+      <h4><a class="xref" href="Azure.Messaging.EventHubs.BatchOptions.html">BatchOptions</a></h4>
       <section><p>The set of options that can be specified to influence the way in which an event batch
 behaves and is sent to the Event Hubs service.</p>
 </section>
-      <h4><a class="xref" href="Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventData.html">EventData</a></h4>
+      <h4><a class="xref" href="Azure.Messaging.EventHubs.EventData.html">EventData</a></h4>
       <section><p>A set of data encapsulating an event and the associated metadata for
 use with Event Hubs operations.</p>
 </section>
-      <h4><a class="xref" href="Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventData.SystemEventProperties.html">EventData.SystemEventProperties</a></h4>
-      <section><p>The set of event properties which are owned and populated by the Event Hubs service.</p>
-</section>
-      <h4><a class="xref" href="Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventDataBatch.html">EventDataBatch</a></h4>
-      <section><p>A set of <a class="xref" href="Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventData.html">EventData</a> with size constraints known up-front,
+      <h4><a class="xref" href="Azure.Messaging.EventHubs.EventDataBatch.html">EventDataBatch</a></h4>
+      <section><p>A set of <a class="xref" href="Azure.Messaging.EventHubs.EventData.html">EventData</a> with size constraints known up-front,
 intended to be sent to the Event Hubs service as a single batch.</p>
 </section>
-      <h4><a class="xref" href="Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a></h4>
+      <h4><a class="xref" href="Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a></h4>
       <section><p>The main point of interaction with the Azure Event Hubs service, the client offers a
 connection to a specific Event Hub within the Event Hubs namespace and offers operations
 for sending event data, receiving events, and inspecting the connected Event Hub.</p>
 </section>
-      <h4><a class="xref" href="Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubClientOptions.html">EventHubClientOptions</a></h4>
-      <section><p>The set of options that can be specified when creating an <a class="xref" href="Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a>
+      <h4><a class="xref" href="Azure.Messaging.EventHubs.EventHubClientOptions.html">EventHubClientOptions</a></h4>
+      <section><p>The set of options that can be specified when creating an <a class="xref" href="Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a>
 to configure its behavior.</p>
 </section>
-      <h4><a class="xref" href="Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubConsumer.html">EventHubConsumer</a></h4>
-      <section><p>A consumer responsible for reading <a class="xref" href="Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventData.html">EventData</a> from a specific Event Hub
+      <h4><a class="xref" href="Azure.Messaging.EventHubs.EventHubConsumer.html">EventHubConsumer</a></h4>
+      <section><p>A consumer responsible for reading <a class="xref" href="Azure.Messaging.EventHubs.EventData.html">EventData</a> from a specific Event Hub
 partition and as a member of a specific consumer group.</p>
 <p>A consumer may be exclusive, which asserts ownership over the partition for the consumer
 group to ensure that only one consumer from that group is reading the from the partition.
@@ -121,42 +118,42 @@ These exclusive consumers are sometimes referred to as &quot;Epoch Consumers.&qu
 group to be actively reading events from the partition.  These non-exclusive consumers are
 sometimes referred to as &quot;Non-Epoch Consumers.&quot;</p>
 </section>
-      <h4><a class="xref" href="Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubConsumerOptions.html">EventHubConsumerOptions</a></h4>
-      <section><p>The baseline set of options that can be specified when creating a <a class="xref" href="Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubConsumer.html">EventHubConsumer</a>
+      <h4><a class="xref" href="Azure.Messaging.EventHubs.EventHubConsumerOptions.html">EventHubConsumerOptions</a></h4>
+      <section><p>The baseline set of options that can be specified when creating a <a class="xref" href="Azure.Messaging.EventHubs.EventHubConsumer.html">EventHubConsumer</a>
 to configure its behavior.</p>
 </section>
-      <h4><a class="xref" href="Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubProducer.html">EventHubProducer</a></h4>
-      <section><p>A producer responsible for transmitting <a class="xref" href="Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventData.html">EventData</a> to a specific Event Hub,
+      <h4><a class="xref" href="Azure.Messaging.EventHubs.EventHubProducer.html">EventHubProducer</a></h4>
+      <section><p>A producer responsible for transmitting <a class="xref" href="Azure.Messaging.EventHubs.EventData.html">EventData</a> to a specific Event Hub,
 grouped together in batches.  Depending on the options specified at creation, the producer may
 be created to allow event data to be automatically routed to an available partition or specific
 to a partition.</p>
 </section>
-      <h4><a class="xref" href="Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubProducerOptions.html">EventHubProducerOptions</a></h4>
-      <section><p>The set of options that can be specified when creating an <a class="xref" href="Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubProducer.html">EventHubProducer</a>
+      <h4><a class="xref" href="Azure.Messaging.EventHubs.EventHubProducerOptions.html">EventHubProducerOptions</a></h4>
+      <section><p>The set of options that can be specified when creating an <a class="xref" href="Azure.Messaging.EventHubs.EventHubProducer.html">EventHubProducer</a>
 to configure its behavior.</p>
 </section>
-      <h4><a class="xref" href="Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubRetryPolicy.html">EventHubRetryPolicy</a></h4>
+      <h4><a class="xref" href="Azure.Messaging.EventHubs.EventHubRetryPolicy.html">EventHubRetryPolicy</a></h4>
       <section><p>An abstract representation of a policy to govern retrying of messaging operations.</p>
 </section>
-      <h4><a class="xref" href="Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventPosition.html">EventPosition</a></h4>
+      <h4><a class="xref" href="Azure.Messaging.EventHubs.EventPosition.html">EventPosition</a></h4>
       <section><p>The position of events in an Event Hub partition, typically used in the creation of
-an <a class="xref" href="Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventHubProducer.html">EventHubProducer</a>.</p>
+an <a class="xref" href="Azure.Messaging.EventHubs.EventHubProducer.html">EventHubProducer</a>.</p>
 </section>
-      <h4><a class="xref" href="Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.RetryOptions.html">RetryOptions</a></h4>
+      <h4><a class="xref" href="Azure.Messaging.EventHubs.RetryOptions.html">RetryOptions</a></h4>
       <section><p>The set of options that can be specified to influence how
 retry attempts are made, and a failure is eligible to be retried.</p>
 </section>
-      <h4><a class="xref" href="Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.SendOptions.html">SendOptions</a></h4>
+      <h4><a class="xref" href="Azure.Messaging.EventHubs.SendOptions.html">SendOptions</a></h4>
       <section><p>The set of options that can be specified to influence the way in which events
 are sent to the Event Hubs service.</p>
 </section>
     <h3 id="enums">Enums
   </h3>
-      <h4><a class="xref" href="Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.RetryMode.html">RetryMode</a></h4>
+      <h4><a class="xref" href="Azure.Messaging.EventHubs.RetryMode.html">RetryMode</a></h4>
       <section><p>The type of approach to apply when calculating the delay
 between retry attempts.</p>
 </section>
-      <h4><a class="xref" href="Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.TransportType.html">TransportType</a></h4>
+      <h4><a class="xref" href="Azure.Messaging.EventHubs.TransportType.html">TransportType</a></h4>
       <section><p>Specifies the type of protocol and transport that will be used for communicating with
 Azure Event Hubs.</p>
 </section>

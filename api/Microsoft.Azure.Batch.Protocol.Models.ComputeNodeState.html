@@ -6,11 +6,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Enum ComputeNodeState
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Enum ComputeNodeState
-   ">
-    <meta name="generator" content="docfx 2.43.0.0">
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -80,7 +90,7 @@
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum ComputeNodeState : int</code></pre>
+    <pre><code class="lang-csharp hljs">public enum ComputeNodeState</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -95,46 +105,48 @@
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Creating">Creating</td>
         <td><p>The Batch service has obtained the underlying virtual machine from
-Azure Compute, but it has not yet started to join the pool.</p>
+Azure Compute, but it has not yet started to join the Pool.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Idle">Idle</td>
-        <td><p>The node is not currently running a task.</p>
+        <td><p>The Compute Node is not currently running a Task.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_LeavingPool">LeavingPool</td>
-        <td><p>The node is leaving the pool, either because the user explicitly
-removed it or because the pool is resizing or autoscaling down.</p>
+        <td><p>The Compute Node is leaving the Pool, either because the user
+explicitly removed it or because the Pool is resizing or
+autoscaling down.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Offline">Offline</td>
-        <td><p>The node is not currently running a task, and scheduling of new
-tasks to the node is disabled.</p>
+        <td><p>The Compute Node is not currently running a Task, and scheduling of
+new Tasks to the Compute Node is disabled.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Preempted">Preempted</td>
-        <td><p>The low-priority node has been preempted. Tasks which were running
-on the node when it was preempted will be rescheduled when another
-node becomes available.</p>
+        <td><p>The low-priority Compute Node has been preempted. Tasks which were
+running on the Compute Node when it was preempted will be
+rescheduled when another Compute Node becomes available.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Rebooting">Rebooting</td>
-        <td><p>The node is rebooting.</p>
+        <td><p>The Compute Node is rebooting.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Reimaging">Reimaging</td>
-        <td><p>The node is reimaging.</p>
+        <td><p>The Compute Node is reimaging.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Running">Running</td>
-        <td><p>The node is running one or more tasks (other than a start task).</p>
+        <td><p>The Compute Node is running one or more Tasks (other than a
+StartTask).</p>
 </td>
       </tr>
       <tr>
@@ -144,30 +156,49 @@ node becomes available.</p>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_StartTaskFailed">StartTaskFailed</td>
-        <td><p>The start task has failed on the compute node (and exhausted all
-retries), and waitForSuccess is set. The node is not usable for
-running tasks.</p>
+        <td><p>The StartTask has failed on the Compute Node (and exhausted all
+retries), and waitForSuccess is set. The Compute Node is not usable
+for running Tasks.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Unknown">Unknown</td>
-        <td><p>The Batch service has lost contact with the node, and does not know
-its true state.</p>
+        <td><p>The Batch service has lost contact with the Compute Node, and does
+not know its true state.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Unusable">Unusable</td>
-        <td><p>The node cannot be used for task execution due to errors.</p>
+        <td><p>The Compute Node cannot be used for Task execution due to errors.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_WaitingForStartTask">WaitingForStartTask</td>
-        <td><p>The start task has started running on the compute node, but
-waitForSuccess is set and the start task has not yet completed.</p>
+        <td><p>The StartTask has started running on the Compute Node, but
+waitForSuccess is set and the StartTask has not yet completed.</p>
 </td>
       </tr>
     </tbody>
   </thead></thead></table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;ComputeNodeState, TConfiguration&gt;(TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="Azure.Security.KeyVault.Secrets.AzureClientBuilderExtensions.html#Azure_Security_KeyVault_Secrets_AzureClientBuilderExtensions_AddSecretClient__2___0___1_">AzureClientBuilderExtensions.AddSecretClient&lt;ComputeNodeState, TConfiguration&gt;(TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="Azure.Data.AppConfiguration.AzureClientBuilderExtensions.html#Azure_Data_AppConfiguration_AzureClientBuilderExtensions_AddConfigurationClient__2___0___1_">AzureClientBuilderExtensions.AddConfigurationClient&lt;ComputeNodeState, TConfiguration&gt;(TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="Azure.Storage.Blobs.AzureClientBuilderExtensions.html#Azure_Storage_Blobs_AzureClientBuilderExtensions_AddBlobServiceClient__2___0___1_">AzureClientBuilderExtensions.AddBlobServiceClient&lt;ComputeNodeState, TConfiguration&gt;(TConfiguration)</a>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddFileServiceClient&lt;Microsoft.Azure.Batch.Protocol.Models.ComputeNodeState, TConfiguration&gt;(TConfiguration)</span>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient&lt;Microsoft.Azure.Batch.Protocol.Models.ComputeNodeState, TConfiguration&gt;(TConfiguration)</span>
+  </div>
 </article>
           </div>
           
@@ -175,6 +206,12 @@ waitForSuccess is set and the start task has not yet completed.</p>
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.ComputeNodeState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/ComputeNodeState.cs/#L21" class="contribution-link">View Source</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
@@ -192,8 +229,8 @@ waitForSuccess is set and the start task has not yet completed.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

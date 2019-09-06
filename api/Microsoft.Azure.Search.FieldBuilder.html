@@ -6,11 +6,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class FieldBuilder
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class FieldBuilder
-   ">
-    <meta name="generator" content="docfx 2.43.0.0">
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -78,21 +88,50 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">FieldBuilder</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.Search.html">Microsoft.Azure.Search</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Search.Service.dll</h6>
   <h5 id="Microsoft_Azure_Search_FieldBuilder_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class FieldBuilder : object</code></pre>
+    <pre><code class="lang-csharp hljs">public static class FieldBuilder</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Search_FieldBuilder_BuildForType_System_Type_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.FieldBuilder.BuildForType(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/search/Microsoft.Azure.Search.Service/src/Customizations/Indexes/FieldBuilder/FieldBuilder.cs/#L58">View Source</a>
+  </span>
   <a id="Microsoft_Azure_Search_FieldBuilder_BuildForType_" data-uid="Microsoft.Azure.Search.FieldBuilder.BuildForType*"></a>
-  <h4 id="Microsoft_Azure_Search_FieldBuilder_BuildForType_Type_" data-uid="Microsoft.Azure.Search.FieldBuilder.BuildForType(Type)">BuildForType(Type)</h4>
+  <h4 id="Microsoft_Azure_Search_FieldBuilder_BuildForType_System_Type_" data-uid="Microsoft.Azure.Search.FieldBuilder.BuildForType(System.Type)">BuildForType(Type)</h4>
   <div class="markdown level1 summary"><p>Creates a collection of <a class="xref" href="Microsoft.Azure.Search.Models.Field.html">Field</a> objects corresponding to
 the properties of the type supplied.</p>
 </div>
@@ -112,7 +151,7 @@ the properties of the type supplied.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a></td>
         <td><span class="parametername">modelType</span></td>
         <td><p>The type for which fields will be created, based on its properties.</p>
 </td>
@@ -129,16 +168,21 @@ the properties of the type supplied.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IList</span>&lt;<a class="xref" href="Microsoft.Azure.Search.Models.Field.html">Field</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Search.Models.Field.html">Field</a>&gt;</td>
         <td><p>A collection of fields.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Search_FieldBuilder_BuildForType_System_Type_IContractResolver_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.FieldBuilder.BuildForType(System.Type%2CIContractResolver)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/search/Microsoft.Azure.Search.Service/src/Customizations/Indexes/FieldBuilder/FieldBuilder.cs/#L95">View Source</a>
+  </span>
   <a id="Microsoft_Azure_Search_FieldBuilder_BuildForType_" data-uid="Microsoft.Azure.Search.FieldBuilder.BuildForType*"></a>
-  <h4 id="Microsoft_Azure_Search_FieldBuilder_BuildForType_Type_IContractResolver_" data-uid="Microsoft.Azure.Search.FieldBuilder.BuildForType(Type,IContractResolver)">BuildForType(Type, IContractResolver)</h4>
+  <h4 id="Microsoft_Azure_Search_FieldBuilder_BuildForType_System_Type_IContractResolver_" data-uid="Microsoft.Azure.Search.FieldBuilder.BuildForType(System.Type,IContractResolver)">BuildForType(Type, IContractResolver)</h4>
   <div class="markdown level1 summary"><p>Creates a collection of <a class="xref" href="Microsoft.Azure.Search.Models.Field.html">Field</a> objects corresponding to
 the properties of the type supplied.</p>
 </div>
@@ -158,7 +202,7 @@ the properties of the type supplied.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a></td>
         <td><span class="parametername">modelType</span></td>
         <td><p>The type for which fields will be created, based on its properties.</p>
 </td>
@@ -183,14 +227,19 @@ consistent with the way the model will be serialized.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IList</span>&lt;<a class="xref" href="Microsoft.Azure.Search.Models.Field.html">Field</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Search.Models.Field.html">Field</a>&gt;</td>
         <td><p>A collection of fields.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Search_FieldBuilder_BuildForType__1.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.FieldBuilder.BuildForType%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/search/Microsoft.Azure.Search.Service/src/Customizations/Indexes/FieldBuilder/FieldBuilder.cs/#L48">View Source</a>
+  </span>
   <a id="Microsoft_Azure_Search_FieldBuilder_BuildForType_" data-uid="Microsoft.Azure.Search.FieldBuilder.BuildForType*"></a>
   <h4 id="Microsoft_Azure_Search_FieldBuilder_BuildForType__1" data-uid="Microsoft.Azure.Search.FieldBuilder.BuildForType``1">BuildForType&lt;T&gt;()</h4>
   <div class="markdown level1 summary"><p>Creates a collection of <a class="xref" href="Microsoft.Azure.Search.Models.Field.html">Field</a> objects corresponding to
@@ -211,7 +260,7 @@ the properties of the type supplied.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IList</span>&lt;<a class="xref" href="Microsoft.Azure.Search.Models.Field.html">Field</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Search.Models.Field.html">Field</a>&gt;</td>
         <td><p>A collection of fields.</p>
 </td>
       </tr>
@@ -233,8 +282,13 @@ the properties of the type supplied.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Search_FieldBuilder_BuildForType__1_IContractResolver_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.FieldBuilder.BuildForType%60%601(IContractResolver)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/search/Microsoft.Azure.Search.Service/src/Customizations/Indexes/FieldBuilder/FieldBuilder.cs/#L80">View Source</a>
+  </span>
   <a id="Microsoft_Azure_Search_FieldBuilder_BuildForType_" data-uid="Microsoft.Azure.Search.FieldBuilder.BuildForType*"></a>
   <h4 id="Microsoft_Azure_Search_FieldBuilder_BuildForType__1_IContractResolver_" data-uid="Microsoft.Azure.Search.FieldBuilder.BuildForType``1(IContractResolver)">BuildForType&lt;T&gt;(IContractResolver)</h4>
   <div class="markdown level1 summary"><p>Creates a collection of <a class="xref" href="Microsoft.Azure.Search.Models.Field.html">Field</a> objects corresponding to
@@ -275,7 +329,7 @@ consistent with the way the model will be serialized.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IList</span>&lt;<a class="xref" href="Microsoft.Azure.Search.Models.Field.html">Field</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Search.Models.Field.html">Field</a>&gt;</td>
         <td><p>A collection of fields.</p>
 </td>
       </tr>
@@ -304,6 +358,12 @@ consistent with the way the model will be serialized.</p>
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Search_FieldBuilder.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Search.FieldBuilder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/search/Microsoft.Azure.Search.Service/src/Customizations/Indexes/FieldBuilder/FieldBuilder.cs/#L20" class="contribution-link">View Source</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
@@ -321,8 +381,8 @@ consistent with the way the model will be serialized.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

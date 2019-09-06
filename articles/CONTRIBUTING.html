@@ -93,14 +93,22 @@
 </tr>
 <tr>
 <td>Client Libraries</td>
-<td><a href="https://dev.azure.com/azure-sdk/public/_build/latest?definitionId=41&amp;branchName=master"><img src="https://dev.azure.com/azure-sdk/public/_apis/build/status/41?branchName=master" alt="Build Status"></a></td>
+<td><a href="https://dev.azure.com/azure-sdk/public/_build/latest?definitionId=290&amp;branchName=master"><img src="https://dev.azure.com/azure-sdk/public/_apis/build/status/net/net%20-%20client%20-%20ci?branchName=master" alt="Build Status"></a></td>
 </tr>
 </tbody>
 </table>
 <h1 id="prerequisites">Prerequisites:</h1>
-<p>Install VS 2019 (Professional or higher) and make sure you have the latest updates (<a href="https://www.visualstudio.com/">https://www.visualstudio.com/</a>).</p>
-<p><strong>Client Libraries</strong> are sdks used to interact with azure resources at application run time while <strong>Management Libraries</strong> are those used to manage (create/modify/delete) Azure resources.
-<br><br></p>
+<ul>
+<li>Install VS 2019 (Community or higher) and make sure you have the latest updates (<a href="https://www.visualstudio.com/">https://www.visualstudio.com/</a>).</li>
+<li>Install the <strong>.NET Core cross-platform development</strong> workloads in VisualStudio</li>
+<li>Install <strong>.NET Core 3 preview 7</strong> or higher for your specific platform. (<a href="https://dotnet.microsoft.com/download/dotnet-core/3.0">https://dotnet.microsoft.com/download/dotnet-core/3.0</a>)</li>
+<li>Install the latest version of git (<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>)</li>
+</ul>
+<h2 id="general-things-to-know">GENERAL THINGS TO KNOW:</h2>
+<p><strong>Client Libraries</strong> are sdks used to interact with azure resources at application run time while <strong>Management Libraries</strong> are those used to manage (create/modify/delete) Azure resources.</p>
+<p><strong>Build Repo :</strong> To build all Client and Management libraries together. Invoke <code>dotnet build build.proj</code> from the root of the repo.<br>To scope to a single service supply a scope property e.g. <code>dotnet build build.proj /p:Scope=servicebus</code>. This will build both client and management projects in the specified service. If using msbuild you must run restore first. See below for how to build the <a href="#client-libraries">client</a> or <a href="#management-libraries">management</a> libraries independently.</p>
+<p><strong>Path Length :</strong> To account for the <strong>260 characters Path Length Limit</strong> encountered on windows OS, file paths within the repo is keep below 210 characters. This gives you a runway of 49 characters as clone path for your repo. Paths longer that 260 characters will cause the build to break on windows OS and on CI. Assuming you clone to the default VisualStudio location such that the root of your clone is <code>C:\Users\\**USERNAME**\Source\Repos\azure-sdk-for-net</code> your username will have to be 9 characters long to avoid build errors caused by long paths. Consider using <code>C:\git</code> as you clone path.</p>
+<p><strong>Dependencies :</strong> To ensure that the same versions of dependencies are used for all projects in the repo, package versions are managed from a central location in <code>eng\Packages.Data.props</code>. When adding package references you should first ensure that an <strong>Update</strong> reference of the package with the version exist in the <strong>Packages.Data.props</strong> then <strong>Include</strong> the reference without the version in your .csproj. Contact <a href="mailto:azuresdkengsysteam@microsoft.com">azuresdkengsysteam@microsoft.com</a> if you need to change  versions for packages already present in <strong>Packages.Data.props</strong></p>
 <h1 id="management-libraries">Management Libraries</h1>
 <h2 id="to-build">TO BUILD:</h2>
 <ol>
@@ -361,6 +369,9 @@ During SDK generation, this path helps to locate the REST API spec from the <cod
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/docfx_project/articles/CONTRIBUTING.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

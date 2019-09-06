@@ -83,7 +83,7 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask" class="text-break">Class JobManagerTask
   </h1>
-  <div class="markdown level0 summary"><p>Specifies details of a Job Manager task.</p>
+  <div class="markdown level0 summary"><p>Specifies details of a Job Manager Task.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -122,39 +122,39 @@
     <pre><code class="lang-csharp hljs">public class JobManagerTask</code></pre>
   </div>
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>The Job Manager task is automatically started when the job is created.
-The Batch service tries to schedule the Job Manager task before any
-other tasks in the job. When shrinking a pool, the Batch service tries
-to preserve compute nodes where Job Manager tasks are running for as
-long as possible (that is, nodes running 'normal' tasks are removed
-before nodes running Job Manager tasks). When a Job Manager task fails
-and needs to be restarted, the system tries to schedule it at the
-highest priority. If there are no idle nodes available, the system may
-terminate one of the running tasks in the pool and return it to the
-queue in order to make room for the Job Manager task to restart. Note
-that a Job Manager task in one job does not have priority over tasks in
-other jobs. Across jobs, only job level priorities are observed. For
-example, if a Job Manager in a priority 0 job needs to be restarted, it
-will not displace tasks of a priority 1 job. Batch will retry tasks
-when a recovery operation is triggered on a compute node. Examples of
-recovery operations include (but are not limited to) when an unhealthy
-compute node is rebooted or a compute node disappeared due to host
-failure. Retries due to recovery operations are independent of and are
-not counted against the maxTaskRetryCount. Even if the
+  <div class="markdown level0 remarks"><p>The Job Manager Task is automatically started when the Job is created.
+The Batch service tries to schedule the Job Manager Task before any
+other Tasks in the Job. When shrinking a Pool, the Batch service tries
+to preserve Nodes where Job Manager Tasks are running for as long as
+possible (that is, Compute Nodes running 'normal' Tasks are removed
+before Compute Nodes running Job Manager Tasks). When a Job Manager
+Task fails and needs to be restarted, the system tries to schedule it
+at the highest priority. If there are no idle Compute Nodes available,
+the system may terminate one of the running Tasks in the Pool and
+return it to the queue in order to make room for the Job Manager Task
+to restart. Note that a Job Manager Task in one Job does not have
+priority over Tasks in other Jobs. Across Jobs, only Job level
+priorities are observed. For example, if a Job Manager in a priority 0
+Job needs to be restarted, it will not displace Tasks of a priority 1
+Job. Batch will retry Tasks when a recovery operation is triggered on a
+Node. Examples of recovery operations include (but are not limited to)
+when an unhealthy Node is rebooted or a Compute Node disappeared due to
+host failure. Retries due to recovery operations are independent of and
+are not counted against the maxTaskRetryCount. Even if the
 maxTaskRetryCount is 0, an internal retry due to a recovery operation
-may occur. Because of this, all tasks should be idempotent. This means
-tasks need to tolerate being interrupted and restarted without causing
+may occur. Because of this, all Tasks should be idempotent. This means
+Tasks need to tolerate being interrupted and restarted without causing
 any corruption or duplicate data. The best practice for long running
-tasks is to use some form of checkpointing.</p>
+Tasks is to use some form of checkpointing.</p>
 </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask__ctor.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask__ctor.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L52">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L52">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.#ctor">JobManagerTask()</h4>
@@ -167,10 +167,10 @@ tasks is to use some form of checkpointing.</p>
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask__ctor_System_String_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskContainerSettings_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_ResourceFile__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_OutputFile__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_EnvironmentSetting__Microsoft_Azure_Batch_Protocol_Models_TaskConstraints_System_Nullable_System_Boolean__Microsoft_Azure_Batch_Protocol_Models_UserIdentity_System_Nullable_System_Boolean__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_ApplicationPackageReference__Microsoft_Azure_Batch_Protocol_Models_AuthenticationTokenSettings_System_Nullable_System_Boolean__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.%23ctor(System.String%2CSystem.String%2CSystem.String%2CMicrosoft.Azure.Batch.Protocol.Models.TaskContainerSettings%2CSystem.Collections.Generic.IList%7BMicrosoft.Azure.Batch.Protocol.Models.ResourceFile%7D%2CSystem.Collections.Generic.IList%7BMicrosoft.Azure.Batch.Protocol.Models.OutputFile%7D%2CSystem.Collections.Generic.IList%7BMicrosoft.Azure.Batch.Protocol.Models.EnvironmentSetting%7D%2CMicrosoft.Azure.Batch.Protocol.Models.TaskConstraints%2CSystem.Nullable%7BSystem.Boolean%7D%2CMicrosoft.Azure.Batch.Protocol.Models.UserIdentity%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Collections.Generic.IList%7BMicrosoft.Azure.Batch.Protocol.Models.ApplicationPackageReference%7D%2CMicrosoft.Azure.Batch.Protocol.Models.AuthenticationTokenSettings%2CSystem.Nullable%7BSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask__ctor_System_String_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskContainerSettings_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_ResourceFile__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_OutputFile__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_EnvironmentSetting__Microsoft_Azure_Batch_Protocol_Models_TaskConstraints_System_Nullable_System_Boolean__Microsoft_Azure_Batch_Protocol_Models_UserIdentity_System_Nullable_System_Boolean__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_ApplicationPackageReference__Microsoft_Azure_Batch_Protocol_Models_AuthenticationTokenSettings_System_Nullable_System_Boolean__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.%23ctor(System.String%2CSystem.String%2CSystem.String%2CMicrosoft.Azure.Batch.Protocol.Models.TaskContainerSettings%2CSystem.Collections.Generic.IList%7BMicrosoft.Azure.Batch.Protocol.Models.ResourceFile%7D%2CSystem.Collections.Generic.IList%7BMicrosoft.Azure.Batch.Protocol.Models.OutputFile%7D%2CSystem.Collections.Generic.IList%7BMicrosoft.Azure.Batch.Protocol.Models.EnvironmentSetting%7D%2CMicrosoft.Azure.Batch.Protocol.Models.TaskConstraints%2CSystem.Nullable%7BSystem.Boolean%7D%2CMicrosoft.Azure.Batch.Protocol.Models.UserIdentity%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Collections.Generic.IList%7BMicrosoft.Azure.Batch.Protocol.Models.ApplicationPackageReference%7D%2CMicrosoft.Azure.Batch.Protocol.Models.AuthenticationTokenSettings%2CSystem.Nullable%7BSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L92">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L92">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask__ctor_System_String_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskContainerSettings_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_ResourceFile__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_OutputFile__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_EnvironmentSetting__Microsoft_Azure_Batch_Protocol_Models_TaskConstraints_System_Nullable_System_Boolean__Microsoft_Azure_Batch_Protocol_Models_UserIdentity_System_Nullable_System_Boolean__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_ApplicationPackageReference__Microsoft_Azure_Batch_Protocol_Models_AuthenticationTokenSettings_System_Nullable_System_Boolean__" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.#ctor(System.String,System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskContainerSettings,System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.ResourceFile},System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.OutputFile},System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting},Microsoft.Azure.Batch.Protocol.Models.TaskConstraints,System.Nullable{System.Boolean},Microsoft.Azure.Batch.Protocol.Models.UserIdentity,System.Nullable{System.Boolean},System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.ApplicationPackageReference},Microsoft.Azure.Batch.Protocol.Models.AuthenticationTokenSettings,System.Nullable{System.Boolean})">JobManagerTask(String, String, String, TaskContainerSettings, IList&lt;ResourceFile&gt;, IList&lt;OutputFile&gt;, IList&lt;EnvironmentSetting&gt;, TaskConstraints, Nullable&lt;Boolean&gt;, UserIdentity, Nullable&lt;Boolean&gt;, IList&lt;ApplicationPackageReference&gt;, AuthenticationTokenSettings, Nullable&lt;Boolean&gt;)</h4>
@@ -195,35 +195,35 @@ tasks is to use some form of checkpointing.</p>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">id</span></td>
         <td><p>A string that uniquely identifies the Job Manager
-task within the job.</p>
+Task within the Job.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">commandLine</span></td>
         <td><p>The command line of the Job Manager
-task.</p>
+Task.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">displayName</span></td>
         <td><p>The display name of the Job Manager
-task.</p>
+Task.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskContainerSettings.html">TaskContainerSettings</a></td>
         <td><span class="parametername">containerSettings</span></td>
         <td><p>The settings for the container
-under which the Job Manager task runs.</p>
+under which the Job Manager Task runs.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ResourceFile.html">ResourceFile</a>&gt;</td>
         <td><span class="parametername">resourceFiles</span></td>
         <td><p>A list of files that the Batch service
-will download to the compute node before running the command
+will download to the Compute Node before running the command
 line.</p>
 </td>
       </tr>
@@ -231,7 +231,7 @@ line.</p>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.OutputFile.html">OutputFile</a>&gt;</td>
         <td><span class="parametername">outputFiles</span></td>
         <td><p>A list of files that the Batch service
-will upload from the compute node after running the command
+will upload from the Compute Node after running the command
 line.</p>
 </td>
       </tr>
@@ -239,42 +239,42 @@ line.</p>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting.html">EnvironmentSetting</a>&gt;</td>
         <td><span class="parametername">environmentSettings</span></td>
         <td><p>A list of environment variable
-settings for the Job Manager task.</p>
+settings for the Job Manager Task.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskConstraints.html">TaskConstraints</a></td>
         <td><span class="parametername">constraints</span></td>
         <td><p>Constraints that apply to the Job Manager
-task.</p>
+Task.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><span class="parametername">killJobOnCompletion</span></td>
         <td><p>Whether completion of the Job
-Manager task signifies completion of the entire job.</p>
+Manager Task signifies completion of the entire Job.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.UserIdentity.html">UserIdentity</a></td>
         <td><span class="parametername">userIdentity</span></td>
         <td><p>The user identity under which the Job
-Manager task runs.</p>
+Manager Task runs.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><span class="parametername">runExclusive</span></td>
-        <td><p>Whether the Job Manager task requires
-exclusive use of the compute node where it runs.</p>
+        <td><p>Whether the Job Manager Task requires
+exclusive use of the Compute Node where it runs.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ApplicationPackageReference.html">ApplicationPackageReference</a>&gt;</td>
         <td><span class="parametername">applicationPackageReferences</span></td>
-        <td><p>A list of application
-packages that the Batch service will deploy to the compute node
+        <td><p>A list of Application
+Packages that the Batch service will deploy to the Compute Node
 before running the command line.</p>
 </td>
       </tr>
@@ -282,15 +282,15 @@ before running the command line.</p>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.AuthenticationTokenSettings.html">AuthenticationTokenSettings</a></td>
         <td><span class="parametername">authenticationTokenSettings</span></td>
         <td><p>The settings for an
-authentication token that the task can use to perform Batch service
+authentication token that the Task can use to perform Batch service
 operations.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><span class="parametername">allowLowPriorityNode</span></td>
-        <td><p>Whether the Job Manager task may
-run on a low-priority compute node.</p>
+        <td><p>Whether the Job Manager Task may
+run on a low-priority Compute Node.</p>
 </td>
       </tr>
     </tbody>
@@ -299,15 +299,15 @@ run on a low-priority compute node.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_AllowLowPriorityNode.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.AllowLowPriorityNode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_AllowLowPriorityNode.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.AllowLowPriorityNode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L303">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L303">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_AllowLowPriorityNode_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.AllowLowPriorityNode*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_AllowLowPriorityNode" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.AllowLowPriorityNode">AllowLowPriorityNode</h4>
-  <div class="markdown level1 summary"><p>Gets or sets whether the Job Manager task may run on a low-priority
-compute node.</p>
+  <div class="markdown level1 summary"><p>Gets or sets whether the Job Manager Task may run on a low-priority
+Compute Node.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -334,15 +334,15 @@ compute node.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_ApplicationPackageReferences.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.ApplicationPackageReferences%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_ApplicationPackageReferences.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.ApplicationPackageReferences%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L276">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L276">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_ApplicationPackageReferences_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.ApplicationPackageReferences*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_ApplicationPackageReferences" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.ApplicationPackageReferences">ApplicationPackageReferences</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a list of application packages that the Batch service
-will deploy to the compute node before running the command line.</p>
+  <div class="markdown level1 summary"><p>Gets or sets a list of Application Packages that the Batch service
+will deploy to the Compute Node before running the command line.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -365,24 +365,24 @@ will deploy to the compute node before running the command line.</p>
     </tbody>
   </table>
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_ApplicationPackageReferences_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Application packages are downloaded and deployed to a shared
-directory, not the task working directory. Therefore, if a
-referenced package is already on the compute node, and is up to
-date, then it is not re-downloaded; the existing copy on the
-compute node is used. If a referenced application package cannot be
-installed, for example because the package has been deleted or
-because download failed, the task fails.</p>
+  <div class="markdown level1 remarks"><p>Application Packages are downloaded and deployed to a shared
+directory, not the Task working directory. Therefore, if a
+referenced Application Package is already on the Compute Node, and
+is up to date, then it is not re-downloaded; the existing copy on
+the Compute Node is used. If a referenced Application Package
+cannot be installed, for example because the package has been
+deleted or because download failed, the Task fails.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_AuthenticationTokenSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.AuthenticationTokenSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_AuthenticationTokenSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.AuthenticationTokenSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L293">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L293">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_AuthenticationTokenSettings_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.AuthenticationTokenSettings*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_AuthenticationTokenSettings" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.AuthenticationTokenSettings">AuthenticationTokenSettings</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the settings for an authentication token that the task
+  <div class="markdown level1 summary"><p>Gets or sets the settings for an authentication token that the Task
 can use to perform Batch service operations.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -406,25 +406,25 @@ can use to perform Batch service operations.</p>
     </tbody>
   </table>
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_AuthenticationTokenSettings_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If this property is set, the Batch service provides the task with
+  <div class="markdown level1 remarks"><p>If this property is set, the Batch service provides the Task with
 an authentication token which can be used to authenticate Batch
-service operations without requiring an account access key. The
+service operations without requiring an Account access key. The
 token is provided via the AZ_BATCH_AUTHENTICATION_TOKEN environment
-variable. The operations that the task can carry out using the
-token depend on the settings. For example, a task can request job
-permissions in order to add other tasks to the job, or check the
-status of the job or of other tasks under the job.</p>
+variable. The operations that the Task can carry out using the
+token depend on the settings. For example, a Task can request Job
+permissions in order to add other Tasks to the Job, or check the
+status of the Job or of other Tasks under the Job.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_CommandLine.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.CommandLine%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_CommandLine.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.CommandLine%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L152">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L152">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_CommandLine_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.CommandLine*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_CommandLine" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.CommandLine">CommandLine</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the command line of the Job Manager task.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the command line of the Job Manager Task.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -453,20 +453,20 @@ expansion. If you want to take advantage of such features, you
 should invoke the shell in the command line, for example using &quot;cmd
 /c MyCommand&quot; in Windows or &quot;/bin/sh -c MyCommand&quot; in Linux. If the
 command line refers to file paths, it should use a relative path
-(relative to the task working directory), or use the Batch provided
+(relative to the Task working directory), or use the Batch provided
 environment variable
 (<a href="https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables">https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables</a>).</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_Constraints.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.Constraints%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_Constraints.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.Constraints%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L212">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L212">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_Constraints_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.Constraints*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_Constraints" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.Constraints">Constraints</h4>
-  <div class="markdown level1 summary"><p>Gets or sets constraints that apply to the Job Manager task.</p>
+  <div class="markdown level1 summary"><p>Gets or sets constraints that apply to the Job Manager Task.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -490,15 +490,15 @@ environment variable
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_ContainerSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.ContainerSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_ContainerSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.ContainerSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L172">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L172">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_ContainerSettings_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.ContainerSettings*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_ContainerSettings" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.ContainerSettings">ContainerSettings</h4>
   <div class="markdown level1 summary"><p>Gets or sets the settings for the container under which the Job
-Manager task runs.</p>
+Manager Task runs.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -521,13 +521,13 @@ Manager task runs.</p>
     </tbody>
   </table>
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_ContainerSettings_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If the pool that will run this task has containerConfiguration set,
-this must be set as well. If the pool that will run this task
+  <div class="markdown level1 remarks"><p>If the Pool that will run this Task has containerConfiguration set,
+this must be set as well. If the Pool that will run this Task
 doesn't have containerConfiguration set, this must not be set. When
 this is specified, all directories recursively below the
 AZ_BATCH_NODE_ROOT_DIR (the root of Azure Batch directories on the
-node) are mapped into the container, all task environment variables
-are mapped into the container, and the task command line is
+node) are mapped into the container, all Task environment variables
+are mapped into the container, and the Task command line is
 executed in the container. Files produced in the container outside
 of AZ_BATCH_NODE_ROOT_DIR might not be reflected to the host disk,
 meaning that Batch file APIs will not be able to access those
@@ -535,14 +535,14 @@ files.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_DisplayName.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.DisplayName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_DisplayName.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.DisplayName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L135">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L135">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_DisplayName_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.DisplayName*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_DisplayName" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.DisplayName">DisplayName</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the display name of the Job Manager task.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the display name of the Job Manager Task.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -570,15 +570,15 @@ a maximum length of 1024.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_EnvironmentSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.EnvironmentSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_EnvironmentSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.EnvironmentSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L206">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L206">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_EnvironmentSettings_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.EnvironmentSettings*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_EnvironmentSettings" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.EnvironmentSettings">EnvironmentSettings</h4>
   <div class="markdown level1 summary"><p>Gets or sets a list of environment variable settings for the Job
-Manager task.</p>
+Manager Task.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -602,15 +602,15 @@ Manager task.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_Id.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_Id.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L125">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L125">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_Id_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.Id*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_Id" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.Id">Id</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a string that uniquely identifies the Job Manager task
-within the job.</p>
+  <div class="markdown level1 summary"><p>Gets or sets a string that uniquely identifies the Job Manager Task
+within the Job.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -639,15 +639,15 @@ characters.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_KillJobOnCompletion.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.KillJobOnCompletion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_KillJobOnCompletion.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.KillJobOnCompletion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L234">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L234">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_KillJobOnCompletion_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.KillJobOnCompletion*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_KillJobOnCompletion" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.KillJobOnCompletion">KillJobOnCompletion</h4>
-  <div class="markdown level1 summary"><p>Gets or sets whether completion of the Job Manager task signifies
-completion of the entire job.</p>
+  <div class="markdown level1 summary"><p>Gets or sets whether completion of the Job Manager Task signifies
+completion of the entire Job.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -670,31 +670,31 @@ completion of the entire job.</p>
     </tbody>
   </table>
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_KillJobOnCompletion_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If true, when the Job Manager task completes, the Batch service
-marks the job as complete. If any tasks are still running at this
-time (other than Job Release), those tasks are terminated. If
-false, the completion of the Job Manager task does not affect the
-job status. In this case, you should either use the
-onAllTasksComplete attribute to terminate the job, or have a client
-or user terminate the job explicitly. An example of this is if the
-Job Manager creates a set of tasks but then takes no further role
+  <div class="markdown level1 remarks"><p>If true, when the Job Manager Task completes, the Batch service
+marks the Job as complete. If any Tasks are still running at this
+time (other than Job Release), those Tasks are terminated. If
+false, the completion of the Job Manager Task does not affect the
+Job status. In this case, you should either use the
+onAllTasksComplete attribute to terminate the Job, or have a client
+or user terminate the Job explicitly. An example of this is if the
+Job Manager creates a set of Tasks but then takes no further role
 in their execution. The default value is true. If you are using the
-onAllTasksComplete and onTaskFailure attributes to control job
-lifetime, and using the Job Manager task only to create the tasks
-for the job (not to monitor progress), then it is important to set
+onAllTasksComplete and onTaskFailure attributes to control Job
+lifetime, and using the Job Manager Task only to create the Tasks
+for the Job (not to monitor progress), then it is important to set
 killJobOnCompletion to false.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_OutputFiles.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.OutputFiles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_OutputFiles.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.OutputFiles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L199">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L199">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_OutputFiles_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.OutputFiles*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_OutputFiles" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.OutputFiles">OutputFiles</h4>
   <div class="markdown level1 summary"><p>Gets or sets a list of files that the Batch service will upload
-from the compute node after running the command line.</p>
+from the Compute Node after running the command line.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -717,20 +717,20 @@ from the compute node after running the command line.</p>
     </tbody>
   </table>
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_OutputFiles_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>For multi-instance tasks, the files will only be uploaded from the
-compute node on which the primary task is executed.</p>
+  <div class="markdown level1 remarks"><p>For multi-instance Tasks, the files will only be uploaded from the
+Compute Node on which the primary Task is executed.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_ResourceFiles.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.ResourceFiles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_ResourceFiles.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.ResourceFiles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L188">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L188">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_ResourceFiles_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.ResourceFiles*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_ResourceFiles" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.ResourceFiles">ResourceFiles</h4>
   <div class="markdown level1 summary"><p>Gets or sets a list of files that the Batch service will download
-to the compute node before running the command line.</p>
+to the Compute Node before running the command line.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -753,7 +753,7 @@ to the compute node before running the command line.</p>
     </tbody>
   </table>
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_ResourceFiles_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Files listed under this element are located in the task's working
+  <div class="markdown level1 remarks"><p>Files listed under this element are located in the Task's working
 directory. There is a maximum size for the list of resource files.
 When the max size is exceeded, the request will fail and the
 response error code will be RequestEntityTooLarge. If this occurs,
@@ -763,15 +763,15 @@ Containers.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_RunExclusive.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.RunExclusive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_RunExclusive.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.RunExclusive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L260">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L260">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_RunExclusive_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.RunExclusive*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_RunExclusive" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.RunExclusive">RunExclusive</h4>
-  <div class="markdown level1 summary"><p>Gets or sets whether the Job Manager task requires exclusive use of
-the compute node where it runs.</p>
+  <div class="markdown level1 summary"><p>Gets or sets whether the Job Manager Task requires exclusive use of
+the Compute Node where it runs.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -794,23 +794,23 @@ the compute node where it runs.</p>
     </tbody>
   </table>
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_RunExclusive_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If true, no other tasks will run on the same compute node for as
-long as the Job Manager is running. If false, other tasks can run
-simultaneously with the Job Manager on a compute node. The Job
-Manager task counts normally against the node's concurrent task
-limit, so this is only relevant if the node allows multiple
-concurrent tasks. The default value is true.</p>
+  <div class="markdown level1 remarks"><p>If true, no other Tasks will run on the same Node for as long as
+the Job Manager is running. If false, other Tasks can run
+simultaneously with the Job Manager on a Compute Node. The Job
+Manager Task counts normally against the Compute Node's concurrent
+Task limit, so this is only relevant if the Compute Node allows
+multiple concurrent Tasks. The default value is true.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_UserIdentity.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.UserIdentity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_UserIdentity.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.UserIdentity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L245">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L245">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_UserIdentity_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.UserIdentity*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_UserIdentity" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.UserIdentity">UserIdentity</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the user identity under which the Job Manager task
+  <div class="markdown level1 summary"><p>Gets or sets the user identity under which the Job Manager Task
 runs.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -834,12 +834,27 @@ runs.</p>
     </tbody>
   </table>
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_UserIdentity_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If omitted, the task runs as a non-administrative user unique to
-the task.</p>
+  <div class="markdown level1 remarks"><p>If omitted, the Task runs as a non-administrative user unique to
+the Task.</p>
 </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../KeyVault/Azure.Security.KeyVault.Secrets.AzureClientBuilderExtensions.html#Azure_Security_KeyVault_Secrets_AzureClientBuilderExtensions_AddSecretClient__2___0___1_">AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../OtherAPIs/Azure.Data.AppConfiguration.AzureClientBuilderExtensions.html#Azure_Data_AppConfiguration_AzureClientBuilderExtensions_AddConfigurationClient__2___0___1_">AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../Storage/Azure.Storage.Blobs.AzureClientBuilderExtensions.html#Azure_Storage_Blobs_AzureClientBuilderExtensions_AddBlobServiceClient__2___0___1_">AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
 </article>
           </div>
@@ -849,10 +864,10 @@ the task.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobManagerTask.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobManagerTask%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L47" class="contribution-link">View Source</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobManagerTask.cs/#L47" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

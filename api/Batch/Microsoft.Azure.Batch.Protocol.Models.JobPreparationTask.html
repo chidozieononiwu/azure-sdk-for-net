@@ -83,8 +83,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask" class="text-break">Class JobPreparationTask
   </h1>
-  <div class="markdown level0 summary"><p>A Job Preparation task to run before any tasks of the job on any given
-compute node.</p>
+  <div class="markdown level0 summary"><p>A Job Preparation Task to run before any Tasks of the Job on any given
+Compute Node.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -123,44 +123,42 @@ compute node.</p>
     <pre><code class="lang-csharp hljs">public class JobPreparationTask</code></pre>
   </div>
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>You can use Job Preparation to prepare a compute node to run tasks for
-the job. Activities commonly performed in Job Preparation include:
-Downloading common resource files used by all the tasks in the job. The
-Job Preparation task can download these common resource files to the
-shared location on the compute node. (AZ_BATCH_NODE_ROOT_DIR\shared),
-or starting a local service on the compute node so that all tasks of
-that job can communicate with it. If the Job Preparation task fails
-(that is, exhausts its retry count before exiting with exit code 0),
-Batch will not run tasks of this job on the compute node. The node
-remains ineligible to run tasks of this job until it is reimaged. The
-node remains active and can be used for other jobs. The Job Preparation
-task can run multiple times on the same compute node. Therefore, you
-should write the Job Preparation task to handle re-execution. If the
-compute node is rebooted, the Job Preparation task is run again on the
-node before scheduling any other task of the job, if
-rerunOnNodeRebootAfterSuccess is true or if the Job Preparation task
-did not previously complete. If the compute node is reimaged, the Job
-Preparation task is run again before scheduling any task of the job.
-Batch will retry tasks when a recovery operation is triggered on a
-compute node. Examples of recovery operations include (but are not
-limited to) when an unhealthy compute node is rebooted or a compute
-node disappeared due to host failure. Retries due to recovery
-operations are independent of and are not counted against the
-maxTaskRetryCount. Even if the maxTaskRetryCount is 0, an internal
-retry due to a recovery operation may occur. Because of this, all tasks
-should be idempotent. This means tasks need to tolerate being
-interrupted and restarted without causing any corruption or duplicate
-data. The best practice for long running tasks is to use some form of
-checkpointing.</p>
+  <div class="markdown level0 remarks"><p>You can use Job Preparation to prepare a Node to run Tasks for the Job.
+Activities commonly performed in Job Preparation include: Downloading
+common resource files used by all the Tasks in the Job. The Job
+Preparation Task can download these common resource files to the shared
+location on the Node. (AZ_BATCH_NODE_ROOT_DIR\shared), or starting a
+local service on the Node so that all Tasks of that Job can communicate
+with it. If the Job Preparation Task fails (that is, exhausts its retry
+count before exiting with exit code 0), Batch will not run Tasks of
+this Job on the Node. The Compute Node remains ineligible to run Tasks
+of this Job until it is reimaged. The Compute Node remains active and
+can be used for other Jobs. The Job Preparation Task can run multiple
+times on the same Node. Therefore, you should write the Job Preparation
+Task to handle re-execution. If the Node is rebooted, the Job
+Preparation Task is run again on the Compute Node before scheduling any
+other Task of the Job, if rerunOnNodeRebootAfterSuccess is true or if
+the Job Preparation Task did not previously complete. If the Node is
+reimaged, the Job Preparation Task is run again before scheduling any
+Task of the Job. Batch will retry Tasks when a recovery operation is
+triggered on a Node. Examples of recovery operations include (but are
+not limited to) when an unhealthy Node is rebooted or a Compute Node
+disappeared due to host failure. Retries due to recovery operations are
+independent of and are not counted against the maxTaskRetryCount. Even
+if the maxTaskRetryCount is 0, an internal retry due to a recovery
+operation may occur. Because of this, all Tasks should be idempotent.
+This means Tasks need to tolerate being interrupted and restarted
+without causing any corruption or duplicate data. The best practice for
+long running Tasks is to use some form of checkpointing.</p>
 </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask__ctor.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask__ctor.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobPreparationTask.cs/#L58">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobPreparationTask.cs/#L56">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.#ctor">JobPreparationTask()</h4>
@@ -173,10 +171,10 @@ checkpointing.</p>
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask__ctor_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskContainerSettings_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_ResourceFile__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_EnvironmentSetting__Microsoft_Azure_Batch_Protocol_Models_TaskConstraints_System_Nullable_System_Boolean__Microsoft_Azure_Batch_Protocol_Models_UserIdentity_System_Nullable_System_Boolean__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.%23ctor(System.String%2CSystem.String%2CMicrosoft.Azure.Batch.Protocol.Models.TaskContainerSettings%2CSystem.Collections.Generic.IList%7BMicrosoft.Azure.Batch.Protocol.Models.ResourceFile%7D%2CSystem.Collections.Generic.IList%7BMicrosoft.Azure.Batch.Protocol.Models.EnvironmentSetting%7D%2CMicrosoft.Azure.Batch.Protocol.Models.TaskConstraints%2CSystem.Nullable%7BSystem.Boolean%7D%2CMicrosoft.Azure.Batch.Protocol.Models.UserIdentity%2CSystem.Nullable%7BSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask__ctor_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskContainerSettings_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_ResourceFile__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_EnvironmentSetting__Microsoft_Azure_Batch_Protocol_Models_TaskConstraints_System_Nullable_System_Boolean__Microsoft_Azure_Batch_Protocol_Models_UserIdentity_System_Nullable_System_Boolean__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.%23ctor(System.String%2CSystem.String%2CMicrosoft.Azure.Batch.Protocol.Models.TaskContainerSettings%2CSystem.Collections.Generic.IList%7BMicrosoft.Azure.Batch.Protocol.Models.ResourceFile%7D%2CSystem.Collections.Generic.IList%7BMicrosoft.Azure.Batch.Protocol.Models.EnvironmentSetting%7D%2CMicrosoft.Azure.Batch.Protocol.Models.TaskConstraints%2CSystem.Nullable%7BSystem.Boolean%7D%2CMicrosoft.Azure.Batch.Protocol.Models.UserIdentity%2CSystem.Nullable%7BSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobPreparationTask.cs/#L89">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobPreparationTask.cs/#L87">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask__ctor_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskContainerSettings_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_ResourceFile__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_EnvironmentSetting__Microsoft_Azure_Batch_Protocol_Models_TaskConstraints_System_Nullable_System_Boolean__Microsoft_Azure_Batch_Protocol_Models_UserIdentity_System_Nullable_System_Boolean__" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.#ctor(System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskContainerSettings,System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.ResourceFile},System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting},Microsoft.Azure.Batch.Protocol.Models.TaskConstraints,System.Nullable{System.Boolean},Microsoft.Azure.Batch.Protocol.Models.UserIdentity,System.Nullable{System.Boolean})">JobPreparationTask(String, String, TaskContainerSettings, IList&lt;ResourceFile&gt;, IList&lt;EnvironmentSetting&gt;, TaskConstraints, Nullable&lt;Boolean&gt;, UserIdentity, Nullable&lt;Boolean&gt;)</h4>
@@ -201,28 +199,28 @@ checkpointing.</p>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">commandLine</span></td>
         <td><p>The command line of the Job Preparation
-task.</p>
+Task.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">id</span></td>
         <td><p>A string that uniquely identifies the Job
-Preparation task within the job.</p>
+Preparation Task within the Job.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskContainerSettings.html">TaskContainerSettings</a></td>
         <td><span class="parametername">containerSettings</span></td>
         <td><p>The settings for the container
-under which the Job Preparation task runs.</p>
+under which the Job Preparation Task runs.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ResourceFile.html">ResourceFile</a>&gt;</td>
         <td><span class="parametername">resourceFiles</span></td>
         <td><p>A list of files that the Batch service
-will download to the compute node before running the command
+will download to the Compute Node before running the command
 line.</p>
 </td>
       </tr>
@@ -230,23 +228,23 @@ line.</p>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting.html">EnvironmentSetting</a>&gt;</td>
         <td><span class="parametername">environmentSettings</span></td>
         <td><p>A list of environment variable
-settings for the Job Preparation task.</p>
+settings for the Job Preparation Task.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskConstraints.html">TaskConstraints</a></td>
         <td><span class="parametername">constraints</span></td>
         <td><p>Constraints that apply to the Job
-Preparation task.</p>
+Preparation Task.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><span class="parametername">waitForSuccess</span></td>
         <td><p>Whether the Batch service should wait
-for the Job Preparation task to complete successfully before
-scheduling any other tasks of the job on the compute node. A Job
-Preparation task has completed successfully if it exits with exit
+for the Job Preparation Task to complete successfully before
+scheduling any other Tasks of the Job on the Compute Node. A Job
+Preparation Task has completed successfully if it exits with exit
 code 0.</p>
 </td>
       </tr>
@@ -254,14 +252,14 @@ code 0.</p>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.UserIdentity.html">UserIdentity</a></td>
         <td><span class="parametername">userIdentity</span></td>
         <td><p>The user identity under which the Job
-Preparation task runs.</p>
+Preparation Task runs.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><span class="parametername">rerunOnNodeRebootAfterSuccess</span></td>
         <td><p>Whether the Batch
-service should rerun the Job Preparation task after a compute node
+service should rerun the Job Preparation Task after a Compute Node
 reboots.</p>
 </td>
       </tr>
@@ -271,14 +269,14 @@ reboots.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_CommandLine.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.CommandLine%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_CommandLine.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.CommandLine%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobPreparationTask.cs/#L140">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobPreparationTask.cs/#L138">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_CommandLine_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.CommandLine*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_CommandLine" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.CommandLine">CommandLine</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the command line of the Job Preparation task.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the command line of the Job Preparation Task.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -307,20 +305,20 @@ expansion. If you want to take advantage of such features, you
 should invoke the shell in the command line, for example using &quot;cmd
 /c MyCommand&quot; in Windows or &quot;/bin/sh -c MyCommand&quot; in Linux. If the
 command line refers to file paths, it should use a relative path
-(relative to the task working directory), or use the Batch provided
+(relative to the Task working directory), or use the Batch provided
 environment variable
 (<a href="https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables">https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables</a>).</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_Constraints.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.Constraints%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_Constraints.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.Constraints%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobPreparationTask.cs/#L186">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobPreparationTask.cs/#L184">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_Constraints_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.Constraints*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_Constraints" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.Constraints">Constraints</h4>
-  <div class="markdown level1 summary"><p>Gets or sets constraints that apply to the Job Preparation task.</p>
+  <div class="markdown level1 summary"><p>Gets or sets constraints that apply to the Job Preparation Task.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -344,15 +342,15 @@ environment variable
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_ContainerSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.ContainerSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_ContainerSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.ContainerSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobPreparationTask.cs/#L157">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobPreparationTask.cs/#L155">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_ContainerSettings_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.ContainerSettings*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_ContainerSettings" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.ContainerSettings">ContainerSettings</h4>
   <div class="markdown level1 summary"><p>Gets or sets the settings for the container under which the Job
-Preparation task runs.</p>
+Preparation Task runs.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -377,8 +375,8 @@ Preparation task runs.</p>
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_ContainerSettings_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>When this is specified, all directories recursively below the
 AZ_BATCH_NODE_ROOT_DIR (the root of Azure Batch directories on the
-node) are mapped into the container, all task environment variables
-are mapped into the container, and the task command line is
+node) are mapped into the container, all Task environment variables
+are mapped into the container, and the Task command line is
 executed in the container. Files produced in the container outside
 of AZ_BATCH_NODE_ROOT_DIR might not be reflected to the host disk,
 meaning that Batch file APIs will not be able to access those
@@ -386,15 +384,15 @@ files.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_EnvironmentSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.EnvironmentSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_EnvironmentSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.EnvironmentSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobPreparationTask.cs/#L180">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobPreparationTask.cs/#L178">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_EnvironmentSettings_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.EnvironmentSettings*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_EnvironmentSettings" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.EnvironmentSettings">EnvironmentSettings</h4>
   <div class="markdown level1 summary"><p>Gets or sets a list of environment variable settings for the Job
-Preparation task.</p>
+Preparation Task.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -418,15 +416,15 @@ Preparation task.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_Id.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_Id.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobPreparationTask.cs/#L123">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobPreparationTask.cs/#L121">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_Id_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.Id*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_Id" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.Id">Id</h4>
   <div class="markdown level1 summary"><p>Gets or sets a string that uniquely identifies the Job Preparation
-task within the job.</p>
+Task within the Job.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -452,24 +450,24 @@ task within the job.</p>
   <div class="markdown level1 remarks"><p>The ID can contain any combination of alphanumeric characters
 including hyphens and underscores and cannot contain more than 64
 characters. If you do not specify this property, the Batch service
-assigns a default value of 'jobpreparation'. No other task in the
-job can have the same ID as the Job Preparation task. If you try to
-submit a task with the same id, the Batch service rejects the
+assigns a default value of 'jobpreparation'. No other Task in the
+Job can have the same ID as the Job Preparation Task. If you try to
+submit a Task with the same id, the Batch service rejects the
 request with error code TaskIdSameAsJobPreparationTask; if you are
 calling the REST API directly, the HTTP status code is 409
 (Conflict).</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_RerunOnNodeRebootAfterSuccess.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.RerunOnNodeRebootAfterSuccess%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_RerunOnNodeRebootAfterSuccess.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.RerunOnNodeRebootAfterSuccess%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobPreparationTask.cs/#L236">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobPreparationTask.cs/#L234">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_RerunOnNodeRebootAfterSuccess_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.RerunOnNodeRebootAfterSuccess*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_RerunOnNodeRebootAfterSuccess" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.RerunOnNodeRebootAfterSuccess">RerunOnNodeRebootAfterSuccess</h4>
   <div class="markdown level1 summary"><p>Gets or sets whether the Batch service should rerun the Job
-Preparation task after a compute node reboots.</p>
+Preparation Task after a Compute Node reboots.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -492,24 +490,24 @@ Preparation task after a compute node reboots.</p>
     </tbody>
   </table>
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_RerunOnNodeRebootAfterSuccess_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The Job Preparation task is always rerun if a compute node is
-reimaged, or if the Job Preparation task did not complete (e.g.
-because the reboot occurred while the task was running). Therefore,
-you should always write a Job Preparation task to be idempotent and
+  <div class="markdown level1 remarks"><p>The Job Preparation Task is always rerun if a Compute Node is
+reimaged, or if the Job Preparation Task did not complete (e.g.
+because the reboot occurred while the Task was running). Therefore,
+you should always write a Job Preparation Task to be idempotent and
 to behave correctly if run multiple times. The default value is
 true.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_ResourceFiles.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.ResourceFiles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_ResourceFiles.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.ResourceFiles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobPreparationTask.cs/#L173">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobPreparationTask.cs/#L171">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_ResourceFiles_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.ResourceFiles*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_ResourceFiles" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.ResourceFiles">ResourceFiles</h4>
   <div class="markdown level1 summary"><p>Gets or sets a list of files that the Batch service will download
-to the compute node before running the command line.</p>
+to the Compute Node before running the command line.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -532,7 +530,7 @@ to the compute node before running the command line.</p>
     </tbody>
   </table>
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_ResourceFiles_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Files listed under this element are located in the task's working
+  <div class="markdown level1 remarks"><p>Files listed under this element are located in the Task's working
 directory.  There is a maximum size for the list of resource files.
 When the max size is exceeded, the request will fail and the
 response error code will be RequestEntityTooLarge. If this occurs,
@@ -542,14 +540,14 @@ Containers.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_UserIdentity.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.UserIdentity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_UserIdentity.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.UserIdentity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobPreparationTask.cs/#L221">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobPreparationTask.cs/#L219">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_UserIdentity_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.UserIdentity*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_UserIdentity" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.UserIdentity">UserIdentity</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the user identity under which the Job Preparation task
+  <div class="markdown level1 summary"><p>Gets or sets the user identity under which the Job Preparation Task
 runs.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -573,22 +571,22 @@ runs.</p>
     </tbody>
   </table>
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_UserIdentity_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If omitted, the task runs as a non-administrative user unique to
-the task on Windows nodes, or a non-administrative user unique to
-the pool on Linux nodes.</p>
+  <div class="markdown level1 remarks"><p>If omitted, the Task runs as a non-administrative user unique to
+the Task on Windows Compute Nodes, or a non-administrative user
+unique to the Pool on Linux Compute Nodes.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_WaitForSuccess.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.WaitForSuccess%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_WaitForSuccess.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.WaitForSuccess%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobPreparationTask.cs/#L209">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobPreparationTask.cs/#L207">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_WaitForSuccess_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.WaitForSuccess*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_WaitForSuccess" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask.WaitForSuccess">WaitForSuccess</h4>
   <div class="markdown level1 summary"><p>Gets or sets whether the Batch service should wait for the Job
-Preparation task to complete successfully before scheduling any
-other tasks of the job on the compute node. A Job Preparation task
+Preparation Task to complete successfully before scheduling any
+other Tasks of the Job on the Compute Node. A Job Preparation Task
 has completed successfully if it exits with exit code 0.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -612,22 +610,37 @@ has completed successfully if it exits with exit code 0.</p>
     </tbody>
   </table>
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask_WaitForSuccess_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If true and the Job Preparation task fails on a compute node, the
-Batch service retries the Job Preparation task up to its maximum
-retry count (as specified in the constraints element). If the task
-has still not completed successfully after all retries, then the
-Batch service will not schedule tasks of the job to the compute
-node. The compute node remains active and eligible to run tasks of
-other jobs. If false, the Batch service will not wait for the Job
-Preparation task to complete. In this case, other tasks of the job
-can start executing on the compute node while the Job Preparation
-task is still running; and even if the Job Preparation task fails,
-new tasks will continue to be scheduled on the node. The default
-value is true.</p>
+  <div class="markdown level1 remarks"><p>If true and the Job Preparation Task fails on a Node, the Batch
+service retries the Job Preparation Task up to its maximum retry
+count (as specified in the constraints element). If the Task has
+still not completed successfully after all retries, then the Batch
+service will not schedule Tasks of the Job to the Node. The Node
+remains active and eligible to run Tasks of other Jobs. If false,
+the Batch service will not wait for the Job Preparation Task to
+complete. In this case, other Tasks of the Job can start executing
+on the Compute Node while the Job Preparation Task is still
+running; and even if the Job Preparation Task fails, new Tasks will
+continue to be scheduled on the Compute Node. The default value is
+true.</p>
 </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../KeyVault/Azure.Security.KeyVault.Secrets.AzureClientBuilderExtensions.html#Azure_Security_KeyVault_Secrets_AzureClientBuilderExtensions_AddSecretClient__2___0___1_">AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../OtherAPIs/Azure.Data.AppConfiguration.AzureClientBuilderExtensions.html#Azure_Data_AppConfiguration_AzureClientBuilderExtensions_AddConfigurationClient__2___0___1_">AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../Storage/Azure.Storage.Blobs.AzureClientBuilderExtensions.html#Azure_Storage_Blobs_AzureClientBuilderExtensions_AddBlobServiceClient__2___0___1_">AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
 </article>
           </div>
@@ -637,10 +650,10 @@ value is true.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobPreparationTask.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobPreparationTask.cs/#L53" class="contribution-link">View Source</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobPreparationTask.cs/#L51" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

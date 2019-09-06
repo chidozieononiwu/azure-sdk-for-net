@@ -84,8 +84,9 @@
 <ul>
 <li><a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals">Service principal authentication</a></li>
 <li><a href="https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview">Managed identity authentication</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-web-app-sign-user-overview">User principal authentication</a></li>
 </ul>
-<p><a href="https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/identity/Azure.Identity">Source code</a> | <a href="https://www.nuget.org/packages/Azure.Identity">Package (nuget)</a> | API reference documentation (Coming Soon) | <a href="https://docs.microsoft.com/en-us/azure/active-directory/">Azure Active Directory documentation</a></p>
+<p><a href="https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/identity/Azure.Identity">Source code</a> | <a href="https://www.nuget.org/packages/Azure.Identity">Package (nuget)</a> | <a href="https://azure.github.io/azure-sdk-for-net/api/Identity/Azure.Identity.html">API reference documentation</a> | <a href="https://docs.microsoft.com/en-us/azure/active-directory/">Azure Active Directory documentation</a></p>
 <h2 id="getting-started">Getting started</h2>
 <h3 id="install-the-package">Install the package</h3>
 <p>Install the Azure Identity client library for .NET with <a href="https://www.nuget.org/">NuGet</a>:</p>
@@ -115,7 +116,7 @@ Output:
 <li>Use the returned credentials above to set  <strong>AZURE_CLIENT_ID</strong>(appId), <strong>AZURE_CLIENT_SECRET</strong>(password) and <strong>AZURE_TENANT_ID</strong>(tenant) <a href="#environment-variables">environment variables</a>.</li>
 </ul>
 <h2 id="key-concepts">Key concepts</h2>
-<h3 id="credentials">Credentials</h3>
+<h2 id="credentials">Credentials</h2>
 <p>A credential is a class which contains or can obtain the data needed for a service client to authenticate requests. Service clients across Azure SDK accept credentials when they are constructed and use those credentials to authenticate requests to the service. Azure Identity offers a variety of credential classes in the <code>Azure.Identity</code> namespace capable of acquiring an AAD token. All of these credential classes are implementations of the <code>TokenCredential</code> abstract class in <a href="https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/core/Azure.Core">Azure.Core</a>, and can be used by any service client which can be constructed with a <code>TokenCredential</code>.</p>
 <p>The credential types in Azure Identity differ in the types of AAD identities they can authenticate and how they are configured:</p>
 <table>
@@ -152,10 +153,25 @@ Output:
 <td>service principal</td>
 <td>constructor parameters</td>
 </tr>
+<tr>
+<td><code>UserPasswordCredential</code></td>
+<td>user principal</td>
+<td>constructor parameters</td>
+</tr>
+<tr>
+<td><code>DeviceCodeCredential</code></td>
+<td>user principal</td>
+<td>constructor parameters / interactive</td>
+</tr>
+<tr>
+<td><code>InteractiveBrowserCredential</code></td>
+<td>user principal</td>
+<td>constructor parameters / interactive</td>
+</tr>
 </tbody>
 </table>
 <p>Credentials can be chained together to be tried in turn until one succeeds using the <code>ChainedTokenCredential</code>; see <a href="#chaining-credentials">chaining credentials</a> for details.</p>
-<p><strong>Note</strong>: All credential implementations in the Azure Identity library are threadsafe, and a single credential instance can be used to create multiple service clients.</p>
+<p><strong>Note:</strong> All credential implementations in the Azure Identity library are threadsafe, and a single credential instance can be used to create multiple service clients.</p>
 <h2 id="defaultazurecredential">DefaultAzureCredential</h2>
 <p><code>DefaultAzureCredential</code> is appropriate for most scenarios where the application is intended to run in the Azure Cloud. This is because the <code>DefaultAzureCredential</code> determines the appropriate credential type based of the environment it is executing in. It supports authenticating both as a service principal or managed identity, and can be configured so that it will work both in a local development environment or when deployed to the cloud.</p>
 <p>The <code>DefaultAzureCredential</code> will first attempt to authenticate using credentials provided in the environment. In a development environment you can authenticate as a service principal with the <code>DefaultAzureCredential</code> by providing configuration in environment variables as described in the next section.</p>
@@ -197,6 +213,20 @@ using Azure.Security.KeyVault.Secrets;
 var client = new SecretClient(new Uri(&quot;https://myvault.azure.vaults.net/&quot;), new DefaultAzureCredential());
 </code></pre>
 <p>When executing this in a development machine you need to first <a href="#environment-variables">configure the environment</a> setting the variables <code>AZURE_CLIENT_ID</code>, <code>AZURE_TENANT_ID</code> and <code>AZURE_CLIENT_SECRET</code> to the appropriate values for your service principal.</p>
+<h2 id="chaining-credentials">Chaining Credentials</h2>
+<p>The <code>ChainedTokenCredential</code> class provides the ability to link together multiple credential instances to be tried sequentially when authenticating. The following example demonstrates creating a credential which will attempt to authenticate using managed identity, and fall back to certificate authentication if a managed identity is unavailable in the current environment.  This example authenticates an <code>EventHubClient</code> from the <a href="https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/eventhub/Azure.Messaging.EventHubs">Azure.Messaging.EventHubs</a> client library using the <code>ChainedTokenCredential</code>.</p>
+<pre><code class="lang-c#">using Azure.Identity;
+using Azure.Messaging.EventHubs;
+
+var managedCredential = new ManagedIdentityCredential(clientId);
+
+var certCredential = new CertificateCredential(tenantId, clientId, certificate);
+
+// authenticate using managed identity if it is available otherwise use certificate auth
+var credential = new ChainedTokenCredential(managedCredential, certCredential);
+
+var eventHubClient = new EventHubClient(&quot;myeventhub.eventhubs.windows.net&quot;, &quot;myhubpath&quot;, credential);
+</code></pre>
 <h2 id="authenticating-a-service-principal-with-a-client-secret">Authenticating a service principal with a client secret</h2>
 <p>This example demonstrates authenticating the <code>BlobClient</code> from the <a href="https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/storage/Azure.Storage.Blobs">Azure.Storage.Blobs</a> client library using the <code>ClientSecretCredential</code>.</p>
 <pre><code class="lang-c#">using Azure.Identity;
@@ -219,19 +249,33 @@ var credential = new CertificateCredential(tenantId, clientId, certificate);
 
 var keyClient = new KeyClient(new Uri(&quot;https://myvault.azure.vaults.net/&quot;), credential);
 </code></pre>
-<h2 id="chaining-credentials">Chaining Credentials</h2>
-<p>The <code>ChainedTokenCredential</code> class provides the ability to link together multiple credential instances to be tried sequentially when authenticating. The following example demonstrates creating a credential which will attempt to authenticate using managed identity, and fall back to certificate authentication if a managed identity is unavailable in the current environment.  This example authenticates an <code>EventHubClient</code> from the <a href="https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/eventhub/Azure.Messaging.EventHubs">Azure.Messaging.EventHubs</a> client library using the <code>ChainedTokenCredential</code>.</p>
+<h2 id="authenticating-a-user-with-the-default-browser">Authenticating a user with the default browser</h2>
+<p>The <code>InteractiveBrowserCredential</code> allows an application to authenticate a user by launching the system's default browser. This example demonstrates authenticating the <code>BlobClient</code> from the <a href="https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/storage/Azure.Storage.Blobs">Azure.Storage.Blobs</a> client library using the <code>InteractiveBrowserCredential</code>.</p>
 <pre><code class="lang-c#">using Azure.Identity;
-using Azure.Messaging.EventHubs;
+using Azure.Storage.Blobs;
 
-var managedCredential = new ManagedIdentityCredential(clientId);
+// authenticating a service principal with a client secret
+var credential = new InteractiveBrowserCredential(clientId);
 
-var certCredential = new CertificateCredential(tenantId, clientId, certificate);
+var blobClient = new BlobClient(new Uri(&quot;https://myaccount.blob.core.windows.net/mycontainer/myblob&quot;), credential);
+</code></pre>
+<p><strong>Note:</strong> If a default browser is not available in the system, or the current application does not have permissions to create a process authentication with the <code>DefaultBrowserCredential</code> will fail with an <code>AuthenticationFailedException</code>.</p>
+<h2 id="authenticating-a-user-with-the-device-code-flow">Authenticating a user with the device code flow</h2>
+<p>The device code authentication flow allows an application to display a device code to a user, and then the user will authenticate using this code through a browser, typically on another client.  This authentication flow is most often used on clients that have limited UI and no available browser, such as terminal clients and certain IoT devices.</p>
+<p>This example demonstrates authenticating the <code>SecretClient</code> from the <a href="https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/keyvault/Azure.Security.KeyVault.Secrets">Azure.Security.KeyVault.Secrets</a> client library using the <code>DeviceCodeCredential</code>. The sample constructs a <code>DeviceCodeCredential</code> with an application client id, and a callback which prints the device code.</p>
+<pre><code class="lang-c#">using Azure.Identity;
+using Azure.Security.KeyVault.Secrets;
+using System.Threading.Tasks;
 
-// authenticate using managed identity if it is available otherwise use certificate auth
-var credential = new ChainedTokenCredential(managedCredential, certCredential);
+Func&lt;DeviceCodeInfo, Task&gt; PrintDeviceCode = code =&gt; 
+{ 
+    Console.WriteLine(code.Message);
 
-var eventHubClient = new EventHubClient(&quot;myeventhub.eventhubs.windows.net&quot;, &quot;myhubpath&quot;, credential);
+    return Task.CompletedTask;
+}
+
+// Create a secret client using the DefaultAzureCredential
+var client = new SecretClient(new Uri(&quot;https://myvault.azure.vaults.net/&quot;), new DeviceCodeCredential(clientId, PrintDeviceCode));
 </code></pre>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <p>Errors arising from authentication can be raised on any service client method which makes a request to the service. This is because the first time the token is requested from the credential is on the first call to the service, and any subsequent calls might need to refresh the token. In order to distinguish these failures from failures in the service client Azure Identity classes raise the <code>AuthenticationFailedException</code> with details to the source of the error in the exception message as well as possibly the error message.</p>
@@ -259,7 +303,7 @@ var eventHubClient = new EventHubClient(&quot;myeventhub.eventhubs.windows.net&q
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/docfx_project/articles/sdk/Identity/Azure.Identity/README.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/docfx_project/articles/sdk/Identity/Azure.Identity/README.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

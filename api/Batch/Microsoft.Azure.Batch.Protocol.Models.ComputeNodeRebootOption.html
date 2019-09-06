@@ -104,37 +104,54 @@
     <tbody>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeRebootOption_Requeue">Requeue</td>
-        <td><p>Terminate running task processes and requeue the tasks. The tasks
-will run again when a node is available. Restart the node as soon
-as tasks have been terminated.</p>
+        <td><p>Terminate running Task processes and requeue the Tasks. The Tasks
+will run again when a Compute Node is available. Restart the
+Compute Node as soon as Tasks have been terminated.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeRebootOption_RetainedData">RetainedData</td>
-        <td><p>Allow currently running tasks to complete, then wait for all task
-data retention periods to expire. Schedule no new tasks while
-waiting. Restart the node when all task retention periods have
-expired.</p>
+        <td><p>Allow currently running Tasks to complete, then wait for all Task
+data retention periods to expire. Schedule no new Tasks while
+waiting. Restart the Compute Node when all Task retention periods
+have expired.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeRebootOption_TaskCompletion">TaskCompletion</td>
-        <td><p>Allow currently running tasks to complete. Schedule no new tasks
-while waiting. Restart the node when all tasks have completed.</p>
+        <td><p>Allow currently running Tasks to complete. Schedule no new Tasks
+while waiting. Restart the Compute Node when all Tasks have
+completed.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeRebootOption_Terminate">Terminate</td>
-        <td><p>Terminate running tasks. The tasks will be completed with
+        <td><p>Terminate running Tasks. The Tasks will be completed with
 failureInfo indicating that they were terminated, and will not run
-again. Restart the node as soon as tasks have been terminated.</p>
+again. Restart the Compute Node as soon as Tasks have been
+terminated.</p>
 </td>
       </tr>
     </tbody>
   </thead></thead></table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;ComputeNodeRebootOption, TConfiguration&gt;(String, TConfiguration)</a>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;ComputeNodeRebootOption, TConfiguration&gt;(TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../KeyVault/Azure.Security.KeyVault.Secrets.AzureClientBuilderExtensions.html#Azure_Security_KeyVault_Secrets_AzureClientBuilderExtensions_AddSecretClient__2___0___1_">AzureClientBuilderExtensions.AddSecretClient&lt;ComputeNodeRebootOption, TConfiguration&gt;(TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../OtherAPIs/Azure.Data.AppConfiguration.AzureClientBuilderExtensions.html#Azure_Data_AppConfiguration_AzureClientBuilderExtensions_AddConfigurationClient__2___0___1_">AzureClientBuilderExtensions.AddConfigurationClient&lt;ComputeNodeRebootOption, TConfiguration&gt;(TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../Storage/Azure.Storage.Blobs.AzureClientBuilderExtensions.html#Azure_Storage_Blobs_AzureClientBuilderExtensions_AddBlobServiceClient__2___0___1_">AzureClientBuilderExtensions.AddBlobServiceClient&lt;ComputeNodeRebootOption, TConfiguration&gt;(TConfiguration)</a>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddFileServiceClient&lt;Microsoft.Azure.Batch.Protocol.Models.ComputeNodeRebootOption, TConfiguration&gt;(TConfiguration)</span>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient&lt;Microsoft.Azure.Batch.Protocol.Models.ComputeNodeRebootOption, TConfiguration&gt;(TConfiguration)</span>
   </div>
 </article>
           </div>
@@ -144,10 +161,10 @@ again. Restart the node as soon as tasks have been terminated.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_ComputeNodeRebootOption.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.ComputeNodeRebootOption%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_ComputeNodeRebootOption.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.ComputeNodeRebootOption%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/ComputeNodeRebootOption.cs/#L21" class="contribution-link">View Source</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/ComputeNodeRebootOption.cs/#L21" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -133,8 +133,8 @@ AZURE_TEST_MODE=Record
 </code></pre>
 <h2 id="4-recordplayback-tests">4. Record/Playback Tests</h2>
 <ol>
-<li>Run the test and make sure that you got a generated .json file that matches the test name in the bin folder under *SessionRecords folder</li>
-<li>Copy SessionRecords folder inside the test project and add all *.json files in Visual Studio setting &quot;Copy to Output Directory&quot; property to &quot;Copy if newer&quot;</li>
+<li>Run the test and make sure that you got a generated .json file that matches the test name in the SessionRecords folder (usually be $sdk/artifacts/bin/{YOUR TEST PROJECT NAME}/{Configuration}/{TargetFramework}/SessionRecords)</li>
+<li>Copy above SessionRecords folder back to the same level as test .csproj of your service, then add all *.json files to your test project in Visual Studio setting &quot;Copy to Output Directory&quot; property to &quot;Copy if newer&quot;</li>
 <li>To assure that the records work fine, delete the connection string (default mode is Playback mode) OR change HttpRecorderMode within the connection string to &quot;Playback&quot;</li>
 </ol>
 <h2 id="5-change-test-environment-settings-at-run-time">5. Change Test Environment settings at run-time</h2>
@@ -253,7 +253,7 @@ DataLakeAnalyticsJoAbndCatalogServiceUri = &quot;https://konaaccountdogfood.net&
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/docfx_project/articles/Documentation/Using-Azure-TestFramework.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/docfx_project/articles/Documentation/Using-Azure-TestFramework.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

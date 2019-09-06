@@ -1,0 +1,674 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AzureClientBuilderExtensions
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AzureClientBuilderExtensions
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Extensions.Azure.AzureClientBuilderExtensions">
+  
+  
+  <h1 id="Microsoft_Extensions_Azure_AzureClientBuilderExtensions" data-uid="Microsoft.Extensions.Azure.AzureClientBuilderExtensions" class="text-break">Class AzureClientBuilderExtensions
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">AzureClientBuilderExtensions</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Extensions.Azure.html">Microsoft.Extensions.Azure</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Extensions.Azure.dll</h6>
+  <h5 id="Microsoft_Extensions_Azure_AzureClientBuilderExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class AzureClientBuilderExtensions</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Extensions_Azure_AzureClientBuilderExtensions_ConfigureOptions__2_Azure_Core_Extensions_IAzureClientBuilder___0___1__IConfiguration_.md&amp;value=---%0Auid%3A%20Microsoft.Extensions.Azure.AzureClientBuilderExtensions.ConfigureOptions%60%602(Azure.Core.Extensions.IAzureClientBuilder%7B%60%600%2C%60%601%7D%2CIConfiguration)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/core/Microsoft.Extensions.Azure/src/AzureClientBuilderExtensions.cs/#L38">View Source</a>
+  </span>
+  <a id="Microsoft_Extensions_Azure_AzureClientBuilderExtensions_ConfigureOptions_" data-uid="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.ConfigureOptions*"></a>
+  <h4 id="Microsoft_Extensions_Azure_AzureClientBuilderExtensions_ConfigureOptions__2_Azure_Core_Extensions_IAzureClientBuilder___0___1__IConfiguration_" data-uid="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.ConfigureOptions``2(Azure.Core.Extensions.IAzureClientBuilder{``0,``1},IConfiguration)">ConfigureOptions&lt;TClient, TOptions&gt;(IAzureClientBuilder&lt;TClient, TOptions&gt;, IConfiguration)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IAzureClientBuilder&lt;TClient, TOptions&gt; ConfigureOptions&lt;TClient, TOptions&gt;(this IAzureClientBuilder&lt;TClient, TOptions&gt; builder, IConfiguration configuration)
+    where TOptions : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Core/Azure.Core.Extensions.IAzureClientBuilder-2.html">IAzureClientBuilder</a>&lt;TClient, TOptions&gt;</td>
+        <td><span class="parametername">builder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IConfiguration</span></td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Core/Azure.Core.Extensions.IAzureClientBuilder-2.html">IAzureClientBuilder</a>&lt;TClient, TOptions&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TClient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Extensions_Azure_AzureClientBuilderExtensions_ConfigureOptions__2_Azure_Core_Extensions_IAzureClientBuilder___0___1__System_Action___1_System_IServiceProvider__.md&amp;value=---%0Auid%3A%20Microsoft.Extensions.Azure.AzureClientBuilderExtensions.ConfigureOptions%60%602(Azure.Core.Extensions.IAzureClientBuilder%7B%60%600%2C%60%601%7D%2CSystem.Action%7B%60%601%2CSystem.IServiceProvider%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/core/Microsoft.Extensions.Azure/src/AzureClientBuilderExtensions.cs/#L43">View Source</a>
+  </span>
+  <a id="Microsoft_Extensions_Azure_AzureClientBuilderExtensions_ConfigureOptions_" data-uid="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.ConfigureOptions*"></a>
+  <h4 id="Microsoft_Extensions_Azure_AzureClientBuilderExtensions_ConfigureOptions__2_Azure_Core_Extensions_IAzureClientBuilder___0___1__System_Action___1_System_IServiceProvider__" data-uid="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.ConfigureOptions``2(Azure.Core.Extensions.IAzureClientBuilder{``0,``1},System.Action{``1,System.IServiceProvider})">ConfigureOptions&lt;TClient, TOptions&gt;(IAzureClientBuilder&lt;TClient, TOptions&gt;, Action&lt;TOptions, IServiceProvider&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IAzureClientBuilder&lt;TClient, TOptions&gt; ConfigureOptions&lt;TClient, TOptions&gt;(this IAzureClientBuilder&lt;TClient, TOptions&gt; builder, Action&lt;TOptions, IServiceProvider&gt; configureOptions)
+    where TOptions : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Core/Azure.Core.Extensions.IAzureClientBuilder-2.html">IAzureClientBuilder</a>&lt;TClient, TOptions&gt;</td>
+        <td><span class="parametername">builder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;TOptions, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>&gt;</td>
+        <td><span class="parametername">configureOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Core/Azure.Core.Extensions.IAzureClientBuilder-2.html">IAzureClientBuilder</a>&lt;TClient, TOptions&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TClient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Extensions_Azure_AzureClientBuilderExtensions_ConfigureOptions__2_Azure_Core_Extensions_IAzureClientBuilder___0___1__System_Action___1__.md&amp;value=---%0Auid%3A%20Microsoft.Extensions.Azure.AzureClientBuilderExtensions.ConfigureOptions%60%602(Azure.Core.Extensions.IAzureClientBuilder%7B%60%600%2C%60%601%7D%2CSystem.Action%7B%60%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/core/Microsoft.Extensions.Azure/src/AzureClientBuilderExtensions.cs/#L33">View Source</a>
+  </span>
+  <a id="Microsoft_Extensions_Azure_AzureClientBuilderExtensions_ConfigureOptions_" data-uid="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.ConfigureOptions*"></a>
+  <h4 id="Microsoft_Extensions_Azure_AzureClientBuilderExtensions_ConfigureOptions__2_Azure_Core_Extensions_IAzureClientBuilder___0___1__System_Action___1__" data-uid="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.ConfigureOptions``2(Azure.Core.Extensions.IAzureClientBuilder{``0,``1},System.Action{``1})">ConfigureOptions&lt;TClient, TOptions&gt;(IAzureClientBuilder&lt;TClient, TOptions&gt;, Action&lt;TOptions&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IAzureClientBuilder&lt;TClient, TOptions&gt; ConfigureOptions&lt;TClient, TOptions&gt;(this IAzureClientBuilder&lt;TClient, TOptions&gt; builder, Action&lt;TOptions&gt; configureOptions)
+    where TOptions : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Core/Azure.Core.Extensions.IAzureClientBuilder-2.html">IAzureClientBuilder</a>&lt;TClient, TOptions&gt;</td>
+        <td><span class="parametername">builder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;TOptions&gt;</td>
+        <td><span class="parametername">configureOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Core/Azure.Core.Extensions.IAzureClientBuilder-2.html">IAzureClientBuilder</a>&lt;TClient, TOptions&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TClient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Extensions_Azure_AzureClientBuilderExtensions_WithCredential__2_Azure_Core_Extensions_IAzureClientBuilder___0___1__Azure_Core_TokenCredential_.md&amp;value=---%0Auid%3A%20Microsoft.Extensions.Azure.AzureClientBuilderExtensions.WithCredential%60%602(Azure.Core.Extensions.IAzureClientBuilder%7B%60%600%2C%60%601%7D%2CAzure.Core.TokenCredential)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/core/Microsoft.Extensions.Azure/src/AzureClientBuilderExtensions.cs/#L21">View Source</a>
+  </span>
+  <a id="Microsoft_Extensions_Azure_AzureClientBuilderExtensions_WithCredential_" data-uid="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.WithCredential*"></a>
+  <h4 id="Microsoft_Extensions_Azure_AzureClientBuilderExtensions_WithCredential__2_Azure_Core_Extensions_IAzureClientBuilder___0___1__Azure_Core_TokenCredential_" data-uid="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.WithCredential``2(Azure.Core.Extensions.IAzureClientBuilder{``0,``1},Azure.Core.TokenCredential)">WithCredential&lt;TClient, TOptions&gt;(IAzureClientBuilder&lt;TClient, TOptions&gt;, TokenCredential)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IAzureClientBuilder&lt;TClient, TOptions&gt; WithCredential&lt;TClient, TOptions&gt;(this IAzureClientBuilder&lt;TClient, TOptions&gt; builder, TokenCredential credential)
+    where TOptions : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Core/Azure.Core.Extensions.IAzureClientBuilder-2.html">IAzureClientBuilder</a>&lt;TClient, TOptions&gt;</td>
+        <td><span class="parametername">builder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Core/Azure.Core.TokenCredential.html">TokenCredential</a></td>
+        <td><span class="parametername">credential</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Core/Azure.Core.Extensions.IAzureClientBuilder-2.html">IAzureClientBuilder</a>&lt;TClient, TOptions&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TClient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Extensions_Azure_AzureClientBuilderExtensions_WithCredential__2_Azure_Core_Extensions_IAzureClientBuilder___0___1__System_Func_System_IServiceProvider_Azure_Core_TokenCredential__.md&amp;value=---%0Auid%3A%20Microsoft.Extensions.Azure.AzureClientBuilderExtensions.WithCredential%60%602(Azure.Core.Extensions.IAzureClientBuilder%7B%60%600%2C%60%601%7D%2CSystem.Func%7BSystem.IServiceProvider%2CAzure.Core.TokenCredential%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/core/Microsoft.Extensions.Azure/src/AzureClientBuilderExtensions.cs/#L26">View Source</a>
+  </span>
+  <a id="Microsoft_Extensions_Azure_AzureClientBuilderExtensions_WithCredential_" data-uid="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.WithCredential*"></a>
+  <h4 id="Microsoft_Extensions_Azure_AzureClientBuilderExtensions_WithCredential__2_Azure_Core_Extensions_IAzureClientBuilder___0___1__System_Func_System_IServiceProvider_Azure_Core_TokenCredential__" data-uid="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.WithCredential``2(Azure.Core.Extensions.IAzureClientBuilder{``0,``1},System.Func{System.IServiceProvider,Azure.Core.TokenCredential})">WithCredential&lt;TClient, TOptions&gt;(IAzureClientBuilder&lt;TClient, TOptions&gt;, Func&lt;IServiceProvider, TokenCredential&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IAzureClientBuilder&lt;TClient, TOptions&gt; WithCredential&lt;TClient, TOptions&gt;(this IAzureClientBuilder&lt;TClient, TOptions&gt; builder, Func&lt;IServiceProvider, TokenCredential&gt; credentialFactory)
+    where TOptions : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Core/Azure.Core.Extensions.IAzureClientBuilder-2.html">IAzureClientBuilder</a>&lt;TClient, TOptions&gt;</td>
+        <td><span class="parametername">builder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>, <a class="xref" href="../Core/Azure.Core.TokenCredential.html">TokenCredential</a>&gt;</td>
+        <td><span class="parametername">credentialFactory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Core/Azure.Core.Extensions.IAzureClientBuilder-2.html">IAzureClientBuilder</a>&lt;TClient, TOptions&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TClient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Extensions_Azure_AzureClientBuilderExtensions_WithName__2_Azure_Core_Extensions_IAzureClientBuilder___0___1__System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Extensions.Azure.AzureClientBuilderExtensions.WithName%60%602(Azure.Core.Extensions.IAzureClientBuilder%7B%60%600%2C%60%601%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/core/Microsoft.Extensions.Azure/src/AzureClientBuilderExtensions.cs/#L15">View Source</a>
+  </span>
+  <a id="Microsoft_Extensions_Azure_AzureClientBuilderExtensions_WithName_" data-uid="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.WithName*"></a>
+  <h4 id="Microsoft_Extensions_Azure_AzureClientBuilderExtensions_WithName__2_Azure_Core_Extensions_IAzureClientBuilder___0___1__System_String_" data-uid="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.WithName``2(Azure.Core.Extensions.IAzureClientBuilder{``0,``1},System.String)">WithName&lt;TClient, TOptions&gt;(IAzureClientBuilder&lt;TClient, TOptions&gt;, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IAzureClientBuilder&lt;TClient, TOptions&gt; WithName&lt;TClient, TOptions&gt;(this IAzureClientBuilder&lt;TClient, TOptions&gt; builder, string name)
+    where TOptions : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Core/Azure.Core.Extensions.IAzureClientBuilder-2.html">IAzureClientBuilder</a>&lt;TClient, TOptions&gt;</td>
+        <td><span class="parametername">builder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Core/Azure.Core.Extensions.IAzureClientBuilder-2.html">IAzureClientBuilder</a>&lt;TClient, TOptions&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TClient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Extensions_Azure_AzureClientBuilderExtensions_WithVersion__3_Azure_Core_Extensions_IAzureClientBuilder___0___1____2_.md&amp;value=---%0Auid%3A%20Microsoft.Extensions.Azure.AzureClientBuilderExtensions.WithVersion%60%603(Azure.Core.Extensions.IAzureClientBuilder%7B%60%600%2C%60%601%7D%2C%60%602)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/core/Microsoft.Extensions.Azure/src/AzureClientBuilderExtensions.cs/#L50">View Source</a>
+  </span>
+  <a id="Microsoft_Extensions_Azure_AzureClientBuilderExtensions_WithVersion_" data-uid="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.WithVersion*"></a>
+  <h4 id="Microsoft_Extensions_Azure_AzureClientBuilderExtensions_WithVersion__3_Azure_Core_Extensions_IAzureClientBuilder___0___1____2_" data-uid="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.WithVersion``3(Azure.Core.Extensions.IAzureClientBuilder{``0,``1},``2)">WithVersion&lt;TClient, TOptions, TVersion&gt;(IAzureClientBuilder&lt;TClient, TOptions&gt;, TVersion)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IAzureClientBuilder&lt;TClient, TOptions&gt; WithVersion&lt;TClient, TOptions, TVersion&gt;(this IAzureClientBuilder&lt;TClient, TOptions&gt; builder, TVersion version)
+    where TOptions : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Core/Azure.Core.Extensions.IAzureClientBuilder-2.html">IAzureClientBuilder</a>&lt;TClient, TOptions&gt;</td>
+        <td><span class="parametername">builder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TVersion</span></td>
+        <td><span class="parametername">version</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Core/Azure.Core.Extensions.IAzureClientBuilder-2.html">IAzureClientBuilder</a>&lt;TClient, TOptions&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TClient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TVersion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Extensions_Azure_AzureClientBuilderExtensions.md&amp;value=---%0Auid%3A%20Microsoft.Extensions.Azure.AzureClientBuilderExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/core/Microsoft.Extensions.Azure/src/AzureClientBuilderExtensions.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

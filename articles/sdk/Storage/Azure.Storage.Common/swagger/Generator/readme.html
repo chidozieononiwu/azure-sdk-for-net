@@ -80,6 +80,18 @@
 <h1 id="azure-track2-csharp">azure-track2-csharp</h1>
 
 <p>An early code generator for Track 2 C# client libraries on top of Azure.Core.</p>
+<p>We support a number of extensions including using the vendor prefix <code>x-az-</code>:</p>
+<ul>
+<li><code>x-az-public</code>: Expose APIs as <code>public</code> when <code>true</code> or <code>internal</code> when <code>false</code>.  The default value is <code>true</code>.</li>
+<li><code>x-az-response-name</code>: Provide a name for response types other than <code>GroupOperationResponse</code>.  Any responses using the same name will be merged together.</li>
+<li><code>x-az-response-schema-name</code>: If we combine headers and a schema into a response type, this allows you to provide the name of the scehma property.  The default value is <code>Body</code>.</li>
+<li><code>x-az-create-exception</code>: <code>true</code> denotes that this partial type will provide an implementation of the method <code>Exception CreateException()</code> to turn an error object into something that can be thrown.  The default value is <code>false</code>.</li>
+<li><code>x-az-trace</code>: Indicates whether a parameter will be logged as part of our distributed tracing.  The default value is <code>false</code>.</li>
+<li><code>x-az-enum-skip-value</code>: The name of a default value to skip while serializing.</li>
+<li><code>x-az-disable-warnings</code>: Wraps a declaration in a <code>#pragma disable</code> when specified.</li>
+<li><code>x-az-skip-path-components</code>: Whether to skip any path components and always assume a fully formed URL to the resource (this currently must be set to <code>true</code>).</li>
+<li><code>x-az-include-sync-methods</code>: Whether to generate support for sync methods.  The default value is <code>false</code> (this flag should go away soon and always be <code>true</code>).</li>
+</ul>
 <h3 id="autorest-plugin-configuration">Autorest plugin configuration</h3>
 <p>The AutoRest example at <a href="https://github.com/Azure/autorest-extension-helloworld">https://github.com/Azure/autorest-extension-helloworld</a>
 walks through the following section and the docs at
@@ -95,8 +107,7 @@ pipeline:
         # Add `azure-track2-csharp: true` in config
         # or pass `--azure-track2-csharp` to the CLI
         scope: azure-track2-csharp
-        # There's no `input:` section because we process the raw swagger
-
+        input: swagger-document/individual/transform
 #
 # Everything else configures AutoRest to save any files we write out
 #
@@ -118,7 +129,7 @@ output-artifact: azure-track2-csharp-generator-code
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/docfx_project/articles/sdk/Storage/Azure.Storage.Common/swagger/Generator/readme.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/docfx_project/articles/sdk/Storage/Azure.Storage.Common/swagger/Generator/readme.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

@@ -125,19 +125,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_DetectLanguageAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_Nullable_System_Boolean__Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_LanguageBatchInput_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.DetectLanguageAsync(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient%2CSystem.Nullable%7BSystem.Boolean%7D%2CMicrosoft.Azure.CognitiveServices.Language.TextAnalytics.Models.LanguageBatchInput%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_DetectLanguage_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_String_System_String_System_Nullable_System_Boolean__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.DetectLanguage(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient%2CSystem.String%2CSystem.String%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Language.TextAnalytics/src/Generated/TextAnalytics/TextAnalyticsClientExtensions.cs/#L42">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/cognitiveservices/Language.TextAnalytics/src/Customizations/TextAnalytics/TextAnalyticsClientExtensions.cs/#L458">View Source</a>
   </span>
-  <a id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_DetectLanguageAsync_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.DetectLanguageAsync*"></a>
-  <h4 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_DetectLanguageAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_Nullable_System_Boolean__Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_LanguageBatchInput_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.DetectLanguageAsync(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient,System.Nullable{System.Boolean},Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.LanguageBatchInput,System.Threading.CancellationToken)">DetectLanguageAsync(ITextAnalyticsClient, Nullable&lt;Boolean&gt;, LanguageBatchInput, CancellationToken)</h4>
+  <a id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_DetectLanguage_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.DetectLanguage*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_DetectLanguage_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_String_System_String_System_Nullable_System_Boolean__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.DetectLanguage(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient,System.String,System.String,System.Nullable{System.Boolean},System.Threading.CancellationToken)">DetectLanguage(ITextAnalyticsClient, String, String, Nullable&lt;Boolean&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>The API returns the detected language and a numeric score between 0 and 1.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task&lt;LanguageBatchResult&gt; DetectLanguageAsync(this ITextAnalyticsClient operations, bool? showStats = default(bool? ), LanguageBatchInput languageBatchInput = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+    <pre><code class="lang-csharp hljs">public static LanguageResult DetectLanguage(this ITextAnalyticsClient operations, string inputText = null, string countryHint = &quot;en&quot;, bool? showStats = default(bool? ), CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -156,6 +156,18 @@
 </td>
       </tr>
       <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">inputText</span></td>
+        <td><p>Input text of one document.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">countryHint</span></td>
+        <td><p>Contry hint.</p>
+</td>
+      </tr>
+      <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><span class="parametername">showStats</span></td>
         <td><p>(optional) if set to true, response will contain input and document level
@@ -163,9 +175,225 @@ statistics.</p>
 </td>
       </tr>
       <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.LanguageResult.html">LanguageResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_DetectLanguage_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_String_System_String_System_Nullable_System_Boolean__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Scores close to 1 indicate 100% certainty that the identified language is
+true. A total of 120 languages are supported.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_DetectLanguageAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_String_System_String_System_Nullable_System_Boolean__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.DetectLanguageAsync(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient%2CSystem.String%2CSystem.String%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/cognitiveservices/Language.TextAnalytics/src/Customizations/TextAnalytics/TextAnalyticsClientExtensions.cs/#L167">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_DetectLanguageAsync_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.DetectLanguageAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_DetectLanguageAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_String_System_String_System_Nullable_System_Boolean__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.DetectLanguageAsync(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient,System.String,System.String,System.Nullable{System.Boolean},System.Threading.CancellationToken)">DetectLanguageAsync(ITextAnalyticsClient, String, String, Nullable&lt;Boolean&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The API returns the detected language and a numeric score between 0 and 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;LanguageResult&gt; DetectLanguageAsync(this ITextAnalyticsClient operations, string inputText = null, string countryHint = &quot;en&quot;, bool? showStats = default(bool? ), CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient.html">ITextAnalyticsClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">inputText</span></td>
+        <td><p>Input text of one document.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">countryHint</span></td>
+        <td><p>Contry hint.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">showStats</span></td>
+        <td><p>(optional) if set to true, response will contain input and document level
+statistics.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.LanguageResult.html">LanguageResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_DetectLanguageAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_String_System_String_System_Nullable_System_Boolean__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Scores close to 1 indicate 100% certainty that the identified language is
+true. A total of 120 languages are supported.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_DetectLanguageBatch_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_LanguageBatchInput_System_Nullable_System_Boolean__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.DetectLanguageBatch(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient%2CMicrosoft.Azure.CognitiveServices.Language.TextAnalytics.Models.LanguageBatchInput%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/cognitiveservices/Language.TextAnalytics/src/Customizations/TextAnalytics/TextAnalyticsClientExtensions.cs/#L339">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_DetectLanguageBatch_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.DetectLanguageBatch*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_DetectLanguageBatch_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_LanguageBatchInput_System_Nullable_System_Boolean__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.DetectLanguageBatch(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient,Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.LanguageBatchInput,System.Nullable{System.Boolean},System.Threading.CancellationToken)">DetectLanguageBatch(ITextAnalyticsClient, LanguageBatchInput, Nullable&lt;Boolean&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The API returns the detected language and a numeric score between 0 and 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LanguageBatchResult DetectLanguageBatch(this ITextAnalyticsClient operations, LanguageBatchInput languageBatchInput = null, bool? showStats = default(bool? ), CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient.html">ITextAnalyticsClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
         <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.LanguageBatchInput.html">LanguageBatchInput</a></td>
         <td><span class="parametername">languageBatchInput</span></td>
         <td><p>Collection of documents to analyze.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">showStats</span></td>
+        <td><p>(optional) if set to true, response will contain input and document level
+statistics.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.LanguageBatchResult.html">LanguageBatchResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_DetectLanguageBatch_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_LanguageBatchInput_System_Nullable_System_Boolean__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Scores close to 1 indicate 100% certainty that the identified language is
+true. A total of 120 languages are supported.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_DetectLanguageBatchAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_LanguageBatchInput_System_Nullable_System_Boolean__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.DetectLanguageBatchAsync(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient%2CMicrosoft.Azure.CognitiveServices.Language.TextAnalytics.Models.LanguageBatchInput%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/cognitiveservices/Language.TextAnalytics/src/Customizations/TextAnalytics/TextAnalyticsClientExtensions.cs/#L40">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_DetectLanguageBatchAsync_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.DetectLanguageBatchAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_DetectLanguageBatchAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_LanguageBatchInput_System_Nullable_System_Boolean__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.DetectLanguageBatchAsync(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient,Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.LanguageBatchInput,System.Nullable{System.Boolean},System.Threading.CancellationToken)">DetectLanguageBatchAsync(ITextAnalyticsClient, LanguageBatchInput, Nullable&lt;Boolean&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The API returns the detected language and a numeric score between 0 and 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;LanguageBatchResult&gt; DetectLanguageBatchAsync(this ITextAnalyticsClient operations, LanguageBatchInput languageBatchInput = null, bool? showStats = default(bool? ), CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient.html">ITextAnalyticsClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.LanguageBatchInput.html">LanguageBatchInput</a></td>
+        <td><span class="parametername">languageBatchInput</span></td>
+        <td><p>Collection of documents to analyze.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">showStats</span></td>
+        <td><p>(optional) if set to true, response will contain input and document level
+statistics.</p>
 </td>
       </tr>
       <tr>
@@ -191,25 +419,25 @@ statistics.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_DetectLanguageAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_Nullable_System_Boolean__Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_LanguageBatchInput_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <h5 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_DetectLanguageBatchAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_LanguageBatchInput_System_Nullable_System_Boolean__System_Threading_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Scores close to 1 indicate 100% certainty that the identified language is
 true. A total of 120 languages are supported.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_EntitiesAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_Nullable_System_Boolean__Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_MultiLanguageBatchInput_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.EntitiesAsync(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient%2CSystem.Nullable%7BSystem.Boolean%7D%2CMicrosoft.Azure.CognitiveServices.Language.TextAnalytics.Models.MultiLanguageBatchInput%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_Entities_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_String_System_String_System_Nullable_System_Boolean__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.Entities(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient%2CSystem.String%2CSystem.String%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Language.TextAnalytics/src/Generated/TextAnalytics/TextAnalyticsClientExtensions.cs/#L74">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/cognitiveservices/Language.TextAnalytics/src/Customizations/TextAnalytics/TextAnalyticsClientExtensions.cs/#L502">View Source</a>
   </span>
-  <a id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_EntitiesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.EntitiesAsync*"></a>
-  <h4 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_EntitiesAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_Nullable_System_Boolean__Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_MultiLanguageBatchInput_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.EntitiesAsync(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient,System.Nullable{System.Boolean},Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.MultiLanguageBatchInput,System.Threading.CancellationToken)">EntitiesAsync(ITextAnalyticsClient, Nullable&lt;Boolean&gt;, MultiLanguageBatchInput, CancellationToken)</h4>
+  <a id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_Entities_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.Entities*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_Entities_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_String_System_String_System_Nullable_System_Boolean__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.Entities(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient,System.String,System.String,System.Nullable{System.Boolean},System.Threading.CancellationToken)">Entities(ITextAnalyticsClient, String, String, Nullable&lt;Boolean&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>The API returns a list of recognized entities in a given document.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task&lt;EntitiesBatchResult&gt; EntitiesAsync(this ITextAnalyticsClient operations, bool? showStats = default(bool? ), MultiLanguageBatchInput multiLanguageBatchInput = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+    <pre><code class="lang-csharp hljs">public static EntitiesResult Entities(this ITextAnalyticsClient operations, string inputText = null, string language = &quot;en&quot;, bool? showStats = default(bool? ), CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -228,6 +456,18 @@ true. A total of 120 languages are supported.</p>
 </td>
       </tr>
       <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">inputText</span></td>
+        <td><p>Input text of one document.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">language</span></td>
+        <td><p>Language code.</p>
+</td>
+      </tr>
+      <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><span class="parametername">showStats</span></td>
         <td><p>(optional) if set to true, response will contain input and document level
@@ -235,9 +475,237 @@ statistics.</p>
 </td>
       </tr>
       <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.EntitiesResult.html">EntitiesResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_Entities_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_String_System_String_System_Nullable_System_Boolean__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>To get even more information on each recognized entity we recommend using
+the Bing Entity Search API by querying for the recognized entities names.
+See the &lt;a
+href=&quot;https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/text-analytics-supported-languages&quot;&gt;Supported
+languages in Text Analytics API&lt;/a&gt; for the list of enabled
+languages.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_EntitiesAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_String_System_String_System_Nullable_System_Boolean__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.EntitiesAsync(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient%2CSystem.String%2CSystem.String%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/cognitiveservices/Language.TextAnalytics/src/Customizations/TextAnalytics/TextAnalyticsClientExtensions.cs/#L212">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_EntitiesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.EntitiesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_EntitiesAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_String_System_String_System_Nullable_System_Boolean__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.EntitiesAsync(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient,System.String,System.String,System.Nullable{System.Boolean},System.Threading.CancellationToken)">EntitiesAsync(ITextAnalyticsClient, String, String, Nullable&lt;Boolean&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The API returns a list of recognized entities in a given document.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;EntitiesResult&gt; EntitiesAsync(this ITextAnalyticsClient operations, string inputText = null, string language = &quot;en&quot;, bool? showStats = default(bool? ), CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient.html">ITextAnalyticsClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">inputText</span></td>
+        <td><p>Input text of one document.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">language</span></td>
+        <td><p>Language code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">showStats</span></td>
+        <td><p>(optional) if set to true, response will contain input and document level
+statistics.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.EntitiesResult.html">EntitiesResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_EntitiesAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_String_System_String_System_Nullable_System_Boolean__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>To get even more information on each recognized entity we recommend using
+the Bing Entity Search API by querying for the recognized entities names.
+See the &lt;a
+href=&quot;https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/text-analytics-supported-languages&quot;&gt;Supported
+languages in Text Analytics API&lt;/a&gt; for the list of enabled
+languages.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_EntitiesBatch_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_MultiLanguageBatchInput_System_Nullable_System_Boolean__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.EntitiesBatch(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient%2CMicrosoft.Azure.CognitiveServices.Language.TextAnalytics.Models.MultiLanguageBatchInput%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/cognitiveservices/Language.TextAnalytics/src/Customizations/TextAnalytics/TextAnalyticsClientExtensions.cs/#L369">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_EntitiesBatch_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.EntitiesBatch*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_EntitiesBatch_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_MultiLanguageBatchInput_System_Nullable_System_Boolean__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.EntitiesBatch(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient,Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.MultiLanguageBatchInput,System.Nullable{System.Boolean},System.Threading.CancellationToken)">EntitiesBatch(ITextAnalyticsClient, MultiLanguageBatchInput, Nullable&lt;Boolean&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The API returns a list of recognized entities in a given document.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EntitiesBatchResult EntitiesBatch(this ITextAnalyticsClient operations, MultiLanguageBatchInput multiLanguageBatchInput = null, bool? showStats = default(bool? ), CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient.html">ITextAnalyticsClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
         <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.MultiLanguageBatchInput.html">MultiLanguageBatchInput</a></td>
         <td><span class="parametername">multiLanguageBatchInput</span></td>
         <td><p>Collection of documents to analyze.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">showStats</span></td>
+        <td><p>(optional) if set to true, response will contain input and document level
+statistics.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.EntitiesBatchResult.html">EntitiesBatchResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_EntitiesBatch_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_MultiLanguageBatchInput_System_Nullable_System_Boolean__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>To get even more information on each recognized entity we recommend using
+the Bing Entity Search API by querying for the recognized entities names.
+See the &lt;a
+href=&quot;https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/text-analytics-supported-languages&quot;&gt;Supported
+languages in Text Analytics API&lt;/a&gt; for the list of enabled
+languages.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_EntitiesBatchAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_MultiLanguageBatchInput_System_Nullable_System_Boolean__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.EntitiesBatchAsync(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient%2CMicrosoft.Azure.CognitiveServices.Language.TextAnalytics.Models.MultiLanguageBatchInput%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/cognitiveservices/Language.TextAnalytics/src/Customizations/TextAnalytics/TextAnalyticsClientExtensions.cs/#L72">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_EntitiesBatchAsync_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.EntitiesBatchAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_EntitiesBatchAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_MultiLanguageBatchInput_System_Nullable_System_Boolean__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.EntitiesBatchAsync(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient,Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.MultiLanguageBatchInput,System.Nullable{System.Boolean},System.Threading.CancellationToken)">EntitiesBatchAsync(ITextAnalyticsClient, MultiLanguageBatchInput, Nullable&lt;Boolean&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The API returns a list of recognized entities in a given document.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;EntitiesBatchResult&gt; EntitiesBatchAsync(this ITextAnalyticsClient operations, MultiLanguageBatchInput multiLanguageBatchInput = null, bool? showStats = default(bool? ), CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient.html">ITextAnalyticsClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.MultiLanguageBatchInput.html">MultiLanguageBatchInput</a></td>
+        <td><span class="parametername">multiLanguageBatchInput</span></td>
+        <td><p>Collection of documents to analyze.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">showStats</span></td>
+        <td><p>(optional) if set to true, response will contain input and document level
+statistics.</p>
 </td>
       </tr>
       <tr>
@@ -263,7 +731,7 @@ statistics.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_EntitiesAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_Nullable_System_Boolean__Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_MultiLanguageBatchInput_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <h5 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_EntitiesBatchAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_MultiLanguageBatchInput_System_Nullable_System_Boolean__System_Threading_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>To get even more information on each recognized entity we recommend using
 the Bing Entity Search API by querying for the recognized entities names.
 See the &lt;a
@@ -273,20 +741,20 @@ languages.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_KeyPhrasesAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_Nullable_System_Boolean__Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_MultiLanguageBatchInput_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.KeyPhrasesAsync(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient%2CSystem.Nullable%7BSystem.Boolean%7D%2CMicrosoft.Azure.CognitiveServices.Language.TextAnalytics.Models.MultiLanguageBatchInput%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_KeyPhrases_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_String_System_String_System_Nullable_System_Boolean__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.KeyPhrases(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient%2CSystem.String%2CSystem.String%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Language.TextAnalytics/src/Generated/TextAnalytics/TextAnalyticsClientExtensions.cs/#L106">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/cognitiveservices/Language.TextAnalytics/src/Customizations/TextAnalytics/TextAnalyticsClientExtensions.cs/#L545">View Source</a>
   </span>
-  <a id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_KeyPhrasesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.KeyPhrasesAsync*"></a>
-  <h4 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_KeyPhrasesAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_Nullable_System_Boolean__Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_MultiLanguageBatchInput_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.KeyPhrasesAsync(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient,System.Nullable{System.Boolean},Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.MultiLanguageBatchInput,System.Threading.CancellationToken)">KeyPhrasesAsync(ITextAnalyticsClient, Nullable&lt;Boolean&gt;, MultiLanguageBatchInput, CancellationToken)</h4>
+  <a id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_KeyPhrases_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.KeyPhrases*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_KeyPhrases_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_String_System_String_System_Nullable_System_Boolean__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.KeyPhrases(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient,System.String,System.String,System.Nullable{System.Boolean},System.Threading.CancellationToken)">KeyPhrases(ITextAnalyticsClient, String, String, Nullable&lt;Boolean&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>The API returns a list of strings denoting the key talking points in the
 input text.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task&lt;KeyPhraseBatchResult&gt; KeyPhrasesAsync(this ITextAnalyticsClient operations, bool? showStats = default(bool? ), MultiLanguageBatchInput multiLanguageBatchInput = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+    <pre><code class="lang-csharp hljs">public static KeyPhraseResult KeyPhrases(this ITextAnalyticsClient operations, string inputText = null, string language = &quot;en&quot;, bool? showStats = default(bool? ), CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -305,6 +773,18 @@ input text.</p>
 </td>
       </tr>
       <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">inputText</span></td>
+        <td><p>Input text of one document.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">language</span></td>
+        <td><p>Language code.</p>
+</td>
+      </tr>
+      <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><span class="parametername">showStats</span></td>
         <td><p>(optional) if set to true, response will contain input and document level
@@ -312,10 +792,236 @@ statistics.</p>
 </td>
       </tr>
       <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.KeyPhraseResult.html">KeyPhraseResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_KeyPhrases_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_String_System_String_System_Nullable_System_Boolean__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See the &lt;a
+href=&quot;https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/overview#supported-languages&quot;&gt;Text
+Analytics Documentation&lt;/a&gt; for details about the languages that are
+supported by key phrase extraction.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_KeyPhrasesAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_String_System_String_System_Nullable_System_Boolean__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.KeyPhrasesAsync(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient%2CSystem.String%2CSystem.String%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/cognitiveservices/Language.TextAnalytics/src/Customizations/TextAnalytics/TextAnalyticsClientExtensions.cs/#L256">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_KeyPhrasesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.KeyPhrasesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_KeyPhrasesAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_String_System_String_System_Nullable_System_Boolean__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.KeyPhrasesAsync(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient,System.String,System.String,System.Nullable{System.Boolean},System.Threading.CancellationToken)">KeyPhrasesAsync(ITextAnalyticsClient, String, String, Nullable&lt;Boolean&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The API returns a list of strings denoting the key talking points in the
+input text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;KeyPhraseResult&gt; KeyPhrasesAsync(this ITextAnalyticsClient operations, string inputText = null, string language = &quot;en&quot;, bool? showStats = default(bool? ), CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient.html">ITextAnalyticsClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">inputText</span></td>
+        <td><p>Input text of one document.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">language</span></td>
+        <td><p>Language code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">showStats</span></td>
+        <td><p>(optional) if set to true, response will contain input and document level
+statistics.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.KeyPhraseResult.html">KeyPhraseResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_KeyPhrasesAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_String_System_String_System_Nullable_System_Boolean__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See the &lt;a
+href=&quot;https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/overview#supported-languages&quot;&gt;Text
+Analytics Documentation&lt;/a&gt; for details about the languages that are
+supported by key phrase extraction.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_KeyPhrasesBatch_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_MultiLanguageBatchInput_System_Nullable_System_Boolean__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.KeyPhrasesBatch(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient%2CMicrosoft.Azure.CognitiveServices.Language.TextAnalytics.Models.MultiLanguageBatchInput%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/cognitiveservices/Language.TextAnalytics/src/Customizations/TextAnalytics/TextAnalyticsClientExtensions.cs/#L399">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_KeyPhrasesBatch_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.KeyPhrasesBatch*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_KeyPhrasesBatch_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_MultiLanguageBatchInput_System_Nullable_System_Boolean__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.KeyPhrasesBatch(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient,Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.MultiLanguageBatchInput,System.Nullable{System.Boolean},System.Threading.CancellationToken)">KeyPhrasesBatch(ITextAnalyticsClient, MultiLanguageBatchInput, Nullable&lt;Boolean&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The API returns a list of strings denoting the key talking points in the
+input text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static KeyPhraseBatchResult KeyPhrasesBatch(this ITextAnalyticsClient operations, MultiLanguageBatchInput multiLanguageBatchInput = null, bool? showStats = default(bool? ), CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient.html">ITextAnalyticsClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
         <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.MultiLanguageBatchInput.html">MultiLanguageBatchInput</a></td>
         <td><span class="parametername">multiLanguageBatchInput</span></td>
         <td><p>Collection of documents to analyze. Documents can now contain a language
 field to indicate the text language</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">showStats</span></td>
+        <td><p>(optional) if set to true, response will contain input and document level
+statistics.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.KeyPhraseBatchResult.html">KeyPhraseBatchResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_KeyPhrasesBatch_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_MultiLanguageBatchInput_System_Nullable_System_Boolean__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See the &lt;a
+href=&quot;https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/overview#supported-languages&quot;&gt;Text
+Analytics Documentation&lt;/a&gt; for details about the languages that are
+supported by key phrase extraction.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_KeyPhrasesBatchAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_MultiLanguageBatchInput_System_Nullable_System_Boolean__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.KeyPhrasesBatchAsync(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient%2CMicrosoft.Azure.CognitiveServices.Language.TextAnalytics.Models.MultiLanguageBatchInput%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/cognitiveservices/Language.TextAnalytics/src/Customizations/TextAnalytics/TextAnalyticsClientExtensions.cs/#L104">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_KeyPhrasesBatchAsync_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.KeyPhrasesBatchAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_KeyPhrasesBatchAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_MultiLanguageBatchInput_System_Nullable_System_Boolean__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.KeyPhrasesBatchAsync(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient,Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.MultiLanguageBatchInput,System.Nullable{System.Boolean},System.Threading.CancellationToken)">KeyPhrasesBatchAsync(ITextAnalyticsClient, MultiLanguageBatchInput, Nullable&lt;Boolean&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The API returns a list of strings denoting the key talking points in the
+input text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;KeyPhraseBatchResult&gt; KeyPhrasesBatchAsync(this ITextAnalyticsClient operations, MultiLanguageBatchInput multiLanguageBatchInput = null, bool? showStats = default(bool? ), CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient.html">ITextAnalyticsClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.MultiLanguageBatchInput.html">MultiLanguageBatchInput</a></td>
+        <td><span class="parametername">multiLanguageBatchInput</span></td>
+        <td><p>Collection of documents to analyze. Documents can now contain a language
+field to indicate the text language</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">showStats</span></td>
+        <td><p>(optional) if set to true, response will contain input and document level
+statistics.</p>
 </td>
       </tr>
       <tr>
@@ -341,7 +1047,7 @@ field to indicate the text language</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_KeyPhrasesAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_Nullable_System_Boolean__Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_MultiLanguageBatchInput_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <h5 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_KeyPhrasesBatchAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_MultiLanguageBatchInput_System_Nullable_System_Boolean__System_Threading_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>See the &lt;a
 href=&quot;https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/overview#supported-languages&quot;&gt;Text
 Analytics Documentation&lt;/a&gt; for details about the languages that are
@@ -349,19 +1055,19 @@ supported by key phrase extraction.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_SentimentAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_Nullable_System_Boolean__Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_MultiLanguageBatchInput_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.SentimentAsync(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient%2CSystem.Nullable%7BSystem.Boolean%7D%2CMicrosoft.Azure.CognitiveServices.Language.TextAnalytics.Models.MultiLanguageBatchInput%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_Sentiment_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_String_System_String_System_Nullable_System_Boolean__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.Sentiment(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient%2CSystem.String%2CSystem.String%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Language.TextAnalytics/src/Generated/TextAnalytics/TextAnalyticsClientExtensions.cs/#L138">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/cognitiveservices/Language.TextAnalytics/src/Customizations/TextAnalytics/TextAnalyticsClientExtensions.cs/#L589">View Source</a>
   </span>
-  <a id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_SentimentAsync_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.SentimentAsync*"></a>
-  <h4 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_SentimentAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_Nullable_System_Boolean__Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_MultiLanguageBatchInput_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.SentimentAsync(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient,System.Nullable{System.Boolean},Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.MultiLanguageBatchInput,System.Threading.CancellationToken)">SentimentAsync(ITextAnalyticsClient, Nullable&lt;Boolean&gt;, MultiLanguageBatchInput, CancellationToken)</h4>
+  <a id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_Sentiment_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.Sentiment*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_Sentiment_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_String_System_String_System_Nullable_System_Boolean__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.Sentiment(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient,System.String,System.String,System.Nullable{System.Boolean},System.Threading.CancellationToken)">Sentiment(ITextAnalyticsClient, String, String, Nullable&lt;Boolean&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>The API returns a numeric score between 0 and 1.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task&lt;SentimentBatchResult&gt; SentimentAsync(this ITextAnalyticsClient operations, bool? showStats = default(bool? ), MultiLanguageBatchInput multiLanguageBatchInput = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+    <pre><code class="lang-csharp hljs">public static SentimentResult Sentiment(this ITextAnalyticsClient operations, string inputText = null, string language = &quot;en&quot;, bool? showStats = default(bool? ), CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -380,6 +1086,18 @@ supported by key phrase extraction.</p>
 </td>
       </tr>
       <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">inputText</span></td>
+        <td><p>Input text of one document.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">language</span></td>
+        <td><p>Language code.</p>
+</td>
+      </tr>
+      <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><span class="parametername">showStats</span></td>
         <td><p>(optional) if set to true, response will contain input and document level
@@ -387,9 +1105,237 @@ statistics.</p>
 </td>
       </tr>
       <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.SentimentResult.html">SentimentResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_Sentiment_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_String_System_String_System_Nullable_System_Boolean__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Scores close to 1 indicate positive sentiment, while scores close to 0
+indicate negative sentiment. A score of 0.5 indicates the lack of sentiment
+(e.g. a factoid statement). See the &lt;a
+href=&quot;https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/overview#supported-languages&quot;&gt;Text
+Analytics Documentation&lt;/a&gt; for details about the languages that are
+supported by sentiment analysis.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_SentimentAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_String_System_String_System_Nullable_System_Boolean__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.SentimentAsync(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient%2CSystem.String%2CSystem.String%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/cognitiveservices/Language.TextAnalytics/src/Customizations/TextAnalytics/TextAnalyticsClientExtensions.cs/#L301">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_SentimentAsync_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.SentimentAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_SentimentAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_String_System_String_System_Nullable_System_Boolean__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.SentimentAsync(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient,System.String,System.String,System.Nullable{System.Boolean},System.Threading.CancellationToken)">SentimentAsync(ITextAnalyticsClient, String, String, Nullable&lt;Boolean&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The API returns a numeric score between 0 and 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;SentimentResult&gt; SentimentAsync(this ITextAnalyticsClient operations, string inputText = null, string language = &quot;en&quot;, bool? showStats = default(bool? ), CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient.html">ITextAnalyticsClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">inputText</span></td>
+        <td><p>Input text of one document.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">language</span></td>
+        <td><p>Language code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">showStats</span></td>
+        <td><p>(optional) if set to true, response will contain input and document level
+statistics.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.SentimentResult.html">SentimentResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_SentimentAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_String_System_String_System_Nullable_System_Boolean__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Scores close to 1 indicate positive sentiment, while scores close to 0
+indicate negative sentiment. A score of 0.5 indicates the lack of sentiment
+(e.g. a factoid statement). See the &lt;a
+href=&quot;https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/overview#supported-languages&quot;&gt;Text
+Analytics Documentation&lt;/a&gt; for details about the languages that are
+supported by sentiment analysis.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_SentimentBatch_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_MultiLanguageBatchInput_System_Nullable_System_Boolean__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.SentimentBatch(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient%2CMicrosoft.Azure.CognitiveServices.Language.TextAnalytics.Models.MultiLanguageBatchInput%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/cognitiveservices/Language.TextAnalytics/src/Customizations/TextAnalytics/TextAnalyticsClientExtensions.cs/#L429">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_SentimentBatch_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.SentimentBatch*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_SentimentBatch_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_MultiLanguageBatchInput_System_Nullable_System_Boolean__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.SentimentBatch(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient,Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.MultiLanguageBatchInput,System.Nullable{System.Boolean},System.Threading.CancellationToken)">SentimentBatch(ITextAnalyticsClient, MultiLanguageBatchInput, Nullable&lt;Boolean&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The API returns a numeric score between 0 and 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SentimentBatchResult SentimentBatch(this ITextAnalyticsClient operations, MultiLanguageBatchInput multiLanguageBatchInput = null, bool? showStats = default(bool? ), CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient.html">ITextAnalyticsClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
         <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.MultiLanguageBatchInput.html">MultiLanguageBatchInput</a></td>
         <td><span class="parametername">multiLanguageBatchInput</span></td>
         <td><p>Collection of documents to analyze.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">showStats</span></td>
+        <td><p>(optional) if set to true, response will contain input and document level
+statistics.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.SentimentBatchResult.html">SentimentBatchResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_SentimentBatch_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_MultiLanguageBatchInput_System_Nullable_System_Boolean__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Scores close to 1 indicate positive sentiment, while scores close to 0
+indicate negative sentiment. A score of 0.5 indicates the lack of sentiment
+(e.g. a factoid statement). See the &lt;a
+href=&quot;https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/overview#supported-languages&quot;&gt;Text
+Analytics Documentation&lt;/a&gt; for details about the languages that are
+supported by sentiment analysis.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_SentimentBatchAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_MultiLanguageBatchInput_System_Nullable_System_Boolean__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.SentimentBatchAsync(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient%2CMicrosoft.Azure.CognitiveServices.Language.TextAnalytics.Models.MultiLanguageBatchInput%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/cognitiveservices/Language.TextAnalytics/src/Customizations/TextAnalytics/TextAnalyticsClientExtensions.cs/#L136">View Source</a>
+  </span>
+  <a id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_SentimentBatchAsync_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.SentimentBatchAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_SentimentBatchAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_MultiLanguageBatchInput_System_Nullable_System_Boolean__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions.SentimentBatchAsync(Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient,Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.MultiLanguageBatchInput,System.Nullable{System.Boolean},System.Threading.CancellationToken)">SentimentBatchAsync(ITextAnalyticsClient, MultiLanguageBatchInput, Nullable&lt;Boolean&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The API returns a numeric score between 0 and 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;SentimentBatchResult&gt; SentimentBatchAsync(this ITextAnalyticsClient operations, MultiLanguageBatchInput multiLanguageBatchInput = null, bool? showStats = default(bool? ), CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.ITextAnalyticsClient.html">ITextAnalyticsClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Language.TextAnalytics.Models.MultiLanguageBatchInput.html">MultiLanguageBatchInput</a></td>
+        <td><span class="parametername">multiLanguageBatchInput</span></td>
+        <td><p>Collection of documents to analyze.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">showStats</span></td>
+        <td><p>(optional) if set to true, response will contain input and document level
+statistics.</p>
 </td>
       </tr>
       <tr>
@@ -415,7 +1361,7 @@ statistics.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_SentimentAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_System_Nullable_System_Boolean__Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_MultiLanguageBatchInput_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <h5 id="Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions_SentimentBatchAsync_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_ITextAnalyticsClient_Microsoft_Azure_CognitiveServices_Language_TextAnalytics_Models_MultiLanguageBatchInput_System_Nullable_System_Boolean__System_Threading_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Scores close to 1 indicate positive sentiment, while scores close to 0
 indicate negative sentiment. A score of 0.5 indicates the lack of sentiment
 (e.g. a factoid statement). See the &lt;a
@@ -431,10 +1377,10 @@ supported by sentiment analysis.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_CognitiveServices_Language_TextAnalytics_TextAnalyticsClientExtensions.md&amp;value=---%0Auid%3A%20Microsoft.Azure.CognitiveServices.Language.TextAnalytics.TextAnalyticsClientExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/cognitiveservices/Language.TextAnalytics/src/Generated/TextAnalytics/TextAnalyticsClientExtensions.cs/#L20" class="contribution-link">View Source</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/cognitiveservices/Language.TextAnalytics/src/Customizations/TextAnalytics/TextAnalyticsClientExtensions.cs/#L18" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

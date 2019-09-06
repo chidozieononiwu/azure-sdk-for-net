@@ -79,8 +79,24 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="microsoftazurebatch-release-notes">Microsoft.Azure.Batch release notes</h1>
 
-<h2 id="changes-in-1100">Changes in 11.0.0</h2>
+<h2 id="changes-in-1200">Changes in 12.0.0</h2>
 <h3 id="features">Features</h3>
+<ul>
+<li>Added ability to specify a collection of public IPs on <code>NetworkConfiguration</code> via the new <code>PublicIPs</code> property. This guarantees nodes in the Pool will have an
+IP from the list user provided IPs.</li>
+<li>Added ability to mount remote file-systems on each node of a pool via the <code>MountConfiguration</code> property on <code>CloudPool</code>.</li>
+<li>Shared Image Gallery images can now be specified on the <code>VirtualMachineImageId</code> property of <code>ImageReference</code> by referencing the image via its ARM ID.</li>
+<li><strong>[Breaking]</strong> When not specified, the default value for <code>WaitForSuccess</code> on <code>StartTask</code> is now <code>true</code> (was <code>false</code>).</li>
+<li><strong>[Breaking]</strong> When not specified, the default value for <code>Scope</code> on <code>AutoUserSpecification</code> is now always <code>Pool</code> (was <code>Task</code> on Windows nodes, <code>Pool</code> on Linux nodes).</li>
+</ul>
+<h3 id="bug-fixes">Bug fixes</h3>
+<ul>
+<li>Improved various confusing or incomplete documentation.</li>
+</ul>
+<h3 id="rest-api-version">REST API version</h3>
+<p>This version of the Batch .NET client library targets version 2019-08-01.10.0 of the Azure Batch REST API.</p>
+<h2 id="changes-in-1100">Changes in 11.0.0</h2>
+<h3 id="features-1">Features</h3>
 <ul>
 <li>Added <code>maxBackoff</code> parameter to <code>RetryPolicyProvider.ExponentialRetryProvider</code>. This option was already available on the <code>ExponentialRetry</code> constructor,
 but adding it on <code>RetryPolicyProvider.ExponentialRetryProvider</code> makes it easier to use.</li>
@@ -91,21 +107,21 @@ but adding it on <code>RetryPolicyProvider.ExponentialRetryProvider</code> makes
 <li>When running a container, Batch now supports executing the task in the container working directory or in the Batch task working directory. This is controlled by the
 <code>WorkingDirectory</code> property on <code>TaskContainerSettings</code>.</li>
 </ul>
-<h3 id="bug-fixes">Bug fixes</h3>
+<h3 id="bug-fixes-1">Bug fixes</h3>
 <ul>
 <li>Improved various confusing or incomplete documentation.</li>
 </ul>
-<h3 id="rest-api-version">REST API version</h3>
+<h3 id="rest-api-version-1">REST API version</h3>
 <p>This version of the Batch .NET client library targets version 2019-06-01.9.0 of the Azure Batch REST API.</p>
 <h2 id="changes-in-1010">Changes in 10.1.0</h2>
 <ul>
 <li>Added <code>net461</code> and <code>netstandard2.0</code> target frameworks.</li>
 <li>Updated <code>Microsoft.AspNetCore.WebUtilities</code> to <code>1.1.2</code> for the <code>netstandard1.4</code> target framework.</li>
 </ul>
-<h3 id="rest-api-version-1">REST API version</h3>
+<h3 id="rest-api-version-2">REST API version</h3>
 <p>This version of the Batch .NET client library targets version 2018-12-01.8.0 of the Azure Batch REST API.</p>
 <h2 id="changes-in-1000">Changes in 10.0.0</h2>
-<h3 id="features-1">Features</h3>
+<h3 id="features-2">Features</h3>
 <ul>
 <li><strong>[Breaking]</strong> Removed support for the <code>ChangeOSVersion</code> API on <code>CloudServiceConfiguration</code> pools.
 <ul>
@@ -143,20 +159,20 @@ be in the pilot.</li>
 <li>The default task retention time for all tasks is now 7 days, previously it was infinite.</li>
 <li><code>ExponentialRetry</code> supports a backoff cap, via the <code>MaxBackoff</code> property.</li>
 </ul>
-<h3 id="bug-fixes-1">Bug fixes</h3>
+<h3 id="bug-fixes-2">Bug fixes</h3>
 <ul>
 <li>The built in retry policies <code>ExponentialRetry</code> and <code>LinearRetry</code> now correctly retry on HTTP status code <code>429</code> and honor the <code>retry-after</code> header.</li>
 </ul>
-<h3 id="rest-api-version-2">REST API version</h3>
+<h3 id="rest-api-version-3">REST API version</h3>
 <p>This version of the Batch .NET client library targets version 2018-12-01.8.0 of the Azure Batch REST API.</p>
 <h2 id="changes-in-901">Changes in 9.0.1</h2>
 <ul>
 <li>Updating Newtonsoft.Json to 10.0.3</li>
 </ul>
-<h3 id="rest-api-version-3">REST API version</h3>
+<h3 id="rest-api-version-4">REST API version</h3>
 <p>This version of the Batch .NET client library targets version 2018-08-01.7.0 of the Azure Batch REST API.</p>
 <h2 id="changes-in-900">Changes in 9.0.0</h2>
-<h3 id="features-2">Features</h3>
+<h3 id="features-3">Features</h3>
 <ul>
 <li>Added the ability to see what version of the Azure Batch Node Agent is running on each of the VMs in a pool, via the new <code>NodeAgentInformation</code> property on <code>ComputeNode</code>.</li>
 <li>Added the ability to specify a <code>Filter</code> on the <code>Result</code> of a task. See <a href="https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch">here</a> for more details.
@@ -172,11 +188,11 @@ be in the pilot.</li>
 <li><strong>[Breaking]</strong> Removed the <code>ValidationStatus</code> property from <code>TaskCounts</code>, as well as the <code>TaskCountValidationStatus</code> enum.</li>
 <li><strong>[Breaking]</strong> The default caching type for <code>DataDisk</code> and <code>OSDisk</code> is now <code>ReadWrite</code> instead of <code>None</code>.</li>
 </ul>
-<h3 id="bug-fixes-2">Bug fixes</h3>
+<h3 id="bug-fixes-3">Bug fixes</h3>
 <ul>
 <li>Fixed bug when using <code>BatchSharedKeyCredentials</code> where some operations would fail with an <code>Unauthenticated</code> error in <code>netcoreapp2.1</code> even though the right shared key was used.</li>
 </ul>
-<h3 id="rest-api-version-4">REST API version</h3>
+<h3 id="rest-api-version-5">REST API version</h3>
 <p>This version of the Batch .NET client library targets version 2018-08-01.7.0 of the Azure Batch REST API.</p>
 <h2 id="changes-in-812">Changes in 8.1.2</h2>
 <p>Rename Nuget package name from Azure.Batch to Microsoft.Azure.Batch</p>
@@ -184,15 +200,15 @@ be in the pilot.</li>
 <h2 id="changes-in-812-1">Changes in 8.1.2</h2>
 <p>Add deprecation announcement to nuget package.</p>
 <h2 id="changes-in-811">Changes in 8.1.1</h2>
-<h3 id="bug-fixes-3">Bug fixes</h3>
+<h3 id="bug-fixes-4">Bug fixes</h3>
 <ul>
 <li>Fixed bug where LeavingPool state was not correctly returned via the <code>ListPoolNodeCounts</code> method on <code>PoolOperations</code>.</li>
 <li>Clarified various confusing documentation.</li>
 </ul>
-<h3 id="rest-api-version-5">REST API version</h3>
+<h3 id="rest-api-version-6">REST API version</h3>
 <p>This version of the Batch .NET client library targets version 2018-02-01.6.1 of the Azure Batch REST API.</p>
 <h2 id="changes-in-810">Changes in 8.1.0</h2>
-<h3 id="features-3">Features</h3>
+<h3 id="features-4">Features</h3>
 <ul>
 <li>Added the ability to query pool node counts by state, via the new <code>ListPoolNodeCounts</code> method on <code>PoolOperations</code>.</li>
 <li>Added the ability to upload Azure Batch node agent logs from a particular node, via the <code>UploadComputeNodeBatchServiceLogs</code> method on <code>PoolOperations</code> and <code>ComputeNode</code>.
@@ -201,19 +217,19 @@ be in the pilot.</li>
 </ul>
 </li>
 </ul>
-<h3 id="rest-api-version-6">REST API version</h3>
+<h3 id="rest-api-version-7">REST API version</h3>
 <p>This version of the Batch .NET client library targets version 2018-02-01.6.1 of the Azure Batch REST API.</p>
 <h3 id="import-note">Import Note</h3>
 <p>The package will be renamed to Microsoft.Azure.Batch in a future release.</p>
 <h2 id="changes-in-801">Changes in 8.0.1</h2>
-<h3 id="bug-fixes-4">Bug fixes</h3>
+<h3 id="bug-fixes-5">Bug fixes</h3>
 <ul>
 <li>Fixed a bug where deserializing some enum properties could fail if using Newtonsoft 10.</li>
 </ul>
-<h3 id="rest-api-version-7">REST API version</h3>
+<h3 id="rest-api-version-8">REST API version</h3>
 <p>This version of the Batch .NET client library targets version 2017-09-01.6.0 of the Azure Batch REST API.</p>
 <h2 id="changes-in-800">Changes in 8.0.0</h2>
-<h3 id="features-4">Features</h3>
+<h3 id="features-5">Features</h3>
 <ul>
 <li>Added the ability to get a discount on Windows VM pricing if you have on-premises licenses for the OS SKUs you are deploying, via <code>LicenseType</code> on <code>VirtualMachineConfiguration</code>.</li>
 <li>Added support for attaching empty data drives to <code>VirtualMachineConfiguration</code> based pools, via the new <code>DataDisks</code> property on <code>VirtualMachineConfiguration</code>.</li>
@@ -226,18 +242,18 @@ be in the pilot.</li>
 <li><strong>[Breaking]</strong> Multi-instance tasks (created using <code>MultiInstanceSettings</code>) must now specify a <code>CoordinationCommandLine</code>, and <code>NumberOfInstances</code> is now optional and defaults to 1.</li>
 <li>Added support for tasks run using Docker containers. To run a task using a Docker container you must specify a <code>ContainerConfiguration</code> on the <code>VirtualMachineConfiguration</code> for a pool, and then add <code>TaskContainerSettings</code> on the Task.</li>
 </ul>
-<h3 id="rest-api-version-8">REST API version</h3>
+<h3 id="rest-api-version-9">REST API version</h3>
 <p>This version of the Batch .NET client library targets version 2017-09-01.6.0 of the Azure Batch REST API.</p>
 <h2 id="changes-in-710">Changes in 7.1.0</h2>
-<h3 id="features-5">Features</h3>
+<h3 id="features-6">Features</h3>
 <ul>
 <li>Added support for detailed aggregate task counts via a new <code>JobOperations.GetJobTaskCounts</code> API. Also available on <code>CloudJob.GetTaskCounts</code>.</li>
 <li>Added support for specifying inbound endpoints on pool compute nodes, via a new <code>CloudPool.PoolEndpointConfiguration</code> property.  This allows specific ports on the node to be addressed externally.</li>
 </ul>
-<h3 id="rest-api-version-9">REST API version</h3>
+<h3 id="rest-api-version-10">REST API version</h3>
 <p>This version of the Batch .NET client library targets version 2017-06-01.5.1 of the Azure Batch REST API.</p>
 <h2 id="changes-in-701">Changes in 7.0.1</h2>
-<h3 id="bug-fixes-5">Bug fixes</h3>
+<h3 id="bug-fixes-6">Bug fixes</h3>
 <ul>
 <li>Fixed a bug where requests using HTTP DELETE (for example, <code>DeletePool</code> and <code>DeleteJob</code>) failed with an authentication error in the netstandard package. This was due to a change made to <code>HttpClient</code> in netcore.
 <ul>
@@ -245,14 +261,14 @@ be in the pilot.</li>
 </ul>
 </li>
 </ul>
-<h3 id="rest-api-version-10">REST API version</h3>
+<h3 id="rest-api-version-11">REST API version</h3>
 <p>This version of the Batch .NET client library targets version 2017-05-01.5.0 of the Azure Batch REST API.</p>
 <h2 id="changes-in-700">Changes in 7.0.0</h2>
 <h3 id="license">License</h3>
 <p>Moved source code and NuGet package from Apache 2.0 license to MIT license. This is more consistent with the other Azure SDKs as well as other open source projects from Microsoft such as .NET.</p>
-<h3 id="rest-api-version-11">REST API version</h3>
+<h3 id="rest-api-version-12">REST API version</h3>
 <p>This version of the Batch .NET client library targets version 2017-05-01.5.0 of the Azure Batch REST API.</p>
-<h3 id="features-6">Features</h3>
+<h3 id="features-7">Features</h3>
 <ul>
 <li>Added support for the new low-priority node type.
 <ul>
@@ -289,7 +305,7 @@ be in the pilot.</li>
 </ul>
 </li>
 </ul>
-<h3 id="bug-fixes-6">Bug fixes</h3>
+<h3 id="bug-fixes-7">Bug fixes</h3>
 <ul>
 <li><strong>[Breaking]</strong> Removed <code>Unmapped</code> enum state from <code>AddTaskStatus</code>, <code>CertificateFormat</code>, <code>CertificateVisibility</code>, <code>CertStoreLocation</code>, <code>ComputeNodeFillType</code>, <code>OSType</code>, and <code>PoolLifetimeOption</code> as they were not ever used.</li>
 </ul>
@@ -302,16 +318,16 @@ be in the pilot.</li>
 <li>The package now includes a <code>netstandard1.4</code> assembly instead of the previous <code>netstandard1.5</code>.</li>
 </ul>
 <h2 id="changes-in-610">Changes in 6.1.0</h2>
-<h3 id="rest-api-version-12">REST API version</h3>
+<h3 id="rest-api-version-13">REST API version</h3>
 <p>This version of the Batch .NET client library targets version 2017-01-01.4.0 of the Azure Batch REST API.</p>
 <h3 id="packaging-1">Packaging</h3>
 <ul>
 <li>The client library is now supported on .NET Core. The package now includes a <code>netstandard1.5</code> assembly in addition to the <code>net45</code> assembly.</li>
 </ul>
 <h2 id="changes-in-600">Changes in 6.0.0</h2>
-<h3 id="rest-api-version-13">REST API version</h3>
+<h3 id="rest-api-version-14">REST API version</h3>
 <p>This version of the Batch .NET client library targets version 2017-01-01.4.0 of the Azure Batch REST API.</p>
-<h3 id="features-7">Features</h3>
+<h3 id="features-8">Features</h3>
 <h4 id="breaking-changes">Breaking changes</h4>
 <ul>
 <li>Added support for running a task under a configurable user identity via the <code>UserIdentity</code> property on all task objects (<code>CloudTask</code>, <code>JobPreparationTask</code>, <code>StartTask</code>, etc). <code>UserIdentity</code> replaces <code>RunElevated</code>. <code>UserIdentity</code> supports running a task as a predefined named user (via <code>UserIdentity.UserName</code>) or an automatically created user. The <code>AutoUserSpecification</code> specifies an automatically created user account under which to run the task. To translate existing code, change <code>RunElevated = true</code> to <code>UserIdentity = new UserIdentity(new AutoUserSpecification(elevationLevel: ElevationLevel.Admin))</code> and <code>RunElevated = false</code> to <code>UserIdentity = new UserIdentity(new AutoUserSpecification(elevationLevel: ElevationLevel.NonAdmin))</code>.</li>
@@ -335,35 +351,35 @@ be in the pilot.</li>
 <li>Improved and clarified documentation.</li>
 </ul>
 <h2 id="changes-in-512">Changes in 5.1.2</h2>
-<h3 id="bug-fixes-7">Bug fixes</h3>
+<h3 id="bug-fixes-8">Bug fixes</h3>
 <ul>
 <li>Fixed a bug where performing <code>JobOperations.GetNodeFile</code> and <code>PoolOperations.GetNodeFile</code> could throw an <code>OutOfMemoryException</code> if the file that was being examined was large.</li>
 </ul>
-<h3 id="rest-api-version-14">REST API version</h3>
+<h3 id="rest-api-version-15">REST API version</h3>
 <p>This version of the Batch .NET client library targets version 2016-07-01.3.1 of the Azure Batch REST API.</p>
 <h2 id="changes-in-511">Changes in 5.1.1</h2>
-<h3 id="bug-fixes-8">Bug fixes</h3>
+<h3 id="bug-fixes-9">Bug fixes</h3>
 <ul>
 <li>Fixed a bug where certificates with a signing algorithm other than SHA1 were incorrectly imported, causing the Batch service to reject them.</li>
 </ul>
-<h3 id="rest-api-version-15">REST API version</h3>
+<h3 id="rest-api-version-16">REST API version</h3>
 <p>This version of the Batch .NET client library targets version 2016-07-01.3.1 of the Azure Batch REST API.</p>
 <h2 id="changes-in-510">Changes in 5.1.0</h2>
-<h3 id="features-8">Features</h3>
+<h3 id="features-9">Features</h3>
 <ul>
 <li>Added support for a new operation <code>JobOperations.ReactivateTask</code> (or <code>CloudTask.Reactivate</code>) which allows users to reactivate a previously failed task.</li>
 </ul>
-<h3 id="rest-api-version-16">REST API version</h3>
+<h3 id="rest-api-version-17">REST API version</h3>
 <p>This version of the Batch .NET client library targets version 2016-07-01.3.1 of the Azure Batch REST API.</p>
 <h2 id="changes-in-502">Changes in 5.0.2</h2>
-<h3 id="bug-fixes-9">Bug fixes</h3>
+<h3 id="bug-fixes-10">Bug fixes</h3>
 <ul>
 <li>Fixed bug where <code>CommitChanges</code> would incorrectly include elements in the request which did not actually change.</li>
 </ul>
-<h3 id="rest-api-version-17">REST API version</h3>
+<h3 id="rest-api-version-18">REST API version</h3>
 <p>This version of the Batch .NET client library targets version 2016-07-01.3.1 of the Azure Batch REST API.</p>
 <h2 id="changes-in-501">Changes in 5.0.1</h2>
-<h3 id="bug-fixes-10">Bug fixes</h3>
+<h3 id="bug-fixes-11">Bug fixes</h3>
 <ul>
 <li>Fixed bug where <code>CloudJob.Commit</code> and <code>CloudJob.CommitChanges</code> would hit an exception when attempting to commit a job which had previously been gotten using an <code>ODataDetail</code> select clause.</li>
 </ul>
@@ -372,10 +388,10 @@ be in the pilot.</li>
 <li>Improved comments for <code>ExitCode</code> on all task execution information objects (<code>TaskExecutionInformation</code>, <code>JobPreparationTaskExecutionInformation</code>, <code>JobReleaseTaskExecutionInformation</code>, <code>StartTaskInformation</code>, etc)</li>
 <li>Improved documentation on <code>ocp-range</code> header format.</li>
 </ul>
-<h3 id="rest-api-version-18">REST API version</h3>
+<h3 id="rest-api-version-19">REST API version</h3>
 <p>This version of the Batch .NET client library targets version 2016-07-01.3.1 of the Azure Batch REST API.</p>
 <h2 id="changes-in-500">Changes in 5.0.0</h2>
-<h3 id="features-9">Features</h3>
+<h3 id="features-10">Features</h3>
 <ul>
 <li>Added <code>CommitChanges</code> method on <code>CloudJob</code>, <code>CloudJobSchedule</code> and <code>CloudPool</code>, which use the HTTP PATCH verb to perform partial updates, which can be safer if multiple clients are making concurrent changes).</li>
 <li>Added support for joining a <code>CloudPool</code> to a virtual network on using the <code>NetworkConfiguration</code> property.</li>
@@ -409,17 +425,17 @@ be in the pilot.</li>
 </ul>
 </li>
 </ul>
-<h3 id="rest-api-version-19">REST API version</h3>
+<h3 id="rest-api-version-20">REST API version</h3>
 <p>This version of the Batch .NET client library targets version 2016-07-01.3.1 of the Azure Batch REST API.</p>
 <h2 id="changes-in-401">Changes in 4.0.1</h2>
-<h3 id="bug-fixes-11">Bug fixes</h3>
+<h3 id="bug-fixes-12">Bug fixes</h3>
 <ul>
 <li>Fixed a bug where specifying a <code>DetailLevel</code> on a list operation would fail if the Batch service returned a list spanning multiple pages.</li>
 <li>Fixed a bug where <code>TaskDependencies</code> and <code>ApplicationPackageSummary</code> could throw a <code>NullReferenceException</code> if the Batch service returned a collection that was null.</li>
 <li>Fixed a bug where <code>PoolOperations.ListNodeAgentSkus</code> and <code>PoolOperations.ListPoolUsageMetrics</code> were missing support for <code>DetailLevel</code>.</li>
 <li>Updated <code>FileMode</code> comment to clarify that the default is <code>0770</code> instead of <code>0600</code>.</li>
 </ul>
-<h3 id="rest-api-version-20">REST API version</h3>
+<h3 id="rest-api-version-21">REST API version</h3>
 <p>This version of the Batch .NET client library targets version 2016-02-01.3.0 of the Azure Batch REST API.</p>
 <h2 id="changes-in-400">Changes in 4.0.0</h2>
 <h3 id="package-dependencies-1">Package dependencies</h3>
@@ -429,7 +445,7 @@ be in the pilot.</li>
 <li>Added Microsoft.Rest.ClientRuntime.Azure dependency.</li>
 <li>Updated Azure.Storage 4.x to 6.x.</li>
 </ul>
-<h3 id="features-10">Features</h3>
+<h3 id="features-11">Features</h3>
 <ul>
 <li>Azure Batch now supports Linux compute nodes (you can see which Linux distributions and versions are supported by using the new <code>ListNodeAgentSkus</code> API).</li>
 <li>New API <code>ListNodeAgentSkus</code>.</li>
@@ -442,7 +458,7 @@ be in the pilot.</li>
 <li>Changed various properties which had a type of <code>IEnumerable</code> to <code>IReadOnlyList</code> because they are explicitly read-only.</li>
 <li>Changed <code>CloudJob.CommonEnvironmentSettings</code> type from <code>IEnumerable</code> to <code>IList</code>.</li>
 </ul>
-<h3 id="bug-fixes-12">Bug fixes</h3>
+<h3 id="bug-fixes-13">Bug fixes</h3>
 <ul>
 <li>Fixed bug where <code>Enable</code> and <code>Disable</code> scheduling APIs weren't correctly inheriting the behaviors of their parent objects.</li>
 <li>Fixed bug in signing which breaks some requests issued with custom conditional headers such as If-Match.</li>
@@ -493,7 +509,7 @@ be in the pilot.</li>
 <li>Removed <code>ResourceStatistics.DiskWriteIOps</code> setter.</li>
 <li>Removed <code>TaskInformation.JobScheduleId</code> property.</li>
 </ul>
-<h3 id="rest-api-version-21">REST API version</h3>
+<h3 id="rest-api-version-22">REST API version</h3>
 <p>This version of the Batch .NET client library targets version 2016-02-01.3.0 of the Azure Batch REST API.</p>
 </article>
           </div>
@@ -503,7 +519,7 @@ be in the pilot.</li>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/docfx_project/articles/sdk/Batch/Microsoft.Azure.Batch/changelog.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/docfx_project/articles/sdk/Batch/Microsoft.Azure.Batch/changelog.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

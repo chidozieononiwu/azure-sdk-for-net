@@ -186,8 +186,8 @@ Console.WriteLine(secret.Name);
 Console.WriteLine(secret.Value);
 </code></pre>
 <h3 id="update-an-existing-secret">Update an existing Secret</h3>
-<p><code>Update</code> updates a secret previously stored in the Key Vault.</p>
-<pre><code class="lang-c#">Secret secret = new Secret(&quot;secret-name&quot;);
+<p><code>Update</code> updates a secret previously stored in the Key Vault. Only the attributes of the secret are updated. To update the value, call <code>SecretClient.Set</code> on a <code>Secret</code> with the same name.</p>
+<pre><code class="lang-c#">Secret secret = new Secret(&quot;secret-name&quot;, &quot;secret-value&quot;);
 
 // Clients may specify the content type of a secret to assist in interpreting the secret data when it's retrieved
 secret.ContentType = &quot;text/plain&quot;;
@@ -210,10 +210,10 @@ Console.WriteLine(secret.Name);
 Console.WriteLine(secret.Value);
 </code></pre>
 <h3 id="list-secrets">List secrets</h3>
-<p>This example lists all the secrets in the specified Key Vault.</p>
+<p>This example lists all the secrets in the specified Key Vault. The value is not returned when listing all secrets. You will need to call <code>SecretClient.Get</code> to retrive the value.</p>
 <pre><code class="lang-c#">IEnumerable&lt;Response&lt;SecretBase&gt;&gt; allSecrets = client.GetSecrets();
 
-  foreach (Secret secret in allSecrets)
+  foreach (SecretBase secret in allSecrets)
   {
     Console.WriteLine(secret.Name);
   }
@@ -310,7 +310,7 @@ Headers:
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/docfx_project/articles/sdk/KeyVault/Azure.Security.KeyVault.Secrets/Readme.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/docfx_project/articles/sdk/KeyVault/Azure.Security.KeyVault.Secrets/README.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

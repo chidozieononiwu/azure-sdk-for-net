@@ -104,46 +104,61 @@
     <tbody>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleState_Active">Active</td>
-        <td><p>The job schedule is active and will create jobs as per its
+        <td><p>The Job Schedule is active and will create Jobs as per its
 schedule.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleState_Completed">Completed</td>
-        <td><p>The schedule has terminated, either by reaching its end time or by
-the user terminating it explicitly.</p>
+        <td><p>The Job Schedule has terminated, either by reaching its end time or
+by the user terminating it explicitly.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleState_Deleting">Deleting</td>
-        <td><p>The user has requested that the schedule be deleted, but the delete
-operation is still in progress. The scheduler will not initiate any
-new jobs for this schedule, and will delete any existing jobs and
-tasks under the schedule, including any active job. The schedule
-will be deleted when all jobs and tasks under the schedule have
-been deleted.</p>
+        <td><p>The user has requested that the Job Schedule be deleted, but the
+delete operation is still in progress. The scheduler will not
+initiate any new Jobs for this Job Schedule, and will delete any
+existing Jobs and Tasks under the Job Schedule, including any
+active Job. The Job Schedule will be deleted when all Jobs and
+Tasks under the Job Schedule have been deleted.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleState_Disabled">Disabled</td>
-        <td><p>The user has disabled the schedule. The scheduler will not initiate
-any new jobs will on this schedule, but any existing active job
-will continue to run.</p>
+        <td><p>The user has disabled the Job Schedule. The scheduler will not
+initiate any new Jobs will on this schedule, but any existing
+active Job will continue to run.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleState_Terminating">Terminating</td>
-        <td><p>The schedule has no more work to do, or has been explicitly
+        <td><p>The Job Schedule has no more work to do, or has been explicitly
 terminated by the user, but the termination operation is still in
-progress. The scheduler will not initiate any new jobs for this
-schedule, nor is any existing job active.</p>
+progress. The scheduler will not initiate any new Jobs for this Job
+Schedule, nor is any existing Job active.</p>
 </td>
       </tr>
     </tbody>
   </thead></thead></table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;JobScheduleState, TConfiguration&gt;(String, TConfiguration)</a>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;JobScheduleState, TConfiguration&gt;(TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../KeyVault/Azure.Security.KeyVault.Secrets.AzureClientBuilderExtensions.html#Azure_Security_KeyVault_Secrets_AzureClientBuilderExtensions_AddSecretClient__2___0___1_">AzureClientBuilderExtensions.AddSecretClient&lt;JobScheduleState, TConfiguration&gt;(TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../OtherAPIs/Azure.Data.AppConfiguration.AzureClientBuilderExtensions.html#Azure_Data_AppConfiguration_AzureClientBuilderExtensions_AddConfigurationClient__2___0___1_">AzureClientBuilderExtensions.AddConfigurationClient&lt;JobScheduleState, TConfiguration&gt;(TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../Storage/Azure.Storage.Blobs.AzureClientBuilderExtensions.html#Azure_Storage_Blobs_AzureClientBuilderExtensions_AddBlobServiceClient__2___0___1_">AzureClientBuilderExtensions.AddBlobServiceClient&lt;JobScheduleState, TConfiguration&gt;(TConfiguration)</a>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddFileServiceClient&lt;Microsoft.Azure.Batch.Protocol.Models.JobScheduleState, TConfiguration&gt;(TConfiguration)</span>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient&lt;Microsoft.Azure.Batch.Protocol.Models.JobScheduleState, TConfiguration&gt;(TConfiguration)</span>
   </div>
 </article>
           </div>
@@ -153,10 +168,10 @@ schedule, nor is any existing job active.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobScheduleState.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobScheduleState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobScheduleState.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobScheduleState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobScheduleState.cs/#L21" class="contribution-link">View Source</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobScheduleState.cs/#L21" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

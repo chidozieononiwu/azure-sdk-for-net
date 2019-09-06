@@ -83,15 +83,8 @@
 <p>see <a href="https://aka.ms/autorest">https://aka.ms/autorest</a></p>
 </blockquote>
 <h2 id="configuration">Configuration</h2>
-<pre><code class="lang-yaml">
-# Prevent swagger validation because it complains about vendor extensions
-# instead of ignoring them per the spec
-pipeline:
-  swagger-document/individual/schema-validator:
-     scope: unused
-
-# Generate file storage
-input-file: ./file.json
+<pre><code class="lang-yaml"># Generate file storage
+input-file: https://raw.githubusercontent.com/Azure/azure-rest-api-specs/storage-dataplane-preview/specification/storage/data-plane/Microsoft.FileStorage/preview/2019-02-02/file.json
 output-folder: ../src/Generated
 clear-output-folder: false
 
@@ -99,7 +92,544 @@ clear-output-folder: false
 # use: C:\src\Storage\Swagger\Generator
 # We can't use relative paths here, so use a relative path in generate.ps1
 azure-track2-csharp: true
-
+</code></pre>
+<h2 id="customizations-for-track-2-generator">Customizations for Track 2 Generator</h2>
+<p>See the <a href="https://github.com/Azure/autorest/tree/master/Samples/3b-custom-transformations">AutoRest samples</a>
+for more about how we're customizing things.</p>
+<h3 id="x-ms-code-generation-settings">x-ms-code-generation-settings</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.info[&quot;x-ms-code-generation-settings&quot;]
+  transform: &gt;
+    $.namespace = &quot;Azure.Storage.Files&quot;;
+    $[&quot;client-name&quot;] = &quot;FileRestClient&quot;;
+    $[&quot;client-extensions-name&quot;] = &quot;FilesExtensions&quot;;
+    $[&quot;client-model-factory-name&quot;] = &quot;FilesModelFactory&quot;;
+    $[&quot;x-az-skip-path-components&quot;] = true;
+    $[&quot;x-az-include-sync-methods&quot;] = true;
+    $[&quot;x-az-public&quot;] = false;
+</code></pre>
+<h3 id="url">Url</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.parameters.Url
+  transform: &gt;
+    $[&quot;x-ms-client-name&quot;] = &quot;resourceUri&quot;;
+    $.format = &quot;url&quot;;
+    $[&quot;x-az-trace&quot;] = true;
+</code></pre>
+<h3 id="ignore-common-headers">Ignore common headers</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;]..responses..headers[&quot;x-ms-request-id&quot;]
+  transform: &gt;
+    $[&quot;x-az-demote-header&quot;] = true;
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;]..responses..headers[&quot;x-ms-version&quot;]
+  transform: &gt;
+    $[&quot;x-az-demote-header&quot;] = true;
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;]..responses..headers[&quot;Date&quot;]
+  transform: &gt;
+    $[&quot;x-az-demote-header&quot;] = true;
+</code></pre>
+<h3 id="clean-up-failure-response">Clean up Failure response</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;]..responses.default
+  transform: &gt;
+    $[&quot;x-az-response-name&quot;] = &quot;StorageErrorResult&quot;;
+    $[&quot;x-az-create-exception&quot;] = true;
+    $[&quot;x-az-public&quot;] = false;
+    $.headers[&quot;x-ms-error-code&quot;][&quot;x-az-demote-header&quot;] = true;
+</code></pre>
+<h3 id="apiversionparameter">ApiVersionParameter</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.parameters.ApiVersionParameter
+  transform: $.enum = [&quot;2019-02-02&quot;]
+</code></pre>
+<h3 id="restypeservicecompproperties">/?restype=service&amp;comp=properties</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions
+  transform: &gt;
+    if (!$.FileServiceProperties) {
+        $.FileServiceProperties = $.StorageServiceProperties;
+        delete $.StorageServiceProperties;
+        $.FileServiceProperties.xml = { &quot;name&quot;: &quot;StorageServiceProperties&quot; };
+    }
+- from: swagger-document
+  where: $.parameters
+  transform: &gt;
+    if (!$.FileServiceProperties) {
+        const props = $.FileServiceProperties = $.StorageServiceProperties;
+        props.name = &quot;FileServiceProperties&quot;;
+        props[&quot;x-ms-client-name&quot;] = &quot;properties&quot;;
+        props.schema = { &quot;$ref&quot;: props.schema.$ref.replace(/[#].*$/, &quot;#/definitions/FileServiceProperties&quot;) };
+        delete $.StorageServiceProperties;
+    }
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/?restype=service&amp;comp=properties&quot;]
+  transform: &gt;
+    const param = $.put.parameters[0];
+    if (param &amp;&amp; param[&quot;$ref&quot;] &amp;&amp; param[&quot;$ref&quot;].endsWith(&quot;StorageServiceProperties&quot;)) {
+        const path = param[&quot;$ref&quot;].replace(/[#].*$/, &quot;#/parameters/FileServiceProperties&quot;);
+        $.put.parameters[0] = { &quot;$ref&quot;: path };
+    }
+    const def = $.get.responses[&quot;200&quot;].schema;
+    if (def &amp;&amp; def[&quot;$ref&quot;] &amp;&amp; def[&quot;$ref&quot;].endsWith(&quot;StorageServiceProperties&quot;)) {
+        const path = def[&quot;$ref&quot;].replace(/[#].*$/, &quot;#/definitions/FileServiceProperties&quot;);
+        $.get.responses[&quot;200&quot;].schema = { &quot;$ref&quot;: path };
+    }
+</code></pre>
+<h3 id="complist">/?comp=list</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions
+  transform: &gt;
+    if (!$.SharesSegment) {
+        $.SharesSegment = $.ListSharesResponse;
+        delete $.ListSharesResponse;
+        $.SharesSegment[&quot;x-az-public&quot;] = false;
+    }
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/?comp=list&quot;]
+  transform: &gt;
+    const def = $.get.responses[&quot;200&quot;].schema;
+    if (!def[&quot;$ref&quot;].endsWith(&quot;SharesSegment&quot;)) {
+        const path = def[&quot;$ref&quot;].replace(/[#].*$/, &quot;#/definitions/SharesSegment&quot;);
+        $.get.responses[&quot;200&quot;].schema = { &quot;$ref&quot;: path };
+    }
+</code></pre>
+<h3 id="sharenamerestypeshare">/{shareName}?restype=share</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{shareName}?restype=share&quot;]
+  transform: &gt;
+    $.put.responses[&quot;201&quot;].description = &quot;Success&quot;;
+    $.put.responses[&quot;201&quot;][&quot;x-az-response-name&quot;] = &quot;ShareInfo&quot;;
+    $.get.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;ShareProperties&quot;;
+</code></pre>
+<h3 id="sharenamerestypesharecompsnapshot">/{shareName}?restype=share&amp;comp=snapshot</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{shareName}?restype=share&amp;comp=snapshot&quot;]
+  transform: &gt;
+    $.put.responses[&quot;201&quot;][&quot;x-az-response-name&quot;] = &quot;ShareSnapshotInfo&quot;;
+</code></pre>
+<h3 id="sharenamerestypesharecompproperties">/{shareName}?restype=share&amp;comp=properties</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{shareName}?restype=share&amp;comp=properties&quot;]
+  transform: &gt;
+    $.put.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;ShareInfo&quot;;
+    $.put.responses[&quot;200&quot;].headers.ETag.description = &quot;The ETag contains a value which represents the version of the share, in quotes.&quot;;
+    $.put.responses[&quot;200&quot;].headers[&quot;Last-Modified&quot;].description = &quot;Returns the date and time the share was last modified. Any operation that modifies the share or its properties or metadata updates the last modified time. Operations on files do not affect the last modified time of the share.&quot;;
+</code></pre>
+<h3 id="sharenamerestypesharecompmetadata">/{shareName}?restype=share&amp;comp=metadata</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{shareName}?restype=share&amp;comp=metadata&quot;]
+  transform: &gt;
+    $.put.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;ShareInfo&quot;;
+    $.put.responses[&quot;200&quot;].headers.ETag.description = &quot;The ETag contains a value which represents the version of the share, in quotes.&quot;;
+    $.put.responses[&quot;200&quot;].headers[&quot;Last-Modified&quot;].description = &quot;Returns the date and time the share was last modified. Any operation that modifies the share or its properties or metadata updates the last modified time. Operations on files do not affect the last modified time of the share.&quot;;
+</code></pre>
+<h3 id="sharenamerestypesharecompacl">/{shareName}?restype=share&amp;comp=acl</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{shareName}?restype=share&amp;comp=acl&quot;]
+  transform: &gt;
+    $.get.responses[&quot;200&quot;].headers.ETag[&quot;x-az-demote-header&quot;] = true;
+    $.get.responses[&quot;200&quot;].headers[&quot;Last-Modified&quot;][&quot;x-az-demote-header&quot;] = true;
+    $.put.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;ShareInfo&quot;;
+    $.put.responses[&quot;200&quot;].description = &quot;Success&quot;;
+    $.put.responses[&quot;200&quot;].headers.ETag.description = &quot;The ETag contains a value which represents the version of the share, in quotes.&quot;;
+    $.put.responses[&quot;200&quot;].headers[&quot;Last-Modified&quot;].description = &quot;Returns the date and time the share was last modified. Any operation that modifies the share or its properties or metadata updates the last modified time. Operations on files do not affect the last modified time of the share.&quot;;
+- from: swagger-document
+  where: $.parameters.ShareAcl
+  transform: &gt;
+    $[&quot;x-ms-client-name&quot;] = &quot;permissions&quot;;
+</code></pre>
+<h3 id="sharenamerestypesharecompstats">/{shareName}?restype=share&amp;comp=stats</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions
+  transform: &gt;
+    if (!$.ShareStatistics) {
+        $.ShareStatistics = $.ShareStats;
+        delete $.ShareStats;
+        $.ShareStatistics.xml = { &quot;name&quot;: &quot;ShareStats&quot; };
+        $.ShareStatistics.properties.ShareUsageBytes.description = &quot;The approximate size of the data stored in bytes, rounded up to the nearest gigabyte. Note that this value may not include all recently created or recently resized files.&quot;;
+    }
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{shareName}?restype=share&amp;comp=stats&quot;]
+  transform: &gt;
+    $.get.responses[&quot;200&quot;].headers.ETag[&quot;x-az-demote-header&quot;] = true;
+    $.get.responses[&quot;200&quot;].headers[&quot;Last-Modified&quot;][&quot;x-az-demote-header&quot;] = true;
+    const def = $.get.responses[&quot;200&quot;].schema;
+    if (!def[&quot;$ref&quot;].endsWith(&quot;ShareStatistics&quot;)) {
+        const path = def[&quot;$ref&quot;].replace(/[#].*$/, &quot;#/definitions/ShareStatistics&quot;);
+        $.get.responses[&quot;200&quot;].schema = { &quot;$ref&quot;: path };
+    }
+</code></pre>
+<h3 id="sharenamedirectoryrestypedirectory">/{shareName}/{directory}?restype=directory</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{shareName}/{directory}?restype=directory&quot;]
+  transform: &gt;
+    $.put.responses[&quot;201&quot;].headers[&quot;x-ms-request-server-encrypted&quot;][&quot;x-az-demote-header&quot;] = true;
+    $.put.responses[&quot;201&quot;][&quot;x-az-response-name&quot;] = &quot;RawStorageDirectoryInfo&quot;;
+    $.get.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;RawStorageDirectoryProperties&quot;;
+</code></pre>
+<h3 id="sharenamedirectoryrestypedirectorycompmetadata">/{shareName}/{directory}?restype=directory&amp;comp=metadata</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{shareName}/{directory}?restype=directory&amp;comp=metadata&quot;]
+  transform: &gt;
+    $.put.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;RawStorageDirectoryInfo&quot;;
+    $.put.responses[&quot;200&quot;].description = &quot;Success, Directory created.&quot;;
+    $.put.responses[&quot;200&quot;].headers[&quot;x-ms-request-server-encrypted&quot;][&quot;x-az-demote-header&quot;] = true;
+    $.put.responses[&quot;200&quot;].headers[&quot;Last-Modified&quot;] = {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;format&quot;: &quot;date-time-rfc1123&quot;,
+      &quot;description&quot;: &quot;Returns the date and time the share was last modified. Any operation that modifies the directory or its properties updates the last modified time. Operations on files do not affect the last modified time of the directory.&quot;
+    };
+</code></pre>
+<h3 id="sharenamedirectoryrestypedirectorycompproperties">/{shareName}/{directory}?restype=directory&amp;comp=properties</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{shareName}/{directory}?restype=directory&amp;comp=properties&quot;]
+  transform: &gt;
+    $.put.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;RawStorageDirectoryInfo&quot;;
+    $.put.responses[&quot;200&quot;].description = &quot;Success, Directory created.&quot;;
+    $.put.responses[&quot;200&quot;].headers[&quot;x-ms-request-server-encrypted&quot;][&quot;x-az-demote-header&quot;] = true;
+    $.put.responses[&quot;200&quot;].headers[&quot;Last-Modified&quot;] = {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;format&quot;: &quot;date-time-rfc1123&quot;,
+      &quot;description&quot;: &quot;Returns the date and time the share was last modified. Any operation that modifies the directory or its properties updates the last modified time. Operations on files do not affect the last modified time of the directory.&quot;
+    };
+</code></pre>
+<h3 id="sharenamedirectoryrestypedirectorycomplist">/{shareName}/{directory}?restype=directory&amp;comp=list</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions
+  transform: &gt;
+    if (!$.FilesAndDirectoriesSegment) {
+        $.FilesAndDirectoriesSegment = $.ListFilesAndDirectoriesSegmentResponse;
+        delete $.ListFilesAndDirectoriesSegmentResponse;
+        $.FilesAndDirectoriesSegment.required = [&quot;ServiceEndpoint&quot;, &quot;ShareName&quot;, &quot;DirectoryPath&quot;, &quot;NextMarker&quot;];
+        const path = $.FilesAndDirectoriesSegment.properties.Segment[&quot;$ref&quot;].replace(/[#].*$/, &quot;#/definitions/&quot;);
+        $.FilesAndDirectoriesSegment.properties.DirectoryItems = {
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;items&quot;: { &quot;$ref&quot;: path + &quot;DirectoryItem&quot; },
+            &quot;xml&quot;: { &quot;name&quot;: &quot;Entries&quot;, &quot;wrapped&quot;: true }
+        };
+        $.FilesAndDirectoriesSegment.properties.FileItems = {
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;items&quot;: { &quot;$ref&quot;: path + &quot;FileItem&quot; },
+            &quot;xml&quot;: { &quot;name&quot;: &quot;Entries&quot;, &quot;wrapped&quot;: true }
+        };
+        delete $.FilesAndDirectoriesSegment.properties.Segment;
+        $.FilesAndDirectoriesSegment[&quot;x-az-public&quot;] = false;
+        delete $.FilesAndDirectoriesListSegment;
+    }
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{shareName}/{directory}?restype=directory&amp;comp=list&quot;]
+  transform: &gt;
+    $.get.responses[&quot;200&quot;].headers[&quot;Content-Type&quot;][&quot;x-az-demote-header&quot;] = true;
+    const def = $.get.responses[&quot;200&quot;].schema;
+    if (!def[&quot;$ref&quot;].endsWith(&quot;FilesAndDirectoriesSegment&quot;)) {
+        const path = def[&quot;$ref&quot;].replace(/[#].*$/, &quot;#/definitions/FilesAndDirectoriesSegment&quot;);
+        $.get.responses[&quot;200&quot;].schema = { &quot;$ref&quot;: path };
+    }
+</code></pre>
+<h3 id="storagehandlessegment">StorageHandlesSegment</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions
+  transform: &gt;
+    if (!$.StorageHandle) {
+        $.StorageHandle = $.HandleItem;
+        delete $.HandleItem;
+    }
+    if (!$.StorageHandlesSegment) {
+        $.StorageHandlesSegment = $.ListHandlesResponse;
+        delete $.ListHandlesResponse;
+        $.StorageHandlesSegment[&quot;x-az-public&quot;] = false;
+        const path = $.StorageHandlesSegment.properties.HandleList.items.$ref.replace(/[#].*$/, &quot;#/definitions/&quot;);
+        $.StorageHandlesSegment.properties.Handles = {
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;items&quot;: { &quot;$ref&quot;: path + &quot;StorageHandle&quot; },
+            &quot;xml&quot;: { &quot;name&quot;: &quot;Entries&quot;, &quot;wrapped&quot;: true }
+        };
+        delete $.StorageHandlesSegment.properties.HandleList;
+    }
+</code></pre>
+<h3 id="sharenamedirectorycomplisthandles">/{shareName}/{directory}?comp=listhandles</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{shareName}/{directory}?comp=listhandles&quot;]
+  transform: &gt;
+    $.get.responses[&quot;200&quot;].headers[&quot;Content-Type&quot;][&quot;x-az-demote-header&quot;] = true;
+    const def = $.get.responses[&quot;200&quot;].schema;
+    if (!def[&quot;$ref&quot;].endsWith(&quot;StorageHandlesSegment&quot;)) {
+        const path = def[&quot;$ref&quot;].replace(/[#].*$/, &quot;#/definitions/StorageHandlesSegment&quot;);
+        $.get.responses[&quot;200&quot;].schema = { &quot;$ref&quot;: path };
+    }
+</code></pre>
+<h3 id="sharenamedirectoryfilenamecomplisthandles">/{shareName}/{directory}/{fileName}?comp=listhandles</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{shareName}/{directory}/{fileName}?comp=listhandles&quot;]
+  transform: &gt;
+    $.get.responses[&quot;200&quot;].headers[&quot;Content-Type&quot;][&quot;x-az-demote-header&quot;] = true;
+    const def = $.get.responses[&quot;200&quot;].schema;
+    if (!def[&quot;$ref&quot;].endsWith(&quot;StorageHandlesSegment&quot;)) {
+        const path = def[&quot;$ref&quot;].replace(/[#].*$/, &quot;#/definitions/StorageHandlesSegment&quot;);
+        $.get.responses[&quot;200&quot;].schema = { &quot;$ref&quot;: path };
+    }
+</code></pre>
+<h3 id="sharenamedirectorycompforceclosehandles">/{shareName}/{directory}?comp=forceclosehandles</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{shareName}/{directory}?comp=forceclosehandles&quot;]
+  transform: &gt;
+    $.put.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;StorageClosedHandlesSegment&quot;;
+</code></pre>
+<h3 id="sharenamedirectoryfilenamecompforceclosehandles">/{shareName}/{directory}/{fileName}?comp=forceclosehandles</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{shareName}/{directory}/{fileName}?comp=forceclosehandles&quot;]
+  transform: &gt;
+    $.put.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;StorageClosedHandlesSegment&quot;;
+</code></pre>
+<h3 id="sharenamedirectoryfilename">/{shareName}/{directory}/{fileName}</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{shareName}/{directory}/{fileName}&quot;]
+  transform: &gt;
+    $.put.responses[&quot;201&quot;][&quot;x-az-response-name&quot;] = &quot;RawStorageFileInfo&quot;;
+    $.get.responses[&quot;200&quot;].headers[&quot;Content-MD5&quot;][&quot;x-ms-client-name&quot;] = &quot;ContentHash&quot;;
+    $.get.responses[&quot;200&quot;].headers[&quot;x-ms-copy-source&quot;].format = &quot;url&quot;;
+    $.get.responses[&quot;200&quot;].headers[&quot;x-ms-copy-status&quot;][&quot;x-ms-enum&quot;].name = &quot;CopyStatus&quot;;
+    $.get.responses[&quot;200&quot;].headers[&quot;x-ms-content-md5&quot;][&quot;x-ms-client-name&quot;] = &quot;FileContentHash&quot;;
+    $.get.responses[&quot;200&quot;].headers[&quot;Content-Encoding&quot;].type = &quot;array&quot;;
+    $.get.responses[&quot;200&quot;].headers[&quot;Content-Encoding&quot;].collectionFormat = &quot;csv&quot;;
+    $.get.responses[&quot;200&quot;].headers[&quot;Content-Encoding&quot;].items = { &quot;type&quot;: &quot;string&quot; };
+    $.get.responses[&quot;200&quot;].headers[&quot;Content-Language&quot;].type = &quot;array&quot;;
+    $.get.responses[&quot;200&quot;].headers[&quot;Content-Language&quot;].collectionFormat = &quot;csv&quot;;
+    $.get.responses[&quot;200&quot;].headers[&quot;Content-Language&quot;].items = { &quot;type&quot;: &quot;string&quot; };
+    $.get.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;FlattenedStorageFileProperties&quot;;
+    $.get.responses[&quot;200&quot;][&quot;x-az-public&quot;] = false;
+    $.get.responses[&quot;200&quot;][&quot;x-az-response-schema-name&quot;] = &quot;Content&quot;;
+    $.get.responses[&quot;206&quot;].headers[&quot;Content-MD5&quot;][&quot;x-ms-client-name&quot;] = &quot;ContentHash&quot;;
+    $.get.responses[&quot;206&quot;].headers[&quot;x-ms-copy-source&quot;].format = &quot;url&quot;;
+    $.get.responses[&quot;206&quot;].headers[&quot;x-ms-copy-status&quot;][&quot;x-ms-enum&quot;].name = &quot;CopyStatus&quot;;
+    $.get.responses[&quot;206&quot;].headers[&quot;x-ms-content-md5&quot;][&quot;x-ms-client-name&quot;] = &quot;FileContentHash&quot;;
+    $.get.responses[&quot;206&quot;].headers[&quot;Content-Encoding&quot;].type = &quot;array&quot;;
+    $.get.responses[&quot;206&quot;].headers[&quot;Content-Encoding&quot;].collectionFormat = &quot;csv&quot;;
+    $.get.responses[&quot;206&quot;].headers[&quot;Content-Encoding&quot;].items = { &quot;type&quot;: &quot;string&quot; };
+    $.get.responses[&quot;206&quot;].headers[&quot;Content-Language&quot;].type = &quot;array&quot;;
+    $.get.responses[&quot;206&quot;].headers[&quot;Content-Language&quot;].collectionFormat = &quot;csv&quot;;
+    $.get.responses[&quot;206&quot;].headers[&quot;Content-Language&quot;].items = { &quot;type&quot;: &quot;string&quot; };
+    $.get.responses[&quot;206&quot;][&quot;x-az-response-name&quot;] = &quot;FlattenedStorageFileProperties&quot;;
+    $.get.responses[&quot;206&quot;][&quot;x-az-public&quot;] = false;
+    $.get.responses[&quot;206&quot;][&quot;x-az-response-schema-name&quot;] = &quot;Content&quot;;
+    $.head.responses[&quot;200&quot;].headers[&quot;Content-MD5&quot;][&quot;x-ms-client-name&quot;] = &quot;ContentHash&quot;;
+    $.head.responses[&quot;200&quot;].headers[&quot;Content-Encoding&quot;].type = &quot;array&quot;;
+    $.head.responses[&quot;200&quot;].headers[&quot;Content-Encoding&quot;].collectionFormat = &quot;csv&quot;;
+    $.head.responses[&quot;200&quot;].headers[&quot;Content-Encoding&quot;].items = { &quot;type&quot;: &quot;string&quot; };
+    $.head.responses[&quot;200&quot;].headers[&quot;Content-Language&quot;].type = &quot;array&quot;;
+    $.head.responses[&quot;200&quot;].headers[&quot;Content-Language&quot;].collectionFormat = &quot;csv&quot;;
+    $.head.responses[&quot;200&quot;].headers[&quot;Content-Language&quot;].items = { &quot;type&quot;: &quot;string&quot; };
+    $.head.responses[&quot;200&quot;].headers[&quot;x-ms-copy-status&quot;][&quot;x-ms-enum&quot;].name = &quot;CopyStatus&quot;;
+    $.head.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;RawStorageFileProperties&quot;;
+    $.head.responses.default = {
+        &quot;description&quot;: &quot;Failure&quot;,
+        &quot;x-az-response-name&quot;: &quot;FailureNoContent&quot;,
+        &quot;x-az-create-exception&quot;: true,
+        &quot;x-az-public&quot;: false,
+        &quot;headers&quot;: { &quot;x-ms-error-code&quot;: { &quot;x-ms-client-name&quot;: &quot;ErrorCode&quot;, &quot;type&quot;: &quot;string&quot; } }
+    };
+- from: swagger-document
+  where: $.parameters.FileContentLanguage
+  transform: &gt;
+    $.type = &quot;array&quot;;
+    $.collectionFormat = &quot;csv&quot;;
+    $.items = { &quot;type&quot;: &quot;string&quot; };
+- from: swagger-document
+  where: $.parameters.FileContentEncoding
+  transform: &gt;
+    $.type = &quot;array&quot;;
+    $.collectionFormat = &quot;csv&quot;;
+    $.items = { &quot;type&quot;: &quot;string&quot; };
+</code></pre>
+<h3 id="md5-to-hash">MD5 to Hash</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.parameters.ContentMD5[&quot;x-ms-client-name&quot;]
+  transform: return &quot;contentHash&quot;;
+- from: swagger-document
+  where: $.parameters.FileContentMD5[&quot;x-ms-client-name&quot;]
+  transform: return &quot;fileContentHash&quot;;
+- from: swagger-document
+  where: $.parameters.GetRangeContentMD5[&quot;x-ms-client-name&quot;]
+  transform: return &quot;rangeGetContentHash&quot;;
+</code></pre>
+<h3 id="sharenamedirectoryfilenamecompproperties">/{shareName}/{directory}/{fileName}?comp=properties</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{shareName}/{directory}/{fileName}?comp=properties&quot;]
+  transform: &gt;
+    $.put.operationId = &quot;File_SetProperties&quot;;
+    $.put.responses[&quot;200&quot;].description = &quot;Success, File created.&quot;;
+    $.put.responses[&quot;200&quot;].headers[&quot;Last-Modified&quot;].description = &quot;Returns the date and time the share was last modified. Any operation that modifies the directory or its properties updates the last modified time. Operations on files do not affect the last modified time of the directory.&quot;;
+    $.put.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;RawStorageFileInfo&quot;;
+</code></pre>
+<h3 id="sharenamedirectoryfilenamecompmetadata">/{shareName}/{directory}/{fileName}?comp=metadata</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{shareName}/{directory}/{fileName}?comp=metadata&quot;]
+  transform: &gt;
+    $.put.responses[&quot;200&quot;].description = &quot;Success, File created.&quot;;
+    $.put.responses[&quot;200&quot;].headers[&quot;Last-Modified&quot;] = {
+        &quot;type&quot;: &quot;string&quot;,
+        &quot;format&quot;: &quot;date-time-rfc1123&quot;,
+        &quot;description&quot;: &quot;Returns the date and time the share was last modified. Any operation that modifies the directory or its properties updates the last modified time. Operations on files do not affect the last modified time of the directory.&quot;
+    };
+    $.put.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;RawStorageFileInfo&quot;;
+</code></pre>
+<h3 id="sharenamedirectoryfilenamecomprange">/{shareName}/{directory}/{fileName}?comp=range</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{shareName}/{directory}/{fileName}?comp=range&quot;]
+  transform: &gt;
+    $.put.responses[&quot;201&quot;].headers[&quot;Content-MD5&quot;][&quot;x-ms-client-name&quot;] = &quot;ContentHash&quot;;
+    $.put.responses[&quot;201&quot;][&quot;x-az-response-name&quot;] = &quot;StorageFileUploadInfo&quot;;
+</code></pre>
+<h3 id="sharenamedirectoryfilenamecomprangelist">/{shareName}/{directory}/{fileName}?comp=rangelist</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{shareName}/{directory}/{fileName}?comp=rangelist&quot;]
+  transform: &gt;
+    $.get.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;StorageFileRangeInfo&quot;;
+    $.get.responses[&quot;200&quot;][&quot;x-az-response-schema-name&quot;] = &quot;Ranges&quot;;
+</code></pre>
+<h3 id="sharenamedirectoryfilenamecompcopy">/{shareName}/{directory}/{fileName}?comp=copy</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{shareName}/{directory}/{fileName}?comp=copy&quot;]
+  transform: &gt;
+    $.put.responses[&quot;202&quot;].headers[&quot;x-ms-copy-status&quot;][&quot;x-ms-enum&quot;].name = &quot;CopyStatus&quot;;
+    $.put.responses[&quot;202&quot;][&quot;x-az-response-name&quot;] = &quot;StorageFileCopyInfo&quot;;
+- from: swagger-document
+  where: $.parameters.CopySource
+  transform: &gt;
+    $.format = &quot;url&quot;;
+</code></pre>
+<h3 id="directoryitem">DirectoryItem</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions.DirectoryItem
+  transform: $[&quot;x-az-public&quot;] = false
+</code></pre>
+<h3 id="fileitem">FileItem</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions.FileItem
+  transform: $[&quot;x-az-public&quot;] = false
+</code></pre>
+<h3 id="errorcode">ErrorCode</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions.ErrorCode[&quot;x-ms-enum&quot;]
+  transform: &gt;
+    $.name = &quot;FileErrorCode&quot;;
+</code></pre>
+<h3 id="fileproperty">FileProperty</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions.FileProperty
+  transform: &gt;
+    $[&quot;x-az-public&quot;] = false;
+</code></pre>
+<h3 id="metrics">Metrics</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions.Metrics
+  transform: &gt;
+    $.type = &quot;object&quot;;
+</code></pre>
+<h3 id="storageerror">StorageError</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions.StorageError
+  transform: &gt;
+    $[&quot;x-az-public&quot;] = false;
+    $.properties.Code = { &quot;type&quot;: &quot;string&quot; };
+</code></pre>
+<h3 id="shareitemproperties">ShareItemProperties</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions.ShareItem
+  transform: &gt;
+    const def = $.properties.Properties;
+    if (!def[&quot;$ref&quot;].endsWith(&quot;ShareItemProperties&quot;)) {
+        const path = def[&quot;$ref&quot;].replace(/[#].*$/, &quot;#/definitions/ShareItemProperties&quot;);
+        $.properties.Properties = { &quot;$ref&quot;: path };
+    }
+</code></pre>
+<h3 id="shareitemproperties-1">ShareItemProperties</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions
+  transform: &gt;
+    if (!$.ShareItemProperties) {
+        $.ShareItemProperties = $.ShareProperties;
+        delete $.ShareProperties;
+        delete $.ShareItemProperties.required;
+        $.ShareItemProperties.xml = { &quot;name&quot;: &quot;Properties&quot; };
+    }
+</code></pre>
+<h3 id="filepermission">FilePermission</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.parameters.FilePermission
+  transform: &gt;
+    $.description = &quot;If specified the permission (security descriptor) shall be set for the directory/file. This header can be used if Permission size is &amp;lt;= 8KB, else x-ms-file-permission-key header shall be used. Default value: Inherit. If SDDL is specified as input, it must have owner, group and dacl. Note: Only one of the x-ms-file-permission or x-ms-file-permission-key should be specified.&quot;;
+</code></pre>
+<h3 id="times-arent-required">Times aren't required</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.parameters.FileCreationTime
+  transform: &gt;
+    delete $.format;
+- from: swagger-document
+  where: $.parameters.FileLastWriteTime
+  transform: &gt;
+    delete $.format;
+</code></pre>
+<h3 id="temporarily-work-around-proper-json-support-for-file-permissions">Temporarily work around proper JSON support for file permissions</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{shareName}?restype=share&amp;comp=filepermission&quot;]
+  transform: &gt;
+    delete $.put.consumes;
+    $.put.responses[&quot;201&quot;][&quot;x-az-response-name&quot;] = &quot;PermissionInfo&quot;;
+    delete $.get.produces;
+- from: swagger-document
+  where: $.parameters.SharePermission
+  transform: &gt;
+    $.schema = { &quot;type&quot;: &quot;string&quot; };
+    $[&quot;x-ms-client-name&quot;] = &quot;sharePermissionJson&quot;;
+- from: swagger-document
+  where: $.definitions.SharePermission
+  transform: &gt;
+    $.type = &quot;string&quot;;
+    delete $.required;
+    delete $.properties;
 </code></pre>
 </article>
           </div>
@@ -109,7 +639,7 @@ azure-track2-csharp: true
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/docfx_project/articles/sdk/Storage/Azure.Storage.Files/swagger/readme.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/docfx_project/articles/sdk/Storage/Azure.Storage.Files/swagger/readme.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

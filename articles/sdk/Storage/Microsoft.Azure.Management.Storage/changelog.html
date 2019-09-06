@@ -79,6 +79,16 @@
             <article class="content wrap" id="_content" data-uid="">
 <h2 id="microsoftazuremanagementstorage-release-notes">Microsoft.Azure.Management.Storage release notes</h2>
 
+<h3 id="changes-in-1300">Changes in 13.0.0</h3>
+<ul>
+<li>Add back StorageManagementClient constructor that takes HttpClient as a parameter</li>
+<li>Support List Blob Service on a Storage account</li>
+</ul>
+<p><strong>Breaking changes</strong></p>
+<ul>
+<li>ManagementPolicy child property type DateAfterModification.DaysAfterModificationGreaterThan, DateAfterCreation.DaysAfterCreationGreaterThan, changed from int to double.</li>
+<li>Class ListContainerItems is removed, since BlobContainers.List() return value type change from ListContainerItems to IPage<listcontaineritem>.</listcontaineritem></li>
+</ul>
 <h3 id="changes-in-1200">Changes in 12.0.0</h3>
 <ul>
 <li>Support Create or Update Storage Account with AzureFilesIdentityBasedAuthentication.DirectoryServiceOptions as 'AADDS' or 'None'.</li>
@@ -180,7 +190,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/docfx_project/articles/sdk/Storage/Microsoft.Azure.Management.Storage/changelog.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/docfx_project/articles/sdk/Storage/Microsoft.Azure.Management.Storage/changelog.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

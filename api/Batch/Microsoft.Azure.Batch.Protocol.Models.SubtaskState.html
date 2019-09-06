@@ -104,35 +104,50 @@
     <tbody>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_SubtaskState_Completed">Completed</td>
-        <td><p>The task is no longer eligible to run, usually because the task has
-finished successfully, or the task has finished unsuccessfully and
-has exhausted its retry limit. A task is also marked as completed
-if an error occurred launching the task, or when the task has been
+        <td><p>The Task is no longer eligible to run, usually because the Task has
+finished successfully, or the Task has finished unsuccessfully and
+has exhausted its retry limit. A Task is also marked as completed
+if an error occurred launching the Task, or when the Task has been
 terminated.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_SubtaskState_Preparing">Preparing</td>
-        <td><p>The task has been assigned to a compute node, but is waiting for a
-required Job Preparation task to complete on the node. If the Job
-Preparation task succeeds, the task will move to running. If the
-Job Preparation task fails, the task will return to active and will
-be eligible to be assigned to a different node.</p>
+        <td><p>The Task has been assigned to a Compute Node, but is waiting for a
+required Job Preparation Task to complete on the Compute Node. If
+the Job Preparation Task succeeds, the Task will move to running.
+If the Job Preparation Task fails, the Task will return to active
+and will be eligible to be assigned to a different Compute Node.</p>
 </td>
       </tr>
       <tr>
         <td id="Microsoft_Azure_Batch_Protocol_Models_SubtaskState_Running">Running</td>
-        <td><p>The task is running on a compute node. This includes task-level
+        <td><p>The Task is running on a Compute Node. This includes task-level
 preparation such as downloading resource files or deploying
-application packages specified on the task - it does not
-necessarily mean that the task command line has started executing.</p>
+Packages specified on the Task - it does not necessarily mean that
+the Task command line has started executing.</p>
 </td>
       </tr>
     </tbody>
   </thead></thead></table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;SubtaskState, TConfiguration&gt;(String, TConfiguration)</a>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;SubtaskState, TConfiguration&gt;(TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../KeyVault/Azure.Security.KeyVault.Secrets.AzureClientBuilderExtensions.html#Azure_Security_KeyVault_Secrets_AzureClientBuilderExtensions_AddSecretClient__2___0___1_">AzureClientBuilderExtensions.AddSecretClient&lt;SubtaskState, TConfiguration&gt;(TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../OtherAPIs/Azure.Data.AppConfiguration.AzureClientBuilderExtensions.html#Azure_Data_AppConfiguration_AzureClientBuilderExtensions_AddConfigurationClient__2___0___1_">AzureClientBuilderExtensions.AddConfigurationClient&lt;SubtaskState, TConfiguration&gt;(TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../Storage/Azure.Storage.Blobs.AzureClientBuilderExtensions.html#Azure_Storage_Blobs_AzureClientBuilderExtensions_AddBlobServiceClient__2___0___1_">AzureClientBuilderExtensions.AddBlobServiceClient&lt;SubtaskState, TConfiguration&gt;(TConfiguration)</a>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddFileServiceClient&lt;Microsoft.Azure.Batch.Protocol.Models.SubtaskState, TConfiguration&gt;(TConfiguration)</span>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient&lt;Microsoft.Azure.Batch.Protocol.Models.SubtaskState, TConfiguration&gt;(TConfiguration)</span>
   </div>
 </article>
           </div>
@@ -142,10 +157,10 @@ necessarily mean that the task command line has started executing.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_SubtaskState.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.SubtaskState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_SubtaskState.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.SubtaskState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/SubtaskState.cs/#L21" class="contribution-link">View Source</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/SubtaskState.cs/#L21" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

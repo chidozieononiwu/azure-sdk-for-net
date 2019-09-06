@@ -83,8 +83,8 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask" class="text-break">Class JobReleaseTask
   </h1>
-  <div class="markdown level0 summary"><p>A Job Release task to run on job completion on any compute node where
-the job has run.</p>
+  <div class="markdown level0 summary"><p>A Job Release Task to run on Job completion on any Compute Node where
+the Job has run.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -123,32 +123,32 @@ the job has run.</p>
     <pre><code class="lang-csharp hljs">public class JobReleaseTask</code></pre>
   </div>
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>The Job Release task runs when the job ends, because of one of the
+  <div class="markdown level0 remarks"><p>The Job Release Task runs when the Job ends, because of one of the
 following: The user calls the Terminate Job API, or the Delete Job API
-while the job is still active, the job's maximum wall clock time
-constraint is reached, and the job is still active, or the job's Job
-Manager task completed, and the job is configured to terminate when the
-Job Manager completes. The Job Release task runs on each compute node
-where tasks of the job have run and the Job Preparation task ran and
-completed. If you reimage a compute node after it has run the Job
-Preparation task, and the job ends without any further tasks of the job
-running on that compute node (and hence the Job Preparation task does
-not re-run), then the Job Release task does not run on that node. If a
-compute node reboots while the Job Release task is still running, the
-Job Release task runs again when the compute node starts up. The job is
-not marked as complete until all Job Release tasks have completed. The
-Job Release task runs in the background. It does not occupy a
-scheduling slot; that is, it does not count towards the maxTasksPerNode
-limit specified on the pool.</p>
+while the Job is still active, the Job's maximum wall clock time
+constraint is reached, and the Job is still active, or the Job's Job
+Manager Task completed, and the Job is configured to terminate when the
+Job Manager completes. The Job Release Task runs on each Node where
+Tasks of the Job have run and the Job Preparation Task ran and
+completed. If you reimage a Node after it has run the Job Preparation
+Task, and the Job ends without any further Tasks of the Job running on
+that Node (and hence the Job Preparation Task does not re-run), then
+the Job Release Task does not run on that Compute Node. If a Node
+reboots while the Job Release Task is still running, the Job Release
+Task runs again when the Compute Node starts up. The Job is not marked
+as complete until all Job Release Tasks have completed. The Job Release
+Task runs in the background. It does not occupy a scheduling slot; that
+is, it does not count towards the maxTasksPerNode limit specified on
+the Pool.</p>
 </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask__ctor.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask__ctor.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobReleaseTask.cs/#L46">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobReleaseTask.cs/#L46">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.#ctor">JobReleaseTask()</h4>
@@ -161,10 +161,10 @@ limit specified on the pool.</p>
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask__ctor_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskContainerSettings_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_ResourceFile__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_EnvironmentSetting__System_Nullable_System_TimeSpan__System_Nullable_System_TimeSpan__Microsoft_Azure_Batch_Protocol_Models_UserIdentity_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.%23ctor(System.String%2CSystem.String%2CMicrosoft.Azure.Batch.Protocol.Models.TaskContainerSettings%2CSystem.Collections.Generic.IList%7BMicrosoft.Azure.Batch.Protocol.Models.ResourceFile%7D%2CSystem.Collections.Generic.IList%7BMicrosoft.Azure.Batch.Protocol.Models.EnvironmentSetting%7D%2CSystem.Nullable%7BSystem.TimeSpan%7D%2CSystem.Nullable%7BSystem.TimeSpan%7D%2CMicrosoft.Azure.Batch.Protocol.Models.UserIdentity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask__ctor_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskContainerSettings_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_ResourceFile__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_EnvironmentSetting__System_Nullable_System_TimeSpan__System_Nullable_System_TimeSpan__Microsoft_Azure_Batch_Protocol_Models_UserIdentity_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.%23ctor(System.String%2CSystem.String%2CMicrosoft.Azure.Batch.Protocol.Models.TaskContainerSettings%2CSystem.Collections.Generic.IList%7BMicrosoft.Azure.Batch.Protocol.Models.ResourceFile%7D%2CSystem.Collections.Generic.IList%7BMicrosoft.Azure.Batch.Protocol.Models.EnvironmentSetting%7D%2CSystem.Nullable%7BSystem.TimeSpan%7D%2CSystem.Nullable%7BSystem.TimeSpan%7D%2CMicrosoft.Azure.Batch.Protocol.Models.UserIdentity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobReleaseTask.cs/#L84">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobReleaseTask.cs/#L84">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask__ctor_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskContainerSettings_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_ResourceFile__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_EnvironmentSetting__System_Nullable_System_TimeSpan__System_Nullable_System_TimeSpan__Microsoft_Azure_Batch_Protocol_Models_UserIdentity_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.#ctor(System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskContainerSettings,System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.ResourceFile},System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting},System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},Microsoft.Azure.Batch.Protocol.Models.UserIdentity)">JobReleaseTask(String, String, TaskContainerSettings, IList&lt;ResourceFile&gt;, IList&lt;EnvironmentSetting&gt;, Nullable&lt;TimeSpan&gt;, Nullable&lt;TimeSpan&gt;, UserIdentity)</h4>
@@ -189,28 +189,28 @@ limit specified on the pool.</p>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">commandLine</span></td>
         <td><p>The command line of the Job Release
-task.</p>
+Task.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">id</span></td>
         <td><p>A string that uniquely identifies the Job Release
-task within the job.</p>
+Task within the Job.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskContainerSettings.html">TaskContainerSettings</a></td>
         <td><span class="parametername">containerSettings</span></td>
         <td><p>The settings for the container
-under which the Job Release task runs.</p>
+under which the Job Release Task runs.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ResourceFile.html">ResourceFile</a>&gt;</td>
         <td><span class="parametername">resourceFiles</span></td>
         <td><p>A list of files that the Batch service
-will download to the compute node before running the command line.
+will download to the Compute Node before running the command line.
 There is a maximum size for the list of resource files.  When the
 max size is exceeded, the request will fail and the response error
 code will be RequestEntityTooLarge. If this occurs, the collection
@@ -223,15 +223,15 @@ Containers.</p>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting.html">EnvironmentSetting</a>&gt;</td>
         <td><span class="parametername">environmentSettings</span></td>
         <td><p>A list of environment variable
-settings for the Job Release task.</p>
+settings for the Job Release Task.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
         <td><span class="parametername">maxWallClockTime</span></td>
         <td><p>The maximum elapsed time that the
-Job Release task may run on a given compute node, measured from the
-time the task starts. If the task does not complete within the time
+Job Release Task may run on a given Compute Node, measured from the
+time the Task starts. If the Task does not complete within the time
 limit, the Batch service terminates it. The default value is 15
 minutes. You may not specify a timeout longer than 15 minutes. If
 you do, the Batch service rejects it with an error; if you are
@@ -242,9 +242,9 @@ Request).</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
         <td><span class="parametername">retentionTime</span></td>
-        <td><p>The minimum time to retain the task
-directory for the Job Release task on the compute node. After this
-time, the Batch service may delete the task directory and all its
+        <td><p>The minimum time to retain the Task
+directory for the Job Release Task on the Compute Node. After this
+time, the Batch service may delete the Task directory and all its
 contents.</p>
 </td>
       </tr>
@@ -252,7 +252,7 @@ contents.</p>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.UserIdentity.html">UserIdentity</a></td>
         <td><span class="parametername">userIdentity</span></td>
         <td><p>The user identity under which the Job
-Release task runs.</p>
+Release Task runs.</p>
 </td>
       </tr>
     </tbody>
@@ -261,14 +261,14 @@ Release task runs.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_CommandLine.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.CommandLine%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_CommandLine.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.CommandLine%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobReleaseTask.cs/#L133">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobReleaseTask.cs/#L133">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_CommandLine_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.CommandLine*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_CommandLine" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.CommandLine">CommandLine</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the command line of the Job Release task.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the command line of the Job Release Task.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -297,21 +297,21 @@ expansion. If you want to take advantage of such features, you
 should invoke the shell in the command line, for example using &quot;cmd
 /c MyCommand&quot; in Windows or &quot;/bin/sh -c MyCommand&quot; in Linux. If the
 command line refers to file paths, it should use a relative path
-(relative to the task working directory), or use the Batch provided
+(relative to the Task working directory), or use the Batch provided
 environment variable
 (<a href="https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables">https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables</a>).</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_ContainerSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.ContainerSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_ContainerSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.ContainerSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobReleaseTask.cs/#L150">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobReleaseTask.cs/#L150">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_ContainerSettings_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.ContainerSettings*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_ContainerSettings" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.ContainerSettings">ContainerSettings</h4>
   <div class="markdown level1 summary"><p>Gets or sets the settings for the container under which the Job
-Release task runs.</p>
+Release Task runs.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -336,8 +336,8 @@ Release task runs.</p>
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_ContainerSettings_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>When this is specified, all directories recursively below the
 AZ_BATCH_NODE_ROOT_DIR (the root of Azure Batch directories on the
-node) are mapped into the container, all task environment variables
-are mapped into the container, and the task command line is
+node) are mapped into the container, all Task environment variables
+are mapped into the container, and the Task command line is
 executed in the container. Files produced in the container outside
 of AZ_BATCH_NODE_ROOT_DIR might not be reflected to the host disk,
 meaning that Batch file APIs will not be able to access those
@@ -345,15 +345,15 @@ files.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_EnvironmentSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.EnvironmentSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_EnvironmentSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.EnvironmentSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobReleaseTask.cs/#L173">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobReleaseTask.cs/#L173">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_EnvironmentSettings_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.EnvironmentSettings*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_EnvironmentSettings" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.EnvironmentSettings">EnvironmentSettings</h4>
   <div class="markdown level1 summary"><p>Gets or sets a list of environment variable settings for the Job
-Release task.</p>
+Release Task.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -377,15 +377,15 @@ Release task.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_Id.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_Id.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobReleaseTask.cs/#L116">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobReleaseTask.cs/#L116">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_Id_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.Id*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_Id" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.Id">Id</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a string that uniquely identifies the Job Release task
-within the job.</p>
+  <div class="markdown level1 summary"><p>Gets or sets a string that uniquely identifies the Job Release Task
+within the Job.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -411,24 +411,24 @@ within the job.</p>
   <div class="markdown level1 remarks"><p>The ID can contain any combination of alphanumeric characters
 including hyphens and underscores and cannot contain more than 64
 characters. If you do not specify this property, the Batch service
-assigns a default value of 'jobrelease'. No other task in the job
-can have the same ID as the Job Release task. If you try to submit
-a task with the same id, the Batch service rejects the request with
+assigns a default value of 'jobrelease'. No other Task in the Job
+can have the same ID as the Job Release Task. If you try to submit
+a Task with the same id, the Batch service rejects the request with
 error code TaskIdSameAsJobReleaseTask; if you are calling the REST
 API directly, the HTTP status code is 409 (Conflict).</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_MaxWallClockTime.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.MaxWallClockTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_MaxWallClockTime.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.MaxWallClockTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobReleaseTask.cs/#L185">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobReleaseTask.cs/#L185">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_MaxWallClockTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.MaxWallClockTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_MaxWallClockTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.MaxWallClockTime">MaxWallClockTime</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the maximum elapsed time that the Job Release task may
-run on a given compute node, measured from the time the task
-starts. If the task does not complete within the time limit, the
+  <div class="markdown level1 summary"><p>Gets or sets the maximum elapsed time that the Job Release Task may
+run on a given Compute Node, measured from the time the Task
+starts. If the Task does not complete within the time limit, the
 Batch service terminates it. The default value is 15 minutes. You
 may not specify a timeout longer than 15 minutes. If you do, the
 Batch service rejects it with an error; if you are calling the REST
@@ -456,15 +456,15 @@ API directly, the HTTP status code is 400 (Bad Request).</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_ResourceFiles.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.ResourceFiles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_ResourceFiles.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.ResourceFiles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobReleaseTask.cs/#L166">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobReleaseTask.cs/#L166">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_ResourceFiles_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.ResourceFiles*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_ResourceFiles" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.ResourceFiles">ResourceFiles</h4>
   <div class="markdown level1 summary"><p>Gets or sets a list of files that the Batch service will download
-to the compute node before running the command line.  There is a
+to the Compute Node before running the command line.  There is a
 maximum size for the list of resource files.  When the max size is
 exceeded, the request will fail and the response error code will be
 RequestEntityTooLarge. If this occurs, the collection of
@@ -492,21 +492,21 @@ ResourceFiles must be reduced in size. This can be achieved using
     </tbody>
   </table>
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_ResourceFiles_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Files listed under this element are located in the task's working
+  <div class="markdown level1 remarks"><p>Files listed under this element are located in the Task's working
 directory.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_RetentionTime.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.RetentionTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_RetentionTime.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.RetentionTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobReleaseTask.cs/#L197">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobReleaseTask.cs/#L197">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_RetentionTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.RetentionTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_RetentionTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.RetentionTime">RetentionTime</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the minimum time to retain the task directory for the
-Job Release task on the compute node. After this time, the Batch
-service may delete the task directory and all its contents.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the minimum time to retain the Task directory for the
+Job Release Task on the Compute Node. After this time, the Batch
+service may delete the Task directory and all its contents.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -529,19 +529,19 @@ service may delete the task directory and all its contents.</p>
     </tbody>
   </table>
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_RetentionTime_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The default is 7 days, i.e. the task directory will be retained for
-7 days unless the compute node is removed or the job is deleted.</p>
+  <div class="markdown level1 remarks"><p>The default is 7 days, i.e. the Task directory will be retained for
+7 days unless the Compute Node is removed or the Job is deleted.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_UserIdentity.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.UserIdentity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_UserIdentity.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.UserIdentity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobReleaseTask.cs/#L208">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobReleaseTask.cs/#L208">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_UserIdentity_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.UserIdentity*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_UserIdentity" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask.UserIdentity">UserIdentity</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the user identity under which the Job Release task
+  <div class="markdown level1 summary"><p>Gets or sets the user identity under which the Job Release Task
 runs.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -565,12 +565,27 @@ runs.</p>
     </tbody>
   </table>
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask_UserIdentity_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If omitted, the task runs as a non-administrative user unique to
-the task.</p>
+  <div class="markdown level1 remarks"><p>If omitted, the Task runs as a non-administrative user unique to
+the Task.</p>
 </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../KeyVault/Azure.Security.KeyVault.Secrets.AzureClientBuilderExtensions.html#Azure_Security_KeyVault_Secrets_AzureClientBuilderExtensions_AddSecretClient__2___0___1_">AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../OtherAPIs/Azure.Data.AppConfiguration.AzureClientBuilderExtensions.html#Azure_Data_AppConfiguration_AzureClientBuilderExtensions_AddConfigurationClient__2___0___1_">AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../Storage/Azure.Storage.Blobs.AzureClientBuilderExtensions.html#Azure_Storage_Blobs_AzureClientBuilderExtensions_AddBlobServiceClient__2___0___1_">AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
 </article>
           </div>
@@ -580,10 +595,10 @@ the task.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobReleaseTask.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobReleaseTask.cs/#L41" class="contribution-link">View Source</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobReleaseTask.cs/#L41" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

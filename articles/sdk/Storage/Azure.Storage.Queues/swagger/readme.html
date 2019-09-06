@@ -83,15 +83,8 @@
 <p>see <a href="https://aka.ms/autorest">https://aka.ms/autorest</a></p>
 </blockquote>
 <h2 id="configuration">Configuration</h2>
-<pre><code class="lang-yaml">
-# Prevent swagger validation because it complains about vendor extensions
-# instead of ignoring them per the spec
-pipeline:
-  swagger-document/individual/schema-validator:
-     scope: unused
-
-# Generate queue storage
-input-file: ./queue.json
+<pre><code class="lang-yaml"># Generate queue storage
+input-file: https://raw.githubusercontent.com/Azure/azure-rest-api-specs/storage-dataplane-preview/specification/storage/data-plane/Microsoft.QueueStorage/preview/2018-03-28/queue.json
 output-folder: ../src/Generated
 clear-output-folder: false
 
@@ -99,7 +92,261 @@ clear-output-folder: false
 # use: C:\src\Storage\Swagger\Generator
 # We can't use relative paths here, so use a relative path in generate.ps1
 azure-track2-csharp: true
-
+</code></pre>
+<h2 id="customizations-for-track-2-generator">Customizations for Track 2 Generator</h2>
+<p>See the <a href="https://github.com/Azure/autorest/tree/master/Samples/3b-custom-transformations">AutoRest samples</a>
+for more about how we're customizing things.</p>
+<h3 id="x-ms-code-generation-settings">x-ms-code-generation-settings</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.info[&quot;x-ms-code-generation-settings&quot;]
+  transform: &gt;
+    $.namespace = &quot;Azure.Storage.Queues&quot;;
+    $[&quot;client-name&quot;] = &quot;QueueRestClient&quot;;
+    $[&quot;client-extensions-name&quot;] = &quot;QueuesExtensions&quot;;
+    $[&quot;client-model-factory-name&quot;] = &quot;QueuesModelFactory&quot;;
+    $[&quot;x-az-skip-path-components&quot;] = true;
+    $[&quot;x-az-include-sync-methods&quot;] = true;
+    $[&quot;x-az-public&quot;] = false;
+</code></pre>
+<h3 id="clean-up-failure-response">Clean up Failure response</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;]..responses.default
+  transform: &gt;
+    $[&quot;x-az-response-name&quot;] = &quot;StorageErrorResult&quot;;
+    $[&quot;x-az-create-exception&quot;] = true;
+    $[&quot;x-az-public&quot;] = false;
+    $.headers[&quot;x-ms-error-code&quot;][&quot;x-az-demote-header&quot;] = true;
+</code></pre>
+<h3 id="ignore-common-headers">Ignore common headers</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;]..responses..headers[&quot;x-ms-request-id&quot;]
+  transform: &gt;
+    $[&quot;x-az-demote-header&quot;] = true;
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;]..responses..headers[&quot;x-ms-version&quot;]
+  transform:
+    $[&quot;x-az-demote-header&quot;] = true;
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;]..responses..headers[&quot;Date&quot;]
+  transform:
+    $[&quot;x-az-demote-header&quot;] = true;
+</code></pre>
+<h3 id="queueserviceproperties">QueueServiceProperties</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions
+  transform: &gt;
+    if (!$.QueueServiceProperties) {
+        $.QueueServiceProperties = $.StorageServiceProperties;
+        delete $.StorageServiceProperties;
+        $.QueueServiceProperties.xml = { &quot;name&quot;: &quot;StorageServiceProperties&quot; };
+    }
+- from: swagger-document
+  where: $.parameters
+  transform: &gt;
+    if (!$.QueueServiceProperties) {
+        const props = $.QueueServiceProperties = $.StorageServiceProperties;
+        props.name = &quot;QueueServiceProperties&quot;;
+        props[&quot;x-ms-client-name&quot;] = &quot;properties&quot;;
+        props.schema = { &quot;$ref&quot;: props.schema.$ref.replace(/[#].*$/, &quot;#/definitions/QueueServiceProperties&quot;) };
+        delete $.StorageServiceProperties;
+    }
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/?restype=service&amp;comp=properties&quot;]
+  transform: &gt;
+    const param = $.put.parameters[0];
+    if (param &amp;&amp; param[&quot;$ref&quot;] &amp;&amp; param[&quot;$ref&quot;].endsWith(&quot;StorageServiceProperties&quot;)) {
+        const path = param[&quot;$ref&quot;].replace(/[#].*$/, &quot;#/parameters/QueueServiceProperties&quot;);
+        $.put.parameters[0] = { &quot;$ref&quot;: path };
+    }
+    const def = $.get.responses[&quot;200&quot;].schema;
+    if (def &amp;&amp; def[&quot;$ref&quot;] &amp;&amp; def[&quot;$ref&quot;].endsWith(&quot;StorageServiceProperties&quot;)) {
+        const path = def[&quot;$ref&quot;].replace(/[#].*$/, &quot;#/definitions/QueueServiceProperties&quot;);
+        $.get.responses[&quot;200&quot;].schema = { &quot;$ref&quot;: path };
+    }
+</code></pre>
+<h3 id="queueservicestatistics">QueueServiceStatistics</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions
+  transform: &gt;
+    if (!$.QueueServiceStatistics) {
+        $.QueueServiceStatistics = $.StorageServiceStats;
+        delete $.StorageServiceStats;
+        $.QueueServiceStatistics.xml = { &quot;name&quot;: &quot;StorageServiceStats&quot; }
+        $.QueueServiceStatistics.description = &quot;Statistics for the storage service.&quot;;
+    }
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/?restype=service&amp;comp=stats&quot;].get.responses[&quot;200&quot;]
+  transform: &gt;
+    if ($.schema &amp;&amp; $.schema.$ref &amp;&amp; $.schema.$ref.endsWith(&quot;StorageServiceStats&quot;)) {
+        const path = $.schema.$ref.replace(/[#].*$/, &quot;#/definitions/QueueServiceStatistics&quot;);
+        $.schema = { &quot;$ref&quot;: path };
+    }
+</code></pre>
+<h3 id="complist">/?comp=list</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions
+  transform: &gt;
+    if (!$.QueuesSegment) {
+        $.QueuesSegment = $.ListQueuesSegmentResponse;
+        delete $.ListQueuesSegmentResponse;
+        $.QueuesSegment[&quot;x-az-public&quot;] = false;
+        $.QueuesSegment.required = [&quot;ServiceEndpoint&quot;];
+    }
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/?comp=list&quot;]
+  transform: &gt;
+    const def = $.get.responses[&quot;200&quot;].schema;
+    if (!def[&quot;$ref&quot;].endsWith(&quot;QueuesSegment&quot;)) {
+        const path = def[&quot;$ref&quot;].replace(/[#].*$/, &quot;#/definitions/QueuesSegment&quot;);
+        $.get.responses[&quot;200&quot;].schema = { &quot;$ref&quot;: path };
+    }
+</code></pre>
+<h3 id="queuenamecompmetadata">/{queueName}?comp=metadata</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{queueName}?comp=metadata&quot;]
+  transform: &gt;
+    $.get.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;QueueProperties&quot;;
+</code></pre>
+<h3 id="queuenamemessagesmessageidpopreceiptpopreceiptvisibilitytimeoutvisibilitytimeout">/{queueName}/messages/{messageid}?popreceipt={popReceipt}&amp;visibilitytimeout={visibilityTimeout}</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{queueName}/messages/{messageid}?popreceipt={popReceipt}&amp;visibilitytimeout={visibilityTimeout}&quot;]
+  transform: &gt;
+    $.put.responses[&quot;204&quot;][&quot;x-az-response-name&quot;] = &quot;UpdatedMessage&quot;;
+</code></pre>
+<h3 id="queueerrorcode">QueueErrorCode</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions.ErrorCode
+  transform: &gt;
+    $[&quot;x-ms-enum&quot;].name = &quot;QueueErrorCode&quot;;
+</code></pre>
+<h3 id="georeplication">GeoReplication</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions.GeoReplication.properties.Status
+  transform: &gt;
+    $[&quot;x-ms-enum&quot;].name = &quot;GeoReplicationStatus&quot;;
+</code></pre>
+<h3 id="logging-disable-warning">Logging disable warning</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions.Logging
+  transform: $[&quot;x-az-disable-warnings&quot;] = &quot;CA1724&quot;
+</code></pre>
+<h3 id="storageerror">StorageError</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions.StorageError
+  transform: &gt;
+    $.properties.Code = { &quot;type&quot;: &quot;string&quot; };
+    $[&quot;x-az-public&quot;] = false;
+</code></pre>
+<h3 id="metrics">Metrics</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions.Metrics
+  transform: &gt;
+    $.type = &quot;object&quot;
+</code></pre>
+<h3 id="queuemessage">QueueMessage</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions.QueueMessage
+  transform: &gt;
+    $[&quot;x-az-public&quot;] = false;
+    $.xml = { &quot;name&quot;: &quot;QueueMessage&quot; };
+- from: swagger-document
+  where: $.parameters.QueueMessage
+  transform: &gt;
+    $[&quot;x-ms-client-name&quot;] = &quot;message&quot;;
+</code></pre>
+<h3 id="dequeuedmessage">DequeuedMessage</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions
+  transform: &gt;
+    if (!$.DequeuedMessage) {
+        $.DequeuedMessage = $.DequeuedMessageItem;
+        delete $.DequeuedMessageItem;
+    }
+- from: swagger-document
+  where: $.definitions.DequeuedMessagesList
+  transform: &gt;
+    const def = $.items;
+    if (!def[&quot;$ref&quot;].endsWith(&quot;DequeuedMessage&quot;)) {
+        const path = def[&quot;$ref&quot;].replace(/[#].*$/, &quot;#/definitions/DequeuedMessage&quot;);
+        $.items = { &quot;$ref&quot;: path };
+    }
+</code></pre>
+<h3 id="peekedmessage">PeekedMessage</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions
+  transform: &gt;
+    if (!$.PeekedMessage) {
+        $.PeekedMessage = $.PeekedMessageItem;
+        delete $.PeekedMessageItem;
+    }
+- from: swagger-document
+  where: $.definitions.PeekedMessagesList
+  transform: &gt;
+    const def = $.items;
+    if (!def[&quot;$ref&quot;].endsWith(&quot;PeekedMessage&quot;)) {
+        const path = def[&quot;$ref&quot;].replace(/[#].*$/, &quot;#/definitions/PeekedMessage&quot;);
+        $.items = { &quot;$ref&quot;: path };
+    }
+</code></pre>
+<h3 id="listqueuesinclude">ListQueuesInclude</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.parameters.ListQueuesInclude
+  transform: &gt;
+    $[&quot;x-az-public&quot;] = false;
+    $.items[&quot;x-az-public&quot;] = false;
+</code></pre>
+<h3 id="accesspolicy">AccessPolicy</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions.SignedIdentifier.properties.AccessPolicy
+  transform: &gt;
+    delete $.description;
+- from: swagger-document
+  where: $.definitions.SignedIdentifiers.items
+  transform: &gt;
+    delete $.xml;
+- from: swagger-document
+  where: $.parameters.QueueAcl
+  transform: &gt;
+    $.name = &quot;permissions&quot;;
+</code></pre>
+<h3 id="url">Url</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.parameters.Url
+  transform: &gt;
+    $[&quot;x-ms-client-name&quot;] = &quot;resourceUri&quot;;
+    $.format = &quot;url&quot;;
+    $[&quot;x-az-trace&quot;] = true;
+</code></pre>
+<h3 id="timeout-docs">Timeout docs</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.parameters.Timeout
+  transform: $.description = &quot;The The timeout parameter is expressed in seconds. For more information, see &lt;a href=\&quot;https://docs.microsoft.com/en-us/rest/api/storageservices/setting-timeouts-for-queue-service-operations\&quot;&gt;Setting Timeouts for Queue Service Operations.&lt;/a&gt;&quot;;
+</code></pre>
+<h3 id="force-the-api-version-higher">Force the API version higher</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.parameters.ApiVersionParameter
+  transform: $.enum = [ &quot;2018-11-09&quot; ];
 </code></pre>
 </article>
           </div>
@@ -109,7 +356,7 @@ azure-track2-csharp: true
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/docfx_project/articles/sdk/Storage/Azure.Storage.Queues/swagger/readme.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/docfx_project/articles/sdk/Storage/Azure.Storage.Queues/swagger/readme.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

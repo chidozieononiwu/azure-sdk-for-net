@@ -96,14 +96,14 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_ITaskOperations_AddCollectionWithHttpMessagesAsync_System_String_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter__Microsoft_Azure_Batch_Protocol_Models_TaskAddCollectionOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.ITaskOperations.AddCollectionWithHttpMessagesAsync(System.String%2CSystem.Collections.Generic.IList%7BMicrosoft.Azure.Batch.Protocol.Models.TaskAddParameter%7D%2CMicrosoft.Azure.Batch.Protocol.Models.TaskAddCollectionOptions%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_ITaskOperations_AddCollectionWithHttpMessagesAsync_System_String_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter__Microsoft_Azure_Batch_Protocol_Models_TaskAddCollectionOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.ITaskOperations.AddCollectionWithHttpMessagesAsync(System.String%2CSystem.Collections.Generic.IList%7BMicrosoft.Azure.Batch.Protocol.Models.TaskAddParameter%7D%2CMicrosoft.Azure.Batch.Protocol.Models.TaskAddCollectionOptions%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/ITaskOperations.cs/#L138">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/ITaskOperations.cs/#L138">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_ITaskOperations_AddCollectionWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.ITaskOperations.AddCollectionWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_ITaskOperations_AddCollectionWithHttpMessagesAsync_System_String_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter__Microsoft_Azure_Batch_Protocol_Models_TaskAddCollectionOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.ITaskOperations.AddCollectionWithHttpMessagesAsync(System.String,System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter},Microsoft.Azure.Batch.Protocol.Models.TaskAddCollectionOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">AddCollectionWithHttpMessagesAsync(String, IList&lt;TaskAddParameter&gt;, TaskAddCollectionOptions, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Adds a collection of tasks to the specified job.</p>
+  <div class="markdown level1 summary"><p>Adds a collection of Tasks to the specified Job.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -123,18 +123,18 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td><p>The ID of the job to which the task collection is to be added.</p>
+        <td><p>The ID of the Job to which the Task collection is to be added.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.html">TaskAddParameter</a>&gt;</td>
         <td><span class="parametername">value</span></td>
-        <td><p>The collection of tasks to add. The maximum count of tasks is 100.
+        <td><p>The collection of Tasks to add. The maximum count of Tasks is 100.
 The total serialized size of this collection must be less than 1MB.
-If it is greater than 1MB (for example if each task has 100's of
+If it is greater than 1MB (for example if each Task has 100's of
 resource files or environment variables), the request will fail
 with code 'RequestBodyTooLarge' and should be retried again with
-fewer tasks.</p>
+fewer Tasks.</p>
 </td>
       </tr>
       <tr>
@@ -173,21 +173,21 @@ fewer tasks.</p>
     </tbody>
   </table>
   <h5 id="Microsoft_Azure_Batch_Protocol_ITaskOperations_AddCollectionWithHttpMessagesAsync_System_String_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter__Microsoft_Azure_Batch_Protocol_Models_TaskAddCollectionOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Note that each task must have a unique ID. The Batch service may
-not return the results for each task in the same order the tasks
+  <div class="markdown level1 remarks"><p>Note that each Task must have a unique ID. The Batch service may
+not return the results for each Task in the same order the Tasks
 were submitted in this request. If the server times out or the
 connection is closed during the request, the request may have been
 partially or fully processed, or not at all. In such cases, the
 user should re-issue the request. Note that it is up to the user to
 correctly handle failures when re-issuing a request. For example,
-you should use the same task IDs during a retry so that if the
-prior operation succeeded, the retry will not create extra tasks
-unexpectedly. If the response contains any tasks which failed to
+you should use the same Task IDs during a retry so that if the
+prior operation succeeded, the retry will not create extra Tasks
+unexpectedly. If the response contains any Tasks which failed to
 add, a client can retry the request. In a retry, it is most
-efficient to resubmit only tasks that failed to add, and to omit
-tasks that were successfully added on the first attempt. The
-maximum lifetime of a task from addition to completion is 180 days.
-If a task has not completed within 180 days of being added it will
+efficient to resubmit only Tasks that failed to add, and to omit
+Tasks that were successfully added on the first attempt. The
+maximum lifetime of a Task from addition to completion is 180 days.
+If a Task has not completed within 180 days of being added it will
 be terminated by the Batch service and left in whatever state it
 was in at that time.</p>
 </div>
@@ -209,14 +209,14 @@ was in at that time.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_ITaskOperations_AddWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_Microsoft_Azure_Batch_Protocol_Models_TaskAddOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.ITaskOperations.AddWithHttpMessagesAsync(System.String%2CMicrosoft.Azure.Batch.Protocol.Models.TaskAddParameter%2CMicrosoft.Azure.Batch.Protocol.Models.TaskAddOptions%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_ITaskOperations_AddWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_Microsoft_Azure_Batch_Protocol_Models_TaskAddOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.ITaskOperations.AddWithHttpMessagesAsync(System.String%2CMicrosoft.Azure.Batch.Protocol.Models.TaskAddParameter%2CMicrosoft.Azure.Batch.Protocol.Models.TaskAddOptions%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/ITaskOperations.cs/#L56">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/ITaskOperations.cs/#L56">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_ITaskOperations_AddWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.ITaskOperations.AddWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_ITaskOperations_AddWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_Microsoft_Azure_Batch_Protocol_Models_TaskAddOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.ITaskOperations.AddWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter,Microsoft.Azure.Batch.Protocol.Models.TaskAddOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">AddWithHttpMessagesAsync(String, TaskAddParameter, TaskAddOptions, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Adds a task to the specified job.</p>
+  <div class="markdown level1 summary"><p>Adds a Task to the specified Job.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -236,13 +236,13 @@ was in at that time.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td><p>The ID of the job to which the task is to be added.</p>
+        <td><p>The ID of the Job to which the Task is to be added.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.html">TaskAddParameter</a></td>
         <td><span class="parametername">task</span></td>
-        <td><p>The task to be added.</p>
+        <td><p>The Task to be added.</p>
 </td>
       </tr>
       <tr>
@@ -281,8 +281,8 @@ was in at that time.</p>
     </tbody>
   </table>
   <h5 id="Microsoft_Azure_Batch_Protocol_ITaskOperations_AddWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_Microsoft_Azure_Batch_Protocol_Models_TaskAddOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The maximum lifetime of a task from addition to completion is 180
-days. If a task has not completed within 180 days of being added it
+  <div class="markdown level1 remarks"><p>The maximum lifetime of a Task from addition to completion is 180
+days. If a Task has not completed within 180 days of being added it
 will be terminated by the Batch service and left in whatever state
 it was in at that time.</p>
 </div>
@@ -304,14 +304,14 @@ it was in at that time.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_ITaskOperations_DeleteWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskDeleteOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.ITaskOperations.DeleteWithHttpMessagesAsync(System.String%2CSystem.String%2CMicrosoft.Azure.Batch.Protocol.Models.TaskDeleteOptions%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_ITaskOperations_DeleteWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskDeleteOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.ITaskOperations.DeleteWithHttpMessagesAsync(System.String%2CSystem.String%2CMicrosoft.Azure.Batch.Protocol.Models.TaskDeleteOptions%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/ITaskOperations.cs/#L170">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/ITaskOperations.cs/#L170">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_ITaskOperations_DeleteWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.ITaskOperations.DeleteWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_ITaskOperations_DeleteWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskDeleteOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.ITaskOperations.DeleteWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskDeleteOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">DeleteWithHttpMessagesAsync(String, String, TaskDeleteOptions, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Deletes a task from the specified job.</p>
+  <div class="markdown level1 summary"><p>Deletes a Task from the specified Job.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -331,13 +331,13 @@ it was in at that time.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td><p>The ID of the job from which to delete the task.</p>
+        <td><p>The ID of the Job from which to delete the Task.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td><p>The ID of the task to delete.</p>
+        <td><p>The ID of the Task to delete.</p>
 </td>
       </tr>
       <tr>
@@ -376,9 +376,9 @@ it was in at that time.</p>
     </tbody>
   </table>
   <h5 id="Microsoft_Azure_Batch_Protocol_ITaskOperations_DeleteWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskDeleteOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>When a task is deleted, all of the files in its directory on the
-compute node where it ran are also deleted (regardless of the
-retention time). For multi-instance tasks, the delete task
+  <div class="markdown level1 remarks"><p>When a Task is deleted, all of the files in its directory on the
+Compute Node where it ran are also deleted (regardless of the
+retention time). For multi-instance Tasks, the delete Task
 operation applies synchronously to the primary task; subtasks and
 their files are then deleted asynchronously in the background.</p>
 </div>
@@ -400,14 +400,14 @@ their files are then deleted asynchronously in the background.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_ITaskOperations_GetWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskGetOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.ITaskOperations.GetWithHttpMessagesAsync(System.String%2CSystem.String%2CMicrosoft.Azure.Batch.Protocol.Models.TaskGetOptions%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_ITaskOperations_GetWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskGetOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.ITaskOperations.GetWithHttpMessagesAsync(System.String%2CSystem.String%2CMicrosoft.Azure.Batch.Protocol.Models.TaskGetOptions%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/ITaskOperations.cs/#L203">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/ITaskOperations.cs/#L203">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_ITaskOperations_GetWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.ITaskOperations.GetWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_ITaskOperations_GetWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskGetOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.ITaskOperations.GetWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskGetOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetWithHttpMessagesAsync(String, String, TaskGetOptions, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Gets information about the specified task.</p>
+  <div class="markdown level1 summary"><p>Gets information about the specified Task.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -427,13 +427,13 @@ their files are then deleted asynchronously in the background.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td><p>The ID of the job that contains the task.</p>
+        <td><p>The ID of the Job that contains the Task.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td><p>The ID of the task to get information about.</p>
+        <td><p>The ID of the Task to get information about.</p>
 </td>
       </tr>
       <tr>
@@ -472,8 +472,8 @@ their files are then deleted asynchronously in the background.</p>
     </tbody>
   </table>
   <h5 id="Microsoft_Azure_Batch_Protocol_ITaskOperations_GetWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskGetOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>For multi-instance tasks, information such as affinityId,
-executionInfo and nodeInfo refer to the primary task. Use the list
+  <div class="markdown level1 remarks"><p>For multi-instance Tasks, information such as affinityId,
+executionInfo and nodeInfo refer to the primary Task. Use the list
 subtasks API to retrieve information about subtasks.</p>
 </div>
   <h5 class="exceptions">Exceptions</h5>
@@ -494,14 +494,14 @@ subtasks API to retrieve information about subtasks.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_ITaskOperations_ListNextWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskListNextOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.ITaskOperations.ListNextWithHttpMessagesAsync(System.String%2CMicrosoft.Azure.Batch.Protocol.Models.TaskListNextOptions%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_ITaskOperations_ListNextWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskListNextOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.ITaskOperations.ListNextWithHttpMessagesAsync(System.String%2CMicrosoft.Azure.Batch.Protocol.Models.TaskListNextOptions%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/ITaskOperations.cs/#L364">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/ITaskOperations.cs/#L364">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_ITaskOperations_ListNextWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.ITaskOperations.ListNextWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_ITaskOperations_ListNextWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskListNextOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.ITaskOperations.ListNextWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.TaskListNextOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListNextWithHttpMessagesAsync(String, TaskListNextOptions, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Lists all of the tasks that are associated with the specified job.</p>
+  <div class="markdown level1 summary"><p>Lists all of the Tasks that are associated with the specified Job.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -560,8 +560,8 @@ subtasks API to retrieve information about subtasks.</p>
     </tbody>
   </table>
   <h5 id="Microsoft_Azure_Batch_Protocol_ITaskOperations_ListNextWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskListNextOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>For multi-instance tasks, information such as affinityId,
-executionInfo and nodeInfo refer to the primary task. Use the list
+  <div class="markdown level1 remarks"><p>For multi-instance Tasks, information such as affinityId,
+executionInfo and nodeInfo refer to the primary Task. Use the list
 subtasks API to retrieve information about subtasks.</p>
 </div>
   <h5 class="exceptions">Exceptions</h5>
@@ -582,15 +582,15 @@ subtasks API to retrieve information about subtasks.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_ITaskOperations_ListSubtasksWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskListSubtasksOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.ITaskOperations.ListSubtasksWithHttpMessagesAsync(System.String%2CSystem.String%2CMicrosoft.Azure.Batch.Protocol.Models.TaskListSubtasksOptions%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_ITaskOperations_ListSubtasksWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskListSubtasksOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.ITaskOperations.ListSubtasksWithHttpMessagesAsync(System.String%2CSystem.String%2CMicrosoft.Azure.Batch.Protocol.Models.TaskListSubtasksOptions%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/ITaskOperations.cs/#L266">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/ITaskOperations.cs/#L266">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_ITaskOperations_ListSubtasksWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.ITaskOperations.ListSubtasksWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_ITaskOperations_ListSubtasksWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskListSubtasksOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.ITaskOperations.ListSubtasksWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskListSubtasksOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListSubtasksWithHttpMessagesAsync(String, String, TaskListSubtasksOptions, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Lists all of the subtasks that are associated with the specified
-multi-instance task.</p>
+multi-instance Task.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -610,13 +610,13 @@ multi-instance task.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td><p>The ID of the job.</p>
+        <td><p>The ID of the Job.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td><p>The ID of the task.</p>
+        <td><p>The ID of the Task.</p>
 </td>
       </tr>
       <tr>
@@ -655,7 +655,7 @@ multi-instance task.</p>
     </tbody>
   </table>
   <h5 id="Microsoft_Azure_Batch_Protocol_ITaskOperations_ListSubtasksWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskListSubtasksOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If the task is not a multi-instance task then this returns an empty
+  <div class="markdown level1 remarks"><p>If the Task is not a multi-instance Task then this returns an empty
 collection.</p>
 </div>
   <h5 class="exceptions">Exceptions</h5>
@@ -676,14 +676,14 @@ collection.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_ITaskOperations_ListWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskListOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.ITaskOperations.ListWithHttpMessagesAsync(System.String%2CMicrosoft.Azure.Batch.Protocol.Models.TaskListOptions%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_ITaskOperations_ListWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskListOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.ITaskOperations.ListWithHttpMessagesAsync(System.String%2CMicrosoft.Azure.Batch.Protocol.Models.TaskListOptions%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/ITaskOperations.cs/#L86">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/ITaskOperations.cs/#L86">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_ITaskOperations_ListWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.ITaskOperations.ListWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_ITaskOperations_ListWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskListOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.ITaskOperations.ListWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.TaskListOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListWithHttpMessagesAsync(String, TaskListOptions, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Lists all of the tasks that are associated with the specified job.</p>
+  <div class="markdown level1 summary"><p>Lists all of the Tasks that are associated with the specified Job.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -703,7 +703,7 @@ collection.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td><p>The ID of the job.</p>
+        <td><p>The ID of the Job.</p>
 </td>
       </tr>
       <tr>
@@ -742,8 +742,8 @@ collection.</p>
     </tbody>
   </table>
   <h5 id="Microsoft_Azure_Batch_Protocol_ITaskOperations_ListWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskListOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>For multi-instance tasks, information such as affinityId,
-executionInfo and nodeInfo refer to the primary task. Use the list
+  <div class="markdown level1 remarks"><p>For multi-instance Tasks, information such as affinityId,
+executionInfo and nodeInfo refer to the primary Task. Use the list
 subtasks API to retrieve information about subtasks.</p>
 </div>
   <h5 class="exceptions">Exceptions</h5>
@@ -764,14 +764,14 @@ subtasks API to retrieve information about subtasks.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_ITaskOperations_ReactivateWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskReactivateOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.ITaskOperations.ReactivateWithHttpMessagesAsync(System.String%2CSystem.String%2CMicrosoft.Azure.Batch.Protocol.Models.TaskReactivateOptions%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_ITaskOperations_ReactivateWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskReactivateOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.ITaskOperations.ReactivateWithHttpMessagesAsync(System.String%2CSystem.String%2CMicrosoft.Azure.Batch.Protocol.Models.TaskReactivateOptions%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/ITaskOperations.cs/#L334">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/ITaskOperations.cs/#L334">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_ITaskOperations_ReactivateWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.ITaskOperations.ReactivateWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_ITaskOperations_ReactivateWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskReactivateOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.ITaskOperations.ReactivateWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskReactivateOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ReactivateWithHttpMessagesAsync(String, String, TaskReactivateOptions, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Reactivates a task, allowing it to run again even if its retry
+  <div class="markdown level1 summary"><p>Reactivates a Task, allowing it to run again even if its retry
 count has been exhausted.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -792,13 +792,13 @@ count has been exhausted.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td><p>The ID of the job containing the task.</p>
+        <td><p>The ID of the Job containing the Task.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td><p>The ID of the task to reactivate.</p>
+        <td><p>The ID of the Task to reactivate.</p>
 </td>
       </tr>
       <tr>
@@ -837,14 +837,14 @@ count has been exhausted.</p>
     </tbody>
   </table>
   <h5 id="Microsoft_Azure_Batch_Protocol_ITaskOperations_ReactivateWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskReactivateOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Reactivation makes a task eligible to be retried again up to its
-maximum retry count. The task's state is changed to active. As the
-task is no longer in the completed state, any previous exit code or
+  <div class="markdown level1 remarks"><p>Reactivation makes a Task eligible to be retried again up to its
+maximum retry count. The Task's state is changed to active. As the
+Task is no longer in the completed state, any previous exit code or
 failure information is no longer available after reactivation. Each
-time a task is reactivated, its retry count is reset to 0.
-Reactivation will fail for tasks that are not completed or that
+time a Task is reactivated, its retry count is reset to 0.
+Reactivation will fail for Tasks that are not completed or that
 previously completed successfully (with an exit code of 0).
-Additionally, it will fail if the job has completed (or is
+Additionally, it will fail if the Job has completed (or is
 terminating or deleting).</p>
 </div>
   <h5 class="exceptions">Exceptions</h5>
@@ -865,14 +865,14 @@ terminating or deleting).</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_ITaskOperations_TerminateWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskTerminateOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.ITaskOperations.TerminateWithHttpMessagesAsync(System.String%2CSystem.String%2CMicrosoft.Azure.Batch.Protocol.Models.TaskTerminateOptions%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_ITaskOperations_TerminateWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskTerminateOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.ITaskOperations.TerminateWithHttpMessagesAsync(System.String%2CSystem.String%2CMicrosoft.Azure.Batch.Protocol.Models.TaskTerminateOptions%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/ITaskOperations.cs/#L297">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/ITaskOperations.cs/#L297">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_ITaskOperations_TerminateWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.ITaskOperations.TerminateWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_ITaskOperations_TerminateWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskTerminateOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.ITaskOperations.TerminateWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskTerminateOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">TerminateWithHttpMessagesAsync(String, String, TaskTerminateOptions, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Terminates the specified task.</p>
+  <div class="markdown level1 summary"><p>Terminates the specified Task.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -892,13 +892,13 @@ terminating or deleting).</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td><p>The ID of the job containing the task.</p>
+        <td><p>The ID of the Job containing the Task.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td><p>The ID of the task to terminate.</p>
+        <td><p>The ID of the Task to terminate.</p>
 </td>
       </tr>
       <tr>
@@ -937,8 +937,8 @@ terminating or deleting).</p>
     </tbody>
   </table>
   <h5 id="Microsoft_Azure_Batch_Protocol_ITaskOperations_TerminateWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskTerminateOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>When the task has been terminated, it moves to the completed state.
-For multi-instance tasks, the terminate task operation applies
+  <div class="markdown level1 remarks"><p>When the Task has been terminated, it moves to the completed state.
+For multi-instance Tasks, the terminate Task operation applies
 synchronously to the primary task; subtasks are then terminated
 asynchronously in the background.</p>
 </div>
@@ -960,14 +960,14 @@ asynchronously in the background.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_ITaskOperations_UpdateWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskConstraints_Microsoft_Azure_Batch_Protocol_Models_TaskUpdateOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.ITaskOperations.UpdateWithHttpMessagesAsync(System.String%2CSystem.String%2CMicrosoft.Azure.Batch.Protocol.Models.TaskConstraints%2CMicrosoft.Azure.Batch.Protocol.Models.TaskUpdateOptions%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_ITaskOperations_UpdateWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskConstraints_Microsoft_Azure_Batch_Protocol_Models_TaskUpdateOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.ITaskOperations.UpdateWithHttpMessagesAsync(System.String%2CSystem.String%2CMicrosoft.Azure.Batch.Protocol.Models.TaskConstraints%2CMicrosoft.Azure.Batch.Protocol.Models.TaskUpdateOptions%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Collections.Generic.List%7BSystem.String%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/ITaskOperations.cs/#L233">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/ITaskOperations.cs/#L233">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_ITaskOperations_UpdateWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.ITaskOperations.UpdateWithHttpMessagesAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_ITaskOperations_UpdateWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskConstraints_Microsoft_Azure_Batch_Protocol_Models_TaskUpdateOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.ITaskOperations.UpdateWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskConstraints,Microsoft.Azure.Batch.Protocol.Models.TaskUpdateOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">UpdateWithHttpMessagesAsync(String, String, TaskConstraints, TaskUpdateOptions, Dictionary&lt;String, List&lt;String&gt;&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Updates the properties of the specified task.</p>
+  <div class="markdown level1 summary"><p>Updates the properties of the specified Task.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -987,21 +987,21 @@ asynchronously in the background.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td><p>The ID of the job containing the task.</p>
+        <td><p>The ID of the Job containing the Task.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td><p>The ID of the task to update.</p>
+        <td><p>The ID of the Task to update.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskConstraints.html">TaskConstraints</a></td>
         <td><span class="parametername">constraints</span></td>
-        <td><p>Constraints that apply to this task. If omitted, the task is given
-the default constraints. For multi-instance tasks, updating the
-retention time applies only to the primary task and not subtasks.</p>
+        <td><p>Constraints that apply to this Task. If omitted, the Task is given
+the default constraints. For multi-instance Tasks, updating the
+retention time applies only to the primary Task and not subtasks.</p>
 </td>
       </tr>
       <tr>
@@ -1057,7 +1057,22 @@ retention time applies only to the primary task and not subtasks.</p>
   </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../KeyVault/Azure.Security.KeyVault.Secrets.AzureClientBuilderExtensions.html#Azure_Security_KeyVault_Secrets_AzureClientBuilderExtensions_AddSecretClient__2___0___1_">AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../OtherAPIs/Azure.Data.AppConfiguration.AzureClientBuilderExtensions.html#Azure_Data_AppConfiguration_AzureClientBuilderExtensions_AddConfigurationClient__2___0___1_">AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../Storage/Azure.Storage.Blobs.AzureClientBuilderExtensions.html#Azure_Storage_Blobs_AzureClientBuilderExtensions_AddBlobServiceClient__2___0___1_">AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
       <a class="xref" href="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_Add_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_Microsoft_Azure_Batch_Protocol_Models_TaskAddOptions_">TaskOperationsExtensions.Add(ITaskOperations, String, TaskAddParameter, TaskAddOptions)</a>
@@ -1127,10 +1142,10 @@ retention time applies only to the primary task and not subtasks.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_ITaskOperations.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.ITaskOperations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_ITaskOperations.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.ITaskOperations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/ITaskOperations.cs/#L24" class="contribution-link">View Source</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/ITaskOperations.cs/#L24" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -79,22 +79,36 @@
             <article class="content wrap" id="_content" data-uid="">
 <h2 id="microsoftazuremanagementbatch-release-notes">Microsoft.Azure.Management.Batch release notes</h2>
 
-<h3 id="changes-in-800">Changes in 8.0.0</h3>
+<h3 id="changes-in-900">Changes in 9.0.0</h3>
 <h4 id="rest-api-version">REST API version</h4>
+<ul>
+<li>This version targets REST API version 2019-08-01.</li>
+</ul>
+<h4 id="features">Features</h4>
+<ul>
+<li>Added ability to specify a collection of public IPs on <code>NetworkConfiguration</code> via the new <code>PublicIPs</code> property. This guarantees nodes in the Pool will have an
+IP from the list user provided IPs.</li>
+<li>Added ability to mount remote file-systems on each node of a pool via the <code>MountConfiguration</code> property on <code>Pool</code>.</li>
+<li>Shared Image Gallery images can now be specified on the <code>VirtualMachineImageId</code> property of <code>ImageReference</code> by referencing the image via its ARM ID.</li>
+<li><strong>[Breaking]</strong> When not specified, the default value for <code>WaitForSuccess</code> on <code>StartTask</code> is now <code>true</code> (was <code>false</code>).</li>
+<li><strong>[Breaking]</strong> When not specified, the default value for <code>Scope</code> on <code>AutoUserSpecification</code> is now always <code>Pool</code> (was <code>Task</code> on Windows nodes, <code>Pool</code> on Linux nodes).</li>
+</ul>
+<h3 id="changes-in-800">Changes in 8.0.0</h3>
+<h4 id="rest-api-version-1">REST API version</h4>
 <ul>
 <li>This version targets REST API version 2019-04-01.</li>
 </ul>
-<h4 id="features">Features</h4>
+<h4 id="features-1">Features</h4>
 <ul>
 <li>Added BatchAccount properties <code>DedicatedCoreQuotaPerVMFamily</code> and <code>DedicatedCoreQuotaPerVMFamilyEnforced</code> to facilitate the transition to per VM family quota</li>
 <li><strong>[Breaking]</strong> Accounts created with <code>PoolAllocationMode</code> set to <code>UserSubscription</code> will not return core quota properties <code>DedicatedCoreQuota</code> or <code>LowPriorityCoreQuota</code></li>
 </ul>
 <h3 id="changes-in-700">Changes in 7.0.0</h3>
-<h4 id="rest-api-version-1">REST API version</h4>
+<h4 id="rest-api-version-2">REST API version</h4>
 <ul>
 <li>This version targets REST API version 2018-12-01.</li>
 </ul>
-<h4 id="features-1">Features</h4>
+<h4 id="features-2">Features</h4>
 <ul>
 <li><strong>[Breaking]</strong> ResourceFile improvements
 <ul>
@@ -120,26 +134,26 @@
 <li>Deleting an account will no longer return <code>NotFound</code> at the end of the operation</li>
 </ul>
 <h3 id="changes-in-600">Changes in 6.0.0</h3>
-<h4 id="rest-api-version-2">REST API version</h4>
+<h4 id="rest-api-version-3">REST API version</h4>
 <ul>
 <li>This version targets REST API version 2017-09-01.</li>
 <li>Adding support for Certificate and Pool operations.</li>
 </ul>
 <h3 id="changes-in-510">Changes in 5.1.0</h3>
-<h4 id="rest-api-version-3">REST API version</h4>
-<ul>
-<li>This version targets REST API version 2017-05-01.</li>
-</ul>
-<h4 id="features-2">Features</h4>
-<ul>
-<li>Added a new <code>CheckNameAvailability</code> API which allows you to check if an account name is available on a particular region.</li>
-</ul>
-<h3 id="changes-in-500">Changes in 5.0.0</h3>
 <h4 id="rest-api-version-4">REST API version</h4>
 <ul>
 <li>This version targets REST API version 2017-05-01.</li>
 </ul>
 <h4 id="features-3">Features</h4>
+<ul>
+<li>Added a new <code>CheckNameAvailability</code> API which allows you to check if an account name is available on a particular region.</li>
+</ul>
+<h3 id="changes-in-500">Changes in 5.0.0</h3>
+<h4 id="rest-api-version-5">REST API version</h4>
+<ul>
+<li>This version targets REST API version 2017-05-01.</li>
+</ul>
+<h4 id="features-4">Features</h4>
 <h5 id="breaking-changes">Breaking changes</h5>
 <ul>
 <li>BatchAccount <code>CoreQuota</code> renamed to <code>DedicatedCoreQuota</code>.</li>
@@ -189,7 +203,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/docfx_project/articles/sdk/Batch/Microsoft.Azure.Management.Batch/changelog.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/docfx_project/articles/sdk/Batch/Microsoft.Azure.Management.Batch/changelog.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

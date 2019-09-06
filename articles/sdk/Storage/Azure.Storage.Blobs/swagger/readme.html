@@ -83,15 +83,8 @@
 <p>see <a href="https://aka.ms/autorest">https://aka.ms/autorest</a></p>
 </blockquote>
 <h2 id="configuration">Configuration</h2>
-<pre><code class="lang-yaml">
-# Prevent swagger validation because it complains about vendor extensions
-# instead of ignoring them per the spec
-pipeline:
-  swagger-document/individual/schema-validator:
-     scope: unused
-
-# Generate blob storage
-input-file: ./blob.json
+<pre><code class="lang-yaml"># Generate blob storage
+input-file: https://raw.githubusercontent.com/Azure/azure-rest-api-specs/storage-dataplane-preview/specification/storage/data-plane/Microsoft.BlobStorage/preview/2019-02-02/blob.json
 output-folder: ../src/Generated
 clear-output-folder: false
 
@@ -99,7 +92,919 @@ clear-output-folder: false
 # use: C:\src\Storage\Swagger\Generator
 # We can't use relative paths here, so use a relative path in generate.ps1
 azure-track2-csharp: true
-
+</code></pre>
+<h2 id="customizations-for-track-2-generator">Customizations for Track 2 Generator</h2>
+<p>See the <a href="https://github.com/Azure/autorest/tree/master/Samples/3b-custom-transformations">AutoRest samples</a>
+for more about how we're customizing things.</p>
+<h3 id="x-ms-code-generation-settings">x-ms-code-generation-settings</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.info[&quot;x-ms-code-generation-settings&quot;]
+  transform: &gt;
+    $.namespace = &quot;Azure.Storage.Blobs&quot;;
+    $[&quot;client-name&quot;] = &quot;BlobRestClient&quot;;
+    $[&quot;client-extensions-name&quot;] = &quot;BlobsExtensions&quot;;
+    $[&quot;client-model-factory-name&quot;] = &quot;BlobsModelFactory&quot;;
+    $[&quot;x-az-skip-path-components&quot;] = true;
+    $[&quot;x-az-include-sync-methods&quot;] = true;
+    $[&quot;x-az-public&quot;] = false;
+</code></pre>
+<h3 id="move-directory-operations-last">Move directory operations last</h3>
+<p>This is purely cosmetic for a cleaner diff.</p>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;]
+  transform: &gt;
+    const directoryPaths = [];
+    for (var path in $) {
+        const op = Object.values($[path])[0];
+        if (op.operationId.startsWith(&quot;Directory_&quot;)) {
+            directoryPaths.push(path);
+        }
+    }
+    for (var path of directoryPaths) {
+        const ops = $[path];
+        delete $[path];
+        $[path] = ops;
+    }
+</code></pre>
+<h3 id="remove-extra-consumesproduces-values">Remove extra consumes/produces values</h3>
+<p>To avoid an arbitrary limitation in our generator</p>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.consumes
+  transform: &gt;
+    return [&quot;application/xml&quot;];
+- from: swagger-document
+  where: $.produces
+  transform: &gt;
+    return [&quot;application/xml&quot;];
+</code></pre>
+<h3 id="url">Url</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.parameters.Url
+  transform: &gt;
+    $[&quot;x-ms-client-name&quot;] = &quot;resourceUri&quot;;
+    $.format = &quot;url&quot;;
+    $[&quot;x-az-trace&quot;] = true;
+</code></pre>
+<h3 id="ignore-common-headers">Ignore common headers</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;]..responses..headers[&quot;x-ms-request-id&quot;]
+  transform: &gt;
+    $[&quot;x-az-demote-header&quot;] = true;
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;]..responses..headers[&quot;x-ms-version&quot;]
+  transform: &gt;
+    $[&quot;x-az-demote-header&quot;] = true;
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;]..responses..headers[&quot;Date&quot;]
+  transform: &gt;
+    $[&quot;x-az-demote-header&quot;] = true;
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;]..responses..headers[&quot;x-ms-client-request-id&quot;]
+  transform: &gt;
+    $[&quot;x-az-demote-header&quot;] = true;
+</code></pre>
+<h3 id="clean-up-failure-response">Clean up Failure response</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;]..responses.default
+  transform: &gt;
+    delete $.headers;
+    $[&quot;x-az-response-name&quot;] = &quot;StorageErrorResult&quot;;
+    $[&quot;x-az-create-exception&quot;] = true;
+    $[&quot;x-az-public&quot;] = false;
+</code></pre>
+<h3 id="restypeservicecompproperties">/?restype=service&amp;comp=properties</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions
+  transform: &gt;
+    if (!$.BlobServiceProperties) {
+        $.BlobServiceProperties = $.StorageServiceProperties;
+        delete $.StorageServiceProperties;
+        $.BlobServiceProperties.xml = { &quot;name&quot;: &quot;StorageServiceProperties&quot; };
+    }
+- from: swagger-document
+  where: $.parameters
+  transform: &gt;
+    if (!$.BlobServiceProperties) {
+        const props = $.BlobServiceProperties = $.StorageServiceProperties;
+        props.name = &quot;BlobServiceProperties&quot;;
+        props.schema = { &quot;$ref&quot;: props.schema.$ref.replace(/[#].*$/, &quot;#/definitions/BlobServiceProperties&quot;) };
+        delete $.StorageServiceProperties;
+    }
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/?restype=service&amp;comp=properties&quot;]
+  transform: &gt;
+    const param = $.put.parameters[0];
+    if (param &amp;&amp; param[&quot;$ref&quot;] &amp;&amp; param[&quot;$ref&quot;].endsWith(&quot;StorageServiceProperties&quot;)) {
+        const path = param[&quot;$ref&quot;].replace(/[#].*$/, &quot;#/parameters/BlobServiceProperties&quot;);
+        $.put.parameters[0] = { &quot;$ref&quot;: path };
+    }
+    const def = $.get.responses[&quot;200&quot;].schema;
+    if (def &amp;&amp; def[&quot;$ref&quot;] &amp;&amp; def[&quot;$ref&quot;].endsWith(&quot;StorageServiceProperties&quot;)) {
+        const path = def[&quot;$ref&quot;].replace(/[#].*$/, &quot;#/definitions/BlobServiceProperties&quot;);
+        $.get.responses[&quot;200&quot;].schema = { &quot;$ref&quot;: path };
+    }
+</code></pre>
+<h3 id="restypeservicecompstats">/?restype=service&amp;comp=stats</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions
+  transform: &gt;
+    if (!$.BlobServiceStatistics) {
+        $.BlobServiceStatistics = $.StorageServiceStats;
+        delete $.StorageServiceStats;
+        $.BlobServiceStatistics.xml = { &quot;name&quot;: &quot;StorageServiceStats&quot; };
+        $.BlobServiceStatistics.description = &quot;Statistics for the storage service.&quot;;
+    }
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/?restype=service&amp;comp=stats&quot;]
+  transform: &gt;
+    const def = $.get.responses[&quot;200&quot;].schema;
+    if (def &amp;&amp; def[&quot;$ref&quot;] &amp;&amp; !def[&quot;$ref&quot;].endsWith(&quot;BlobServiceStatistics&quot;)) {
+        const path = def[&quot;$ref&quot;].replace(/[#].*$/, &quot;#/definitions/BlobServiceStatistics&quot;);
+        $.get.responses[&quot;200&quot;].schema = { &quot;$ref&quot;: path };
+    }
+</code></pre>
+<h3 id="complist">/?comp=list</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions
+  transform: &gt;
+    if (!$.ContainersSegment) {
+        $.ContainersSegment = $.ListContainersSegmentResponse;
+        delete $.ListContainersSegmentResponse;
+        $.ContainersSegment[&quot;x-az-public&quot;] = false;
+        $.ContainersSegment.required.push(&quot;NextMarker&quot;);
+    }
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/?comp=list&quot;]
+  transform: &gt;
+    const def = $.get.responses[&quot;200&quot;].schema;
+    if (def &amp;&amp; def[&quot;$ref&quot;] &amp;&amp; !def[&quot;$ref&quot;].endsWith(&quot;ContainersSegment&quot;)) {
+        const path = def[&quot;$ref&quot;].replace(/[#].*$/, &quot;#/definitions/ContainersSegment&quot;);
+        $.get.responses[&quot;200&quot;].schema = { &quot;$ref&quot;: path };
+    }
+</code></pre>
+<h3 id="containernamerestypecontainer">/{containerName}?restype=container</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}?restype=container&quot;]
+  transform: &gt;
+    $.get.responses[&quot;200&quot;].headers[&quot;x-ms-lease-state&quot;][&quot;x-ms-enum&quot;].name = &quot;LeaseState&quot;;
+    $.get.responses[&quot;200&quot;].headers[&quot;x-ms-lease-status&quot;][&quot;x-ms-enum&quot;].name = &quot;LeaseStatus&quot;;
+    $.get.responses[&quot;200&quot;].headers[&quot;x-ms-blob-public-access&quot;][&quot;x-ms-enum&quot;].modelAsString = false;
+    $.get.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;FlattenedContainerItem&quot;;
+    $.get.responses[&quot;200&quot;][&quot;x-az-public&quot;] = false;
+    $.put.responses[&quot;201&quot;][&quot;x-az-response-name&quot;] = &quot;ContainerInfo&quot;;
+</code></pre>
+<h3 id="blobpublicaccess">BlobPublicAccess</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.parameters.BlobPublicAccess
+  transform: &gt;
+    $[&quot;x-ms-enum&quot;].modelAsString = false;
+</code></pre>
+<h3 id="restypeaccountcompproperties">/?restype=account&amp;comp=properties</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/?restype=account&amp;comp=properties&quot;]
+  transform: &gt;
+    $.get.description = &quot;Returns the sku name and account kind&quot;;
+    $.get.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;AccountInfo&quot;;
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;]
+  transform: &gt;
+    if ($[&quot;/{containerName}?restype=account&amp;comp=properties&quot;]) {
+        delete $[&quot;/{containerName}?restype=account&amp;comp=properties&quot;];
+    }
+    if ($[&quot;/{containerName}/{blob}?restype=account&amp;comp=properties&quot;]) {
+        delete $[&quot;/{containerName}/{blob}?restype=account&amp;comp=properties&quot;];
+    }
+</code></pre>
+<h3 id="containernamerestypecontainercompmetadata">/{containerName}?restype=container&amp;comp=metadata</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}?restype=container&amp;comp=metadata&quot;]
+  transform: &gt;
+    $.put.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;ContainerInfo&quot;;
+</code></pre>
+<h3 id="containernamerestypecontainercompacl">/{containerName}?restype=container&amp;comp=acl</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}?restype=container&amp;comp=acl&quot;]
+  transform: &gt;
+    $.get.responses[&quot;200&quot;].headers[&quot;x-ms-blob-public-access&quot;][&quot;x-ms-enum&quot;].modelAsString = false;
+    $.get.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;ContainerAccessPolicy&quot;;
+    $.get.responses[&quot;200&quot;][&quot;x-az-response-schema-name&quot;] = &quot;SignedIdentifiers&quot;;
+    $.put.responses[&quot;200&quot;].description = &quot;Success&quot;;
+    $.put.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;ContainerInfo&quot;;
+- from: swagger-document
+  where: $.parameters.ContainerAcl
+  transform: $[&quot;x-ms-client-name&quot;] = &quot;permissions&quot;
+- from: swagger-document
+  where: $.definitions.SignedIdentifier
+  transform: &gt;
+    delete $.xml;
+</code></pre>
+<h3 id="containernamecompleaserestypecontaineracquire">/{containerName}?comp=lease&amp;restype=container&amp;acquire</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}?comp=lease&amp;restype=container&amp;acquire&quot;]
+  transform: &gt;
+    $.put.responses[&quot;201&quot;].description = &quot;The lease operation completed successfully.&quot;;
+    $.put.responses[&quot;201&quot;].headers[&quot;x-ms-lease-id&quot;].description = &quot;Uniquely identifies a container's or blob's lease&quot;;
+    $.put.responses[&quot;201&quot;][&quot;x-az-response-name&quot;] = &quot;Lease&quot;;
+</code></pre>
+<h3 id="containernamecompleaserestypecontainerrelease">/{containerName}?comp=lease&amp;restype=container&amp;release</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}?comp=lease&amp;restype=container&amp;release&quot;]
+  transform: &gt;
+    $.put.responses[&quot;200&quot;].description = &quot;Success&quot;;
+    $.put.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;ContainerInfo&quot;;
+</code></pre>
+<h3 id="containernamecompleaserestypecontainerrenew">/{containerName}?comp=lease&amp;restype=container&amp;renew</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}?comp=lease&amp;restype=container&amp;renew&quot;]
+  transform: &gt;
+    $.put.responses[&quot;200&quot;].description = &quot;The lease operation completed successfully.&quot;;
+    $.put.responses[&quot;200&quot;].headers[&quot;x-ms-lease-id&quot;].description = &quot;Uniquely identifies a container's or blob's lease&quot;;
+    $.put.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;Lease&quot;;
+</code></pre>
+<h3 id="containernamecompleaserestypecontainerbreak">/{containerName}?comp=lease&amp;restype=container&amp;break</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}?comp=lease&amp;restype=container&amp;break&quot;]
+  transform: &gt;
+    $.put.responses[&quot;202&quot;][&quot;x-az-response-name&quot;] = &quot;BrokenLease&quot;;
+    $.put.responses[&quot;202&quot;][&quot;x-az-public&quot;] = false;
+</code></pre>
+<h3 id="containernamecompleaserestypecontainerchange">/{containerName}?comp=lease&amp;restype=container&amp;change</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}?comp=lease&amp;restype=container&amp;change&quot;]
+  transform: &gt;
+    $.put.responses[&quot;200&quot;].description = &quot;The lease operation completed successfully.&quot;;
+    $.put.responses[&quot;200&quot;].headers[&quot;x-ms-lease-id&quot;].description = &quot;Uniquely identifies a container's or blob's lease&quot;;
+    $.put.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;Lease&quot;;
+</code></pre>
+<h3 id="containernamerestypecontainercomplistflat">/{containerName}?restype=container&amp;comp=list&amp;flat</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions
+  transform: &gt;
+    if (!$.BlobsFlatSegment) {
+        $.BlobsFlatSegment = $.ListBlobsFlatSegmentResponse;
+        delete $.ListBlobsFlatSegmentResponse;
+        $.BlobsFlatSegment[&quot;x-ms-client-name&quot;] = &quot;BlobsFlatSegment&quot;;
+        $.BlobsFlatSegment[&quot;x-az-public&quot;] = false;
+        $.BlobsFlatSegment.required.push(&quot;NextMarker&quot;);
+        const path = $.BlobsFlatSegment.properties.Segment.$ref.replace(/[#].*$/, &quot;#/definitions/&quot;);
+        $.BlobsFlatSegment.properties.BlobItems = {
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;xml&quot;: { &quot;name&quot;: &quot;Blobs&quot;, &quot;wrapped&quot;: true },
+            &quot;items&quot;: { &quot;$ref&quot;: path + &quot;BlobItem&quot; }
+        };
+        delete $.BlobsFlatSegment.properties.Segment;
+        delete $.BlobFlatListSegment;
+    }
+    $.BlobItem.required = [ &quot;Name&quot;, &quot;Properties&quot; ];
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}?restype=container&amp;comp=list&amp;flat&quot;]
+  transform: &gt;
+    $.get.operationId = &quot;Container_ListBlobsFlatSegment&quot;;
+    $.get.responses[&quot;200&quot;].headers[&quot;Content-Type&quot;][&quot;x-az-demote-header&quot;] = true;
+    const def = $.get.responses[&quot;200&quot;].schema;
+    if (def &amp;&amp; def[&quot;$ref&quot;] &amp;&amp; !def[&quot;$ref&quot;].endsWith(&quot;BlobsFlatSegment&quot;)) {
+        const path = def[&quot;$ref&quot;].replace(/[#].*$/, &quot;#/definitions/BlobsFlatSegment&quot;);
+        $.get.responses[&quot;200&quot;].schema = { &quot;$ref&quot;: path };
+    }
+</code></pre>
+<h3 id="containernamerestypecontainercomplisthierarchy">/{containerName}?restype=container&amp;comp=list&amp;hierarchy</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions
+  transform: &gt;
+    if (!$.BlobsHierarchySegment) {
+        $.BlobsHierarchySegment = $.ListBlobsHierarchySegmentResponse;
+        delete $.ListBlobsHierarchySegmentResponse;
+        $.BlobsHierarchySegment[&quot;x-ms-client-name&quot;] = &quot;BlobsHierarchySegment&quot;;
+        $.BlobsHierarchySegment[&quot;x-az-public&quot;] = false;
+        $.BlobsHierarchySegment.required.push(&quot;NextMarker&quot;);
+        const path = $.BlobsHierarchySegment.properties.Segment.$ref.replace(/[#].*$/, &quot;#/definitions/&quot;);
+        $.BlobsHierarchySegment.properties.BlobItems = {
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;xml&quot;: { &quot;name&quot;: &quot;Blobs&quot;, &quot;wrapped&quot;: true },
+            &quot;items&quot;: { &quot;$ref&quot;: path + &quot;BlobItem&quot; }
+        };
+        $.BlobsHierarchySegment.properties.BlobPrefixes = {
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;xml&quot;: { &quot;name&quot;: &quot;Blobs&quot;, &quot;wrapped&quot;: true },
+            &quot;items&quot;: { &quot;$ref&quot;: path + &quot;BlobPrefix&quot; }
+        };
+        delete $.BlobsHierarchySegment.properties.Segment;
+        delete $.BlobHierarchyListSegment;
+    }
+    $.BlobPrefix[&quot;x-az-public&quot;] = false;
+- from: swagger-document
+  where: $.parameters.Delimiter
+  transform: &gt;
+    $.required = false;
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}?restype=container&amp;comp=list&amp;hierarchy&quot;]
+  transform: &gt;
+    $.get.operationId = &quot;Container_ListBlobsHierarchySegment&quot;;
+    $.get.responses[&quot;200&quot;].headers[&quot;Content-Type&quot;][&quot;x-az-demote-header&quot;] = true;
+    const def = $.get.responses[&quot;200&quot;].schema;
+    if (def &amp;&amp; def[&quot;$ref&quot;] &amp;&amp; !def[&quot;$ref&quot;].endsWith(&quot;BlobsHierarchySegment&quot;)) {
+        const path = def[&quot;$ref&quot;].replace(/[#].*$/, &quot;#/definitions/BlobsHierarchySegment&quot;);
+        $.get.responses[&quot;200&quot;].schema = { &quot;$ref&quot;: path };
+    }
+</code></pre>
+<h3 id="md5-to-hash">MD5 to Hash</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.parameters.BlobContentMD5
+  transform: &gt;
+    $[&quot;x-ms-client-name&quot;] = &quot;blobContentHash&quot;;
+- from: swagger-document
+  where: $.parameters.ContentMD5
+  transform: &gt;
+    $[&quot;x-ms-client-name&quot;] = &quot;transactionalContentHash&quot;;
+- from: swagger-document
+  where: $.parameters.GetRangeContentMD5
+  transform: &gt;
+    $[&quot;x-ms-client-name&quot;] = &quot;rangeGetContentHash&quot;;
+- from: swagger-document
+  where: $.parameters.SourceContentMD5
+  transform: &gt;
+    $[&quot;x-ms-client-name&quot;] = &quot;sourceContentHash&quot;;
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;]..responses..headers[&quot;Content-MD5&quot;]
+  transform: &gt;
+    $[&quot;x-ms-client-name&quot;] = &quot;ContentHash&quot;;
+</code></pre>
+<h3 id="containernameblob">/{containerName}/{blob}</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions
+  transform: &gt;
+    if (!$.BlobItemProperties) {
+        $.BlobItemProperties = $.BlobProperties;
+        delete $.BlobProperties;
+        $.BlobItemProperties.properties.ETag = $.BlobItemProperties.properties.Etag;
+        $.BlobItemProperties.properties.ETag.xml = { &quot;name&quot;:  &quot;Etag&quot; };
+        delete $.BlobItemProperties.properties.Etag;
+        delete $.BlobItemProperties.required;
+        $.BlobItemProperties.properties[&quot;Content-MD5&quot;][&quot;x-ms-client-name&quot;] = &quot;ContentHash&quot;;
+        $.BlobItemProperties.properties.CopySource.format = &quot;url&quot;;
+        const path = $.BlobItem.properties.Properties.$ref.replace(/[#].*$/, &quot;#/definitions/BlobItemProperties&quot;);
+        $.BlobItem.properties.Properties = { &quot;$ref&quot;: path };
+    }
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}/{blob}&quot;]
+  transform: &gt;
+    $.get.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;FlattenedDownloadProperties&quot;;
+    $.get.responses[&quot;200&quot;][&quot;x-az-public&quot;] = false;
+    $.get.responses[&quot;200&quot;].headers[&quot;x-ms-copy-source&quot;].format = &quot;url&quot;;
+    $.get.responses[&quot;200&quot;].headers[&quot;x-ms-copy-status&quot;][&quot;x-ms-enum&quot;].name = &quot;CopyStatus&quot;;
+    $.get.responses[&quot;200&quot;].headers[&quot;x-ms-lease-state&quot;][&quot;x-ms-enum&quot;].name = &quot;LeaseState&quot;;
+    $.get.responses[&quot;200&quot;].headers[&quot;x-ms-lease-status&quot;][&quot;x-ms-enum&quot;].name = &quot;LeaseStatus&quot;;
+    $.get.responses[&quot;200&quot;].headers[&quot;x-ms-blob-content-md5&quot;][&quot;x-ms-client-name&quot;] = &quot;BlobContentHash&quot;;
+    $.get.responses[&quot;200&quot;][&quot;x-az-response-schema-name&quot;] = &quot;Content&quot;;
+    $.get.responses[&quot;206&quot;][&quot;x-az-response-name&quot;] = &quot;FlattenedDownloadProperties&quot;;
+    $.get.responses[&quot;206&quot;][&quot;x-az-public&quot;] = false;
+    $.get.responses[&quot;206&quot;].headers[&quot;x-ms-copy-source&quot;].format = &quot;url&quot;;
+    $.get.responses[&quot;206&quot;].headers[&quot;x-ms-copy-status&quot;][&quot;x-ms-enum&quot;].name = &quot;CopyStatus&quot;;
+    $.get.responses[&quot;206&quot;].headers[&quot;x-ms-lease-state&quot;][&quot;x-ms-enum&quot;].name = &quot;LeaseState&quot;;
+    $.get.responses[&quot;206&quot;].headers[&quot;x-ms-lease-status&quot;][&quot;x-ms-enum&quot;].name = &quot;LeaseStatus&quot;;
+    $.get.responses[&quot;206&quot;].headers[&quot;x-ms-blob-content-md5&quot;][&quot;x-ms-client-name&quot;] = &quot;BlobContentHash&quot;;
+    $.get.responses[&quot;206&quot;][&quot;x-az-response-schema-name&quot;] = &quot;Content&quot;;
+    $.get.responses[&quot;304&quot;] = {
+        &quot;description&quot;: &quot;The condition specified using HTTP conditional header(s) is not met.&quot;,
+        &quot;x-az-response-name&quot;: &quot;ConditionNotMetError&quot;,
+        &quot;x-az-create-exception&quot;: true,
+        &quot;x-az-public&quot;: false,
+        &quot;headers&quot;: { &quot;x-ms-error-code&quot;: { &quot;x-ms-client-name&quot;: &quot;ErrorCode&quot;, &quot;type&quot;: &quot;string&quot; } } };
+    $.head.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;BlobProperties&quot;;
+    $.head.responses[&quot;200&quot;].headers[&quot;x-ms-copy-source&quot;].format = &quot;url&quot;;
+    $.head.responses[&quot;200&quot;].headers[&quot;x-ms-copy-status&quot;][&quot;x-ms-enum&quot;].name = &quot;CopyStatus&quot;;
+    $.head.responses[&quot;200&quot;].headers[&quot;x-ms-lease-state&quot;][&quot;x-ms-enum&quot;].name = &quot;LeaseState&quot;;
+    $.head.responses[&quot;200&quot;].headers[&quot;x-ms-lease-status&quot;][&quot;x-ms-enum&quot;].name = &quot;LeaseStatus&quot;;
+    $.head.responses[&quot;200&quot;].headers[&quot;Content-MD5&quot;][&quot;x-ms-client-name&quot;] = &quot;ContentHash&quot;;
+    $.head.responses[&quot;200&quot;].headers[&quot;Content-Encoding&quot;].type = &quot;array&quot;;
+    $.head.responses[&quot;200&quot;].headers[&quot;Content-Encoding&quot;].collectionFormat = &quot;csv&quot;;
+    $.head.responses[&quot;200&quot;].headers[&quot;Content-Encoding&quot;].items = { &quot;type&quot;: &quot;string&quot; };
+    $.head.responses[&quot;200&quot;].headers[&quot;Content-Language&quot;].type = &quot;array&quot;;
+    $.head.responses[&quot;200&quot;].headers[&quot;Content-Language&quot;].collectionFormat = &quot;csv&quot;;
+    $.head.responses[&quot;200&quot;].headers[&quot;Content-Language&quot;].items = { &quot;type&quot;: &quot;string&quot; };
+    $.head.responses[&quot;304&quot;] = {
+        &quot;description&quot;: &quot;The condition specified using HTTP conditional header(s) is not met.&quot;,
+        &quot;x-az-response-name&quot;: &quot;ConditionNotMetError&quot;,
+        &quot;x-az-create-exception&quot;: true,
+        &quot;x-az-public&quot;: false,
+        &quot;headers&quot;: { &quot;x-ms-error-code&quot;: { &quot;x-ms-client-name&quot;: &quot;ErrorCode&quot;, &quot;type&quot;: &quot;string&quot; } }
+    };
+    $.head.responses[&quot;default&quot;] = {
+        &quot;description&quot;: &quot;The condition specified using HTTP conditional header(s) is not met.&quot;,
+        &quot;x-az-response-name&quot;: &quot;ConditionNotMetError&quot;,
+        &quot;x-az-create-exception&quot;: true,
+        &quot;x-az-public&quot;: false,
+        &quot;headers&quot;: { &quot;x-ms-error-code&quot;: { &quot;x-ms-client-name&quot;: &quot;ErrorCode&quot;, &quot;type&quot;: &quot;string&quot; } }
+    };
+</code></pre>
+<h3 id="remove-type-suffix-from-enum-names">Remove Type suffix from enum names</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.parameters.DeleteSnapshots
+  transform: &gt;
+    $[&quot;x-ms-enum&quot;].name = &quot;DeleteSnapshotsOption&quot;;
+- from: swagger-document
+  where: $.parameters.SequenceNumberAction
+  transform: &gt;
+    $[&quot;x-ms-enum&quot;].name = &quot;SequenceNumberAction&quot;;
+- from: swagger-document
+  where: $.definitions.CopyStatus
+  transform: &gt;
+    $[&quot;x-ms-enum&quot;].name = &quot;CopyStatus&quot;;
+- from: swagger-document
+  where: $.definitions.LeaseState
+  transform: &gt;
+    $[&quot;x-ms-enum&quot;].name = &quot;LeaseState&quot;;
+- from: swagger-document
+  where: $.definitions.LeaseStatus
+  transform: &gt;
+    $[&quot;x-ms-enum&quot;].name = &quot;LeaseStatus&quot;;
+- from: swagger-document
+  where: $.definitions.GeoReplication.properties.Status
+  transform: &gt;
+    $[&quot;x-ms-enum&quot;].name = &quot;GeoReplicationStatus&quot;;
+    $[&quot;x-ms-enum&quot;].modelAsString = false;
+</code></pre>
+<h3 id="containernameblobcomppropertiessethttpheaders">/{containerName}/{blob}?comp=properties&amp;SetHTTPHeaders</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}/{blob}?comp=properties&amp;SetHTTPHeaders&quot;]
+  transform: &gt;
+    $.put.operationId = &quot;Blob_SetHttpHeaders&quot;;
+    $.put.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;SetHttpHeadersOperation&quot;;
+    $.put.responses[&quot;200&quot;][&quot;x-az-public&quot;] = false;
+- from: swagger-document
+  where: $.parameters.BlobContentEncoding
+  transform: &gt;
+    $.type = &quot;array&quot;;
+    $.collectionFormat = &quot;csv&quot;;
+    $.items = { &quot;type&quot;: &quot;string&quot; };
+- from: swagger-document
+  where: $.parameters.BlobContentLanguage
+  transform: &gt;
+    $.type = &quot;array&quot;;
+    $.collectionFormat = &quot;csv&quot;;
+    $.items = { &quot;type&quot;: &quot;string&quot; };
+</code></pre>
+<h3 id="containernameblobcompmetadata">/{containerName}/{blob}?comp=metadata</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}/{blob}?comp=metadata&quot;]
+  transform: &gt;
+    $.put.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;SetMetadataOperation&quot;;
+    $.put.responses[&quot;200&quot;][&quot;x-az-public&quot;] = false;
+</code></pre>
+<h3 id="containernameblobcompleaseacquire">/{containerName}/{blob}?comp=lease&amp;acquire</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}/{blob}?comp=lease&amp;acquire&quot;]
+  transform: &gt;
+    $.put.responses[&quot;201&quot;][&quot;x-az-response-name&quot;] = &quot;Lease&quot;;
+    $.put.responses[&quot;201&quot;].description = &quot;The lease operation completed successfully.&quot;;
+    $.put.responses[&quot;201&quot;].headers[&quot;x-ms-lease-id&quot;].description = &quot;Uniquely identifies a container's or blob's lease&quot;;
+</code></pre>
+<h3 id="containernameblobcompleaserelease">/{containerName}/{blob}?comp=lease&amp;release</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}/{blob}?comp=lease&amp;release&quot;]
+  transform: &gt;
+    $.put.responses[&quot;200&quot;].description = &quot;The operation completed successfully.&quot;;
+    $.put.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;BlobInfo&quot;;
+</code></pre>
+<h3 id="containernameblobcompleaserenew">/{containerName}/{blob}?comp=lease&amp;renew</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}/{blob}?comp=lease&amp;renew&quot;]
+  transform: &gt;
+    $.put.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;Lease&quot;;
+    $.put.responses[&quot;200&quot;].description = &quot;The lease operation completed successfully.&quot;;
+    $.put.responses[&quot;200&quot;].headers[&quot;x-ms-lease-id&quot;].description = &quot;Uniquely identifies a container's or blob's lease&quot;;
+</code></pre>
+<h3 id="containernameblobcompleasechange">/{containerName}/{blob}?comp=lease&amp;change</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}/{blob}?comp=lease&amp;change&quot;]
+  transform: &gt;
+    $.put.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;Lease&quot;;
+    $.put.responses[&quot;200&quot;].description = &quot;The lease operation completed successfully.&quot;;
+    $.put.responses[&quot;200&quot;].headers[&quot;x-ms-lease-id&quot;].description = &quot;Uniquely identifies a container's or blob's lease&quot;;
+</code></pre>
+<h3 id="containernameblobcompleasebreak">/{containerName}/{blob}?comp=lease&amp;break</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}/{blob}?comp=lease&amp;break&quot;]
+  transform: &gt;
+    $.put.responses[&quot;202&quot;][&quot;x-az-response-name&quot;] = &quot;BrokenLease&quot;;
+    $.put.responses[&quot;202&quot;][&quot;x-az-public&quot;] = false;
+</code></pre>
+<h3 id="containernameblobcompsnapshot">/{containerName}/{blob}?comp=snapshot</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}/{blob}?comp=snapshot&quot;]
+  transform: &gt;
+    $.put.responses[&quot;201&quot;][&quot;x-az-response-name&quot;] = &quot;BlobSnapshotInfo&quot;;
+</code></pre>
+<h3 id="containernameblobcompcopy">/{containerName}/{blob}?comp=copy</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}/{blob}?comp=copy&quot;]
+  transform: &gt;
+    $.put.operationId = &quot;Blob_StartCopyFromUri&quot;;
+    $.put.responses[&quot;202&quot;][&quot;x-az-response-name&quot;] = &quot;BlobCopyInfo&quot;;
+    $.put.responses[&quot;202&quot;].description = &quot;The operation completed successfully.&quot;;
+    $.put.responses[&quot;202&quot;].headers[&quot;x-ms-copy-status&quot;][&quot;x-ms-enum&quot;].name = &quot;CopyStatus&quot;;
+</code></pre>
+<h3 id="containernameblobcompcopysync">/{containerName}/{blob}?comp=copy&amp;sync</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}/{blob}?comp=copy&amp;sync&quot;]
+  transform: &gt;
+    $.put.operationId = &quot;Blob_CopyFromUri&quot;;
+    $.put.responses[&quot;202&quot;][&quot;x-az-response-name&quot;] = &quot;BlobCopyInfo&quot;;
+    $.put.responses[&quot;202&quot;].description = &quot;The operation completed successfully.&quot;;
+    $.put.responses[&quot;202&quot;].headers[&quot;x-ms-copy-status&quot;].enum = [&quot;pending&quot;, &quot;success&quot;, &quot;aborted&quot;, &quot;failed&quot;];
+    $.put.responses[&quot;202&quot;].headers[&quot;x-ms-copy-status&quot;][&quot;x-ms-enum&quot;].name = &quot;CopyStatus&quot;;
+</code></pre>
+<h3 id="containernameblobcompcopycopyidcopyid">/{containerName}/{blob}?comp=copy&amp;copyid={CopyId}</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}/{blob}?comp=copy&amp;copyid={CopyId}&quot;]
+  transform: &gt;
+    $.put.operationId = &quot;Blob_AbortCopyFromUri&quot;;
+</code></pre>
+<h3 id="sourceurl">SourceUrl</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.parameters.SourceUrl
+  transform: &gt;
+    $[&quot;x-ms-client-name&quot;] = &quot;sourceUri&quot;
+</code></pre>
+<h3 id="containernameblobpageblob">/{containerName}/{blob}?PageBlob</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}/{blob}?PageBlob&quot;]
+  transform: &gt;
+    $.put.responses[&quot;201&quot;][&quot;x-az-response-name&quot;] = &quot;BlobContentInfo&quot;;
+    $.put.responses[&quot;201&quot;].description = &quot;The operation completed successfully.&quot;;
+    $.put.responses[&quot;201&quot;].headers[&quot;x-ms-request-server-encrypted&quot;][&quot;x-az-demote-header&quot;] = true;
+    $.put.responses[&quot;201&quot;].headers[&quot;x-ms-blob-sequence-number&quot;] = {
+        &quot;x-ms-client-name&quot;: &quot;BlobSequenceNumber&quot;,
+        &quot;type&quot;: &quot;integer&quot;,
+        &quot;format&quot;: &quot;int64&quot;,
+        &quot;description&quot;: &quot;The current sequence number for the page blob.  This is only returned for page blobs.&quot;
+    };
+</code></pre>
+<h3 id="containernameblobcomppageupdate">/{containerName}/{blob}?comp=page&amp;update</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}/{blob}?comp=page&amp;update&quot;]
+  transform: &gt;
+    $.put.responses[&quot;201&quot;][&quot;x-az-response-name&quot;] = &quot;PageInfo&quot;;
+    $.put.responses[&quot;201&quot;].description = &quot;The operation completed successfully.&quot;;
+    $.put.responses[&quot;201&quot;].headers[&quot;x-ms-blob-sequence-number&quot;].description = &quot;The current sequence number for the page blob.  This is only returned for page blobs.&quot;;
+    $.put.responses[&quot;201&quot;].headers[&quot;x-ms-request-server-encrypted&quot;][&quot;x-az-demote-header&quot;] = true;
+</code></pre>
+<h3 id="containernameblobcomppageclear">/{containerName}/{blob}?comp=page&amp;clear</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}/{blob}?comp=page&amp;clear&quot;]
+  transform: &gt;
+    $.put.responses[&quot;201&quot;][&quot;x-az-response-name&quot;] = &quot;PageInfo&quot;;
+    $.put.responses[&quot;201&quot;].description = &quot;The operation completed successfully.&quot;;
+    $.put.responses[&quot;201&quot;].headers[&quot;x-ms-blob-sequence-number&quot;].description = &quot;The current sequence number for the page blob.  This is only returned for page blobs.&quot;;
+    $.put.responses[&quot;201&quot;].headers[&quot;x-ms-request-server-encrypted&quot;] = {
+        &quot;x-ms-client-name&quot;: &quot;IsServerEncrypted&quot;,
+        &quot;type&quot;: &quot;boolean&quot;,
+        &quot;x-az-demote-header&quot;: true,
+        &quot;description&quot;: &quot;The value of this header is set to true if the contents of the request are successfully encrypted using the specified algorithm, and false otherwise.&quot;
+    };
+</code></pre>
+<h3 id="containernameblobcomppageupdatefromurl">/{containerName}/{blob}?comp=page&amp;update&amp;fromUrl</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}/{blob}?comp=page&amp;update&amp;fromUrl&quot;]
+  transform: &gt;
+    $.put.operationId = &quot;PageBlob_UploadPagesFromUri&quot;;
+    $.put.responses[&quot;201&quot;][&quot;x-az-response-name&quot;] = &quot;PageInfo&quot;;
+    $.put.responses[&quot;201&quot;].description = &quot;The operation completed successfully.&quot;;
+    $.put.responses[&quot;201&quot;].headers[&quot;x-ms-blob-sequence-number&quot;].description = &quot;The current sequence number for the page blob.  This is only returned for page blobs.&quot;;
+    $.put.responses[&quot;201&quot;].headers[&quot;x-ms-request-server-encrypted&quot;][&quot;x-az-demote-header&quot;] = true;
+    $.put.responses[&quot;304&quot;] = {
+        &quot;description&quot;: &quot;The condition specified using HTTP conditional header(s) is not met.&quot;,
+        &quot;x-az-response-name&quot;: &quot;ConditionNotMetError&quot;,
+        &quot;x-az-create-exception&quot;: true,
+        &quot;x-az-public&quot;: false,
+        &quot;headers&quot;: { &quot;x-ms-error-code&quot;: { &quot;x-ms-client-name&quot;: &quot;ErrorCode&quot;, &quot;type&quot;: &quot;string&quot; } }
+    };
+</code></pre>
+<h3 id="containernameblobcomppagelist">/{containerName}/{blob}?comp=pagelist</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}/{blob}?comp=pagelist&quot;]
+  transform: &gt;
+    $.get.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;PageRangesInfo&quot;;
+    $.get.responses[&quot;304&quot;] = {
+        &quot;description&quot;: &quot;The condition specified using HTTP conditional header(s) is not met.&quot;,
+        &quot;x-az-response-name&quot;: &quot;ConditionNotMetError&quot;,
+        &quot;x-az-create-exception&quot;: true,
+        &quot;x-az-public&quot;: false,
+        &quot;headers&quot;: { &quot;x-ms-error-code&quot;: { &quot;x-ms-client-name&quot;: &quot;ErrorCode&quot;, &quot;type&quot;: &quot;string&quot; } }
+    };
+</code></pre>
+<h3 id="containernameblobcomppagelistdiff">/{containerName}/{blob}?comp=pagelist&amp;diff</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}/{blob}?comp=pagelist&amp;diff&quot;]
+  transform: &gt;
+    $.get.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;PageRangesInfo&quot;;
+    $.get.responses[&quot;304&quot;] = {
+        &quot;description&quot;: &quot;The condition specified using HTTP conditional header(s) is not met.&quot;,
+        &quot;x-az-response-name&quot;: &quot;ConditionNotMetError&quot;,
+        &quot;x-az-create-exception&quot;: true,
+        &quot;x-az-public&quot;: false,
+        &quot;headers&quot;: { &quot;x-ms-error-code&quot;: { &quot;x-ms-client-name&quot;: &quot;ErrorCode&quot;, &quot;type&quot;: &quot;string&quot; } }
+    };
+</code></pre>
+<h3 id="containernameblobcomppropertiesresize">/{containerName}/{blob}?comp=properties&amp;Resize</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}/{blob}?comp=properties&amp;Resize&quot;]
+  transform: &gt;
+    $.put.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;PageBlobInfo&quot;;
+    $.put.responses[&quot;200&quot;].description = &quot;The operation completed successfully.&quot;;
+    $.put.responses[&quot;200&quot;].headers[&quot;Last-Modified&quot;].description = &quot;Returns the date and time the blob was last modified. Any operation that modifies the blob, including an update of the blob's metadata or properties, changes the last-modified time of the blob.&quot;;
+    $.put.responses[&quot;200&quot;].headers[&quot;x-ms-blob-sequence-number&quot;].description = &quot;The current sequence number for the page blob.  This is only returned for page blobs.&quot;;
+</code></pre>
+<h3 id="containernameblobcomppropertiesupdatesequencenumber">/{containerName}/{blob}?comp=properties&amp;UpdateSequenceNumber</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}/{blob}?comp=properties&amp;UpdateSequenceNumber&quot;]
+  transform: &gt;
+    $.put.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;PageBlobInfo&quot;;
+    $.put.responses[&quot;200&quot;].description = &quot;The operation completed successfully.&quot;;
+    $.put.responses[&quot;200&quot;].headers[&quot;Last-Modified&quot;].description = &quot;Returns the date and time the blob was last modified. Any operation that modifies the blob, including an update of the blob's metadata or properties, changes the last-modified time of the blob.&quot;;
+    $.put.responses[&quot;200&quot;].headers[&quot;x-ms-blob-sequence-number&quot;].description = &quot;The current sequence number for the page blob.  This is only returned for page blobs.&quot;;
+</code></pre>
+<h3 id="containernameblobcompincrementalcopy">/{containerName}/{blob}?comp=incrementalcopy</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}/{blob}?comp=incrementalcopy&quot;]
+  transform: &gt;
+    $.put.responses[&quot;202&quot;][&quot;x-az-response-name&quot;] = &quot;BlobCopyInfo&quot;;
+    $.put.responses[&quot;202&quot;].description = &quot;The operation completed successfully.&quot;;
+    $.put.responses[&quot;202&quot;].headers[&quot;x-ms-copy-status&quot;][&quot;x-ms-enum&quot;].name = &quot;CopyStatus&quot;;
+</code></pre>
+<h3 id="containernameblobappendblob">/{containerName}/{blob}?AppendBlob</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}/{blob}?AppendBlob&quot;]
+  transform: &gt;
+    $.put.responses[&quot;201&quot;][&quot;x-az-response-name&quot;] = &quot;BlobContentInfo&quot;;
+    $.put.responses[&quot;201&quot;].description = &quot;The operation completed successfully.&quot;;
+    $.put.responses[&quot;201&quot;].headers[&quot;x-ms-request-server-encrypted&quot;][&quot;x-az-demote-header&quot;] = true;
+    $.put.responses[&quot;201&quot;].headers[&quot;x-ms-blob-sequence-number&quot;] = {
+        &quot;x-ms-client-name&quot;: &quot;BlobSequenceNumber&quot;,
+        &quot;type&quot;: &quot;integer&quot;,
+        &quot;format&quot;: &quot;int64&quot;,
+        &quot;description&quot;: &quot;The current sequence number for the page blob.  This is only returned for page blobs.&quot;
+    };
+</code></pre>
+<h3 id="containernameblobcompappendblock">/{containerName}/{blob}?comp=appendblock</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}/{blob}?comp=appendblock&quot;]
+  transform: &gt;
+    $.put.responses[&quot;201&quot;][&quot;x-az-response-name&quot;] = &quot;BlobAppendInfo&quot;;
+    $.put.responses[&quot;201&quot;].description = &quot;The operation completed successfully.&quot;;
+</code></pre>
+<h3 id="containernameblobcompappendblockfromurl">/{containerName}/{blob}?comp=appendblock&amp;fromUrl</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}/{blob}?comp=appendblock&amp;fromUrl&quot;]
+  transform: &gt;
+    $.put.operationId = &quot;AppendBlob_AppendBlockFromUri&quot;;
+    $.put.responses[&quot;201&quot;][&quot;x-az-response-name&quot;] = &quot;BlobAppendInfo&quot;;
+    $.put.responses[&quot;201&quot;].description = &quot;The operation completed successfully.&quot;;
+    $.put.responses[&quot;201&quot;].headers[&quot;x-ms-request-server-encrypted&quot;] = {
+        &quot;x-ms-client-name&quot;: &quot;IsServerEncrypted&quot;,
+        &quot;type&quot;: &quot;boolean&quot;,
+        &quot;description&quot;: &quot;The value of this header is set to true if the contents of the request are successfully encrypted using the specified algorithm, and false otherwise.&quot;
+    };
+    $.put.responses[&quot;304&quot;] = {
+        &quot;description&quot;: &quot;The condition specified using HTTP conditional header(s) is not met.&quot;,
+        &quot;x-az-response-name&quot;: &quot;ConditionNotMetError&quot;,
+        &quot;x-az-create-exception&quot;: true,
+        &quot;x-az-public&quot;: false,
+        &quot;headers&quot;: { &quot;x-ms-error-code&quot;: { &quot;x-ms-client-name&quot;: &quot;ErrorCode&quot;, &quot;type&quot;: &quot;string&quot; } }
+    };
+</code></pre>
+<h3 id="containernameblobblockblob">/{containerName}/{blob}?BlockBlob</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}/{blob}?BlockBlob&quot;]
+  transform: &gt;
+    $.put.responses[&quot;201&quot;][&quot;x-az-response-name&quot;] = &quot;BlobContentInfo&quot;;
+    $.put.responses[&quot;201&quot;].description = &quot;The operation completed successfully.&quot;;
+    $.put.responses[&quot;201&quot;].headers[&quot;x-ms-request-server-encrypted&quot;][&quot;x-az-demote-header&quot;] = true;
+    $.put.responses[&quot;201&quot;].headers[&quot;x-ms-blob-sequence-number&quot;] = {
+        &quot;x-ms-client-name&quot;: &quot;BlobSequenceNumber&quot;,
+        &quot;type&quot;: &quot;integer&quot;,
+        &quot;format&quot;: &quot;int64&quot;,
+        &quot;description&quot;: &quot;The current sequence number for the page blob.  This is only returned for page blobs.&quot;
+    };
+</code></pre>
+<h3 id="containernameblobcompblock">/{containerName}/{blob}?comp=block</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}/{blob}?comp=block&quot;]
+  transform: &gt;
+    $.put.responses[&quot;201&quot;][&quot;x-az-response-name&quot;] = &quot;BlockInfo&quot;;
+    $.put.responses[&quot;201&quot;].description = &quot;The operation completed successfully.&quot;;
+    $.put.responses[&quot;201&quot;].headers[&quot;x-ms-request-server-encrypted&quot;][&quot;x-az-demote-header&quot;] = true;
+</code></pre>
+<h3 id="containernameblobcompblockfromurl">/{containerName}/{blob}?comp=block&amp;fromURL</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}/{blob}?comp=block&amp;fromURL&quot;]
+  transform: &gt;
+    $.put.operationId = &quot;BlockBlob_StageBlockFromUri&quot;;
+    $.put.responses[&quot;201&quot;][&quot;x-az-response-name&quot;] = &quot;BlockInfo&quot;;
+    $.put.responses[&quot;201&quot;].description = &quot;The operation completed successfully.&quot;;
+    $.put.responses[&quot;201&quot;].headers[&quot;x-ms-request-server-encrypted&quot;][&quot;x-az-demote-header&quot;] = true;
+    $.put.responses[&quot;304&quot;] = {
+        &quot;description&quot;: &quot;The condition specified using HTTP conditional header(s) is not met.&quot;,
+        &quot;x-az-response-name&quot;: &quot;ConditionNotMetError&quot;,
+        &quot;x-az-create-exception&quot;: true,
+        &quot;x-az-public&quot;: false,
+        &quot;headers&quot;: { &quot;x-ms-error-code&quot;: { &quot;x-ms-client-name&quot;: &quot;ErrorCode&quot;, &quot;type&quot;: &quot;string&quot; } }
+    };
+</code></pre>
+<h3 id="containernameblobcompblocklist">/{containerName}/{blob}?comp=blocklist</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/{containerName}/{blob}?comp=blocklist&quot;]
+  transform: &gt;
+    $.get.responses[&quot;200&quot;][&quot;x-az-response-name&quot;] = &quot;GetBlockListOperation&quot;;
+    $.get.responses[&quot;200&quot;][&quot;x-az-public&quot;] = false;
+    $.put.responses[&quot;201&quot;][&quot;x-az-response-name&quot;] = &quot;BlobContentInfo&quot;;
+    $.put.responses[&quot;201&quot;].description = &quot;The operation completed successfully.&quot;;
+    $.put.responses[&quot;201&quot;].headers[&quot;x-ms-request-server-encrypted&quot;][&quot;x-az-demote-header&quot;] = true;
+    $.put.responses[&quot;201&quot;].headers[&quot;x-ms-blob-sequence-number&quot;] = {
+        &quot;x-ms-client-name&quot;: &quot;BlobSequenceNumber&quot;,
+        &quot;type&quot;: &quot;integer&quot;,
+        &quot;format&quot;: &quot;int64&quot;,
+        &quot;description&quot;: &quot;The current sequence number for the page blob.  This is only returned for page blobs.&quot;
+    };
+    $.put.responses[&quot;201&quot;].headers[&quot;x-ms-content-crc64&quot;][&quot;x-az-demote-header&quot;] = true;
+</code></pre>
+<h3 id="blocklookuplist">BlockLookupList</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions.BlockLookupList
+  transform: &gt;
+    $[&quot;x-az-public&quot;] = false;
+    $.description = &quot;A list of block IDs split between the committed block list, in the uncommitted block list, or in the uncommitted block list first and then in the committed block list.&quot;;
+</code></pre>
+<h3 id="errorcode">ErrorCode</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions.ErrorCode
+  transform: &gt;
+    $[&quot;x-ms-enum&quot;].name = &quot;BlobErrorCode&quot;;
+</code></pre>
+<h3 id="containerproperties">ContainerProperties</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions.ContainerProperties
+  transform: &gt;
+    $.required = [&quot;Last-Modified&quot;, &quot;ETag&quot;];
+    $.properties.ETag = $.properties.Etag;
+    $.properties.ETag.xml = { &quot;name&quot;:  &quot;Etag&quot; };
+    delete $.properties.Etag;
+</code></pre>
+<h3 id="publicaccesstype">PublicAccessType</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions.PublicAccessType
+  transform: &gt;
+    $[&quot;x-ms-enum&quot;].modelAsString = false;
+</code></pre>
+<h3 id="make-sure-everything-has-a-type">Make sure everything has a type</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions.Metrics
+  transform: &gt;
+    $.type = &quot;object&quot;;
+- from: swagger-document
+  where: $.definitions.BlobTags
+  transform: &gt;
+    $.type = &quot;object&quot;;
+- from: swagger-document
+  where: $.definitions.DataLakeStorageError
+  transform: &gt;
+    $.properties.error.type = &quot;object&quot;;
+</code></pre>
+<h3 id="keyinfo">KeyInfo</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions.KeyInfo
+  transform: &gt;
+    $.required = [&quot;Expiry&quot;];
+    $.properties.Start.format = $.properties.Expiry.format = &quot;date-time-8601&quot;;
+    $[&quot;x-az-public&quot;] = false;
+</code></pre>
+<h3 id="hide-various-include-types">Hide various Include types</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.parameters.ListBlobsInclude
+  transform: &gt;
+    $.items[&quot;x-az-public&quot;] = false;
+- from: swagger-document
+  where: $.parameters.ListContainersInclude
+  transform: &gt;
+    $[&quot;x-az-public&quot;] = false;
+</code></pre>
+<h3 id="logging">Logging</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions.Logging
+  transform: &gt;
+    $[&quot;x-az-disable-warnings&quot;] = &quot;CA1724&quot;;
+</code></pre>
+<h3 id="hide-storageerror">Hide StorageError</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.definitions.StorageError
+  transform: &gt;
+    $[&quot;x-az-public&quot;] = false;
+    $.properties.Code = { &quot;type&quot;: &quot;string&quot; };
+- from: swagger-document
+  where: $.definitions.DataLakeStorageError
+  transform: &gt;
+    $[&quot;x-az-public&quot;] = false;
+</code></pre>
+<h3 id="make-accesstier-unique">Make AccessTier Unique</h3>
+<p>autorest.python complains that the same enum has different values</p>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.parameters.AccessTierRequired
+  transform: &gt;
+    $[&quot;x-ms-enum&quot;].name = &quot;AccessTierRequired&quot;;
+- from: swagger-document
+  where: $.parameters.AccessTierOptional
+  transform: &gt;
+    $[&quot;x-ms-enum&quot;].name = &quot;AccessTierOptional&quot;;
+</code></pre>
+<h3 id="fix-doc-comments">Fix doc comments</h3>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.parameters.BlobTagsHeader
+  transform: &gt;
+    $.description = &quot;Optional. A URL encoded query param string which specifies the tags to be created with the Blob object. e.g. TagName1=TagValue1&amp;amp;TagName2=TagValue2. The x-ms-tags header may contain up to 2kb of tags.&quot;;
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;]..get.responses..headers[&quot;x-ms-content-crc64&quot;]
+  transform: &gt;
+    $.description = &quot;If the request is to read a specified range and the x-ms-range-get-content-crc64 is set to true, then the request returns a crc64 for the range, as long as the range size is less than or equal to 4 MB. If both x-ms-range-get-content-crc64 and x-ms-range-get-content-md5 is specified in the same request, it will fail with 400(Bad Request)&quot;;
+- from: swagger-document
+  where: $[&quot;x-ms-paths&quot;][&quot;/?comp=batch&quot;].get.responses[&quot;200&quot;].headers[&quot;Content-Type&quot;]
+  transform: &gt;
+    $.description = $.description.replace(&quot;&lt;GUID&gt;&quot;, &quot;{GUID}&quot;);
+- from: swagger-document
+  where: $.parameters.MultipartContentType
+  transform: &gt;
+    $.description = $.description.replace(&quot;&lt;GUID&gt;&quot;, &quot;{GUID}&quot;);
+</code></pre>
+<h3 id="make-lease-duration-a-long">Make lease duration a long</h3>
+<p>Lease Duration is represented as a TimeSpan in the .NET client libraries, but TimeSpan.MaxValue would overflow an int. Because of this, we are changing the
+type used in the BlobRestClient from an int to a long. This will allow values larger than int.MaxValue (e.g. TimeSpan.MaxValue) to be successfully passed on to the service layer.</p>
+<pre><code class="lang-yaml">directive:
+- from: swagger-document
+  where: $.parameters.LeaseDuration
+  transform: &gt;
+    $.format = &quot;int64&quot;;
 </code></pre>
 </article>
           </div>
@@ -109,7 +1014,7 @@ azure-track2-csharp: true
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/docfx_project/articles/sdk/Storage/Azure.Storage.Blobs/swagger/readme.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/docfx_project/articles/sdk/Storage/Azure.Storage.Blobs/swagger/readme.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

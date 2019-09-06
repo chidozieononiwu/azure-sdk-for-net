@@ -119,16 +119,88 @@
   <h6><strong>Assembly</strong>: Azure.Messaging.EventHubs.dll</h6>
   <h5 id="Azure_Messaging_EventHubs_Metadata_PartitionProperties_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class PartitionProperties</code></pre>
+    <pre><code class="lang-csharp hljs">public class PartitionProperties</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Messaging_EventHubs_Metadata_PartitionProperties__ctor_System_String_System_String_System_Int64_System_Int64_System_Int64_System_DateTimeOffset_System_Boolean_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Metadata.PartitionProperties.%23ctor(System.String%2CSystem.String%2CSystem.Int64%2CSystem.Int64%2CSystem.Int64%2CSystem.DateTimeOffset%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/eventhub/Azure.Messaging.EventHubs/src/Metadata/PartitionProperties.cs/#L71">View Source</a>
+  </span>
+  <a id="Azure_Messaging_EventHubs_Metadata_PartitionProperties__ctor_" data-uid="Azure.Messaging.EventHubs.Metadata.PartitionProperties.#ctor*"></a>
+  <h4 id="Azure_Messaging_EventHubs_Metadata_PartitionProperties__ctor_System_String_System_String_System_Int64_System_Int64_System_Int64_System_DateTimeOffset_System_Boolean_" data-uid="Azure.Messaging.EventHubs.Metadata.PartitionProperties.#ctor(System.String,System.String,System.Int64,System.Int64,System.Int64,System.DateTimeOffset,System.Boolean)">PartitionProperties(String, String, Int64, Int64, Int64, DateTimeOffset, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Messaging.EventHubs.Metadata.PartitionProperties.html">PartitionProperties</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PartitionProperties(string name, string partitionId, long beginningSequenceNumber, long lastSequenceNumber, long lastOffset, DateTimeOffset lastEnqueuedTime, bool isEmpty)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the Event Hub that contains the partitions.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">partitionId</span></td>
+        <td><p>The identifier of the partition.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">beginningSequenceNumber</span></td>
+        <td><p>The first sequence number available for events in the partition.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">lastSequenceNumber</span></td>
+        <td><p>The sequence number observed the last event to be enqueued in the partition.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">lastOffset</span></td>
+        <td><p>The offset of the last event to be enqueued in the partition.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td><span class="parametername">lastEnqueuedTime</span></td>
+        <td><p>The date and time, in UTC, that the last event was enqueued in the partition.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isEmpty</span></td>
+        <td><p>Indicates whether or not the partition is currently empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Azure_Messaging_EventHubs_Metadata_PartitionProperties_BeginningSequenceNumber.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Metadata.PartitionProperties.BeginningSequenceNumber%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Messaging_EventHubs_Metadata_PartitionProperties_BeginningSequenceNumber.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Metadata.PartitionProperties.BeginningSequenceNumber%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/eventhub/Azure.Messaging.EventHubs/src/Metadata/PartitionProperties.cs/#L31">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/eventhub/Azure.Messaging.EventHubs/src/Metadata/PartitionProperties.cs/#L31">View Source</a>
   </span>
   <a id="Azure_Messaging_EventHubs_Metadata_PartitionProperties_BeginningSequenceNumber_" data-uid="Azure.Messaging.EventHubs.Metadata.PartitionProperties.BeginningSequenceNumber*"></a>
   <h4 id="Azure_Messaging_EventHubs_Metadata_PartitionProperties_BeginningSequenceNumber" data-uid="Azure.Messaging.EventHubs.Metadata.PartitionProperties.BeginningSequenceNumber">BeginningSequenceNumber</h4>
@@ -156,20 +228,20 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Azure_Messaging_EventHubs_Metadata_PartitionProperties_EventHubPath.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Metadata.PartitionProperties.EventHubPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Messaging_EventHubs_Metadata_PartitionProperties_EventHubName.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Metadata.PartitionProperties.EventHubName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/eventhub/Azure.Messaging.EventHubs/src/Metadata/PartitionProperties.cs/#L19">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/eventhub/Azure.Messaging.EventHubs/src/Metadata/PartitionProperties.cs/#L19">View Source</a>
   </span>
-  <a id="Azure_Messaging_EventHubs_Metadata_PartitionProperties_EventHubPath_" data-uid="Azure.Messaging.EventHubs.Metadata.PartitionProperties.EventHubPath*"></a>
-  <h4 id="Azure_Messaging_EventHubs_Metadata_PartitionProperties_EventHubPath" data-uid="Azure.Messaging.EventHubs.Metadata.PartitionProperties.EventHubPath">EventHubPath</h4>
-  <div class="markdown level1 summary"><p>The path of the Event Hub that contains the partitions, relative to the namespace
-that contains it.</p>
+  <a id="Azure_Messaging_EventHubs_Metadata_PartitionProperties_EventHubName_" data-uid="Azure.Messaging.EventHubs.Metadata.PartitionProperties.EventHubName*"></a>
+  <h4 id="Azure_Messaging_EventHubs_Metadata_PartitionProperties_EventHubName" data-uid="Azure.Messaging.EventHubs.Metadata.PartitionProperties.EventHubName">EventHubName</h4>
+  <div class="markdown level1 summary"><p>The name of the Event Hub where the partitions reside, specific to the
+Event Hubs namespace that contains it.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string EventHubPath { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string EventHubName { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -188,10 +260,10 @@ that contains it.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Azure_Messaging_EventHubs_Metadata_PartitionProperties_Id.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Metadata.PartitionProperties.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Messaging_EventHubs_Metadata_PartitionProperties_Id.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Metadata.PartitionProperties.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/eventhub/Azure.Messaging.EventHubs/src/Metadata/PartitionProperties.cs/#L25">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/eventhub/Azure.Messaging.EventHubs/src/Metadata/PartitionProperties.cs/#L25">View Source</a>
   </span>
   <a id="Azure_Messaging_EventHubs_Metadata_PartitionProperties_Id_" data-uid="Azure.Messaging.EventHubs.Metadata.PartitionProperties.Id*"></a>
   <h4 id="Azure_Messaging_EventHubs_Metadata_PartitionProperties_Id" data-uid="Azure.Messaging.EventHubs.Metadata.PartitionProperties.Id">Id</h4>
@@ -219,10 +291,10 @@ that contains it.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Azure_Messaging_EventHubs_Metadata_PartitionProperties_IsEmpty.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Metadata.PartitionProperties.IsEmpty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Messaging_EventHubs_Metadata_PartitionProperties_IsEmpty.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Metadata.PartitionProperties.IsEmpty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/eventhub/Azure.Messaging.EventHubs/src/Metadata/PartitionProperties.cs/#L65">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/eventhub/Azure.Messaging.EventHubs/src/Metadata/PartitionProperties.cs/#L57">View Source</a>
   </span>
   <a id="Azure_Messaging_EventHubs_Metadata_PartitionProperties_IsEmpty_" data-uid="Azure.Messaging.EventHubs.Metadata.PartitionProperties.IsEmpty*"></a>
   <h4 id="Azure_Messaging_EventHubs_Metadata_PartitionProperties_IsEmpty" data-uid="Azure.Messaging.EventHubs.Metadata.PartitionProperties.IsEmpty">IsEmpty</h4>
@@ -251,14 +323,14 @@ that contains it.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Azure_Messaging_EventHubs_Metadata_PartitionProperties_LastEnqueuedOffset.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Metadata.PartitionProperties.LastEnqueuedOffset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Messaging_EventHubs_Metadata_PartitionProperties_LastEnqueuedOffset.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Metadata.PartitionProperties.LastEnqueuedOffset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/eventhub/Azure.Messaging.EventHubs/src/Metadata/PartitionProperties.cs/#L49">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/eventhub/Azure.Messaging.EventHubs/src/Metadata/PartitionProperties.cs/#L43">View Source</a>
   </span>
   <a id="Azure_Messaging_EventHubs_Metadata_PartitionProperties_LastEnqueuedOffset_" data-uid="Azure.Messaging.EventHubs.Metadata.PartitionProperties.LastEnqueuedOffset*"></a>
   <h4 id="Azure_Messaging_EventHubs_Metadata_PartitionProperties_LastEnqueuedOffset" data-uid="Azure.Messaging.EventHubs.Metadata.PartitionProperties.LastEnqueuedOffset">LastEnqueuedOffset</h4>
-  <div class="markdown level1 summary"><p>The offset of the last event to be enqueued in the partition.</p>
+  <div class="markdown level1 summary"><p>The offset of the last observed event to be enqueued in the partition.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -280,21 +352,16 @@ that contains it.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Messaging_EventHubs_Metadata_PartitionProperties_LastEnqueuedOffset_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The offset is the relative position for event in the context of the stream.  The offset
-should not be considered a stable value, as the same offset may refer to a different event
-as events reach the age limit for retention and are no longer visible within the stream.</p>
-</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Azure_Messaging_EventHubs_Metadata_PartitionProperties_LastEnqueuedSequenceNumber.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Metadata.PartitionProperties.LastEnqueuedSequenceNumber%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Messaging_EventHubs_Metadata_PartitionProperties_LastEnqueuedSequenceNumber.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Metadata.PartitionProperties.LastEnqueuedSequenceNumber%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/eventhub/Azure.Messaging.EventHubs/src/Metadata/PartitionProperties.cs/#L37">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/eventhub/Azure.Messaging.EventHubs/src/Metadata/PartitionProperties.cs/#L37">View Source</a>
   </span>
   <a id="Azure_Messaging_EventHubs_Metadata_PartitionProperties_LastEnqueuedSequenceNumber_" data-uid="Azure.Messaging.EventHubs.Metadata.PartitionProperties.LastEnqueuedSequenceNumber*"></a>
   <h4 id="Azure_Messaging_EventHubs_Metadata_PartitionProperties_LastEnqueuedSequenceNumber" data-uid="Azure.Messaging.EventHubs.Metadata.PartitionProperties.LastEnqueuedSequenceNumber">LastEnqueuedSequenceNumber</h4>
-  <div class="markdown level1 summary"><p>The sequence number observed the last event to be enqueued in the partition.</p>
+  <div class="markdown level1 summary"><p>The sequence number of the last observed event to be enqueued in the partition.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -318,14 +385,14 @@ as events reach the age limit for retention and are no longer visible within the
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Azure_Messaging_EventHubs_Metadata_PartitionProperties_LastEnqueuedTime.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Metadata.PartitionProperties.LastEnqueuedTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Messaging_EventHubs_Metadata_PartitionProperties_LastEnqueuedTime.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Metadata.PartitionProperties.LastEnqueuedTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/eventhub/Azure.Messaging.EventHubs/src/Metadata/PartitionProperties.cs/#L55">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/eventhub/Azure.Messaging.EventHubs/src/Metadata/PartitionProperties.cs/#L49">View Source</a>
   </span>
   <a id="Azure_Messaging_EventHubs_Metadata_PartitionProperties_LastEnqueuedTime_" data-uid="Azure.Messaging.EventHubs.Metadata.PartitionProperties.LastEnqueuedTime*"></a>
   <h4 id="Azure_Messaging_EventHubs_Metadata_PartitionProperties_LastEnqueuedTime" data-uid="Azure.Messaging.EventHubs.Metadata.PartitionProperties.LastEnqueuedTime">LastEnqueuedTime</h4>
-  <div class="markdown level1 summary"><p>The date and time, in UTC, that the last event was enqueued in the partition.</p>
+  <div class="markdown level1 summary"><p>The date and time, in UTC, that the last observed event was enqueued in the partition.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -349,7 +416,22 @@ as events reach the age limit for retention and are no longer visible within the
   </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../KeyVault/Azure.Security.KeyVault.Secrets.AzureClientBuilderExtensions.html#Azure_Security_KeyVault_Secrets_AzureClientBuilderExtensions_AddSecretClient__2___0___1_">AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../OtherAPIs/Azure.Data.AppConfiguration.AzureClientBuilderExtensions.html#Azure_Data_AppConfiguration_AzureClientBuilderExtensions_AddConfigurationClient__2___0___1_">AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../Storage/Azure.Storage.Blobs.AzureClientBuilderExtensions.html#Azure_Storage_Blobs_AzureClientBuilderExtensions_AddBlobServiceClient__2___0___1_">AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
 </article>
           </div>
@@ -359,10 +441,10 @@ as events reach the age limit for retention and are no longer visible within the
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Azure_Messaging_EventHubs_Metadata_PartitionProperties.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Metadata.PartitionProperties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Messaging_EventHubs_Metadata_PartitionProperties.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Metadata.PartitionProperties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/eventhub/Azure.Messaging.EventHubs/src/Metadata/PartitionProperties.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/eventhub/Azure.Messaging.EventHubs/src/Metadata/PartitionProperties.cs/#L12" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

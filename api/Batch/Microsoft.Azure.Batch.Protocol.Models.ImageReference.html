@@ -128,10 +128,10 @@ Images' operation.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_ImageReference__ctor.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.ImageReference.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_ImageReference__ctor.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.ImageReference.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/ImageReference.cs/#L27">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/ImageReference.cs/#L27">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_ImageReference__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ImageReference.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ImageReference__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.ImageReference.#ctor">ImageReference()</h4>
@@ -144,10 +144,10 @@ Images' operation.</p>
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_ImageReference__ctor_System_String_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.ImageReference.%23ctor(System.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_ImageReference__ctor_System_String_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.ImageReference.%23ctor(System.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/ImageReference.cs/#L47">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/ImageReference.cs/#L51">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_ImageReference__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ImageReference.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ImageReference__ctor_System_String_System_String_System_String_System_String_System_String_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ImageReference.#ctor(System.String,System.String,System.String,System.String,System.String)">ImageReference(String, String, String, String, String)</h4>
@@ -200,9 +200,13 @@ Marketplace Image.</p>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">virtualMachineImageId</span></td>
         <td><p>The ARM resource identifier of
-the Virtual Machine Image. Computes nodes of the pool will be
-created using this custom image. This is of the form
-/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Compute/images/{imageName}</p>
+the Virtual Machine Image or Shared Image Gallery Image. Computes
+Compute Nodes of the Pool will be created using this Image Id. This
+is of either the form
+/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Compute/images/{imageName}
+for Virtual Machine Image or
+/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Compute/galleries/{galleryName}/images/{imageDefinitionName}/versions/{versionId}
+for SIG image.</p>
 </td>
       </tr>
     </tbody>
@@ -211,10 +215,10 @@ created using this custom image. This is of the form
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_ImageReference_Offer.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.ImageReference.Offer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_ImageReference_Offer.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.ImageReference.Offer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/ImageReference.cs/#L79">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/ImageReference.cs/#L83">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_ImageReference_Offer_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ImageReference.Offer*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ImageReference_Offer" data-uid="Microsoft.Azure.Batch.Protocol.Models.ImageReference.Offer">Offer</h4>
@@ -246,10 +250,10 @@ Marketplace Image.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_ImageReference_Publisher.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.ImageReference.Publisher%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_ImageReference_Publisher.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.ImageReference.Publisher%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/ImageReference.cs/#L69">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/ImageReference.cs/#L73">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_ImageReference_Publisher_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ImageReference.Publisher*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ImageReference_Publisher" data-uid="Microsoft.Azure.Batch.Protocol.Models.ImageReference.Publisher">Publisher</h4>
@@ -281,10 +285,10 @@ Marketplace Image.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_ImageReference_Sku.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.ImageReference.Sku%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_ImageReference_Sku.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.ImageReference.Sku%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/ImageReference.cs/#L89">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/ImageReference.cs/#L93">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_ImageReference_Sku_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ImageReference.Sku*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ImageReference_Sku" data-uid="Microsoft.Azure.Batch.Protocol.Models.ImageReference.Sku">Sku</h4>
@@ -312,14 +316,14 @@ Image.</p>
     </tbody>
   </table>
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_ImageReference_Sku_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>For example, 14.04.0-LTS or 2012-R2-Datacenter.</p>
+  <div class="markdown level1 remarks"><p>For example, 18.04-LTS or 2019-Datacenter.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_ImageReference_Version.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.ImageReference.Version%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_ImageReference_Version.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.ImageReference.Version%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/ImageReference.cs/#L100">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/ImageReference.cs/#L104">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_ImageReference_Version_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ImageReference.Version*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ImageReference_Version" data-uid="Microsoft.Azure.Batch.Protocol.Models.ImageReference.Version">Version</h4>
@@ -352,17 +356,21 @@ of an Image. If omitted, the default is 'latest'.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_ImageReference_VirtualMachineImageId.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.ImageReference.VirtualMachineImageId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_ImageReference_VirtualMachineImageId.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.ImageReference.VirtualMachineImageId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/ImageReference.cs/#L117">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/ImageReference.cs/#L126">View Source</a>
   </span>
   <a id="Microsoft_Azure_Batch_Protocol_Models_ImageReference_VirtualMachineImageId_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ImageReference.VirtualMachineImageId*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ImageReference_VirtualMachineImageId" data-uid="Microsoft.Azure.Batch.Protocol.Models.ImageReference.VirtualMachineImageId">VirtualMachineImageId</h4>
   <div class="markdown level1 summary"><p>Gets or sets the ARM resource identifier of the Virtual Machine
-Image. Computes nodes of the pool will be created using this custom
-image. This is of the form
-/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Compute/images/{imageName}</p>
+Image or Shared Image Gallery Image. Computes Compute Nodes of the
+Pool will be created using this Image Id. This is of either the
+form
+/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Compute/images/{imageName}
+for Virtual Machine Image or
+/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Compute/galleries/{galleryName}/images/{imageDefinitionName}/versions/{versionId}
+for SIG image.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -386,15 +394,31 @@ image. This is of the form
   </table>
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_ImageReference_VirtualMachineImageId_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This property is mutually exclusive with other ImageReference
-properties. The Virtual Machine Image must be in the same region
-and subscription as the Azure Batch account. For information about
-the firewall settings for the Batch node agent to communicate with
-the Batch service see
+properties. For Virtual Machine Image it must be in the same region
+and subscription as the Azure Batch account. For SIG image it must
+have replicas in the same region as the Azure Batch account. For
+information about the firewall settings for the Batch Compute Node
+agent to communicate with the Batch service see
 <a href="https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#virtual-network-vnet-and-firewall-configuration">https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#virtual-network-vnet-and-firewall-configuration</a>.</p>
 </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AppConfigurationAzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AppConfigurationAzureClientBuilderExtensions_AddAppConfiguration__2___0_System_String___1_">AppConfigurationAzureClientBuilderExtensions.AddAppConfiguration&lt;TBuilder, TConfiguration&gt;(TBuilder, String, TConfiguration)</a>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../KeyVault/Azure.Security.KeyVault.Secrets.AzureClientBuilderExtensions.html#Azure_Security_KeyVault_Secrets_AzureClientBuilderExtensions_AddSecretClient__2___0___1_">AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../OtherAPIs/Azure.Data.AppConfiguration.AzureClientBuilderExtensions.html#Azure_Data_AppConfiguration_AzureClientBuilderExtensions_AddConfigurationClient__2___0___1_">AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../Storage/Azure.Storage.Blobs.AzureClientBuilderExtensions.html#Azure_Storage_Blobs_AzureClientBuilderExtensions_AddBlobServiceClient__2___0___1_">AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
 </article>
           </div>
@@ -404,10 +428,10 @@ the Batch service see
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/FixXMLCommentErrors/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_ImageReference.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.ImageReference%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_ImageReference.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.ImageReference%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/FixXMLCommentErrors/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/ImageReference.cs/#L22" class="contribution-link">View Source</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/ImageReference.cs/#L22" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

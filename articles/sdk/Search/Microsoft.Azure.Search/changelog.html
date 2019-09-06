@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GA SDK Releases | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="GA SDK Releases | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="ga-sdk-releases">GA SDK Releases</h1>
+
+<p>Every minor version release targets the same (GA) REST API version as that of the corresponding major version release. The REST API version targeted by the major version releases are listed when appropriate.</p>
+<p>Features and improvements in a GA SDK are considered generally available.</p>
+<p><a name="10.0.0"></a></p>
+<h1 id="1000">10.0.0</h1>
+<h1 id="target-api-version">Target API Version</h1>
+<p>2019-05-06</p>
+<h1 id="breaking-changes">Breaking Changes</h1>
+<p>For more details, visit the <a href="https://docs.microsoft.com/azure/search/search-dotnet-sdk-migration-version-10">SDK migration guide</a>.</p>
+<ul>
+<li>Fixed the definition of <code>WebApiSkill</code> so that <code>HttpHeaders</code> is a top-level dictionary property. <a href="https://github.com/Azure/azure-sdk-for-net/pull/7080">PR 7080</a>.</li>
+<li>Allow recursive inputs for <code>InputFieldMappingEntry</code>. <a href="https://github.com/Azure/azure-sdk-for-net/pull/7204">PR 7204</a>.</li>
+<li>Skills can be optionally identified by <code>Name</code> property. <a href="https://github.com/Azure/azure-sdk-for-net/pull/7265">PR 7265</a>.</li>
+</ul>
+<h1 id="improvements">Improvements</h1>
+<ul>
+<li>Introduce <code>urlEncode</code> and <code>urlDecode</code> field mapping functions. <a href="https://github.com/Azure/azure-sdk-for-net/pull/7126">PR 7126</a>.</li>
+<li>Introduce conditional skill. <a href="https://github.com/Azure/azure-sdk-for-net/pull/7204">PR 7204</a>.</li>
+<li>Introduce text translate skill. <a href="https://github.com/Azure/azure-sdk-for-net/pull/7204">PR 7204</a>.</li>
+<li>Indexer execution status adds more detail for errors and warnings. <a href="https://github.com/Azure/azure-sdk-for-net/pull/7265">PR 7265</a>.</li>
+<li>Service limits expose complex type limits and indexer execution status includes indexer limits/quotas. <a href="https://github.com/Azure/azure-sdk-for-net/pull/7031">PR 7031</a>.</li>
+</ul>
+<h1 id="bug-fixes">Bug fixes</h1>
+<ul>
+<li>Fix Web API skill validation error on creating a skillset. See first item in &quot;Breaking changes&quot;. <a href="https://github.com/Azure/azure-sdk-for-net/issues/6468">Issue 6468</a>.</li>
+</ul>
+<h1 id="910">9.1.0</h1>
+<h1 id="breaking-changes-1">Breaking Changes</h1>
+<p>None</p>
+<h1 id="improvements-1">Improvements</h1>
+<ul>
+<li>Improvements in error handling for <code>FieldBuilder</code>. <a href="https://github.com/Azure/azure-sdk-for-net/pull/6833">PR 6833</a>.</li>
+</ul>
+<h1 id="bug-fixes-1">Bug fixes</h1>
+<ul>
+<li>Prevent ObjectDisposedException when Indexing using &quot;Merge&quot; operation. <a href="https://github.com/Azure/azure-sdk-for-net/pull/7011">PR 7011</a>. <a href="https://github.com/Azure/azure-sdk-for-net/issues/6910">Issue 6910</a>.</li>
+<li>Handle enum conversion exceptions gracefully in <code>FieldBuilder</code>. See first item in &quot;Improvements&quot;. <a href="https://github.com/Azure/azure-sdk-for-net/issues/6380">Issue 6380</a>.</li>
+</ul>
+<h1 id="901">9.0.1</h1>
+<h1 id="breaking-changes-2">Breaking Changes</h1>
+<p>None</p>
+<h1 id="improvements-2">Improvements</h1>
+<p>None</p>
+<h1 id="bug-fixes-2">Bug fixes</h1>
+<ul>
+<li>Fix deadlock in Search when using POST. <a href="https://github.com/Azure/azure-sdk-for-net/pull/6298">PR 6298</a>. <a href="https://github.com/Azure/azure-sdk-for-net/issues/6254">Issue 6254</a>.</li>
+</ul>
+<p><a name="9.0.0"></a></p>
+<h1 id="900">9.0.0</h1>
+<h1 id="target-api-version-1">Target API Version</h1>
+<p>2019-05-06</p>
+<h1 id="breaking-changes-3">Breaking Changes</h1>
+<p>For more details, visit the <a href="https://docs.microsoft.com/azure/search/search-dotnet-sdk-migration-version-9">SDK migration guide</a>.</p>
+<ul>
+<li>Public properties of several model classes are immutable. <a href="https://github.com/Azure/azure-sdk-for-net/pull/6009">PR 6009</a>.</li>
+<li>Several <code>bool</code> properties of <code>Field</code> class are now nullable. <a href="https://github.com/Azure/azure-sdk-for-net/pull/6009">PR 6009</a>.</li>
+<li>Batch and result types have a simplified hierarchy. <a href="https://github.com/Azure/azure-sdk-for-net/pull/6009">PR 6009</a>.</li>
+<li><code>ExtensibleEnum</code> has been removed. <a href="https://github.com/Azure/azure-sdk-for-net/pull/6009">PR 6009</a>.</li>
+<li>Removed <code>FacetResults</code> and <code>HitHighlights</code> classes. <a href="https://github.com/Azure/azure-sdk-for-net/pull/6009">PR 6009</a>.</li>
+<li><code>SynonymMap</code> constructor no longer has the redundant <code>enum</code> parameter for <code>SynonymMapFormat</code>. <a href="https://github.com/Azure/azure-sdk-for-net/pull/6009">PR 6009</a>.</li>
+<li><code>DataSourceType.DocumentDb</code> is deprecated in favor of <code>DataSourceType.CosmosDb</code>. <a href="https://github.com/Azure/azure-sdk-for-net/pull/5223">PR 5223</a>.</li>
+</ul>
+<h1 id="improvements-3">Improvements</h1>
+<ul>
+<li>Introduces <a href="https://docs.microsoft.com/azure/search/cognitive-search-concept-intro">cognitive search</a> capabilities as part of the SDK. <a href="https://github.com/Azure/azure-sdk-for-net/pull/6009">PR 6009</a>. This includes:
+<ul>
+<li>The ability to create skillsets with one or more predefined or customer skills.</li>
+<li>Attach a cognitive service resource to the skillset to remove restrictions on document limit count for enrichments.</li>
+</ul>
+</li>
+<li>Support for <a href="https://docs.microsoft.com/azure/search/search-howto-complex-data-types">complex types</a> that allows you to model almost any nested JSON structure in an Azure Search index. <a href="https://github.com/Azure/azure-sdk-for-net/pull/6009">PR 6009</a>.</li>
+<li>Introduction of <a href="https://docs.microsoft.com/en-us/azure/search/search-autocomplete-tutorial">Autocomplete</a> as an alternative to the <strong>Suggest API</strong>. <a href="https://github.com/Azure/azure-sdk-for-net/pull/6009">PR 6009</a>.</li>
+<li>General availability of <a href="https://docs.microsoft.com/azure/search/search-howto-index-json-blobs">JsonLines parsing mode</a>. <a href="https://github.com/Azure/azure-sdk-for-net/pull/6009">PR 6009</a>.</li>
+</ul>
+<h2 id="bug-fixes-3">Bug fixes</h2>
+<p>None</p>
+<h1 id="503">5.0.3</h1>
+<h2 id="breaking-changes-4">Breaking Changes</h2>
+<p>None</p>
+<h2 id="improvements-4">Improvements</h2>
+<ul>
+<li>Add further support for .NET Core 2 in project target files. <a href="https://github.com/Azure/azure-sdk-for-net/pull/5171">PR 5171</a>.</li>
+</ul>
+<h2 id="bug-fixes-4">Bug fixes</h2>
+<p>None</p>
+<h1 id="502">5.0.2</h1>
+<h2 id="breaking-changes-5">Breaking Changes</h2>
+<p>None</p>
+<h2 id="improvements-5">Improvements</h2>
+<ul>
+<li>Add XML summary documentation for classes, methods and properties where it was missed. <a href="https://github.com/Azure/azure-sdk-for-net/pull/4601">PR 4601</a>.</li>
+</ul>
+<h2 id="bug-fixes-5">Bug fixes</h2>
+<p>None</p>
+<h1 id="501">5.0.1</h1>
+<h2 id="breaking-changes-6">Breaking Changes</h2>
+<p>None</p>
+<h2 id="improvements-6">Improvements</h2>
+<p>None</p>
+<h2 id="bug-fixes-6">Bug fixes</h2>
+<ul>
+<li>Fix deadlock issue in <code>Documents.CountWithHttpMessagesAsync</code>. <a href="https://github.com/Azure/azure-sdk-for-net/pull/4495">PR 4495</a>.</li>
+</ul>
+<p><a name="5.0.0"></a></p>
+<h1 id="500">5.0.0</h1>
+<h2 id="target-api-version-2">Target API Version</h2>
+<p>2017-11-11</p>
+<h2 id="breaking-changes-7">Breaking Changes</h2>
+<p>For more details, visit the <a href="https://docs.microsoft.com/azure/search/search-dotnet-sdk-migration-version-5">SDK migration guide</a>.</p>
+<ul>
+<li>Reorganized the package structure of <code>Microsoft.Azure.Search</code> into four separate assemblies. <a href="https://github.com/Azure/azure-sdk-for-net/pull/4246">PR 4246</a>.</li>
+<li><code>Suggester</code> constructor no longer has the redundant <code>enum</code> parameters for <code>SuggesterSearchMode</code>. <a href="https://github.com/Azure/azure-sdk-for-net/pull/4246">PR 4246</a>.</li>
+<li>Members marked as <code>[Obsolete]</code> in previous API versions were removed. <a href="https://github.com/Azure/azure-sdk-for-net/pull/4246">PR 4246</a>.</li>
+</ul>
+<h2 id="improvements-7">Improvements</h2>
+<ul>
+<li><a href="https://docs.microsoft.com/azure/search/search-synonyms">Synonyms</a>. <a href="https://github.com/Azure/azure-sdk-for-net/pull/4246">PR 4246</a>.</li>
+<li>Indexer execution history can be accessed via the SDK. <a href="https://github.com/Azure/azure-sdk-for-net/pull/4246">PR 4246</a>.</li>
+<li>Support for .NET Core 2. <a href="https://github.com/Azure/azure-sdk-for-net/pull/4246">PR 4246</a>.</li>
+</ul>
+<h2 id="bug-fixes-7">Bug fixes</h2>
+<p>None</p>
+<h1 id="preview-sdk-releases">Preview SDK Releases</h1>
+<p>Every minor version release targets the same (preview) REST API version as that of the corresponding major version release. The REST API version targeted by the major version releases are listed when appropriate.</p>
+<p>Features and improvements offered in a preview SDK are in a preview capacity. They may or may not be shipped in a subsequent GA SDK. We advise not to use them in production environments.</p>
+<p><a name="8.0.0-preview"></a></p>
+<h1 id="800-preview">8.0.0-preview</h1>
+<h2 id="target-api-version-3">Target API Version</h2>
+<p>2017-11-11-Preview</p>
+<h2 id="breaking-changes-8">Breaking Changes</h2>
+<p>For more details, visit the <a href="https://docs.microsoft.com/azure/search/search-dotnet-sdk-migration-version-9#new-preview-features-in-version-80-preview">section dedicated to the 8.0-preview API</a> in the <a href="https://docs.microsoft.com/azure/search/search-dotnet-sdk-migration-version-9">SDK migration guide</a>.</p>
+<p>The list of breaking changes are identical to the breaking changes in <a href="#9.0.0">version 9.0</a>.</p>
+<h2 id="improvements-8">Improvements</h2>
+<ul>
+<li>Introduces <a href="https://docs.microsoft.com/azure/search/search-security-manage-encryption-keys">customer-managed encryption keys</a>, to perform service-side encryption-at-rest for indexes. <a href="https://github.com/Azure/azure-sdk-for-net/pull/5858">PR 5858</a>.</li>
+<li>Introduces <a href="https://docs.microsoft.com/azure/search/search-howto-index-json-blobs">JsonLines parsing mode</a> for indexers. <a href="https://github.com/Azure/azure-sdk-for-net/pull/5223">PR 5223</a>.</li>
+</ul>
+<h2 id="bug-fixes-8">Bug fixes</h2>
+<p>None</p>
+<p><a name="7.0.0-preview"></a></p>
+<h1 id="700-preview">7.0.0-preview</h1>
+<h2 id="target-api-version-4">Target API Version</h2>
+<p>2017-11-11-Preview</p>
+<h2 id="breaking-changes-9">Breaking Changes</h2>
+<p>The list of breaking changes are identical to the breaking changes in <a href="#9.0.0">version 9.0</a>.</p>
+<h2 id="improvements-9">Improvements</h2>
+<ul>
+<li>Introduces <a href="https://docs.microsoft.com/azure/search/cognitive-search-concept-intro">cognitive search</a> and the ability to create skillsets. <a href="https://github.com/Azure/azure-sdk-for-net/pull/5223">PR 5223</a></li>
+</ul>
+<h2 id="bug-fixes-9">Bug fixes</h2>
+<p>None</p>
+<p><a name="6.0.0-preview"></a></p>
+<h1 id="600-preview">6.0.0-preview</h1>
+<h2 id="target-api-version-5">Target API Version</h2>
+<p>2017-11-11-Preview</p>
+<h2 id="breaking-changes-10">Breaking Changes</h2>
+<p>The list of breaking changes are identical to the breaking changes in <a href="#9.0.0">version 9.0</a>.</p>
+<h2 id="improvements-10">Improvements</h2>
+<ul>
+<li>Introduces <a href="https://docs.microsoft.com/en-us/azure/search/search-autocomplete-tutorial">Autocomplete</a> as an alternative to the <strong>Suggest API</strong>. <a href="https://github.com/Azure/azure-sdk-for-net/pull/4283">PR 4283</a>.</li>
+</ul>
+<h2 id="bug-fixes-10">Bug fixes</h2>
+<p>None</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/docfx_project/articles/sdk/Search/Microsoft.Azure.Search/changelog.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

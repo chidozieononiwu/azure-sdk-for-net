@@ -29,13 +29,6 @@ jobs:
           script: $(Build.BinariesDirectory)/docfx/docfx.exe metadata
           workingDirectory: $(Build.SourcesDirectory)/docfx_project/
           failOnStderr: true
-      - task: PowerShell@2
-        displayName: 'Structure DocFx Site'
-        inputs:
-          targetType: filePath
-          filePath: '$(Build.SourcesDirectory)/eng/docgeneration/script/Structure-DocfxSite.ps1'
-          arguments: '-SourceDirectory $(Build.SourcesDirectory)'
-          failOnStderr: true
       - task: CmdLine@2
         displayName: Build Doc Content
         inputs:

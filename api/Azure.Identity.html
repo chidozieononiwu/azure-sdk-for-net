@@ -109,12 +109,13 @@ to configure a client secret can be found here:
 types will be tried, in order:</p>
 <ul>
 <li><a class="xref" href="Azure.Identity.EnvironmentCredential.html">EnvironmentCredential</a></li>
-<li><a class="xref" href="Azure.Identity.ManagedIdentityCredential.html">ManagedIdentityCredential</a>
+<li><a class="xref" href="Azure.Identity.ManagedIdentityCredential.html">ManagedIdentityCredential</a></li>
+<li><a class="xref" href="Azure.Identity.SharedTokenCacheCredential.html">SharedTokenCacheCredential</a>
 Consult the documentation of these credential types for more information on how they attempt authentication.</li>
 </ul>
 </section>
       <h4><a class="xref" href="Azure.Identity.DeviceCodeCredential.html">DeviceCodeCredential</a></h4>
-      <section><p>A <a class="xref" href="Azure.Core.TokenCredential.html">TokenCredential</a> implementation which authenticates a user using the device code flow, and provides access tokens for that user account.<br>
+      <section><p>A <a class="xref" href="Azure.Core.TokenCredential.html">TokenCredential</a> implementation which authenticates a user using the device code flow, and provides access tokens for that user account.
 For more information on the device code authentication flow see <a href="https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Device-Code-Flow">https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Device-Code-Flow</a>.</p>
 </section>
       <h4><a class="xref" href="Azure.Identity.EnvironmentCredential.html">EnvironmentCredential</a></h4>
@@ -140,6 +141,12 @@ The browser will only be launched to authenticate the user once, then will silen
       <section><p>Attempts authentication using a managed identity that has been assigned to the deployment environment.This authentication type works in Azure VMs,
 App Service and Azure Functions applications, as well as inside of Azure Cloud Shell. More information about configuring managed identities can be found here:
 <a href="https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview">https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview</a></p>
+</section>
+      <h4><a class="xref" href="Azure.Identity.SharedTokenCacheCredential.html">SharedTokenCacheCredential</a></h4>
+      <section><p>Authenticates using tokens in the local cache shared between Microsoft applications.</p>
+</section>
+      <h4><a class="xref" href="Azure.Identity.SharedTokenCacheCredentialOptions.html">SharedTokenCacheCredentialOptions</a></h4>
+      <section><p>Options to configure requests made to MSAL shared token cache</p>
 </section>
       <h4><a class="xref" href="Azure.Identity.UsernamePasswordCredential.html">UsernamePasswordCredential</a></h4>
       <section><p>Enables authentication to Azure Active Directory using a user's  username and password. If the user has MFA enabled this

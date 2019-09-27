@@ -83,8 +83,7 @@
   
   <h1 id="Azure_Messaging_EventHubs_Processor_InMemoryPartitionManager" data-uid="Azure.Messaging.EventHubs.Processor.InMemoryPartitionManager" class="text-break">Class InMemoryPartitionManager
   </h1>
-  <div class="markdown level0 summary"><p>A non-volatile in-memory storage service that keeps track of checkpoints and ownership.  It must
-be used with a single <a class="xref" href="Azure.Messaging.EventHubs.Processor.EventProcessor.html">EventProcessor</a> instance.</p>
+  <div class="markdown level0 summary"><p>A volatile in-memory storage service that keeps track of checkpoints and ownership.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -121,16 +120,16 @@ be used with a single <a class="xref" href="Azure.Messaging.EventHubs.Processor.
   <h6><strong>Assembly</strong>: Azure.Messaging.EventHubs.dll</h6>
   <h5 id="Azure_Messaging_EventHubs_Processor_InMemoryPartitionManager_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class InMemoryPartitionManager : PartitionManager</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class InMemoryPartitionManager : PartitionManager</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_InMemoryPartitionManager__ctor_System_Action_System_String__.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.InMemoryPartitionManager.%23ctor(System.Action%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_InMemoryPartitionManager__ctor_System_Action_System_String__.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.InMemoryPartitionManager.%23ctor(System.Action%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/InMemoryPartitionManager.cs/#L37">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/InMemoryPartitionManager.cs/#L32">View Source</a>
   </span>
   <a id="Azure_Messaging_EventHubs_Processor_InMemoryPartitionManager__ctor_" data-uid="Azure.Messaging.EventHubs.Processor.InMemoryPartitionManager.#ctor*"></a>
   <h4 id="Azure_Messaging_EventHubs_Processor_InMemoryPartitionManager__ctor_System_Action_System_String__" data-uid="Azure.Messaging.EventHubs.Processor.InMemoryPartitionManager.#ctor(System.Action{System.String})">InMemoryPartitionManager(Action&lt;String&gt;)</h4>
@@ -163,14 +162,14 @@ be used with a single <a class="xref" href="Azure.Messaging.EventHubs.Processor.
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_InMemoryPartitionManager_ClaimOwnershipAsync_System_Collections_Generic_IEnumerable_Azure_Messaging_EventHubs_Processor_PartitionOwnership__.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.InMemoryPartitionManager.ClaimOwnershipAsync(System.Collections.Generic.IEnumerable%7BAzure.Messaging.EventHubs.Processor.PartitionOwnership%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_InMemoryPartitionManager_ClaimOwnershipAsync_System_Collections_Generic_IEnumerable_Azure_Messaging_EventHubs_Processor_PartitionOwnership__.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.InMemoryPartitionManager.ClaimOwnershipAsync(System.Collections.Generic.IEnumerable%7BAzure.Messaging.EventHubs.Processor.PartitionOwnership%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/InMemoryPartitionManager.cs/#L78">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/InMemoryPartitionManager.cs/#L75">View Source</a>
   </span>
   <a id="Azure_Messaging_EventHubs_Processor_InMemoryPartitionManager_ClaimOwnershipAsync_" data-uid="Azure.Messaging.EventHubs.Processor.InMemoryPartitionManager.ClaimOwnershipAsync*"></a>
   <h4 id="Azure_Messaging_EventHubs_Processor_InMemoryPartitionManager_ClaimOwnershipAsync_System_Collections_Generic_IEnumerable_Azure_Messaging_EventHubs_Processor_PartitionOwnership__" data-uid="Azure.Messaging.EventHubs.Processor.InMemoryPartitionManager.ClaimOwnershipAsync(System.Collections.Generic.IEnumerable{Azure.Messaging.EventHubs.Processor.PartitionOwnership})">ClaimOwnershipAsync(IEnumerable&lt;PartitionOwnership&gt;)</h4>
-  <div class="markdown level1 summary"><p>Tries to claim a list of specified ownership.</p>
+  <div class="markdown level1 summary"><p>Attempts to claim ownership of partitions for processing.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -215,19 +214,19 @@ be used with a single <a class="xref" href="Azure.Messaging.EventHubs.Processor.
   <div><a class="xref" href="Azure.Messaging.EventHubs.Processor.PartitionManager.html#Azure_Messaging_EventHubs_Processor_PartitionManager_ClaimOwnershipAsync_System_Collections_Generic_IEnumerable_Azure_Messaging_EventHubs_Processor_PartitionOwnership__">PartitionManager.ClaimOwnershipAsync(IEnumerable&lt;PartitionOwnership&gt;)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_InMemoryPartitionManager_ListOwnershipAsync_System_String_System_String_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.InMemoryPartitionManager.ListOwnershipAsync(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_InMemoryPartitionManager_ListOwnershipAsync_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.InMemoryPartitionManager.ListOwnershipAsync(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/InMemoryPartitionManager.cs/#L54">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/InMemoryPartitionManager.cs/#L49">View Source</a>
   </span>
   <a id="Azure_Messaging_EventHubs_Processor_InMemoryPartitionManager_ListOwnershipAsync_" data-uid="Azure.Messaging.EventHubs.Processor.InMemoryPartitionManager.ListOwnershipAsync*"></a>
-  <h4 id="Azure_Messaging_EventHubs_Processor_InMemoryPartitionManager_ListOwnershipAsync_System_String_System_String_" data-uid="Azure.Messaging.EventHubs.Processor.InMemoryPartitionManager.ListOwnershipAsync(System.String,System.String)">ListOwnershipAsync(String, String)</h4>
+  <h4 id="Azure_Messaging_EventHubs_Processor_InMemoryPartitionManager_ListOwnershipAsync_System_String_System_String_System_String_" data-uid="Azure.Messaging.EventHubs.Processor.InMemoryPartitionManager.ListOwnershipAsync(System.String,System.String,System.String)">ListOwnershipAsync(String, String, String)</h4>
   <div class="markdown level1 summary"><p>Retrieves a complete ownership list from the in-memory storage service.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Task&lt;IEnumerable&lt;PartitionOwnership&gt;&gt; ListOwnershipAsync(string eventHubName, string consumerGroup)</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task&lt;IEnumerable&lt;PartitionOwnership&gt;&gt; ListOwnershipAsync(string fullyQualifiedNamespace, string eventHubName, string consumerGroup)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -239,6 +238,12 @@ be used with a single <a class="xref" href="Azure.Messaging.EventHubs.Processor.
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">fullyQualifiedNamespace</span></td>
+        <td><p>The fully qualified Event Hubs namespace the ownership are associated with.  This is likely to be similar to <code>{yournamespace}.servicebus.windows.net</code>.</p>
+</td>
+      </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">eventHubName</span></td>
@@ -270,13 +275,13 @@ be used with a single <a class="xref" href="Azure.Messaging.EventHubs.Processor.
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Azure.Messaging.EventHubs.Processor.PartitionManager.html#Azure_Messaging_EventHubs_Processor_PartitionManager_ListOwnershipAsync_System_String_System_String_">PartitionManager.ListOwnershipAsync(String, String)</a></div>
+  <div><a class="xref" href="Azure.Messaging.EventHubs.Processor.PartitionManager.html#Azure_Messaging_EventHubs_Processor_PartitionManager_ListOwnershipAsync_System_String_System_String_System_String_">PartitionManager.ListOwnershipAsync(String, String, String)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_InMemoryPartitionManager_UpdateCheckpointAsync_Azure_Messaging_EventHubs_Processor_Checkpoint_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.InMemoryPartitionManager.UpdateCheckpointAsync(Azure.Messaging.EventHubs.Processor.Checkpoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_InMemoryPartitionManager_UpdateCheckpointAsync_Azure_Messaging_EventHubs_Processor_Checkpoint_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.InMemoryPartitionManager.UpdateCheckpointAsync(Azure.Messaging.EventHubs.Processor.Checkpoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/InMemoryPartitionManager.cs/#L125">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/InMemoryPartitionManager.cs/#L123">View Source</a>
   </span>
   <a id="Azure_Messaging_EventHubs_Processor_InMemoryPartitionManager_UpdateCheckpointAsync_" data-uid="Azure.Messaging.EventHubs.Processor.InMemoryPartitionManager.UpdateCheckpointAsync*"></a>
   <h4 id="Azure_Messaging_EventHubs_Processor_InMemoryPartitionManager_UpdateCheckpointAsync_Azure_Messaging_EventHubs_Processor_Checkpoint_" data-uid="Azure.Messaging.EventHubs.Processor.InMemoryPartitionManager.UpdateCheckpointAsync(Azure.Messaging.EventHubs.Processor.Checkpoint)">UpdateCheckpointAsync(Checkpoint)</h4>
@@ -325,22 +330,22 @@ be used with a single <a class="xref" href="Azure.Messaging.EventHubs.Processor.
   <div><a class="xref" href="Azure.Messaging.EventHubs.Processor.PartitionManager.html#Azure_Messaging_EventHubs_Processor_PartitionManager_UpdateCheckpointAsync_Azure_Messaging_EventHubs_Processor_Checkpoint_">PartitionManager.UpdateCheckpointAsync(Checkpoint)</a></div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+      <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
   </div>
   <div>
-      <a class="xref" href="Azure.Security.KeyVault.Secrets.AzureClientBuilderExtensions.html#Azure_Security_KeyVault_Secrets_AzureClientBuilderExtensions_AddSecretClient__2___0___1_">AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
-      <a class="xref" href="Azure.Data.AppConfiguration.AzureClientBuilderExtensions.html#Azure_Data_AppConfiguration_AzureClientBuilderExtensions_AddConfigurationClient__2___0___1_">AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
-      <a class="xref" href="Azure.Storage.Blobs.AzureClientBuilderExtensions.html#Azure_Storage_Blobs_AzureClientBuilderExtensions_AddBlobServiceClient__2___0___1_">AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
-      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
-      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
 </article>
           </div>
@@ -350,10 +355,10 @@ be used with a single <a class="xref" href="Azure.Messaging.EventHubs.Processor.
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_InMemoryPartitionManager.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.InMemoryPartitionManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_InMemoryPartitionManager.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.InMemoryPartitionManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/InMemoryPartitionManager.cs/#L17" class="contribution-link">View Source</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/InMemoryPartitionManager.cs/#L15" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

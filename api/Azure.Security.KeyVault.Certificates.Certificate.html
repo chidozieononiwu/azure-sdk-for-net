@@ -83,53 +83,17 @@
   
   <h1 id="Azure_Security_KeyVault_Certificates_Certificate" data-uid="Azure.Security.KeyVault.Certificates.Certificate" class="text-break">Class Certificate
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>An Azure Key Vault certificate.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateBase.html">CertificateBase</a></div>
-    <div class="level2"><span class="xref">Certificate</span></div>
-      <div class="level3"><a class="xref" href="Azure.Security.KeyVault.Certificates.DeletedCertificate.html">DeletedCertificate</a></div>
+    <div class="level1"><span class="xref">Certificate</span></div>
+      <div class="level2"><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateWithPolicy.html">CertificateWithPolicy</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateBase.html#Azure_Security_KeyVault_Certificates_CertificateBase_Name">CertificateBase.Name</a>
-    </div>
-    <div>
-      <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateBase.html#Azure_Security_KeyVault_Certificates_CertificateBase_VaultId">CertificateBase.VaultId</a>
-    </div>
-    <div>
-      <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateBase.html#Azure_Security_KeyVault_Certificates_CertificateBase_VaultUri">CertificateBase.VaultUri</a>
-    </div>
-    <div>
-      <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateBase.html#Azure_Security_KeyVault_Certificates_CertificateBase_Version">CertificateBase.Version</a>
-    </div>
-    <div>
-      <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateBase.html#Azure_Security_KeyVault_Certificates_CertificateBase_X509Thumbprint">CertificateBase.X509Thumbprint</a>
-    </div>
-    <div>
-      <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateBase.html#Azure_Security_KeyVault_Certificates_CertificateBase_Tags">CertificateBase.Tags</a>
-    </div>
-    <div>
-      <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateBase.html#Azure_Security_KeyVault_Certificates_CertificateBase_Enabled">CertificateBase.Enabled</a>
-    </div>
-    <div>
-      <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateBase.html#Azure_Security_KeyVault_Certificates_CertificateBase_NotBefore">CertificateBase.NotBefore</a>
-    </div>
-    <div>
-      <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateBase.html#Azure_Security_KeyVault_Certificates_CertificateBase_Expires">CertificateBase.Expires</a>
-    </div>
-    <div>
-      <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateBase.html#Azure_Security_KeyVault_Certificates_CertificateBase_Created">CertificateBase.Created</a>
-    </div>
-    <div>
-      <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateBase.html#Azure_Security_KeyVault_Certificates_CertificateBase_Updated">CertificateBase.Updated</a>
-    </div>
-    <div>
-      <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateBase.html#Azure_Security_KeyVault_Certificates_CertificateBase_RecoveryLevel">CertificateBase.RecoveryLevel</a>
-    </div>
     <div>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
     </div>
@@ -156,58 +120,25 @@
   <h6><strong>Assembly</strong>: Azure.Security.KeyVault.Certificates.dll</h6>
   <h5 id="Azure_Security_KeyVault_Certificates_Certificate_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Certificate : CertificateBase</code></pre>
+    <pre><code class="lang-csharp hljs">public class Certificate : IJsonDeserializable</code></pre>
   </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Security_KeyVault_Certificates_Certificate__ctor_System_String_.md&amp;value=---%0Auid%3A%20Azure.Security.KeyVault.Certificates.Certificate.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/keyvault/Azure.Security.KeyVault.Certificates/src/Certificate.cs/#L14">View Source</a>
-  </span>
-  <a id="Azure_Security_KeyVault_Certificates_Certificate__ctor_" data-uid="Azure.Security.KeyVault.Certificates.Certificate.#ctor*"></a>
-  <h4 id="Azure_Security_KeyVault_Certificates_Certificate__ctor_System_String_" data-uid="Azure.Security.KeyVault.Certificates.Certificate.#ctor(System.String)">Certificate(String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Certificate(string name)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">name</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Security_KeyVault_Certificates_Certificate_CER.md&amp;value=---%0Auid%3A%20Azure.Security.KeyVault.Certificates.Certificate.CER%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Security_KeyVault_Certificates_Certificate_CER.md&amp;value=---%0Auid%3A%20Azure.Security.KeyVault.Certificates.Certificate.CER%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/keyvault/Azure.Security.KeyVault.Certificates/src/Certificate.cs/#L12">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/keyvault/Azure.Security.KeyVault.Certificates/src/Certificate.cs/#L62">View Source</a>
   </span>
   <a id="Azure_Security_KeyVault_Certificates_Certificate_CER_" data-uid="Azure.Security.KeyVault.Certificates.Certificate.CER*"></a>
   <h4 id="Azure_Security_KeyVault_Certificates_Certificate_CER" data-uid="Azure.Security.KeyVault.Certificates.Certificate.CER">CER</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The CER formatted public X509 certificate</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string CER { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public byte[] CER { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -219,25 +150,88 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Security_KeyVault_Certificates_Certificate_KeyId.md&amp;value=---%0Auid%3A%20Azure.Security.KeyVault.Certificates.Certificate.KeyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Security_KeyVault_Certificates_Certificate_ContentType.md&amp;value=---%0Auid%3A%20Azure.Security.KeyVault.Certificates.Certificate.ContentType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/keyvault/Azure.Security.KeyVault.Certificates/src/Certificate.cs/#L11">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/keyvault/Azure.Security.KeyVault.Certificates/src/Certificate.cs/#L52">View Source</a>
+  </span>
+  <a id="Azure_Security_KeyVault_Certificates_Certificate_ContentType_" data-uid="Azure.Security.KeyVault.Certificates.Certificate.ContentType*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_Certificate_ContentType" data-uid="Azure.Security.KeyVault.Certificates.Certificate.ContentType">ContentType</h4>
+  <div class="markdown level1 summary"><p>The content type of the key vault Secret corresponding to the certificate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CertificateContentType ContentType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateContentType.html">CertificateContentType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Security_KeyVault_Certificates_Certificate_Id.md&amp;value=---%0Auid%3A%20Azure.Security.KeyVault.Certificates.Certificate.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/keyvault/Azure.Security.KeyVault.Certificates/src/Certificate.cs/#L22">View Source</a>
+  </span>
+  <a id="Azure_Security_KeyVault_Certificates_Certificate_Id_" data-uid="Azure.Security.KeyVault.Certificates.Certificate.Id*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_Certificate_Id" data-uid="Azure.Security.KeyVault.Certificates.Certificate.Id">Id</h4>
+  <div class="markdown level1 summary"><p>The Id of the certificate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri Id { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Security_KeyVault_Certificates_Certificate_KeyId.md&amp;value=---%0Auid%3A%20Azure.Security.KeyVault.Certificates.Certificate.KeyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/keyvault/Azure.Security.KeyVault.Certificates/src/Certificate.cs/#L42">View Source</a>
   </span>
   <a id="Azure_Security_KeyVault_Certificates_Certificate_KeyId_" data-uid="Azure.Security.KeyVault.Certificates.Certificate.KeyId*"></a>
   <h4 id="Azure_Security_KeyVault_Certificates_Certificate_KeyId" data-uid="Azure.Security.KeyVault.Certificates.Certificate.KeyId">KeyId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The Id of the Key Vault Key backing the certifcate.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string KeyId { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string KeyId { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -256,18 +250,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Security_KeyVault_Certificates_Certificate_Policy.md&amp;value=---%0Auid%3A%20Azure.Security.KeyVault.Certificates.Certificate.Policy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Security_KeyVault_Certificates_Certificate_Name.md&amp;value=---%0Auid%3A%20Azure.Security.KeyVault.Certificates.Certificate.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/keyvault/Azure.Security.KeyVault.Certificates/src/Certificate.cs/#L9">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/keyvault/Azure.Security.KeyVault.Certificates/src/Certificate.cs/#L27">View Source</a>
   </span>
-  <a id="Azure_Security_KeyVault_Certificates_Certificate_Policy_" data-uid="Azure.Security.KeyVault.Certificates.Certificate.Policy*"></a>
-  <h4 id="Azure_Security_KeyVault_Certificates_Certificate_Policy" data-uid="Azure.Security.KeyVault.Certificates.Certificate.Policy">Policy</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Azure_Security_KeyVault_Certificates_Certificate_Name_" data-uid="Azure.Security.KeyVault.Certificates.Certificate.Name*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_Certificate_Name" data-uid="Azure.Security.KeyVault.Certificates.Certificate.Name">Name</h4>
+  <div class="markdown level1 summary"><p>The name of the certificate.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CertificatePolicy Policy { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -279,25 +274,119 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificatePolicy.html">CertificatePolicy</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Security_KeyVault_Certificates_Certificate_SecretId.md&amp;value=---%0Auid%3A%20Azure.Security.KeyVault.Certificates.Certificate.SecretId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Security_KeyVault_Certificates_Certificate_Properties.md&amp;value=---%0Auid%3A%20Azure.Security.KeyVault.Certificates.Certificate.Properties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/keyvault/Azure.Security.KeyVault.Certificates/src/Certificate.cs/#L10">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/keyvault/Azure.Security.KeyVault.Certificates/src/Certificate.cs/#L57">View Source</a>
   </span>
-  <a id="Azure_Security_KeyVault_Certificates_Certificate_SecretId_" data-uid="Azure.Security.KeyVault.Certificates.Certificate.SecretId*"></a>
-  <h4 id="Azure_Security_KeyVault_Certificates_Certificate_SecretId" data-uid="Azure.Security.KeyVault.Certificates.Certificate.SecretId">SecretId</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Azure_Security_KeyVault_Certificates_Certificate_Properties_" data-uid="Azure.Security.KeyVault.Certificates.Certificate.Properties*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_Certificate_Properties" data-uid="Azure.Security.KeyVault.Certificates.Certificate.Properties">Properties</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the attributes of the <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string SecretId { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public CertificateProperties Properties { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateProperties.html">CertificateProperties</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Security_KeyVault_Certificates_Certificate_SecretId.md&amp;value=---%0Auid%3A%20Azure.Security.KeyVault.Certificates.Certificate.SecretId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/keyvault/Azure.Security.KeyVault.Certificates/src/Certificate.cs/#L47">View Source</a>
+  </span>
+  <a id="Azure_Security_KeyVault_Certificates_Certificate_SecretId_" data-uid="Azure.Security.KeyVault.Certificates.Certificate.SecretId*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_Certificate_SecretId" data-uid="Azure.Security.KeyVault.Certificates.Certificate.SecretId">SecretId</h4>
+  <div class="markdown level1 summary"><p>The Id of the Key Vault Secret which contains the PEM of PFX formatted content of the certficate and it's private key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SecretId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Security_KeyVault_Certificates_Certificate_VaultUri.md&amp;value=---%0Auid%3A%20Azure.Security.KeyVault.Certificates.Certificate.VaultUri%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/keyvault/Azure.Security.KeyVault.Certificates/src/Certificate.cs/#L32">View Source</a>
+  </span>
+  <a id="Azure_Security_KeyVault_Certificates_Certificate_VaultUri_" data-uid="Azure.Security.KeyVault.Certificates.Certificate.VaultUri*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_Certificate_VaultUri" data-uid="Azure.Security.KeyVault.Certificates.Certificate.VaultUri">VaultUri</h4>
+  <div class="markdown level1 summary"><p>The Uri of the vault in which the certificate is stored.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri VaultUri { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Security_KeyVault_Certificates_Certificate_Version.md&amp;value=---%0Auid%3A%20Azure.Security.KeyVault.Certificates.Certificate.Version%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/keyvault/Azure.Security.KeyVault.Certificates/src/Certificate.cs/#L37">View Source</a>
+  </span>
+  <a id="Azure_Security_KeyVault_Certificates_Certificate_Version_" data-uid="Azure.Security.KeyVault.Certificates.Certificate.Version*"></a>
+  <h4 id="Azure_Security_KeyVault_Certificates_Certificate_Version" data-uid="Azure.Security.KeyVault.Certificates.Certificate.Version">Version</h4>
+  <div class="markdown level1 summary"><p>The version of the certificate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Version { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -316,22 +405,22 @@
   </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+      <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
   </div>
   <div>
-      <a class="xref" href="Azure.Security.KeyVault.Secrets.AzureClientBuilderExtensions.html#Azure_Security_KeyVault_Secrets_AzureClientBuilderExtensions_AddSecretClient__2___0___1_">AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
-      <a class="xref" href="Azure.Data.AppConfiguration.AzureClientBuilderExtensions.html#Azure_Data_AppConfiguration_AzureClientBuilderExtensions_AddConfigurationClient__2___0___1_">AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
-      <a class="xref" href="Azure.Storage.Blobs.AzureClientBuilderExtensions.html#Azure_Storage_Blobs_AzureClientBuilderExtensions_AddBlobServiceClient__2___0___1_">AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
-      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
-      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
 </article>
           </div>
@@ -341,10 +430,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Security_KeyVault_Certificates_Certificate.md&amp;value=---%0Auid%3A%20Azure.Security.KeyVault.Certificates.Certificate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Security_KeyVault_Certificates_Certificate.md&amp;value=---%0Auid%3A%20Azure.Security.KeyVault.Certificates.Certificate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/keyvault/Azure.Security.KeyVault.Certificates/src/Certificate.cs/#L7" class="contribution-link">View Source</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/keyvault/Azure.Security.KeyVault.Certificates/src/Certificate.cs/#L12" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

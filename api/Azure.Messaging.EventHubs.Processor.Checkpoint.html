@@ -83,7 +83,7 @@
   
   <h1 id="Azure_Messaging_EventHubs_Processor_Checkpoint" data-uid="Azure.Messaging.EventHubs.Processor.Checkpoint" class="text-break">Class Checkpoint
   </h1>
-  <div class="markdown level0 summary"><p>Contains all the information needed to store the state of an <a class="xref" href="Azure.Messaging.EventHubs.Processor.IPartitionProcessor.html">IPartitionProcessor</a>.</p>
+  <div class="markdown level0 summary"><p>Contains the information to reflect the state of event processing for a given Event Hub partition.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -121,14 +121,86 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class Checkpoint</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_Checkpoint__ctor_System_String_System_String_System_String_System_String_System_String_System_Int64_System_Int64_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.Checkpoint.%23ctor(System.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.Int64%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/Checkpoint.cs/#L70">View Source</a>
+  </span>
+  <a id="Azure_Messaging_EventHubs_Processor_Checkpoint__ctor_" data-uid="Azure.Messaging.EventHubs.Processor.Checkpoint.#ctor*"></a>
+  <h4 id="Azure_Messaging_EventHubs_Processor_Checkpoint__ctor_System_String_System_String_System_String_System_String_System_String_System_Int64_System_Int64_" data-uid="Azure.Messaging.EventHubs.Processor.Checkpoint.#ctor(System.String,System.String,System.String,System.String,System.String,System.Int64,System.Int64)">Checkpoint(String, String, String, String, String, Int64, Int64)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Messaging.EventHubs.Processor.Checkpoint.html">Checkpoint</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Checkpoint(string fullyQualifiedNamespace, string eventHubName, string consumerGroup, string ownerIdentifier, string partitionId, long offset, long sequenceNumber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">fullyQualifiedNamespace</span></td>
+        <td><p>The fully qualified Event Hubs namespace this checkpoint is associated with.  This is likely to be similar to <code>{yournamespace}.servicebus.windows.net</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">eventHubName</span></td>
+        <td><p>The name of the specific Event Hub this checkpoint is associated with, relative to the Event Hubs namespace that contains it.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">consumerGroup</span></td>
+        <td><p>The name of the consumer group this checkpoint is associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">ownerIdentifier</span></td>
+        <td><p>The identifier of the associated <a class="xref" href="Azure.Messaging.EventHubs.Processor.EventProcessor-1.html">EventProcessor&lt;T&gt;</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">partitionId</span></td>
+        <td><p>The identifier of the Event Hub partition this checkpoint is associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The offset of the <a class="xref" href="Azure.Messaging.EventHubs.EventData.html">EventData</a> this checkpoint is associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">sequenceNumber</span></td>
+        <td><p>The sequence number assigned to the <a class="xref" href="Azure.Messaging.EventHubs.EventData.html">EventData</a> this checkpoint is associated with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_Checkpoint_ConsumerGroup.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.Checkpoint.ConsumerGroup%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_Checkpoint_ConsumerGroup.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.Checkpoint.ConsumerGroup%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/Checkpoint.cs/#L26">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/Checkpoint.cs/#L32">View Source</a>
   </span>
   <a id="Azure_Messaging_EventHubs_Processor_Checkpoint_ConsumerGroup_" data-uid="Azure.Messaging.EventHubs.Processor.Checkpoint.ConsumerGroup*"></a>
   <h4 id="Azure_Messaging_EventHubs_Processor_Checkpoint_ConsumerGroup" data-uid="Azure.Messaging.EventHubs.Processor.Checkpoint.ConsumerGroup">ConsumerGroup</h4>
@@ -156,10 +228,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_Checkpoint_EventHubName.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.Checkpoint.EventHubName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_Checkpoint_EventHubName.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.Checkpoint.EventHubName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/Checkpoint.cs/#L20">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/Checkpoint.cs/#L26">View Source</a>
   </span>
   <a id="Azure_Messaging_EventHubs_Processor_Checkpoint_EventHubName_" data-uid="Azure.Messaging.EventHubs.Processor.Checkpoint.EventHubName*"></a>
   <h4 id="Azure_Messaging_EventHubs_Processor_Checkpoint_EventHubName" data-uid="Azure.Messaging.EventHubs.Processor.Checkpoint.EventHubName">EventHubName</h4>
@@ -188,10 +260,42 @@ to the Event Hubs namespace that contains it.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_Checkpoint_Offset.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.Checkpoint.Offset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_Checkpoint_FullyQualifiedNamespace.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.Checkpoint.FullyQualifiedNamespace%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/Checkpoint.cs/#L44">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/Checkpoint.cs/#L19">View Source</a>
+  </span>
+  <a id="Azure_Messaging_EventHubs_Processor_Checkpoint_FullyQualifiedNamespace_" data-uid="Azure.Messaging.EventHubs.Processor.Checkpoint.FullyQualifiedNamespace*"></a>
+  <h4 id="Azure_Messaging_EventHubs_Processor_Checkpoint_FullyQualifiedNamespace" data-uid="Azure.Messaging.EventHubs.Processor.Checkpoint.FullyQualifiedNamespace">FullyQualifiedNamespace</h4>
+  <div class="markdown level1 summary"><p>The fully qualified Event Hubs namespace this checkpoint is associated with.  This
+is likely to be similar to <code>{yournamespace}.servicebus.windows.net</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FullyQualifiedNamespace { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_Checkpoint_Offset.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.Checkpoint.Offset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/Checkpoint.cs/#L50">View Source</a>
   </span>
   <a id="Azure_Messaging_EventHubs_Processor_Checkpoint_Offset_" data-uid="Azure.Messaging.EventHubs.Processor.Checkpoint.Offset*"></a>
   <h4 id="Azure_Messaging_EventHubs_Processor_Checkpoint_Offset" data-uid="Azure.Messaging.EventHubs.Processor.Checkpoint.Offset">Offset</h4>
@@ -219,14 +323,14 @@ to the Event Hubs namespace that contains it.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_Checkpoint_OwnerIdentifier.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.Checkpoint.OwnerIdentifier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_Checkpoint_OwnerIdentifier.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.Checkpoint.OwnerIdentifier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/Checkpoint.cs/#L32">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/Checkpoint.cs/#L38">View Source</a>
   </span>
   <a id="Azure_Messaging_EventHubs_Processor_Checkpoint_OwnerIdentifier_" data-uid="Azure.Messaging.EventHubs.Processor.Checkpoint.OwnerIdentifier*"></a>
   <h4 id="Azure_Messaging_EventHubs_Processor_Checkpoint_OwnerIdentifier" data-uid="Azure.Messaging.EventHubs.Processor.Checkpoint.OwnerIdentifier">OwnerIdentifier</h4>
-  <div class="markdown level1 summary"><p>The identifier of the associated <a class="xref" href="Azure.Messaging.EventHubs.Processor.EventProcessor.html">EventProcessor</a> instance.</p>
+  <div class="markdown level1 summary"><p>The identifier of the associated <a class="xref" href="Azure.Messaging.EventHubs.Processor.EventProcessor-1.html">EventProcessor&lt;T&gt;</a> instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -250,10 +354,10 @@ to the Event Hubs namespace that contains it.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_Checkpoint_PartitionId.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.Checkpoint.PartitionId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_Checkpoint_PartitionId.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.Checkpoint.PartitionId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/Checkpoint.cs/#L38">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/Checkpoint.cs/#L44">View Source</a>
   </span>
   <a id="Azure_Messaging_EventHubs_Processor_Checkpoint_PartitionId_" data-uid="Azure.Messaging.EventHubs.Processor.Checkpoint.PartitionId*"></a>
   <h4 id="Azure_Messaging_EventHubs_Processor_Checkpoint_PartitionId" data-uid="Azure.Messaging.EventHubs.Processor.Checkpoint.PartitionId">PartitionId</h4>
@@ -281,10 +385,10 @@ to the Event Hubs namespace that contains it.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_Checkpoint_SequenceNumber.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.Checkpoint.SequenceNumber%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_Checkpoint_SequenceNumber.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.Checkpoint.SequenceNumber%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/Checkpoint.cs/#L50">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/Checkpoint.cs/#L56">View Source</a>
   </span>
   <a id="Azure_Messaging_EventHubs_Processor_Checkpoint_SequenceNumber_" data-uid="Azure.Messaging.EventHubs.Processor.Checkpoint.SequenceNumber*"></a>
   <h4 id="Azure_Messaging_EventHubs_Processor_Checkpoint_SequenceNumber" data-uid="Azure.Messaging.EventHubs.Processor.Checkpoint.SequenceNumber">SequenceNumber</h4>
@@ -312,22 +416,22 @@ to the Event Hubs namespace that contains it.</p>
   </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+      <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
   </div>
   <div>
-      <a class="xref" href="Azure.Security.KeyVault.Secrets.AzureClientBuilderExtensions.html#Azure_Security_KeyVault_Secrets_AzureClientBuilderExtensions_AddSecretClient__2___0___1_">AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
-      <a class="xref" href="Azure.Data.AppConfiguration.AzureClientBuilderExtensions.html#Azure_Data_AppConfiguration_AzureClientBuilderExtensions_AddConfigurationClient__2___0___1_">AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
-      <a class="xref" href="Azure.Storage.Blobs.AzureClientBuilderExtensions.html#Azure_Storage_Blobs_AzureClientBuilderExtensions_AddBlobServiceClient__2___0___1_">AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
-      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
-      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
 </article>
           </div>
@@ -337,10 +441,10 @@ to the Event Hubs namespace that contains it.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_Checkpoint.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.Checkpoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_Checkpoint.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.Checkpoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/Checkpoint.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/Checkpoint.cs/#L12" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

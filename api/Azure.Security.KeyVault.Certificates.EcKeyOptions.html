@@ -83,7 +83,8 @@
   
   <h1 id="Azure_Security_KeyVault_Certificates_EcKeyOptions" data-uid="Azure.Security.KeyVault.Certificates.EcKeyOptions" class="text-break">Class EcKeyOptions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Propeties of an EC (EllipticCurve) key backing a certificate</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -101,12 +102,6 @@
     </div>
     <div>
       <a class="xref" href="Azure.Security.KeyVault.Certificates.KeyOptions.html#Azure_Security_KeyVault_Certificates_KeyOptions_Exportable">KeyOptions.Exportable</a>
-    </div>
-    <div>
-      <a class="xref" href="Azure.Security.KeyVault.Certificates.KeyOptions.html#Azure_Security_KeyVault_Certificates_KeyOptions_EnhancedKeyUsage">KeyOptions.EnhancedKeyUsage</a>
-    </div>
-    <div>
-      <a class="xref" href="Azure.Security.KeyVault.Certificates.KeyOptions.html#Azure_Security_KeyVault_Certificates_KeyOptions_KeyUsage">KeyOptions.KeyUsage</a>
     </div>
     <div>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
@@ -134,24 +129,25 @@
   <h6><strong>Assembly</strong>: Azure.Security.KeyVault.Certificates.dll</h6>
   <h5 id="Azure_Security_KeyVault_Certificates_EcKeyOptions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class EcKeyOptions : KeyOptions</code></pre>
+    <pre><code class="lang-csharp hljs">public class EcKeyOptions : KeyOptions, IJsonSerializable, IJsonDeserializable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Security_KeyVault_Certificates_EcKeyOptions__ctor_System_Boolean_.md&amp;value=---%0Auid%3A%20Azure.Security.KeyVault.Certificates.EcKeyOptions.%23ctor(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Security_KeyVault_Certificates_EcKeyOptions__ctor_System_Boolean_.md&amp;value=---%0Auid%3A%20Azure.Security.KeyVault.Certificates.EcKeyOptions.%23ctor(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/keyvault/Azure.Security.KeyVault.Certificates/src/EcKeyOptions.cs/#L12">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/keyvault/Azure.Security.KeyVault.Certificates/src/EcKeyOptions.cs/#L25">View Source</a>
   </span>
   <a id="Azure_Security_KeyVault_Certificates_EcKeyOptions__ctor_" data-uid="Azure.Security.KeyVault.Certificates.EcKeyOptions.#ctor*"></a>
   <h4 id="Azure_Security_KeyVault_Certificates_EcKeyOptions__ctor_System_Boolean_" data-uid="Azure.Security.KeyVault.Certificates.EcKeyOptions.#ctor(System.Boolean)">EcKeyOptions(Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates EcKeyOptions for use with a <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificatePolicy.html">CertificatePolicy</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EcKeyOptions(bool hsm)</code></pre>
+    <pre><code class="lang-csharp hljs">public EcKeyOptions(bool hsmProtected)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -165,8 +161,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">hsm</span></td>
-        <td></td>
+        <td><span class="parametername">hsmProtected</span></td>
+        <td><p>Specifies whether the key should be protected in the HSM</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -174,18 +171,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Security_KeyVault_Certificates_EcKeyOptions_Curve.md&amp;value=---%0Auid%3A%20Azure.Security.KeyVault.Certificates.EcKeyOptions.Curve%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Security_KeyVault_Certificates_EcKeyOptions_Curve.md&amp;value=---%0Auid%3A%20Azure.Security.KeyVault.Certificates.EcKeyOptions.Curve%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/keyvault/Azure.Security.KeyVault.Certificates/src/EcKeyOptions.cs/#L9">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/keyvault/Azure.Security.KeyVault.Certificates/src/EcKeyOptions.cs/#L19">View Source</a>
   </span>
   <a id="Azure_Security_KeyVault_Certificates_EcKeyOptions_Curve_" data-uid="Azure.Security.KeyVault.Certificates.EcKeyOptions.Curve*"></a>
   <h4 id="Azure_Security_KeyVault_Certificates_EcKeyOptions_Curve" data-uid="Azure.Security.KeyVault.Certificates.EcKeyOptions.Curve">Curve</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The curve which back the EC key</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public KeyCurveName Curve { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public KeyCurveName? Curve { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -197,59 +195,29 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Azure.Security.KeyVault.Certificates.KeyCurveName.html">KeyCurveName</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Security_KeyVault_Certificates_EcKeyOptions_HSM.md&amp;value=---%0Auid%3A%20Azure.Security.KeyVault.Certificates.EcKeyOptions.HSM%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/keyvault/Azure.Security.KeyVault.Certificates/src/EcKeyOptions.cs/#L10">View Source</a>
-  </span>
-  <a id="Azure_Security_KeyVault_Certificates_EcKeyOptions_HSM_" data-uid="Azure.Security.KeyVault.Certificates.EcKeyOptions.HSM*"></a>
-  <h4 id="Azure_Security_KeyVault_Certificates_EcKeyOptions_HSM" data-uid="Azure.Security.KeyVault.Certificates.EcKeyOptions.HSM">HSM</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool HSM { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Certificates.KeyCurveName.html">KeyCurveName</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+      <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
   </div>
   <div>
-      <a class="xref" href="Azure.Security.KeyVault.Secrets.AzureClientBuilderExtensions.html#Azure_Security_KeyVault_Secrets_AzureClientBuilderExtensions_AddSecretClient__2___0___1_">AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
-      <a class="xref" href="Azure.Data.AppConfiguration.AzureClientBuilderExtensions.html#Azure_Data_AppConfiguration_AzureClientBuilderExtensions_AddConfigurationClient__2___0___1_">AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
-      <a class="xref" href="Azure.Storage.Blobs.AzureClientBuilderExtensions.html#Azure_Storage_Blobs_AzureClientBuilderExtensions_AddBlobServiceClient__2___0___1_">AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
-      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
-      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
 </article>
           </div>
@@ -259,10 +227,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Security_KeyVault_Certificates_EcKeyOptions.md&amp;value=---%0Auid%3A%20Azure.Security.KeyVault.Certificates.EcKeyOptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Security_KeyVault_Certificates_EcKeyOptions.md&amp;value=---%0Auid%3A%20Azure.Security.KeyVault.Certificates.EcKeyOptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/keyvault/Azure.Security.KeyVault.Certificates/src/EcKeyOptions.cs/#L7" class="contribution-link">View Source</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/keyvault/Azure.Security.KeyVault.Certificates/src/EcKeyOptions.cs/#L11" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

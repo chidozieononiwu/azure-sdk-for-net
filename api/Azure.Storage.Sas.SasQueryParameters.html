@@ -87,8 +87,8 @@
 that make up an Azure Storage Shared Access Signature's query
 parameters.  It includes components used by all Azure Storage resources
 (Containers, Blobs, Files, and Queues).  You can construct a new instance
-using the service specific SAS builder types.</p>
-<p>For more information, <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-a-service-sas">https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-a-service-sas</a>.</p>
+using the service specific SAS builder types.
+For more information, <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-a-service-sas">https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-a-service-sas</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -128,10 +128,10 @@ using the service specific SAS builder types.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_DefaultSasVersion.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.DefaultSasVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_DefaultSasVersion.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.DefaultSasVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L28">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L26">View Source</a>
   </span>
   <h4 id="Azure_Storage_Sas_SasQueryParameters_DefaultSasVersion" data-uid="Azure.Storage.Sas.SasQueryParameters.DefaultSasVersion">DefaultSasVersion</h4>
   <div class="markdown level1 summary"><p>The default service version to use for Shared Access Signatures.</p>
@@ -139,7 +139,7 @@ using the service specific SAS builder types.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string DefaultSasVersion = &quot;2018-11-09&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public const string DefaultSasVersion = &quot;2019-02-02&quot;</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -160,10 +160,170 @@ using the service specific SAS builder types.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_Empty.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.Empty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_CacheControl.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.CacheControl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L171">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L157">View Source</a>
+  </span>
+  <a id="Azure_Storage_Sas_SasQueryParameters_CacheControl_" data-uid="Azure.Storage.Sas.SasQueryParameters.CacheControl*"></a>
+  <h4 id="Azure_Storage_Sas_SasQueryParameters_CacheControl" data-uid="Azure.Storage.Sas.SasQueryParameters.CacheControl">CacheControl</h4>
+  <div class="markdown level1 summary"><p>Gets the Cache-Control response header, which allows for
+specifying the client-side caching to be used for blob and file downloads.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CacheControl { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_ContentDisposition.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.ContentDisposition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L163">View Source</a>
+  </span>
+  <a id="Azure_Storage_Sas_SasQueryParameters_ContentDisposition_" data-uid="Azure.Storage.Sas.SasQueryParameters.ContentDisposition*"></a>
+  <h4 id="Azure_Storage_Sas_SasQueryParameters_ContentDisposition" data-uid="Azure.Storage.Sas.SasQueryParameters.ContentDisposition">ContentDisposition</h4>
+  <div class="markdown level1 summary"><p>Gets the Content-Disposition response header, which allows for
+specifying the way that the blob or file content can be displayed in the browser.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ContentDisposition { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_ContentEncoding.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.ContentEncoding%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L169">View Source</a>
+  </span>
+  <a id="Azure_Storage_Sas_SasQueryParameters_ContentEncoding_" data-uid="Azure.Storage.Sas.SasQueryParameters.ContentEncoding*"></a>
+  <h4 id="Azure_Storage_Sas_SasQueryParameters_ContentEncoding" data-uid="Azure.Storage.Sas.SasQueryParameters.ContentEncoding">ContentEncoding</h4>
+  <div class="markdown level1 summary"><p>Gets the Content-Encoding response header, which allows for specifying
+the type of encoding used for blob and file downloads.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ContentEncoding { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_ContentLanguage.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.ContentLanguage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L175">View Source</a>
+  </span>
+  <a id="Azure_Storage_Sas_SasQueryParameters_ContentLanguage_" data-uid="Azure.Storage.Sas.SasQueryParameters.ContentLanguage*"></a>
+  <h4 id="Azure_Storage_Sas_SasQueryParameters_ContentLanguage" data-uid="Azure.Storage.Sas.SasQueryParameters.ContentLanguage">ContentLanguage</h4>
+  <div class="markdown level1 summary"><p>Gets the Content-Language response header, which allows for specifying the
+language of the downloaded blob or file content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ContentLanguage { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_ContentType.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.ContentType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L181">View Source</a>
+  </span>
+  <a id="Azure_Storage_Sas_SasQueryParameters_ContentType_" data-uid="Azure.Storage.Sas.SasQueryParameters.ContentType*"></a>
+  <h4 id="Azure_Storage_Sas_SasQueryParameters_ContentType" data-uid="Azure.Storage.Sas.SasQueryParameters.ContentType">ContentType</h4>
+  <div class="markdown level1 summary"><p>Gets the Content-Type response header, which allows for specifying the
+type of the downloaded blob or file content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ContentType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_Empty.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.Empty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L214">View Source</a>
   </span>
   <a id="Azure_Storage_Sas_SasQueryParameters_Empty_" data-uid="Azure.Storage.Sas.SasQueryParameters.Empty*"></a>
   <h4 id="Azure_Storage_Sas_SasQueryParameters_Empty" data-uid="Azure.Storage.Sas.SasQueryParameters.Empty">Empty</h4>
@@ -191,10 +351,10 @@ using the service specific SAS builder types.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_ExpiryTime.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.ExpiryTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_ExpiryTime.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.ExpiryTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L111">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L124">View Source</a>
   </span>
   <a id="Azure_Storage_Sas_SasQueryParameters_ExpiryTime_" data-uid="Azure.Storage.Sas.SasQueryParameters.ExpiryTime*"></a>
   <h4 id="Azure_Storage_Sas_SasQueryParameters_ExpiryTime" data-uid="Azure.Storage.Sas.SasQueryParameters.ExpiryTime">ExpiryTime</h4>
@@ -223,10 +383,10 @@ using the service specific SAS builder types.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_Identifier.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.Identifier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_Identifier.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.Identifier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L125">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L138">View Source</a>
   </span>
   <a id="Azure_Storage_Sas_SasQueryParameters_Identifier_" data-uid="Azure.Storage.Sas.SasQueryParameters.Identifier*"></a>
   <h4 id="Azure_Storage_Sas_SasQueryParameters_Identifier" data-uid="Azure.Storage.Sas.SasQueryParameters.Identifier">Identifier</h4>
@@ -256,10 +416,10 @@ or share.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_IPRange.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.IPRange%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_IPRange.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.IPRange%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L118">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L131">View Source</a>
   </span>
   <a id="Azure_Storage_Sas_SasQueryParameters_IPRange_" data-uid="Azure.Storage.Sas.SasQueryParameters.IPRange*"></a>
   <h4 id="Azure_Storage_Sas_SasQueryParameters_IPRange" data-uid="Azure.Storage.Sas.SasQueryParameters.IPRange">IPRange</h4>
@@ -289,10 +449,10 @@ is inclusive.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_Permissions.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.Permissions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_Permissions.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.Permissions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L138">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L151">View Source</a>
   </span>
   <a id="Azure_Storage_Sas_SasQueryParameters_Permissions_" data-uid="Azure.Storage.Sas.SasQueryParameters.Permissions*"></a>
   <h4 id="Azure_Storage_Sas_SasQueryParameters_Permissions" data-uid="Azure.Storage.Sas.SasQueryParameters.Permissions">Permissions</h4>
@@ -323,10 +483,10 @@ associated stored access policy.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_Protocol.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.Protocol%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_Protocol.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.Protocol%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L97">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L110">View Source</a>
   </span>
   <a id="Azure_Storage_Sas_SasQueryParameters_Protocol_" data-uid="Azure.Storage.Sas.SasQueryParameters.Protocol*"></a>
   <h4 id="Azure_Storage_Sas_SasQueryParameters_Protocol" data-uid="Azure.Storage.Sas.SasQueryParameters.Protocol">Protocol</h4>
@@ -355,10 +515,10 @@ the shared access signature.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_Resource.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.Resource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_Resource.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.Resource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L130">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L143">View Source</a>
   </span>
   <a id="Azure_Storage_Sas_SasQueryParameters_Resource_" data-uid="Azure.Storage.Sas.SasQueryParameters.Resource*"></a>
   <h4 id="Azure_Storage_Sas_SasQueryParameters_Resource" data-uid="Azure.Storage.Sas.SasQueryParameters.Resource">Resource</h4>
@@ -386,10 +546,10 @@ the shared access signature.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_ResourceTypes.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.ResourceTypes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_ResourceTypes.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.ResourceTypes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L91">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L104">View Source</a>
   </span>
   <a id="Azure_Storage_Sas_SasQueryParameters_ResourceTypes_" data-uid="Azure.Storage.Sas.SasQueryParameters.ResourceTypes*"></a>
   <h4 id="Azure_Storage_Sas_SasQueryParameters_ResourceTypes" data-uid="Azure.Storage.Sas.SasQueryParameters.ResourceTypes">ResourceTypes</h4>
@@ -417,10 +577,10 @@ the shared access signature.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_Services.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.Services%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_Services.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.Services%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L86">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L99">View Source</a>
   </span>
   <a id="Azure_Storage_Sas_SasQueryParameters_Services_" data-uid="Azure.Storage.Sas.SasQueryParameters.Services*"></a>
   <h4 id="Azure_Storage_Sas_SasQueryParameters_Services" data-uid="Azure.Storage.Sas.SasQueryParameters.Services">Services</h4>
@@ -449,10 +609,10 @@ access signature.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_Signature.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.Signature%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_Signature.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.Signature%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L146">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L189">View Source</a>
   </span>
   <a id="Azure_Storage_Sas_SasQueryParameters_Signature_" data-uid="Azure.Storage.Sas.SasQueryParameters.Signature*"></a>
   <h4 id="Azure_Storage_Sas_SasQueryParameters_Signature" data-uid="Azure.Storage.Sas.SasQueryParameters.Signature">Signature</h4>
@@ -483,10 +643,10 @@ using the SHA256 algorithm, and then encoded using Base64 encoding.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_StartTime.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.StartTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_StartTime.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.StartTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L105">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L118">View Source</a>
   </span>
   <a id="Azure_Storage_Sas_SasQueryParameters_StartTime_" data-uid="Azure.Storage.Sas.SasQueryParameters.StartTime*"></a>
   <h4 id="Azure_Storage_Sas_SasQueryParameters_StartTime" data-uid="Azure.Storage.Sas.SasQueryParameters.StartTime">StartTime</h4>
@@ -517,10 +677,10 @@ time when the storage service receives the request.
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_Version.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.Version%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_Version.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.Version%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L80">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L93">View Source</a>
   </span>
   <a id="Azure_Storage_Sas_SasQueryParameters_Version_" data-uid="Azure.Storage.Sas.SasQueryParameters.Version*"></a>
   <h4 id="Azure_Storage_Sas_SasQueryParameters_Version" data-uid="Azure.Storage.Sas.SasQueryParameters.Version">Version</h4>
@@ -552,10 +712,10 @@ use when handling requests made with this shared access signature.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_ToString.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters_ToString.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L299">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L391">View Source</a>
   </span>
   <a id="Azure_Storage_Sas_SasQueryParameters_ToString_" data-uid="Azure.Storage.Sas.SasQueryParameters.ToString*"></a>
   <h4 id="Azure_Storage_Sas_SasQueryParameters_ToString" data-uid="Azure.Storage.Sas.SasQueryParameters.ToString">ToString()</h4>
@@ -586,22 +746,22 @@ use when handling requests made with this shared access signature.</p>
   <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a></div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+      <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
   </div>
   <div>
-      <a class="xref" href="Azure.Security.KeyVault.Secrets.AzureClientBuilderExtensions.html#Azure_Security_KeyVault_Secrets_AzureClientBuilderExtensions_AddSecretClient__2___0___1_">AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
-      <a class="xref" href="Azure.Data.AppConfiguration.AzureClientBuilderExtensions.html#Azure_Data_AppConfiguration_AzureClientBuilderExtensions_AddConfigurationClient__2___0___1_">AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
-      <a class="xref" href="Azure.Storage.Blobs.AzureClientBuilderExtensions.html#Azure_Storage_Blobs_AzureClientBuilderExtensions_AddBlobServiceClient__2___0___1_">AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
-      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
-      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
 </article>
           </div>
@@ -611,10 +771,10 @@ use when handling requests made with this shared access signature.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Sas_SasQueryParameters.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.SasQueryParameters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L23" class="contribution-link">View Source</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Common/src/Sas/SasQueryParameters.cs/#L21" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

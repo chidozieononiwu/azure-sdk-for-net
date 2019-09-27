@@ -105,10 +105,7 @@ Storage</p>
       <a class="xref" href="Azure.Core.Pipeline.ClientOptions.html#Azure_Core_Pipeline_ClientOptions_Retry">ClientOptions.Retry</a>
     </div>
     <div>
-      <a class="xref" href="Azure.Core.Pipeline.ClientOptions.html#Azure_Core_Pipeline_ClientOptions_ResponseClassifier">ClientOptions.ResponseClassifier</a>
-    </div>
-    <div>
-      <a class="xref" href="Azure.Core.Pipeline.ClientOptions.html#Azure_Core_Pipeline_ClientOptions_AddPolicy_Azure_Core_Pipeline_HttpPipelinePosition_Azure_Core_Pipeline_HttpPipelinePolicy_">ClientOptions.AddPolicy(HttpPipelinePosition, HttpPipelinePolicy)</a>
+      <a class="xref" href="Azure.Core.Pipeline.ClientOptions.html#Azure_Core_Pipeline_ClientOptions_AddPolicy_Azure_Core_Pipeline_HttpPipelinePolicy_Azure_Core_Pipeline_HttpPipelinePosition_">ClientOptions.AddPolicy(HttpPipelinePolicy, HttpPipelinePosition)</a>
     </div>
     <div>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
@@ -142,10 +139,10 @@ Storage</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Queues_QueueClientOptions__ctor_Azure_Storage_Queues_QueueClientOptions_ServiceVersion_.md&amp;value=---%0Auid%3A%20Azure.Storage.Queues.QueueClientOptions.%23ctor(Azure.Storage.Queues.QueueClientOptions.ServiceVersion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Queues_QueueClientOptions__ctor_Azure_Storage_Queues_QueueClientOptions_ServiceVersion_.md&amp;value=---%0Auid%3A%20Azure.Storage.Queues.QueueClientOptions.%23ctor(Azure.Storage.Queues.QueueClientOptions.ServiceVersion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Queues/src/QueueClientOptions.cs/#L53">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Queues/src/QueueClientOptions.cs/#L51">View Source</a>
   </span>
   <a id="Azure_Storage_Queues_QueueClientOptions__ctor_" data-uid="Azure.Storage.Queues.QueueClientOptions.#ctor*"></a>
   <h4 id="Azure_Storage_Queues_QueueClientOptions__ctor_Azure_Storage_Queues_QueueClientOptions_ServiceVersion_" data-uid="Azure.Storage.Queues.QueueClientOptions.#ctor(Azure.Storage.Queues.QueueClientOptions.ServiceVersion)">QueueClientOptions(QueueClientOptions.ServiceVersion)</h4>
@@ -180,10 +177,47 @@ making requests.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Queues_QueueClientOptions_Version.md&amp;value=---%0Auid%3A%20Azure.Storage.Queues.QueueClientOptions.Version%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Queues_QueueClientOptions_GeoRedundantSecondaryUri.md&amp;value=---%0Auid%3A%20Azure.Storage.Queues.QueueClientOptions.GeoRedundantSecondaryUri%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Queues/src/QueueClientOptions.cs/#L43">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Queues/src/QueueClientOptions.cs/#L67">View Source</a>
+  </span>
+  <a id="Azure_Storage_Queues_QueueClientOptions_GeoRedundantSecondaryUri_" data-uid="Azure.Storage.Queues.QueueClientOptions.GeoRedundantSecondaryUri*"></a>
+  <h4 id="Azure_Storage_Queues_QueueClientOptions_GeoRedundantSecondaryUri" data-uid="Azure.Storage.Queues.QueueClientOptions.GeoRedundantSecondaryUri">GeoRedundantSecondaryUri</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the secondary storage <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> that can be read from for the storage account if the
+account is enabled for RA-GRS.</p>
+<p>If this property is set, the secondary Uri will be used for GET or HEAD requests during retries.
+If the status of the response from the secondary Uri is a 404, then subsequent retries for
+the request will not use the secondary Uri again, as this indicates that the resource
+may not have propagated there yet. Otherwise, subsequent retries will alternate back and forth
+between primary and secondary Uri.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri GeoRedundantSecondaryUri { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Queues_QueueClientOptions_Version.md&amp;value=---%0Auid%3A%20Azure.Storage.Queues.QueueClientOptions.Version%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Queues/src/QueueClientOptions.cs/#L41">View Source</a>
   </span>
   <a id="Azure_Storage_Queues_QueueClientOptions_Version_" data-uid="Azure.Storage.Queues.QueueClientOptions.Version*"></a>
   <h4 id="Azure_Storage_Queues_QueueClientOptions_Version" data-uid="Azure.Storage.Queues.QueueClientOptions.Version">Version</h4>
@@ -213,22 +247,22 @@ making requests.  For more, see
   </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+      <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
   </div>
   <div>
-      <a class="xref" href="Azure.Security.KeyVault.Secrets.AzureClientBuilderExtensions.html#Azure_Security_KeyVault_Secrets_AzureClientBuilderExtensions_AddSecretClient__2___0___1_">AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
-      <a class="xref" href="Azure.Data.AppConfiguration.AzureClientBuilderExtensions.html#Azure_Data_AppConfiguration_AzureClientBuilderExtensions_AddConfigurationClient__2___0___1_">AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
-      <a class="xref" href="Azure.Storage.Blobs.AzureClientBuilderExtensions.html#Azure_Storage_Blobs_AzureClientBuilderExtensions_AddBlobServiceClient__2___0___1_">AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
-      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
-      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
 </article>
           </div>
@@ -238,10 +272,10 @@ making requests.  For more, see
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Queues_QueueClientOptions.md&amp;value=---%0Auid%3A%20Azure.Storage.Queues.QueueClientOptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Queues_QueueClientOptions.md&amp;value=---%0Auid%3A%20Azure.Storage.Queues.QueueClientOptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Queues/src/QueueClientOptions.cs/#L15" class="contribution-link">View Source</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Queues/src/QueueClientOptions.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -87,51 +87,93 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
+      <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.AdministratorDetails.html">AdministratorDetails</a></h4>
+      <section><p>Details of an administrator of a certificate <a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a></p>
+</section>
       <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateBase.html">CertificateBase</a></h4>
-      <section></section>
+      <section><p>An Azure Key Vault certificate.</p>
+</section>
       <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateClient.html">CertificateClient</a></h4>
-      <section></section>
+      <section><p>The CertificateClient provides synchronous and asynchronous methods to manage <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a>s in Azure Key Vault. The client
+supports creating, retrieving, updating, deleting, purging, backing up, restoring and listing the <a class="xref" href="Azure.Security.KeyVault.Certificates.Certificate.html">Certificate</a>, along with managing
+certificate <a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a>s and <a class="xref" href="Azure.Security.KeyVault.Certificates.Contact.html">Contact</a>s. The client also supports listing <a class="xref" href="Azure.Security.KeyVault.Certificates.DeletedCertificate.html">DeletedCertificate</a> for a soft-delete
+enabled key vault.</p>
+</section>
       <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateClientOptions.html">CertificateClientOptions</a></h4>
-      <section></section>
+      <section><p>Options that allow to configure the management of the request sent to Key Vault</p>
+</section>
       <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateImport.html">CertificateImport</a></h4>
-      <section></section>
+      <section><p>A certificate to be imported into Azure Key Vault</p>
+</section>
       <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateOperation.html">CertificateOperation</a></h4>
-      <section></section>
+      <section><p>A long running poller operation which can be used to track the status of a pending key vault certificate operation.</p>
+</section>
+      <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateOperationProperties.html">CertificateOperationProperties</a></h4>
+      <section><p>Properties pertaining to the status of a certificate operation</p>
+</section>
       <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificatePolicy.html">CertificatePolicy</a></h4>
+      <section><p>A policy which governs the lifecycle a properties of a certificate managed by Azure Key Vault</p>
+</section>
+      <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateProperties.html">CertificateProperties</a></h4>
       <section></section>
+      <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateWithPolicy.html">CertificateWithPolicy</a></h4>
+      <section><p>A certificate along with its current policy</p>
+</section>
       <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.Contact.html">Contact</a></h4>
-      <section></section>
+      <section><p>A contact for certificate management issues for a key vault</p>
+</section>
       <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.DeletedCertificate.html">DeletedCertificate</a></h4>
-      <section></section>
+      <section><p>A certificate which has been deleted from the vault</p>
+</section>
       <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.EcKeyOptions.html">EcKeyOptions</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.ErrorModel.html">ErrorModel</a></h4>
-      <section></section>
+      <section><p>Propeties of an EC (EllipticCurve) key backing a certificate</p>
+</section>
+      <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.Error.html">Error</a></h4>
+      <section><p>An error encountered during the processing of a <a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateOperation.html">CertificateOperation</a></p>
+</section>
       <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.Issuer.html">Issuer</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.IssuerBase.html">IssuerBase</a></h4>
-      <section></section>
+      <section><p>A certificate issuer used to sign certificates managed by Azure Key Vault</p>
+</section>
+      <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.IssuerProperties.html">IssuerProperties</a></h4>
+      <section><p>Contains public properties of a certificate issuer</p>
+</section>
       <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.KeyOptions.html">KeyOptions</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.LifeTimeAction.html">LifeTimeAction</a></h4>
-      <section></section>
+      <section><p>Properties of a key backing a certificate managed by Azure Key vault</p>
+</section>
+      <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.LifetimeAction.html">LifetimeAction</a></h4>
+      <section><p>An action to be executed at a perscribed time in a certificates lifecycle</p>
+</section>
       <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.RsaKeyOptions.html">RsaKeyOptions</a></h4>
-      <section></section>
-    <h3 id="enums">Enums
+      <section><p>Propeties of an RSA key backing a certificate</p>
+</section>
+      <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.SubjectAlternativeNames.html">SubjectAlternativeNames</a></h4>
+      <section><p>A collection of subject alternative names (SANs) for a x509 certificate. SANs can be DNS entries, emails, or unique prinicpal names.</p>
+</section>
+    <h3 id="structs">Structs
   </h3>
-      <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.ActionType.html">ActionType</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateClientOptions.ServiceVersion.html">CertificateClientOptions.ServiceVersion</a></h4>
-      <section><p>The versions of Azure Key Vault supported by this client
-library.</p>
+      <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.Action.html">Action</a></h4>
+      <section><p>An action that will be executed.</p>
+</section>
+      <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateContentType.html">CertificateContentType</a></h4>
+      <section><p>Content type of the certificate when downloaded from getSecret.</p>
+</section>
+      <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateKeyType.html">CertificateKeyType</a></h4>
+      <section><p>Supported JsonWebKey key types (kty)</p>
 </section>
       <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.KeyCurveName.html">KeyCurveName</a></h4>
       <section><p>Elliptic Curve Cryptography (ECC) curve names.</p>
 </section>
-      <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.KeyType.html">KeyType</a></h4>
-      <section><p>Supported JsonWebKey key types (kty)</p>
+      <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.KeyUsage.html">KeyUsage</a></h4>
+      <section><p>Supported usages of a certificate key</p>
+</section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateClientOptions.ServiceVersion.html">CertificateClientOptions.ServiceVersion</a></h4>
+      <section><p>The versions of Azure Key Vault supported by this client
+library.</p>
+</section>
+      <h4><a class="xref" href="Azure.Security.KeyVault.Certificates.SubjectAlternativeNameType.html">SubjectAlternativeNameType</a></h4>
+      <section><p>Represents the type of Subject Alternative Names (SAN) which to apply to an x509 certificate</p>
 </section>
 </article>
           </div>

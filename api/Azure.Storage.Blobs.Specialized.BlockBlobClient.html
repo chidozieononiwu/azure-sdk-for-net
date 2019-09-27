@@ -94,7 +94,7 @@ before 2016-05-31), and a block blob can include up to 50,000 blocks.
 The maximum size of a block blob is therefore slightly more than 4.75
 TB (100 MB X 50,000 blocks).  If you are writing a block blob that is
 no more than 256 MB in size, you can upload it in its entirety with a
-single write operation; see <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_UploadAsync_System_IO_Stream_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">UploadAsync(Stream, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a>.</p>
+single write operation; see <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_UploadAsync_System_IO_Stream_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">UploadAsync(Stream, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;AccessTier&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a>.</p>
 <p>When you upload a block to a blob in your storage account, it is
 associated with the specified block blob, but it does not become part
 of the blob until you commit a list of blocks that includes the new
@@ -153,6 +153,18 @@ process).</p>
       <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_Pipeline">BlobBaseClient.Pipeline</a>
     </div>
     <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_CustomerProvidedKey">BlobBaseClient.CustomerProvidedKey</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_AccountName">BlobBaseClient.AccountName</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_ContainerName">BlobBaseClient.ContainerName</a>
+    </div>
+    <div>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_Name">BlobBaseClient.Name</a>
+    </div>
+    <div>
       <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_Download">BlobBaseClient.Download()</a>
     </div>
     <div>
@@ -165,10 +177,10 @@ process).</p>
       <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_DownloadAsync_System_Threading_CancellationToken_">BlobBaseClient.DownloadAsync(CancellationToken)</a>
     </div>
     <div>
-      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_Download_Azure_Core_Http_HttpRange_System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Boolean_System_Threading_CancellationToken_">BlobBaseClient.Download(HttpRange, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, Boolean, CancellationToken)</a>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_Download_Azure_Core_Http_HttpRange_System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Boolean_System_Threading_CancellationToken_">BlobBaseClient.Download(HttpRange, Nullable&lt;BlobAccessConditions&gt;, Boolean, CancellationToken)</a>
     </div>
     <div>
-      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_DownloadAsync_Azure_Core_Http_HttpRange_System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Boolean_System_Threading_CancellationToken_">BlobBaseClient.DownloadAsync(HttpRange, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, Boolean, CancellationToken)</a>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_DownloadAsync_Azure_Core_Http_HttpRange_System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Boolean_System_Threading_CancellationToken_">BlobBaseClient.DownloadAsync(HttpRange, Nullable&lt;BlobAccessConditions&gt;, Boolean, CancellationToken)</a>
     </div>
     <div>
       <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_Download_System_IO_Stream_">BlobBaseClient.Download(Stream)</a>
@@ -207,10 +219,10 @@ process).</p>
       <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_DownloadAsync_System_IO_FileInfo_System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__Azure_Storage_Common_ParallelTransferOptions_System_Threading_CancellationToken_">BlobBaseClient.DownloadAsync(FileInfo, Nullable&lt;BlobAccessConditions&gt;, ParallelTransferOptions, CancellationToken)</a>
     </div>
     <div>
-      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_StartCopyFromUri_System_Uri_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Threading_CancellationToken_">BlobBaseClient.StartCopyFromUri(Uri, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_StartCopyFromUri_System_Uri_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_RehydratePriority__System_Threading_CancellationToken_">BlobBaseClient.StartCopyFromUri(Uri, IDictionary&lt;String, String&gt;, Nullable&lt;AccessTier&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;RehydratePriority&gt;, CancellationToken)</a>
     </div>
     <div>
-      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_StartCopyFromUriAsync_System_Uri_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Threading_CancellationToken_">BlobBaseClient.StartCopyFromUriAsync(Uri, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_StartCopyFromUriAsync_System_Uri_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_RehydratePriority__System_Threading_CancellationToken_">BlobBaseClient.StartCopyFromUriAsync(Uri, IDictionary&lt;String, String&gt;, Nullable&lt;AccessTier&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;RehydratePriority&gt;, CancellationToken)</a>
     </div>
     <div>
       <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_StartCopyFromUri_System_String_System_Threading_CancellationToken_">BlobBaseClient.StartCopyFromUri(String, CancellationToken)</a>
@@ -237,34 +249,34 @@ process).</p>
       <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_UndeleteAsync_System_Threading_CancellationToken_">BlobBaseClient.UndeleteAsync(CancellationToken)</a>
     </div>
     <div>
-      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_GetProperties_System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken_">BlobBaseClient.GetProperties(Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, CancellationToken)</a>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_GetProperties_System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Threading_CancellationToken_">BlobBaseClient.GetProperties(Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>
     </div>
     <div>
-      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_GetPropertiesAsync_System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken_">BlobBaseClient.GetPropertiesAsync(Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, CancellationToken)</a>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_GetPropertiesAsync_System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Threading_CancellationToken_">BlobBaseClient.GetPropertiesAsync(Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>
     </div>
     <div>
-      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_SetHttpHeaders_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken_">BlobBaseClient.SetHttpHeaders(Nullable&lt;BlobHttpHeaders&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, CancellationToken)</a>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_SetHttpHeaders_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Threading_CancellationToken_">BlobBaseClient.SetHttpHeaders(Nullable&lt;BlobHttpHeaders&gt;, Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>
     </div>
     <div>
-      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_SetHttpHeadersAsync_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken_">BlobBaseClient.SetHttpHeadersAsync(Nullable&lt;BlobHttpHeaders&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, CancellationToken)</a>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_SetHttpHeadersAsync_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Threading_CancellationToken_">BlobBaseClient.SetHttpHeadersAsync(Nullable&lt;BlobHttpHeaders&gt;, Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>
     </div>
     <div>
-      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_SetMetadata_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken_">BlobBaseClient.SetMetadata(IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, CancellationToken)</a>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_SetMetadata_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Threading_CancellationToken_">BlobBaseClient.SetMetadata(IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>
     </div>
     <div>
-      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_SetMetadataAsync_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken_">BlobBaseClient.SetMetadataAsync(IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, CancellationToken)</a>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_SetMetadataAsync_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Threading_CancellationToken_">BlobBaseClient.SetMetadataAsync(IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>
     </div>
     <div>
-      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_CreateSnapshot_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken_">BlobBaseClient.CreateSnapshot(IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, CancellationToken)</a>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_CreateSnapshot_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Threading_CancellationToken_">BlobBaseClient.CreateSnapshot(IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>
     </div>
     <div>
-      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_CreateSnapshotAsync_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken_">BlobBaseClient.CreateSnapshotAsync(IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, CancellationToken)</a>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_CreateSnapshotAsync_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Threading_CancellationToken_">BlobBaseClient.CreateSnapshotAsync(IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, CancellationToken)</a>
     </div>
     <div>
-      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_SetTier_Azure_Storage_Blobs_Models_AccessTier_System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Threading_CancellationToken_">BlobBaseClient.SetTier(AccessTier, Nullable&lt;LeaseAccessConditions&gt;, CancellationToken)</a>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_SetTier_Azure_Storage_Blobs_Models_AccessTier_System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_RehydratePriority__System_Threading_CancellationToken_">BlobBaseClient.SetTier(AccessTier, Nullable&lt;LeaseAccessConditions&gt;, Nullable&lt;RehydratePriority&gt;, CancellationToken)</a>
     </div>
     <div>
-      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_SetTierAsync_Azure_Storage_Blobs_Models_AccessTier_System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Threading_CancellationToken_">BlobBaseClient.SetTierAsync(AccessTier, Nullable&lt;LeaseAccessConditions&gt;, CancellationToken)</a>
+      <a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_SetTierAsync_Azure_Storage_Blobs_Models_AccessTier_System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_RehydratePriority__System_Threading_CancellationToken_">BlobBaseClient.SetTierAsync(AccessTier, Nullable&lt;LeaseAccessConditions&gt;, Nullable&lt;RehydratePriority&gt;, CancellationToken)</a>
     </div>
     <div>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
@@ -298,10 +310,10 @@ process).</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient__ctor.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient__ctor.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L106">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L107">View Source</a>
   </span>
   <a id="Azure_Storage_Blobs_Specialized_BlockBlobClient__ctor_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.#ctor*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient__ctor" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.#ctor">BlockBlobClient()</h4>
@@ -315,10 +327,10 @@ class for mocking.</p>
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient__ctor_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.%23ctor(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient__ctor_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.%23ctor(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L127">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L128">View Source</a>
   </span>
   <a id="Azure_Storage_Blobs_Specialized_BlockBlobClient__ctor_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.#ctor*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient__ctor_System_String_System_String_System_String_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.#ctor(System.String,System.String,System.String)">BlockBlobClient(String, String, String)</h4>
@@ -365,10 +377,10 @@ account at runtime.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient__ctor_System_String_System_String_System_String_Azure_Storage_Blobs_BlobClientOptions_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.%23ctor(System.String%2CSystem.String%2CSystem.String%2CAzure.Storage.Blobs.BlobClientOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient__ctor_System_String_System_String_System_String_Azure_Storage_Blobs_BlobClientOptions_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.%23ctor(System.String%2CSystem.String%2CSystem.String%2CAzure.Storage.Blobs.BlobClientOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L154">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L155">View Source</a>
   </span>
   <a id="Azure_Storage_Blobs_Specialized_BlockBlobClient__ctor_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.#ctor*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient__ctor_System_String_System_String_System_String_Azure_Storage_Blobs_BlobClientOptions_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.#ctor(System.String,System.String,System.String,Azure.Storage.Blobs.BlobClientOptions)">BlockBlobClient(String, String, String, BlobClientOptions)</h4>
@@ -423,10 +435,10 @@ every request.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient__ctor_System_Uri_Azure_Core_TokenCredential_Azure_Storage_Blobs_BlobClientOptions_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.%23ctor(System.Uri%2CAzure.Core.TokenCredential%2CAzure.Storage.Blobs.BlobClientOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient__ctor_System_Uri_Azure_Core_TokenCredential_Azure_Storage_Blobs_BlobClientOptions_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.%23ctor(System.Uri%2CAzure.Core.TokenCredential%2CAzure.Storage.Blobs.BlobClientOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L217">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L218">View Source</a>
   </span>
   <a id="Azure_Storage_Blobs_Specialized_BlockBlobClient__ctor_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.#ctor*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient__ctor_System_Uri_Azure_Core_TokenCredential_Azure_Storage_Blobs_BlobClientOptions_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.#ctor(System.Uri,Azure.Core.TokenCredential,Azure.Storage.Blobs.BlobClientOptions)">BlockBlobClient(Uri, TokenCredential, BlobClientOptions)</h4>
@@ -474,10 +486,10 @@ every request.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient__ctor_System_Uri_Azure_Storage_Blobs_BlobClientOptions_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.%23ctor(System.Uri%2CAzure.Storage.Blobs.BlobClientOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient__ctor_System_Uri_Azure_Storage_Blobs_BlobClientOptions_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.%23ctor(System.Uri%2CAzure.Storage.Blobs.BlobClientOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L173">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L174">View Source</a>
   </span>
   <a id="Azure_Storage_Blobs_Specialized_BlockBlobClient__ctor_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.#ctor*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient__ctor_System_Uri_Azure_Storage_Blobs_BlobClientOptions_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.#ctor(System.Uri,Azure.Storage.Blobs.BlobClientOptions)">BlockBlobClient(Uri, BlobClientOptions)</h4>
@@ -519,10 +531,10 @@ every request.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient__ctor_System_Uri_Azure_Storage_StorageSharedKeyCredential_Azure_Storage_Blobs_BlobClientOptions_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.%23ctor(System.Uri%2CAzure.Storage.StorageSharedKeyCredential%2CAzure.Storage.Blobs.BlobClientOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient__ctor_System_Uri_Azure_Storage_StorageSharedKeyCredential_Azure_Storage_Blobs_BlobClientOptions_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.%23ctor(System.Uri%2CAzure.Storage.StorageSharedKeyCredential%2CAzure.Storage.Blobs.BlobClientOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L195">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L196">View Source</a>
   </span>
   <a id="Azure_Storage_Blobs_Specialized_BlockBlobClient__ctor_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.#ctor*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient__ctor_System_Uri_Azure_Storage_StorageSharedKeyCredential_Azure_Storage_Blobs_BlobClientOptions_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.#ctor(System.Uri,Azure.Storage.StorageSharedKeyCredential,Azure.Storage.Blobs.BlobClientOptions)">BlockBlobClient(Uri, StorageSharedKeyCredential, BlobClientOptions)</h4>
@@ -572,10 +584,10 @@ every request.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_BlockBlobMaxBlocks.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.BlockBlobMaxBlocks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_BlockBlobMaxBlocks.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.BlockBlobMaxBlocks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L99">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L100">View Source</a>
   </span>
   <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_BlockBlobMaxBlocks" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.BlockBlobMaxBlocks">BlockBlobMaxBlocks</h4>
   <div class="markdown level1 summary"><p><a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_BlockBlobMaxBlocks">BlockBlobMaxBlocks</a> indicates the maximum number of
@@ -603,14 +615,14 @@ blocks allowed in a block blob.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_BlockBlobMaxStageBlockBytes.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.BlockBlobMaxStageBlockBytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_BlockBlobMaxStageBlockBytes.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.BlockBlobMaxStageBlockBytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L93">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L94">View Source</a>
   </span>
   <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_BlockBlobMaxStageBlockBytes" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.BlockBlobMaxStageBlockBytes">BlockBlobMaxStageBlockBytes</h4>
   <div class="markdown level1 summary"><p><a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_BlockBlobMaxStageBlockBytes">BlockBlobMaxStageBlockBytes</a> indicates the maximum
-number of bytes that can be sent in a call to <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockAsync_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">StageBlockAsync(String, Stream, Byte[], Nullable&lt;LeaseAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a>.</p>
+number of bytes that can be sent in a call to <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockAsync_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">StageBlockAsync(String, Stream, Byte[], Nullable&lt;LeaseAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -634,14 +646,14 @@ number of bytes that can be sent in a call to <a class="xref" href="Azure.Storag
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_BlockBlobMaxUploadBlobBytes.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.BlockBlobMaxUploadBlobBytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_BlockBlobMaxUploadBlobBytes.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.BlockBlobMaxUploadBlobBytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L87">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L88">View Source</a>
   </span>
   <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_BlockBlobMaxUploadBlobBytes" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.BlockBlobMaxUploadBlobBytes">BlockBlobMaxUploadBlobBytes</h4>
   <div class="markdown level1 summary"><p><a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_BlockBlobMaxUploadBlobBytes">BlockBlobMaxUploadBlobBytes</a> indicates the maximum number of bytes
-that can be sent in a call to <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_UploadAsync_System_IO_Stream_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">UploadAsync(Stream, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a>.</p>
+that can be sent in a call to <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_UploadAsync_System_IO_Stream_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">UploadAsync(Stream, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;AccessTier&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -667,18 +679,18 @@ that can be sent in a call to <a class="xref" href="Azure.Storage.Blobs.Speciali
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockList_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.CommitBlockList(System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.BlobHttpHeaders%7D%2CSystem.Collections.Generic.IDictionary%7BSystem.String%2CSystem.String%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.BlobAccessConditions%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.CustomerProvidedKey%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockList_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.CommitBlockList(System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.BlobHttpHeaders%7D%2CSystem.Collections.Generic.IDictionary%7BSystem.String%2CSystem.String%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.BlobAccessConditions%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.AccessTier%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L1140">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L1146">View Source</a>
   </span>
   <a id="Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockList_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.CommitBlockList*"></a>
-  <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockList_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.CommitBlockList(System.Collections.Generic.IEnumerable{System.String},System.Nullable{Azure.Storage.Blobs.Models.BlobHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{Azure.Storage.Blobs.Models.BlobAccessConditions},System.Nullable{Azure.Storage.Blobs.Models.CustomerProvidedKey},System.Threading.CancellationToken)">CommitBlockList(IEnumerable&lt;String&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockList_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken_">CommitBlockList(IEnumerable&lt;String&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, CancellationToken)</a> operation writes a blob by
+  <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockList_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.CommitBlockList(System.Collections.Generic.IEnumerable{System.String},System.Nullable{Azure.Storage.Blobs.Models.BlobHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{Azure.Storage.Blobs.Models.BlobAccessConditions},System.Nullable{Azure.Storage.Blobs.Models.AccessTier},System.Threading.CancellationToken)">CommitBlockList(IEnumerable&lt;String&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;AccessTier&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockList_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_Threading_CancellationToken_">CommitBlockList(IEnumerable&lt;String&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;AccessTier&gt;, CancellationToken)</a> operation writes a blob by
 specifying the list of block IDs that make up the blob.  In order
 to be written as part of a blob, a block must have been
-successfully written to the server in a prior <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlock_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">StageBlock(String, Stream, Byte[], Nullable&lt;LeaseAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a>
-operation.  You can call <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockList_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken_">CommitBlockList(IEnumerable&lt;String&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, CancellationToken)</a> to
+successfully written to the server in a prior <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlock_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">StageBlock(String, Stream, Byte[], Nullable&lt;LeaseAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a>
+operation.  You can call <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockList_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_Threading_CancellationToken_">CommitBlockList(IEnumerable&lt;String&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;AccessTier&gt;, CancellationToken)</a> to
 update a blob by uploading only those blocks that have changed,
 then committing the new and existing blocks together.  You can do
 this by specifying whether to commit a block from the committed
@@ -691,7 +703,7 @@ permanently deleted.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Response&lt;BlobContentInfo&gt; CommitBlockList(IEnumerable&lt;string&gt; base64BlockIds, BlobHttpHeaders? blobHttpHeaders = default(BlobHttpHeaders? ), IDictionary&lt;string, string&gt; metadata = null, BlobAccessConditions? blobAccessConditions = default(BlobAccessConditions? ), CustomerProvidedKey? customerProvidedKey = default(CustomerProvidedKey? ), CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Response&lt;BlobContentInfo&gt; CommitBlockList(IEnumerable&lt;string&gt; base64BlockIds, BlobHttpHeaders? blobHttpHeaders = default(BlobHttpHeaders? ), IDictionary&lt;string, string&gt; metadata = null, BlobAccessConditions? blobAccessConditions = default(BlobAccessConditions? ), AccessTier? accessTier = default(AccessTier? ), CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -734,10 +746,10 @@ conditions on committing this block list.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Azure.Storage.Blobs.Models.CustomerProvidedKey.html">CustomerProvidedKey</a>&gt;</td>
-        <td><span class="parametername">customerProvidedKey</span></td>
-        <td><p>Optional CustomerProvidedKeyInfo for use in customer-provided key
-server-side encryption.</p>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Azure.Storage.Blobs.Models.AccessTier.html">AccessTier</a>&gt;</td>
+        <td><span class="parametername">accessTier</span></td>
+        <td><p>Optional <a class="xref" href="Azure.Storage.Blobs.Models.AccessTier.html">AccessTier</a>
+Indicates the tier to be set on the blob.</p>
 </td>
       </tr>
       <tr>
@@ -766,24 +778,24 @@ state of the updated block blob.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockList_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <h5 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockList_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_Threading_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>A <a class="xref" href="Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
 a failure occurs.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockListAsync_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.CommitBlockListAsync(System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.BlobHttpHeaders%7D%2CSystem.Collections.Generic.IDictionary%7BSystem.String%2CSystem.String%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.BlobAccessConditions%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.CustomerProvidedKey%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockListAsync_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.CommitBlockListAsync(System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.BlobHttpHeaders%7D%2CSystem.Collections.Generic.IDictionary%7BSystem.String%2CSystem.String%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.BlobAccessConditions%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.AccessTier%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L1207">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L1213">View Source</a>
   </span>
   <a id="Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockListAsync_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.CommitBlockListAsync*"></a>
-  <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockListAsync_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.CommitBlockListAsync(System.Collections.Generic.IEnumerable{System.String},System.Nullable{Azure.Storage.Blobs.Models.BlobHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{Azure.Storage.Blobs.Models.BlobAccessConditions},System.Nullable{Azure.Storage.Blobs.Models.CustomerProvidedKey},System.Threading.CancellationToken)">CommitBlockListAsync(IEnumerable&lt;String&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockListAsync_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken_">CommitBlockListAsync(IEnumerable&lt;String&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, CancellationToken)</a> operation writes a blob by
+  <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockListAsync_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.CommitBlockListAsync(System.Collections.Generic.IEnumerable{System.String},System.Nullable{Azure.Storage.Blobs.Models.BlobHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{Azure.Storage.Blobs.Models.BlobAccessConditions},System.Nullable{Azure.Storage.Blobs.Models.AccessTier},System.Threading.CancellationToken)">CommitBlockListAsync(IEnumerable&lt;String&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;AccessTier&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockListAsync_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_Threading_CancellationToken_">CommitBlockListAsync(IEnumerable&lt;String&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;AccessTier&gt;, CancellationToken)</a> operation writes a blob by
 specifying the list of block IDs that make up the blob.  In order
 to be written as part of a blob, a block must have been
-successfully written to the server in a prior <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockAsync_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">StageBlockAsync(String, Stream, Byte[], Nullable&lt;LeaseAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a>
-operation.  You can call <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockListAsync_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken_">CommitBlockListAsync(IEnumerable&lt;String&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, CancellationToken)</a> to
+successfully written to the server in a prior <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockAsync_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">StageBlockAsync(String, Stream, Byte[], Nullable&lt;LeaseAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a>
+operation.  You can call <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockListAsync_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_Threading_CancellationToken_">CommitBlockListAsync(IEnumerable&lt;String&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;AccessTier&gt;, CancellationToken)</a> to
 update a blob by uploading only those blocks that have changed,
 then committing the new and existing blocks together.  You can do
 this by specifying whether to commit a block from the committed
@@ -796,7 +808,7 @@ permanently deleted.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;BlobContentInfo&gt;&gt; CommitBlockListAsync(IEnumerable&lt;string&gt; base64BlockIds, BlobHttpHeaders? blobHttpHeaders = default(BlobHttpHeaders? ), IDictionary&lt;string, string&gt; metadata = null, BlobAccessConditions? blobAccessConditions = default(BlobAccessConditions? ), CustomerProvidedKey? customerProvidedKey = default(CustomerProvidedKey? ), CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;BlobContentInfo&gt;&gt; CommitBlockListAsync(IEnumerable&lt;string&gt; base64BlockIds, BlobHttpHeaders? blobHttpHeaders = default(BlobHttpHeaders? ), IDictionary&lt;string, string&gt; metadata = null, BlobAccessConditions? blobAccessConditions = default(BlobAccessConditions? ), AccessTier? accessTier = default(AccessTier? ), CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -839,10 +851,10 @@ conditions on committing this block list.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Azure.Storage.Blobs.Models.CustomerProvidedKey.html">CustomerProvidedKey</a>&gt;</td>
-        <td><span class="parametername">customerProvidedKey</span></td>
-        <td><p>Optional CustomerProvidedKeyInfo for use in customer-provided key
-server-side encryption.</p>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Azure.Storage.Blobs.Models.AccessTier.html">AccessTier</a>&gt;</td>
+        <td><span class="parametername">accessTier</span></td>
+        <td><p>Optional <a class="xref" href="Azure.Storage.Blobs.Models.AccessTier.html">AccessTier</a>
+Indicates the tier to be set on the blob.</p>
 </td>
       </tr>
       <tr>
@@ -871,16 +883,16 @@ state of the updated block blob.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockListAsync_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <h5 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockListAsync_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_Threading_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>A <a class="xref" href="Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
 a failure occurs.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_GetBlockList_System_Nullable_Azure_Storage_Blobs_Models_BlockListType__System_String_System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.GetBlockList(System.Nullable%7BAzure.Storage.Blobs.Models.BlockListType%7D%2CSystem.String%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.LeaseAccessConditions%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_GetBlockList_System_Nullable_Azure_Storage_Blobs_Models_BlockListType__System_String_System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.GetBlockList(System.Nullable%7BAzure.Storage.Blobs.Models.BlockListType%7D%2CSystem.String%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.LeaseAccessConditions%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L1375">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L1382">View Source</a>
   </span>
   <a id="Azure_Storage_Blobs_Specialized_BlockBlobClient_GetBlockList_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.GetBlockList*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_GetBlockList_System_Nullable_Azure_Storage_Blobs_Models_BlockListType__System_String_System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.GetBlockList(System.Nullable{Azure.Storage.Blobs.Models.BlockListType},System.String,System.Nullable{Azure.Storage.Blobs.Models.LeaseAccessConditions},System.Threading.CancellationToken)">GetBlockList(Nullable&lt;BlockListType&gt;, String, Nullable&lt;LeaseAccessConditions&gt;, CancellationToken)</h4>
@@ -888,9 +900,9 @@ a failure occurs.</p>
 the list of blocks that have been uploaded as part of a block blob.
 There are two block lists maintained for a blob.  The Committed
 Block list has blocks that have been successfully committed to a
-given blob with <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockList_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken_">CommitBlockList(IEnumerable&lt;String&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, CancellationToken)</a>.  The
+given blob with <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockList_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_Threading_CancellationToken_">CommitBlockList(IEnumerable&lt;String&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;AccessTier&gt;, CancellationToken)</a>.  The
 Uncommitted Block list has blocks that have been uploaded for a
-blob using <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlock_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">StageBlock(String, Stream, Byte[], Nullable&lt;LeaseAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a>, but that have not yet
+blob using <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlock_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">StageBlock(String, Stream, Byte[], Nullable&lt;LeaseAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a>, but that have not yet
 been committed.  These blocks are stored in Azure in association
 with a blob, but do not yet form part of the blob.</p>
 </div>
@@ -964,10 +976,10 @@ a failure occurs.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_GetBlockListAsync_System_Nullable_Azure_Storage_Blobs_Models_BlockListType__System_String_System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.GetBlockListAsync(System.Nullable%7BAzure.Storage.Blobs.Models.BlockListType%7D%2CSystem.String%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.LeaseAccessConditions%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_GetBlockListAsync_System_Nullable_Azure_Storage_Blobs_Models_BlockListType__System_String_System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.GetBlockListAsync(System.Nullable%7BAzure.Storage.Blobs.Models.BlockListType%7D%2CSystem.String%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.LeaseAccessConditions%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L1425">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L1432">View Source</a>
   </span>
   <a id="Azure_Storage_Blobs_Specialized_BlockBlobClient_GetBlockListAsync_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.GetBlockListAsync*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_GetBlockListAsync_System_Nullable_Azure_Storage_Blobs_Models_BlockListType__System_String_System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.GetBlockListAsync(System.Nullable{Azure.Storage.Blobs.Models.BlockListType},System.String,System.Nullable{Azure.Storage.Blobs.Models.LeaseAccessConditions},System.Threading.CancellationToken)">GetBlockListAsync(Nullable&lt;BlockListType&gt;, String, Nullable&lt;LeaseAccessConditions&gt;, CancellationToken)</h4>
@@ -975,9 +987,9 @@ a failure occurs.</p>
 the list of blocks that have been uploaded as part of a block blob.
 There are two block lists maintained for a blob.  The Committed
 Block list has blocks that have been successfully committed to a
-given blob with <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockListAsync_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken_">CommitBlockListAsync(IEnumerable&lt;String&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, CancellationToken)</a>.  The
+given blob with <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockListAsync_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_Threading_CancellationToken_">CommitBlockListAsync(IEnumerable&lt;String&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;AccessTier&gt;, CancellationToken)</a>.  The
 Uncommitted Block list has blocks that have been uploaded for a
-blob using <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockAsync_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">StageBlockAsync(String, Stream, Byte[], Nullable&lt;LeaseAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a>, but that have not yet
+blob using <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockAsync_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">StageBlockAsync(String, Stream, Byte[], Nullable&lt;LeaseAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a>, but that have not yet
 been committed.  These blocks are stored in Azure in association
 with a blob, but do not yet form part of the blob.</p>
 </div>
@@ -1051,22 +1063,22 @@ a failure occurs.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlock_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.StageBlock(System.String%2CSystem.IO.Stream%2CSystem.Byte%5B%5D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.LeaseAccessConditions%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.CustomerProvidedKey%7D%2CSystem.IProgress%7BAzure.Storage.Common.StorageProgress%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlock_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.StageBlock(System.String%2CSystem.IO.Stream%2CSystem.Byte%5B%5D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.LeaseAccessConditions%7D%2CSystem.IProgress%7BAzure.Storage.Common.StorageProgress%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L590">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L626">View Source</a>
   </span>
   <a id="Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlock_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.StageBlock*"></a>
-  <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlock_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.StageBlock(System.String,System.IO.Stream,System.Byte[],System.Nullable{Azure.Storage.Blobs.Models.LeaseAccessConditions},System.Nullable{Azure.Storage.Blobs.Models.CustomerProvidedKey},System.IProgress{Azure.Storage.Common.StorageProgress},System.Threading.CancellationToken)">StageBlock(String, Stream, Byte[], Nullable&lt;LeaseAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlock_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">StageBlock(String, Stream, Byte[], Nullable&lt;LeaseAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a> operation creates a new block as
+  <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlock_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.StageBlock(System.String,System.IO.Stream,System.Byte[],System.Nullable{Azure.Storage.Blobs.Models.LeaseAccessConditions},System.IProgress{Azure.Storage.Common.StorageProgress},System.Threading.CancellationToken)">StageBlock(String, Stream, Byte[], Nullable&lt;LeaseAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlock_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">StageBlock(String, Stream, Byte[], Nullable&lt;LeaseAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a> operation creates a new block as
 part of a block blob's &quot;staging area&quot; to be eventually committed
-via the <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockList_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken_">CommitBlockList(IEnumerable&lt;String&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, CancellationToken)</a> operation.</p>
+via the <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockList_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_Threading_CancellationToken_">CommitBlockList(IEnumerable&lt;String&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;AccessTier&gt;, CancellationToken)</a> operation.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/put-block">https://docs.microsoft.com/en-us/rest/api/storageservices/put-block</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Response&lt;BlockInfo&gt; StageBlock(string base64BlockId, Stream content, byte[] transactionalContentHash = null, LeaseAccessConditions? leaseAccessConditions = default(LeaseAccessConditions? ), CustomerProvidedKey? customerProvidedKey = default(CustomerProvidedKey? ), IProgress&lt;StorageProgress&gt; progressHandler = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Response&lt;BlockInfo&gt; StageBlock(string base64BlockId, Stream content, byte[] transactionalContentHash = null, LeaseAccessConditions? leaseAccessConditions = default(LeaseAccessConditions? ), IProgress&lt;StorageProgress&gt; progressHandler = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1112,13 +1124,6 @@ hashes do not match, the operation will throw a
         <td><span class="parametername">leaseAccessConditions</span></td>
         <td><p>Optional <a class="xref" href="Azure.Storage.Blobs.Models.LeaseAccessConditions.html">LeaseAccessConditions</a> to add
 conditions on the upload of this block.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Azure.Storage.Blobs.Models.CustomerProvidedKey.html">CustomerProvidedKey</a>&gt;</td>
-        <td><span class="parametername">customerProvidedKey</span></td>
-        <td><p>Optional CustomerProvidedKeyInfo for use in customer-provided key
-server-side encryption.</p>
 </td>
       </tr>
       <tr>
@@ -1154,28 +1159,28 @@ state of the updated block.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlock_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <h5 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlock_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>A <a class="xref" href="Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
 a failure occurs.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockAsync_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.StageBlockAsync(System.String%2CSystem.IO.Stream%2CSystem.Byte%5B%5D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.LeaseAccessConditions%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.CustomerProvidedKey%7D%2CSystem.IProgress%7BAzure.Storage.Common.StorageProgress%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockAsync_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.StageBlockAsync(System.String%2CSystem.IO.Stream%2CSystem.Byte%5B%5D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.LeaseAccessConditions%7D%2CSystem.IProgress%7BAzure.Storage.Common.StorageProgress%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L661">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L691">View Source</a>
   </span>
   <a id="Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockAsync_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.StageBlockAsync*"></a>
-  <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockAsync_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.StageBlockAsync(System.String,System.IO.Stream,System.Byte[],System.Nullable{Azure.Storage.Blobs.Models.LeaseAccessConditions},System.Nullable{Azure.Storage.Blobs.Models.CustomerProvidedKey},System.IProgress{Azure.Storage.Common.StorageProgress},System.Threading.CancellationToken)">StageBlockAsync(String, Stream, Byte[], Nullable&lt;LeaseAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockAsync_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">StageBlockAsync(String, Stream, Byte[], Nullable&lt;LeaseAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a> operation creates a new block as
+  <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockAsync_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.StageBlockAsync(System.String,System.IO.Stream,System.Byte[],System.Nullable{Azure.Storage.Blobs.Models.LeaseAccessConditions},System.IProgress{Azure.Storage.Common.StorageProgress},System.Threading.CancellationToken)">StageBlockAsync(String, Stream, Byte[], Nullable&lt;LeaseAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockAsync_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">StageBlockAsync(String, Stream, Byte[], Nullable&lt;LeaseAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a> operation creates a new block as
 part of a block blob's &quot;staging area&quot; to be eventually committed
-via the <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockListAsync_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken_">CommitBlockListAsync(IEnumerable&lt;String&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, CancellationToken)</a> operation.</p>
+via the <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockListAsync_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_Threading_CancellationToken_">CommitBlockListAsync(IEnumerable&lt;String&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;AccessTier&gt;, CancellationToken)</a> operation.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/put-block">https://docs.microsoft.com/en-us/rest/api/storageservices/put-block</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;BlockInfo&gt;&gt; StageBlockAsync(string base64BlockId, Stream content, byte[] transactionalContentHash = null, LeaseAccessConditions? leaseAccessConditions = default(LeaseAccessConditions? ), CustomerProvidedKey? customerProvidedKey = default(CustomerProvidedKey? ), IProgress&lt;StorageProgress&gt; progressHandler = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;BlockInfo&gt;&gt; StageBlockAsync(string base64BlockId, Stream content, byte[] transactionalContentHash = null, LeaseAccessConditions? leaseAccessConditions = default(LeaseAccessConditions? ), IProgress&lt;StorageProgress&gt; progressHandler = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1224,13 +1229,6 @@ conditions on the upload of this block.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Azure.Storage.Blobs.Models.CustomerProvidedKey.html">CustomerProvidedKey</a>&gt;</td>
-        <td><span class="parametername">customerProvidedKey</span></td>
-        <td><p>Optional CustomerProvidedKeyInfo for use in customer-provided key
-server-side encryption.</p>
-</td>
-      </tr>
-      <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iprogress-1">IProgress</a>&lt;<a class="xref" href="Azure.Storage.Common.StorageProgress.html">StorageProgress</a>&gt;</td>
         <td><span class="parametername">progressHandler</span></td>
         <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iprogress-1">IProgress&lt;T&gt;</a> to provide
@@ -1263,20 +1261,20 @@ state of the updated block.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockAsync_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <h5 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockAsync_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>A <a class="xref" href="Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
 a failure occurs.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockFromUri_System_Uri_System_String_Azure_Core_Http_HttpRange_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.StageBlockFromUri(System.Uri%2CSystem.String%2CAzure.Core.Http.HttpRange%2CSystem.Byte%5B%5D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.HttpAccessConditions%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.LeaseAccessConditions%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.CustomerProvidedKey%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockFromUri_System_Uri_System_String_Azure_Core_Http_HttpRange_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.StageBlockFromUri(System.Uri%2CSystem.String%2CAzure.Core.Http.HttpRange%2CSystem.Byte%5B%5D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.HttpAccessConditions%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.LeaseAccessConditions%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L862">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L881">View Source</a>
   </span>
   <a id="Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockFromUri_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.StageBlockFromUri*"></a>
-  <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockFromUri_System_Uri_System_String_Azure_Core_Http_HttpRange_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.StageBlockFromUri(System.Uri,System.String,Azure.Core.Http.HttpRange,System.Byte[],System.Nullable{Azure.Storage.Blobs.Models.HttpAccessConditions},System.Nullable{Azure.Storage.Blobs.Models.LeaseAccessConditions},System.Nullable{Azure.Storage.Blobs.Models.CustomerProvidedKey},System.Threading.CancellationToken)">StageBlockFromUri(Uri, String, HttpRange, Byte[], Nullable&lt;HttpAccessConditions&gt;, Nullable&lt;LeaseAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockFromUri_System_Uri_System_String_Azure_Core_Http_HttpRange_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken_">StageBlockFromUri(Uri, String, HttpRange, Byte[], Nullable&lt;HttpAccessConditions&gt;, Nullable&lt;LeaseAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, CancellationToken)</a> operation creates a new
+  <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockFromUri_System_Uri_System_String_Azure_Core_Http_HttpRange_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.StageBlockFromUri(System.Uri,System.String,Azure.Core.Http.HttpRange,System.Byte[],System.Nullable{Azure.Storage.Blobs.Models.HttpAccessConditions},System.Nullable{Azure.Storage.Blobs.Models.LeaseAccessConditions},System.Threading.CancellationToken)">StageBlockFromUri(Uri, String, HttpRange, Byte[], Nullable&lt;HttpAccessConditions&gt;, Nullable&lt;LeaseAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockFromUri_System_Uri_System_String_Azure_Core_Http_HttpRange_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Threading_CancellationToken_">StageBlockFromUri(Uri, String, HttpRange, Byte[], Nullable&lt;HttpAccessConditions&gt;, Nullable&lt;LeaseAccessConditions&gt;, CancellationToken)</a> operation creates a new
 block to be committed as part of a blob where the contents are
 read from the <code data-dev-comment-type="paramref" class="paramref">sourceUri</code>.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/put-block-from-url">https://docs.microsoft.com/en-us/rest/api/storageservices/put-block-from-url</a>.</p>
@@ -1284,7 +1282,7 @@ read from the <code data-dev-comment-type="paramref" class="paramref">sourceUri<
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Response&lt;BlockInfo&gt; StageBlockFromUri(Uri sourceUri, string base64BlockId, HttpRange sourceRange = default(HttpRange), byte[] sourceContentHash = null, HttpAccessConditions? sourceAccessConditions = default(HttpAccessConditions? ), LeaseAccessConditions? leaseAccessConditions = default(LeaseAccessConditions? ), CustomerProvidedKey? customerProvidedKey = default(CustomerProvidedKey? ), CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Response&lt;BlockInfo&gt; StageBlockFromUri(Uri sourceUri, string base64BlockId, HttpRange sourceRange = default(HttpRange), byte[] sourceContentHash = null, HttpAccessConditions? sourceAccessConditions = default(HttpAccessConditions? ), LeaseAccessConditions? leaseAccessConditions = default(LeaseAccessConditions? ), CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1351,13 +1349,6 @@ conditions on the copying of data from this source blob.</p>
         <td><span class="parametername">leaseAccessConditions</span></td>
         <td><p>Optional <a class="xref" href="Azure.Storage.Blobs.Models.LeaseAccessConditions.html">LeaseAccessConditions</a> to add
 conditions on the staging of this block.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Azure.Storage.Blobs.Models.CustomerProvidedKey.html">CustomerProvidedKey</a>&gt;</td>
-        <td><span class="parametername">customerProvidedKey</span></td>
-        <td><p>Optional CustomerProvidedKeyInfo for use in customer-provided key
-server-side encryption.</p>
 </td>
       </tr>
       <tr>
@@ -1386,20 +1377,20 @@ state of the updated block blob.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockFromUri_System_Uri_System_String_Azure_Core_Http_HttpRange_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <h5 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockFromUri_System_Uri_System_String_Azure_Core_Http_HttpRange_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>A <a class="xref" href="Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
 a failure occurs.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockFromUriAsync_System_Uri_System_String_Azure_Core_Http_HttpRange_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.StageBlockFromUriAsync(System.Uri%2CSystem.String%2CAzure.Core.Http.HttpRange%2CSystem.Byte%5B%5D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.HttpAccessConditions%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.LeaseAccessConditions%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.CustomerProvidedKey%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockFromUriAsync_System_Uri_System_String_Azure_Core_Http_HttpRange_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.StageBlockFromUriAsync(System.Uri%2CSystem.String%2CAzure.Core.Http.HttpRange%2CSystem.Byte%5B%5D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.HttpAccessConditions%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.LeaseAccessConditions%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L945">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L958">View Source</a>
   </span>
   <a id="Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockFromUriAsync_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.StageBlockFromUriAsync*"></a>
-  <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockFromUriAsync_System_Uri_System_String_Azure_Core_Http_HttpRange_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.StageBlockFromUriAsync(System.Uri,System.String,Azure.Core.Http.HttpRange,System.Byte[],System.Nullable{Azure.Storage.Blobs.Models.HttpAccessConditions},System.Nullable{Azure.Storage.Blobs.Models.LeaseAccessConditions},System.Nullable{Azure.Storage.Blobs.Models.CustomerProvidedKey},System.Threading.CancellationToken)">StageBlockFromUriAsync(Uri, String, HttpRange, Byte[], Nullable&lt;HttpAccessConditions&gt;, Nullable&lt;LeaseAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockFromUriAsync_System_Uri_System_String_Azure_Core_Http_HttpRange_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken_">StageBlockFromUriAsync(Uri, String, HttpRange, Byte[], Nullable&lt;HttpAccessConditions&gt;, Nullable&lt;LeaseAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, CancellationToken)</a> operation creates a new
+  <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockFromUriAsync_System_Uri_System_String_Azure_Core_Http_HttpRange_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.StageBlockFromUriAsync(System.Uri,System.String,Azure.Core.Http.HttpRange,System.Byte[],System.Nullable{Azure.Storage.Blobs.Models.HttpAccessConditions},System.Nullable{Azure.Storage.Blobs.Models.LeaseAccessConditions},System.Threading.CancellationToken)">StageBlockFromUriAsync(Uri, String, HttpRange, Byte[], Nullable&lt;HttpAccessConditions&gt;, Nullable&lt;LeaseAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockFromUriAsync_System_Uri_System_String_Azure_Core_Http_HttpRange_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Threading_CancellationToken_">StageBlockFromUriAsync(Uri, String, HttpRange, Byte[], Nullable&lt;HttpAccessConditions&gt;, Nullable&lt;LeaseAccessConditions&gt;, CancellationToken)</a> operation creates a new
 block to be committed as part of a blob where the contents are
 read from the <code data-dev-comment-type="paramref" class="paramref">sourceUri</code>.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/put-block-from-url">https://docs.microsoft.com/en-us/rest/api/storageservices/put-block-from-url</a>.</p>
@@ -1407,7 +1398,7 @@ read from the <code data-dev-comment-type="paramref" class="paramref">sourceUri<
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;BlockInfo&gt;&gt; StageBlockFromUriAsync(Uri sourceUri, string base64BlockId, HttpRange sourceRange = default(HttpRange), byte[] sourceContentHash = null, HttpAccessConditions? sourceAccessConditions = default(HttpAccessConditions? ), LeaseAccessConditions? leaseAccessConditions = default(LeaseAccessConditions? ), CustomerProvidedKey? customerProvidedKey = default(CustomerProvidedKey? ), CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;BlockInfo&gt;&gt; StageBlockFromUriAsync(Uri sourceUri, string base64BlockId, HttpRange sourceRange = default(HttpRange), byte[] sourceContentHash = null, HttpAccessConditions? sourceAccessConditions = default(HttpAccessConditions? ), LeaseAccessConditions? leaseAccessConditions = default(LeaseAccessConditions? ), CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1477,13 +1468,6 @@ conditions on the staging of this block.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Azure.Storage.Blobs.Models.CustomerProvidedKey.html">CustomerProvidedKey</a>&gt;</td>
-        <td><span class="parametername">customerProvidedKey</span></td>
-        <td><p>Optional CustomerProvidedKeyInfo for use in customer-provided key
-server-side encryption.</p>
-</td>
-      </tr>
-      <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
@@ -1509,33 +1493,33 @@ state of the updated block.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockFromUriAsync_System_Uri_System_String_Azure_Core_Http_HttpRange_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <h5 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockFromUriAsync_System_Uri_System_String_Azure_Core_Http_HttpRange_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>A <a class="xref" href="Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
 a failure occurs.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_Upload_System_IO_Stream_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.Upload(System.IO.Stream%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.BlobHttpHeaders%7D%2CSystem.Collections.Generic.IDictionary%7BSystem.String%2CSystem.String%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.BlobAccessConditions%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.CustomerProvidedKey%7D%2CSystem.IProgress%7BAzure.Storage.Common.StorageProgress%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_Upload_System_IO_Stream_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.Upload(System.IO.Stream%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.BlobHttpHeaders%7D%2CSystem.Collections.Generic.IDictionary%7BSystem.String%2CSystem.String%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.BlobAccessConditions%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.AccessTier%7D%2CSystem.IProgress%7BAzure.Storage.Common.StorageProgress%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L332">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L371">View Source</a>
   </span>
   <a id="Azure_Storage_Blobs_Specialized_BlockBlobClient_Upload_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.Upload*"></a>
-  <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_Upload_System_IO_Stream_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.Upload(System.IO.Stream,System.Nullable{Azure.Storage.Blobs.Models.BlobHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{Azure.Storage.Blobs.Models.BlobAccessConditions},System.Nullable{Azure.Storage.Blobs.Models.CustomerProvidedKey},System.IProgress{Azure.Storage.Common.StorageProgress},System.Threading.CancellationToken)">Upload(Stream, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_Upload_System_IO_Stream_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">Upload(Stream, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a> operation creates a new block  blob,
+  <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_Upload_System_IO_Stream_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.Upload(System.IO.Stream,System.Nullable{Azure.Storage.Blobs.Models.BlobHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{Azure.Storage.Blobs.Models.BlobAccessConditions},System.Nullable{Azure.Storage.Blobs.Models.AccessTier},System.IProgress{Azure.Storage.Common.StorageProgress},System.Threading.CancellationToken)">Upload(Stream, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;AccessTier&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_Upload_System_IO_Stream_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">Upload(Stream, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;AccessTier&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a> operation creates a new block  blob,
 or updates the content of an existing block blob.  Updating an
 existing block blob overwrites any existing metadata on the blob.</p>
-<p>Partial updates are not supported with <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_Upload_System_IO_Stream_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">Upload(Stream, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a>;
+<p>Partial updates are not supported with <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_Upload_System_IO_Stream_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">Upload(Stream, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;AccessTier&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a>;
 the content of the existing blob is overwritten with the content
 of the new blob.  To perform a partial update of the content of a
-block blob, use the <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlock_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">StageBlock(String, Stream, Byte[], Nullable&lt;LeaseAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a> and
-<a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockList_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken_">CommitBlockList(IEnumerable&lt;String&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, CancellationToken)</a> operations.</p>
+block blob, use the <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlock_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">StageBlock(String, Stream, Byte[], Nullable&lt;LeaseAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a> and
+<a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockList_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_Threading_CancellationToken_">CommitBlockList(IEnumerable&lt;String&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;AccessTier&gt;, CancellationToken)</a> operations.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/put-blob">https://docs.microsoft.com/rest/api/storageservices/put-blob</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Response&lt;BlobContentInfo&gt; Upload(Stream content, BlobHttpHeaders? blobHttpHeaders = default(BlobHttpHeaders? ), IDictionary&lt;string, string&gt; metadata = null, BlobAccessConditions? blobAccessConditions = default(BlobAccessConditions? ), CustomerProvidedKey? customerProvidedKey = default(CustomerProvidedKey? ), IProgress&lt;StorageProgress&gt; progressHandler = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Response&lt;BlobContentInfo&gt; Upload(Stream content, BlobHttpHeaders? blobHttpHeaders = default(BlobHttpHeaders? ), IDictionary&lt;string, string&gt; metadata = null, BlobAccessConditions? blobAccessConditions = default(BlobAccessConditions? ), AccessTier? accessTier = default(AccessTier? ), IProgress&lt;StorageProgress&gt; progressHandler = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1574,10 +1558,10 @@ conditions on the creation of this new block blob.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Azure.Storage.Blobs.Models.CustomerProvidedKey.html">CustomerProvidedKey</a>&gt;</td>
-        <td><span class="parametername">customerProvidedKey</span></td>
-        <td><p>Optional CustomerProvidedKeyInfo for use in customer-provided key
-server-side encryption.</p>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Azure.Storage.Blobs.Models.AccessTier.html">AccessTier</a>&gt;</td>
+        <td><span class="parametername">accessTier</span></td>
+        <td><p>Optional <a class="xref" href="Azure.Storage.Blobs.Models.AccessTier.html">AccessTier</a>
+Indicates the tier to be set on the blob.</p>
 </td>
       </tr>
       <tr>
@@ -1613,33 +1597,33 @@ state of the updated block blob.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_Upload_System_IO_Stream_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <h5 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_Upload_System_IO_Stream_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>A <a class="xref" href="Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
 a failure occurs.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_UploadAsync_System_IO_Stream_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.UploadAsync(System.IO.Stream%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.BlobHttpHeaders%7D%2CSystem.Collections.Generic.IDictionary%7BSystem.String%2CSystem.String%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.BlobAccessConditions%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.CustomerProvidedKey%7D%2CSystem.IProgress%7BAzure.Storage.Common.StorageProgress%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_UploadAsync_System_IO_Stream_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.UploadAsync(System.IO.Stream%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.BlobHttpHeaders%7D%2CSystem.Collections.Generic.IDictionary%7BSystem.String%2CSystem.String%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.BlobAccessConditions%7D%2CSystem.Nullable%7BAzure.Storage.Blobs.Models.AccessTier%7D%2CSystem.IProgress%7BAzure.Storage.Common.StorageProgress%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L398">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L437">View Source</a>
   </span>
   <a id="Azure_Storage_Blobs_Specialized_BlockBlobClient_UploadAsync_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.UploadAsync*"></a>
-  <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_UploadAsync_System_IO_Stream_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.UploadAsync(System.IO.Stream,System.Nullable{Azure.Storage.Blobs.Models.BlobHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{Azure.Storage.Blobs.Models.BlobAccessConditions},System.Nullable{Azure.Storage.Blobs.Models.CustomerProvidedKey},System.IProgress{Azure.Storage.Common.StorageProgress},System.Threading.CancellationToken)">UploadAsync(Stream, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_UploadAsync_System_IO_Stream_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">UploadAsync(Stream, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a> operation creates a new block  blob,
+  <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_UploadAsync_System_IO_Stream_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.UploadAsync(System.IO.Stream,System.Nullable{Azure.Storage.Blobs.Models.BlobHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{Azure.Storage.Blobs.Models.BlobAccessConditions},System.Nullable{Azure.Storage.Blobs.Models.AccessTier},System.IProgress{Azure.Storage.Common.StorageProgress},System.Threading.CancellationToken)">UploadAsync(Stream, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;AccessTier&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_UploadAsync_System_IO_Stream_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">UploadAsync(Stream, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;AccessTier&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a> operation creates a new block  blob,
 or updates the content of an existing block blob.  Updating an
 existing block blob overwrites any existing metadata on the blob.</p>
-<p>Partial updates are not supported with <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_UploadAsync_System_IO_Stream_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">UploadAsync(Stream, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a>;
+<p>Partial updates are not supported with <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_UploadAsync_System_IO_Stream_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">UploadAsync(Stream, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;AccessTier&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a>;
 the content of the existing blob is overwritten with the content
 of the new blob.  To perform a partial update of the content of a
-block blob, use the <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockAsync_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">StageBlockAsync(String, Stream, Byte[], Nullable&lt;LeaseAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a> and
-<a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockListAsync_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_Threading_CancellationToken_">CommitBlockListAsync(IEnumerable&lt;String&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;CustomerProvidedKey&gt;, CancellationToken)</a> operations.</p>
+block blob, use the <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_StageBlockAsync_System_String_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_LeaseAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">StageBlockAsync(String, Stream, Byte[], Nullable&lt;LeaseAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a> and
+<a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_CommitBlockListAsync_System_Collections_Generic_IEnumerable_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_Threading_CancellationToken_">CommitBlockListAsync(IEnumerable&lt;String&gt;, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, Nullable&lt;AccessTier&gt;, CancellationToken)</a> operations.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/put-blob">https://docs.microsoft.com/rest/api/storageservices/put-blob</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;BlobContentInfo&gt;&gt; UploadAsync(Stream content, BlobHttpHeaders? blobHttpHeaders = default(BlobHttpHeaders? ), IDictionary&lt;string, string&gt; metadata = null, BlobAccessConditions? blobAccessConditions = default(BlobAccessConditions? ), CustomerProvidedKey? customerProvidedKey = default(CustomerProvidedKey? ), IProgress&lt;StorageProgress&gt; progressHandler = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;BlobContentInfo&gt;&gt; UploadAsync(Stream content, BlobHttpHeaders? blobHttpHeaders = default(BlobHttpHeaders? ), IDictionary&lt;string, string&gt; metadata = null, BlobAccessConditions? blobAccessConditions = default(BlobAccessConditions? ), AccessTier? accessTier = default(AccessTier? ), IProgress&lt;StorageProgress&gt; progressHandler = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1678,10 +1662,10 @@ conditions on the creation of this new block blob.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Azure.Storage.Blobs.Models.CustomerProvidedKey.html">CustomerProvidedKey</a>&gt;</td>
-        <td><span class="parametername">customerProvidedKey</span></td>
-        <td><p>Optional CustomerProvidedKeyInfo for use in customer-provided key
-server-side encryption.</p>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Azure.Storage.Blobs.Models.AccessTier.html">AccessTier</a>&gt;</td>
+        <td><span class="parametername">accessTier</span></td>
+        <td><p>Optional <a class="xref" href="Azure.Storage.Blobs.Models.AccessTier.html">AccessTier</a>
+Indicates the tier to be set on the blob.</p>
 </td>
       </tr>
       <tr>
@@ -1717,16 +1701,122 @@ state of the updated block blob.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_UploadAsync_System_IO_Stream_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_CustomerProvidedKey__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <h5 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_UploadAsync_System_IO_Stream_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_Nullable_Azure_Storage_Blobs_Models_AccessTier__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>A <a class="xref" href="Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
 a failure occurs.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_WithSnapshot_System_String_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.WithSnapshot(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_WithCustomerProvidedKey_Azure_Storage_Blobs_Models_CustomerProvidedKey_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.WithCustomerProvidedKey(Azure.Storage.Blobs.Models.CustomerProvidedKey)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L253">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L283">View Source</a>
+  </span>
+  <a id="Azure_Storage_Blobs_Specialized_BlockBlobClient_WithCustomerProvidedKey_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.WithCustomerProvidedKey*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_WithCustomerProvidedKey_Azure_Storage_Blobs_Models_CustomerProvidedKey_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.WithCustomerProvidedKey(Azure.Storage.Blobs.Models.CustomerProvidedKey)">WithCustomerProvidedKey(CustomerProvidedKey)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html">BlockBlobClient</a>
+class with an identical <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> source but the specified
+<code data-dev-comment-type="paramref" class="paramref">customerProvidedKey</code> customer provided key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlockBlobClient WithCustomerProvidedKey(CustomerProvidedKey customerProvidedKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Blobs.Models.CustomerProvidedKey.html">CustomerProvidedKey</a></td>
+        <td><span class="parametername">customerProvidedKey</span></td>
+        <td><p>The customer provided key to be used by the service to encrypt data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html">BlockBlobClient</a></td>
+        <td><p>A new <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html">BlockBlobClient</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_WithCustomerProvidedKeyImpl_Azure_Storage_Blobs_Models_CustomerProvidedKey_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.WithCustomerProvidedKeyImpl(Azure.Storage.Blobs.Models.CustomerProvidedKey)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L294">View Source</a>
+  </span>
+  <a id="Azure_Storage_Blobs_Specialized_BlockBlobClient_WithCustomerProvidedKeyImpl_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.WithCustomerProvidedKeyImpl*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_WithCustomerProvidedKeyImpl_Azure_Storage_Blobs_Models_CustomerProvidedKey_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.WithCustomerProvidedKeyImpl(Azure.Storage.Blobs.Models.CustomerProvidedKey)">WithCustomerProvidedKeyImpl(CustomerProvidedKey)</h4>
+  <div class="markdown level1 summary"><p>Creates a new instance of the <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html">BlockBlobClient</a> class
+with an identical <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a> source but the specified
+<code data-dev-comment-type="paramref" class="paramref">customerProvidedKey</code> customer provided key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override sealed BlobBaseClient WithCustomerProvidedKeyImpl(CustomerProvidedKey customerProvidedKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Blobs.Models.CustomerProvidedKey.html">CustomerProvidedKey</a></td>
+        <td><span class="parametername">customerProvidedKey</span></td>
+        <td><p>The customer provided key to be used by the service to encrypt data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html">BlobBaseClient</a></td>
+        <td><p>A new <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html">BlockBlobClient</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_WithCustomerProvidedKeyImpl_Azure_Storage_Blobs_Models_CustomerProvidedKey_">BlobBaseClient.WithCustomerProvidedKeyImpl(CustomerProvidedKey)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_WithSnapshot_System_String_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.WithSnapshot(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L259">View Source</a>
   </span>
   <a id="Azure_Storage_Blobs_Specialized_BlockBlobClient_WithSnapshot_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.WithSnapshot*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_WithSnapshot_System_String_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.WithSnapshot(System.String)">WithSnapshot(String)</h4>
@@ -1780,10 +1870,10 @@ to the base blob.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_WithSnapshotImpl_System_String_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.WithSnapshotImpl(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient_WithSnapshotImpl_System_String_.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient.WithSnapshotImpl(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L262">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L268">View Source</a>
   </span>
   <a id="Azure_Storage_Blobs_Specialized_BlockBlobClient_WithSnapshotImpl_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.WithSnapshotImpl*"></a>
   <h4 id="Azure_Storage_Blobs_Specialized_BlockBlobClient_WithSnapshotImpl_System_String_" data-uid="Azure.Storage.Blobs.Specialized.BlockBlobClient.WithSnapshotImpl(System.String)">WithSnapshotImpl(String)</h4>
@@ -1834,25 +1924,25 @@ with an identical <a class="xref" href="https://docs.microsoft.com/dotnet/api/sy
   <div><a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html#Azure_Storage_Blobs_Specialized_BlobBaseClient_WithSnapshotImpl_System_String_">BlobBaseClient.WithSnapshotImpl(String)</a></div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+      <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
   </div>
   <div>
-      <a class="xref" href="Azure.Security.KeyVault.Secrets.AzureClientBuilderExtensions.html#Azure_Security_KeyVault_Secrets_AzureClientBuilderExtensions_AddSecretClient__2___0___1_">AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
-      <a class="xref" href="Azure.Data.AppConfiguration.AzureClientBuilderExtensions.html#Azure_Data_AppConfiguration_AzureClientBuilderExtensions_AddConfigurationClient__2___0___1_">AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
-      <a class="xref" href="Azure.Storage.Blobs.AzureClientBuilderExtensions.html#Azure_Storage_Blobs_AzureClientBuilderExtensions_AddBlobServiceClient__2___0___1_">AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
       <a class="xref" href="Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.html#Azure_Storage_Blobs_Specialized_SpecializedBlobExtensions_GetLeaseClient_Azure_Storage_Blobs_Specialized_BlobBaseClient_System_String_">SpecializedBlobExtensions.GetLeaseClient(BlobBaseClient, String)</a>
   </div>
   <div>
-      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
   <div>
-      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+      <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
 </article>
           </div>
@@ -1862,10 +1952,10 @@ with an identical <a class="xref" href="https://docs.microsoft.com/dotnet/api/sy
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocs2/apiSpec/new?filename=Azure_Storage_Blobs_Specialized_BlockBlobClient.md&amp;value=---%0Auid%3A%20Azure.Storage.Blobs.Specialized.BlockBlobClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L81" class="contribution-link">View Source</a>
+                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocs2/sdk/storage/Azure.Storage.Blobs/src/BlockBlobClient.cs/#L82" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -83,7 +83,7 @@
     "fileMetadataFiles": [],
     "template": [
       "default",
-      "templates/material"
+      "templates/matthews"
     ],
     "postProcessors": [],
     "markdownEngineName": "markdig",

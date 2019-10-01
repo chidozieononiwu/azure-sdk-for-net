@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,61 +79,62 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeReimageOption">
-  
-  
-  <h1 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeReimageOption" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeReimageOption" class="text-break">Enum ComputeNodeReimageOption
+  <h1 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeReimageOption" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeReimageOption">Enum ComputeNodeReimageOption
   </h1>
   <div class="markdown level0 summary"><p>Defines values for ComputeNodeReimageOption.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.html">Microsoft.Azure.Batch.Protocol.Models</a></h6>
+  
+  
+  
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
+  
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeReimageOption_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public enum ComputeNodeReimageOption</code></pre>
   </div>
-  <h3 id="fields">Fields
-  </h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    <thead>
-    <tbody>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeReimageOption_Requeue">Requeue</td>
-        <td><p>Terminate running Task processes and requeue the Tasks. The Tasks
+  
+  
+  
+  
+  
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeReimageOption_Requeue"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeReimageOption_Requeue" class="expander" data-toggle="collapse">Requeue</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeReimageOption_Requeue" class="collapse in">
+        <p><p>Terminate running Task processes and requeue the Tasks. The Tasks
 will run again when a Compute Node is available. Reimage the
 Compute Node as soon as Tasks have been terminated.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeReimageOption_RetainedData">RetainedData</td>
-        <td><p>Allow currently running Tasks to complete, then wait for all Task
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeReimageOption_RetainedData"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeReimageOption_RetainedData" class="expander" data-toggle="collapse">RetainedData</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeReimageOption_RetainedData" class="collapse in">
+        <p><p>Allow currently running Tasks to complete, then wait for all Task
 data retention periods to expire. Schedule no new Tasks while
 waiting. Reimage the Compute Node when all Task retention periods
 have expired.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeReimageOption_TaskCompletion">TaskCompletion</td>
-        <td><p>Allow currently running Tasks to complete. Schedule no new Tasks
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeReimageOption_TaskCompletion"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeReimageOption_TaskCompletion" class="expander" data-toggle="collapse">TaskCompletion</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeReimageOption_TaskCompletion" class="collapse in">
+        <p><p>Allow currently running Tasks to complete. Schedule no new Tasks
 while waiting. Reimage the Compute Node when all Tasks have
 completed.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeReimageOption_Terminate">Terminate</td>
-        <td><p>Terminate running Tasks. The Tasks will be completed with
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeReimageOption_Terminate"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeReimageOption_Terminate" class="expander" data-toggle="collapse">Terminate</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeReimageOption_Terminate" class="collapse in">
+        <p><p>Terminate running Tasks. The Tasks will be completed with
 failureInfo indicating that they were terminated, and will not run
 again. Reimage the Compute Node as soon as Tasks have been
 terminated.</p>
-</td>
-      </tr>
-    </tbody>
-  </thead></thead></table>
+</p>
+      </div>
+  
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;ComputeNodeReimageOption, TConfiguration&gt;(TConfiguration)</a>
@@ -155,21 +156,14 @@ terminated.</p>
   </div>
 </article>
           </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_ComputeNodeReimageOption.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.ComputeNodeReimageOption%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/ComputeNodeReimageOption.cs/#L21" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
+          </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_ComputeNodeReimageOption.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.ComputeNodeReimageOption%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/ComputeNodeReimageOption.cs/#L21" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,25 +79,21 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2">
-  
-  
-  <h1 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2" class="text-break">Class BatchRequestBase&lt;TOptions, TResponse&gt;
+  <h1 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2">Class BatchRequestBase&lt;TOptions, TResponse&gt;
   </h1>
   <div class="markdown level0 summary"><p>A base class for all Batch service requests. Represents the information required to make a particular call with no request body to the Batch service REST API.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">BatchRequestBase&lt;TOptions, TResponse&gt;</span></div>
+  </div>
+  
       <div class="level2"><a class="xref" href="Microsoft.Azure.Batch.Protocol.BatchRequest-2.html">BatchRequest&lt;TOptions, TResponse&gt;</a></div>
       <div class="level2"><a class="xref" href="Microsoft.Azure.Batch.Protocol.BatchRequest-3.html">BatchRequest&lt;TBody, TOptions, TResponse&gt;</a></div>
-  </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="Microsoft.Azure.Batch.Protocol.IBatchRequest-1.html">IBatchRequest</a>&lt;TResponse&gt;</div>
-    <div><a class="xref" href="Microsoft.Azure.Batch.Protocol.IBatchRequest.html">IBatchRequest</a></div>
-  </div>
+  
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -122,109 +118,137 @@
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.Batch.Protocol.html">Microsoft.Azure.Batch.Protocol</a></h6>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
+  
   <h5 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract class BatchRequestBase&lt;TOptions, TResponse&gt; : IBatchRequest&lt;TResponse&gt;, IBatchRequest where TOptions : IOptions, new()
     where TResponse : IAzureOperationResponse</code></pre>
   </div>
+  
+  
+  
   <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">TOptions</span></td>
-        <td><p>The type of the parameters passed outside the request body associated with the request.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="parametername">TResponse</span></td>
-        <td><p>The response type expected from the request.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">TOptions</span>
+        <p><p>The type of the parameters passed outside the request body associated with the request.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="parametername">TResponse</span>
+        <p><p>The response type expected from the request.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
   <h3 id="constructors">Constructors
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchRequestBase_2__ctor_Microsoft_Azure_Batch_Protocol_BatchServiceClient_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchRequestBase%602.%23ctor(Microsoft.Azure.Batch.Protocol.BatchServiceClient%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchRequestBase_2__ctor_Microsoft_Azure_Batch_Protocol_BatchServiceClient_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchRequestBase%602.%23ctor(Microsoft.Azure.Batch.Protocol.BatchServiceClient%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchRequest.cs/#L147">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchRequest.cs/#L147" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.#ctor*"></a>
-  <h4 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2__ctor_Microsoft_Azure_Batch_Protocol_BatchServiceClient_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.#ctor(Microsoft.Azure.Batch.Protocol.BatchServiceClient,System.Threading.CancellationToken)">BatchRequestBase(BatchServiceClient, CancellationToken)</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2__ctor_Microsoft_Azure_Batch_Protocol_BatchServiceClient_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.#ctor(Microsoft.Azure.Batch.Protocol.BatchServiceClient,System.Threading.CancellationToken)"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_BatchRequestBase_2__ctor_Microsoft_Azure_Batch_Protocol_BatchServiceClient_System_Threading_CancellationToken_" class="expander" data-toggle="collapse">BatchRequestBase(BatchServiceClient, CancellationToken)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_Protocol_BatchRequestBase_2__ctor_Microsoft_Azure_Batch_Protocol_BatchServiceClient_System_Threading_CancellationToken_" class="collapse in">
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.Protocol.BatchRequestBase-2.html">BatchRequestBase&lt;TOptions, TResponse&gt;</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected BatchRequestBase(BatchServiceClient restClient, CancellationToken cancellationToken)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.BatchServiceClient.html">BatchServiceClient</a></td>
-        <td><span class="parametername">restClient</span></td>
-        <td><p>The REST client to use.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td><p>The cancellationToken to use.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Azure.Batch.Protocol.BatchServiceClient.html">BatchServiceClient</a></span>
+        <span class="parametername">restClient</span>
+        <p><p>The REST client to use.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></span>
+        <span class="parametername">cancellationToken</span>
+        <p><p>The cancellationToken to use.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
   <h3 id="properties">Properties
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_CancellationToken.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchRequestBase%602.CancellationToken%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_CancellationToken.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchRequestBase%602.CancellationToken%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchRequest.cs/#L119">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchRequest.cs/#L119" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.CancellationToken*"></a>
-  <h4 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_CancellationToken" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.CancellationToken">CancellationToken</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_CancellationToken" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.CancellationToken"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_CancellationToken" class="expander" data-toggle="collapse">CancellationToken</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_CancellationToken" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets the <a class="xref" href="Microsoft.Azure.Batch.Protocol.BatchRequestBase-2.html#Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_CancellationToken">CancellationToken</a> associated with this <a class="xref" href="Microsoft.Azure.Batch.Protocol.IBatchRequest.html">IBatchRequest</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public CancellationToken CancellationToken { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Microsoft.Azure.Batch.Protocol.IBatchRequest.html#Microsoft_Azure_Batch_Protocol_IBatchRequest_CancellationToken">IBatchRequest.CancellationToken</a></div>
+  
   <h5 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_CancellationToken_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>
 Cancelling this token will cancel the currently ongoing request. This applies to the initial request as well
@@ -232,351 +256,512 @@ as any subsequent requests created due to <a class="xref" href="Microsoft.Azure.
 future retries of this <a class="xref" href="Microsoft.Azure.Batch.Protocol.IBatchRequest.html">IBatchRequest</a>.
 </p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ClientRequestIdProvider.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchRequestBase%602.ClientRequestIdProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ClientRequestIdProvider.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchRequestBase%602.ClientRequestIdProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchRequest.cs/#L132">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchRequest.cs/#L132" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ClientRequestIdProvider_" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.ClientRequestIdProvider*"></a>
-  <h4 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ClientRequestIdProvider" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.ClientRequestIdProvider">ClientRequestIdProvider</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ClientRequestIdProvider" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.ClientRequestIdProvider"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ClientRequestIdProvider" class="expander" data-toggle="collapse">ClientRequestIdProvider</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ClientRequestIdProvider" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets the <a class="xref" href="Microsoft.Azure.Batch.Protocol.BatchRequestBase-2.html#Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ClientRequestIdProvider">ClientRequestIdProvider</a> used by this request to generate client request ids.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ClientRequestIdProvider ClientRequestIdProvider { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.Batch.ClientRequestIdProvider.html">ClientRequestIdProvider</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Microsoft.Azure.Batch.ClientRequestIdProvider.html">ClientRequestIdProvider</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Microsoft.Azure.Batch.Protocol.IBatchRequest.html#Microsoft_Azure_Batch_Protocol_IBatchRequest_ClientRequestIdProvider">IBatchRequest.ClientRequestIdProvider</a></div>
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_CustomHeaders.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchRequestBase%602.CustomHeaders%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_CustomHeaders.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchRequestBase%602.CustomHeaders%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchRequest.cs/#L33">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchRequest.cs/#L33" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_CustomHeaders_" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.CustomHeaders*"></a>
-  <h4 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_CustomHeaders" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.CustomHeaders">CustomHeaders</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_CustomHeaders" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.CustomHeaders"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_CustomHeaders" class="expander" data-toggle="collapse">CustomHeaders</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_CustomHeaders" class="collapse in">
   <div class="markdown level1 summary"><p>Gets the headers used for the request.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Dictionary&lt;string, List&lt;string&gt;&gt; CustomHeaders { get; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_OperationContext.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchRequestBase%602.OperationContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_OperationContext.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchRequestBase%602.OperationContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchRequest.cs/#L88">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchRequest.cs/#L88" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_OperationContext_" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.OperationContext*"></a>
-  <h4 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_OperationContext" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.OperationContext">OperationContext</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_OperationContext" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.OperationContext"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_OperationContext" class="expander" data-toggle="collapse">OperationContext</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_OperationContext" class="collapse in">
   <div class="markdown level1 summary"><p>Gets the operation context associated with this <a class="xref" href="Microsoft.Azure.Batch.Protocol.IBatchRequest.html">IBatchRequest</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public OperationContext OperationContext { get; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.Batch.Common.OperationContext.html">OperationContext</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Microsoft.Azure.Batch.Common.OperationContext.html">OperationContext</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Microsoft.Azure.Batch.Protocol.IBatchRequest.html#Microsoft_Azure_Batch_Protocol_IBatchRequest_OperationContext">IBatchRequest.OperationContext</a></div>
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_Options.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchRequestBase%602.Options%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_Options.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchRequestBase%602.Options%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchRequest.cs/#L51">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchRequest.cs/#L51" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_Options_" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.Options*"></a>
-  <h4 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_Options" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.Options">Options</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_Options" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.Options"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_Options" class="expander" data-toggle="collapse">Options</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_Options" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets the options used for the request.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public TOptions Options { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">TOptions</span></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">TOptions</span>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_RestClient.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchRequestBase%602.RestClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_RestClient.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchRequestBase%602.RestClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchRequest.cs/#L69">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchRequest.cs/#L69" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_RestClient_" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.RestClient*"></a>
-  <h4 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_RestClient" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.RestClient">RestClient</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_RestClient" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.RestClient"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_RestClient" class="expander" data-toggle="collapse">RestClient</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_RestClient" class="collapse in">
   <div class="markdown level1 summary"><p>Gets the REST client that will be used for this request.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public BatchServiceClient RestClient { get; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.BatchServiceClient.html">BatchServiceClient</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Microsoft.Azure.Batch.Protocol.BatchServiceClient.html">BatchServiceClient</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Microsoft.Azure.Batch.Protocol.IBatchRequest.html#Microsoft_Azure_Batch_Protocol_IBatchRequest_RestClient">IBatchRequest.RestClient</a></div>
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_RetryPolicy.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchRequestBase%602.RetryPolicy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_RetryPolicy.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchRequestBase%602.RetryPolicy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchRequest.cs/#L75">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchRequest.cs/#L75" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_RetryPolicy_" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.RetryPolicy*"></a>
-  <h4 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_RetryPolicy" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.RetryPolicy">RetryPolicy</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_RetryPolicy" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.RetryPolicy"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_RetryPolicy" class="expander" data-toggle="collapse">RetryPolicy</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_RetryPolicy" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets the retry policy to be applied.
 Null means no retries will be attempted.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IRetryPolicy RetryPolicy { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.Batch.Common.IRetryPolicy.html">IRetryPolicy</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Microsoft.Azure.Batch.Common.IRetryPolicy.html">IRetryPolicy</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Microsoft.Azure.Batch.Protocol.IBatchRequest.html#Microsoft_Azure_Batch_Protocol_IBatchRequest_RetryPolicy">IBatchRequest.RetryPolicy</a></div>
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ServiceRequestFunc.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchRequestBase%602.ServiceRequestFunc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ServiceRequestFunc.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchRequestBase%602.ServiceRequestFunc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchRequest.cs/#L38">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchRequest.cs/#L38" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ServiceRequestFunc_" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.ServiceRequestFunc*"></a>
-  <h4 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ServiceRequestFunc" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.ServiceRequestFunc">ServiceRequestFunc</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ServiceRequestFunc" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.ServiceRequestFunc"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ServiceRequestFunc" class="expander" data-toggle="collapse">ServiceRequestFunc</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ServiceRequestFunc" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets the function which will create a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> calling the Batch service.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Func&lt;CancellationToken, Task&lt;TResponse&gt;&gt; ServiceRequestFunc { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TResponse&gt;&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TResponse&gt;&gt;
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_Timeout.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchRequestBase%602.Timeout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_Timeout.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchRequestBase%602.Timeout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchRequest.cs/#L99">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchRequest.cs/#L99" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_Timeout_" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.Timeout*"></a>
-  <h4 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_Timeout" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.Timeout">Timeout</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_Timeout" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.Timeout"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_Timeout" class="expander" data-toggle="collapse">Timeout</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_Timeout" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets the client side timeout for a request to the Batch service.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public TimeSpan Timeout { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Microsoft.Azure.Batch.Protocol.IBatchRequest.html#Microsoft_Azure_Batch_Protocol_IBatchRequest_Timeout">IBatchRequest.Timeout</a></div>
+  
   <h5 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_Timeout_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>
 This timeout applies to a single Batch service request; if a retry policy is specified, then each retry will be granted the
 full duration of this value.
 </p>
 </div>
+  
+  
+  
+  </div>
   <h3 id="methods">Methods
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ExecuteRequestAsync.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchRequestBase%602.ExecuteRequestAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ExecuteRequestAsync.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchRequestBase%602.ExecuteRequestAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchRequest.cs/#L163">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchRequest.cs/#L163" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ExecuteRequestAsync_" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.ExecuteRequestAsync*"></a>
-  <h4 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ExecuteRequestAsync" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.ExecuteRequestAsync">ExecuteRequestAsync()</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ExecuteRequestAsync" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.ExecuteRequestAsync"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ExecuteRequestAsync" class="expander" data-toggle="collapse">ExecuteRequestAsync()</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ExecuteRequestAsync" class="collapse in">
   <div class="markdown level1 summary"><p>Executes the request.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Task&lt;TResponse&gt; ExecuteRequestAsync()</code></pre>
   </div>
+  
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TResponse&gt;</td>
-        <td><p>An asynchronous operation of return type <code data-dev-comment-type="typeparamref" class="typeparamref">TResponse</code>.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TResponse&gt;
+        <p><p>An asynchronous operation of return type <code data-dev-comment-type="typeparamref" class="typeparamref">TResponse</code>.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Microsoft.Azure.Batch.Protocol.IBatchRequest-1.html#Microsoft_Azure_Batch_Protocol_IBatchRequest_1_ExecuteRequestAsync">IBatchRequest&lt;TResponse&gt;.ExecuteRequestAsync()</a></div>
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ThrowIfRequestExecutionHasStarted.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchRequestBase%602.ThrowIfRequestExecutionHasStarted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ThrowIfRequestExecutionHasStarted.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchRequestBase%602.ThrowIfRequestExecutionHasStarted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchRequest.cs/#L272">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchRequest.cs/#L272" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ThrowIfRequestExecutionHasStarted_" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.ThrowIfRequestExecutionHasStarted*"></a>
-  <h4 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ThrowIfRequestExecutionHasStarted" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.ThrowIfRequestExecutionHasStarted">ThrowIfRequestExecutionHasStarted()</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ThrowIfRequestExecutionHasStarted" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.ThrowIfRequestExecutionHasStarted"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ThrowIfRequestExecutionHasStarted" class="expander" data-toggle="collapse">ThrowIfRequestExecutionHasStarted()</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_ThrowIfRequestExecutionHasStarted" class="collapse in">
   <div class="markdown level1 summary"><p>Throws an exception if request execution has started.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected void ThrowIfRequestExecutionHasStarted()</code></pre>
   </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
   <h3 id="eii">Explicit Interface Implementations
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_Microsoft_Azure_Batch_Protocol_IBatchRequest_Options.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchRequestBase%602.Microsoft%23Azure%23Batch%23Protocol%23IBatchRequest%23Options%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_Microsoft_Azure_Batch_Protocol_IBatchRequest_Options.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchRequestBase%602.Microsoft%23Azure%23Batch%23Protocol%23IBatchRequest%23Options%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchRequest.cs/#L64">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchRequest.cs/#L64" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_Microsoft_Azure_Batch_Protocol_IBatchRequest_Options_" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.Microsoft#Azure#Batch#Protocol#IBatchRequest#Options*"></a>
-  <h4 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_Microsoft_Azure_Batch_Protocol_IBatchRequest_Options" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.Microsoft#Azure#Batch#Protocol#IBatchRequest#Options">IBatchRequest.Options</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_Microsoft_Azure_Batch_Protocol_IBatchRequest_Options" data-uid="Microsoft.Azure.Batch.Protocol.BatchRequestBase`2.Microsoft#Azure#Batch#Protocol#IBatchRequest#Options"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_Microsoft_Azure_Batch_Protocol_IBatchRequest_Options" class="expander" data-toggle="collapse">IBatchRequest.Options</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_Protocol_BatchRequestBase_2_Microsoft_Azure_Batch_Protocol_IBatchRequest_Options" class="collapse in">
   <div class="markdown level1 summary"><p>Gets the options needed by the REST proxy for the current request.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">IOptions IBatchRequest.Options { get; }</code></pre>
   </div>
+  
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.IOptions.html">IOptions</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.IOptions.html">IOptions</a>
+        <p>
+      </td>
+    </tr>
   </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="Microsoft.Azure.Batch.Protocol.IBatchRequest-1.html">IBatchRequest&lt;TResponse&gt;</a>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Microsoft.Azure.Batch.Protocol.IBatchRequest.html#Microsoft_Azure_Batch_Protocol_IBatchRequest_Options">IBatchRequest.Options</a></div>
+  
+  
+  
+  
   </div>
-  <div>
-      <a class="xref" href="Microsoft.Azure.Batch.Protocol.IBatchRequest.html">IBatchRequest</a>
-  </div>
+  
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
@@ -596,23 +781,17 @@ full duration of this value.
   <div>
       <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
+  
 </article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchRequestBase_2.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchRequestBase%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchRequest.cs/#L18" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_BatchRequestBase_2.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.BatchRequestBase%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchRequest.cs/#L18" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

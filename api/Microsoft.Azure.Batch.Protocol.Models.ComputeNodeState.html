@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,107 +79,117 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeState">
-  
-  
-  <h1 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeState" class="text-break">Enum ComputeNodeState
+  <h1 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState" data-uid="Microsoft.Azure.Batch.Protocol.Models.ComputeNodeState">Enum ComputeNodeState
   </h1>
   <div class="markdown level0 summary"><p>Defines values for ComputeNodeState.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.html">Microsoft.Azure.Batch.Protocol.Models</a></h6>
+  
+  
+  
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
+  
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public enum ComputeNodeState</code></pre>
   </div>
-  <h3 id="fields">Fields
-  </h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    <thead>
-    <tbody>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Creating">Creating</td>
-        <td><p>The Batch service has obtained the underlying virtual machine from
+  
+  
+  
+  
+  
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Creating"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Creating" class="expander" data-toggle="collapse">Creating</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Creating" class="collapse in">
+        <p><p>The Batch service has obtained the underlying virtual machine from
 Azure Compute, but it has not yet started to join the Pool.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Idle">Idle</td>
-        <td><p>The Compute Node is not currently running a Task.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_LeavingPool">LeavingPool</td>
-        <td><p>The Compute Node is leaving the Pool, either because the user
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Idle"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Idle" class="expander" data-toggle="collapse">Idle</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Idle" class="collapse in">
+        <p><p>The Compute Node is not currently running a Task.</p>
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_LeavingPool"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_LeavingPool" class="expander" data-toggle="collapse">LeavingPool</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_LeavingPool" class="collapse in">
+        <p><p>The Compute Node is leaving the Pool, either because the user
 explicitly removed it or because the Pool is resizing or
 autoscaling down.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Offline">Offline</td>
-        <td><p>The Compute Node is not currently running a Task, and scheduling of
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Offline"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Offline" class="expander" data-toggle="collapse">Offline</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Offline" class="collapse in">
+        <p><p>The Compute Node is not currently running a Task, and scheduling of
 new Tasks to the Compute Node is disabled.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Preempted">Preempted</td>
-        <td><p>The low-priority Compute Node has been preempted. Tasks which were
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Preempted"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Preempted" class="expander" data-toggle="collapse">Preempted</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Preempted" class="collapse in">
+        <p><p>The low-priority Compute Node has been preempted. Tasks which were
 running on the Compute Node when it was preempted will be
 rescheduled when another Compute Node becomes available.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Rebooting">Rebooting</td>
-        <td><p>The Compute Node is rebooting.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Reimaging">Reimaging</td>
-        <td><p>The Compute Node is reimaging.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Running">Running</td>
-        <td><p>The Compute Node is running one or more Tasks (other than a
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Rebooting"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Rebooting" class="expander" data-toggle="collapse">Rebooting</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Rebooting" class="collapse in">
+        <p><p>The Compute Node is rebooting.</p>
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Reimaging"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Reimaging" class="expander" data-toggle="collapse">Reimaging</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Reimaging" class="collapse in">
+        <p><p>The Compute Node is reimaging.</p>
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Running"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Running" class="expander" data-toggle="collapse">Running</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Running" class="collapse in">
+        <p><p>The Compute Node is running one or more Tasks (other than a
 StartTask).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Starting">Starting</td>
-        <td><p>The Batch service is starting on the underlying virtual machine.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_StartTaskFailed">StartTaskFailed</td>
-        <td><p>The StartTask has failed on the Compute Node (and exhausted all
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Starting"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Starting" class="expander" data-toggle="collapse">Starting</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Starting" class="collapse in">
+        <p><p>The Batch service is starting on the underlying virtual machine.</p>
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_StartTaskFailed"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_StartTaskFailed" class="expander" data-toggle="collapse">StartTaskFailed</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_StartTaskFailed" class="collapse in">
+        <p><p>The StartTask has failed on the Compute Node (and exhausted all
 retries), and waitForSuccess is set. The Compute Node is not usable
 for running Tasks.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Unknown">Unknown</td>
-        <td><p>The Batch service has lost contact with the Compute Node, and does
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Unknown"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Unknown" class="expander" data-toggle="collapse">Unknown</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Unknown" class="collapse in">
+        <p><p>The Batch service has lost contact with the Compute Node, and does
 not know its true state.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Unusable">Unusable</td>
-        <td><p>The Compute Node cannot be used for Task execution due to errors.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_WaitingForStartTask">WaitingForStartTask</td>
-        <td><p>The StartTask has started running on the Compute Node, but
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Unusable"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Unusable" class="expander" data-toggle="collapse">Unusable</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_Unusable" class="collapse in">
+        <p><p>The Compute Node cannot be used for Task execution due to errors.</p>
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_WaitingForStartTask"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_WaitingForStartTask" class="expander" data-toggle="collapse">WaitingForStartTask</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState_WaitingForStartTask" class="collapse in">
+        <p><p>The StartTask has started running on the Compute Node, but
 waitForSuccess is set and the StartTask has not yet completed.</p>
-</td>
-      </tr>
-    </tbody>
-  </thead></thead></table>
+</p>
+      </div>
+  
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;ComputeNodeState, TConfiguration&gt;(TConfiguration)</a>
@@ -201,21 +211,14 @@ waitForSuccess is set and the StartTask has not yet completed.</p>
   </div>
 </article>
           </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.ComputeNodeState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/ComputeNodeState.cs/#L21" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
+          </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_ComputeNodeState.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.ComputeNodeState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/ComputeNodeState.cs/#L21" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

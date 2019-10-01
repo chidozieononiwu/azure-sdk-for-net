@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,24 +79,20 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Microsoft.Azure.ServiceBus.SessionClient">
-  
-  
-  <h1 id="Microsoft_Azure_ServiceBus_SessionClient" data-uid="Microsoft.Azure.ServiceBus.SessionClient" class="text-break">Class SessionClient
+  <h1 id="Microsoft_Azure_ServiceBus_SessionClient" data-uid="Microsoft.Azure.ServiceBus.SessionClient">Class SessionClient
   </h1>
   <div class="markdown level0 summary"><p>A session client can be used to accept session objects which can be used to interact with all messages with the same sessionId.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html">ClientEntity</a></div>
     <div class="level2"><span class="xref">SessionClient</span></div>
   </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="Microsoft.Azure.ServiceBus.ISessionClient.html">ISessionClient</a></div>
-    <div><a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html">IClientEntity</a></div>
-  </div>
+  
+  
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -145,18 +141,25 @@
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.ServiceBus.html">Microsoft.Azure.ServiceBus</a></h6>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.ServiceBus.dll</h6>
+  
   <h5 id="Microsoft_Azure_ServiceBus_SessionClient_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public sealed class SessionClient : ClientEntity, ISessionClient, IClientEntity</code></pre>
   </div>
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_SessionClient_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>You can accept any session or a given session (identified by <a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html#Microsoft_Azure_ServiceBus_IMessageSession_SessionId">SessionId</a> using a session client.
 Once you accept a session, you can use it as a <a class="xref" href="Microsoft.Azure.ServiceBus.Core.MessageReceiver.html">MessageReceiver</a> which receives only messages having the same session id.
 See <a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html">IMessageSession</a> for usage of session object.
 This uses AMQP protocol to communicate with the service.</p>
 </div>
+  
   <h5 id="Microsoft_Azure_ServiceBus_SessionClient_examples"><strong>Examples</strong></h5>
   <p>To create a new SessionClient</p>
 <pre><code>ISessionClient sessionClient = new SessionClient(
@@ -170,735 +173,968 @@ This uses AMQP protocol to communicate with the service.</p>
 
   <h3 id="constructors">Constructors
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient__ctor_Microsoft_Azure_ServiceBus_ServiceBusConnection_System_String_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.%23ctor(Microsoft.Azure.ServiceBus.ServiceBusConnection%2CSystem.String%2CMicrosoft.Azure.ServiceBus.ReceiveMode%2CMicrosoft.Azure.ServiceBus.RetryPolicy%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient__ctor_Microsoft_Azure_ServiceBus_ServiceBusConnection_System_String_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.%23ctor(Microsoft.Azure.ServiceBus.ServiceBusConnection%2CSystem.String%2CMicrosoft.Azure.ServiceBus.ReceiveMode%2CMicrosoft.Azure.ServiceBus.RetryPolicy%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L144">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L144" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_SessionClient__ctor_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.#ctor*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_SessionClient__ctor_Microsoft_Azure_ServiceBus_ServiceBusConnection_System_String_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.#ctor(Microsoft.Azure.ServiceBus.ServiceBusConnection,System.String,Microsoft.Azure.ServiceBus.ReceiveMode,Microsoft.Azure.ServiceBus.RetryPolicy,System.Int32)">SessionClient(ServiceBusConnection, String, ReceiveMode, RetryPolicy, Int32)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient__ctor_Microsoft_Azure_ServiceBus_ServiceBusConnection_System_String_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.#ctor(Microsoft.Azure.ServiceBus.ServiceBusConnection,System.String,Microsoft.Azure.ServiceBus.ReceiveMode,Microsoft.Azure.ServiceBus.RetryPolicy,System.Int32)"><a href="#collapsible-Microsoft_Azure_ServiceBus_SessionClient__ctor_Microsoft_Azure_ServiceBus_ServiceBusConnection_System_String_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_" class="expander" data-toggle="collapse">SessionClient(ServiceBusConnection, String, ReceiveMode, RetryPolicy, Int32)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_SessionClient__ctor_Microsoft_Azure_ServiceBus_ServiceBusConnection_System_String_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_" class="collapse in">
   <div class="markdown level1 summary"><p>Creates a new SessionClient on a given <a class="xref" href="Microsoft.Azure.ServiceBus.SessionClient.html#Microsoft_Azure_ServiceBus_SessionClient_ServiceBusConnection">ServiceBusConnection</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public SessionClient(ServiceBusConnection serviceBusConnection, string entityPath, ReceiveMode receiveMode, RetryPolicy retryPolicy = null, int prefetchCount = 0)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a></td>
-        <td><span class="parametername">serviceBusConnection</span></td>
-        <td><p>Connection object to the service bus namespace.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">entityPath</span></td>
-        <td><p>The path of the entity for this receiver. For Queues this will be the name, but for Subscriptions this will be the full path.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a></td>
-        <td><span class="parametername">receiveMode</span></td>
-        <td><p>The <span class="xref">Microsoft.Azure.ServiceBus.SessionClient.ReceiveMode</span> used to specify how messages are received. Defaults to PeekLock mode.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a></td>
-        <td><span class="parametername">retryPolicy</span></td>
-        <td><p>The <a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a> that will be used when communicating with ServiceBus. Defaults to <a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html#Microsoft_Azure_ServiceBus_RetryPolicy_Default">Default</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">prefetchCount</span></td>
-        <td><p>The <span class="xref">Microsoft.Azure.ServiceBus.SessionClient.PrefetchCount</span> that specifies the upper limit of messages the session object
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a></span>
+        <span class="parametername">serviceBusConnection</span>
+        <p><p>Connection object to the service bus namespace.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">entityPath</span>
+        <p><p>The path of the entity for this receiver. For Queues this will be the name, but for Subscriptions this will be the full path.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a></span>
+        <span class="parametername">receiveMode</span>
+        <p><p>The <span class="xref">Microsoft.Azure.ServiceBus.SessionClient.ReceiveMode</span> used to specify how messages are received. Defaults to PeekLock mode.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a></span>
+        <span class="parametername">retryPolicy</span>
+        <p><p>The <a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a> that will be used when communicating with ServiceBus. Defaults to <a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html#Microsoft_Azure_ServiceBus_RetryPolicy_Default">Default</a></p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">prefetchCount</span>
+        <p><p>The <span class="xref">Microsoft.Azure.ServiceBus.SessionClient.PrefetchCount</span> that specifies the upper limit of messages the session object
 will actively receive regardless of whether a receive operation is pending. Defaults to 0.</p>
-</td>
-      </tr>
-    </tbody>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient__ctor_Microsoft_Azure_ServiceBus_ServiceBusConnectionStringBuilder_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.%23ctor(Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder%2CMicrosoft.Azure.ServiceBus.ReceiveMode%2CMicrosoft.Azure.ServiceBus.RetryPolicy%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient__ctor_Microsoft_Azure_ServiceBus_ServiceBusConnectionStringBuilder_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.%23ctor(Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder%2CMicrosoft.Azure.ServiceBus.ReceiveMode%2CMicrosoft.Azure.ServiceBus.RetryPolicy%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L59">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L59" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_SessionClient__ctor_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.#ctor*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_SessionClient__ctor_Microsoft_Azure_ServiceBus_ServiceBusConnectionStringBuilder_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.#ctor(Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder,Microsoft.Azure.ServiceBus.ReceiveMode,Microsoft.Azure.ServiceBus.RetryPolicy,System.Int32)">SessionClient(ServiceBusConnectionStringBuilder, ReceiveMode, RetryPolicy, Int32)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient__ctor_Microsoft_Azure_ServiceBus_ServiceBusConnectionStringBuilder_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.#ctor(Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder,Microsoft.Azure.ServiceBus.ReceiveMode,Microsoft.Azure.ServiceBus.RetryPolicy,System.Int32)"><a href="#collapsible-Microsoft_Azure_ServiceBus_SessionClient__ctor_Microsoft_Azure_ServiceBus_ServiceBusConnectionStringBuilder_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_" class="expander" data-toggle="collapse">SessionClient(ServiceBusConnectionStringBuilder, ReceiveMode, RetryPolicy, Int32)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_SessionClient__ctor_Microsoft_Azure_ServiceBus_ServiceBusConnectionStringBuilder_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_" class="collapse in">
   <div class="markdown level1 summary"><p>Creates a new SessionClient from a <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder.html">ServiceBusConnectionStringBuilder</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public SessionClient(ServiceBusConnectionStringBuilder connectionStringBuilder, ReceiveMode receiveMode = ReceiveMode.PeekLock, RetryPolicy retryPolicy = null, int prefetchCount = 0)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder.html">ServiceBusConnectionStringBuilder</a></td>
-        <td><span class="parametername">connectionStringBuilder</span></td>
-        <td><p>The <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder.html">ServiceBusConnectionStringBuilder</a> having entity level connection details.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a></td>
-        <td><span class="parametername">receiveMode</span></td>
-        <td><p>The <span class="xref">Microsoft.Azure.ServiceBus.SessionClient.ReceiveMode</span> used to specify how messages are received. Defaults to PeekLock mode.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a></td>
-        <td><span class="parametername">retryPolicy</span></td>
-        <td><p>The <a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a> that will be used when communicating with ServiceBus. Defaults to <a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html#Microsoft_Azure_ServiceBus_RetryPolicy_Default">Default</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">prefetchCount</span></td>
-        <td><p>The <span class="xref">Microsoft.Azure.ServiceBus.SessionClient.PrefetchCount</span> that specifies the upper limit of messages the session object
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder.html">ServiceBusConnectionStringBuilder</a></span>
+        <span class="parametername">connectionStringBuilder</span>
+        <p><p>The <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder.html">ServiceBusConnectionStringBuilder</a> having entity level connection details.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a></span>
+        <span class="parametername">receiveMode</span>
+        <p><p>The <span class="xref">Microsoft.Azure.ServiceBus.SessionClient.ReceiveMode</span> used to specify how messages are received. Defaults to PeekLock mode.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a></span>
+        <span class="parametername">retryPolicy</span>
+        <p><p>The <a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a> that will be used when communicating with ServiceBus. Defaults to <a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html#Microsoft_Azure_ServiceBus_RetryPolicy_Default">Default</a></p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">prefetchCount</span>
+        <p><p>The <span class="xref">Microsoft.Azure.ServiceBus.SessionClient.PrefetchCount</span> that specifies the upper limit of messages the session object
 will actively receive regardless of whether a receive operation is pending. Defaults to 0.</p>
-</td>
-      </tr>
-    </tbody>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_SessionClient__ctor_Microsoft_Azure_ServiceBus_ServiceBusConnectionStringBuilder_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Creates a new connection to the entity, which is used for all the sessions objects accepted using this client.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient__ctor_System_String_System_String_Microsoft_Azure_ServiceBus_Primitives_ITokenProvider_Microsoft_Azure_ServiceBus_TransportType_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.%23ctor(System.String%2CSystem.String%2CMicrosoft.Azure.ServiceBus.Primitives.ITokenProvider%2CMicrosoft.Azure.ServiceBus.TransportType%2CMicrosoft.Azure.ServiceBus.ReceiveMode%2CMicrosoft.Azure.ServiceBus.RetryPolicy%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient__ctor_System_String_System_String_Microsoft_Azure_ServiceBus_Primitives_ITokenProvider_Microsoft_Azure_ServiceBus_TransportType_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.%23ctor(System.String%2CSystem.String%2CMicrosoft.Azure.ServiceBus.Primitives.ITokenProvider%2CMicrosoft.Azure.ServiceBus.TransportType%2CMicrosoft.Azure.ServiceBus.ReceiveMode%2CMicrosoft.Azure.ServiceBus.RetryPolicy%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L114">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L114" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_SessionClient__ctor_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.#ctor*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_SessionClient__ctor_System_String_System_String_Microsoft_Azure_ServiceBus_Primitives_ITokenProvider_Microsoft_Azure_ServiceBus_TransportType_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.#ctor(System.String,System.String,Microsoft.Azure.ServiceBus.Primitives.ITokenProvider,Microsoft.Azure.ServiceBus.TransportType,Microsoft.Azure.ServiceBus.ReceiveMode,Microsoft.Azure.ServiceBus.RetryPolicy,System.Int32)">SessionClient(String, String, ITokenProvider, TransportType, ReceiveMode, RetryPolicy, Int32)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient__ctor_System_String_System_String_Microsoft_Azure_ServiceBus_Primitives_ITokenProvider_Microsoft_Azure_ServiceBus_TransportType_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.#ctor(System.String,System.String,Microsoft.Azure.ServiceBus.Primitives.ITokenProvider,Microsoft.Azure.ServiceBus.TransportType,Microsoft.Azure.ServiceBus.ReceiveMode,Microsoft.Azure.ServiceBus.RetryPolicy,System.Int32)"><a href="#collapsible-Microsoft_Azure_ServiceBus_SessionClient__ctor_System_String_System_String_Microsoft_Azure_ServiceBus_Primitives_ITokenProvider_Microsoft_Azure_ServiceBus_TransportType_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_" class="expander" data-toggle="collapse">SessionClient(String, String, ITokenProvider, TransportType, ReceiveMode, RetryPolicy, Int32)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_SessionClient__ctor_System_String_System_String_Microsoft_Azure_ServiceBus_Primitives_ITokenProvider_Microsoft_Azure_ServiceBus_TransportType_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_" class="collapse in">
   <div class="markdown level1 summary"><p>Creates a new SessionClient from a specified endpoint, entity path, and token provider.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public SessionClient(string endpoint, string entityPath, ITokenProvider tokenProvider, TransportType transportType = TransportType.Amqp, ReceiveMode receiveMode = ReceiveMode.PeekLock, RetryPolicy retryPolicy = null, int prefetchCount = 0)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">endpoint</span></td>
-        <td><p>Fully qualified domain name for Service Bus. Most likely, {yournamespace}.servicebus.windows.net</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">entityPath</span></td>
-        <td><p>Queue path.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Primitives.ITokenProvider.html">ITokenProvider</a></td>
-        <td><span class="parametername">tokenProvider</span></td>
-        <td><p>Token provider which will generate security tokens for authorization.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.ServiceBus.TransportType.html">TransportType</a></td>
-        <td><span class="parametername">transportType</span></td>
-        <td><p>Transport type.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a></td>
-        <td><span class="parametername">receiveMode</span></td>
-        <td><p>Mode of receive of messages. Defaults to <span class="xref">Microsoft.Azure.ServiceBus.SessionClient.ReceiveMode</span>.PeekLock.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a></td>
-        <td><span class="parametername">retryPolicy</span></td>
-        <td><p>Retry policy for queue operations. Defaults to <a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html#Microsoft_Azure_ServiceBus_RetryPolicy_Default">Default</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">prefetchCount</span></td>
-        <td><p>The <span class="xref">Microsoft.Azure.ServiceBus.SessionClient.PrefetchCount</span> that specifies the upper limit of messages this receiver
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">endpoint</span>
+        <p><p>Fully qualified domain name for Service Bus. Most likely, {yournamespace}.servicebus.windows.net</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">entityPath</span>
+        <p><p>Queue path.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Azure.ServiceBus.Primitives.ITokenProvider.html">ITokenProvider</a></span>
+        <span class="parametername">tokenProvider</span>
+        <p><p>Token provider which will generate security tokens for authorization.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Azure.ServiceBus.TransportType.html">TransportType</a></span>
+        <span class="parametername">transportType</span>
+        <p><p>Transport type.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a></span>
+        <span class="parametername">receiveMode</span>
+        <p><p>Mode of receive of messages. Defaults to <span class="xref">Microsoft.Azure.ServiceBus.SessionClient.ReceiveMode</span>.PeekLock.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a></span>
+        <span class="parametername">retryPolicy</span>
+        <p><p>Retry policy for queue operations. Defaults to <a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html#Microsoft_Azure_ServiceBus_RetryPolicy_Default">Default</a></p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">prefetchCount</span>
+        <p><p>The <span class="xref">Microsoft.Azure.ServiceBus.SessionClient.PrefetchCount</span> that specifies the upper limit of messages this receiver
 will actively receive regardless of whether a receive operation is pending. Defaults to 0.</p>
-</td>
-      </tr>
-    </tbody>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_SessionClient__ctor_System_String_System_String_Microsoft_Azure_ServiceBus_Primitives_ITokenProvider_Microsoft_Azure_ServiceBus_TransportType_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Creates a new connection to the entity, which is opened during the first operation.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient__ctor_System_String_System_String_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.%23ctor(System.String%2CSystem.String%2CMicrosoft.Azure.ServiceBus.ReceiveMode%2CMicrosoft.Azure.ServiceBus.RetryPolicy%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient__ctor_System_String_System_String_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.%23ctor(System.String%2CSystem.String%2CMicrosoft.Azure.ServiceBus.ReceiveMode%2CMicrosoft.Azure.ServiceBus.RetryPolicy%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L78">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L78" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_SessionClient__ctor_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.#ctor*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_SessionClient__ctor_System_String_System_String_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.#ctor(System.String,System.String,Microsoft.Azure.ServiceBus.ReceiveMode,Microsoft.Azure.ServiceBus.RetryPolicy,System.Int32)">SessionClient(String, String, ReceiveMode, RetryPolicy, Int32)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient__ctor_System_String_System_String_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.#ctor(System.String,System.String,Microsoft.Azure.ServiceBus.ReceiveMode,Microsoft.Azure.ServiceBus.RetryPolicy,System.Int32)"><a href="#collapsible-Microsoft_Azure_ServiceBus_SessionClient__ctor_System_String_System_String_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_" class="expander" data-toggle="collapse">SessionClient(String, String, ReceiveMode, RetryPolicy, Int32)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_SessionClient__ctor_System_String_System_String_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_" class="collapse in">
   <div class="markdown level1 summary"><p>Creates a new SessionClient from a specified connection string and entity path.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public SessionClient(string connectionString, string entityPath, ReceiveMode receiveMode = ReceiveMode.PeekLock, RetryPolicy retryPolicy = null, int prefetchCount = 0)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">connectionString</span></td>
-        <td><p>Namespace connection string used to communicate with Service Bus. Must not contain entity details.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">entityPath</span></td>
-        <td><p>The path of the entity for this receiver. For Queues this will be the name, but for Subscriptions this will be the full path.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a></td>
-        <td><span class="parametername">receiveMode</span></td>
-        <td><p>The <span class="xref">Microsoft.Azure.ServiceBus.SessionClient.ReceiveMode</span> used to specify how messages are received. Defaults to PeekLock mode.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a></td>
-        <td><span class="parametername">retryPolicy</span></td>
-        <td><p>The <a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a> that will be used when communicating with ServiceBus. Defaults to <a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html#Microsoft_Azure_ServiceBus_RetryPolicy_Default">Default</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">prefetchCount</span></td>
-        <td><p>The <span class="xref">Microsoft.Azure.ServiceBus.SessionClient.PrefetchCount</span> that specifies the upper limit of messages the session object
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">connectionString</span>
+        <p><p>Namespace connection string used to communicate with Service Bus. Must not contain entity details.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">entityPath</span>
+        <p><p>The path of the entity for this receiver. For Queues this will be the name, but for Subscriptions this will be the full path.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a></span>
+        <span class="parametername">receiveMode</span>
+        <p><p>The <span class="xref">Microsoft.Azure.ServiceBus.SessionClient.ReceiveMode</span> used to specify how messages are received. Defaults to PeekLock mode.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a></span>
+        <span class="parametername">retryPolicy</span>
+        <p><p>The <a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a> that will be used when communicating with ServiceBus. Defaults to <a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html#Microsoft_Azure_ServiceBus_RetryPolicy_Default">Default</a></p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">prefetchCount</span>
+        <p><p>The <span class="xref">Microsoft.Azure.ServiceBus.SessionClient.PrefetchCount</span> that specifies the upper limit of messages the session object
 will actively receive regardless of whether a receive operation is pending. Defaults to 0.</p>
-</td>
-      </tr>
-    </tbody>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_SessionClient__ctor_System_String_System_String_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Creates a new connection to the entity, which is used for all the sessions objects accepted using this client.</p>
 </div>
+  
+  
+  
+  </div>
   <h3 id="properties">Properties
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient_EntityPath.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.EntityPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient_EntityPath.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.EntityPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L217">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L217" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_SessionClient_EntityPath_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.EntityPath*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_EntityPath" data-uid="Microsoft.Azure.ServiceBus.SessionClient.EntityPath">EntityPath</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_EntityPath" data-uid="Microsoft.Azure.ServiceBus.SessionClient.EntityPath"><a href="#collapsible-Microsoft_Azure_ServiceBus_SessionClient_EntityPath" class="expander" data-toggle="collapse">EntityPath</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_SessionClient_EntityPath" class="collapse in">
   <div class="markdown level1 summary"><p>Gets the path of the entity. This is either the name of the queue, or the full path of the subscription.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string EntityPath { get; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Microsoft.Azure.ServiceBus.ISessionClient.html#Microsoft_Azure_ServiceBus_ISessionClient_EntityPath">ISessionClient.EntityPath</a></div>
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient_OperationTimeout.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.OperationTimeout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient_OperationTimeout.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.OperationTimeout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L227">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L227" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_SessionClient_OperationTimeout_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.OperationTimeout*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_OperationTimeout" data-uid="Microsoft.Azure.ServiceBus.SessionClient.OperationTimeout">OperationTimeout</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_OperationTimeout" data-uid="Microsoft.Azure.ServiceBus.SessionClient.OperationTimeout"><a href="#collapsible-Microsoft_Azure_ServiceBus_SessionClient_OperationTimeout" class="expander" data-toggle="collapse">OperationTimeout</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_SessionClient_OperationTimeout" class="collapse in">
   <div class="markdown level1 summary"><p>Duration after which individual operations will timeout.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override TimeSpan OperationTimeout { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_OperationTimeout">ClientEntity.OperationTimeout</a></div>
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_OperationTimeout">IClientEntity.OperationTimeout</a></div>
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient_Path.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.Path%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient_Path.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.Path%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L222">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L222" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_SessionClient_Path_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.Path*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_Path" data-uid="Microsoft.Azure.ServiceBus.SessionClient.Path">Path</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_Path" data-uid="Microsoft.Azure.ServiceBus.SessionClient.Path"><a href="#collapsible-Microsoft_Azure_ServiceBus_SessionClient_Path" class="expander" data-toggle="collapse">Path</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_SessionClient_Path" class="collapse in">
   <div class="markdown level1 summary"><p>Gets the path of the entity. This is either the name of the queue, or the full path of the subscription.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override string Path { get; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_Path">ClientEntity.Path</a></div>
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_Path">IClientEntity.Path</a></div>
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient_RegisteredPlugins.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.RegisteredPlugins%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient_RegisteredPlugins.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.RegisteredPlugins%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L247">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L247" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_SessionClient_RegisteredPlugins_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.RegisteredPlugins*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_RegisteredPlugins" data-uid="Microsoft.Azure.ServiceBus.SessionClient.RegisteredPlugins">RegisteredPlugins</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_RegisteredPlugins" data-uid="Microsoft.Azure.ServiceBus.SessionClient.RegisteredPlugins"><a href="#collapsible-Microsoft_Azure_ServiceBus_SessionClient_RegisteredPlugins" class="expander" data-toggle="collapse">RegisteredPlugins</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_SessionClient_RegisteredPlugins" class="collapse in">
   <div class="markdown level1 summary"><p>Gets a list of currently registered plugins.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override IList&lt;ServiceBusPlugin&gt; RegisteredPlugins { get; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin.html">ServiceBusPlugin</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin.html">ServiceBusPlugin</a>&gt;
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_RegisteredPlugins">ClientEntity.RegisteredPlugins</a></div>
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_RegisteredPlugins">IClientEntity.RegisteredPlugins</a></div>
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient_ServiceBusConnection.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.ServiceBusConnection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient_ServiceBusConnection.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.ServiceBusConnection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L236">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L236" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_SessionClient_ServiceBusConnection_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.ServiceBusConnection*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_ServiceBusConnection" data-uid="Microsoft.Azure.ServiceBus.SessionClient.ServiceBusConnection">ServiceBusConnection</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_ServiceBusConnection" data-uid="Microsoft.Azure.ServiceBus.SessionClient.ServiceBusConnection"><a href="#collapsible-Microsoft_Azure_ServiceBus_SessionClient_ServiceBusConnection" class="expander" data-toggle="collapse">ServiceBusConnection</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_SessionClient_ServiceBusConnection" class="collapse in">
   <div class="markdown level1 summary"><p>Connection object to the service bus namespace.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override ServiceBusConnection ServiceBusConnection { get; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_ServiceBusConnection">ClientEntity.ServiceBusConnection</a></div>
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_ServiceBusConnection">IClientEntity.ServiceBusConnection</a></div>
+  
+  
+  
+  
+  </div>
   <h3 id="methods">Methods
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L254">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L254" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync" data-uid="Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync">AcceptMessageSessionAsync()</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync" data-uid="Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync"><a href="#collapsible-Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync" class="expander" data-toggle="collapse">AcceptMessageSessionAsync()</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync" class="collapse in">
   <div class="markdown level1 summary"><p>Gets a session object of any <a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html#Microsoft_Azure_ServiceBus_IMessageSession_SessionId">SessionId</a> that can be used to receive messages for that sessionId.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Task&lt;IMessageSession&gt; AcceptMessageSessionAsync()</code></pre>
   </div>
+  
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html">IMessageSession</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html">IMessageSession</a>&gt;
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Microsoft.Azure.ServiceBus.ISessionClient.html#Microsoft_Azure_ServiceBus_ISessionClient_AcceptMessageSessionAsync">ISessionClient.AcceptMessageSessionAsync()</a></div>
+  
   <h5 id="Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>All plugins registered on <a class="xref" href="Microsoft.Azure.ServiceBus.SessionClient.html">SessionClient</a> will be applied to each <span class="xref">Microsoft.Azure.ServiceBus.MessageSession</span> that is accepted.
 Individual sessions can further register additional plugins.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L276">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L276" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_System_String_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync(System.String)">AcceptMessageSessionAsync(String)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_System_String_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync(System.String)"><a href="#collapsible-Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_System_String_" class="expander" data-toggle="collapse">AcceptMessageSessionAsync(String)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_System_String_" class="collapse in">
   <div class="markdown level1 summary"><p>Gets a particular session object identified by <code data-dev-comment-type="paramref" class="paramref">sessionId</code> that can be used to receive messages for that sessionId.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Task&lt;IMessageSession&gt; AcceptMessageSessionAsync(string sessionId)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">sessionId</span></td>
-        <td><p>The sessionId present in all its messages.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">sessionId</span>
+        <p><p>The sessionId present in all its messages.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html">IMessageSession</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html">IMessageSession</a>&gt;
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Microsoft.Azure.ServiceBus.ISessionClient.html#Microsoft_Azure_ServiceBus_ISessionClient_AcceptMessageSessionAsync_System_String_">ISessionClient.AcceptMessageSessionAsync(String)</a></div>
+  
   <h5 id="Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>All plugins registered on <a class="xref" href="Microsoft.Azure.ServiceBus.SessionClient.html">SessionClient</a> will be applied to each <span class="xref">Microsoft.Azure.ServiceBus.MessageSession</span> that is accepted.
 Individual sessions can further register additional plugins.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_System_String_System_TimeSpan_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync(System.String%2CSystem.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_System_String_System_TimeSpan_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync(System.String%2CSystem.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L288">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L288" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_System_String_System_TimeSpan_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync(System.String,System.TimeSpan)">AcceptMessageSessionAsync(String, TimeSpan)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_System_String_System_TimeSpan_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync(System.String,System.TimeSpan)"><a href="#collapsible-Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_System_String_System_TimeSpan_" class="expander" data-toggle="collapse">AcceptMessageSessionAsync(String, TimeSpan)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_System_String_System_TimeSpan_" class="collapse in">
   <div class="markdown level1 summary"><p>Gets a particular session object identified by <code data-dev-comment-type="paramref" class="paramref">sessionId</code> that can be used to receive messages for that sessionId.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Task&lt;IMessageSession&gt; AcceptMessageSessionAsync(string sessionId, TimeSpan operationTimeout)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">sessionId</span></td>
-        <td><p>The sessionId present in all its messages.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
-        <td><span class="parametername">operationTimeout</span></td>
-        <td><p>Amount of time for which the call should wait to fetch the next session.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">sessionId</span>
+        <p><p>The sessionId present in all its messages.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></span>
+        <span class="parametername">operationTimeout</span>
+        <p><p>Amount of time for which the call should wait to fetch the next session.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html">IMessageSession</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html">IMessageSession</a>&gt;
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Microsoft.Azure.ServiceBus.ISessionClient.html#Microsoft_Azure_ServiceBus_ISessionClient_AcceptMessageSessionAsync_System_String_System_TimeSpan_">ISessionClient.AcceptMessageSessionAsync(String, TimeSpan)</a></div>
+  
   <h5 id="Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_System_String_System_TimeSpan__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>All plugins registered on <a class="xref" href="Microsoft.Azure.ServiceBus.SessionClient.html">SessionClient</a> will be applied to each <span class="xref">Microsoft.Azure.ServiceBus.MessageSession</span> that is accepted.
 Individual sessions can further register additional plugins.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_System_TimeSpan_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync(System.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_System_TimeSpan_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync(System.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L265">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L265" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_System_TimeSpan_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync(System.TimeSpan)">AcceptMessageSessionAsync(TimeSpan)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_System_TimeSpan_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync(System.TimeSpan)"><a href="#collapsible-Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_System_TimeSpan_" class="expander" data-toggle="collapse">AcceptMessageSessionAsync(TimeSpan)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_System_TimeSpan_" class="collapse in">
   <div class="markdown level1 summary"><p>Gets a session object of any <a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html#Microsoft_Azure_ServiceBus_IMessageSession_SessionId">SessionId</a> that can be used to receive messages for that sessionId.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Task&lt;IMessageSession&gt; AcceptMessageSessionAsync(TimeSpan operationTimeout)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
-        <td><span class="parametername">operationTimeout</span></td>
-        <td><p>Amount of time for which the call should wait to fetch the next session.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></span>
+        <span class="parametername">operationTimeout</span>
+        <p><p>Amount of time for which the call should wait to fetch the next session.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html">IMessageSession</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html">IMessageSession</a>&gt;
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Microsoft.Azure.ServiceBus.ISessionClient.html#Microsoft_Azure_ServiceBus_ISessionClient_AcceptMessageSessionAsync_System_TimeSpan_">ISessionClient.AcceptMessageSessionAsync(TimeSpan)</a></div>
+  
   <h5 id="Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_System_TimeSpan__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>All plugins registered on <a class="xref" href="Microsoft.Azure.ServiceBus.SessionClient.html">SessionClient</a> will be applied to each <span class="xref">Microsoft.Azure.ServiceBus.MessageSession</span> that is accepted.
 Individual sessions can further register additional plugins.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient_OnClosingAsync.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.OnClosingAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient_OnClosingAsync.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.OnClosingAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L398">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L398" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_SessionClient_OnClosingAsync_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.OnClosingAsync*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_OnClosingAsync" data-uid="Microsoft.Azure.ServiceBus.SessionClient.OnClosingAsync">OnClosingAsync()</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_OnClosingAsync" data-uid="Microsoft.Azure.ServiceBus.SessionClient.OnClosingAsync"><a href="#collapsible-Microsoft_Azure_ServiceBus_SessionClient_OnClosingAsync" class="expander" data-toggle="collapse">OnClosingAsync()</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_SessionClient_OnClosingAsync" class="collapse in">
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override Task OnClosingAsync()</code></pre>
   </div>
+  
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_OnClosingAsync">ClientEntity.OnClosingAsync()</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient_RegisterPlugin_Microsoft_Azure_ServiceBus_Core_ServiceBusPlugin_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.RegisterPlugin(Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient_RegisterPlugin_Microsoft_Azure_ServiceBus_Core_ServiceBusPlugin_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.RegisterPlugin(Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L360">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L360" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_SessionClient_RegisterPlugin_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.RegisterPlugin*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_RegisterPlugin_Microsoft_Azure_ServiceBus_Core_ServiceBusPlugin_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.RegisterPlugin(Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin)">RegisterPlugin(ServiceBusPlugin)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_RegisterPlugin_Microsoft_Azure_ServiceBus_Core_ServiceBusPlugin_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.RegisterPlugin(Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin)"><a href="#collapsible-Microsoft_Azure_ServiceBus_SessionClient_RegisterPlugin_Microsoft_Azure_ServiceBus_Core_ServiceBusPlugin_" class="expander" data-toggle="collapse">RegisterPlugin(ServiceBusPlugin)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_SessionClient_RegisterPlugin_Microsoft_Azure_ServiceBus_Core_ServiceBusPlugin_" class="collapse in">
   <div class="markdown level1 summary"><p>Registers a <a class="xref" href="Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin.html">ServiceBusPlugin</a> to be used with this receiver.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override void RegisterPlugin(ServiceBusPlugin serviceBusPlugin)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin.html">ServiceBusPlugin</a></td>
-        <td><span class="parametername">serviceBusPlugin</span></td>
-        <td><p>The <a class="xref" href="Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin.html">ServiceBusPlugin</a> to register.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin.html">ServiceBusPlugin</a></span>
+        <span class="parametername">serviceBusPlugin</span>
+        <p><p>The <a class="xref" href="Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin.html">ServiceBusPlugin</a> to register.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_RegisterPlugin_Microsoft_Azure_ServiceBus_Core_ServiceBusPlugin_">ClientEntity.RegisterPlugin(ServiceBusPlugin)</a></div>
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_RegisterPlugin_Microsoft_Azure_ServiceBus_Core_ServiceBusPlugin_">IClientEntity.RegisterPlugin(ServiceBusPlugin)</a></div>
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient_UnregisterPlugin_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.UnregisterPlugin(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient_UnregisterPlugin_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient.UnregisterPlugin(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L379">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L379" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_SessionClient_UnregisterPlugin_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.UnregisterPlugin*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_UnregisterPlugin_System_String_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.UnregisterPlugin(System.String)">UnregisterPlugin(String)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_UnregisterPlugin_System_String_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.UnregisterPlugin(System.String)"><a href="#collapsible-Microsoft_Azure_ServiceBus_SessionClient_UnregisterPlugin_System_String_" class="expander" data-toggle="collapse">UnregisterPlugin(String)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_SessionClient_UnregisterPlugin_System_String_" class="collapse in">
   <div class="markdown level1 summary"><p>Unregisters a <a class="xref" href="Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin.html">ServiceBusPlugin</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override void UnregisterPlugin(string serviceBusPluginName)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">serviceBusPluginName</span></td>
-        <td><p>The <a class="xref" href="Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin.html#Microsoft_Azure_ServiceBus_Core_ServiceBusPlugin_Name">Name</a> of the plugin to be unregistered.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">serviceBusPluginName</span>
+        <p><p>The <a class="xref" href="Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin.html#Microsoft_Azure_ServiceBus_Core_ServiceBusPlugin_Name">Name</a> of the plugin to be unregistered.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_UnregisterPlugin_System_String_">ClientEntity.UnregisterPlugin(String)</a></div>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="Microsoft.Azure.ServiceBus.ISessionClient.html">ISessionClient</a>
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_UnregisterPlugin_System_String_">IClientEntity.UnregisterPlugin(String)</a></div>
+  
+  
+  
+  
   </div>
-  <div>
-      <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html">IClientEntity</a>
-  </div>
+  
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
@@ -918,27 +1154,21 @@ Individual sessions can further register additional plugins.</p>
   <div>
       <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
+  
   <h3 id="seealso">See Also</h3>
   <div class="seealso">
       <div><a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html">IMessageSession</a></div>
   </div>
 </article>
           </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L45" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
+          </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_SessionClient.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.SessionClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/SessionClient.cs/#L45" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

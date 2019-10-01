@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,92 +79,182 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Microsoft.Azure.KeyVault.Cryptography.Algorithms">
-  
-  <h1 id="Microsoft_Azure_KeyVault_Cryptography_Algorithms" data-uid="Microsoft.Azure.KeyVault.Cryptography.Algorithms" class="text-break">Namespace Microsoft.Azure.KeyVault.Cryptography.Algorithms
+  <h1 id="Microsoft_Azure_KeyVault_Cryptography_Algorithms" data-uid="Microsoft.Azure.KeyVault.Cryptography.Algorithms">Namespace Microsoft.Azure.KeyVault.Cryptography.Algorithms
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.Aes128Cbc.html">Aes128Cbc</a></h4>
-      <section><p>AESCBC 128bit key with PKCS7 Padding</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.Aes128CbcHmacSha256.html">Aes128CbcHmacSha256</a></h4>
-      <section><p>JWE A128CBC-HS256: <a href="https://tools.ietf.org/html/rfc7518#section-5.2.3">https://tools.ietf.org/html/rfc7518#section-5.2.3</a></p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.Aes192Cbc.html">Aes192Cbc</a></h4>
-      <section><p>AESCBC 192bit key with PKCS7 Padding</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.Aes192CbcHmacSha384.html">Aes192CbcHmacSha384</a></h4>
-      <section><p>JWE A192CBC-HS384: <a href="https://tools.ietf.org/html/rfc7518#section-5.2.4">https://tools.ietf.org/html/rfc7518#section-5.2.4</a></p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.Aes256Cbc.html">Aes256Cbc</a></h4>
-      <section><p>AESCBC 256bit key with PKCS7 Padding</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.Aes256CbcHmacSha512.html">Aes256CbcHmacSha512</a></h4>
-      <section><p>JWE A256CBC-HS512: <a href="https://tools.ietf.org/html/rfc7518#section-5.2.5">https://tools.ietf.org/html/rfc7518#section-5.2.5</a></p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.AesCbc.html">AesCbc</a></h4>
-      <section><p>Abstract base class for vanilla AESCBC</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.AesCbcHmacSha2.html">AesCbcHmacSha2</a></h4>
-      <section><p>Abstract base class for AESCBC-HMAC algorithms.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.AesKw.html">AesKw</a></h4>
-      <section><p>Abstract AES Key Wrap algoritm.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.AesKw128.html">AesKw128</a></h4>
-      <section><p>JWE A128KW: <a href="https://tools.ietf.org/html/rfc7518#section-4.4">https://tools.ietf.org/html/rfc7518#section-4.4</a></p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.AesKw192.html">AesKw192</a></h4>
-      <section><p>JWE A192KW: <a href="https://tools.ietf.org/html/rfc7518#section-4.4">https://tools.ietf.org/html/rfc7518#section-4.4</a></p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.AesKw256.html">AesKw256</a></h4>
-      <section><p>JWE A256KW: <a href="https://tools.ietf.org/html/rfc7518#section-4.4">https://tools.ietf.org/html/rfc7518#section-4.4</a></p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.Ecdsa.html">Ecdsa</a></h4>
-      <section><p>Abstract Elliptic Curve Digital Signature Algorithm (ECDSA).</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.Es256.html">Es256</a></h4>
-      <section><p>Represents ECDSA with curve P-256 from NIST.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.ES256K.html">ES256K</a></h4>
-      <section><p>Represents ECDSA with a P-256K curve.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.Es384.html">Es384</a></h4>
-      <section><p>Represents ECDSA with curve P-384 from NIST.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.Es512.html">Es512</a></h4>
-      <section><p>Represents ECDSA with curve P-521 from NIST.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.Rs256.html">Rs256</a></h4>
-      <section><p>RSA SHA-256 Signature algorithim.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.Rsa15.html">Rsa15</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.RsaEncryption.html">RsaEncryption</a></h4>
-      <section><p>Abstract RSA encryption algorithm.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.RsaOaep.html">RsaOaep</a></h4>
-      <section><p>RSA-OAEP Encryption.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.RsaSignature.html">RsaSignature</a></h4>
-      <section><p>Abstract RsaSignature.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.RsNull.html">RsNull</a></h4>
-      <section></section>
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.Aes128Cbc.html">Aes128Cbc</a></p>
+          <p><p>AESCBC 128bit key with PKCS7 Padding</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.Aes128CbcHmacSha256.html">Aes128CbcHmacSha256</a></p>
+          <p><p>JWE A128CBC-HS256: <a href="https://tools.ietf.org/html/rfc7518#section-5.2.3">https://tools.ietf.org/html/rfc7518#section-5.2.3</a></p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.Aes192Cbc.html">Aes192Cbc</a></p>
+          <p><p>AESCBC 192bit key with PKCS7 Padding</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.Aes192CbcHmacSha384.html">Aes192CbcHmacSha384</a></p>
+          <p><p>JWE A192CBC-HS384: <a href="https://tools.ietf.org/html/rfc7518#section-5.2.4">https://tools.ietf.org/html/rfc7518#section-5.2.4</a></p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.Aes256Cbc.html">Aes256Cbc</a></p>
+          <p><p>AESCBC 256bit key with PKCS7 Padding</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.Aes256CbcHmacSha512.html">Aes256CbcHmacSha512</a></p>
+          <p><p>JWE A256CBC-HS512: <a href="https://tools.ietf.org/html/rfc7518#section-5.2.5">https://tools.ietf.org/html/rfc7518#section-5.2.5</a></p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.AesCbc.html">AesCbc</a></p>
+          <p><p>Abstract base class for vanilla AESCBC</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.AesCbcHmacSha2.html">AesCbcHmacSha2</a></p>
+          <p><p>Abstract base class for AESCBC-HMAC algorithms.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.AesKw.html">AesKw</a></p>
+          <p><p>Abstract AES Key Wrap algoritm.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.AesKw128.html">AesKw128</a></p>
+          <p><p>JWE A128KW: <a href="https://tools.ietf.org/html/rfc7518#section-4.4">https://tools.ietf.org/html/rfc7518#section-4.4</a></p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.AesKw192.html">AesKw192</a></p>
+          <p><p>JWE A192KW: <a href="https://tools.ietf.org/html/rfc7518#section-4.4">https://tools.ietf.org/html/rfc7518#section-4.4</a></p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.AesKw256.html">AesKw256</a></p>
+          <p><p>JWE A256KW: <a href="https://tools.ietf.org/html/rfc7518#section-4.4">https://tools.ietf.org/html/rfc7518#section-4.4</a></p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.Ecdsa.html">Ecdsa</a></p>
+          <p><p>Abstract Elliptic Curve Digital Signature Algorithm (ECDSA).</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.Es256.html">Es256</a></p>
+          <p><p>Represents ECDSA with curve P-256 from NIST.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.ES256K.html">ES256K</a></p>
+          <p><p>Represents ECDSA with a P-256K curve.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.Es384.html">Es384</a></p>
+          <p><p>Represents ECDSA with curve P-384 from NIST.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.Es512.html">Es512</a></p>
+          <p><p>Represents ECDSA with curve P-521 from NIST.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.Rs256.html">Rs256</a></p>
+          <p><p>RSA SHA-256 Signature algorithim.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.Rsa15.html">Rsa15</a></p>
+          <p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.RsaEncryption.html">RsaEncryption</a></p>
+          <p><p>Abstract RSA encryption algorithm.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.RsaOaep.html">RsaOaep</a></p>
+          <p><p>RSA-OAEP Encryption.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.RsaSignature.html">RsaSignature</a></p>
+          <p><p>Abstract RsaSignature.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.KeyVault.Cryptography.Algorithms.RsNull.html">RsNull</a></p>
+          <p>
+        </td>
+      </tr>
+    </table>
 </article>
+          </div>
+          <div class="contribution-panel mobile-hide">
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,18 +79,19 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Microsoft.Azure.Batch.JobManagerTask">
-  
-  
-  <h1 id="Microsoft_Azure_Batch_JobManagerTask" data-uid="Microsoft.Azure.Batch.JobManagerTask" class="text-break">Class JobManagerTask
+  <h1 id="Microsoft_Azure_Batch_JobManagerTask" data-uid="Microsoft.Azure.Batch.JobManagerTask">Class JobManagerTask
   </h1>
   <div class="markdown level0 summary"><p>Represents an Azure Batch JobManager task.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">JobManagerTask</span></div>
   </div>
+  
+  
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -115,12 +116,18 @@
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.Batch.html">Microsoft.Azure.Batch</a></h6>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
+  
   <h5 id="Microsoft_Azure_Batch_JobManagerTask_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class JobManagerTask : ITransportObjectProvider&lt;JobManagerTask&gt;, IPropertyMetadata, IModifiable, IReadOnly</code></pre>
   </div>
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_Batch_JobManagerTask_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>Batch will retry tasks when a recovery operation is triggered on a compute node. Examples of recovery operations
 include (but are not limited to) when an unhealthy compute node is rebooted or a compute node disappeared due to
@@ -129,161 +136,230 @@ may occur. Because of this, all tasks should be idempotent. This means tasks nee
 restarted without causing any corruption or duplicate data. The best practice for long running tasks is to use some
 form of checkpointing.</p>
 </div>
+  
   <h3 id="constructors">Constructors
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask__ctor.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask__ctor.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/JobManagerTask.cs/#L13">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/JobManagerTask.cs/#L13" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_JobManagerTask__ctor_" data-uid="Microsoft.Azure.Batch.JobManagerTask.#ctor*"></a>
-  <h4 id="Microsoft_Azure_Batch_JobManagerTask__ctor" data-uid="Microsoft.Azure.Batch.JobManagerTask.#ctor">JobManagerTask()</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_JobManagerTask__ctor" data-uid="Microsoft.Azure.Batch.JobManagerTask.#ctor"><a href="#collapsible-Microsoft_Azure_Batch_JobManagerTask__ctor" class="expander" data-toggle="collapse">JobManagerTask()</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_JobManagerTask__ctor" class="collapse in">
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.JobManagerTask.html">JobManagerTask</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public JobManagerTask()</code></pre>
   </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask__ctor_System_String_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.%23ctor(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask__ctor_System_String_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.%23ctor(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L139">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L139" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_JobManagerTask__ctor_" data-uid="Microsoft.Azure.Batch.JobManagerTask.#ctor*"></a>
-  <h4 id="Microsoft_Azure_Batch_JobManagerTask__ctor_System_String_System_String_" data-uid="Microsoft.Azure.Batch.JobManagerTask.#ctor(System.String,System.String)">JobManagerTask(String, String)</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_JobManagerTask__ctor_System_String_System_String_" data-uid="Microsoft.Azure.Batch.JobManagerTask.#ctor(System.String,System.String)"><a href="#collapsible-Microsoft_Azure_Batch_JobManagerTask__ctor_System_String_System_String_" class="expander" data-toggle="collapse">JobManagerTask(String, String)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_JobManagerTask__ctor_System_String_System_String_" class="collapse in">
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.JobManagerTask.html">JobManagerTask</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public JobManagerTask(string id, string commandLine)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">id</span></td>
-        <td><p>The id of the task.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">commandLine</span></td>
-        <td><p>The command line of the task.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">id</span>
+        <p><p>The id of the task.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">commandLine</span>
+        <p><p>The command line of the task.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
   <h3 id="properties">Properties
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask_AllowLowPriorityNode.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.AllowLowPriorityNode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask_AllowLowPriorityNode.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.AllowLowPriorityNode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L161">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L161" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_JobManagerTask_AllowLowPriorityNode_" data-uid="Microsoft.Azure.Batch.JobManagerTask.AllowLowPriorityNode*"></a>
-  <h4 id="Microsoft_Azure_Batch_JobManagerTask_AllowLowPriorityNode" data-uid="Microsoft.Azure.Batch.JobManagerTask.AllowLowPriorityNode">AllowLowPriorityNode</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_JobManagerTask_AllowLowPriorityNode" data-uid="Microsoft.Azure.Batch.JobManagerTask.AllowLowPriorityNode"><a href="#collapsible-Microsoft_Azure_Batch_JobManagerTask_AllowLowPriorityNode" class="expander" data-toggle="collapse">AllowLowPriorityNode</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_JobManagerTask_AllowLowPriorityNode" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets whether the Job Manager task may run on a low-priority compute node. If omitted, the default is
 true.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool? AllowLowPriorityNode { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask_ApplicationPackageReferences.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.ApplicationPackageReferences%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask_ApplicationPackageReferences.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.ApplicationPackageReferences%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L171">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L171" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_JobManagerTask_ApplicationPackageReferences_" data-uid="Microsoft.Azure.Batch.JobManagerTask.ApplicationPackageReferences*"></a>
-  <h4 id="Microsoft_Azure_Batch_JobManagerTask_ApplicationPackageReferences" data-uid="Microsoft.Azure.Batch.JobManagerTask.ApplicationPackageReferences">ApplicationPackageReferences</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_JobManagerTask_ApplicationPackageReferences" data-uid="Microsoft.Azure.Batch.JobManagerTask.ApplicationPackageReferences"><a href="#collapsible-Microsoft_Azure_Batch_JobManagerTask_ApplicationPackageReferences" class="expander" data-toggle="collapse">ApplicationPackageReferences</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_JobManagerTask_ApplicationPackageReferences" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets a list of application packages that the Batch service will deploy to the compute node before running
 the command line.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IList&lt;ApplicationPackageReference&gt; ApplicationPackageReferences { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.ApplicationPackageReference.html">ApplicationPackageReference</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.ApplicationPackageReference.html">ApplicationPackageReference</a>&gt;
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask_AuthenticationTokenSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.AuthenticationTokenSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask_AuthenticationTokenSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.AuthenticationTokenSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L190">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L190" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_JobManagerTask_AuthenticationTokenSettings_" data-uid="Microsoft.Azure.Batch.JobManagerTask.AuthenticationTokenSettings*"></a>
-  <h4 id="Microsoft_Azure_Batch_JobManagerTask_AuthenticationTokenSettings" data-uid="Microsoft.Azure.Batch.JobManagerTask.AuthenticationTokenSettings">AuthenticationTokenSettings</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_JobManagerTask_AuthenticationTokenSettings" data-uid="Microsoft.Azure.Batch.JobManagerTask.AuthenticationTokenSettings"><a href="#collapsible-Microsoft_Azure_Batch_JobManagerTask_AuthenticationTokenSettings" class="expander" data-toggle="collapse">AuthenticationTokenSettings</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_JobManagerTask_AuthenticationTokenSettings" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets the settings for an authentication token that the task can use to perform Batch service operations.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public AuthenticationTokenSettings AuthenticationTokenSettings { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.Batch.AuthenticationTokenSettings.html">AuthenticationTokenSettings</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Microsoft.Azure.Batch.AuthenticationTokenSettings.html">AuthenticationTokenSettings</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_Batch_JobManagerTask_AuthenticationTokenSettings_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>If this property is set, the Batch service provides the task with an authentication token which can be used to
 authenticate Batch service operations without requiring an account access key. The token is provided via the
@@ -291,37 +367,50 @@ AZ_BATCH_AUTHENTICATION_TOKEN environment variable. The operations that the task
 depend on the settings. For example, a task can request job permissions in order to add other tasks to the job,
 or check the status of the job or of other tasks.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask_CommandLine.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.CommandLine%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask_CommandLine.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.CommandLine%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L206">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L206" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_JobManagerTask_CommandLine_" data-uid="Microsoft.Azure.Batch.JobManagerTask.CommandLine*"></a>
-  <h4 id="Microsoft_Azure_Batch_JobManagerTask_CommandLine" data-uid="Microsoft.Azure.Batch.JobManagerTask.CommandLine">CommandLine</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_JobManagerTask_CommandLine" data-uid="Microsoft.Azure.Batch.JobManagerTask.CommandLine"><a href="#collapsible-Microsoft_Azure_Batch_JobManagerTask_CommandLine" class="expander" data-toggle="collapse">CommandLine</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_JobManagerTask_CommandLine" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets the command line of the task.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string CommandLine { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_Batch_JobManagerTask_CommandLine_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The command line does not run under a shell, and therefore cannot take advantage of shell features such as environment
 variable expansion. If you want to take advantage of such features, you should invoke the shell in the command
@@ -329,68 +418,94 @@ line, for example using &quot;cmd /c MyCommand&quot; in Windows or &quot;/bin/sh
 refers to file paths, it should use a relative path (relative to the task working directory), or use the Batch
 provided environment variables (<a href="https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables">https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables</a>).</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask_Constraints.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.Constraints%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask_Constraints.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.Constraints%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L215">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L215" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_JobManagerTask_Constraints_" data-uid="Microsoft.Azure.Batch.JobManagerTask.Constraints*"></a>
-  <h4 id="Microsoft_Azure_Batch_JobManagerTask_Constraints" data-uid="Microsoft.Azure.Batch.JobManagerTask.Constraints">Constraints</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_JobManagerTask_Constraints" data-uid="Microsoft.Azure.Batch.JobManagerTask.Constraints"><a href="#collapsible-Microsoft_Azure_Batch_JobManagerTask_Constraints" class="expander" data-toggle="collapse">Constraints</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_JobManagerTask_Constraints" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets the execution constraints for this JobManager task.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public TaskConstraints Constraints { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.Batch.TaskConstraints.html">TaskConstraints</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Microsoft.Azure.Batch.TaskConstraints.html">TaskConstraints</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask_ContainerSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.ContainerSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask_ContainerSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.ContainerSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L233">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L233" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_JobManagerTask_ContainerSettings_" data-uid="Microsoft.Azure.Batch.JobManagerTask.ContainerSettings*"></a>
-  <h4 id="Microsoft_Azure_Batch_JobManagerTask_ContainerSettings" data-uid="Microsoft.Azure.Batch.JobManagerTask.ContainerSettings">ContainerSettings</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_JobManagerTask_ContainerSettings" data-uid="Microsoft.Azure.Batch.JobManagerTask.ContainerSettings"><a href="#collapsible-Microsoft_Azure_Batch_JobManagerTask_ContainerSettings" class="expander" data-toggle="collapse">ContainerSettings</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_JobManagerTask_ContainerSettings" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets the settings for the container under which the task runs.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public TaskContainerSettings ContainerSettings { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.Batch.TaskContainerSettings.html">TaskContainerSettings</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Microsoft.Azure.Batch.TaskContainerSettings.html">TaskContainerSettings</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_Batch_JobManagerTask_ContainerSettings_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>If the pool that will run this task has <a class="xref" href="Microsoft.Azure.Batch.VirtualMachineConfiguration.html#Microsoft_Azure_Batch_VirtualMachineConfiguration_ContainerConfiguration">ContainerConfiguration</a> set,
 this must be set as well. If the pool that will run this task doesn't have <a class="xref" href="Microsoft.Azure.Batch.VirtualMachineConfiguration.html#Microsoft_Azure_Batch_VirtualMachineConfiguration_ContainerConfiguration">ContainerConfiguration</a>
@@ -400,265 +515,374 @@ are mapped into the container, and the task command line is executed in the cont
 container outside of AZ_BATCH_NODE_ROOT_DIR might not be reflected to the host disk, meaning that Batch file
 APIs will not be able to access them.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask_DisplayName.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.DisplayName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask_DisplayName.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.DisplayName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L242">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L242" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_JobManagerTask_DisplayName_" data-uid="Microsoft.Azure.Batch.JobManagerTask.DisplayName*"></a>
-  <h4 id="Microsoft_Azure_Batch_JobManagerTask_DisplayName" data-uid="Microsoft.Azure.Batch.JobManagerTask.DisplayName">DisplayName</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_JobManagerTask_DisplayName" data-uid="Microsoft.Azure.Batch.JobManagerTask.DisplayName"><a href="#collapsible-Microsoft_Azure_Batch_JobManagerTask_DisplayName" class="expander" data-toggle="collapse">DisplayName</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_JobManagerTask_DisplayName" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets the display name of the JobManager task.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string DisplayName { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask_EnvironmentSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.EnvironmentSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask_EnvironmentSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.EnvironmentSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L251">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L251" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_JobManagerTask_EnvironmentSettings_" data-uid="Microsoft.Azure.Batch.JobManagerTask.EnvironmentSettings*"></a>
-  <h4 id="Microsoft_Azure_Batch_JobManagerTask_EnvironmentSettings" data-uid="Microsoft.Azure.Batch.JobManagerTask.EnvironmentSettings">EnvironmentSettings</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_JobManagerTask_EnvironmentSettings" data-uid="Microsoft.Azure.Batch.JobManagerTask.EnvironmentSettings"><a href="#collapsible-Microsoft_Azure_Batch_JobManagerTask_EnvironmentSettings" class="expander" data-toggle="collapse">EnvironmentSettings</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_JobManagerTask_EnvironmentSettings" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets a set of environment settings for the JobManager task.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IList&lt;EnvironmentSetting&gt; EnvironmentSettings { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.EnvironmentSetting.html">EnvironmentSetting</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.EnvironmentSetting.html">EnvironmentSetting</a>&gt;
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask_Id.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask_Id.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L263">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L263" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_JobManagerTask_Id_" data-uid="Microsoft.Azure.Batch.JobManagerTask.Id*"></a>
-  <h4 id="Microsoft_Azure_Batch_JobManagerTask_Id" data-uid="Microsoft.Azure.Batch.JobManagerTask.Id">Id</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_JobManagerTask_Id" data-uid="Microsoft.Azure.Batch.JobManagerTask.Id"><a href="#collapsible-Microsoft_Azure_Batch_JobManagerTask_Id" class="expander" data-toggle="collapse">Id</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_JobManagerTask_Id" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets the id of the task.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string Id { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask_KillJobOnCompletion.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.KillJobOnCompletion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask_KillJobOnCompletion.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.KillJobOnCompletion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L273">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L273" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_JobManagerTask_KillJobOnCompletion_" data-uid="Microsoft.Azure.Batch.JobManagerTask.KillJobOnCompletion*"></a>
-  <h4 id="Microsoft_Azure_Batch_JobManagerTask_KillJobOnCompletion" data-uid="Microsoft.Azure.Batch.JobManagerTask.KillJobOnCompletion">KillJobOnCompletion</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_JobManagerTask_KillJobOnCompletion" data-uid="Microsoft.Azure.Batch.JobManagerTask.KillJobOnCompletion"><a href="#collapsible-Microsoft_Azure_Batch_JobManagerTask_KillJobOnCompletion" class="expander" data-toggle="collapse">KillJobOnCompletion</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_JobManagerTask_KillJobOnCompletion" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets a value that indicates whether to terminate all tasks in the job and complete the job when the job
 manager task completes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool? KillJobOnCompletion { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask_OutputFiles.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.OutputFiles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask_OutputFiles.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.OutputFiles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L283">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L283" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_JobManagerTask_OutputFiles_" data-uid="Microsoft.Azure.Batch.JobManagerTask.OutputFiles*"></a>
-  <h4 id="Microsoft_Azure_Batch_JobManagerTask_OutputFiles" data-uid="Microsoft.Azure.Batch.JobManagerTask.OutputFiles">OutputFiles</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_JobManagerTask_OutputFiles" data-uid="Microsoft.Azure.Batch.JobManagerTask.OutputFiles"><a href="#collapsible-Microsoft_Azure_Batch_JobManagerTask_OutputFiles" class="expander" data-toggle="collapse">OutputFiles</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_JobManagerTask_OutputFiles" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets a list of files that the Batch service will upload from the compute node after running the command
 line.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IList&lt;OutputFile&gt; OutputFiles { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.OutputFile.html">OutputFile</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.OutputFile.html">OutputFile</a>&gt;
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask_ResourceFiles.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.ResourceFiles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask_ResourceFiles.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.ResourceFiles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L301">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L301" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_JobManagerTask_ResourceFiles_" data-uid="Microsoft.Azure.Batch.JobManagerTask.ResourceFiles*"></a>
-  <h4 id="Microsoft_Azure_Batch_JobManagerTask_ResourceFiles" data-uid="Microsoft.Azure.Batch.JobManagerTask.ResourceFiles">ResourceFiles</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_JobManagerTask_ResourceFiles" data-uid="Microsoft.Azure.Batch.JobManagerTask.ResourceFiles"><a href="#collapsible-Microsoft_Azure_Batch_JobManagerTask_ResourceFiles" class="expander" data-toggle="collapse">ResourceFiles</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_JobManagerTask_ResourceFiles" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets a list of files that the Batch service will download to the compute node before running the command
 line.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IList&lt;ResourceFile&gt; ResourceFiles { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html">ResourceFile</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html">ResourceFile</a>&gt;
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_Batch_JobManagerTask_ResourceFiles_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>There is a maximum size for the list of resource files. When the max size is exceeded, the request will fail
 and the response error code will be RequestEntityTooLarge. If this occurs, the collection of resource files must
 be reduced in size. This can be achieved using .zip files, Application Packages, or Docker Containers.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask_RunExclusive.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.RunExclusive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask_RunExclusive.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.RunExclusive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L313">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L313" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_JobManagerTask_RunExclusive_" data-uid="Microsoft.Azure.Batch.JobManagerTask.RunExclusive*"></a>
-  <h4 id="Microsoft_Azure_Batch_JobManagerTask_RunExclusive" data-uid="Microsoft.Azure.Batch.JobManagerTask.RunExclusive">RunExclusive</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_JobManagerTask_RunExclusive" data-uid="Microsoft.Azure.Batch.JobManagerTask.RunExclusive"><a href="#collapsible-Microsoft_Azure_Batch_JobManagerTask_RunExclusive" class="expander" data-toggle="collapse">RunExclusive</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_JobManagerTask_RunExclusive" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets whether the Job Manager task requires exclusive use of the compute node where it runs.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool? RunExclusive { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask_UserIdentity.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.UserIdentity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask_UserIdentity.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask.UserIdentity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L325">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/Generated/JobManagerTask.cs/#L325" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_JobManagerTask_UserIdentity_" data-uid="Microsoft.Azure.Batch.JobManagerTask.UserIdentity*"></a>
-  <h4 id="Microsoft_Azure_Batch_JobManagerTask_UserIdentity" data-uid="Microsoft.Azure.Batch.JobManagerTask.UserIdentity">UserIdentity</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_JobManagerTask_UserIdentity" data-uid="Microsoft.Azure.Batch.JobManagerTask.UserIdentity"><a href="#collapsible-Microsoft_Azure_Batch_JobManagerTask_UserIdentity" class="expander" data-toggle="collapse">UserIdentity</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_JobManagerTask_UserIdentity" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets the user identity under which the task runs.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UserIdentity UserIdentity { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.Batch.UserIdentity.html">UserIdentity</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Microsoft.Azure.Batch.UserIdentity.html">UserIdentity</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_Batch_JobManagerTask_UserIdentity_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>If omitted, the task runs as a non-administrative user unique to the task.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
@@ -678,23 +902,17 @@ be reduced in size. This can be achieved using .zip files, Application Packages,
   <div>
       <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
+  
 </article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/JobManagerTask.cs/#L8" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_JobManagerTask.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.JobManagerTask%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/JobManagerTask.cs/#L8" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

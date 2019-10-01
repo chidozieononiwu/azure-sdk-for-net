@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,23 +79,20 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter">
-  
-  
-  <h1 id="Microsoft_Azure_ServiceBus_CorrelationFilter" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter" class="text-break">Class CorrelationFilter
+  <h1 id="Microsoft_Azure_ServiceBus_CorrelationFilter" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter">Class CorrelationFilter
   </h1>
   <div class="markdown level0 summary"><p>Represents the correlation filter expression.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><a class="xref" href="Microsoft.Azure.ServiceBus.Filter.html">Filter</a></div>
     <div class="level2"><span class="xref">CorrelationFilter</span></div>
   </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Filter.html">Filter</a>&gt;</div>
-  </div>
+  
+  
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -111,12 +108,18 @@
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.ServiceBus.html">Microsoft.Azure.ServiceBus</a></h6>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.ServiceBus.dll</h6>
+  
   <h5 id="Microsoft_Azure_ServiceBus_CorrelationFilter_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public sealed class CorrelationFilter : Filter, IEquatable&lt;Filter&gt;</code></pre>
   </div>
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_CorrelationFilter_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>
 A CorrelationFilter holds a set of conditions that are matched against one of more of an arriving message&apos;s user and system properties.
@@ -134,655 +137,849 @@ Not only will correlation filters be optimized at declaration time, but they wil
 Correlation filter matching can be reduced to a hashtable lookup, which aggregates the complexity of the set of defined correlation filters to O(1).
 </p>
 </div>
+  
   <h3 id="constructors">Constructors
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter__ctor.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter__ctor.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L38">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L38" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_CorrelationFilter__ctor_" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.#ctor*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter__ctor" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.#ctor">CorrelationFilter()</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter__ctor" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.#ctor"><a href="#collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter__ctor" class="expander" data-toggle="collapse">CorrelationFilter()</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter__ctor" class="collapse in">
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.ServiceBus.CorrelationFilter.html">CorrelationFilter</a> class with default values.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public CorrelationFilter()</code></pre>
   </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter__ctor_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter__ctor_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L47">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L47" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_CorrelationFilter__ctor_" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.#ctor*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter__ctor_System_String_" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.#ctor(System.String)">CorrelationFilter(String)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter__ctor_System_String_" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.#ctor(System.String)"><a href="#collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter__ctor_System_String_" class="expander" data-toggle="collapse">CorrelationFilter(String)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter__ctor_System_String_" class="collapse in">
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.ServiceBus.CorrelationFilter.html">CorrelationFilter</a> class with the specified correlation identifier.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public CorrelationFilter(string correlationId)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">correlationId</span></td>
-        <td><p>The identifier for the correlation.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">correlationId</span>
+        <p><p>The identifier for the correlation.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
-        <td><p>Thrown when the <code data-dev-comment-type="paramref" class="paramref">correlationId</code> is null or empty.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a>
+        <p><p>Thrown when the <code data-dev-comment-type="paramref" class="paramref">correlationId</code> is null or empty.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  </div>
   <h3 id="properties">Properties
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_ContentType.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.ContentType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_ContentType.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.ContentType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L135">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L135" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_CorrelationFilter_ContentType_" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.ContentType*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_ContentType" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.ContentType">ContentType</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_ContentType" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.ContentType"><a href="#collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_ContentType" class="expander" data-toggle="collapse">ContentType</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_ContentType" class="collapse in">
   <div class="markdown level1 summary"><p>Content type of the message.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string ContentType { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p>The content type of the message.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p><p>The content type of the message.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_CorrelationId.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.CorrelationId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_CorrelationId.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.CorrelationId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L62">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L62" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_CorrelationFilter_CorrelationId_" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.CorrelationId*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_CorrelationId" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.CorrelationId">CorrelationId</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_CorrelationId" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.CorrelationId"><a href="#collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_CorrelationId" class="expander" data-toggle="collapse">CorrelationId</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_CorrelationId" class="collapse in">
   <div class="markdown level1 summary"><p>Identifier of the correlation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string CorrelationId { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p>The identifier of the correlation.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p><p>The identifier of the correlation.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_Label.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.Label%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_Label.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.Label%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L103">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L103" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_CorrelationFilter_Label_" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.Label*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_Label" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.Label">Label</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_Label" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.Label"><a href="#collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_Label" class="expander" data-toggle="collapse">Label</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_Label" class="collapse in">
   <div class="markdown level1 summary"><p>Application specific label.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string Label { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p>The application specific label.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p><p>The application specific label.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_MessageId.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.MessageId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_MessageId.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.MessageId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L73">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L73" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_CorrelationFilter_MessageId_" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.MessageId*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_MessageId" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.MessageId">MessageId</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_MessageId" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.MessageId"><a href="#collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_MessageId" class="expander" data-toggle="collapse">MessageId</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_MessageId" class="collapse in">
   <div class="markdown level1 summary"><p>Identifier of the message.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string MessageId { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p>The identifier of the message.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p><p>The identifier of the message.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_CorrelationFilter_MessageId_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Max MessageId size is 128 chars.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_Properties.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.Properties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_Properties.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.Properties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L151">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L151" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_CorrelationFilter_Properties_" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.Properties*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_Properties" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.Properties">Properties</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_Properties" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.Properties"><a href="#collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_Properties" class="expander" data-toggle="collapse">Properties</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_Properties" class="collapse in">
   <div class="markdown level1 summary"><p>Application specific properties of the message.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IDictionary&lt;string, object&gt; Properties { get; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
-        <td><p>The application specific properties of the message.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;
+        <p><p>The application specific properties of the message.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_CorrelationFilter_Properties_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Only following value types are supported:
 byte, sbyte, char, short, ushort, int, uint, long, ulong, float, double, decimal,
 bool, Guid, string, Uri, DateTime, DateTimeOffset, TimeSpan, Stream, byte[],
 and IList / IDictionary of supported types</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_ReplyTo.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.ReplyTo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_ReplyTo.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.ReplyTo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L93">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L93" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_CorrelationFilter_ReplyTo_" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.ReplyTo*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_ReplyTo" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.ReplyTo">ReplyTo</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_ReplyTo" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.ReplyTo"><a href="#collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_ReplyTo" class="expander" data-toggle="collapse">ReplyTo</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_ReplyTo" class="collapse in">
   <div class="markdown level1 summary"><p>Address of the queue to reply to.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string ReplyTo { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p>The address of the queue to reply to.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p><p>The address of the queue to reply to.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_ReplyToSessionId.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.ReplyToSessionId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_ReplyToSessionId.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.ReplyToSessionId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L125">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L125" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_CorrelationFilter_ReplyToSessionId_" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.ReplyToSessionId*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_ReplyToSessionId" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.ReplyToSessionId">ReplyToSessionId</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_ReplyToSessionId" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.ReplyToSessionId"><a href="#collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_ReplyToSessionId" class="expander" data-toggle="collapse">ReplyToSessionId</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_ReplyToSessionId" class="collapse in">
   <div class="markdown level1 summary"><p>Session identifier to reply to.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string ReplyToSessionId { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p>The session identifier to reply to.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p><p>The session identifier to reply to.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_CorrelationFilter_ReplyToSessionId_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Max size of ReplyToSessionId is 128.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_SessionId.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.SessionId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_SessionId.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.SessionId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L114">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L114" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_CorrelationFilter_SessionId_" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.SessionId*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_SessionId" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.SessionId">SessionId</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_SessionId" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.SessionId"><a href="#collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_SessionId" class="expander" data-toggle="collapse">SessionId</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_SessionId" class="collapse in">
   <div class="markdown level1 summary"><p>Session identifier.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string SessionId { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p>The session identifier.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p><p>The session identifier.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_CorrelationFilter_SessionId_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Max size of sessionId is 128 chars.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_To.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.To%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_To.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.To%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L83">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L83" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_CorrelationFilter_To_" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.To*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_To" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.To">To</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_To" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.To"><a href="#collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_To" class="expander" data-toggle="collapse">To</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_To" class="collapse in">
   <div class="markdown level1 summary"><p>Address to send to.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string To { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p>The address to send to.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p><p>The address to send to.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
   <h3 id="methods">Methods
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_Equals_Microsoft_Azure_ServiceBus_Filter_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.Equals(Microsoft.Azure.ServiceBus.Filter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_Equals_Microsoft_Azure_ServiceBus_Filter_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.Equals(Microsoft.Azure.ServiceBus.Filter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L221">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L221" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_CorrelationFilter_Equals_" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.Equals*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_Equals_Microsoft_Azure_ServiceBus_Filter_" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.Equals(Microsoft.Azure.ServiceBus.Filter)">Equals(Filter)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_Equals_Microsoft_Azure_ServiceBus_Filter_" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.Equals(Microsoft.Azure.ServiceBus.Filter)"><a href="#collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_Equals_Microsoft_Azure_ServiceBus_Filter_" class="expander" data-toggle="collapse">Equals(Filter)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_Equals_Microsoft_Azure_ServiceBus_Filter_" class="collapse in">
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override bool Equals(Filter other)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Filter.html">Filter</a></td>
-        <td><span class="parametername">other</span></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Azure.ServiceBus.Filter.html">Filter</a></span>
+        <span class="parametername">other</span>
+        <p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Microsoft.Azure.ServiceBus.Filter.html#Microsoft_Azure_ServiceBus_Filter_Equals_Microsoft_Azure_ServiceBus_Filter_">Filter.Equals(Filter)</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L215">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L215" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_CorrelationFilter_Equals_" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.Equals*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_Equals_System_Object_" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.Equals(System.Object)">Equals(Object)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_Equals_System_Object_" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.Equals(System.Object)"><a href="#collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_Equals_System_Object_" class="expander" data-toggle="collapse">Equals(Object)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_Equals_System_Object_" class="collapse in">
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><span class="parametername">obj</span></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></span>
+        <span class="parametername">obj</span>
+        <p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_GetHashCode.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_GetHashCode.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L202">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L202" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_CorrelationFilter_GetHashCode_" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.GetHashCode*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_GetHashCode" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.GetHashCode">GetHashCode()</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_GetHashCode" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.GetHashCode"><a href="#collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_GetHashCode" class="expander" data-toggle="collapse">GetHashCode()</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_GetHashCode" class="collapse in">
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
   </div>
+  
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_ToString.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_ToString.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L157">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L157" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_CorrelationFilter_ToString_" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.ToString*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_ToString" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.ToString">ToString()</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_ToString" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.ToString"><a href="#collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_ToString" class="expander" data-toggle="collapse">ToString()</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_ToString" class="collapse in">
   <div class="markdown level1 summary"><p>Converts the value of the current instance to its equivalent string representation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
   </div>
+  
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p>A string representation of the current instance.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p><p>A string representation of the current instance.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a></div>
+  
+  
+  
+  
+  
+  </div>
   <h3 id="operators">Operators
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_op_Equality_Microsoft_Azure_ServiceBus_CorrelationFilter_Microsoft_Azure_ServiceBus_CorrelationFilter_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.op_Equality(Microsoft.Azure.ServiceBus.CorrelationFilter%2CMicrosoft.Azure.ServiceBus.CorrelationFilter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_op_Equality_Microsoft_Azure_ServiceBus_CorrelationFilter_Microsoft_Azure_ServiceBus_CorrelationFilter_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.op_Equality(Microsoft.Azure.ServiceBus.CorrelationFilter%2CMicrosoft.Azure.ServiceBus.CorrelationFilter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L261">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L261" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_CorrelationFilter_op_Equality_" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.op_Equality*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_op_Equality_Microsoft_Azure_ServiceBus_CorrelationFilter_Microsoft_Azure_ServiceBus_CorrelationFilter_" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.op_Equality(Microsoft.Azure.ServiceBus.CorrelationFilter,Microsoft.Azure.ServiceBus.CorrelationFilter)">Equality(CorrelationFilter, CorrelationFilter)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_op_Equality_Microsoft_Azure_ServiceBus_CorrelationFilter_Microsoft_Azure_ServiceBus_CorrelationFilter_" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.op_Equality(Microsoft.Azure.ServiceBus.CorrelationFilter,Microsoft.Azure.ServiceBus.CorrelationFilter)"><a href="#collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_op_Equality_Microsoft_Azure_ServiceBus_CorrelationFilter_Microsoft_Azure_ServiceBus_CorrelationFilter_" class="expander" data-toggle="collapse">Equality(CorrelationFilter, CorrelationFilter)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_op_Equality_Microsoft_Azure_ServiceBus_CorrelationFilter_Microsoft_Azure_ServiceBus_CorrelationFilter_" class="collapse in">
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool operator ==(CorrelationFilter o1, CorrelationFilter o2)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.ServiceBus.CorrelationFilter.html">CorrelationFilter</a></td>
-        <td><span class="parametername">o1</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.ServiceBus.CorrelationFilter.html">CorrelationFilter</a></td>
-        <td><span class="parametername">o2</span></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Azure.ServiceBus.CorrelationFilter.html">CorrelationFilter</a></span>
+        <span class="parametername">o1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Azure.ServiceBus.CorrelationFilter.html">CorrelationFilter</a></span>
+        <span class="parametername">o2</span>
+        <p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_op_Inequality_Microsoft_Azure_ServiceBus_CorrelationFilter_Microsoft_Azure_ServiceBus_CorrelationFilter_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.op_Inequality(Microsoft.Azure.ServiceBus.CorrelationFilter%2CMicrosoft.Azure.ServiceBus.CorrelationFilter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter_op_Inequality_Microsoft_Azure_ServiceBus_CorrelationFilter_Microsoft_Azure_ServiceBus_CorrelationFilter_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter.op_Inequality(Microsoft.Azure.ServiceBus.CorrelationFilter%2CMicrosoft.Azure.ServiceBus.CorrelationFilter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L276">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L276" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_CorrelationFilter_op_Inequality_" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.op_Inequality*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_op_Inequality_Microsoft_Azure_ServiceBus_CorrelationFilter_Microsoft_Azure_ServiceBus_CorrelationFilter_" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.op_Inequality(Microsoft.Azure.ServiceBus.CorrelationFilter,Microsoft.Azure.ServiceBus.CorrelationFilter)">Inequality(CorrelationFilter, CorrelationFilter)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_CorrelationFilter_op_Inequality_Microsoft_Azure_ServiceBus_CorrelationFilter_Microsoft_Azure_ServiceBus_CorrelationFilter_" data-uid="Microsoft.Azure.ServiceBus.CorrelationFilter.op_Inequality(Microsoft.Azure.ServiceBus.CorrelationFilter,Microsoft.Azure.ServiceBus.CorrelationFilter)"><a href="#collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_op_Inequality_Microsoft_Azure_ServiceBus_CorrelationFilter_Microsoft_Azure_ServiceBus_CorrelationFilter_" class="expander" data-toggle="collapse">Inequality(CorrelationFilter, CorrelationFilter)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_CorrelationFilter_op_Inequality_Microsoft_Azure_ServiceBus_CorrelationFilter_Microsoft_Azure_ServiceBus_CorrelationFilter_" class="collapse in">
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool operator !=(CorrelationFilter p1, CorrelationFilter p2)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.ServiceBus.CorrelationFilter.html">CorrelationFilter</a></td>
-        <td><span class="parametername">p1</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.ServiceBus.CorrelationFilter.html">CorrelationFilter</a></td>
-        <td><span class="parametername">p2</span></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Azure.ServiceBus.CorrelationFilter.html">CorrelationFilter</a></span>
+        <span class="parametername">p1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Azure.ServiceBus.CorrelationFilter.html">CorrelationFilter</a></span>
+        <span class="parametername">p2</span>
+        <p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p>
+      </td>
+    </tr>
   </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">System.IEquatable&lt;T&gt;</a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   </div>
+  
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
@@ -802,23 +999,17 @@ and IList / IDictionary of supported types</p>
   <div>
       <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
+  
 </article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L31" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_CorrelationFilter.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.CorrelationFilter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Filters/CorrelationFilter.cs/#L31" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

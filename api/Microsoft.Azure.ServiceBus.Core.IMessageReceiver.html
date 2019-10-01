@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,13 +79,14 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver">
-  
-  
-  <h1 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver" class="text-break">Interface IMessageReceiver
+  <h1 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver">Interface IMessageReceiver
   </h1>
   <div class="markdown level0 summary"><p>The MessageReceiver can be used to receive messages from Queues and Subscriptions and acknowledge them.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  
+  
+  
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -143,18 +144,25 @@
       <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_UnregisterPlugin_System_String_">IClientEntity.UnregisterPlugin(String)</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.ServiceBus.Core.html">Microsoft.Azure.ServiceBus.Core</a></h6>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.ServiceBus.dll</h6>
+  
   <h5 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IMessageReceiver : IReceiverClient, IClientEntity</code></pre>
   </div>
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>The MessageReceiver provides advanced functionality that is not found in the
 <a class="xref" href="Microsoft.Azure.ServiceBus.QueueClient.html">QueueClient</a> or <a class="xref" href="Microsoft.Azure.ServiceBus.SubscriptionClient.html">SubscriptionClient</a>. For instance,
 <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html#Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync">ReceiveAsync()</a>, which allows you to receive messages on demand, but also requires
 you to manually renew locks using <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html#Microsoft_Azure_ServiceBus_Core_IMessageReceiver_RenewLockAsync_Microsoft_Azure_ServiceBus_Message_">RenewLockAsync(Message)</a>.</p>
 </div>
+  
   <h5 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_examples"><strong>Examples</strong></h5>
   <p>Create a new MessageReceiver to receive a message from a Subscription</p>
 <pre><code>IMessageReceiver messageReceiver = new MessageReceiver(
@@ -167,151 +175,174 @@ await messageReceiver.CompleteAsync(message.SystemProperties.LockToken);</code><
 
   <h3 id="properties">Properties
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_LastPeekedSequenceNumber.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.LastPeekedSequenceNumber%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_LastPeekedSequenceNumber.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.LastPeekedSequenceNumber%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L41">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L41" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_LastPeekedSequenceNumber_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.LastPeekedSequenceNumber*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_LastPeekedSequenceNumber" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.LastPeekedSequenceNumber">LastPeekedSequenceNumber</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_LastPeekedSequenceNumber" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.LastPeekedSequenceNumber"><a href="#collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_LastPeekedSequenceNumber" class="expander" data-toggle="collapse">LastPeekedSequenceNumber</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_LastPeekedSequenceNumber" class="collapse in">
   <div class="markdown level1 summary"><p>Gets the sequence number of the last peeked message.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">long LastPeekedSequenceNumber { get; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_LastPeekedSequenceNumber_seealso">See Also</h5>
   <div class="seealso">
       <div><a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html#Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekAsync">PeekAsync()</a></div>
   </div>
+  </div>
   <h3 id="methods">Methods
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_CompleteAsync_System_Collections_Generic_IEnumerable_System_String__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.CompleteAsync(System.Collections.Generic.IEnumerable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_CompleteAsync_System_Collections_Generic_IEnumerable_System_String__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.CompleteAsync(System.Collections.Generic.IEnumerable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L110">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L110" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_CompleteAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.CompleteAsync*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_CompleteAsync_System_Collections_Generic_IEnumerable_System_String__" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.CompleteAsync(System.Collections.Generic.IEnumerable{System.String})">CompleteAsync(IEnumerable&lt;String&gt;)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_CompleteAsync_System_Collections_Generic_IEnumerable_System_String__" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.CompleteAsync(System.Collections.Generic.IEnumerable{System.String})"><a href="#collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_CompleteAsync_System_Collections_Generic_IEnumerable_System_String__" class="expander" data-toggle="collapse">CompleteAsync(IEnumerable&lt;String&gt;)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_CompleteAsync_System_Collections_Generic_IEnumerable_System_String__" class="collapse in">
   <div class="markdown level1 summary"><p>Completes a series of <a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a> using a list of lock tokens. This will delete the message from the service.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task CompleteAsync(IEnumerable&lt;string&gt; lockTokens)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
-        <td><span class="parametername">lockTokens</span></td>
-        <td><p>An <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> containing the lock tokens of the corresponding messages to complete.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</span>
+        <span class="parametername">lockTokens</span>
+        <p><p>An <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> containing the lock tokens of the corresponding messages to complete.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_CompleteAsync_System_Collections_Generic_IEnumerable_System_String___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>A lock token can be found in <a class="xref" href="Microsoft.Azure.ServiceBus.Message.SystemPropertiesCollection.html#Microsoft_Azure_ServiceBus_Message_SystemPropertiesCollection_LockToken">LockToken</a>,
 only when <a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a> is set to <a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html#Microsoft_Azure_ServiceBus_ReceiveMode_PeekLock">PeekLock</a>.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_DeferAsync_System_String_System_Collections_Generic_IDictionary_System_String_System_Object__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.DeferAsync(System.String%2CSystem.Collections.Generic.IDictionary%7BSystem.String%2CSystem.Object%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_DeferAsync_System_String_System_Collections_Generic_IDictionary_System_String_System_Object__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.DeferAsync(System.String%2CSystem.Collections.Generic.IDictionary%7BSystem.String%2CSystem.Object%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L123">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L123" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_DeferAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.DeferAsync*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_DeferAsync_System_String_System_Collections_Generic_IDictionary_System_String_System_Object__" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.DeferAsync(System.String,System.Collections.Generic.IDictionary{System.String,System.Object})">DeferAsync(String, IDictionary&lt;String, Object&gt;)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_DeferAsync_System_String_System_Collections_Generic_IDictionary_System_String_System_Object__" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.DeferAsync(System.String,System.Collections.Generic.IDictionary{System.String,System.Object})"><a href="#collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_DeferAsync_System_String_System_Collections_Generic_IDictionary_System_String_System_Object__" class="expander" data-toggle="collapse">DeferAsync(String, IDictionary&lt;String, Object&gt;)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_DeferAsync_System_String_System_Collections_Generic_IDictionary_System_String_System_Object__" class="collapse in">
   <div class="markdown level1 summary"><p>Indicates that the receiver wants to defer the processing for the message.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task DeferAsync(string lockToken, IDictionary&lt;string, object&gt; propertiesToModify = null)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">lockToken</span></td>
-        <td><p>The lock token of the <a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
-        <td><span class="parametername">propertiesToModify</span></td>
-        <td><p>The properties of the message to modify while deferring the message.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">lockToken</span>
+        <p><p>The lock token of the <a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</span>
+        <span class="parametername">propertiesToModify</span>
+        <p><p>The properties of the message to modify while deferring the message.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_DeferAsync_System_String_System_Collections_Generic_IDictionary_System_String_System_Object___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>A lock token can be found in <a class="xref" href="Microsoft.Azure.ServiceBus.Message.SystemPropertiesCollection.html#Microsoft_Azure_ServiceBus_Message_SystemPropertiesCollection_LockToken">LockToken</a>,
 only when <a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a> is set to <a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html#Microsoft_Azure_ServiceBus_ReceiveMode_PeekLock">PeekLock</a>.
@@ -320,629 +351,724 @@ and receive it using <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMess
 Deferring messages does not impact message's expiration, meaning that deferred messages can still expire.
 This operation can only be performed on messages that were received by this receiver.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekAsync.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.PeekAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekAsync.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.PeekAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L159">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L159" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.PeekAsync*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekAsync" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.PeekAsync">PeekAsync()</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekAsync" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.PeekAsync"><a href="#collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekAsync" class="expander" data-toggle="collapse">PeekAsync()</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekAsync" class="collapse in">
   <div class="markdown level1 summary"><p>Fetches the next active message without changing the state of the receiver or the message source.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;Message&gt; PeekAsync()</code></pre>
   </div>
+  
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;</td>
-        <td><p>The <a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a> that represents the next message to be read. Returns null when nothing to peek.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;
+        <p><p>The <a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a> that represents the next message to be read. Returns null when nothing to peek.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekAsync_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The first call to <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html#Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekAsync">PeekAsync()</a> fetches the first active message for this receiver. Each subsequent call
 fetches the subsequent message in the entity.
 Unlike a received messaged, peeked message will not have lock token associated with it, and hence it cannot be Completed/Abandoned/Deferred/Deadlettered/Renewed.
 Also, unlike <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html#Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync">ReceiveAsync()</a>, this method will fetch even Deferred messages (but not Deadlettered message)</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekAsync_System_Int32_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.PeekAsync(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekAsync_System_Int32_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.PeekAsync(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L171">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L171" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.PeekAsync*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekAsync_System_Int32_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.PeekAsync(System.Int32)">PeekAsync(Int32)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekAsync_System_Int32_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.PeekAsync(System.Int32)"><a href="#collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekAsync_System_Int32_" class="expander" data-toggle="collapse">PeekAsync(Int32)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekAsync_System_Int32_" class="collapse in">
   <div class="markdown level1 summary"><p>Fetches the next batch of active messages without changing the state of the receiver or the message source.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;IList&lt;Message&gt;&gt; PeekAsync(int maxMessageCount)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">maxMessageCount</span></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">maxMessageCount</span>
+        <p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;&gt;</td>
-        <td><p>List of <a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a> that represents the next message to be read. Returns null when nothing to peek.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;&gt;
+        <p><p>List of <a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a> that represents the next message to be read. Returns null when nothing to peek.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekAsync_System_Int32__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The first call to <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html#Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekAsync">PeekAsync()</a> fetches the first active message for this receiver. Each subsequent call
 fetches the subsequent message in the entity.
 Unlike a received message, peeked message will not have lock token associated with it, and hence it cannot be Completed/Abandoned/Deferred/Deadlettered/Renewed.
 Also, unlike <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html#Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync">ReceiveAsync()</a>, this method will fetch even Deferred messages (but not Deadlettered message)</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekBySequenceNumberAsync_System_Int64_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.PeekBySequenceNumberAsync(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekBySequenceNumberAsync_System_Int64_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.PeekBySequenceNumberAsync(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L178">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L178" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekBySequenceNumberAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.PeekBySequenceNumberAsync*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekBySequenceNumberAsync_System_Int64_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.PeekBySequenceNumberAsync(System.Int64)">PeekBySequenceNumberAsync(Int64)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekBySequenceNumberAsync_System_Int64_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.PeekBySequenceNumberAsync(System.Int64)"><a href="#collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekBySequenceNumberAsync_System_Int64_" class="expander" data-toggle="collapse">PeekBySequenceNumberAsync(Int64)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekBySequenceNumberAsync_System_Int64_" class="collapse in">
   <div class="markdown level1 summary"><p>Asynchronously reads the next message without changing the state of the receiver or the message source.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;Message&gt; PeekBySequenceNumberAsync(long fromSequenceNumber)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
-        <td><span class="parametername">fromSequenceNumber</span></td>
-        <td><p>The sequence number from where to read the message.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></span>
+        <span class="parametername">fromSequenceNumber</span>
+        <p><p>The sequence number from where to read the message.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;</td>
-        <td><p>The asynchronous operation that returns the <a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a> that represents the next message to be read.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;
+        <p><p>The asynchronous operation that returns the <a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a> that represents the next message to be read.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekBySequenceNumberAsync_System_Int64_System_Int32_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.PeekBySequenceNumberAsync(System.Int64%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekBySequenceNumberAsync_System_Int64_System_Int32_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.PeekBySequenceNumberAsync(System.Int64%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L183">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L183" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekBySequenceNumberAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.PeekBySequenceNumberAsync*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekBySequenceNumberAsync_System_Int64_System_Int32_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.PeekBySequenceNumberAsync(System.Int64,System.Int32)">PeekBySequenceNumberAsync(Int64, Int32)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekBySequenceNumberAsync_System_Int64_System_Int32_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.PeekBySequenceNumberAsync(System.Int64,System.Int32)"><a href="#collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekBySequenceNumberAsync_System_Int64_System_Int32_" class="expander" data-toggle="collapse">PeekBySequenceNumberAsync(Int64, Int32)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_PeekBySequenceNumberAsync_System_Int64_System_Int32_" class="collapse in">
   <div class="markdown level1 summary"><p>Peeks a batch of messages.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;IList&lt;Message&gt;&gt; PeekBySequenceNumberAsync(long fromSequenceNumber, int messageCount)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
-        <td><span class="parametername">fromSequenceNumber</span></td>
-        <td><p>The starting point from which to browse a batch of messages.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">messageCount</span></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></span>
+        <span class="parametername">fromSequenceNumber</span>
+        <p><p>The starting point from which to browse a batch of messages.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">messageCount</span>
+        <p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;&gt;</td>
-        <td><p>A batch of messages peeked.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;&gt;
+        <p><p>A batch of messages peeked.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L48">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L48" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveAsync*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveAsync">ReceiveAsync()</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveAsync"><a href="#collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync" class="expander" data-toggle="collapse">ReceiveAsync()</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync" class="collapse in">
   <div class="markdown level1 summary"><p>Receive a message from the entity defined by <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_Path">Path</a> using <a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a> mode.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;Message&gt; ReceiveAsync()</code></pre>
   </div>
+  
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;</td>
-        <td><p>The message received. Returns null if no message is found.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;
+        <p><p>The message received. Returns null if no message is found.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Operation will time out after duration of <a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_OperationTimeout">OperationTimeout</a></p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_System_Int32_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveAsync(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_System_Int32_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveAsync(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L68">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L68" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveAsync*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_System_Int32_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveAsync(System.Int32)">ReceiveAsync(Int32)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_System_Int32_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveAsync(System.Int32)"><a href="#collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_System_Int32_" class="expander" data-toggle="collapse">ReceiveAsync(Int32)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_System_Int32_" class="collapse in">
   <div class="markdown level1 summary"><p>Receives a maximum of <code data-dev-comment-type="paramref" class="paramref">maxMessageCount</code> messages from the entity defined by <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_Path">Path</a> using <a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a> mode.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;IList&lt;Message&gt;&gt; ReceiveAsync(int maxMessageCount)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">maxMessageCount</span></td>
-        <td><p>The maximum number of messages that will be received.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">maxMessageCount</span>
+        <p><p>The maximum number of messages that will be received.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;&gt;</td>
-        <td><p>List of messages received. Returns null if no message is found.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;&gt;
+        <p><p>List of messages received. Returns null if no message is found.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_System_Int32__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Receiving less than <code data-dev-comment-type="paramref" class="paramref">maxMessageCount</code> messages is not an indication of empty entity.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_System_Int32_System_TimeSpan_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveAsync(System.Int32%2CSystem.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_System_Int32_System_TimeSpan_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveAsync(System.Int32%2CSystem.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L81">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L81" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveAsync*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_System_Int32_System_TimeSpan_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveAsync(System.Int32,System.TimeSpan)">ReceiveAsync(Int32, TimeSpan)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_System_Int32_System_TimeSpan_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveAsync(System.Int32,System.TimeSpan)"><a href="#collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_System_Int32_System_TimeSpan_" class="expander" data-toggle="collapse">ReceiveAsync(Int32, TimeSpan)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_System_Int32_System_TimeSpan_" class="collapse in">
   <div class="markdown level1 summary"><p>Receives a maximum of <code data-dev-comment-type="paramref" class="paramref">maxMessageCount</code> messages from the entity defined by <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_Path">Path</a> using <a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a> mode.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;IList&lt;Message&gt;&gt; ReceiveAsync(int maxMessageCount, TimeSpan operationTimeout)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">maxMessageCount</span></td>
-        <td><p>The maximum number of messages that will be received.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
-        <td><span class="parametername">operationTimeout</span></td>
-        <td><p>The time span the client waits for receiving a message before it times out.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">maxMessageCount</span>
+        <p><p>The maximum number of messages that will be received.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></span>
+        <span class="parametername">operationTimeout</span>
+        <p><p>The time span the client waits for receiving a message before it times out.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;&gt;</td>
-        <td><p>List of messages received. Returns null if no message is found.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;&gt;
+        <p><p>List of messages received. Returns null if no message is found.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_System_Int32_System_TimeSpan__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Receiving less than <code data-dev-comment-type="paramref" class="paramref">maxMessageCount</code> messages is not an indication of empty entity.
 The parameter <code data-dev-comment-type="paramref" class="paramref">operationTimeout</code> includes the time taken by the receiver to establish a connection
 (either during the first receive or when connection needs to be re-established). If establishing the connection
 times out, this will throw <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a>.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_System_TimeSpan_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveAsync(System.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_System_TimeSpan_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveAsync(System.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L60">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L60" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveAsync*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_System_TimeSpan_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveAsync(System.TimeSpan)">ReceiveAsync(TimeSpan)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_System_TimeSpan_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveAsync(System.TimeSpan)"><a href="#collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_System_TimeSpan_" class="expander" data-toggle="collapse">ReceiveAsync(TimeSpan)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_System_TimeSpan_" class="collapse in">
   <div class="markdown level1 summary"><p>Receive a message from the entity defined by <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_Path">Path</a> using <a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a> mode.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;Message&gt; ReceiveAsync(TimeSpan operationTimeout)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
-        <td><span class="parametername">operationTimeout</span></td>
-        <td><p>The time span the client waits for receiving a message before it times out.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></span>
+        <span class="parametername">operationTimeout</span>
+        <p><p>The time span the client waits for receiving a message before it times out.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;</td>
-        <td><p>The message received. Returns null if no message is found.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;
+        <p><p>The message received. Returns null if no message is found.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveAsync_System_TimeSpan__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The parameter <code data-dev-comment-type="paramref" class="paramref">operationTimeout</code> includes the time taken by the receiver to establish a connection
 (either during the first receive or when connection needs to be re-established). If establishing the connection
 times out, this will throw <a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusTimeoutException.html">ServiceBusTimeoutException</a>.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveDeferredMessageAsync_System_Collections_Generic_IEnumerable_System_Int64__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveDeferredMessageAsync(System.Collections.Generic.IEnumerable%7BSystem.Int64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveDeferredMessageAsync_System_Collections_Generic_IEnumerable_System_Int64__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveDeferredMessageAsync(System.Collections.Generic.IEnumerable%7BSystem.Int64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L99">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L99" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveDeferredMessageAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveDeferredMessageAsync*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveDeferredMessageAsync_System_Collections_Generic_IEnumerable_System_Int64__" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveDeferredMessageAsync(System.Collections.Generic.IEnumerable{System.Int64})">ReceiveDeferredMessageAsync(IEnumerable&lt;Int64&gt;)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveDeferredMessageAsync_System_Collections_Generic_IEnumerable_System_Int64__" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveDeferredMessageAsync(System.Collections.Generic.IEnumerable{System.Int64})"><a href="#collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveDeferredMessageAsync_System_Collections_Generic_IEnumerable_System_Int64__" class="expander" data-toggle="collapse">ReceiveDeferredMessageAsync(IEnumerable&lt;Int64&gt;)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveDeferredMessageAsync_System_Collections_Generic_IEnumerable_System_Int64__" class="collapse in">
   <div class="markdown level1 summary"><p>Receives a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList&lt;T&gt;</a> of deferred messages identified by <code data-dev-comment-type="paramref" class="paramref">sequenceNumbers</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;IList&lt;Message&gt;&gt; ReceiveDeferredMessageAsync(IEnumerable&lt;long&gt; sequenceNumbers)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
-        <td><span class="parametername">sequenceNumbers</span></td>
-        <td><p>An <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> containing the sequence numbers to receive.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</span>
+        <span class="parametername">sequenceNumbers</span>
+        <p><p>An <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> containing the sequence numbers to receive.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;&gt;</td>
-        <td><p>Messages identified by sequence number are returned. Returns null if no messages are found.
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;&gt;
+        <p><p>Messages identified by sequence number are returned. Returns null if no messages are found.
 Throws if the messages have not been deferred.</p>
-</td>
-      </tr>
-    </tbody>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveDeferredMessageAsync_System_Collections_Generic_IEnumerable_System_Int64___seealso">See Also</h5>
   <div class="seealso">
       <div><a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html#Microsoft_Azure_ServiceBus_Core_IMessageReceiver_DeferAsync_System_String_System_Collections_Generic_IDictionary_System_String_System_Object__">DeferAsync(String, IDictionary&lt;String, Object&gt;)</a></div>
   </div>
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveDeferredMessageAsync_System_Int64_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveDeferredMessageAsync(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveDeferredMessageAsync_System_Int64_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveDeferredMessageAsync(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L90">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L90" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveDeferredMessageAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveDeferredMessageAsync*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveDeferredMessageAsync_System_Int64_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveDeferredMessageAsync(System.Int64)">ReceiveDeferredMessageAsync(Int64)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveDeferredMessageAsync_System_Int64_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.ReceiveDeferredMessageAsync(System.Int64)"><a href="#collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveDeferredMessageAsync_System_Int64_" class="expander" data-toggle="collapse">ReceiveDeferredMessageAsync(Int64)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveDeferredMessageAsync_System_Int64_" class="collapse in">
   <div class="markdown level1 summary"><p>Receives a specific deferred message identified by <code data-dev-comment-type="paramref" class="paramref">sequenceNumber</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;Message&gt; ReceiveDeferredMessageAsync(long sequenceNumber)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
-        <td><span class="parametername">sequenceNumber</span></td>
-        <td><p>The sequence number of the message that will be received.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></span>
+        <span class="parametername">sequenceNumber</span>
+        <p><p>The sequence number of the message that will be received.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;</td>
-        <td><p>Message identified by sequence number <code data-dev-comment-type="paramref" class="paramref">sequenceNumber</code>. Returns null if no such message is found.
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;
+        <p><p>Message identified by sequence number <code data-dev-comment-type="paramref" class="paramref">sequenceNumber</code>. Returns null if no such message is found.
 Throws if the message has not been deferred.</p>
-</td>
-      </tr>
-    </tbody>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_ReceiveDeferredMessageAsync_System_Int64__seealso">See Also</h5>
   <div class="seealso">
       <div><a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html#Microsoft_Azure_ServiceBus_Core_IMessageReceiver_DeferAsync_System_String_System_Collections_Generic_IDictionary_System_String_System_Object__">DeferAsync(String, IDictionary&lt;String, Object&gt;)</a></div>
   </div>
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_RenewLockAsync_Microsoft_Azure_ServiceBus_Message_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.RenewLockAsync(Microsoft.Azure.ServiceBus.Message)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_RenewLockAsync_Microsoft_Azure_ServiceBus_Message_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.RenewLockAsync(Microsoft.Azure.ServiceBus.Message)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L134">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L134" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_RenewLockAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.RenewLockAsync*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_RenewLockAsync_Microsoft_Azure_ServiceBus_Message_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.RenewLockAsync(Microsoft.Azure.ServiceBus.Message)">RenewLockAsync(Message)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_RenewLockAsync_Microsoft_Azure_ServiceBus_Message_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.RenewLockAsync(Microsoft.Azure.ServiceBus.Message)"><a href="#collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_RenewLockAsync_Microsoft_Azure_ServiceBus_Message_" class="expander" data-toggle="collapse">RenewLockAsync(Message)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_RenewLockAsync_Microsoft_Azure_ServiceBus_Message_" class="collapse in">
   <div class="markdown level1 summary"><p>Renews the lock on the message. The lock will be renewed based on the setting specified on the queue.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task RenewLockAsync(Message message)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a></td>
-        <td><span class="parametername">message</span></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a></span>
+        <span class="parametername">message</span>
+        <p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_RenewLockAsync_Microsoft_Azure_ServiceBus_Message__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>When a message is received in <a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html#Microsoft_Azure_ServiceBus_ReceiveMode_PeekLock">PeekLock</a> mode, the message is locked on the server for this
 receiver instance for a duration as specified during the Queue/Subscription creation (LockDuration).
 If processing of the message requires longer than this duration, the lock needs to be renewed.
 For each renewal, it resets the time the message is locked by the LockDuration set on the Entity.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_RenewLockAsync_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.RenewLockAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver_RenewLockAsync_System_String_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver.RenewLockAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L147">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L147" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_RenewLockAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.RenewLockAsync*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_RenewLockAsync_System_String_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.RenewLockAsync(System.String)">RenewLockAsync(String)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_RenewLockAsync_System_String_" data-uid="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.RenewLockAsync(System.String)"><a href="#collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_RenewLockAsync_System_String_" class="expander" data-toggle="collapse">RenewLockAsync(String)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_Core_IMessageReceiver_RenewLockAsync_System_String_" class="collapse in">
   <div class="markdown level1 summary"><p>Renews the lock on the message. The lock will be renewed based on the setting specified on the queue.
 <returns>New lock token expiry date and time in UTC format.</returns></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;DateTime&gt; RenewLockAsync(string lockToken)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">lockToken</span></td>
-        <td><p>Lock token associated with the message.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">lockToken</span>
+        <p><p>Lock token associated with the message.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_Core_IMessageReceiver_RenewLockAsync_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>When a message is received in <a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html#Microsoft_Azure_ServiceBus_ReceiveMode_PeekLock">PeekLock</a> mode, the message is locked on the server for this
 receiver instance for a duration as specified during the Queue/Subscription creation (LockDuration).
 If processing of the message requires longer than this duration, the lock needs to be renewed.
 For each renewal, it resets the time the message is locked by the LockDuration set on the Entity.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
@@ -962,6 +1088,7 @@ For each renewal, it resets the time the message is locked by the LockDuration s
   <div>
       <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
+  
   <h3 id="seealso">See Also</h3>
   <div class="seealso">
       <div><a class="xref" href="Microsoft.Azure.ServiceBus.Core.MessageReceiver.html">MessageReceiver</a></div>
@@ -970,21 +1097,14 @@ For each renewal, it resets the time the message is locked by the LockDuration s
   </div>
 </article>
           </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L37" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
+          </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Core_IMessageReceiver.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Core.IMessageReceiver%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Core/IMessageReceiver.cs/#L37" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

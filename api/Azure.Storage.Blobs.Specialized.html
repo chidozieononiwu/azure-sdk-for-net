@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,16 +79,18 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Azure.Storage.Blobs.Specialized">
-  
-  <h1 id="Azure_Storage_Blobs_Specialized" data-uid="Azure.Storage.Blobs.Specialized" class="text-break">Namespace Azure.Storage.Blobs.Specialized
+  <h1 id="Azure_Storage_Blobs_Specialized" data-uid="Azure.Storage.Blobs.Specialized">Namespace Azure.Storage.Blobs.Specialized
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="Azure.Storage.Blobs.Specialized.AppendBlobClient.html">AppendBlobClient</a></h4>
-      <section><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.AppendBlobClient.html">AppendBlobClient</a> allows you to manipulate Azure
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Storage.Blobs.Specialized.AppendBlobClient.html">AppendBlobClient</a></p>
+          <p><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.AppendBlobClient.html">AppendBlobClient</a> allows you to manipulate Azure
 Storage append blobs.</p>
 <p>An append blob is comprised of blocks and is optimized for append
 operations.  When you modify an append blob, blocks are added to the
@@ -99,13 +101,21 @@ Unlike a block blob, an append blob does not expose its block IDs.</p>
 of 4 MB, and an append blob can include up to 50,000 blocks.  The
 maximum size of an append blob is therefore slightly more than 195 GB
 (4 MB X 50,000 blocks).</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html">BlobBaseClient</a></h4>
-      <section><p>The <a class="xref" href="Azure.Storage.Blobs.BlobClient.html">BlobClient</a> allows you to manipulate Azure Storage
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html">BlobBaseClient</a></p>
+          <p><p>The <a class="xref" href="Azure.Storage.Blobs.BlobClient.html">BlobClient</a> allows you to manipulate Azure Storage
 blobs.</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html">BlockBlobClient</a></h4>
-      <section><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html">BlockBlobClient</a> allows you to manipulate Azure
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html">BlockBlobClient</a></p>
+          <p><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html">BlockBlobClient</a> allows you to manipulate Azure
 Storage block blobs.</p>
 <p>Block blobs let you upload large blobs efficiently.  Block blobs are
 comprised of blocks, each of which is identified by a block ID. You
@@ -158,17 +168,29 @@ one week after the last successful block upload. All uncommitted
 blocks are also discarded when a new blob of the same name is created
 using a single step(rather than the two-step block upload-then-commit
 process).</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Blobs.Specialized.EncryptedBlockBlobClient.html">EncryptedBlockBlobClient</a></h4>
-      <section><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.EncryptedBlockBlobClient.html">EncryptedBlockBlobClient</a> allows you to manipulate
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Storage.Blobs.Specialized.EncryptedBlockBlobClient.html">EncryptedBlockBlobClient</a></p>
+          <p><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.EncryptedBlockBlobClient.html">EncryptedBlockBlobClient</a> allows you to manipulate
 Azure Storage block blobs with client-side encryption.</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html">LeaseClient</a></h4>
-      <section><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html">LeaseClient</a> allows you to manipulate Azure
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html">LeaseClient</a></p>
+          <p><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html">LeaseClient</a> allows you to manipulate Azure
 Storage leases on containers and blobs.</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html">PageBlobClient</a></h4>
-      <section><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html">PageBlobClient</a> allows you to manipulate Azure
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html">PageBlobClient</a></p>
+          <p><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.PageBlobClient.html">PageBlobClient</a> allows you to manipulate Azure
 Storage page blobs.</p>
 <p>Page blobs are a collection of 512-byte pages optimized for random
 read and write operations. To create a page blob, you initialize the
@@ -179,22 +201,26 @@ boundaries.  A write to a page blob can overwrite just one page, some
 pages, or up to 4 MB of the page blob.  Writes to page blobs happen
 in-place and are immediately committed to the blob. The maximum size
 for a page blob is 8 TB.</p>
-</section>
-      <h4><a class="xref" href="Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.html">SpecializedBlobExtensions</a></h4>
-      <section><p>Add easy to discover methods to <a class="xref" href="Azure.Storage.Blobs.BlobContainerClient.html">BlobContainerClient</a> for
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.html">SpecializedBlobExtensions</a></p>
+          <p><p>Add easy to discover methods to <a class="xref" href="Azure.Storage.Blobs.BlobContainerClient.html">BlobContainerClient</a> for
 creating <a class="xref" href="Azure.Storage.Blobs.Specialized.AppendBlobClient.html">AppendBlobClient</a> instances.</p>
-</section>
+</p>
+        </td>
+      </tr>
+    </table>
 </article>
+          </div>
+          <div class="contribution-panel mobile-hide">
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

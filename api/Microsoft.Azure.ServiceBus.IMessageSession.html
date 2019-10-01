@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,13 +79,14 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Microsoft.Azure.ServiceBus.IMessageSession">
-  
-  
-  <h1 id="Microsoft_Azure_ServiceBus_IMessageSession" data-uid="Microsoft.Azure.ServiceBus.IMessageSession" class="text-break">Interface IMessageSession
+  <h1 id="Microsoft_Azure_ServiceBus_IMessageSession" data-uid="Microsoft.Azure.ServiceBus.IMessageSession">Interface IMessageSession
   </h1>
   <div class="markdown level0 summary"><p>Describes a Session object. IMessageSession can be used to perform operations on sessions.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  
+  
+  
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -188,12 +189,18 @@
       <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_UnregisterPlugin_System_String_">IClientEntity.UnregisterPlugin(String)</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.ServiceBus.html">Microsoft.Azure.ServiceBus</a></h6>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.ServiceBus.dll</h6>
+  
   <h5 id="Microsoft_Azure_ServiceBus_IMessageSession_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IMessageSession : IMessageReceiver, IReceiverClient, IClientEntity</code></pre>
   </div>
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_IMessageSession_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>
 Service Bus Sessions, also called &apos;Groups&apos; in the AMQP 1.0 protocol, are unbounded sequences of related messages. ServiceBus guarantees ordering of messages in a session.
@@ -207,135 +214,184 @@ Sessions come into existence when there is at least one message with the session
 Once a Session exists, there is no defined moment or gesture for when the session expires or disappears.
 </p>
 </div>
+  
   <h3 id="properties">Properties
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_IMessageSession_LockedUntilUtc.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.IMessageSession.LockedUntilUtc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_IMessageSession_LockedUntilUtc.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.IMessageSession.LockedUntilUtc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/IMessageSession.cs/#L36">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/IMessageSession.cs/#L36" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_IMessageSession_LockedUntilUtc_" data-uid="Microsoft.Azure.ServiceBus.IMessageSession.LockedUntilUtc*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_IMessageSession_LockedUntilUtc" data-uid="Microsoft.Azure.ServiceBus.IMessageSession.LockedUntilUtc">LockedUntilUtc</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_IMessageSession_LockedUntilUtc" data-uid="Microsoft.Azure.ServiceBus.IMessageSession.LockedUntilUtc"><a href="#collapsible-Microsoft_Azure_ServiceBus_IMessageSession_LockedUntilUtc" class="expander" data-toggle="collapse">LockedUntilUtc</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_IMessageSession_LockedUntilUtc" class="collapse in">
   <div class="markdown level1 summary"><p>Gets the time that the session identified by <a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html#Microsoft_Azure_ServiceBus_IMessageSession_SessionId">SessionId</a> is locked until for this client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">DateTime LockedUntilUtc { get; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_IMessageSession_SessionId.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.IMessageSession.SessionId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_IMessageSession_SessionId.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.IMessageSession.SessionId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/IMessageSession.cs/#L31">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/IMessageSession.cs/#L31" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_IMessageSession_SessionId_" data-uid="Microsoft.Azure.ServiceBus.IMessageSession.SessionId*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_IMessageSession_SessionId" data-uid="Microsoft.Azure.ServiceBus.IMessageSession.SessionId">SessionId</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_IMessageSession_SessionId" data-uid="Microsoft.Azure.ServiceBus.IMessageSession.SessionId"><a href="#collapsible-Microsoft_Azure_ServiceBus_IMessageSession_SessionId" class="expander" data-toggle="collapse">SessionId</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_IMessageSession_SessionId" class="collapse in">
   <div class="markdown level1 summary"><p>Gets the SessionId.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">string SessionId { get; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
   <h3 id="methods">Methods
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_IMessageSession_GetStateAsync.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.IMessageSession.GetStateAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_IMessageSession_GetStateAsync.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.IMessageSession.GetStateAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/IMessageSession.cs/#L42">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/IMessageSession.cs/#L42" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_IMessageSession_GetStateAsync_" data-uid="Microsoft.Azure.ServiceBus.IMessageSession.GetStateAsync*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_IMessageSession_GetStateAsync" data-uid="Microsoft.Azure.ServiceBus.IMessageSession.GetStateAsync">GetStateAsync()</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_IMessageSession_GetStateAsync" data-uid="Microsoft.Azure.ServiceBus.IMessageSession.GetStateAsync"><a href="#collapsible-Microsoft_Azure_ServiceBus_IMessageSession_GetStateAsync" class="expander" data-toggle="collapse">GetStateAsync()</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_IMessageSession_GetStateAsync" class="collapse in">
   <div class="markdown level1 summary"><p>Gets the session state.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;byte[]&gt; GetStateAsync()</code></pre>
   </div>
+  
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]&gt;</td>
-        <td><p>The session state as byte array.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]&gt;
+        <p><p>The session state as byte array.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_IMessageSession_RenewSessionLockAsync.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.IMessageSession.RenewSessionLockAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_IMessageSession_RenewSessionLockAsync.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.IMessageSession.RenewSessionLockAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/IMessageSession.cs/#L64">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/IMessageSession.cs/#L64" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_IMessageSession_RenewSessionLockAsync_" data-uid="Microsoft.Azure.ServiceBus.IMessageSession.RenewSessionLockAsync*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_IMessageSession_RenewSessionLockAsync" data-uid="Microsoft.Azure.ServiceBus.IMessageSession.RenewSessionLockAsync">RenewSessionLockAsync()</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_IMessageSession_RenewSessionLockAsync" data-uid="Microsoft.Azure.ServiceBus.IMessageSession.RenewSessionLockAsync"><a href="#collapsible-Microsoft_Azure_ServiceBus_IMessageSession_RenewSessionLockAsync" class="expander" data-toggle="collapse">RenewSessionLockAsync()</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_IMessageSession_RenewSessionLockAsync" class="collapse in">
   <div class="markdown level1 summary"><p>Renews the lock on the session specified by the <a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html#Microsoft_Azure_ServiceBus_IMessageSession_SessionId">SessionId</a>. The lock will be renewed based on the setting specified on the entity.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task RenewSessionLockAsync()</code></pre>
   </div>
+  
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_IMessageSession_RenewSessionLockAsync_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>
 When you accept a session, the session is locked for this client instance by the service for a duration as specified during the Queue/Subscription creation.
@@ -346,58 +402,69 @@ For each renewal, it resets the time the session is locked by the LockDuration s
 Renewal of session renews all the messages in the session as well. Each individual message need not be renewed.
 </p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_IMessageSession_SetStateAsync_System_Byte___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.IMessageSession.SetStateAsync(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_IMessageSession_SetStateAsync_System_Byte___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.IMessageSession.SetStateAsync(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/IMessageSession.cs/#L49">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/IMessageSession.cs/#L49" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_IMessageSession_SetStateAsync_" data-uid="Microsoft.Azure.ServiceBus.IMessageSession.SetStateAsync*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_IMessageSession_SetStateAsync_System_Byte___" data-uid="Microsoft.Azure.ServiceBus.IMessageSession.SetStateAsync(System.Byte[])">SetStateAsync(Byte[])</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_IMessageSession_SetStateAsync_System_Byte___" data-uid="Microsoft.Azure.ServiceBus.IMessageSession.SetStateAsync(System.Byte[])"><a href="#collapsible-Microsoft_Azure_ServiceBus_IMessageSession_SetStateAsync_System_Byte___" class="expander" data-toggle="collapse">SetStateAsync(Byte[])</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_IMessageSession_SetStateAsync_System_Byte___" class="collapse in">
   <div class="markdown level1 summary"><p>Set a custom state on the session which can be later retrieved using <a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html#Microsoft_Azure_ServiceBus_IMessageSession_GetStateAsync">GetStateAsync()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task SetStateAsync(byte[] sessionState)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
-        <td><span class="parametername">sessionState</span></td>
-        <td><p>A byte array of session state</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</span>
+        <span class="parametername">sessionState</span>
+        <p><p>A byte array of session state</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_IMessageSession_SetStateAsync_System_Byte____remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This state is stored on Service Bus forever unless you set an empty state on it.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
@@ -417,23 +484,17 @@ Renewal of session renews all the messages in the session as well. Each individu
   <div>
       <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
+  
 </article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_IMessageSession.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.IMessageSession%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/IMessageSession.cs/#L26" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_IMessageSession.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.IMessageSession%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/IMessageSession.cs/#L26" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,9 +79,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Microsoft.Azure.KeyVault.KeyVaultKeyResolver">
-  
-  
-  <h1 id="Microsoft_Azure_KeyVault_KeyVaultKeyResolver" data-uid="Microsoft.Azure.KeyVault.KeyVaultKeyResolver" class="text-break">Class KeyVaultKeyResolver
+  <h1 id="Microsoft_Azure_KeyVault_KeyVaultKeyResolver" data-uid="Microsoft.Azure.KeyVault.KeyVaultKeyResolver">Class KeyVaultKeyResolver
   </h1>
   <div class="markdown level0 summary"><p>Azure Key Vault KeyResolver. This class resolves Key Vault Key Identifiers and
 Secret Identifiers to implementations of IKey. Secret Identifiers can only
@@ -89,15 +87,14 @@ be resolved if the Secret is a byte array with a length matching one of the AES
 key lengths (128, 192, 256) and the content-type of the secret is application/octet-stream.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">KeyVaultKeyResolver</span></div>
   </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="Microsoft.Azure.KeyVault.Core.IKeyResolver.html">IKeyResolver</a></div>
-  </div>
+  
+  
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -122,228 +119,294 @@ key lengths (128, 192, 256) and the content-type of the secret is application/oc
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.KeyVault.html">Microsoft.Azure.KeyVault</a></h6>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.KeyVault.Extensions.dll</h6>
+  
   <h5 id="Microsoft_Azure_KeyVault_KeyVaultKeyResolver_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class KeyVaultKeyResolver : IKeyResolver</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h3 id="constructors">Constructors
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_KeyVault_KeyVaultKeyResolver__ctor_Microsoft_Azure_KeyVault_IKeyVaultClient_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.KeyVaultKeyResolver.%23ctor(Microsoft.Azure.KeyVault.IKeyVaultClient)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_KeyVault_KeyVaultKeyResolver__ctor_Microsoft_Azure_KeyVault_IKeyVaultClient_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.KeyVaultKeyResolver.%23ctor(Microsoft.Azure.KeyVault.IKeyVaultClient)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/keyvault/Microsoft.Azure.KeyVault.Extensions/src/KeyVaultKeyResolver.cs/#L37">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/keyvault/Microsoft.Azure.KeyVault.Extensions/src/KeyVaultKeyResolver.cs/#L37" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_KeyVault_KeyVaultKeyResolver__ctor_" data-uid="Microsoft.Azure.KeyVault.KeyVaultKeyResolver.#ctor*"></a>
-  <h4 id="Microsoft_Azure_KeyVault_KeyVaultKeyResolver__ctor_Microsoft_Azure_KeyVault_IKeyVaultClient_" data-uid="Microsoft.Azure.KeyVault.KeyVaultKeyResolver.#ctor(Microsoft.Azure.KeyVault.IKeyVaultClient)">KeyVaultKeyResolver(IKeyVaultClient)</h4>
+  
+  <h4 id="Microsoft_Azure_KeyVault_KeyVaultKeyResolver__ctor_Microsoft_Azure_KeyVault_IKeyVaultClient_" data-uid="Microsoft.Azure.KeyVault.KeyVaultKeyResolver.#ctor(Microsoft.Azure.KeyVault.IKeyVaultClient)"><a href="#collapsible-Microsoft_Azure_KeyVault_KeyVaultKeyResolver__ctor_Microsoft_Azure_KeyVault_IKeyVaultClient_" class="expander" data-toggle="collapse">KeyVaultKeyResolver(IKeyVaultClient)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_KeyVault_KeyVaultKeyResolver__ctor_Microsoft_Azure_KeyVault_IKeyVaultClient_" class="collapse in">
   <div class="markdown level1 summary"><p>Create a new Key Vault KeyResolver that uses the specified KeyVaultClient</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public KeyVaultKeyResolver(IKeyVaultClient client)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.KeyVault.IKeyVaultClient.html">IKeyVaultClient</a></td>
-        <td><span class="parametername">client</span></td>
-        <td><p>Key Vault client</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Azure.KeyVault.IKeyVaultClient.html">IKeyVaultClient</a></span>
+        <span class="parametername">client</span>
+        <p><p>Key Vault client</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_KeyVault_KeyVaultKeyResolver__ctor_Microsoft_Azure_KeyVault_KeyVaultClient_AuthenticationCallback_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.KeyVaultKeyResolver.%23ctor(Microsoft.Azure.KeyVault.KeyVaultClient.AuthenticationCallback)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_KeyVault_KeyVaultKeyResolver__ctor_Microsoft_Azure_KeyVault_KeyVaultClient_AuthenticationCallback_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.KeyVaultKeyResolver.%23ctor(Microsoft.Azure.KeyVault.KeyVaultClient.AuthenticationCallback)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/keyvault/Microsoft.Azure.KeyVault.Extensions/src/KeyVaultKeyResolver.cs/#L28">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/keyvault/Microsoft.Azure.KeyVault.Extensions/src/KeyVaultKeyResolver.cs/#L28" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_KeyVault_KeyVaultKeyResolver__ctor_" data-uid="Microsoft.Azure.KeyVault.KeyVaultKeyResolver.#ctor*"></a>
-  <h4 id="Microsoft_Azure_KeyVault_KeyVaultKeyResolver__ctor_Microsoft_Azure_KeyVault_KeyVaultClient_AuthenticationCallback_" data-uid="Microsoft.Azure.KeyVault.KeyVaultKeyResolver.#ctor(Microsoft.Azure.KeyVault.KeyVaultClient.AuthenticationCallback)">KeyVaultKeyResolver(KeyVaultClient.AuthenticationCallback)</h4>
+  
+  <h4 id="Microsoft_Azure_KeyVault_KeyVaultKeyResolver__ctor_Microsoft_Azure_KeyVault_KeyVaultClient_AuthenticationCallback_" data-uid="Microsoft.Azure.KeyVault.KeyVaultKeyResolver.#ctor(Microsoft.Azure.KeyVault.KeyVaultClient.AuthenticationCallback)"><a href="#collapsible-Microsoft_Azure_KeyVault_KeyVaultKeyResolver__ctor_Microsoft_Azure_KeyVault_KeyVaultClient_AuthenticationCallback_" class="expander" data-toggle="collapse">KeyVaultKeyResolver(KeyVaultClient.AuthenticationCallback)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_KeyVault_KeyVaultKeyResolver__ctor_Microsoft_Azure_KeyVault_KeyVaultClient_AuthenticationCallback_" class="collapse in">
   <div class="markdown level1 summary"><p>Creates a new Key Vault KeyResolver that uses a KeyVaultClient constructed
 with the provided authentication callback.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public KeyVaultKeyResolver(KeyVaultClient.AuthenticationCallback authenticationCallback)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.KeyVault.KeyVaultClient.AuthenticationCallback.html">KeyVaultClient.AuthenticationCallback</a></td>
-        <td><span class="parametername">authenticationCallback</span></td>
-        <td><p>Key Vault authentication callback</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Azure.KeyVault.KeyVaultClient.AuthenticationCallback.html">KeyVaultClient.AuthenticationCallback</a></span>
+        <span class="parametername">authenticationCallback</span>
+        <p><p>Key Vault authentication callback</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_KeyVault_KeyVaultKeyResolver__ctor_System_String_Microsoft_Azure_KeyVault_IKeyVaultClient_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.KeyVaultKeyResolver.%23ctor(System.String%2CMicrosoft.Azure.KeyVault.IKeyVaultClient)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_KeyVault_KeyVaultKeyResolver__ctor_System_String_Microsoft_Azure_KeyVault_IKeyVaultClient_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.KeyVaultKeyResolver.%23ctor(System.String%2CMicrosoft.Azure.KeyVault.IKeyVaultClient)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/keyvault/Microsoft.Azure.KeyVault.Extensions/src/KeyVaultKeyResolver.cs/#L61">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/keyvault/Microsoft.Azure.KeyVault.Extensions/src/KeyVaultKeyResolver.cs/#L61" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_KeyVault_KeyVaultKeyResolver__ctor_" data-uid="Microsoft.Azure.KeyVault.KeyVaultKeyResolver.#ctor*"></a>
-  <h4 id="Microsoft_Azure_KeyVault_KeyVaultKeyResolver__ctor_System_String_Microsoft_Azure_KeyVault_IKeyVaultClient_" data-uid="Microsoft.Azure.KeyVault.KeyVaultKeyResolver.#ctor(System.String,Microsoft.Azure.KeyVault.IKeyVaultClient)">KeyVaultKeyResolver(String, IKeyVaultClient)</h4>
+  
+  <h4 id="Microsoft_Azure_KeyVault_KeyVaultKeyResolver__ctor_System_String_Microsoft_Azure_KeyVault_IKeyVaultClient_" data-uid="Microsoft.Azure.KeyVault.KeyVaultKeyResolver.#ctor(System.String,Microsoft.Azure.KeyVault.IKeyVaultClient)"><a href="#collapsible-Microsoft_Azure_KeyVault_KeyVaultKeyResolver__ctor_System_String_Microsoft_Azure_KeyVault_IKeyVaultClient_" class="expander" data-toggle="collapse">KeyVaultKeyResolver(String, IKeyVaultClient)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_KeyVault_KeyVaultKeyResolver__ctor_System_String_Microsoft_Azure_KeyVault_IKeyVaultClient_" class="collapse in">
   <div class="markdown level1 summary"><p>Creates a new Key Vault KeyResolver that uses the specified KeyVaultClient
 and only resolves keys for the specified key vault</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public KeyVaultKeyResolver(string vaultName, IKeyVaultClient client)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">vaultName</span></td>
-        <td><p>The URL for the Key Vault, e.g. <a href="https://myvault.vault.azure.net/">https://myvault.vault.azure.net/</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.KeyVault.IKeyVaultClient.html">IKeyVaultClient</a></td>
-        <td><span class="parametername">client</span></td>
-        <td><p>Key Vault client</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">vaultName</span>
+        <p><p>The URL for the Key Vault, e.g. <a href="https://myvault.vault.azure.net/">https://myvault.vault.azure.net/</a></p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Azure.KeyVault.IKeyVaultClient.html">IKeyVaultClient</a></span>
+        <span class="parametername">client</span>
+        <p><p>Key Vault client</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_KeyVault_KeyVaultKeyResolver__ctor_System_String_Microsoft_Azure_KeyVault_KeyVaultClient_AuthenticationCallback_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.KeyVaultKeyResolver.%23ctor(System.String%2CMicrosoft.Azure.KeyVault.KeyVaultClient.AuthenticationCallback)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_KeyVault_KeyVaultKeyResolver__ctor_System_String_Microsoft_Azure_KeyVault_KeyVaultClient_AuthenticationCallback_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.KeyVaultKeyResolver.%23ctor(System.String%2CMicrosoft.Azure.KeyVault.KeyVaultClient.AuthenticationCallback)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/keyvault/Microsoft.Azure.KeyVault.Extensions/src/KeyVaultKeyResolver.cs/#L50">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/keyvault/Microsoft.Azure.KeyVault.Extensions/src/KeyVaultKeyResolver.cs/#L50" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_KeyVault_KeyVaultKeyResolver__ctor_" data-uid="Microsoft.Azure.KeyVault.KeyVaultKeyResolver.#ctor*"></a>
-  <h4 id="Microsoft_Azure_KeyVault_KeyVaultKeyResolver__ctor_System_String_Microsoft_Azure_KeyVault_KeyVaultClient_AuthenticationCallback_" data-uid="Microsoft.Azure.KeyVault.KeyVaultKeyResolver.#ctor(System.String,Microsoft.Azure.KeyVault.KeyVaultClient.AuthenticationCallback)">KeyVaultKeyResolver(String, KeyVaultClient.AuthenticationCallback)</h4>
+  
+  <h4 id="Microsoft_Azure_KeyVault_KeyVaultKeyResolver__ctor_System_String_Microsoft_Azure_KeyVault_KeyVaultClient_AuthenticationCallback_" data-uid="Microsoft.Azure.KeyVault.KeyVaultKeyResolver.#ctor(System.String,Microsoft.Azure.KeyVault.KeyVaultClient.AuthenticationCallback)"><a href="#collapsible-Microsoft_Azure_KeyVault_KeyVaultKeyResolver__ctor_System_String_Microsoft_Azure_KeyVault_KeyVaultClient_AuthenticationCallback_" class="expander" data-toggle="collapse">KeyVaultKeyResolver(String, KeyVaultClient.AuthenticationCallback)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_KeyVault_KeyVaultKeyResolver__ctor_System_String_Microsoft_Azure_KeyVault_KeyVaultClient_AuthenticationCallback_" class="collapse in">
   <div class="markdown level1 summary"><p>Creates a new Key Vault KeyResolver that uses a KeyVaultClient constructed
 with the provided authentication callback and only resolves keys for the
 specified key vault</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public KeyVaultKeyResolver(string vaultName, KeyVaultClient.AuthenticationCallback authenticationCallback)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">vaultName</span></td>
-        <td><p>The URL for the Key Vault, e.g. <a href="https://myvault.vault.azure.net/">https://myvault.vault.azure.net/</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.KeyVault.KeyVaultClient.AuthenticationCallback.html">KeyVaultClient.AuthenticationCallback</a></td>
-        <td><span class="parametername">authenticationCallback</span></td>
-        <td><p>Key Vault authentication callback</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">vaultName</span>
+        <p><p>The URL for the Key Vault, e.g. <a href="https://myvault.vault.azure.net/">https://myvault.vault.azure.net/</a></p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Azure.KeyVault.KeyVaultClient.AuthenticationCallback.html">KeyVaultClient.AuthenticationCallback</a></span>
+        <span class="parametername">authenticationCallback</span>
+        <p><p>Key Vault authentication callback</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
   <h3 id="methods">Methods
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_KeyVault_KeyVaultKeyResolver_ResolveKeyAsync_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.KeyVaultKeyResolver.ResolveKeyAsync(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_KeyVault_KeyVaultKeyResolver_ResolveKeyAsync_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.KeyVaultKeyResolver.ResolveKeyAsync(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/keyvault/Microsoft.Azure.KeyVault.Extensions/src/KeyVaultKeyResolver.cs/#L81">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/keyvault/Microsoft.Azure.KeyVault.Extensions/src/KeyVaultKeyResolver.cs/#L81" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_KeyVault_KeyVaultKeyResolver_ResolveKeyAsync_" data-uid="Microsoft.Azure.KeyVault.KeyVaultKeyResolver.ResolveKeyAsync*"></a>
-  <h4 id="Microsoft_Azure_KeyVault_KeyVaultKeyResolver_ResolveKeyAsync_System_String_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.KeyVault.KeyVaultKeyResolver.ResolveKeyAsync(System.String,System.Threading.CancellationToken)">ResolveKeyAsync(String, CancellationToken)</h4>
+  
+  <h4 id="Microsoft_Azure_KeyVault_KeyVaultKeyResolver_ResolveKeyAsync_System_String_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.KeyVault.KeyVaultKeyResolver.ResolveKeyAsync(System.String,System.Threading.CancellationToken)"><a href="#collapsible-Microsoft_Azure_KeyVault_KeyVaultKeyResolver_ResolveKeyAsync_System_String_System_Threading_CancellationToken_" class="expander" data-toggle="collapse">ResolveKeyAsync(String, CancellationToken)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_KeyVault_KeyVaultKeyResolver_ResolveKeyAsync_System_String_System_Threading_CancellationToken_" class="collapse in">
   <div class="markdown level1 summary"><p>Provides an IKey implementation for the specified key or secret identifier.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Task&lt;IKey&gt; ResolveKeyAsync(string kid, CancellationToken token)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">kid</span></td>
-        <td><p>The key or secret identifier to resolve</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">token</span></td>
-        <td><p>Cancellation token</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">kid</span>
+        <p><p>The key or secret identifier to resolve</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></span>
+        <span class="parametername">token</span>
+        <p><p>Cancellation token</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.KeyVault.Core.IKey.html">IKey</a>&gt;</td>
-        <td><p>The resolved IKey implementation or null</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.KeyVault.Core.IKey.html">IKey</a>&gt;
+        <p><p>The resolved IKey implementation or null</p>
+</p>
+      </td>
+    </tr>
   </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="Microsoft.Azure.KeyVault.Core.IKeyResolver.html">IKeyResolver</a>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Microsoft.Azure.KeyVault.Core.IKeyResolver.html#Microsoft_Azure_KeyVault_Core_IKeyResolver_ResolveKeyAsync_System_String_System_Threading_CancellationToken_">IKeyResolver.ResolveKeyAsync(String, CancellationToken)</a></div>
+  
+  
+  
+  
   </div>
+  
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
@@ -363,23 +426,17 @@ specified key vault</p>
   <div>
       <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
+  
 </article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_KeyVault_KeyVaultKeyResolver.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.KeyVaultKeyResolver%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/keyvault/Microsoft.Azure.KeyVault.Extensions/src/KeyVaultKeyResolver.cs/#L18" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_KeyVault_KeyVaultKeyResolver.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.KeyVaultKeyResolver%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/keyvault/Microsoft.Azure.KeyVault.Extensions/src/KeyVaultKeyResolver.cs/#L18" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

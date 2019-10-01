@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,19 +79,20 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Azure.Messaging.EventHubs.EventPosition">
-  
-  
-  <h1 id="Azure_Messaging_EventHubs_EventPosition" data-uid="Azure.Messaging.EventHubs.EventPosition" class="text-break">Class EventPosition
+  <h1 id="Azure_Messaging_EventHubs_EventPosition" data-uid="Azure.Messaging.EventHubs.EventPosition">Class EventPosition
   </h1>
   <div class="markdown level0 summary"><p>The position of events in an Event Hub partition, typically used in the creation of
 an <a class="xref" href="Azure.Messaging.EventHubs.EventHubProducer.html">EventHubProducer</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">EventPosition</span></div>
   </div>
+  
+  
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -116,244 +117,298 @@ an <a class="xref" href="Azure.Messaging.EventHubs.EventHubProducer.html">EventH
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Azure.Messaging.EventHubs.html">Azure.Messaging.EventHubs</a></h6>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>: Azure.Messaging.EventHubs.dll</h6>
+  
   <h5 id="Azure_Messaging_EventHubs_EventPosition_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public sealed class EventPosition</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h3 id="properties">Properties
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventPosition_Earliest.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventPosition.Earliest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventPosition_Earliest.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventPosition.Earliest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventPosition.cs/#L29">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventPosition.cs/#L29" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_EventPosition_Earliest_" data-uid="Azure.Messaging.EventHubs.EventPosition.Earliest*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventPosition_Earliest" data-uid="Azure.Messaging.EventHubs.EventPosition.Earliest">Earliest</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_EventPosition_Earliest" data-uid="Azure.Messaging.EventHubs.EventPosition.Earliest"><a href="#collapsible-Azure_Messaging_EventHubs_EventPosition_Earliest" class="expander" data-toggle="collapse">Earliest</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_EventPosition_Earliest" class="collapse in">
   <div class="markdown level1 summary"><p>Corresponds to the location of the first event present in the partition.  Use this
 position to begin receiving from the first event that was enqueued in the partition
 which has not expired due to the retention policy.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static EventPosition Earliest { get; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Azure.Messaging.EventHubs.EventPosition.html">EventPosition</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Azure.Messaging.EventHubs.EventPosition.html">EventPosition</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventPosition_Latest.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventPosition.Latest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventPosition_Latest.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventPosition.Latest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventPosition.cs/#L37">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventPosition.cs/#L37" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_EventPosition_Latest_" data-uid="Azure.Messaging.EventHubs.EventPosition.Latest*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventPosition_Latest" data-uid="Azure.Messaging.EventHubs.EventPosition.Latest">Latest</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_EventPosition_Latest" data-uid="Azure.Messaging.EventHubs.EventPosition.Latest"><a href="#collapsible-Azure_Messaging_EventHubs_EventPosition_Latest" class="expander" data-toggle="collapse">Latest</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_EventPosition_Latest" class="collapse in">
   <div class="markdown level1 summary"><p>Corresponds to the end of the partition, where no more events are currently enqueued.  Use this
 position to begin receiving from the next event to be enqueued in the partition after an <a class="xref" href="Azure.Messaging.EventHubs.EventHubConsumer.html">EventHubConsumer</a>
 is created with this position.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static EventPosition Latest { get; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Azure.Messaging.EventHubs.EventPosition.html">EventPosition</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Azure.Messaging.EventHubs.EventPosition.html">EventPosition</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
   <h3 id="methods">Methods
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventPosition_FromEnqueuedTime_System_DateTimeOffset_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventPosition.FromEnqueuedTime(System.DateTimeOffset)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventPosition_FromEnqueuedTime_System_DateTimeOffset_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventPosition.FromEnqueuedTime(System.DateTimeOffset)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventPosition.cs/#L122">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventPosition.cs/#L122" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_EventPosition_FromEnqueuedTime_" data-uid="Azure.Messaging.EventHubs.EventPosition.FromEnqueuedTime*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventPosition_FromEnqueuedTime_System_DateTimeOffset_" data-uid="Azure.Messaging.EventHubs.EventPosition.FromEnqueuedTime(System.DateTimeOffset)">FromEnqueuedTime(DateTimeOffset)</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_EventPosition_FromEnqueuedTime_System_DateTimeOffset_" data-uid="Azure.Messaging.EventHubs.EventPosition.FromEnqueuedTime(System.DateTimeOffset)"><a href="#collapsible-Azure_Messaging_EventHubs_EventPosition_FromEnqueuedTime_System_DateTimeOffset_" class="expander" data-toggle="collapse">FromEnqueuedTime(DateTimeOffset)</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_EventPosition_FromEnqueuedTime_System_DateTimeOffset_" class="collapse in">
   <div class="markdown level1 summary"><p>Corresponds to a specific date and time within the partition to begin seeking an event; the event enqueued after the
 requested <code data-dev-comment-type="paramref" class="paramref">enqueuedTime</code> will become the current position.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static EventPosition FromEnqueuedTime(DateTimeOffset enqueuedTime)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
-        <td><span class="parametername">enqueuedTime</span></td>
-        <td><p>The date and time, in UTC, from which the next available event should be chosen.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></span>
+        <span class="parametername">enqueuedTime</span>
+        <p><p>The date and time, in UTC, from which the next available event should be chosen.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Azure.Messaging.EventHubs.EventPosition.html">EventPosition</a></td>
-        <td><p>The position of the specified event.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Azure.Messaging.EventHubs.EventPosition.html">EventPosition</a>
+        <p><p>The position of the specified event.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventPosition_FromOffset_System_Int64_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventPosition.FromOffset(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventPosition_FromOffset_System_Int64_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventPosition.FromOffset(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventPosition.cs/#L92">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventPosition.cs/#L92" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_EventPosition_FromOffset_" data-uid="Azure.Messaging.EventHubs.EventPosition.FromOffset*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventPosition_FromOffset_System_Int64_" data-uid="Azure.Messaging.EventHubs.EventPosition.FromOffset(System.Int64)">FromOffset(Int64)</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_EventPosition_FromOffset_System_Int64_" data-uid="Azure.Messaging.EventHubs.EventPosition.FromOffset(System.Int64)"><a href="#collapsible-Azure_Messaging_EventHubs_EventPosition_FromOffset_System_Int64_" class="expander" data-toggle="collapse">FromOffset(Int64)</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_EventPosition_FromOffset_System_Int64_" class="collapse in">
   <div class="markdown level1 summary"><p>Corresponds to the event in the partition at the provided offset, inclusive of that event.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static EventPosition FromOffset(long offset)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
-        <td><span class="parametername">offset</span></td>
-        <td><p>The offset of an event with respect to its relative position in the partition.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></span>
+        <span class="parametername">offset</span>
+        <p><p>The offset of an event with respect to its relative position in the partition.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Azure.Messaging.EventHubs.EventPosition.html">EventPosition</a></td>
-        <td><p>The position of the specified event.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Azure.Messaging.EventHubs.EventPosition.html">EventPosition</a>
+        <p><p>The position of the specified event.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Azure_Messaging_EventHubs_EventPosition_FromOffset_System_Int64__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The offset is the relative position for event in the context of the stream.  The offset
 should not be considered a stable value, as the same offset may refer to a different event
 as events reach the age limit for retention and are no longer visible within the stream.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventPosition_FromSequenceNumber_System_Int64_System_Boolean_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventPosition.FromSequenceNumber(System.Int64%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventPosition_FromSequenceNumber_System_Int64_System_Boolean_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventPosition.FromSequenceNumber(System.Int64%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventPosition.cs/#L103">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventPosition.cs/#L103" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_EventPosition_FromSequenceNumber_" data-uid="Azure.Messaging.EventHubs.EventPosition.FromSequenceNumber*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventPosition_FromSequenceNumber_System_Int64_System_Boolean_" data-uid="Azure.Messaging.EventHubs.EventPosition.FromSequenceNumber(System.Int64,System.Boolean)">FromSequenceNumber(Int64, Boolean)</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_EventPosition_FromSequenceNumber_System_Int64_System_Boolean_" data-uid="Azure.Messaging.EventHubs.EventPosition.FromSequenceNumber(System.Int64,System.Boolean)"><a href="#collapsible-Azure_Messaging_EventHubs_EventPosition_FromSequenceNumber_System_Int64_System_Boolean_" class="expander" data-toggle="collapse">FromSequenceNumber(Int64, Boolean)</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_EventPosition_FromSequenceNumber_System_Int64_System_Boolean_" class="collapse in">
   <div class="markdown level1 summary"><p>Corresponds to the event in the partition having a specified sequence number associated with it.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static EventPosition FromSequenceNumber(long sequenceNumber, bool isInclusive = false)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
-        <td><span class="parametername">sequenceNumber</span></td>
-        <td><p>The sequence number assigned to an event when it was enqueued in the partition.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">isInclusive</span></td>
-        <td><p>If true, the event with the <code data-dev-comment-type="paramref" class="paramref">sequenceNumber</code> is included; otherwise the next event in sequence will be received.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></span>
+        <span class="parametername">sequenceNumber</span>
+        <p><p>The sequence number assigned to an event when it was enqueued in the partition.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></span>
+        <span class="parametername">isInclusive</span>
+        <p><p>If true, the event with the <code data-dev-comment-type="paramref" class="paramref">sequenceNumber</code> is included; otherwise the next event in sequence will be received.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Azure.Messaging.EventHubs.EventPosition.html">EventPosition</a></td>
-        <td><p>The position of the specified event.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Azure.Messaging.EventHubs.EventPosition.html">EventPosition</a>
+        <p><p>The position of the specified event.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
@@ -373,23 +428,17 @@ as events reach the age limit for retention and are no longer visible within the
   <div>
       <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
+  
 </article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventPosition.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventPosition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventPosition.cs/#L15" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventPosition.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventPosition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventPosition.cs/#L15" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

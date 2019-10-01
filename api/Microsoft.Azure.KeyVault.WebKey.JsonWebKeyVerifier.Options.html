@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,73 +79,78 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.Options">
-  
-  
-  <h1 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.Options" class="text-break">Enum JsonWebKeyVerifier.Options
+  <h1 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options" data-uid="Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.Options">Enum JsonWebKeyVerifier.Options
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.KeyVault.WebKey.html">Microsoft.Azure.KeyVault.WebKey</a></h6>
+  
+  
+  
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.KeyVault.WebKey.dll</h6>
+  
   <h5 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Flags]
 public enum Options</code></pre>
   </div>
-  <h3 id="fields">Fields
-  </h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    <thead>
-    <tbody>
-      <tr>
-        <td id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_DenyExtraneousFields">DenyExtraneousFields</td>
-        <td><p>Fails if the JsonWebKey object describes values at properties that are not used by the corresponding key type.
+  
+  
+  
+  
+  
+      <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_DenyExtraneousFields"><a href="#collapsible-Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_DenyExtraneousFields" class="expander" data-toggle="collapse">DenyExtraneousFields</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_DenyExtraneousFields" class="collapse in">
+        <p><p>Fails if the JsonWebKey object describes values at properties that are not used by the corresponding key type.
 Use this to defend against properties incorrectly set, and also some forms of leakage.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_DenyIncompatibleOperations">DenyIncompatibleOperations</td>
-        <td><p>Fails if there the <pre><code>&quot;key_ops&quot;</code></pre> value of the verified key contains an incompatible operation.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_DenyPrivateKey">DenyPrivateKey</td>
-        <td><p>Fails if any private key material is present. Use this to defend against leakage.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_None">None</td>
-        <td><p>Use this value if you don't want to specify any other.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_RequirePrivateKey">RequirePrivateKey</td>
-        <td><p>Fails if private key material is not fully present. Use this before storing or importing a JsonWebKey
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_DenyIncompatibleOperations"><a href="#collapsible-Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_DenyIncompatibleOperations" class="expander" data-toggle="collapse">DenyIncompatibleOperations</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_DenyIncompatibleOperations" class="collapse in">
+        <p><p>Fails if there the <pre><code>&quot;key_ops&quot;</code></pre> value of the verified key contains an incompatible operation.</p>
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_DenyPrivateKey"><a href="#collapsible-Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_DenyPrivateKey" class="expander" data-toggle="collapse">DenyPrivateKey</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_DenyPrivateKey" class="collapse in">
+        <p><p>Fails if any private key material is present. Use this to defend against leakage.</p>
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_None"><a href="#collapsible-Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_None" class="expander" data-toggle="collapse">None</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_None" class="collapse in">
+        <p><p>Use this value if you don't want to specify any other.</p>
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_RequirePrivateKey"><a href="#collapsible-Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_RequirePrivateKey" class="expander" data-toggle="collapse">RequirePrivateKey</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_RequirePrivateKey" class="collapse in">
+        <p><p>Fails if private key material is not fully present. Use this before storing or importing a JsonWebKey
 value into a subsystem that needs to keep the private key.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_ThrowException">ThrowException</td>
-        <td><p>Do not return <pre><code>false</code></pre> if the verification fails; throws an exception instead.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_VerifyDecrypt">VerifyDecrypt</td>
-        <td><p>Reserved for future use.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_VerifySign">VerifySign</td>
-        <td><p>Reserved for future use.</p>
-</td>
-      </tr>
-    </tbody>
-  </thead></thead></table>
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_ThrowException"><a href="#collapsible-Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_ThrowException" class="expander" data-toggle="collapse">ThrowException</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_ThrowException" class="collapse in">
+        <p><p>Do not return <pre><code>false</code></pre> if the verification fails; throws an exception instead.</p>
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_VerifyDecrypt"><a href="#collapsible-Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_VerifyDecrypt" class="expander" data-toggle="collapse">VerifyDecrypt</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_VerifyDecrypt" class="collapse in">
+        <p><p>Reserved for future use.</p>
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_VerifySign"><a href="#collapsible-Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_VerifySign" class="expander" data-toggle="collapse">VerifySign</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options_VerifySign" class="collapse in">
+        <p><p>Reserved for future use.</p>
+</p>
+      </div>
+  
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;JsonWebKeyVerifier.Options, TConfiguration&gt;(TConfiguration)</a>
@@ -167,21 +172,14 @@ value into a subsystem that needs to keep the private key.</p>
   </div>
 </article>
           </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.Options%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L318" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
+          </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_KeyVault_WebKey_JsonWebKeyVerifier_Options.md&amp;value=---%0Auid%3A%20Microsoft.Azure.KeyVault.WebKey.JsonWebKeyVerifier.Options%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey/src/JsonWebKeyVerifier.cs/#L318" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

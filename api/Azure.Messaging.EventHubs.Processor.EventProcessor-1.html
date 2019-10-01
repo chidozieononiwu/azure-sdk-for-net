@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,19 +79,20 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Azure.Messaging.EventHubs.Processor.EventProcessor`1">
-  
-  
-  <h1 id="Azure_Messaging_EventHubs_Processor_EventProcessor_1" data-uid="Azure.Messaging.EventHubs.Processor.EventProcessor`1" class="text-break">Class EventProcessor&lt;T&gt;
+  <h1 id="Azure_Messaging_EventHubs_Processor_EventProcessor_1" data-uid="Azure.Messaging.EventHubs.Processor.EventProcessor`1">Class EventProcessor&lt;T&gt;
   </h1>
   <div class="markdown level0 summary"><p>Receives <a class="xref" href="Azure.Messaging.EventHubs.EventData.html">EventData</a> as they are available for a partition, in the context of a consumer group, and routes
 them to a partition processor instance to be processed.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">EventProcessor&lt;T&gt;</span></div>
   </div>
+  
+  
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -116,328 +117,452 @@ them to a partition processor instance to be processed.</p>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Azure.Messaging.EventHubs.Processor.html">Azure.Messaging.EventHubs.Processor</a></h6>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>: Azure.Messaging.EventHubs.dll</h6>
+  
   <h5 id="Azure_Messaging_EventHubs_Processor_EventProcessor_1_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class EventProcessor&lt;T&gt;
     where T : BasePartitionProcessor, new()</code></pre>
   </div>
+  
+  
+  
   <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>The type of partition processor used by this instance by default; the type must be derived from <a class="xref" href="Azure.Messaging.EventHubs.Processor.BasePartitionProcessor.html">BasePartitionProcessor</a> and must have a parameterless constructor.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p><p>The type of partition processor used by this instance by default; the type must be derived from <a class="xref" href="Azure.Messaging.EventHubs.Processor.BasePartitionProcessor.html">BasePartitionProcessor</a> and must have a parameterless constructor.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
   <h3 id="constructors">Constructors
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_EventProcessor_1__ctor.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.EventProcessor%601.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_EventProcessor_1__ctor.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.EventProcessor%601.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/EventProcessor.cs/#L170">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/EventProcessor.cs/#L170" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_Processor_EventProcessor_1__ctor_" data-uid="Azure.Messaging.EventHubs.Processor.EventProcessor`1.#ctor*"></a>
-  <h4 id="Azure_Messaging_EventHubs_Processor_EventProcessor_1__ctor" data-uid="Azure.Messaging.EventHubs.Processor.EventProcessor`1.#ctor">EventProcessor()</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_Processor_EventProcessor_1__ctor" data-uid="Azure.Messaging.EventHubs.Processor.EventProcessor`1.#ctor"><a href="#collapsible-Azure_Messaging_EventHubs_Processor_EventProcessor_1__ctor" class="expander" data-toggle="collapse">EventProcessor()</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_Processor_EventProcessor_1__ctor" class="collapse in">
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Messaging.EventHubs.Processor.EventProcessor-1.html">EventProcessor&lt;T&gt;</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected EventProcessor()</code></pre>
   </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_EventProcessor_1__ctor_System_String_Azure_Messaging_EventHubs_EventHubClient_Azure_Messaging_EventHubs_Processor_PartitionManager_Azure_Messaging_EventHubs_Processor_EventProcessorOptions_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.EventProcessor%601.%23ctor(System.String%2CAzure.Messaging.EventHubs.EventHubClient%2CAzure.Messaging.EventHubs.Processor.PartitionManager%2CAzure.Messaging.EventHubs.Processor.EventProcessorOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_EventProcessor_1__ctor_System_String_Azure_Messaging_EventHubs_EventHubClient_Azure_Messaging_EventHubs_Processor_PartitionManager_Azure_Messaging_EventHubs_Processor_EventProcessorOptions_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.EventProcessor%601.%23ctor(System.String%2CAzure.Messaging.EventHubs.EventHubClient%2CAzure.Messaging.EventHubs.Processor.PartitionManager%2CAzure.Messaging.EventHubs.Processor.EventProcessorOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/EventProcessor.cs/#L122">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/EventProcessor.cs/#L122" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_Processor_EventProcessor_1__ctor_" data-uid="Azure.Messaging.EventHubs.Processor.EventProcessor`1.#ctor*"></a>
-  <h4 id="Azure_Messaging_EventHubs_Processor_EventProcessor_1__ctor_System_String_Azure_Messaging_EventHubs_EventHubClient_Azure_Messaging_EventHubs_Processor_PartitionManager_Azure_Messaging_EventHubs_Processor_EventProcessorOptions_" data-uid="Azure.Messaging.EventHubs.Processor.EventProcessor`1.#ctor(System.String,Azure.Messaging.EventHubs.EventHubClient,Azure.Messaging.EventHubs.Processor.PartitionManager,Azure.Messaging.EventHubs.Processor.EventProcessorOptions)">EventProcessor(String, EventHubClient, PartitionManager, EventProcessorOptions)</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_Processor_EventProcessor_1__ctor_System_String_Azure_Messaging_EventHubs_EventHubClient_Azure_Messaging_EventHubs_Processor_PartitionManager_Azure_Messaging_EventHubs_Processor_EventProcessorOptions_" data-uid="Azure.Messaging.EventHubs.Processor.EventProcessor`1.#ctor(System.String,Azure.Messaging.EventHubs.EventHubClient,Azure.Messaging.EventHubs.Processor.PartitionManager,Azure.Messaging.EventHubs.Processor.EventProcessorOptions)"><a href="#collapsible-Azure_Messaging_EventHubs_Processor_EventProcessor_1__ctor_System_String_Azure_Messaging_EventHubs_EventHubClient_Azure_Messaging_EventHubs_Processor_PartitionManager_Azure_Messaging_EventHubs_Processor_EventProcessorOptions_" class="expander" data-toggle="collapse">EventProcessor(String, EventHubClient, PartitionManager, EventProcessorOptions)</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_Processor_EventProcessor_1__ctor_System_String_Azure_Messaging_EventHubs_EventHubClient_Azure_Messaging_EventHubs_Processor_PartitionManager_Azure_Messaging_EventHubs_Processor_EventProcessorOptions_" class="collapse in">
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Messaging.EventHubs.Processor.EventProcessor-1.html">EventProcessor&lt;T&gt;</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public EventProcessor(string consumerGroup, EventHubClient eventHubClient, PartitionManager partitionManager, EventProcessorOptions options = null)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">consumerGroup</span></td>
-        <td><p>The name of the consumer group this event processor is associated with.  Events are read in the context of this group.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a></td>
-        <td><span class="parametername">eventHubClient</span></td>
-        <td><p>The client used to interact with the Azure Event Hubs service.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Azure.Messaging.EventHubs.Processor.PartitionManager.html">PartitionManager</a></td>
-        <td><span class="parametername">partitionManager</span></td>
-        <td><p>Interacts with the storage system with responsibility for creation of checkpoints and for ownership claim.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Azure.Messaging.EventHubs.Processor.EventProcessorOptions.html">EventProcessorOptions</a></td>
-        <td><span class="parametername">options</span></td>
-        <td><p>The set of options to use for this event processor.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">consumerGroup</span>
+        <p><p>The name of the consumer group this event processor is associated with.  Events are read in the context of this group.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a></span>
+        <span class="parametername">eventHubClient</span>
+        <p><p>The client used to interact with the Azure Event Hubs service.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Azure.Messaging.EventHubs.Processor.PartitionManager.html">PartitionManager</a></span>
+        <span class="parametername">partitionManager</span>
+        <p><p>Interacts with the storage system with responsibility for creation of checkpoints and for ownership claim.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Azure.Messaging.EventHubs.Processor.EventProcessorOptions.html">EventProcessorOptions</a></span>
+        <span class="parametername">options</span>
+        <p><p>The set of options to use for this event processor.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Azure_Messaging_EventHubs_Processor_EventProcessor_1__ctor_System_String_Azure_Messaging_EventHubs_EventHubClient_Azure_Messaging_EventHubs_Processor_PartitionManager_Azure_Messaging_EventHubs_Processor_EventProcessorOptions__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Ownership of the <code data-dev-comment-type="paramref" class="paramref">eventHubClient</code> is assumed to be responsibility of the caller; this
 processor will delegate operations to it, but will not perform any clean-up tasks, such as closing or
 disposing of the instance.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_EventProcessor_1__ctor_System_String_Azure_Messaging_EventHubs_EventHubClient_System_Func_Azure_Messaging_EventHubs_Processor_PartitionContext_Azure_Messaging_EventHubs_Processor_BasePartitionProcessor__Azure_Messaging_EventHubs_Processor_PartitionManager_Azure_Messaging_EventHubs_Processor_EventProcessorOptions_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.EventProcessor%601.%23ctor(System.String%2CAzure.Messaging.EventHubs.EventHubClient%2CSystem.Func%7BAzure.Messaging.EventHubs.Processor.PartitionContext%2CAzure.Messaging.EventHubs.Processor.BasePartitionProcessor%7D%2CAzure.Messaging.EventHubs.Processor.PartitionManager%2CAzure.Messaging.EventHubs.Processor.EventProcessorOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_EventProcessor_1__ctor_System_String_Azure_Messaging_EventHubs_EventHubClient_System_Func_Azure_Messaging_EventHubs_Processor_PartitionContext_Azure_Messaging_EventHubs_Processor_BasePartitionProcessor__Azure_Messaging_EventHubs_Processor_PartitionManager_Azure_Messaging_EventHubs_Processor_EventProcessorOptions_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.EventProcessor%601.%23ctor(System.String%2CAzure.Messaging.EventHubs.EventHubClient%2CSystem.Func%7BAzure.Messaging.EventHubs.Processor.PartitionContext%2CAzure.Messaging.EventHubs.Processor.BasePartitionProcessor%7D%2CAzure.Messaging.EventHubs.Processor.PartitionManager%2CAzure.Messaging.EventHubs.Processor.EventProcessorOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/EventProcessor.cs/#L145">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/EventProcessor.cs/#L145" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_Processor_EventProcessor_1__ctor_" data-uid="Azure.Messaging.EventHubs.Processor.EventProcessor`1.#ctor*"></a>
-  <h4 id="Azure_Messaging_EventHubs_Processor_EventProcessor_1__ctor_System_String_Azure_Messaging_EventHubs_EventHubClient_System_Func_Azure_Messaging_EventHubs_Processor_PartitionContext_Azure_Messaging_EventHubs_Processor_BasePartitionProcessor__Azure_Messaging_EventHubs_Processor_PartitionManager_Azure_Messaging_EventHubs_Processor_EventProcessorOptions_" data-uid="Azure.Messaging.EventHubs.Processor.EventProcessor`1.#ctor(System.String,Azure.Messaging.EventHubs.EventHubClient,System.Func{Azure.Messaging.EventHubs.Processor.PartitionContext,Azure.Messaging.EventHubs.Processor.BasePartitionProcessor},Azure.Messaging.EventHubs.Processor.PartitionManager,Azure.Messaging.EventHubs.Processor.EventProcessorOptions)">EventProcessor(String, EventHubClient, Func&lt;PartitionContext, BasePartitionProcessor&gt;, PartitionManager, EventProcessorOptions)</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_Processor_EventProcessor_1__ctor_System_String_Azure_Messaging_EventHubs_EventHubClient_System_Func_Azure_Messaging_EventHubs_Processor_PartitionContext_Azure_Messaging_EventHubs_Processor_BasePartitionProcessor__Azure_Messaging_EventHubs_Processor_PartitionManager_Azure_Messaging_EventHubs_Processor_EventProcessorOptions_" data-uid="Azure.Messaging.EventHubs.Processor.EventProcessor`1.#ctor(System.String,Azure.Messaging.EventHubs.EventHubClient,System.Func{Azure.Messaging.EventHubs.Processor.PartitionContext,Azure.Messaging.EventHubs.Processor.BasePartitionProcessor},Azure.Messaging.EventHubs.Processor.PartitionManager,Azure.Messaging.EventHubs.Processor.EventProcessorOptions)"><a href="#collapsible-Azure_Messaging_EventHubs_Processor_EventProcessor_1__ctor_System_String_Azure_Messaging_EventHubs_EventHubClient_System_Func_Azure_Messaging_EventHubs_Processor_PartitionContext_Azure_Messaging_EventHubs_Processor_BasePartitionProcessor__Azure_Messaging_EventHubs_Processor_PartitionManager_Azure_Messaging_EventHubs_Processor_EventProcessorOptions_" class="expander" data-toggle="collapse">EventProcessor(String, EventHubClient, Func&lt;PartitionContext, BasePartitionProcessor&gt;, PartitionManager, EventProcessorOptions)</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_Processor_EventProcessor_1__ctor_System_String_Azure_Messaging_EventHubs_EventHubClient_System_Func_Azure_Messaging_EventHubs_Processor_PartitionContext_Azure_Messaging_EventHubs_Processor_BasePartitionProcessor__Azure_Messaging_EventHubs_Processor_PartitionManager_Azure_Messaging_EventHubs_Processor_EventProcessorOptions_" class="collapse in">
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Messaging.EventHubs.Processor.EventProcessor-1.html">EventProcessor&lt;T&gt;</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public EventProcessor(string consumerGroup, EventHubClient eventHubClient, Func&lt;PartitionContext, BasePartitionProcessor&gt; partitionProcessorFactory, PartitionManager partitionManager, EventProcessorOptions options = null)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">consumerGroup</span></td>
-        <td><p>The name of the consumer group this event processor is associated with.  Events are read in the context of this group.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a></td>
-        <td><span class="parametername">eventHubClient</span></td>
-        <td><p>The client used to interact with the Azure Event Hubs service.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="Azure.Messaging.EventHubs.Processor.PartitionContext.html">PartitionContext</a>, <a class="xref" href="Azure.Messaging.EventHubs.Processor.BasePartitionProcessor.html">BasePartitionProcessor</a>&gt;</td>
-        <td><span class="parametername">partitionProcessorFactory</span></td>
-        <td><p>Creates a partition processor instance for the associated <a class="xref" href="Azure.Messaging.EventHubs.Processor.PartitionContext.html">PartitionContext</a>.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Azure.Messaging.EventHubs.Processor.PartitionManager.html">PartitionManager</a></td>
-        <td><span class="parametername">partitionManager</span></td>
-        <td><p>Interacts with the storage system with responsibility for creation of checkpoints and for ownership claim.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Azure.Messaging.EventHubs.Processor.EventProcessorOptions.html">EventProcessorOptions</a></td>
-        <td><span class="parametername">options</span></td>
-        <td><p>The set of options to use for this event processor.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">consumerGroup</span>
+        <p><p>The name of the consumer group this event processor is associated with.  Events are read in the context of this group.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a></span>
+        <span class="parametername">eventHubClient</span>
+        <p><p>The client used to interact with the Azure Event Hubs service.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="Azure.Messaging.EventHubs.Processor.PartitionContext.html">PartitionContext</a>, <a class="xref" href="Azure.Messaging.EventHubs.Processor.BasePartitionProcessor.html">BasePartitionProcessor</a>&gt;</span>
+        <span class="parametername">partitionProcessorFactory</span>
+        <p><p>Creates a partition processor instance for the associated <a class="xref" href="Azure.Messaging.EventHubs.Processor.PartitionContext.html">PartitionContext</a>.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Azure.Messaging.EventHubs.Processor.PartitionManager.html">PartitionManager</a></span>
+        <span class="parametername">partitionManager</span>
+        <p><p>Interacts with the storage system with responsibility for creation of checkpoints and for ownership claim.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Azure.Messaging.EventHubs.Processor.EventProcessorOptions.html">EventProcessorOptions</a></span>
+        <span class="parametername">options</span>
+        <p><p>The set of options to use for this event processor.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Azure_Messaging_EventHubs_Processor_EventProcessor_1__ctor_System_String_Azure_Messaging_EventHubs_EventHubClient_System_Func_Azure_Messaging_EventHubs_Processor_PartitionContext_Azure_Messaging_EventHubs_Processor_BasePartitionProcessor__Azure_Messaging_EventHubs_Processor_PartitionManager_Azure_Messaging_EventHubs_Processor_EventProcessorOptions__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Ownership of the <code data-dev-comment-type="paramref" class="paramref">eventHubClient</code> is assumed to be responsibility of the caller; this
 processor will delegate operations to it, but will not perform any clean-up tasks, such as closing or
 disposing of the instance.</p>
 </div>
+  
+  
+  
+  </div>
   <h3 id="properties">Properties
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_EventProcessor_1_Identifier.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.EventProcessor%601.Identifier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_EventProcessor_1_Identifier.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.EventProcessor%601.Identifier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/EventProcessor.cs/#L49">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/EventProcessor.cs/#L49" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_Processor_EventProcessor_1_Identifier_" data-uid="Azure.Messaging.EventHubs.Processor.EventProcessor`1.Identifier*"></a>
-  <h4 id="Azure_Messaging_EventHubs_Processor_EventProcessor_1_Identifier" data-uid="Azure.Messaging.EventHubs.Processor.EventProcessor`1.Identifier">Identifier</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_Processor_EventProcessor_1_Identifier" data-uid="Azure.Messaging.EventHubs.Processor.EventProcessor`1.Identifier"><a href="#collapsible-Azure_Messaging_EventHubs_Processor_EventProcessor_1_Identifier" class="expander" data-toggle="collapse">Identifier</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_Processor_EventProcessor_1_Identifier" class="collapse in">
   <div class="markdown level1 summary"><p>A unique name used to identify this event processor.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual string Identifier { get; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_EventProcessor_1_LoadBalanceUpdate.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.EventProcessor%601.LoadBalanceUpdate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_EventProcessor_1_LoadBalanceUpdate.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.EventProcessor%601.LoadBalanceUpdate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/EventProcessor.cs/#L37">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/EventProcessor.cs/#L37" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_Processor_EventProcessor_1_LoadBalanceUpdate_" data-uid="Azure.Messaging.EventHubs.Processor.EventProcessor`1.LoadBalanceUpdate*"></a>
-  <h4 id="Azure_Messaging_EventHubs_Processor_EventProcessor_1_LoadBalanceUpdate" data-uid="Azure.Messaging.EventHubs.Processor.EventProcessor`1.LoadBalanceUpdate">LoadBalanceUpdate</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_Processor_EventProcessor_1_LoadBalanceUpdate" data-uid="Azure.Messaging.EventHubs.Processor.EventProcessor`1.LoadBalanceUpdate"><a href="#collapsible-Azure_Messaging_EventHubs_Processor_EventProcessor_1_LoadBalanceUpdate" class="expander" data-toggle="collapse">LoadBalanceUpdate</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_Processor_EventProcessor_1_LoadBalanceUpdate" class="collapse in">
   <div class="markdown level1 summary"><p>The minimum amount of time to be elapsed between two load balancing verifications.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual TimeSpan LoadBalanceUpdate { get; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_EventProcessor_1_OwnershipExpiration.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.EventProcessor%601.OwnershipExpiration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_EventProcessor_1_OwnershipExpiration.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.EventProcessor%601.OwnershipExpiration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/EventProcessor.cs/#L43">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/EventProcessor.cs/#L43" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_Processor_EventProcessor_1_OwnershipExpiration_" data-uid="Azure.Messaging.EventHubs.Processor.EventProcessor`1.OwnershipExpiration*"></a>
-  <h4 id="Azure_Messaging_EventHubs_Processor_EventProcessor_1_OwnershipExpiration" data-uid="Azure.Messaging.EventHubs.Processor.EventProcessor`1.OwnershipExpiration">OwnershipExpiration</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_Processor_EventProcessor_1_OwnershipExpiration" data-uid="Azure.Messaging.EventHubs.Processor.EventProcessor`1.OwnershipExpiration"><a href="#collapsible-Azure_Messaging_EventHubs_Processor_EventProcessor_1_OwnershipExpiration" class="expander" data-toggle="collapse">OwnershipExpiration</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_Processor_EventProcessor_1_OwnershipExpiration" class="collapse in">
   <div class="markdown level1 summary"><p>The minimum amount of time for an ownership to be considered expired without further updates.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual TimeSpan OwnershipExpiration { get; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
   <h3 id="methods">Methods
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_EventProcessor_1_StartAsync.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.EventProcessor%601.StartAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_EventProcessor_1_StartAsync.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.EventProcessor%601.StartAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/EventProcessor.cs/#L180">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/EventProcessor.cs/#L180" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_Processor_EventProcessor_1_StartAsync_" data-uid="Azure.Messaging.EventHubs.Processor.EventProcessor`1.StartAsync*"></a>
-  <h4 id="Azure_Messaging_EventHubs_Processor_EventProcessor_1_StartAsync" data-uid="Azure.Messaging.EventHubs.Processor.EventProcessor`1.StartAsync">StartAsync()</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_Processor_EventProcessor_1_StartAsync" data-uid="Azure.Messaging.EventHubs.Processor.EventProcessor`1.StartAsync"><a href="#collapsible-Azure_Messaging_EventHubs_Processor_EventProcessor_1_StartAsync" class="expander" data-toggle="collapse">StartAsync()</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_Processor_EventProcessor_1_StartAsync" class="collapse in">
   <div class="markdown level1 summary"><p>Starts the event processor.  In case it's already running, nothing happens.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual Task StartAsync()</code></pre>
   </div>
+  
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td><p>A task to be resolved on when the operation has completed.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>
+        <p><p>A task to be resolved on when the operation has completed.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_EventProcessor_1_StopAsync.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.EventProcessor%601.StopAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_EventProcessor_1_StopAsync.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.EventProcessor%601.StopAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/EventProcessor.cs/#L218">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/EventProcessor.cs/#L218" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_Processor_EventProcessor_1_StopAsync_" data-uid="Azure.Messaging.EventHubs.Processor.EventProcessor`1.StopAsync*"></a>
-  <h4 id="Azure_Messaging_EventHubs_Processor_EventProcessor_1_StopAsync" data-uid="Azure.Messaging.EventHubs.Processor.EventProcessor`1.StopAsync">StopAsync()</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_Processor_EventProcessor_1_StopAsync" data-uid="Azure.Messaging.EventHubs.Processor.EventProcessor`1.StopAsync"><a href="#collapsible-Azure_Messaging_EventHubs_Processor_EventProcessor_1_StopAsync" class="expander" data-toggle="collapse">StopAsync()</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_Processor_EventProcessor_1_StopAsync" class="collapse in">
   <div class="markdown level1 summary"><p>Stops the event processor.  In case it isn't running, nothing happens.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual Task StopAsync()</code></pre>
   </div>
+  
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td><p>A task to be resolved on when the operation has completed.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>
+        <p><p>A task to be resolved on when the operation has completed.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
@@ -457,23 +582,17 @@ disposing of the instance.</p>
   <div>
       <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
+  
 </article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_EventProcessor_1.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.EventProcessor%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/EventProcessor.cs/#L22" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_Processor_EventProcessor_1.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.Processor.EventProcessor%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/Processor/EventProcessor.cs/#L22" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

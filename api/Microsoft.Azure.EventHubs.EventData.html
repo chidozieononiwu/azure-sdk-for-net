@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,23 +79,20 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Microsoft.Azure.EventHubs.EventData">
-  
-  
-  <h1 id="Microsoft_Azure_EventHubs_EventData" data-uid="Microsoft.Azure.EventHubs.EventData" class="text-break">Class EventData
+  <h1 id="Microsoft_Azure_EventHubs_EventData" data-uid="Microsoft.Azure.EventHubs.EventData">Class EventData
   </h1>
   <div class="markdown level0 summary"><p>The data structure encapsulating the Event being sent-to and received-from EventHubs.
 Each EventHubs partition can be visualized as a Stream of EventData.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">EventData</span></div>
   </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
-  </div>
+  
+  
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -120,23 +117,35 @@ Each EventHubs partition can be visualized as a Stream of EventData.</p>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.EventHubs.html">Microsoft.Azure.EventHubs</a></h6>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.EventHubs.dll</h6>
+  
   <h5 id="Microsoft_Azure_EventHubs_EventData_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class EventData : IDisposable</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h3 id="constructors">Constructors
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_EventHubs_EventData__ctor_System_ArraySegment_System_Byte__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.EventHubs.EventData.%23ctor(System.ArraySegment%7BSystem.Byte%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_EventHubs_EventData__ctor_System_ArraySegment_System_Byte__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.EventHubs.EventData.%23ctor(System.ArraySegment%7BSystem.Byte%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Microsoft.Azure.EventHubs/src/EventData.cs/#L51">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Microsoft.Azure.EventHubs/src/EventData.cs/#L51" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_EventHubs_EventData__ctor_" data-uid="Microsoft.Azure.EventHubs.EventData.#ctor*"></a>
-  <h4 id="Microsoft_Azure_EventHubs_EventData__ctor_System_ArraySegment_System_Byte__" data-uid="Microsoft.Azure.EventHubs.EventData.#ctor(System.ArraySegment{System.Byte})">EventData(ArraySegment&lt;Byte&gt;)</h4>
+  
+  <h4 id="Microsoft_Azure_EventHubs_EventData__ctor_System_ArraySegment_System_Byte__" data-uid="Microsoft.Azure.EventHubs.EventData.#ctor(System.ArraySegment{System.Byte})"><a href="#collapsible-Microsoft_Azure_EventHubs_EventData__ctor_System_ArraySegment_System_Byte__" class="expander" data-toggle="collapse">EventData(ArraySegment&lt;Byte&gt;)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_EventHubs_EventData__ctor_System_ArraySegment_System_Byte__" class="collapse in">
   <div class="markdown level1 summary"><p>Construct EventData to send to EventHub.
 Typical pattern to create a Sending EventData is:</p>
 <p>i.  Serialize the sending ApplicationEvent to be sent to EventHub into bytes.</p>
@@ -144,42 +153,54 @@ Typical pattern to create a Sending EventData is:</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public EventData(ArraySegment&lt;byte&gt; arraySegment)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.arraysegment-1">ArraySegment</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;</td>
-        <td><span class="parametername">arraySegment</span></td>
-        <td><p>The payload bytes, offset and length to be sent to the EventHub.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.arraysegment-1">ArraySegment</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;</span>
+        <span class="parametername">arraySegment</span>
+        <p><p>The payload bytes, offset and length to be sent to the EventHub.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_EventHubs_EventData__ctor_System_ArraySegment_System_Byte___examples">Examples</h5>
   <p>Sample Code:</p>
 <pre><code>EventData eventData = new EventData(new ArraySegment&lt;byte>(eventBytes, offset, count));
 eventData.Properties[&quot;eventType&quot;] = &quot;com.microsoft.azure.monitoring.EtlEvent&quot;;
 await partitionSender.SendAsync(eventData);</code></pre>
 
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_EventHubs_EventData__ctor_System_Byte___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.EventHubs.EventData.%23ctor(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_EventHubs_EventData__ctor_System_Byte___.md&amp;value=---%0Auid%3A%20Microsoft.Azure.EventHubs.EventData.%23ctor(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Microsoft.Azure.EventHubs/src/EventData.cs/#L32">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Microsoft.Azure.EventHubs/src/EventData.cs/#L32" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_EventHubs_EventData__ctor_" data-uid="Microsoft.Azure.EventHubs.EventData.#ctor*"></a>
-  <h4 id="Microsoft_Azure_EventHubs_EventData__ctor_System_Byte___" data-uid="Microsoft.Azure.EventHubs.EventData.#ctor(System.Byte[])">EventData(Byte[])</h4>
+  
+  <h4 id="Microsoft_Azure_EventHubs_EventData__ctor_System_Byte___" data-uid="Microsoft.Azure.EventHubs.EventData.#ctor(System.Byte[])"><a href="#collapsible-Microsoft_Azure_EventHubs_EventData__ctor_System_Byte___" class="expander" data-toggle="collapse">EventData(Byte[])</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_EventHubs_EventData__ctor_System_Byte___" class="collapse in">
   <div class="markdown level1 summary"><p>Construct EventData to send to EventHub.
 Typical pattern to create a Sending EventData is:</p>
 <p>i. Serialize the sending ApplicationEvent to be sent to EventHubs into bytes.</p>
@@ -187,152 +208,216 @@ Typical pattern to create a Sending EventData is:</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public EventData(byte[] array)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
-        <td><span class="parametername">array</span></td>
-        <td><p>The actual payload of data in bytes to be sent to the EventHub.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</span>
+        <span class="parametername">array</span>
+        <p><p>The actual payload of data in bytes to be sent to the EventHub.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_EventHubs_EventData__ctor_System_Byte____examples">Examples</h5>
   <p>Sample Code:</p>
 <pre><code>EventData eventData = new EventData(telemetryEventBytes);
 eventData.Properties[&quot;eventType&quot;] = &quot;com.microsoft.azure.monitoring.EtlEvent&quot;;
 await partitionSender.SendAsync(eventData);</code></pre>
 
+  
+  
+  </div>
   <h3 id="properties">Properties
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_EventHubs_EventData_Body.md&amp;value=---%0Auid%3A%20Microsoft.Azure.EventHubs.EventData.Body%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_EventHubs_EventData_Body.md&amp;value=---%0Auid%3A%20Microsoft.Azure.EventHubs.EventData.Body%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Microsoft.Azure.EventHubs/src/EventData.cs/#L61">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Microsoft.Azure.EventHubs/src/EventData.cs/#L61" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_EventHubs_EventData_Body_" data-uid="Microsoft.Azure.EventHubs.EventData.Body*"></a>
-  <h4 id="Microsoft_Azure_EventHubs_EventData_Body" data-uid="Microsoft.Azure.EventHubs.EventData.Body">Body</h4>
+  
+  <h4 id="Microsoft_Azure_EventHubs_EventData_Body" data-uid="Microsoft.Azure.EventHubs.EventData.Body"><a href="#collapsible-Microsoft_Azure_EventHubs_EventData_Body" class="expander" data-toggle="collapse">Body</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_EventHubs_EventData_Body" class="collapse in">
   <div class="markdown level1 summary"><p>Get the actual Payload/Data wrapped by EventData.
 This is intended to be used after receiving EventData using <a class="xref" href="Microsoft.Azure.EventHubs.PartitionReceiver.html">PartitionReceiver</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ArraySegment&lt;byte&gt; Body { get; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.arraysegment-1">ArraySegment</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.arraysegment-1">ArraySegment</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_EventHubs_EventData_Properties.md&amp;value=---%0Auid%3A%20Microsoft.Azure.EventHubs.EventData.Properties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_EventHubs_EventData_Properties.md&amp;value=---%0Auid%3A%20Microsoft.Azure.EventHubs.EventData.Properties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Microsoft.Azure.EventHubs/src/EventData.cs/#L66">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Microsoft.Azure.EventHubs/src/EventData.cs/#L66" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_EventHubs_EventData_Properties_" data-uid="Microsoft.Azure.EventHubs.EventData.Properties*"></a>
-  <h4 id="Microsoft_Azure_EventHubs_EventData_Properties" data-uid="Microsoft.Azure.EventHubs.EventData.Properties">Properties</h4>
+  
+  <h4 id="Microsoft_Azure_EventHubs_EventData_Properties" data-uid="Microsoft.Azure.EventHubs.EventData.Properties"><a href="#collapsible-Microsoft_Azure_EventHubs_EventData_Properties" class="expander" data-toggle="collapse">Properties</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_EventHubs_EventData_Properties" class="collapse in">
   <div class="markdown level1 summary"><p>Application property bag</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IDictionary&lt;string, object&gt; Properties { get; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_EventHubs_EventData_SystemProperties.md&amp;value=---%0Auid%3A%20Microsoft.Azure.EventHubs.EventData.SystemProperties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_EventHubs_EventData_SystemProperties.md&amp;value=---%0Auid%3A%20Microsoft.Azure.EventHubs.EventData.SystemProperties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Microsoft.Azure.EventHubs/src/EventData.cs/#L72">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Microsoft.Azure.EventHubs/src/EventData.cs/#L72" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_EventHubs_EventData_SystemProperties_" data-uid="Microsoft.Azure.EventHubs.EventData.SystemProperties*"></a>
-  <h4 id="Microsoft_Azure_EventHubs_EventData_SystemProperties" data-uid="Microsoft.Azure.EventHubs.EventData.SystemProperties">SystemProperties</h4>
+  
+  <h4 id="Microsoft_Azure_EventHubs_EventData_SystemProperties" data-uid="Microsoft.Azure.EventHubs.EventData.SystemProperties"><a href="#collapsible-Microsoft_Azure_EventHubs_EventData_SystemProperties" class="expander" data-toggle="collapse">SystemProperties</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_EventHubs_EventData_SystemProperties" class="collapse in">
   <div class="markdown level1 summary"><p>SystemProperties that are populated by EventHubService.
 As these are populated by Service, they are only present on a Received EventData.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public EventData.SystemPropertiesCollection SystemProperties { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.EventHubs.EventData.SystemPropertiesCollection.html">EventData.SystemPropertiesCollection</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Microsoft.Azure.EventHubs.EventData.SystemPropertiesCollection.html">EventData.SystemPropertiesCollection</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
   <h3 id="methods">Methods
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_EventHubs_EventData_Dispose.md&amp;value=---%0Auid%3A%20Microsoft.Azure.EventHubs.EventData.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_EventHubs_EventData_Dispose.md&amp;value=---%0Auid%3A%20Microsoft.Azure.EventHubs.EventData.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Microsoft.Azure.EventHubs/src/EventData.cs/#L90">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Microsoft.Azure.EventHubs/src/EventData.cs/#L90" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_EventHubs_EventData_Dispose_" data-uid="Microsoft.Azure.EventHubs.EventData.Dispose*"></a>
-  <h4 id="Microsoft_Azure_EventHubs_EventData_Dispose" data-uid="Microsoft.Azure.EventHubs.EventData.Dispose">Dispose()</h4>
+  
+  <h4 id="Microsoft_Azure_EventHubs_EventData_Dispose" data-uid="Microsoft.Azure.EventHubs.EventData.Dispose"><a href="#collapsible-Microsoft_Azure_EventHubs_EventData_Dispose" class="expander" data-toggle="collapse">Dispose()</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_EventHubs_EventData_Dispose" class="collapse in">
   <div class="markdown level1 summary"><p>Disposes resources attached to an Event Data</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
   </div>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable.dispose#System_IDisposable_Dispose">IDisposable.Dispose()</a></div>
+  
+  
+  
+  
   </div>
+  
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
@@ -355,23 +440,17 @@ As these are populated by Service, they are only present on a Received EventData
   <div>
       <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
+  
 </article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_EventHubs_EventData.md&amp;value=---%0Auid%3A%20Microsoft.Azure.EventHubs.EventData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Microsoft.Azure.EventHubs/src/EventData.cs/#L14" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_EventHubs_EventData.md&amp;value=---%0Auid%3A%20Microsoft.Azure.EventHubs.EventData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Microsoft.Azure.EventHubs/src/EventData.cs/#L14" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

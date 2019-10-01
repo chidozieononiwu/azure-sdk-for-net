@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,9 +79,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Azure.Storage.Sas.FileSasPermissions">
-  
-  
-  <h1 id="Azure_Storage_Sas_FileSasPermissions" data-uid="Azure.Storage.Sas.FileSasPermissions" class="text-break">Struct FileSasPermissions
+  <h1 id="Azure_Storage_Sas_FileSasPermissions" data-uid="Azure.Storage.Sas.FileSasPermissions">Struct FileSasPermissions
   </h1>
   <div class="markdown level0 summary"><p><a class="xref" href="Azure.Storage.Sas.FileSasPermissions.html">FileSasPermissions</a> supports reading and writing
 permissions string for a file's access policy.  Use <a class="xref" href="Azure.Storage.Sas.FileSasPermissions.html#Azure_Storage_Sas_FileSasPermissions_ToString">ToString()</a>
@@ -89,10 +87,9 @@ to generate a permissions string you can provide to
 <a class="xref" href="Azure.Storage.Sas.FileSasBuilder.html#Azure_Storage_Sas_FileSasBuilder_Permissions">Permissions</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Azure.Storage.Sas.FileSasPermissions.html">FileSasPermissions</a>&gt;</div>
-  </div>
+  
+  
+  
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -111,393 +108,492 @@ to generate a permissions string you can provide to
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Azure.Storage.Sas.html">Azure.Storage.Sas</a></h6>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>: Azure.Storage.Files.dll</h6>
+  
   <h5 id="Azure_Storage_Sas_FileSasPermissions_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public struct FileSasPermissions : IEquatable&lt;FileSasPermissions&gt;</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h3 id="properties">Properties
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Storage_Sas_FileSasPermissions_Create.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.FileSasPermissions.Create%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Storage_Sas_FileSasPermissions_Create.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.FileSasPermissions.Create%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/storage/Azure.Storage.Files/src/Sas/FileSasPermissions.cs/#L26">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/storage/Azure.Storage.Files/src/Sas/FileSasPermissions.cs/#L26" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Storage_Sas_FileSasPermissions_Create_" data-uid="Azure.Storage.Sas.FileSasPermissions.Create*"></a>
-  <h4 id="Azure_Storage_Sas_FileSasPermissions_Create" data-uid="Azure.Storage.Sas.FileSasPermissions.Create">Create</h4>
+  
+  <h4 id="Azure_Storage_Sas_FileSasPermissions_Create" data-uid="Azure.Storage.Sas.FileSasPermissions.Create"><a href="#collapsible-Azure_Storage_Sas_FileSasPermissions_Create" class="expander" data-toggle="collapse">Create</a></h4>
+  
+  <div id="collapsible-Azure_Storage_Sas_FileSasPermissions_Create" class="collapse in">
   <div class="markdown level1 summary"><p>Get or sets whether Create is permitted.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool Create { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Storage_Sas_FileSasPermissions_Delete.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.FileSasPermissions.Delete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Storage_Sas_FileSasPermissions_Delete.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.FileSasPermissions.Delete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/storage/Azure.Storage.Files/src/Sas/FileSasPermissions.cs/#L36">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/storage/Azure.Storage.Files/src/Sas/FileSasPermissions.cs/#L36" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Storage_Sas_FileSasPermissions_Delete_" data-uid="Azure.Storage.Sas.FileSasPermissions.Delete*"></a>
-  <h4 id="Azure_Storage_Sas_FileSasPermissions_Delete" data-uid="Azure.Storage.Sas.FileSasPermissions.Delete">Delete</h4>
+  
+  <h4 id="Azure_Storage_Sas_FileSasPermissions_Delete" data-uid="Azure.Storage.Sas.FileSasPermissions.Delete"><a href="#collapsible-Azure_Storage_Sas_FileSasPermissions_Delete" class="expander" data-toggle="collapse">Delete</a></h4>
+  
+  <div id="collapsible-Azure_Storage_Sas_FileSasPermissions_Delete" class="collapse in">
   <div class="markdown level1 summary"><p>Get or sets whether Delete is permitted.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool Delete { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Storage_Sas_FileSasPermissions_Read.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.FileSasPermissions.Read%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Storage_Sas_FileSasPermissions_Read.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.FileSasPermissions.Read%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/storage/Azure.Storage.Files/src/Sas/FileSasPermissions.cs/#L21">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/storage/Azure.Storage.Files/src/Sas/FileSasPermissions.cs/#L21" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Storage_Sas_FileSasPermissions_Read_" data-uid="Azure.Storage.Sas.FileSasPermissions.Read*"></a>
-  <h4 id="Azure_Storage_Sas_FileSasPermissions_Read" data-uid="Azure.Storage.Sas.FileSasPermissions.Read">Read</h4>
+  
+  <h4 id="Azure_Storage_Sas_FileSasPermissions_Read" data-uid="Azure.Storage.Sas.FileSasPermissions.Read"><a href="#collapsible-Azure_Storage_Sas_FileSasPermissions_Read" class="expander" data-toggle="collapse">Read</a></h4>
+  
+  <div id="collapsible-Azure_Storage_Sas_FileSasPermissions_Read" class="collapse in">
   <div class="markdown level1 summary"><p>Get or sets whether Read is permitted.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool Read { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Storage_Sas_FileSasPermissions_Write.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.FileSasPermissions.Write%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Storage_Sas_FileSasPermissions_Write.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.FileSasPermissions.Write%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/storage/Azure.Storage.Files/src/Sas/FileSasPermissions.cs/#L31">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/storage/Azure.Storage.Files/src/Sas/FileSasPermissions.cs/#L31" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Storage_Sas_FileSasPermissions_Write_" data-uid="Azure.Storage.Sas.FileSasPermissions.Write*"></a>
-  <h4 id="Azure_Storage_Sas_FileSasPermissions_Write" data-uid="Azure.Storage.Sas.FileSasPermissions.Write">Write</h4>
+  
+  <h4 id="Azure_Storage_Sas_FileSasPermissions_Write" data-uid="Azure.Storage.Sas.FileSasPermissions.Write"><a href="#collapsible-Azure_Storage_Sas_FileSasPermissions_Write" class="expander" data-toggle="collapse">Write</a></h4>
+  
+  <div id="collapsible-Azure_Storage_Sas_FileSasPermissions_Write" class="collapse in">
   <div class="markdown level1 summary"><p>Get or sets whether Write is permitted.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool Write { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
   <h3 id="methods">Methods
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Storage_Sas_FileSasPermissions_Equals_Azure_Storage_Sas_FileSasPermissions_.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.FileSasPermissions.Equals(Azure.Storage.Sas.FileSasPermissions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Storage_Sas_FileSasPermissions_Equals_Azure_Storage_Sas_FileSasPermissions_.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.FileSasPermissions.Equals(Azure.Storage.Sas.FileSasPermissions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/storage/Azure.Storage.Files/src/Sas/FileSasPermissions.cs/#L127">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/storage/Azure.Storage.Files/src/Sas/FileSasPermissions.cs/#L127" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Storage_Sas_FileSasPermissions_Equals_" data-uid="Azure.Storage.Sas.FileSasPermissions.Equals*"></a>
-  <h4 id="Azure_Storage_Sas_FileSasPermissions_Equals_Azure_Storage_Sas_FileSasPermissions_" data-uid="Azure.Storage.Sas.FileSasPermissions.Equals(Azure.Storage.Sas.FileSasPermissions)">Equals(FileSasPermissions)</h4>
+  
+  <h4 id="Azure_Storage_Sas_FileSasPermissions_Equals_Azure_Storage_Sas_FileSasPermissions_" data-uid="Azure.Storage.Sas.FileSasPermissions.Equals(Azure.Storage.Sas.FileSasPermissions)"><a href="#collapsible-Azure_Storage_Sas_FileSasPermissions_Equals_Azure_Storage_Sas_FileSasPermissions_" class="expander" data-toggle="collapse">Equals(FileSasPermissions)</a></h4>
+  
+  <div id="collapsible-Azure_Storage_Sas_FileSasPermissions_Equals_Azure_Storage_Sas_FileSasPermissions_" class="collapse in">
   <div class="markdown level1 summary"><p>Check if two FileSasPermissions instances are equal.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool Equals(FileSasPermissions other)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Azure.Storage.Sas.FileSasPermissions.html">FileSasPermissions</a></td>
-        <td><span class="parametername">other</span></td>
-        <td><p>The instance to compare to.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Azure.Storage.Sas.FileSasPermissions.html">FileSasPermissions</a></span>
+        <span class="parametername">other</span>
+        <p><p>The instance to compare to.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p>True if they're equal, false otherwise.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p><p>True if they're equal, false otherwise.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1.equals#System_IEquatable_1_Equals__0_">IEquatable&lt;T&gt;.Equals(T)</a></div>
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Storage_Sas_FileSasPermissions_Parse_System_String_.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.FileSasPermissions.Parse(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Storage_Sas_FileSasPermissions_Parse_System_String_.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.FileSasPermissions.Parse(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/storage/Azure.Storage.Files/src/Sas/FileSasPermissions.cs/#L58">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/storage/Azure.Storage.Files/src/Sas/FileSasPermissions.cs/#L58" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Storage_Sas_FileSasPermissions_Parse_" data-uid="Azure.Storage.Sas.FileSasPermissions.Parse*"></a>
-  <h4 id="Azure_Storage_Sas_FileSasPermissions_Parse_System_String_" data-uid="Azure.Storage.Sas.FileSasPermissions.Parse(System.String)">Parse(String)</h4>
+  
+  <h4 id="Azure_Storage_Sas_FileSasPermissions_Parse_System_String_" data-uid="Azure.Storage.Sas.FileSasPermissions.Parse(System.String)"><a href="#collapsible-Azure_Storage_Sas_FileSasPermissions_Parse_System_String_" class="expander" data-toggle="collapse">Parse(String)</a></h4>
+  
+  <div id="collapsible-Azure_Storage_Sas_FileSasPermissions_Parse_System_String_" class="collapse in">
   <div class="markdown level1 summary"><p>Parse a permissions string into a new <a class="xref" href="Azure.Storage.Sas.FileSasPermissions.html">FileSasPermissions</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static FileSasPermissions Parse(string s)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">s</span></td>
-        <td><p>Permissions string to parse.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">s</span>
+        <p><p>Permissions string to parse.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Azure.Storage.Sas.FileSasPermissions.html">FileSasPermissions</a></td>
-        <td><p>The parsed <a class="xref" href="Azure.Storage.Sas.FileSasPermissions.html">FileSasPermissions</a>.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Azure.Storage.Sas.FileSasPermissions.html">FileSasPermissions</a>
+        <p><p>The parsed <a class="xref" href="Azure.Storage.Sas.FileSasPermissions.html">FileSasPermissions</a>.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Storage_Sas_FileSasPermissions_ToString.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.FileSasPermissions.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Storage_Sas_FileSasPermissions_ToString.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.FileSasPermissions.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/storage/Azure.Storage.Files/src/Sas/FileSasPermissions.cs/#L43">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/storage/Azure.Storage.Files/src/Sas/FileSasPermissions.cs/#L43" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Storage_Sas_FileSasPermissions_ToString_" data-uid="Azure.Storage.Sas.FileSasPermissions.ToString*"></a>
-  <h4 id="Azure_Storage_Sas_FileSasPermissions_ToString" data-uid="Azure.Storage.Sas.FileSasPermissions.ToString">ToString()</h4>
+  
+  <h4 id="Azure_Storage_Sas_FileSasPermissions_ToString" data-uid="Azure.Storage.Sas.FileSasPermissions.ToString"><a href="#collapsible-Azure_Storage_Sas_FileSasPermissions_ToString" class="expander" data-toggle="collapse">ToString()</a></h4>
+  
+  <div id="collapsible-Azure_Storage_Sas_FileSasPermissions_ToString" class="collapse in">
   <div class="markdown level1 summary"><p>Create a permissions string to provide
 <a class="xref" href="Azure.Storage.Sas.FileSasBuilder.html#Azure_Storage_Sas_FileSasBuilder_Permissions">Permissions</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
   </div>
+  
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p>A permissions string.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p><p>A permissions string.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">ValueType.ToString()</a></div>
+  
+  
+  
+  
+  
+  </div>
   <h3 id="operators">Operators
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Storage_Sas_FileSasPermissions_op_Equality_Azure_Storage_Sas_FileSasPermissions_Azure_Storage_Sas_FileSasPermissions_.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.FileSasPermissions.op_Equality(Azure.Storage.Sas.FileSasPermissions%2CAzure.Storage.Sas.FileSasPermissions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Storage_Sas_FileSasPermissions_op_Equality_Azure_Storage_Sas_FileSasPermissions_Azure_Storage_Sas_FileSasPermissions_.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.FileSasPermissions.op_Equality(Azure.Storage.Sas.FileSasPermissions%2CAzure.Storage.Sas.FileSasPermissions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/storage/Azure.Storage.Files/src/Sas/FileSasPermissions.cs/#L110">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/storage/Azure.Storage.Files/src/Sas/FileSasPermissions.cs/#L110" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Storage_Sas_FileSasPermissions_op_Equality_" data-uid="Azure.Storage.Sas.FileSasPermissions.op_Equality*"></a>
-  <h4 id="Azure_Storage_Sas_FileSasPermissions_op_Equality_Azure_Storage_Sas_FileSasPermissions_Azure_Storage_Sas_FileSasPermissions_" data-uid="Azure.Storage.Sas.FileSasPermissions.op_Equality(Azure.Storage.Sas.FileSasPermissions,Azure.Storage.Sas.FileSasPermissions)">Equality(FileSasPermissions, FileSasPermissions)</h4>
+  
+  <h4 id="Azure_Storage_Sas_FileSasPermissions_op_Equality_Azure_Storage_Sas_FileSasPermissions_Azure_Storage_Sas_FileSasPermissions_" data-uid="Azure.Storage.Sas.FileSasPermissions.op_Equality(Azure.Storage.Sas.FileSasPermissions,Azure.Storage.Sas.FileSasPermissions)"><a href="#collapsible-Azure_Storage_Sas_FileSasPermissions_op_Equality_Azure_Storage_Sas_FileSasPermissions_Azure_Storage_Sas_FileSasPermissions_" class="expander" data-toggle="collapse">Equality(FileSasPermissions, FileSasPermissions)</a></h4>
+  
+  <div id="collapsible-Azure_Storage_Sas_FileSasPermissions_op_Equality_Azure_Storage_Sas_FileSasPermissions_Azure_Storage_Sas_FileSasPermissions_" class="collapse in">
   <div class="markdown level1 summary"><p>Check if two FileSasPermissions instances are equal.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool operator ==(FileSasPermissions left, FileSasPermissions right)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Azure.Storage.Sas.FileSasPermissions.html">FileSasPermissions</a></td>
-        <td><span class="parametername">left</span></td>
-        <td><p>The first instance to compare.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Azure.Storage.Sas.FileSasPermissions.html">FileSasPermissions</a></td>
-        <td><span class="parametername">right</span></td>
-        <td><p>The second instance to compare.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Azure.Storage.Sas.FileSasPermissions.html">FileSasPermissions</a></span>
+        <span class="parametername">left</span>
+        <p><p>The first instance to compare.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Azure.Storage.Sas.FileSasPermissions.html">FileSasPermissions</a></span>
+        <span class="parametername">right</span>
+        <p><p>The second instance to compare.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p>True if they're equal, false otherwise.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p><p>True if they're equal, false otherwise.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Storage_Sas_FileSasPermissions_op_Inequality_Azure_Storage_Sas_FileSasPermissions_Azure_Storage_Sas_FileSasPermissions_.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.FileSasPermissions.op_Inequality(Azure.Storage.Sas.FileSasPermissions%2CAzure.Storage.Sas.FileSasPermissions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Storage_Sas_FileSasPermissions_op_Inequality_Azure_Storage_Sas_FileSasPermissions_Azure_Storage_Sas_FileSasPermissions_.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.FileSasPermissions.op_Inequality(Azure.Storage.Sas.FileSasPermissions%2CAzure.Storage.Sas.FileSasPermissions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/storage/Azure.Storage.Files/src/Sas/FileSasPermissions.cs/#L119">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/storage/Azure.Storage.Files/src/Sas/FileSasPermissions.cs/#L119" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Storage_Sas_FileSasPermissions_op_Inequality_" data-uid="Azure.Storage.Sas.FileSasPermissions.op_Inequality*"></a>
-  <h4 id="Azure_Storage_Sas_FileSasPermissions_op_Inequality_Azure_Storage_Sas_FileSasPermissions_Azure_Storage_Sas_FileSasPermissions_" data-uid="Azure.Storage.Sas.FileSasPermissions.op_Inequality(Azure.Storage.Sas.FileSasPermissions,Azure.Storage.Sas.FileSasPermissions)">Inequality(FileSasPermissions, FileSasPermissions)</h4>
+  
+  <h4 id="Azure_Storage_Sas_FileSasPermissions_op_Inequality_Azure_Storage_Sas_FileSasPermissions_Azure_Storage_Sas_FileSasPermissions_" data-uid="Azure.Storage.Sas.FileSasPermissions.op_Inequality(Azure.Storage.Sas.FileSasPermissions,Azure.Storage.Sas.FileSasPermissions)"><a href="#collapsible-Azure_Storage_Sas_FileSasPermissions_op_Inequality_Azure_Storage_Sas_FileSasPermissions_Azure_Storage_Sas_FileSasPermissions_" class="expander" data-toggle="collapse">Inequality(FileSasPermissions, FileSasPermissions)</a></h4>
+  
+  <div id="collapsible-Azure_Storage_Sas_FileSasPermissions_op_Inequality_Azure_Storage_Sas_FileSasPermissions_Azure_Storage_Sas_FileSasPermissions_" class="collapse in">
   <div class="markdown level1 summary"><p>Check if two FileSasPermissions instances are not equal.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool operator !=(FileSasPermissions left, FileSasPermissions right)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Azure.Storage.Sas.FileSasPermissions.html">FileSasPermissions</a></td>
-        <td><span class="parametername">left</span></td>
-        <td><p>The first instance to compare.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Azure.Storage.Sas.FileSasPermissions.html">FileSasPermissions</a></td>
-        <td><span class="parametername">right</span></td>
-        <td><p>The second instance to compare.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Azure.Storage.Sas.FileSasPermissions.html">FileSasPermissions</a></span>
+        <span class="parametername">left</span>
+        <p><p>The first instance to compare.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Azure.Storage.Sas.FileSasPermissions.html">FileSasPermissions</a></span>
+        <span class="parametername">right</span>
+        <p><p>The second instance to compare.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p>True if they're not equal, false otherwise.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p><p>True if they're not equal, false otherwise.</p>
+</p>
+      </td>
+    </tr>
   </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">System.IEquatable&lt;T&gt;</a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   </div>
+  
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
@@ -517,23 +613,17 @@ to generate a permissions string you can provide to
   <div>
       <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
+  
 </article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Storage_Sas_FileSasPermissions.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.FileSasPermissions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/storage/Azure.Storage.Files/src/Sas/FileSasPermissions.cs/#L16" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Storage_Sas_FileSasPermissions.md&amp;value=---%0Auid%3A%20Azure.Storage.Sas.FileSasPermissions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/storage/Azure.Storage.Files/src/Sas/FileSasPermissions.cs/#L16" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

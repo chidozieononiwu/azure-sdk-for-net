@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,76 +79,134 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Azure.Security.KeyVault.Keys">
-  
-  <h1 id="Azure_Security_KeyVault_Keys" data-uid="Azure.Security.KeyVault.Keys" class="text-break">Namespace Azure.Security.KeyVault.Keys
+  <h1 id="Azure_Security_KeyVault_Keys" data-uid="Azure.Security.KeyVault.Keys">Namespace Azure.Security.KeyVault.Keys
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="Azure.Security.KeyVault.Keys.DeletedKey.html">DeletedKey</a></h4>
-      <section><p>Represents a KeyVault key that has been deleted, allowing it to be recovered, if needed.</p>
-</section>
-      <h4><a class="xref" href="Azure.Security.KeyVault.Keys.EcKeyCreateOptions.html">EcKeyCreateOptions</a></h4>
-      <section><p>Represents the attributes to assign to an Elliptic Curve key at creation.</p>
-</section>
-      <h4><a class="xref" href="Azure.Security.KeyVault.Keys.JsonWebKey.html">JsonWebKey</a></h4>
-      <section><p>A JSON Web Key (JWK) is a JavaScript Object Notation (JSON) data
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Security.KeyVault.Keys.DeletedKey.html">DeletedKey</a></p>
+          <p><p>Represents a KeyVault key that has been deleted, allowing it to be recovered, if needed.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Security.KeyVault.Keys.EcKeyCreateOptions.html">EcKeyCreateOptions</a></p>
+          <p><p>Represents the attributes to assign to an Elliptic Curve key at creation.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Security.KeyVault.Keys.JsonWebKey.html">JsonWebKey</a></p>
+          <p><p>A JSON Web Key (JWK) is a JavaScript Object Notation (JSON) data
 structure that represents a cryptographic key.
 For more information, see <a href="http://tools.ietf.org/html/draft-ietf-jose-json-web-key-18">http://tools.ietf.org/html/draft-ietf-jose-json-web-key-18</a>.</p>
-</section>
-      <h4><a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a></h4>
-      <section><p><a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a> is the resource consisting of a value and its <a class="xref" href="Azure.Security.KeyVault.Keys.Key.html#Azure_Security_KeyVault_Keys_Key_Properties">Properties</a>.</p>
-</section>
-      <h4><a class="xref" href="Azure.Security.KeyVault.Keys.KeyClient.html">KeyClient</a></h4>
-      <section><p>The KeyClient provides synchronous and asynchronous methods to manage <a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a> in the Azure Key Vault. The client
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a></p>
+          <p><p><a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a> is the resource consisting of a value and its <a class="xref" href="Azure.Security.KeyVault.Keys.Key.html#Azure_Security_KeyVault_Keys_Key_Properties">Properties</a>.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Security.KeyVault.Keys.KeyClient.html">KeyClient</a></p>
+          <p><p>The KeyClient provides synchronous and asynchronous methods to manage <a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a> in the Azure Key Vault. The client
 supports creating, retrieving, updating, deleting, purging, backing up, restoring and listing the <a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a>.
 The client also supports listing <a class="xref" href="Azure.Security.KeyVault.Keys.DeletedKey.html">DeletedKey</a> for a soft-delete enabled Azure Key Vault.</p>
-</section>
-      <h4><a class="xref" href="Azure.Security.KeyVault.Keys.KeyClientOptions.html">KeyClientOptions</a></h4>
-      <section><p>Options that allow to configure the management of the request sent to Key Vault</p>
-</section>
-      <h4><a class="xref" href="Azure.Security.KeyVault.Keys.KeyCreateOptions.html">KeyCreateOptions</a></h4>
-      <section><p>Represent the key specific attributes needed in order to create a key.</p>
-</section>
-      <h4><a class="xref" href="Azure.Security.KeyVault.Keys.KeyImportOptions.html">KeyImportOptions</a></h4>
-      <section><p>The key import parameters.</p>
-</section>
-      <h4><a class="xref" href="Azure.Security.KeyVault.Keys.KeyProperties.html">KeyProperties</a></h4>
-      <section><p><a class="xref" href="Azure.Security.KeyVault.Keys.KeyProperties.html">KeyProperties</a> is the resource containing all the properties of the <a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a> except <a class="xref" href="Azure.Security.KeyVault.Keys.JsonWebKey.html">JsonWebKey</a> properties.</p>
-</section>
-      <h4><a class="xref" href="Azure.Security.KeyVault.Keys.RsaKeyCreateOptions.html">RsaKeyCreateOptions</a></h4>
-      <section><p>Represents the attributes to assign to an RSA key at creation.</p>
-</section>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Security.KeyVault.Keys.KeyClientOptions.html">KeyClientOptions</a></p>
+          <p><p>Options that allow to configure the management of the request sent to Key Vault</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Security.KeyVault.Keys.KeyCreateOptions.html">KeyCreateOptions</a></p>
+          <p><p>Represent the key specific attributes needed in order to create a key.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Security.KeyVault.Keys.KeyImportOptions.html">KeyImportOptions</a></p>
+          <p><p>The key import parameters.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Security.KeyVault.Keys.KeyProperties.html">KeyProperties</a></p>
+          <p><p><a class="xref" href="Azure.Security.KeyVault.Keys.KeyProperties.html">KeyProperties</a> is the resource containing all the properties of the <a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a> except <a class="xref" href="Azure.Security.KeyVault.Keys.JsonWebKey.html">JsonWebKey</a> properties.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Security.KeyVault.Keys.RsaKeyCreateOptions.html">RsaKeyCreateOptions</a></p>
+          <p><p>Represents the attributes to assign to an RSA key at creation.</p>
+</p>
+        </td>
+      </tr>
+    </table>
     <h3 id="structs">Structs
   </h3>
-      <h4><a class="xref" href="Azure.Security.KeyVault.Keys.KeyCurveName.html">KeyCurveName</a></h4>
-      <section><p>Elliptic Curve Cryptography (ECC) curve names.</p>
-</section>
-      <h4><a class="xref" href="Azure.Security.KeyVault.Keys.KeyOperation.html">KeyOperation</a></h4>
-      <section><p>An operation that can be performed with the key.</p>
-</section>
-      <h4><a class="xref" href="Azure.Security.KeyVault.Keys.KeyType.html">KeyType</a></h4>
-      <section><p><a class="xref" href="Azure.Security.KeyVault.Keys.JsonWebKey.html">JsonWebKey</a> key types.</p>
-</section>
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Security.KeyVault.Keys.KeyCurveName.html">KeyCurveName</a></p>
+          <p><p>Elliptic Curve Cryptography (ECC) curve names.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Security.KeyVault.Keys.KeyOperation.html">KeyOperation</a></p>
+          <p><p>An operation that can be performed with the key.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Security.KeyVault.Keys.KeyType.html">KeyType</a></p>
+          <p><p><a class="xref" href="Azure.Security.KeyVault.Keys.JsonWebKey.html">JsonWebKey</a> key types.</p>
+</p>
+        </td>
+      </tr>
+    </table>
     <h3 id="enums">Enums
   </h3>
-      <h4><a class="xref" href="Azure.Security.KeyVault.Keys.KeyClientOptions.ServiceVersion.html">KeyClientOptions.ServiceVersion</a></h4>
-      <section><p>The versions of Azure Key Vault supported by this client
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Security.KeyVault.Keys.KeyClientOptions.ServiceVersion.html">KeyClientOptions.ServiceVersion</a></p>
+          <p><p>The versions of Azure Key Vault supported by this client
 library.</p>
-</section>
+</p>
+        </td>
+      </tr>
+    </table>
 </article>
+          </div>
+          <div class="contribution-panel mobile-hide">
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

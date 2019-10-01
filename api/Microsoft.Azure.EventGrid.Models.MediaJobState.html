@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,70 +79,74 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Microsoft.Azure.EventGrid.Models.MediaJobState">
-  
-  
-  <h1 id="Microsoft_Azure_EventGrid_Models_MediaJobState" data-uid="Microsoft.Azure.EventGrid.Models.MediaJobState" class="text-break">Enum MediaJobState
+  <h1 id="Microsoft_Azure_EventGrid_Models_MediaJobState" data-uid="Microsoft.Azure.EventGrid.Models.MediaJobState">Enum MediaJobState
   </h1>
   <div class="markdown level0 summary"><p>Defines values for MediaJobState.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.EventGrid.Models.html">Microsoft.Azure.EventGrid.Models</a></h6>
+  
+  
+  
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.EventGrid.dll</h6>
+  
   <h5 id="Microsoft_Azure_EventGrid_Models_MediaJobState_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public enum MediaJobState</code></pre>
   </div>
-  <h3 id="fields">Fields
-  </h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    <thead>
-    <tbody>
-      <tr>
-        <td id="Microsoft_Azure_EventGrid_Models_MediaJobState_Canceled">Canceled</td>
-        <td><p>The job was canceled. This is a final state for the job.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_EventGrid_Models_MediaJobState_Canceling">Canceling</td>
-        <td><p>The job is in the process of being canceled. This is a transient
+  
+  
+  
+  
+  
+      <h4 id="Microsoft_Azure_EventGrid_Models_MediaJobState_Canceled"><a href="#collapsible-Microsoft_Azure_EventGrid_Models_MediaJobState_Canceled" class="expander" data-toggle="collapse">Canceled</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_EventGrid_Models_MediaJobState_Canceled" class="collapse in">
+        <p><p>The job was canceled. This is a final state for the job.</p>
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_EventGrid_Models_MediaJobState_Canceling"><a href="#collapsible-Microsoft_Azure_EventGrid_Models_MediaJobState_Canceling" class="expander" data-toggle="collapse">Canceling</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_EventGrid_Models_MediaJobState_Canceling" class="collapse in">
+        <p><p>The job is in the process of being canceled. This is a transient
 state for the job.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_EventGrid_Models_MediaJobState_Error">Error</td>
-        <td><p>The job has encountered an error. This is a final state for the
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_EventGrid_Models_MediaJobState_Error"><a href="#collapsible-Microsoft_Azure_EventGrid_Models_MediaJobState_Error" class="expander" data-toggle="collapse">Error</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_EventGrid_Models_MediaJobState_Error" class="collapse in">
+        <p><p>The job has encountered an error. This is a final state for the
 job.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_EventGrid_Models_MediaJobState_Finished">Finished</td>
-        <td><p>The job is finished. This is a final state for the job.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_EventGrid_Models_MediaJobState_Processing">Processing</td>
-        <td><p>The job is processing. This is a transient state for the job.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_EventGrid_Models_MediaJobState_Queued">Queued</td>
-        <td><p>The job is in a queued state, waiting for resources to become
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_EventGrid_Models_MediaJobState_Finished"><a href="#collapsible-Microsoft_Azure_EventGrid_Models_MediaJobState_Finished" class="expander" data-toggle="collapse">Finished</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_EventGrid_Models_MediaJobState_Finished" class="collapse in">
+        <p><p>The job is finished. This is a final state for the job.</p>
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_EventGrid_Models_MediaJobState_Processing"><a href="#collapsible-Microsoft_Azure_EventGrid_Models_MediaJobState_Processing" class="expander" data-toggle="collapse">Processing</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_EventGrid_Models_MediaJobState_Processing" class="collapse in">
+        <p><p>The job is processing. This is a transient state for the job.</p>
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_EventGrid_Models_MediaJobState_Queued"><a href="#collapsible-Microsoft_Azure_EventGrid_Models_MediaJobState_Queued" class="expander" data-toggle="collapse">Queued</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_EventGrid_Models_MediaJobState_Queued" class="collapse in">
+        <p><p>The job is in a queued state, waiting for resources to become
 available. This is a transient state.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_EventGrid_Models_MediaJobState_Scheduled">Scheduled</td>
-        <td><p>The job is being scheduled to run on an available resource. This is
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_EventGrid_Models_MediaJobState_Scheduled"><a href="#collapsible-Microsoft_Azure_EventGrid_Models_MediaJobState_Scheduled" class="expander" data-toggle="collapse">Scheduled</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_EventGrid_Models_MediaJobState_Scheduled" class="collapse in">
+        <p><p>The job is being scheduled to run on an available resource. This is
 a transient state, between queued and processing states.</p>
-</td>
-      </tr>
-    </tbody>
-  </thead></thead></table>
+</p>
+      </div>
+  
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;MediaJobState, TConfiguration&gt;(TConfiguration)</a>
@@ -164,21 +168,14 @@ a transient state, between queued and processing states.</p>
   </div>
 </article>
           </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_EventGrid_Models_MediaJobState.md&amp;value=---%0Auid%3A%20Microsoft.Azure.EventGrid.Models.MediaJobState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventgrid/Microsoft.Azure.EventGrid/src/Generated/Models/MediaJobState.cs/#L21" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
+          </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_EventGrid_Models_MediaJobState.md&amp;value=---%0Auid%3A%20Microsoft.Azure.EventGrid.Models.MediaJobState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventgrid/Microsoft.Azure.EventGrid/src/Generated/Models/MediaJobState.cs/#L21" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

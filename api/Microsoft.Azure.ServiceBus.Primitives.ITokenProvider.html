@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,77 +79,94 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Microsoft.Azure.ServiceBus.Primitives.ITokenProvider">
-  
-  
-  <h1 id="Microsoft_Azure_ServiceBus_Primitives_ITokenProvider" data-uid="Microsoft.Azure.ServiceBus.Primitives.ITokenProvider" class="text-break">Interface ITokenProvider
+  <h1 id="Microsoft_Azure_ServiceBus_Primitives_ITokenProvider" data-uid="Microsoft.Azure.ServiceBus.Primitives.ITokenProvider">Interface ITokenProvider
   </h1>
   <div class="markdown level0 summary"><p>Provides interface definition of a token provider.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.ServiceBus.Primitives.html">Microsoft.Azure.ServiceBus.Primitives</a></h6>
+  
+  
+  
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.ServiceBus.dll</h6>
+  
   <h5 id="Microsoft_Azure_ServiceBus_Primitives_ITokenProvider_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface ITokenProvider</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h3 id="methods">Methods
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Primitives_ITokenProvider_GetTokenAsync_System_String_System_TimeSpan_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Primitives.ITokenProvider.GetTokenAsync(System.String%2CSystem.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Primitives_ITokenProvider_GetTokenAsync_System_String_System_TimeSpan_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Primitives.ITokenProvider.GetTokenAsync(System.String%2CSystem.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Primitives/ITokenProvider.cs/#L23">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Primitives/ITokenProvider.cs/#L23" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_Primitives_ITokenProvider_GetTokenAsync_" data-uid="Microsoft.Azure.ServiceBus.Primitives.ITokenProvider.GetTokenAsync*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_Primitives_ITokenProvider_GetTokenAsync_System_String_System_TimeSpan_" data-uid="Microsoft.Azure.ServiceBus.Primitives.ITokenProvider.GetTokenAsync(System.String,System.TimeSpan)">GetTokenAsync(String, TimeSpan)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_Primitives_ITokenProvider_GetTokenAsync_System_String_System_TimeSpan_" data-uid="Microsoft.Azure.ServiceBus.Primitives.ITokenProvider.GetTokenAsync(System.String,System.TimeSpan)"><a href="#collapsible-Microsoft_Azure_ServiceBus_Primitives_ITokenProvider_GetTokenAsync_System_String_System_TimeSpan_" class="expander" data-toggle="collapse">GetTokenAsync(String, TimeSpan)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_Primitives_ITokenProvider_GetTokenAsync_System_String_System_TimeSpan_" class="collapse in">
   <div class="markdown level1 summary"><p>Gets a <a class="xref" href="Microsoft.Azure.ServiceBus.Primitives.SecurityToken.html">SecurityToken</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;SecurityToken&gt; GetTokenAsync(string appliesTo, TimeSpan timeout)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">appliesTo</span></td>
-        <td><p>The URI which the access token applies to</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
-        <td><span class="parametername">timeout</span></td>
-        <td><p>The time span that specifies the timeout value for the message that gets the security token</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">appliesTo</span>
+        <p><p>The URI which the access token applies to</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></span>
+        <span class="parametername">timeout</span>
+        <p><p>The time span that specifies the timeout value for the message that gets the security token</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Primitives.SecurityToken.html">SecurityToken</a>&gt;</td>
-        <td><p><a class="xref" href="Microsoft.Azure.ServiceBus.Primitives.SecurityToken.html">SecurityToken</a></p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Primitives.SecurityToken.html">SecurityToken</a>&gt;
+        <p><p><a class="xref" href="Microsoft.Azure.ServiceBus.Primitives.SecurityToken.html">SecurityToken</a></p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
@@ -169,23 +186,17 @@
   <div>
       <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
+  
 </article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Primitives_ITokenProvider.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Primitives.ITokenProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Primitives/ITokenProvider.cs/#L15" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_Primitives_ITokenProvider.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.Primitives.ITokenProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/Primitives/ITokenProvider.cs/#L15" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

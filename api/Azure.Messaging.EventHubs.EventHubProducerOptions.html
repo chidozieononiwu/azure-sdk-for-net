@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,19 +79,20 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Azure.Messaging.EventHubs.EventHubProducerOptions">
-  
-  
-  <h1 id="Azure_Messaging_EventHubs_EventHubProducerOptions" data-uid="Azure.Messaging.EventHubs.EventHubProducerOptions" class="text-break">Class EventHubProducerOptions
+  <h1 id="Azure_Messaging_EventHubs_EventHubProducerOptions" data-uid="Azure.Messaging.EventHubs.EventHubProducerOptions">Class EventHubProducerOptions
   </h1>
   <div class="markdown level0 summary"><p>The set of options that can be specified when creating an <a class="xref" href="Azure.Messaging.EventHubs.EventHubProducer.html">EventHubProducer</a>
 to configure its behavior.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">EventHubProducerOptions</span></div>
   </div>
+  
+  
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -116,23 +117,35 @@ to configure its behavior.</p>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Azure.Messaging.EventHubs.html">Azure.Messaging.EventHubs</a></h6>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>: Azure.Messaging.EventHubs.dll</h6>
+  
   <h5 id="Azure_Messaging_EventHubs_EventHubProducerOptions_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class EventHubProducerOptions</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h3 id="properties">Properties
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducerOptions_PartitionId.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducerOptions.PartitionId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducerOptions_PartitionId.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducerOptions.PartitionId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducerOptions.cs/#L39">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducerOptions.cs/#L39" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_EventHubProducerOptions_PartitionId_" data-uid="Azure.Messaging.EventHubs.EventHubProducerOptions.PartitionId*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventHubProducerOptions_PartitionId" data-uid="Azure.Messaging.EventHubs.EventHubProducerOptions.PartitionId">PartitionId</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_EventHubProducerOptions_PartitionId" data-uid="Azure.Messaging.EventHubs.EventHubProducerOptions.PartitionId"><a href="#collapsible-Azure_Messaging_EventHubs_EventHubProducerOptions_PartitionId" class="expander" data-toggle="collapse">PartitionId</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_EventHubProducerOptions_PartitionId" class="collapse in">
   <div class="markdown level1 summary"><p>The identifier of the Event Hub partition that the <a class="xref" href="Azure.Messaging.EventHubs.EventHubProducer.html">EventHubProducer</a> will be bound to,
 limiting it to sending events to only that partition.</p>
 <p>If the identifier is not specified, the Event Hubs service will be responsible for routing events that
@@ -140,25 +153,29 @@ are sent to an available partition.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string PartitionId { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p>If the producer wishes the events to be automatically to partitions, <code>null</code>; otherwise, the identifier of the desired partition.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p><p>If the producer wishes the events to be automatically to partitions, <code>null</code>; otherwise, the identifier of the desired partition.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
   <h5 id="Azure_Messaging_EventHubs_EventHubProducerOptions_PartitionId_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Allowing automatic routing of partitions is recommended when:</p>
 <p>- The sending of events needs to be highly available.</p>
@@ -167,39 +184,57 @@ are sent to an available partition.</p>
 <p>1) Distribute the events equally amongst all available partitions using a round-robin approach.</p>
 <p>2) If a partition becomes unavailable, the Event Hubs service will automatically detect it and forward the message to another available partition.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducerOptions_RetryOptions.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducerOptions.RetryOptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducerOptions_RetryOptions.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducerOptions.RetryOptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducerOptions.cs/#L55">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducerOptions.cs/#L55" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_EventHubProducerOptions_RetryOptions_" data-uid="Azure.Messaging.EventHubs.EventHubProducerOptions.RetryOptions*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventHubProducerOptions_RetryOptions" data-uid="Azure.Messaging.EventHubs.EventHubProducerOptions.RetryOptions">RetryOptions</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_EventHubProducerOptions_RetryOptions" data-uid="Azure.Messaging.EventHubs.EventHubProducerOptions.RetryOptions"><a href="#collapsible-Azure_Messaging_EventHubs_EventHubProducerOptions_RetryOptions" class="expander" data-toggle="collapse">RetryOptions</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_EventHubProducerOptions_RetryOptions" class="collapse in">
   <div class="markdown level1 summary"><p>The set of options to use for determining whether a failed operation should be retried and,
 if so, the amount of time to wait between retry attempts.  If not specified, the retry policy from
 the associated <a class="xref" href="Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a> will be used.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public RetryOptions RetryOptions { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Azure.Messaging.EventHubs.RetryOptions.html">RetryOptions</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Azure.Messaging.EventHubs.RetryOptions.html">RetryOptions</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
@@ -219,23 +254,17 @@ the associated <a class="xref" href="Azure.Messaging.EventHubs.EventHubClient.ht
   <div>
       <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
+  
 </article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducerOptions.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducerOptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducerOptions.cs/#L14" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducerOptions.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducerOptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducerOptions.cs/#L14" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

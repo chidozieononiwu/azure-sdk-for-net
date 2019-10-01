@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,89 +79,95 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Microsoft.Azure.EventGrid.Models.MediaJobErrorCode">
-  
-  
-  <h1 id="Microsoft_Azure_EventGrid_Models_MediaJobErrorCode" data-uid="Microsoft.Azure.EventGrid.Models.MediaJobErrorCode" class="text-break">Enum MediaJobErrorCode
+  <h1 id="Microsoft_Azure_EventGrid_Models_MediaJobErrorCode" data-uid="Microsoft.Azure.EventGrid.Models.MediaJobErrorCode">Enum MediaJobErrorCode
   </h1>
   <div class="markdown level0 summary"><p>Defines values for MediaJobErrorCode.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.EventGrid.Models.html">Microsoft.Azure.EventGrid.Models</a></h6>
+  
+  
+  
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.EventGrid.dll</h6>
+  
   <h5 id="Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public enum MediaJobErrorCode</code></pre>
   </div>
-  <h3 id="fields">Fields
-  </h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    <thead>
-    <tbody>
-      <tr>
-        <td id="Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_ConfigurationUnsupported">ConfigurationUnsupported</td>
-        <td><p>There was a problem with the combination of input files and the
+  
+  
+  
+  
+  
+      <h4 id="Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_ConfigurationUnsupported"><a href="#collapsible-Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_ConfigurationUnsupported" class="expander" data-toggle="collapse">ConfigurationUnsupported</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_ConfigurationUnsupported" class="collapse in">
+        <p><p>There was a problem with the combination of input files and the
 configuration settings applied, fix the configuration settings and
 retry with the same input, or change input to match the
 configuration.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_ContentMalformed">ContentMalformed</td>
-        <td><p>There was a problem with the input content (for example: zero byte
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_ContentMalformed"><a href="#collapsible-Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_ContentMalformed" class="expander" data-toggle="collapse">ContentMalformed</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_ContentMalformed" class="collapse in">
+        <p><p>There was a problem with the input content (for example: zero byte
 files, or corrupt/non-decodable files), check the input files.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_ContentUnsupported">ContentUnsupported</td>
-        <td><p>There was a problem with the format of the input (not valid media
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_ContentUnsupported"><a href="#collapsible-Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_ContentUnsupported" class="expander" data-toggle="collapse">ContentUnsupported</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_ContentUnsupported" class="collapse in">
+        <p><p>There was a problem with the format of the input (not valid media
 file, or an unsupported file/codec), check the validity of the
 input files.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_DownloadNotAccessible">DownloadNotAccessible</td>
-        <td><p>While trying to download the input files, the files were not
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_DownloadNotAccessible"><a href="#collapsible-Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_DownloadNotAccessible" class="expander" data-toggle="collapse">DownloadNotAccessible</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_DownloadNotAccessible" class="collapse in">
+        <p><p>While trying to download the input files, the files were not
 accessible, please check the availability of the source.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_DownloadTransientError">DownloadTransientError</td>
-        <td><p>While trying to download the input files, there was an issue during
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_DownloadTransientError"><a href="#collapsible-Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_DownloadTransientError" class="expander" data-toggle="collapse">DownloadTransientError</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_DownloadTransientError" class="collapse in">
+        <p><p>While trying to download the input files, there was an issue during
 transfer (storage service, network errors), see details and check
 your source.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_ServiceError">ServiceError</td>
-        <td><p>Fatal service error, please contact support.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_ServiceTransientError">ServiceTransientError</td>
-        <td><p>Transient error, please retry, if retry is unsuccessful, please
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_ServiceError"><a href="#collapsible-Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_ServiceError" class="expander" data-toggle="collapse">ServiceError</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_ServiceError" class="collapse in">
+        <p><p>Fatal service error, please contact support.</p>
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_ServiceTransientError"><a href="#collapsible-Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_ServiceTransientError" class="expander" data-toggle="collapse">ServiceTransientError</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_ServiceTransientError" class="collapse in">
+        <p><p>Transient error, please retry, if retry is unsuccessful, please
 contact support.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_UploadNotAccessible">UploadNotAccessible</td>
-        <td><p>While trying to upload the output files, the destination was not
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_UploadNotAccessible"><a href="#collapsible-Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_UploadNotAccessible" class="expander" data-toggle="collapse">UploadNotAccessible</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_UploadNotAccessible" class="collapse in">
+        <p><p>While trying to upload the output files, the destination was not
 reachable, please check the availability of the destination.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_UploadTransientError">UploadTransientError</td>
-        <td><p>While trying to upload the output files, there was an issue during
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_UploadTransientError"><a href="#collapsible-Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_UploadTransientError" class="expander" data-toggle="collapse">UploadTransientError</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_EventGrid_Models_MediaJobErrorCode_UploadTransientError" class="collapse in">
+        <p><p>While trying to upload the output files, there was an issue during
 transfer (storage service, network errors), see details and check
 your destination.</p>
-</td>
-      </tr>
-    </tbody>
-  </thead></thead></table>
+</p>
+      </div>
+  
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;MediaJobErrorCode, TConfiguration&gt;(TConfiguration)</a>
@@ -183,21 +189,14 @@ your destination.</p>
   </div>
 </article>
           </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_EventGrid_Models_MediaJobErrorCode.md&amp;value=---%0Auid%3A%20Microsoft.Azure.EventGrid.Models.MediaJobErrorCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventgrid/Microsoft.Azure.EventGrid/src/Generated/Models/MediaJobErrorCode.cs/#L21" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
+          </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_EventGrid_Models_MediaJobErrorCode.md&amp;value=---%0Auid%3A%20Microsoft.Azure.EventGrid.Models.MediaJobErrorCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventgrid/Microsoft.Azure.EventGrid/src/Generated/Models/MediaJobErrorCode.cs/#L21" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

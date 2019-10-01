@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,76 +79,80 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobState">
-  
-  
-  <h1 id="Microsoft_Azure_Batch_Protocol_Models_JobState" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobState" class="text-break">Enum JobState
+  <h1 id="Microsoft_Azure_Batch_Protocol_Models_JobState" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobState">Enum JobState
   </h1>
   <div class="markdown level0 summary"><p>Defines values for JobState.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.html">Microsoft.Azure.Batch.Protocol.Models</a></h6>
+  
+  
+  
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
+  
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobState_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public enum JobState</code></pre>
   </div>
-  <h3 id="fields">Fields
-  </h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    <thead>
-    <tbody>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_JobState_Active">Active</td>
-        <td><p>The Job is available to have Tasks scheduled.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_JobState_Completed">Completed</td>
-        <td><p>All Tasks have terminated, and the system will not accept any more
+  
+  
+  
+  
+  
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobState_Active"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_JobState_Active" class="expander" data-toggle="collapse">Active</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_JobState_Active" class="collapse in">
+        <p><p>The Job is available to have Tasks scheduled.</p>
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobState_Completed"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_JobState_Completed" class="expander" data-toggle="collapse">Completed</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_JobState_Completed" class="collapse in">
+        <p><p>All Tasks have terminated, and the system will not accept any more
 Tasks or any further changes to the Job.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_JobState_Deleting">Deleting</td>
-        <td><p>A user has requested that the Job be deleted, but the delete
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobState_Deleting"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_JobState_Deleting" class="expander" data-toggle="collapse">Deleting</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_JobState_Deleting" class="collapse in">
+        <p><p>A user has requested that the Job be deleted, but the delete
 operation is still in progress (for example, because the system is
 still terminating running Tasks).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_JobState_Disabled">Disabled</td>
-        <td><p>A user has disabled the Job. No Tasks are running, and no new Tasks
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobState_Disabled"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_JobState_Disabled" class="expander" data-toggle="collapse">Disabled</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_JobState_Disabled" class="collapse in">
+        <p><p>A user has disabled the Job. No Tasks are running, and no new Tasks
 will be scheduled.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_JobState_Disabling">Disabling</td>
-        <td><p>A user has requested that the Job be disabled, but the disable
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobState_Disabling"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_JobState_Disabling" class="expander" data-toggle="collapse">Disabling</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_JobState_Disabling" class="collapse in">
+        <p><p>A user has requested that the Job be disabled, but the disable
 operation is still in progress (for example, waiting for Tasks to
 terminate).</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_JobState_Enabling">Enabling</td>
-        <td><p>A user has requested that the Job be enabled, but the enable
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobState_Enabling"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_JobState_Enabling" class="expander" data-toggle="collapse">Enabling</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_JobState_Enabling" class="collapse in">
+        <p><p>A user has requested that the Job be enabled, but the enable
 operation is still in progress.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_JobState_Terminating">Terminating</td>
-        <td><p>The Job is about to complete, either because a Job Manager Task has
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobState_Terminating"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_JobState_Terminating" class="expander" data-toggle="collapse">Terminating</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_JobState_Terminating" class="collapse in">
+        <p><p>The Job is about to complete, either because a Job Manager Task has
 completed or because the user has terminated the Job, but the
 terminate operation is still in progress (for example, because Job
 Release Tasks are running).</p>
-</td>
-      </tr>
-    </tbody>
-  </thead></thead></table>
+</p>
+      </div>
+  
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;JobState, TConfiguration&gt;(TConfiguration)</a>
@@ -170,21 +174,14 @@ Release Tasks are running).</p>
   </div>
 </article>
           </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobState.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobState.cs/#L21" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
+          </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobState.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobState.cs/#L21" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

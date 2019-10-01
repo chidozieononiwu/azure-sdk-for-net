@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,89 +79,165 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Microsoft.Azure.EventHubs.ServiceFabricProcessor">
-  
-  <h1 id="Microsoft_Azure_EventHubs_ServiceFabricProcessor" data-uid="Microsoft.Azure.EventHubs.ServiceFabricProcessor" class="text-break">Namespace Microsoft.Azure.EventHubs.ServiceFabricProcessor
+  <h1 id="Microsoft_Azure_EventHubs_ServiceFabricProcessor" data-uid="Microsoft.Azure.EventHubs.ServiceFabricProcessor">Namespace Microsoft.Azure.EventHubs.ServiceFabricProcessor
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.Checkpoint.html">Checkpoint</a></h4>
-      <section><p>A persistable representation of what events in the stream have been processed.
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.Checkpoint.html">Checkpoint</a></p>
+          <p><p>A persistable representation of what events in the stream have been processed.
 Version 1 checkpoint is just a high-water mark, containing an offset and sequence number. All events at or lower than the given position
 have been processed. Any events higher than the given position are unprocessed.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.EventHubMocks.html">EventHubMocks</a></h4>
-      <section><p>Mocks for the underlying event hub client. Using these instead of the regular wrappers allows unit testing without an event hub.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.EventHubMocks.html">EventHubMocks</a></p>
+          <p><p>Mocks for the underlying event hub client. Using these instead of the regular wrappers allows unit testing without an event hub.
 By default, EventProcessorService.EventHubClientFactory is a EventHubWrappers.EventHubClientFactory.
 To use the mocks, change it to a EventHubMocks.EventHubClientFactoryMock.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.EventHubMocks.EventHubClientFactoryMock.html">EventHubMocks.EventHubClientFactoryMock</a></h4>
-      <section><p>An EventHubClient factory which dispenses mocks.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.EventHubMocks.EventHubClientMock.html">EventHubMocks.EventHubClientMock</a></h4>
-      <section><p>Mock of EventHubClient class.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.EventHubMocks.PartitionReceiverMock.html">EventHubMocks.PartitionReceiverMock</a></h4>
-      <section><p>Mock of an Event Hub partition receiver.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.EventHubWrappers.html">EventHubWrappers</a></h4>
-      <section><p>Wrappers for the underlying Event Hub client which allow mocking.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.EventHubMocks.EventHubClientFactoryMock.html">EventHubMocks.EventHubClientFactoryMock</a></p>
+          <p><p>An EventHubClient factory which dispenses mocks.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.EventHubMocks.EventHubClientMock.html">EventHubMocks.EventHubClientMock</a></p>
+          <p><p>Mock of EventHubClient class.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.EventHubMocks.PartitionReceiverMock.html">EventHubMocks.PartitionReceiverMock</a></p>
+          <p><p>Mock of an Event Hub partition receiver.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.EventHubWrappers.html">EventHubWrappers</a></p>
+          <p><p>Wrappers for the underlying Event Hub client which allow mocking.
 The interfaces include only the client functionality used by the Service Fabric Processor.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.EventProcessorConfigurationException.html">EventProcessorConfigurationException</a></h4>
-      <section><p>Exception thrown when the configuration of the service has a problem.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.EventProcessorOptions.html">EventProcessorOptions</a></h4>
-      <section><p>Options that govern the functioning of the processor.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.IEventProcessor.html">IEventProcessor</a></h4>
-      <section><p>Interface for processing events.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.PartitionContext.html">PartitionContext</a></h4>
-      <section><p>Passed to an event processor instance to describe the environment.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.ServiceFabricProcessor.html">ServiceFabricProcessor</a></h4>
-      <section><p>Base class that implements event processor functionality.</p>
-</section>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.EventProcessorConfigurationException.html">EventProcessorConfigurationException</a></p>
+          <p><p>Exception thrown when the configuration of the service has a problem.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.EventProcessorOptions.html">EventProcessorOptions</a></p>
+          <p><p>Options that govern the functioning of the processor.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.IEventProcessor.html">IEventProcessor</a></p>
+          <p><p>Interface for processing events.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.PartitionContext.html">PartitionContext</a></p>
+          <p><p>Passed to an event processor instance to describe the environment.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.ServiceFabricProcessor.html">ServiceFabricProcessor</a></p>
+          <p><p>Base class that implements event processor functionality.</p>
+</p>
+        </td>
+      </tr>
+    </table>
     <h3 id="interfaces">Interfaces
   </h3>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.EventHubWrappers.IEventHubClient.html">EventHubWrappers.IEventHubClient</a></h4>
-      <section><p>Interface representing EventHubClient</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.EventHubWrappers.IEventHubClientFactory.html">EventHubWrappers.IEventHubClientFactory</a></h4>
-      <section><p>Interface for an EventHubClient factory so that we can have factories which dispense different implementations of IEventHubClient.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.EventHubWrappers.IPartitionReceiver.html">EventHubWrappers.IPartitionReceiver</a></h4>
-      <section><p>Interface for a partition receiver.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.ICheckpointMananger.html">ICheckpointMananger</a></h4>
-      <section><p>Interface for a checkpoint manager which persists Checkpoints.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.IFabricPartitionLister.html">IFabricPartitionLister</a></h4>
-      <section></section>
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.EventHubWrappers.IEventHubClient.html">EventHubWrappers.IEventHubClient</a></p>
+          <p><p>Interface representing EventHubClient</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.EventHubWrappers.IEventHubClientFactory.html">EventHubWrappers.IEventHubClientFactory</a></p>
+          <p><p>Interface for an EventHubClient factory so that we can have factories which dispense different implementations of IEventHubClient.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.EventHubWrappers.IPartitionReceiver.html">EventHubWrappers.IPartitionReceiver</a></p>
+          <p><p>Interface for a partition receiver.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.ICheckpointMananger.html">ICheckpointMananger</a></p>
+          <p><p>Interface for a checkpoint manager which persists Checkpoints.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.IFabricPartitionLister.html">IFabricPartitionLister</a></p>
+          <p>
+        </td>
+      </tr>
+    </table>
     <h3 id="enums">Enums
   </h3>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.CloseReason.html">CloseReason</a></h4>
-      <section><p>Why the event processor is being shut down.</p>
-</section>
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.CloseReason.html">CloseReason</a></p>
+          <p><p>Why the event processor is being shut down.</p>
+</p>
+        </td>
+      </tr>
+    </table>
     <h3 id="delegates">Delegates
   </h3>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.ShutdownNotification.html">ShutdownNotification</a></h4>
-      <section><p>Type used for OnShutdown property.</p>
-</section>
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.ServiceFabricProcessor.ShutdownNotification.html">ShutdownNotification</a></p>
+          <p><p>Type used for OnShutdown property.</p>
+</p>
+        </td>
+      </tr>
+    </table>
 </article>
+          </div>
+          <div class="contribution-panel mobile-hide">
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

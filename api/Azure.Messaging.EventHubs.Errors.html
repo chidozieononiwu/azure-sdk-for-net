@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,58 +79,88 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Azure.Messaging.EventHubs.Errors">
-  
-  <h1 id="Azure_Messaging_EventHubs_Errors" data-uid="Azure.Messaging.EventHubs.Errors" class="text-break">Namespace Azure.Messaging.EventHubs.Errors
+  <h1 id="Azure_Messaging_EventHubs_Errors" data-uid="Azure.Messaging.EventHubs.Errors">Namespace Azure.Messaging.EventHubs.Errors
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="Azure.Messaging.EventHubs.Errors.ConsumerDisconnectedException.html">ConsumerDisconnectedException</a></h4>
-      <section><p>An exception which occurs when an <a class="xref" href="Azure.Messaging.EventHubs.EventHubConsumer.html">EventHubConsumer</a> is forcefully disconnected
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Messaging.EventHubs.Errors.ConsumerDisconnectedException.html">ConsumerDisconnectedException</a></p>
+          <p><p>An exception which occurs when an <a class="xref" href="Azure.Messaging.EventHubs.EventHubConsumer.html">EventHubConsumer</a> is forcefully disconnected
 from an Event Hub instance.  This typically occurs when another consumer with higher <a class="xref" href="Azure.Messaging.EventHubs.EventHubConsumer.html#Azure_Messaging_EventHubs_EventHubConsumer_OwnerLevel">OwnerLevel</a>
 asserts ownership over the partition and consumer group.</p>
-</section>
-      <h4><a class="xref" href="Azure.Messaging.EventHubs.Errors.EventHubsCommunicationException.html">EventHubsCommunicationException</a></h4>
-      <section><p>An exception which occurs when there is a general communications error encountered
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Messaging.EventHubs.Errors.EventHubsCommunicationException.html">EventHubsCommunicationException</a></p>
+          <p><p>An exception which occurs when there is a general communications error encountered
 when interacting with the Azure Event Hubs service.</p>
-</section>
-      <h4><a class="xref" href="Azure.Messaging.EventHubs.Errors.EventHubsException.html">EventHubsException</a></h4>
-      <section><p>Serves as a basis for exceptions produced within the Event Hubs
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Messaging.EventHubs.Errors.EventHubsException.html">EventHubsException</a></p>
+          <p><p>Serves as a basis for exceptions produced within the Event Hubs
 context.</p>
-</section>
-      <h4><a class="xref" href="Azure.Messaging.EventHubs.Errors.EventHubsResourceNotFoundException.html">EventHubsResourceNotFoundException</a></h4>
-      <section><p>An exception which occurs when an Event Hubs resource, such as an Event Hub, consumer group, or
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Messaging.EventHubs.Errors.EventHubsResourceNotFoundException.html">EventHubsResourceNotFoundException</a></p>
+          <p><p>An exception which occurs when an Event Hubs resource, such as an Event Hub, consumer group, or
 partition cannot be found.</p>
-</section>
-      <h4><a class="xref" href="Azure.Messaging.EventHubs.Errors.EventHubsTimeoutException.html">EventHubsTimeoutException</a></h4>
-      <section><p>An exception which occurs when an operation or other request times out while
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Messaging.EventHubs.Errors.EventHubsTimeoutException.html">EventHubsTimeoutException</a></p>
+          <p><p>An exception which occurs when an operation or other request times out while
 interacting with the Azure Event Hubs service.</p>
-</section>
-      <h4><a class="xref" href="Azure.Messaging.EventHubs.Errors.MessageSizeExceededException.html">MessageSizeExceededException</a></h4>
-      <section><p>An exception which occurs when a message is larger than the maximum size allowed
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Messaging.EventHubs.Errors.MessageSizeExceededException.html">MessageSizeExceededException</a></p>
+          <p><p>An exception which occurs when a message is larger than the maximum size allowed
 for its transport.</p>
-</section>
-      <h4><a class="xref" href="Azure.Messaging.EventHubs.Errors.QuotaExceededException.html">QuotaExceededException</a></h4>
-      <section><p>An exception which occurs when the quota applied to an Event Hubs resource has been
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Messaging.EventHubs.Errors.QuotaExceededException.html">QuotaExceededException</a></p>
+          <p><p>An exception which occurs when the quota applied to an Event Hubs resource has been
 exceeded while interacting with the Azure Event Hubs service.</p>
-</section>
-      <h4><a class="xref" href="Azure.Messaging.EventHubs.Errors.ServiceBusyException.html">ServiceBusyException</a></h4>
-      <section><p>An exception which occurs when the Azure Event Hubs service reports that it is busy in response to a client
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Azure.Messaging.EventHubs.Errors.ServiceBusyException.html">ServiceBusyException</a></p>
+          <p><p>An exception which occurs when the Azure Event Hubs service reports that it is busy in response to a client
 request to perform an operation.</p>
-</section>
+</p>
+        </td>
+      </tr>
+    </table>
 </article>
+          </div>
+          <div class="contribution-panel mobile-hide">
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

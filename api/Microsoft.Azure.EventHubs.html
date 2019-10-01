@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,52 +79,98 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Microsoft.Azure.EventHubs">
-  
-  <h1 id="Microsoft_Azure_EventHubs" data-uid="Microsoft.Azure.EventHubs" class="text-break">Namespace Microsoft.Azure.EventHubs
+  <h1 id="Microsoft_Azure_EventHubs" data-uid="Microsoft.Azure.EventHubs">Namespace Microsoft.Azure.EventHubs
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.AzureActiveDirectoryTokenProvider.html">AzureActiveDirectoryTokenProvider</a></h4>
-      <section><p>Represents the Azure Active Directory token provider for the Event Hubs.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.BatchOptions.html">BatchOptions</a></h4>
-      <section><p>Options to define partiton key and maximum message size while creating an <a class="xref" href="Microsoft.Azure.EventHubs.EventDataBatch.html">EventDataBatch</a>.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.ClientEntity.html">ClientEntity</a></h4>
-      <section><p>Contract for all client entities with Open-Close/Abort state m/c
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.AzureActiveDirectoryTokenProvider.html">AzureActiveDirectoryTokenProvider</a></p>
+          <p><p>Represents the Azure Active Directory token provider for the Event Hubs.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.BatchOptions.html">BatchOptions</a></p>
+          <p><p>Options to define partiton key and maximum message size while creating an <a class="xref" href="Microsoft.Azure.EventHubs.EventDataBatch.html">EventDataBatch</a>.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.ClientEntity.html">ClientEntity</a></p>
+          <p><p>Contract for all client entities with Open-Close/Abort state m/c
 main-purpose: closeAll related entities</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a></h4>
-      <section><p>The data structure encapsulating the Event being sent-to and received-from EventHubs.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a></p>
+          <p><p>The data structure encapsulating the Event being sent-to and received-from EventHubs.
 Each EventHubs partition can be visualized as a Stream of EventData.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.EventData.SystemPropertiesCollection.html">EventData.SystemPropertiesCollection</a></h4>
-      <section><p>A collection used to store properties which are set by the Event Hubs service.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.EventDataBatch.html">EventDataBatch</a></h4>
-      <section><p>A helper class for creating an IEnumerable&lt;<a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>&gt; taking into account the max size limit, so that the IEnumerable&lt;<a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>&gt; can be passed to the Send or SendAsync method of an <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html">EventHubClient</a> to send the <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a> objects as a batch.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.EventDataDiagnosticExtensions.html">EventDataDiagnosticExtensions</a></h4>
-      <section><p>Diagnostic extension methods for <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html">EventHubClient</a></h4>
-      <section><p>Anchor class - all EventHub client operations start here.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.EventData.SystemPropertiesCollection.html">EventData.SystemPropertiesCollection</a></p>
+          <p><p>A collection used to store properties which are set by the Event Hubs service.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.EventDataBatch.html">EventDataBatch</a></p>
+          <p><p>A helper class for creating an IEnumerable&lt;<a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>&gt; taking into account the max size limit, so that the IEnumerable&lt;<a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>&gt; can be passed to the Send or SendAsync method of an <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html">EventHubClient</a> to send the <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a> objects as a batch.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.EventDataDiagnosticExtensions.html">EventDataDiagnosticExtensions</a></p>
+          <p><p>Diagnostic extension methods for <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html">EventHubClient</a></p>
+          <p><p>Anchor class - all EventHub client operations start here.
 See <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_CreateFromConnectionString_System_String_">CreateFromConnectionString(String)</a></p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.EventHubPartitionRuntimeInformation.html">EventHubPartitionRuntimeInformation</a></h4>
-      <section><p>Contains information regarding an event hub partition.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.EventHubRuntimeInformation.html">EventHubRuntimeInformation</a></h4>
-      <section><p>Contains information regarding Event Hubs.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.EventHubsCommunicationException.html">EventHubsCommunicationException</a></h4>
-      <section><p>Exception for signaling general communication errors related to messaging operations.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.html">EventHubsConnectionStringBuilder</a></h4>
-      <section><p>EventHubsConnectionStringBuilder can be used to construct a connection string which can establish communication with Event Hubs entities.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.EventHubPartitionRuntimeInformation.html">EventHubPartitionRuntimeInformation</a></p>
+          <p><p>Contains information regarding an event hub partition.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.EventHubRuntimeInformation.html">EventHubRuntimeInformation</a></p>
+          <p><p>Contains information regarding Event Hubs.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.EventHubsCommunicationException.html">EventHubsCommunicationException</a></p>
+          <p><p>Exception for signaling general communication errors related to messaging operations.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.html">EventHubsConnectionStringBuilder</a></p>
+          <p><p>EventHubsConnectionStringBuilder can be used to construct a connection string which can establish communication with Event Hubs entities.
 It can also be used to perform basic validation on an existing connection string.</p>
 <p>
 A connection string is basically a string consisted of key-value pair separated by &quot;;&quot;. 
@@ -133,114 +179,224 @@ Basic format is &quot;&lt;key>=&lt;value>[;&lt;key>=&lt;value>]&quot; where supp
 <p> EntityPath - the path to the Event Hub entity
 <p> SharedAccessKeyName - the key name to the corresponding shared access policy rule for the namespace, or entity.
 <p> SharedAccessKey - the key for the corresponding shared access policy rule of the namespace or entity.
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.EventHubsException.html">EventHubsException</a></h4>
-      <section><p>Base Exception for various Event Hubs errors.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.EventHubsTimeoutException.html">EventHubsTimeoutException</a></h4>
-      <section><p>The exception that is thrown when a time out is encountered.  Callers retry the operation.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.EventPosition.html">EventPosition</a></h4>
-      <section><p>Represents options can be set during the creation of a event hub receiver.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.JsonSecurityToken.html">JsonSecurityToken</a></h4>
-      <section><p>Extends SecurityToken for JWT specific properties</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.ManagedIdentityTokenProvider.html">ManagedIdentityTokenProvider</a></h4>
-      <section><p>Represents the Azure Active Directory token provider for Azure Managed Identity integration.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.MessageSizeExceededException.html">MessageSizeExceededException</a></h4>
-      <section><p>The exception is thrown when the message size exceeds what AMQP allows on the link.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.MessagingEntityNotFoundException.html">MessagingEntityNotFoundException</a></h4>
-      <section><p>The exception that is thrown when the Event Hub is not found on the namespace.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.PartitionReceiver.html">PartitionReceiver</a></h4>
-      <section><p>This is a logical representation of receiving from a EventHub partition.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.EventHubsException.html">EventHubsException</a></p>
+          <p><p>Base Exception for various Event Hubs errors.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.EventHubsTimeoutException.html">EventHubsTimeoutException</a></p>
+          <p><p>The exception that is thrown when a time out is encountered.  Callers retry the operation.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.EventPosition.html">EventPosition</a></p>
+          <p><p>Represents options can be set during the creation of a event hub receiver.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.JsonSecurityToken.html">JsonSecurityToken</a></p>
+          <p><p>Extends SecurityToken for JWT specific properties</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.ManagedIdentityTokenProvider.html">ManagedIdentityTokenProvider</a></p>
+          <p><p>Represents the Azure Active Directory token provider for Azure Managed Identity integration.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.MessageSizeExceededException.html">MessageSizeExceededException</a></p>
+          <p><p>The exception is thrown when the message size exceeds what AMQP allows on the link.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.MessagingEntityNotFoundException.html">MessagingEntityNotFoundException</a></p>
+          <p><p>The exception that is thrown when the Event Hub is not found on the namespace.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.PartitionReceiver.html">PartitionReceiver</a></p>
+          <p><p>This is a logical representation of receiving from a EventHub partition.</p>
 <p>
 A PartitionReceiver is tied to a ConsumerGroup + Partition combination. If you are creating an epoch based
 PartitionReceiver (i.e. PartitionReceiver.Epoch != 0) you cannot have more than one active receiver per
 ConsumerGroup + Partition combo. You can have multiple receivers per ConsumerGroup + Partition combination with 
 non-epoch receivers.
 </p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.PartitionSender.html">PartitionSender</a></h4>
-      <section><p>This sender class is a logical representation of sending events to a specific EventHub partition. Do not use this class
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.PartitionSender.html">PartitionSender</a></p>
+          <p><p>This sender class is a logical representation of sending events to a specific EventHub partition. Do not use this class
 if you do not care about sending events to specific partitions, instead use <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_SendAsync_Microsoft_Azure_EventHubs_EventData_">SendAsync(EventData)</a>.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.QuotaExceededException.html">QuotaExceededException</a></h4>
-      <section><p>Provides an Event Hubs quota exceeded exception.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.ReceiverDisconnectedException.html">ReceiverDisconnectedException</a></h4>
-      <section><p>This exception is thrown if two or more <a class="xref" href="Microsoft.Azure.EventHubs.PartitionReceiver.html">PartitionReceiver</a> instances connect
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.QuotaExceededException.html">QuotaExceededException</a></p>
+          <p><p>Provides an Event Hubs quota exceeded exception.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.ReceiverDisconnectedException.html">ReceiverDisconnectedException</a></p>
+          <p><p>This exception is thrown if two or more <a class="xref" href="Microsoft.Azure.EventHubs.PartitionReceiver.html">PartitionReceiver</a> instances connect
 to the same partition with different epoch values.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.ReceiverOptions.html">ReceiverOptions</a></h4>
-      <section><p>Represents options can be set during the creation of a event hub receiver.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.ReceiverRuntimeInformation.html">ReceiverRuntimeInformation</a></h4>
-      <section><p>Represents the approximate receiver runtime information for a logical partition of an Event Hub.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.RetryExponential.html">RetryExponential</a></h4>
-      <section><p>RetryPolicy implementation where the delay between retries will grow in a staggered exponential manner.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.ReceiverOptions.html">ReceiverOptions</a></p>
+          <p><p>Represents options can be set during the creation of a event hub receiver.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.ReceiverRuntimeInformation.html">ReceiverRuntimeInformation</a></p>
+          <p><p>Represents the approximate receiver runtime information for a logical partition of an Event Hub.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.RetryExponential.html">RetryExponential</a></p>
+          <p><p>RetryPolicy implementation where the delay between retries will grow in a staggered exponential manner.
 RetryPolicy can be set on the client using <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html">EventHubClient</a>.
 RetryIntervals will be computed using a retryFactor which is a function of deltaBackOff (MaximumBackoff - MinimumBackoff) and MaximumRetryCount</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.RetryPolicy.html">RetryPolicy</a></h4>
-      <section><p>Represents an abstraction for retrying messaging operations. Users should not
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.RetryPolicy.html">RetryPolicy</a></p>
+          <p><p>Represents an abstraction for retrying messaging operations. Users should not
 implement this class, and instead should use one of the provided implementations.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.SecurityToken.html">SecurityToken</a></h4>
-      <section><p>Provides information about a security token such as audience, expiry time, and the string token value.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.ServerBusyException.html">ServerBusyException</a></h4>
-      <section><p>The exception that is thrown when a server is busy.  Callers should wait a while and retry the operation.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.SharedAccessSignatureToken.html">SharedAccessSignatureToken</a></h4>
-      <section><p>A SecurityToken that wraps a Shared Access Signature</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.SharedAccessSignatureTokenProvider.html">SharedAccessSignatureTokenProvider</a></h4>
-      <section><p>The SharedAccessSignatureTokenProvider generates tokens using a shared access key or existing signature.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.TokenProvider.html">TokenProvider</a></h4>
-      <section><p>This abstract base class can be extended to implement additional token providers.</p>
-</section>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.SecurityToken.html">SecurityToken</a></p>
+          <p><p>Provides information about a security token such as audience, expiry time, and the string token value.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.ServerBusyException.html">ServerBusyException</a></p>
+          <p><p>The exception that is thrown when a server is busy.  Callers should wait a while and retry the operation.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.SharedAccessSignatureToken.html">SharedAccessSignatureToken</a></p>
+          <p><p>A SecurityToken that wraps a Shared Access Signature</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.SharedAccessSignatureTokenProvider.html">SharedAccessSignatureTokenProvider</a></p>
+          <p><p>The SharedAccessSignatureTokenProvider generates tokens using a shared access key or existing signature.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.TokenProvider.html">TokenProvider</a></p>
+          <p><p>This abstract base class can be extended to implement additional token providers.</p>
+</p>
+        </td>
+      </tr>
+    </table>
     <h3 id="interfaces">Interfaces
   </h3>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.IPartitionReceiveHandler.html">IPartitionReceiveHandler</a></h4>
-      <section><p>A handler interface for the receive operation. Use any implementation of this interface to specify
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.IPartitionReceiveHandler.html">IPartitionReceiveHandler</a></p>
+          <p><p>A handler interface for the receive operation. Use any implementation of this interface to specify
 user action when using <a class="xref" href="Microsoft.Azure.EventHubs.PartitionReceiver.html#Microsoft_Azure_EventHubs_PartitionReceiver_SetReceiveHandler_Microsoft_Azure_EventHubs_IPartitionReceiveHandler_System_Boolean_">SetReceiveHandler(IPartitionReceiveHandler, Boolean)</a>.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.ITokenProvider.html">ITokenProvider</a></h4>
-      <section><p>Provides interface definition of a token provider.</p>
-</section>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.ITokenProvider.html">ITokenProvider</a></p>
+          <p><p>Provides interface definition of a token provider.</p>
+</p>
+        </td>
+      </tr>
+    </table>
     <h3 id="enums">Enums
   </h3>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.EventHubsException.ErrorSourceType.html">EventHubsException.ErrorSourceType</a></h4>
-      <section><p>Enumerates the types of error sources for the messaging communication.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.TokenScope.html">TokenScope</a></h4>
-      <section><p>A enum representing the scope of the <a class="xref" href="Microsoft.Azure.EventHubs.SecurityToken.html">SecurityToken</a>.</p>
-</section>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.TransportType.html">TransportType</a></h4>
-      <section><p>Supported transport types</p>
-</section>
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.EventHubsException.ErrorSourceType.html">EventHubsException.ErrorSourceType</a></p>
+          <p><p>Enumerates the types of error sources for the messaging communication.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.TokenScope.html">TokenScope</a></p>
+          <p><p>A enum representing the scope of the <a class="xref" href="Microsoft.Azure.EventHubs.SecurityToken.html">SecurityToken</a>.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.TransportType.html">TransportType</a></p>
+          <p><p>Supported transport types</p>
+</p>
+        </td>
+      </tr>
+    </table>
     <h3 id="delegates">Delegates
   </h3>
-      <h4><a class="xref" href="Microsoft.Azure.EventHubs.AzureActiveDirectoryTokenProvider.AuthenticationCallback.html">AzureActiveDirectoryTokenProvider.AuthenticationCallback</a></h4>
-      <section><p>The authentication delegate to provide access token.</p>
-</section>
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="Microsoft.Azure.EventHubs.AzureActiveDirectoryTokenProvider.AuthenticationCallback.html">AzureActiveDirectoryTokenProvider.AuthenticationCallback</a></p>
+          <p><p>The authentication delegate to provide access token.</p>
+</p>
+        </td>
+      </tr>
+    </table>
 </article>
+          </div>
+          <div class="contribution-panel mobile-hide">
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

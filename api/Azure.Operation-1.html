@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,19 +79,20 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Azure.Operation`1">
-  
-  
-  <h1 id="Azure_Operation_1" data-uid="Azure.Operation`1" class="text-break">Class Operation&lt;T&gt;
+  <h1 id="Azure_Operation_1" data-uid="Azure.Operation`1">Class Operation&lt;T&gt;
   </h1>
   <div class="markdown level0 summary"><p>Represents a long running operation (LRO).</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">Operation&lt;T&gt;</span></div>
-      <div class="level2"><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateOperation.html">CertificateOperation</a></div>
   </div>
+  
+      <div class="level2"><a class="xref" href="Azure.Security.KeyVault.Certificates.CertificateOperation.html">CertificateOperation</a></div>
+  
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -116,454 +117,576 @@
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Azure.html">Azure</a></h6>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>: Azure.Core.dll</h6>
+  
   <h5 id="Azure_Operation_1_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract class Operation&lt;T&gt;
     where T : notnull</code></pre>
   </div>
+  
+  
+  
   <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>The final result of the LRO.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p><p>The final result of the LRO.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
   <h3 id="constructors">Constructors
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Operation_1__ctor_System_String_.md&amp;value=---%0Auid%3A%20Azure.Operation%601.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Operation_1__ctor_System_String_.md&amp;value=---%0Auid%3A%20Azure.Operation%601.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/core/Azure.Core/src/Operation{T}.cs/#L27">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/core/Azure.Core/src/Operation{T}.cs/#L27" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Operation_1__ctor_" data-uid="Azure.Operation`1.#ctor*"></a>
-  <h4 id="Azure_Operation_1__ctor_System_String_" data-uid="Azure.Operation`1.#ctor(System.String)">Operation(String)</h4>
+  
+  <h4 id="Azure_Operation_1__ctor_System_String_" data-uid="Azure.Operation`1.#ctor(System.String)"><a href="#collapsible-Azure_Operation_1__ctor_System_String_" class="expander" data-toggle="collapse">Operation(String)</a></h4>
+  
+  <div id="collapsible-Azure_Operation_1__ctor_System_String_" class="collapse in">
   <div class="markdown level1 summary"><p>Creates a new instance of the Operation representing the specified
 <code data-dev-comment-type="paramref" class="paramref">id</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected Operation(string id)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">id</span></td>
-        <td><p>The ID of the LRO.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">id</span>
+        <p><p>The ID of the LRO.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
   <h3 id="properties">Properties
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Operation_1_HasCompleted.md&amp;value=---%0Auid%3A%20Azure.Operation%601.HasCompleted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Operation_1_HasCompleted.md&amp;value=---%0Auid%3A%20Azure.Operation%601.HasCompleted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/core/Azure.Core/src/Operation{T}.cs/#L74">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/core/Azure.Core/src/Operation{T}.cs/#L74" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Operation_1_HasCompleted_" data-uid="Azure.Operation`1.HasCompleted*"></a>
-  <h4 id="Azure_Operation_1_HasCompleted" data-uid="Azure.Operation`1.HasCompleted">HasCompleted</h4>
+  
+  <h4 id="Azure_Operation_1_HasCompleted" data-uid="Azure.Operation`1.HasCompleted"><a href="#collapsible-Azure_Operation_1_HasCompleted" class="expander" data-toggle="collapse">HasCompleted</a></h4>
+  
+  <div id="collapsible-Azure_Operation_1_HasCompleted" class="collapse in">
   <div class="markdown level1 summary"><p>Returns true if the LRO completed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract bool HasCompleted { get; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Operation_1_HasValue.md&amp;value=---%0Auid%3A%20Azure.Operation%601.HasValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Operation_1_HasValue.md&amp;value=---%0Auid%3A%20Azure.Operation%601.HasValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/core/Azure.Core/src/Operation{T}.cs/#L79">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/core/Azure.Core/src/Operation{T}.cs/#L79" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Operation_1_HasValue_" data-uid="Azure.Operation`1.HasValue*"></a>
-  <h4 id="Azure_Operation_1_HasValue" data-uid="Azure.Operation`1.HasValue">HasValue</h4>
+  
+  <h4 id="Azure_Operation_1_HasValue" data-uid="Azure.Operation`1.HasValue"><a href="#collapsible-Azure_Operation_1_HasValue" class="expander" data-toggle="collapse">HasValue</a></h4>
+  
+  <div id="collapsible-Azure_Operation_1_HasValue" class="collapse in">
   <div class="markdown level1 summary"><p>Returns true if the LRO completed succesfully and has produced final result (accessible by Value property).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract bool HasValue { get; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Operation_1_Id.md&amp;value=---%0Auid%3A%20Azure.Operation%601.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Operation_1_Id.md&amp;value=---%0Auid%3A%20Azure.Operation%601.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/core/Azure.Core/src/Operation{T}.cs/#L36">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/core/Azure.Core/src/Operation{T}.cs/#L36" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Operation_1_Id_" data-uid="Azure.Operation`1.Id*"></a>
-  <h4 id="Azure_Operation_1_Id" data-uid="Azure.Operation`1.Id">Id</h4>
+  
+  <h4 id="Azure_Operation_1_Id" data-uid="Azure.Operation`1.Id"><a href="#collapsible-Azure_Operation_1_Id" class="expander" data-toggle="collapse">Id</a></h4>
+  
+  <div id="collapsible-Azure_Operation_1_Id" class="collapse in">
   <div class="markdown level1 summary"><p>Gets an ID representing the operation that can be used to poll for
 the status of the LRO.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string Id { get; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Operation_1_PollingInterval.md&amp;value=---%0Auid%3A%20Azure.Operation%601.PollingInterval%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Operation_1_PollingInterval.md&amp;value=---%0Auid%3A%20Azure.Operation%601.PollingInterval%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/core/Azure.Core/src/Operation{T}.cs/#L88">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/core/Azure.Core/src/Operation{T}.cs/#L88" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Operation_1_PollingInterval_" data-uid="Azure.Operation`1.PollingInterval*"></a>
-  <h4 id="Azure_Operation_1_PollingInterval" data-uid="Azure.Operation`1.PollingInterval">PollingInterval</h4>
+  
+  <h4 id="Azure_Operation_1_PollingInterval" data-uid="Azure.Operation`1.PollingInterval"><a href="#collapsible-Azure_Operation_1_PollingInterval" class="expander" data-toggle="collapse">PollingInterval</a></h4>
+  
+  <div id="collapsible-Azure_Operation_1_PollingInterval" class="collapse in">
   <div class="markdown level1 summary"><p>Polling interval used by WaitCompletionAsync method.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public TimeSpan PollingInterval { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
   <h5 id="Azure_Operation_1_PollingInterval_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The interval can change based on information returned from the server.
 For example, the server might communicate to the client that there is not reason to poll for status change sooner than some time.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Operation_1_Value.md&amp;value=---%0Auid%3A%20Azure.Operation%601.Value%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Operation_1_Value.md&amp;value=---%0Auid%3A%20Azure.Operation%601.Value%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/core/Azure.Core/src/Operation{T}.cs/#L44">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/core/Azure.Core/src/Operation{T}.cs/#L44" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Operation_1_Value_" data-uid="Azure.Operation`1.Value*"></a>
-  <h4 id="Azure_Operation_1_Value" data-uid="Azure.Operation`1.Value">Value</h4>
+  
+  <h4 id="Azure_Operation_1_Value" data-uid="Azure.Operation`1.Value"><a href="#collapsible-Azure_Operation_1_Value" class="expander" data-toggle="collapse">Value</a></h4>
+  
+  <div id="collapsible-Azure_Operation_1_Value" class="collapse in">
   <div class="markdown level1 summary"><p>Final result of the LRO.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public T Value { get; protected set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">T</span>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
   <h5 id="Azure_Operation_1_Value_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This property can be accessed only after the operation completes succesfully (HasValue is true).</p>
 </div>
+  
+  
+  
+  </div>
   <h3 id="methods">Methods
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Operation_1_GetRawResponse.md&amp;value=---%0Auid%3A%20Azure.Operation%601.GetRawResponse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Operation_1_GetRawResponse.md&amp;value=---%0Auid%3A%20Azure.Operation%601.GetRawResponse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/core/Azure.Core/src/Operation{T}.cs/#L68">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/core/Azure.Core/src/Operation{T}.cs/#L68" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Operation_1_GetRawResponse_" data-uid="Azure.Operation`1.GetRawResponse*"></a>
-  <h4 id="Azure_Operation_1_GetRawResponse" data-uid="Azure.Operation`1.GetRawResponse">GetRawResponse()</h4>
+  
+  <h4 id="Azure_Operation_1_GetRawResponse" data-uid="Azure.Operation`1.GetRawResponse"><a href="#collapsible-Azure_Operation_1_GetRawResponse" class="expander" data-toggle="collapse">GetRawResponse()</a></h4>
+  
+  <div id="collapsible-Azure_Operation_1_GetRawResponse" class="collapse in">
   <div class="markdown level1 summary"><p>The last HTTP response received from the server.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Response GetRawResponse()</code></pre>
   </div>
+  
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Azure.Response.html">Response</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Azure.Response.html">Response</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Azure_Operation_1_GetRawResponse_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The last response returned from the server during the lifecycle of this instance.
 An instance of Operation<code data-dev-comment-type="typeparamref" class="typeparamref">T</code> sends requests to a server in UpdateStatusAsync, UpdateStatus, and other methods.
 Responses from these requests can be accessed using GetRawResponse.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Operation_1_SetRawResponse_Azure_Response_.md&amp;value=---%0Auid%3A%20Azure.Operation%601.SetRawResponse(Azure.Response)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Operation_1_SetRawResponse_Azure_Response_.md&amp;value=---%0Auid%3A%20Azure.Operation%601.SetRawResponse(Azure.Response)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/core/Azure.Core/src/Operation{T}.cs/#L69">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/core/Azure.Core/src/Operation{T}.cs/#L69" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Operation_1_SetRawResponse_" data-uid="Azure.Operation`1.SetRawResponse*"></a>
-  <h4 id="Azure_Operation_1_SetRawResponse_Azure_Response_" data-uid="Azure.Operation`1.SetRawResponse(Azure.Response)">SetRawResponse(Response)</h4>
+  
+  <h4 id="Azure_Operation_1_SetRawResponse_Azure_Response_" data-uid="Azure.Operation`1.SetRawResponse(Azure.Response)"><a href="#collapsible-Azure_Operation_1_SetRawResponse_Azure_Response_" class="expander" data-toggle="collapse">SetRawResponse(Response)</a></h4>
+  
+  <div id="collapsible-Azure_Operation_1_SetRawResponse_Azure_Response_" class="collapse in">
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected void SetRawResponse(Response response)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Azure.Response.html">Response</a></td>
-        <td><span class="parametername">response</span></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Azure.Response.html">Response</a></span>
+        <span class="parametername">response</span>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Operation_1_UpdateStatus_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Operation%601.UpdateStatus(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Operation_1_UpdateStatus_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Operation%601.UpdateStatus(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/core/Azure.Core/src/Operation{T}.cs/#L129">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/core/Azure.Core/src/Operation{T}.cs/#L129" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Operation_1_UpdateStatus_" data-uid="Azure.Operation`1.UpdateStatus*"></a>
-  <h4 id="Azure_Operation_1_UpdateStatus_System_Threading_CancellationToken_" data-uid="Azure.Operation`1.UpdateStatus(System.Threading.CancellationToken)">UpdateStatus(CancellationToken)</h4>
+  
+  <h4 id="Azure_Operation_1_UpdateStatus_System_Threading_CancellationToken_" data-uid="Azure.Operation`1.UpdateStatus(System.Threading.CancellationToken)"><a href="#collapsible-Azure_Operation_1_UpdateStatus_System_Threading_CancellationToken_" class="expander" data-toggle="collapse">UpdateStatus(CancellationToken)</a></h4>
+  
+  <div id="collapsible-Azure_Operation_1_UpdateStatus_System_Threading_CancellationToken_" class="collapse in">
   <div class="markdown level1 summary"><p>Calls the server to get updated status of the LRO.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract Response UpdateStatus(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></span>
+        <span class="parametername">cancellationToken</span>
+        <p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Azure.Response.html">Response</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Azure.Response.html">Response</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Azure_Operation_1_UpdateStatus_System_Threading_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This operation will update the value returned from GetRawResponse and might update HasCompleted, HasValue, and Value.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Operation_1_UpdateStatusAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Operation%601.UpdateStatusAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Operation_1_UpdateStatusAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Operation%601.UpdateStatusAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/core/Azure.Core/src/Operation{T}.cs/#L119">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/core/Azure.Core/src/Operation{T}.cs/#L119" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Operation_1_UpdateStatusAsync_" data-uid="Azure.Operation`1.UpdateStatusAsync*"></a>
-  <h4 id="Azure_Operation_1_UpdateStatusAsync_System_Threading_CancellationToken_" data-uid="Azure.Operation`1.UpdateStatusAsync(System.Threading.CancellationToken)">UpdateStatusAsync(CancellationToken)</h4>
+  
+  <h4 id="Azure_Operation_1_UpdateStatusAsync_System_Threading_CancellationToken_" data-uid="Azure.Operation`1.UpdateStatusAsync(System.Threading.CancellationToken)"><a href="#collapsible-Azure_Operation_1_UpdateStatusAsync_System_Threading_CancellationToken_" class="expander" data-toggle="collapse">UpdateStatusAsync(CancellationToken)</a></h4>
+  
+  <div id="collapsible-Azure_Operation_1_UpdateStatusAsync_System_Threading_CancellationToken_" class="collapse in">
   <div class="markdown level1 summary"><p>Calls the server to get updated status of the LRO.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract ValueTask&lt;Response&gt; UpdateStatusAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></span>
+        <span class="parametername">cancellationToken</span>
+        <p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">ValueTask</span>&lt;<a class="xref" href="Azure.Response.html">Response</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">ValueTask</span>&lt;<a class="xref" href="Azure.Response.html">Response</a>&gt;
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Azure_Operation_1_UpdateStatusAsync_System_Threading_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This operation will update the value returned from GetRawResponse and might update HasCompleted, HasValue, and Value.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Operation_1_WaitCompletionAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Operation%601.WaitCompletionAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Operation_1_WaitCompletionAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Operation%601.WaitCompletionAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/core/Azure.Core/src/Operation{T}.cs/#L98">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/core/Azure.Core/src/Operation{T}.cs/#L98" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Operation_1_WaitCompletionAsync_" data-uid="Azure.Operation`1.WaitCompletionAsync*"></a>
-  <h4 id="Azure_Operation_1_WaitCompletionAsync_System_Threading_CancellationToken_" data-uid="Azure.Operation`1.WaitCompletionAsync(System.Threading.CancellationToken)">WaitCompletionAsync(CancellationToken)</h4>
+  
+  <h4 id="Azure_Operation_1_WaitCompletionAsync_System_Threading_CancellationToken_" data-uid="Azure.Operation`1.WaitCompletionAsync(System.Threading.CancellationToken)"><a href="#collapsible-Azure_Operation_1_WaitCompletionAsync_System_Threading_CancellationToken_" class="expander" data-toggle="collapse">WaitCompletionAsync(CancellationToken)</a></h4>
+  
+  <div id="collapsible-Azure_Operation_1_WaitCompletionAsync_System_Threading_CancellationToken_" class="collapse in">
   <div class="markdown level1 summary"><p>Periodically calls the server till the LRO completes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual ValueTask&lt;Response&lt;T&gt;&gt; WaitCompletionAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></span>
+        <span class="parametername">cancellationToken</span>
+        <p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">ValueTask</span>&lt;<a class="xref" href="Azure.Response-1.html">Response</a>&lt;T&gt;&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">ValueTask</span>&lt;<a class="xref" href="Azure.Response-1.html">Response</a>&lt;T&gt;&gt;
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Azure_Operation_1_WaitCompletionAsync_System_Threading_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method will periodically call UpdateStatusAsync till HasCompleted is true, then return the final result of the operation.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
@@ -583,23 +706,17 @@ Responses from these requests can be accessed using GetRawResponse.</p>
   <div>
       <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
+  
 </article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Operation_1.md&amp;value=---%0Auid%3A%20Azure.Operation%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/core/Azure.Core/src/Operation{T}.cs/#L17" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Operation_1.md&amp;value=---%0Auid%3A%20Azure.Operation%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/core/Azure.Core/src/Operation{T}.cs/#L17" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

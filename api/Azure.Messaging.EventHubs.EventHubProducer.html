@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,9 +79,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Azure.Messaging.EventHubs.EventHubProducer">
-  
-  
-  <h1 id="Azure_Messaging_EventHubs_EventHubProducer" data-uid="Azure.Messaging.EventHubs.EventHubProducer" class="text-break">Class EventHubProducer
+  <h1 id="Azure_Messaging_EventHubs_EventHubProducer" data-uid="Azure.Messaging.EventHubs.EventHubProducer">Class EventHubProducer
   </h1>
   <div class="markdown level0 summary"><p>A producer responsible for transmitting <a class="xref" href="Azure.Messaging.EventHubs.EventData.html">EventData</a> to a specific Event Hub,
 grouped together in batches.  Depending on the options specified at creation, the producer may
@@ -89,17 +87,26 @@ be created to allow event data to be automatically routed to an available partit
 to a partition.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">EventHubProducer</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Azure.Messaging.EventHubs.html">Azure.Messaging.EventHubs</a></h6>
+  
+  
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>: Azure.Messaging.EventHubs.dll</h6>
+  
   <h5 id="Azure_Messaging_EventHubs_EventHubProducer_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class EventHubProducer : IAsyncDisposable</code></pre>
   </div>
+  
+  
+  
+  
   <h5 id="Azure_Messaging_EventHubs_EventHubProducer_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>Allowing automatic routing of partitions is recommended when:</p>
 <p>- The sending of events needs to be highly available.</p>
@@ -108,67 +115,105 @@ to a partition.</p>
 <p>1) Distribute the events equally amongst all available partitions using a round-robin approach.</p>
 <p>2) If a partition becomes unavailable, the Event Hubs service will automatically detect it and forward the message to another available partition.</p>
 </div>
+  
   <h3 id="constructors">Constructors
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer__ctor.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer__ctor.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L142">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L142" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_EventHubProducer__ctor_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.#ctor*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventHubProducer__ctor" data-uid="Azure.Messaging.EventHubs.EventHubProducer.#ctor">EventHubProducer()</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_EventHubProducer__ctor" data-uid="Azure.Messaging.EventHubs.EventHubProducer.#ctor"><a href="#collapsible-Azure_Messaging_EventHubs_EventHubProducer__ctor" class="expander" data-toggle="collapse">EventHubProducer()</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_EventHubProducer__ctor" class="collapse in">
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Messaging.EventHubs.EventHubProducer.html">EventHubProducer</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected EventHubProducer()</code></pre>
   </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
   <h3 id="properties">Properties
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer_EventHubName.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer.EventHubName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer_EventHubName.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer.EventHubName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L66">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L66" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_EventHubProducer_EventHubName_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.EventHubName*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventHubProducer_EventHubName" data-uid="Azure.Messaging.EventHubs.EventHubProducer.EventHubName">EventHubName</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_EventHubProducer_EventHubName" data-uid="Azure.Messaging.EventHubs.EventHubProducer.EventHubName"><a href="#collapsible-Azure_Messaging_EventHubs_EventHubProducer_EventHubName" class="expander" data-toggle="collapse">EventHubName</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_EventHubProducer_EventHubName" class="collapse in">
   <div class="markdown level1 summary"><p>The name of the Event Hub that the producer is connected to, specific to the
 Event Hubs namespace that contains it.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string EventHubName { get; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer_PartitionId.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer.PartitionId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer_PartitionId.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer.PartitionId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L59">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L59" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_EventHubProducer_PartitionId_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.PartitionId*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventHubProducer_PartitionId" data-uid="Azure.Messaging.EventHubs.EventHubProducer.PartitionId">PartitionId</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_EventHubProducer_PartitionId" data-uid="Azure.Messaging.EventHubs.EventHubProducer.PartitionId"><a href="#collapsible-Azure_Messaging_EventHubs_EventHubProducer_PartitionId" class="expander" data-toggle="collapse">PartitionId</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_EventHubProducer_PartitionId" class="collapse in">
   <div class="markdown level1 summary"><p>The identifier of the Event Hub partition that the <a class="xref" href="Azure.Messaging.EventHubs.EventHubProducer.html">EventHubProducer</a> is bound to, indicating
 that it will send events to only that partition.</p>
 <p>If the identifier was not specified at creation, the producer will allow the Event Hubs service to be
@@ -176,151 +221,195 @@ responsible for routing events that are sent to an available partition.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string PartitionId { get; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p>If <code>null</code>, the producer is not specific to a partition and events will be automatically routed; otherwise, the identifier of the partition events will be sent to.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p><p>If <code>null</code>, the producer is not specific to a partition and events will be automatically routed; otherwise, the identifier of the partition events will be sent to.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer_RetryPolicy.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer.RetryPolicy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer_RetryPolicy.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer.RetryPolicy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L72">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L72" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_EventHubProducer_RetryPolicy_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.RetryPolicy*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventHubProducer_RetryPolicy" data-uid="Azure.Messaging.EventHubs.EventHubProducer.RetryPolicy">RetryPolicy</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_EventHubProducer_RetryPolicy" data-uid="Azure.Messaging.EventHubs.EventHubProducer.RetryPolicy"><a href="#collapsible-Azure_Messaging_EventHubs_EventHubProducer_RetryPolicy" class="expander" data-toggle="collapse">RetryPolicy</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_EventHubProducer_RetryPolicy" class="collapse in">
   <div class="markdown level1 summary"><p>The policy to use for determining retry behavior for when an operation fails.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public EventHubRetryPolicy RetryPolicy { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Azure.Messaging.EventHubs.EventHubRetryPolicy.html">EventHubRetryPolicy</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Azure.Messaging.EventHubs.EventHubRetryPolicy.html">EventHubRetryPolicy</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
   <h3 id="methods">Methods
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer_Close_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer.Close(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer_Close_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer.Close(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L341">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L341" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_EventHubProducer_Close_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.Close*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventHubProducer_Close_System_Threading_CancellationToken_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.Close(System.Threading.CancellationToken)">Close(CancellationToken)</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_EventHubProducer_Close_System_Threading_CancellationToken_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.Close(System.Threading.CancellationToken)"><a href="#collapsible-Azure_Messaging_EventHubs_EventHubProducer_Close_System_Threading_CancellationToken_" class="expander" data-toggle="collapse">Close(CancellationToken)</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_EventHubProducer_Close_System_Threading_CancellationToken_" class="collapse in">
   <div class="markdown level1 summary"><p>Closes the producer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void Close(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td><p>An optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> instance to signal the request to cancel the operation.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></span>
+        <span class="parametername">cancellationToken</span>
+        <p><p>An optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> instance to signal the request to cancel the operation.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer_CloseAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer.CloseAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer_CloseAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer.CloseAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L333">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L333" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_EventHubProducer_CloseAsync_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.CloseAsync*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventHubProducer_CloseAsync_System_Threading_CancellationToken_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.CloseAsync(System.Threading.CancellationToken)">CloseAsync(CancellationToken)</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_EventHubProducer_CloseAsync_System_Threading_CancellationToken_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.CloseAsync(System.Threading.CancellationToken)"><a href="#collapsible-Azure_Messaging_EventHubs_EventHubProducer_CloseAsync_System_Threading_CancellationToken_" class="expander" data-toggle="collapse">CloseAsync(CancellationToken)</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_EventHubProducer_CloseAsync_System_Threading_CancellationToken_" class="collapse in">
   <div class="markdown level1 summary"><p>Closes the producer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual Task CloseAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td><p>An optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> instance to signal the request to cancel the operation.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></span>
+        <span class="parametername">cancellationToken</span>
+        <p><p>An optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> instance to signal the request to cancel the operation.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td><p>A task to be resolved on when the operation has completed.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>
+        <p><p>A task to be resolved on when the operation has completed.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer_CreateBatchAsync_Azure_Messaging_EventHubs_BatchOptions_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer.CreateBatchAsync(Azure.Messaging.EventHubs.BatchOptions%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer_CreateBatchAsync_Azure_Messaging_EventHubs_BatchOptions_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer.CreateBatchAsync(Azure.Messaging.EventHubs.BatchOptions%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L314">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L314" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_EventHubProducer_CreateBatchAsync_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.CreateBatchAsync*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventHubProducer_CreateBatchAsync_Azure_Messaging_EventHubs_BatchOptions_System_Threading_CancellationToken_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.CreateBatchAsync(Azure.Messaging.EventHubs.BatchOptions,System.Threading.CancellationToken)">CreateBatchAsync(BatchOptions, CancellationToken)</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_EventHubProducer_CreateBatchAsync_Azure_Messaging_EventHubs_BatchOptions_System_Threading_CancellationToken_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.CreateBatchAsync(Azure.Messaging.EventHubs.BatchOptions,System.Threading.CancellationToken)"><a href="#collapsible-Azure_Messaging_EventHubs_EventHubProducer_CreateBatchAsync_Azure_Messaging_EventHubs_BatchOptions_System_Threading_CancellationToken_" class="expander" data-toggle="collapse">CreateBatchAsync(BatchOptions, CancellationToken)</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_EventHubProducer_CreateBatchAsync_Azure_Messaging_EventHubs_BatchOptions_System_Threading_CancellationToken_" class="collapse in">
   <div class="markdown level1 summary"><p>Creates a size-constraint batch to which <a class="xref" href="Azure.Messaging.EventHubs.EventData.html">EventData</a> may be added using a try-based pattern.  If an event would
 exceed the maximum allowable size of the batch, the batch will not allow adding the event and signal that scenario using its
 return value.</p>
@@ -329,62 +418,70 @@ attempting to send the events to the Event Hubs service.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual ValueTask&lt;EventDataBatch&gt; CreateBatchAsync(BatchOptions options, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Azure.Messaging.EventHubs.BatchOptions.html">BatchOptions</a></td>
-        <td><span class="parametername">options</span></td>
-        <td><p>The set of options to consider when creating this batch.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td><p>An optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> instance to signal the request to cancel the operation.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Azure.Messaging.EventHubs.BatchOptions.html">BatchOptions</a></span>
+        <span class="parametername">options</span>
+        <p><p>The set of options to consider when creating this batch.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></span>
+        <span class="parametername">cancellationToken</span>
+        <p><p>An optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> instance to signal the request to cancel the operation.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">ValueTask</span>&lt;<a class="xref" href="Azure.Messaging.EventHubs.EventDataBatch.html">EventDataBatch</a>&gt;</td>
-        <td><p>An <a class="xref" href="Azure.Messaging.EventHubs.EventDataBatch.html">EventDataBatch</a> with the requested <code data-dev-comment-type="paramref" class="paramref">options</code>.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">ValueTask</span>&lt;<a class="xref" href="Azure.Messaging.EventHubs.EventDataBatch.html">EventDataBatch</a>&gt;
+        <p><p>An <a class="xref" href="Azure.Messaging.EventHubs.EventDataBatch.html">EventDataBatch</a> with the requested <code data-dev-comment-type="paramref" class="paramref">options</code>.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Azure_Messaging_EventHubs_EventHubProducer_CreateBatchAsync_Azure_Messaging_EventHubs_BatchOptions_System_Threading_CancellationToken__seealso">See Also</h5>
   <div class="seealso">
       <div><a class="xref" href="Azure.Messaging.EventHubs.EventHubProducer.html#Azure_Messaging_EventHubs_EventHubProducer_CreateBatchAsync_Azure_Messaging_EventHubs_BatchOptions_System_Threading_CancellationToken_">CreateBatchAsync(BatchOptions, CancellationToken)</a></div>
   </div>
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer_CreateBatchAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer.CreateBatchAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer_CreateBatchAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer.CreateBatchAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L296">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L296" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_EventHubProducer_CreateBatchAsync_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.CreateBatchAsync*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventHubProducer_CreateBatchAsync_System_Threading_CancellationToken_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.CreateBatchAsync(System.Threading.CancellationToken)">CreateBatchAsync(CancellationToken)</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_EventHubProducer_CreateBatchAsync_System_Threading_CancellationToken_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.CreateBatchAsync(System.Threading.CancellationToken)"><a href="#collapsible-Azure_Messaging_EventHubs_EventHubProducer_CreateBatchAsync_System_Threading_CancellationToken_" class="expander" data-toggle="collapse">CreateBatchAsync(CancellationToken)</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_EventHubProducer_CreateBatchAsync_System_Threading_CancellationToken_" class="collapse in">
   <div class="markdown level1 summary"><p>Creates a size-constraint batch to which <a class="xref" href="Azure.Messaging.EventHubs.EventData.html">EventData</a> may be added using a try-based pattern.  If an event would
 exceed the maximum allowable size of the batch, the batch will not allow adding the event and signal that scenario using its
 return value.</p>
@@ -393,143 +490,166 @@ attempting to send the events to the Event Hubs service.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual ValueTask&lt;EventDataBatch&gt; CreateBatchAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td><p>An optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> instance to signal the request to cancel the operation.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></span>
+        <span class="parametername">cancellationToken</span>
+        <p><p>An optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> instance to signal the request to cancel the operation.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">ValueTask</span>&lt;<a class="xref" href="Azure.Messaging.EventHubs.EventDataBatch.html">EventDataBatch</a>&gt;</td>
-        <td><p>An <a class="xref" href="Azure.Messaging.EventHubs.EventDataBatch.html">EventDataBatch</a> with the default batch options.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">ValueTask</span>&lt;<a class="xref" href="Azure.Messaging.EventHubs.EventDataBatch.html">EventDataBatch</a>&gt;
+        <p><p>An <a class="xref" href="Azure.Messaging.EventHubs.EventDataBatch.html">EventDataBatch</a> with the default batch options.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Azure_Messaging_EventHubs_EventHubProducer_CreateBatchAsync_System_Threading_CancellationToken__seealso">See Also</h5>
   <div class="seealso">
       <div><a class="xref" href="Azure.Messaging.EventHubs.EventHubProducer.html#Azure_Messaging_EventHubs_EventHubProducer_CreateBatchAsync_Azure_Messaging_EventHubs_BatchOptions_System_Threading_CancellationToken_">CreateBatchAsync(BatchOptions, CancellationToken)</a></div>
   </div>
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer_DisposeAsync.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer.DisposeAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer_DisposeAsync.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer.DisposeAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L350">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L350" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_EventHubProducer_DisposeAsync_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.DisposeAsync*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventHubProducer_DisposeAsync" data-uid="Azure.Messaging.EventHubs.EventHubProducer.DisposeAsync">DisposeAsync()</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_EventHubProducer_DisposeAsync" data-uid="Azure.Messaging.EventHubs.EventHubProducer.DisposeAsync"><a href="#collapsible-Azure_Messaging_EventHubs_EventHubProducer_DisposeAsync" class="expander" data-toggle="collapse">DisposeAsync()</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_EventHubProducer_DisposeAsync" class="collapse in">
   <div class="markdown level1 summary"><p>Performs the task needed to clean up resources used by the <a class="xref" href="Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a>,
 including ensuring that the client itself has been closed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual ValueTask DisposeAsync()</code></pre>
   </div>
+  
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">ValueTask</span></td>
-        <td><p>A task to be resolved on when the operation has completed.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">ValueTask</span>
+        <p><p>A task to be resolved on when the operation has completed.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer_SendAsync_Azure_Messaging_EventHubs_EventData_Azure_Messaging_EventHubs_SendOptions_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer.SendAsync(Azure.Messaging.EventHubs.EventData%2CAzure.Messaging.EventHubs.SendOptions%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer_SendAsync_Azure_Messaging_EventHubs_EventData_Azure_Messaging_EventHubs_SendOptions_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer.SendAsync(Azure.Messaging.EventHubs.EventData%2CAzure.Messaging.EventHubs.SendOptions%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L184">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L184" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_EventHubProducer_SendAsync_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.SendAsync*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventHubProducer_SendAsync_Azure_Messaging_EventHubs_EventData_Azure_Messaging_EventHubs_SendOptions_System_Threading_CancellationToken_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.SendAsync(Azure.Messaging.EventHubs.EventData,Azure.Messaging.EventHubs.SendOptions,System.Threading.CancellationToken)">SendAsync(EventData, SendOptions, CancellationToken)</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_EventHubProducer_SendAsync_Azure_Messaging_EventHubs_EventData_Azure_Messaging_EventHubs_SendOptions_System_Threading_CancellationToken_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.SendAsync(Azure.Messaging.EventHubs.EventData,Azure.Messaging.EventHubs.SendOptions,System.Threading.CancellationToken)"><a href="#collapsible-Azure_Messaging_EventHubs_EventHubProducer_SendAsync_Azure_Messaging_EventHubs_EventData_Azure_Messaging_EventHubs_SendOptions_System_Threading_CancellationToken_" class="expander" data-toggle="collapse">SendAsync(EventData, SendOptions, CancellationToken)</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_EventHubProducer_SendAsync_Azure_Messaging_EventHubs_EventData_Azure_Messaging_EventHubs_SendOptions_System_Threading_CancellationToken_" class="collapse in">
   <div class="markdown level1 summary"><p>Sends an event to the associated Event Hub using a batched approach.  If the size of the event exceeds the
 maximum size of a single batch, an exception will be triggered and the send will fail.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual Task SendAsync(EventData eventData, SendOptions options, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Azure.Messaging.EventHubs.EventData.html">EventData</a></td>
-        <td><span class="parametername">eventData</span></td>
-        <td><p>The event data to send.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Azure.Messaging.EventHubs.SendOptions.html">SendOptions</a></td>
-        <td><span class="parametername">options</span></td>
-        <td><p>The set of options to consider when sending this batch.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td><p>An optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> instance to signal the request to cancel the operation.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Azure.Messaging.EventHubs.EventData.html">EventData</a></span>
+        <span class="parametername">eventData</span>
+        <p><p>The event data to send.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Azure.Messaging.EventHubs.SendOptions.html">SendOptions</a></span>
+        <span class="parametername">options</span>
+        <p><p>The set of options to consider when sending this batch.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></span>
+        <span class="parametername">cancellationToken</span>
+        <p><p>An optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> instance to signal the request to cancel the operation.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td><p>A task to be resolved on when the operation has completed.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>
+        <p><p>A task to be resolved on when the operation has completed.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Azure_Messaging_EventHubs_EventHubProducer_SendAsync_Azure_Messaging_EventHubs_EventData_Azure_Messaging_EventHubs_SendOptions_System_Threading_CancellationToken__seealso">See Also</h5>
   <div class="seealso">
       <div><a class="xref" href="Azure.Messaging.EventHubs.EventHubProducer.html#Azure_Messaging_EventHubs_EventHubProducer_SendAsync_Azure_Messaging_EventHubs_EventData_System_Threading_CancellationToken_">SendAsync(EventData, CancellationToken)</a></div>
@@ -537,63 +657,71 @@ maximum size of a single batch, an exception will be triggered and the send will
       <div><a class="xref" href="Azure.Messaging.EventHubs.EventHubProducer.html#Azure_Messaging_EventHubs_EventHubProducer_SendAsync_System_Collections_Generic_IEnumerable_Azure_Messaging_EventHubs_EventData__Azure_Messaging_EventHubs_SendOptions_System_Threading_CancellationToken_">SendAsync(IEnumerable&lt;EventData&gt;, SendOptions, CancellationToken)</a></div>
       <div><a class="xref" href="Azure.Messaging.EventHubs.EventHubProducer.html#Azure_Messaging_EventHubs_EventHubProducer_SendAsync_Azure_Messaging_EventHubs_EventDataBatch_System_Threading_CancellationToken_">SendAsync(EventDataBatch, CancellationToken)</a></div>
   </div>
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer_SendAsync_Azure_Messaging_EventHubs_EventData_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer.SendAsync(Azure.Messaging.EventHubs.EventData%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer_SendAsync_Azure_Messaging_EventHubs_EventData_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer.SendAsync(Azure.Messaging.EventHubs.EventData%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L161">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L161" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_EventHubProducer_SendAsync_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.SendAsync*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventHubProducer_SendAsync_Azure_Messaging_EventHubs_EventData_System_Threading_CancellationToken_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.SendAsync(Azure.Messaging.EventHubs.EventData,System.Threading.CancellationToken)">SendAsync(EventData, CancellationToken)</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_EventHubProducer_SendAsync_Azure_Messaging_EventHubs_EventData_System_Threading_CancellationToken_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.SendAsync(Azure.Messaging.EventHubs.EventData,System.Threading.CancellationToken)"><a href="#collapsible-Azure_Messaging_EventHubs_EventHubProducer_SendAsync_Azure_Messaging_EventHubs_EventData_System_Threading_CancellationToken_" class="expander" data-toggle="collapse">SendAsync(EventData, CancellationToken)</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_EventHubProducer_SendAsync_Azure_Messaging_EventHubs_EventData_System_Threading_CancellationToken_" class="collapse in">
   <div class="markdown level1 summary"><p>Sends an event to the associated Event Hub using a batched approach.  If the size of the event exceeds the
 maximum size of a single batch, an exception will be triggered and the send will fail.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual Task SendAsync(EventData eventData, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Azure.Messaging.EventHubs.EventData.html">EventData</a></td>
-        <td><span class="parametername">eventData</span></td>
-        <td><p>The event data to send.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td><p>An optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> instance to signal the request to cancel the operation.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Azure.Messaging.EventHubs.EventData.html">EventData</a></span>
+        <span class="parametername">eventData</span>
+        <p><p>The event data to send.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></span>
+        <span class="parametername">cancellationToken</span>
+        <p><p>An optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> instance to signal the request to cancel the operation.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td><p>A task to be resolved on when the operation has completed.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>
+        <p><p>A task to be resolved on when the operation has completed.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Azure_Messaging_EventHubs_EventHubProducer_SendAsync_Azure_Messaging_EventHubs_EventData_System_Threading_CancellationToken__seealso">See Also</h5>
   <div class="seealso">
       <div><a class="xref" href="Azure.Messaging.EventHubs.EventHubProducer.html#Azure_Messaging_EventHubs_EventHubProducer_SendAsync_Azure_Messaging_EventHubs_EventData_Azure_Messaging_EventHubs_SendOptions_System_Threading_CancellationToken_">SendAsync(EventData, SendOptions, CancellationToken)</a></div>
@@ -601,62 +729,70 @@ maximum size of a single batch, an exception will be triggered and the send will
       <div><a class="xref" href="Azure.Messaging.EventHubs.EventHubProducer.html#Azure_Messaging_EventHubs_EventHubProducer_SendAsync_System_Collections_Generic_IEnumerable_Azure_Messaging_EventHubs_EventData__Azure_Messaging_EventHubs_SendOptions_System_Threading_CancellationToken_">SendAsync(IEnumerable&lt;EventData&gt;, SendOptions, CancellationToken)</a></div>
       <div><a class="xref" href="Azure.Messaging.EventHubs.EventHubProducer.html#Azure_Messaging_EventHubs_EventHubProducer_SendAsync_Azure_Messaging_EventHubs_EventDataBatch_System_Threading_CancellationToken_">SendAsync(EventDataBatch, CancellationToken)</a></div>
   </div>
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer_SendAsync_Azure_Messaging_EventHubs_EventDataBatch_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer.SendAsync(Azure.Messaging.EventHubs.EventDataBatch%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer_SendAsync_Azure_Messaging_EventHubs_EventDataBatch_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer.SendAsync(Azure.Messaging.EventHubs.EventDataBatch%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L262">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L262" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_EventHubProducer_SendAsync_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.SendAsync*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventHubProducer_SendAsync_Azure_Messaging_EventHubs_EventDataBatch_System_Threading_CancellationToken_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.SendAsync(Azure.Messaging.EventHubs.EventDataBatch,System.Threading.CancellationToken)">SendAsync(EventDataBatch, CancellationToken)</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_EventHubProducer_SendAsync_Azure_Messaging_EventHubs_EventDataBatch_System_Threading_CancellationToken_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.SendAsync(Azure.Messaging.EventHubs.EventDataBatch,System.Threading.CancellationToken)"><a href="#collapsible-Azure_Messaging_EventHubs_EventHubProducer_SendAsync_Azure_Messaging_EventHubs_EventDataBatch_System_Threading_CancellationToken_" class="expander" data-toggle="collapse">SendAsync(EventDataBatch, CancellationToken)</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_EventHubProducer_SendAsync_Azure_Messaging_EventHubs_EventDataBatch_System_Threading_CancellationToken_" class="collapse in">
   <div class="markdown level1 summary"><p>Sends a set of events to the associated Event Hub using a batched approach.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual Task SendAsync(EventDataBatch eventBatch, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Azure.Messaging.EventHubs.EventDataBatch.html">EventDataBatch</a></td>
-        <td><span class="parametername">eventBatch</span></td>
-        <td><p>The set of event data to send.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td><p>An optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> instance to signal the request to cancel the operation.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Azure.Messaging.EventHubs.EventDataBatch.html">EventDataBatch</a></span>
+        <span class="parametername">eventBatch</span>
+        <p><p>The set of event data to send.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></span>
+        <span class="parametername">cancellationToken</span>
+        <p><p>An optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> instance to signal the request to cancel the operation.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td><p>A task to be resolved on when the operation has completed.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>
+        <p><p>A task to be resolved on when the operation has completed.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Azure_Messaging_EventHubs_EventHubProducer_SendAsync_Azure_Messaging_EventHubs_EventDataBatch_System_Threading_CancellationToken__seealso">See Also</h5>
   <div class="seealso">
       <div><a class="xref" href="Azure.Messaging.EventHubs.EventHubProducer.html#Azure_Messaging_EventHubs_EventHubProducer_SendAsync_Azure_Messaging_EventHubs_EventData_System_Threading_CancellationToken_">SendAsync(EventData, CancellationToken)</a></div>
@@ -664,69 +800,79 @@ maximum size of a single batch, an exception will be triggered and the send will
       <div><a class="xref" href="Azure.Messaging.EventHubs.EventHubProducer.html#Azure_Messaging_EventHubs_EventHubProducer_SendAsync_System_Collections_Generic_IEnumerable_Azure_Messaging_EventHubs_EventData__System_Threading_CancellationToken_">SendAsync(IEnumerable&lt;EventData&gt;, CancellationToken)</a></div>
       <div><a class="xref" href="Azure.Messaging.EventHubs.EventHubProducer.html#Azure_Messaging_EventHubs_EventHubProducer_SendAsync_System_Collections_Generic_IEnumerable_Azure_Messaging_EventHubs_EventData__Azure_Messaging_EventHubs_SendOptions_System_Threading_CancellationToken_">SendAsync(IEnumerable&lt;EventData&gt;, SendOptions, CancellationToken)</a></div>
   </div>
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer_SendAsync_System_Collections_Generic_IEnumerable_Azure_Messaging_EventHubs_EventData__Azure_Messaging_EventHubs_SendOptions_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer.SendAsync(System.Collections.Generic.IEnumerable%7BAzure.Messaging.EventHubs.EventData%7D%2CAzure.Messaging.EventHubs.SendOptions%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer_SendAsync_System_Collections_Generic_IEnumerable_Azure_Messaging_EventHubs_EventData__Azure_Messaging_EventHubs_SendOptions_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer.SendAsync(System.Collections.Generic.IEnumerable%7BAzure.Messaging.EventHubs.EventData%7D%2CAzure.Messaging.EventHubs.SendOptions%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L223">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L223" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_EventHubProducer_SendAsync_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.SendAsync*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventHubProducer_SendAsync_System_Collections_Generic_IEnumerable_Azure_Messaging_EventHubs_EventData__Azure_Messaging_EventHubs_SendOptions_System_Threading_CancellationToken_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.SendAsync(System.Collections.Generic.IEnumerable{Azure.Messaging.EventHubs.EventData},Azure.Messaging.EventHubs.SendOptions,System.Threading.CancellationToken)">SendAsync(IEnumerable&lt;EventData&gt;, SendOptions, CancellationToken)</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_EventHubProducer_SendAsync_System_Collections_Generic_IEnumerable_Azure_Messaging_EventHubs_EventData__Azure_Messaging_EventHubs_SendOptions_System_Threading_CancellationToken_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.SendAsync(System.Collections.Generic.IEnumerable{Azure.Messaging.EventHubs.EventData},Azure.Messaging.EventHubs.SendOptions,System.Threading.CancellationToken)"><a href="#collapsible-Azure_Messaging_EventHubs_EventHubProducer_SendAsync_System_Collections_Generic_IEnumerable_Azure_Messaging_EventHubs_EventData__Azure_Messaging_EventHubs_SendOptions_System_Threading_CancellationToken_" class="expander" data-toggle="collapse">SendAsync(IEnumerable&lt;EventData&gt;, SendOptions, CancellationToken)</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_EventHubProducer_SendAsync_System_Collections_Generic_IEnumerable_Azure_Messaging_EventHubs_EventData__Azure_Messaging_EventHubs_SendOptions_System_Threading_CancellationToken_" class="collapse in">
   <div class="markdown level1 summary"><p>Sends a set of events to the associated Event Hub using a batched approach.  If the size of events exceed the
 maximum size of a single batch, an exception will be triggered and the send will fail.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual Task SendAsync(IEnumerable&lt;EventData&gt; events, SendOptions options, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Azure.Messaging.EventHubs.EventData.html">EventData</a>&gt;</td>
-        <td><span class="parametername">events</span></td>
-        <td><p>The set of event data to send.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Azure.Messaging.EventHubs.SendOptions.html">SendOptions</a></td>
-        <td><span class="parametername">options</span></td>
-        <td><p>The set of options to consider when sending this batch.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td><p>An optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> instance to signal the request to cancel the operation.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Azure.Messaging.EventHubs.EventData.html">EventData</a>&gt;</span>
+        <span class="parametername">events</span>
+        <p><p>The set of event data to send.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Azure.Messaging.EventHubs.SendOptions.html">SendOptions</a></span>
+        <span class="parametername">options</span>
+        <p><p>The set of options to consider when sending this batch.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></span>
+        <span class="parametername">cancellationToken</span>
+        <p><p>An optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> instance to signal the request to cancel the operation.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td><p>A task to be resolved on when the operation has completed.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>
+        <p><p>A task to be resolved on when the operation has completed.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Azure_Messaging_EventHubs_EventHubProducer_SendAsync_System_Collections_Generic_IEnumerable_Azure_Messaging_EventHubs_EventData__Azure_Messaging_EventHubs_SendOptions_System_Threading_CancellationToken__seealso">See Also</h5>
   <div class="seealso">
       <div><a class="xref" href="Azure.Messaging.EventHubs.EventHubProducer.html#Azure_Messaging_EventHubs_EventHubProducer_SendAsync_Azure_Messaging_EventHubs_EventData_System_Threading_CancellationToken_">SendAsync(EventData, CancellationToken)</a></div>
@@ -734,67 +880,77 @@ maximum size of a single batch, an exception will be triggered and the send will
       <div><a class="xref" href="Azure.Messaging.EventHubs.EventHubProducer.html#Azure_Messaging_EventHubs_EventHubProducer_SendAsync_System_Collections_Generic_IEnumerable_Azure_Messaging_EventHubs_EventData__System_Threading_CancellationToken_">SendAsync(IEnumerable&lt;EventData&gt;, CancellationToken)</a></div>
       <div><a class="xref" href="Azure.Messaging.EventHubs.EventHubProducer.html#Azure_Messaging_EventHubs_EventHubProducer_SendAsync_Azure_Messaging_EventHubs_EventDataBatch_System_Threading_CancellationToken_">SendAsync(EventDataBatch, CancellationToken)</a></div>
   </div>
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer_SendAsync_System_Collections_Generic_IEnumerable_Azure_Messaging_EventHubs_EventData__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer.SendAsync(System.Collections.Generic.IEnumerable%7BAzure.Messaging.EventHubs.EventData%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer_SendAsync_System_Collections_Generic_IEnumerable_Azure_Messaging_EventHubs_EventData__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer.SendAsync(System.Collections.Generic.IEnumerable%7BAzure.Messaging.EventHubs.EventData%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L204">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L204" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Azure_Messaging_EventHubs_EventHubProducer_SendAsync_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.SendAsync*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventHubProducer_SendAsync_System_Collections_Generic_IEnumerable_Azure_Messaging_EventHubs_EventData__System_Threading_CancellationToken_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.SendAsync(System.Collections.Generic.IEnumerable{Azure.Messaging.EventHubs.EventData},System.Threading.CancellationToken)">SendAsync(IEnumerable&lt;EventData&gt;, CancellationToken)</h4>
+  
+  <h4 id="Azure_Messaging_EventHubs_EventHubProducer_SendAsync_System_Collections_Generic_IEnumerable_Azure_Messaging_EventHubs_EventData__System_Threading_CancellationToken_" data-uid="Azure.Messaging.EventHubs.EventHubProducer.SendAsync(System.Collections.Generic.IEnumerable{Azure.Messaging.EventHubs.EventData},System.Threading.CancellationToken)"><a href="#collapsible-Azure_Messaging_EventHubs_EventHubProducer_SendAsync_System_Collections_Generic_IEnumerable_Azure_Messaging_EventHubs_EventData__System_Threading_CancellationToken_" class="expander" data-toggle="collapse">SendAsync(IEnumerable&lt;EventData&gt;, CancellationToken)</a></h4>
+  
+  <div id="collapsible-Azure_Messaging_EventHubs_EventHubProducer_SendAsync_System_Collections_Generic_IEnumerable_Azure_Messaging_EventHubs_EventData__System_Threading_CancellationToken_" class="collapse in">
   <div class="markdown level1 summary"><p>Sends a set of events to the associated Event Hub using a batched approach.  If the size of events exceed the
 maximum size of a single batch, an exception will be triggered and the send will fail.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual Task SendAsync(IEnumerable&lt;EventData&gt; events, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Azure.Messaging.EventHubs.EventData.html">EventData</a>&gt;</td>
-        <td><span class="parametername">events</span></td>
-        <td><p>The set of event data to send.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td><p>An optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> instance to signal the request to cancel the operation.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Azure.Messaging.EventHubs.EventData.html">EventData</a>&gt;</span>
+        <span class="parametername">events</span>
+        <p><p>The set of event data to send.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></span>
+        <span class="parametername">cancellationToken</span>
+        <p><p>An optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> instance to signal the request to cancel the operation.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td><p>A task to be resolved on when the operation has completed.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>
+        <p><p>A task to be resolved on when the operation has completed.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Azure_Messaging_EventHubs_EventHubProducer_SendAsync_System_Collections_Generic_IEnumerable_Azure_Messaging_EventHubs_EventData__System_Threading_CancellationToken__seealso">See Also</h5>
   <div class="seealso">
       <div><a class="xref" href="Azure.Messaging.EventHubs.EventHubProducer.html#Azure_Messaging_EventHubs_EventHubProducer_SendAsync_System_Collections_Generic_IEnumerable_Azure_Messaging_EventHubs_EventData__Azure_Messaging_EventHubs_SendOptions_System_Threading_CancellationToken_">SendAsync(IEnumerable&lt;EventData&gt;, SendOptions, CancellationToken)</a></div>
   </div>
+  </div>
+  
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
@@ -814,23 +970,17 @@ maximum size of a single batch, an exception will be triggered and the send will
   <div>
       <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
+  
 </article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L35" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Azure_Messaging_EventHubs_EventHubProducer.md&amp;value=---%0Auid%3A%20Azure.Messaging.EventHubs.EventHubProducer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/eventhub/Azure.Messaging.EventHubs/src/EventHubProducer.cs/#L35" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

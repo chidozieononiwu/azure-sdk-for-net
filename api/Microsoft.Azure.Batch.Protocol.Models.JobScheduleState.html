@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,68 +79,70 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleState">
-  
-  
-  <h1 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleState" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleState" class="text-break">Enum JobScheduleState
+  <h1 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleState" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobScheduleState">Enum JobScheduleState
   </h1>
   <div class="markdown level0 summary"><p>Defines values for JobScheduleState.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.html">Microsoft.Azure.Batch.Protocol.Models</a></h6>
+  
+  
+  
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
+  
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleState_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public enum JobScheduleState</code></pre>
   </div>
-  <h3 id="fields">Fields
-  </h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    <thead>
-    <tbody>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleState_Active">Active</td>
-        <td><p>The Job Schedule is active and will create Jobs as per its
+  
+  
+  
+  
+  
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleState_Active"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_JobScheduleState_Active" class="expander" data-toggle="collapse">Active</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_JobScheduleState_Active" class="collapse in">
+        <p><p>The Job Schedule is active and will create Jobs as per its
 schedule.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleState_Completed">Completed</td>
-        <td><p>The Job Schedule has terminated, either by reaching its end time or
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleState_Completed"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_JobScheduleState_Completed" class="expander" data-toggle="collapse">Completed</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_JobScheduleState_Completed" class="collapse in">
+        <p><p>The Job Schedule has terminated, either by reaching its end time or
 by the user terminating it explicitly.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleState_Deleting">Deleting</td>
-        <td><p>The user has requested that the Job Schedule be deleted, but the
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleState_Deleting"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_JobScheduleState_Deleting" class="expander" data-toggle="collapse">Deleting</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_JobScheduleState_Deleting" class="collapse in">
+        <p><p>The user has requested that the Job Schedule be deleted, but the
 delete operation is still in progress. The scheduler will not
 initiate any new Jobs for this Job Schedule, and will delete any
 existing Jobs and Tasks under the Job Schedule, including any
 active Job. The Job Schedule will be deleted when all Jobs and
 Tasks under the Job Schedule have been deleted.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleState_Disabled">Disabled</td>
-        <td><p>The user has disabled the Job Schedule. The scheduler will not
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleState_Disabled"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_JobScheduleState_Disabled" class="expander" data-toggle="collapse">Disabled</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_JobScheduleState_Disabled" class="collapse in">
+        <p><p>The user has disabled the Job Schedule. The scheduler will not
 initiate any new Jobs will on this schedule, but any existing
 active Job will continue to run.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleState_Terminating">Terminating</td>
-        <td><p>The Job Schedule has no more work to do, or has been explicitly
+</p>
+      </div>
+      <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobScheduleState_Terminating"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_JobScheduleState_Terminating" class="expander" data-toggle="collapse">Terminating</a></h4>
+  
+      <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_JobScheduleState_Terminating" class="collapse in">
+        <p><p>The Job Schedule has no more work to do, or has been explicitly
 terminated by the user, but the termination operation is still in
 progress. The scheduler will not initiate any new Jobs for this Job
 Schedule, nor is any existing Job active.</p>
-</td>
-      </tr>
-    </tbody>
-  </thead></thead></table>
+</p>
+      </div>
+  
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;JobScheduleState, TConfiguration&gt;(TConfiguration)</a>
@@ -162,21 +164,14 @@ Schedule, nor is any existing Job active.</p>
   </div>
 </article>
           </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobScheduleState.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobScheduleState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobScheduleState.cs/#L21" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
+          </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_JobScheduleState.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.JobScheduleState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/JobScheduleState.cs/#L21" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

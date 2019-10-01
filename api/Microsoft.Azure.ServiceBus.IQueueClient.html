@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,13 +79,14 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Microsoft.Azure.ServiceBus.IQueueClient">
-  
-  
-  <h1 id="Microsoft_Azure_ServiceBus_IQueueClient" data-uid="Microsoft.Azure.ServiceBus.IQueueClient" class="text-break">Interface IQueueClient
+  <h1 id="Microsoft_Azure_ServiceBus_IQueueClient" data-uid="Microsoft.Azure.ServiceBus.IQueueClient">Interface IQueueClient
   </h1>
   <div class="markdown level0 summary"><p>QueueClient can be used for all basic interactions with a Service Bus Queue.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  
+  
+  
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -155,15 +156,22 @@
       <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html#Microsoft_Azure_ServiceBus_IClientEntity_UnregisterPlugin_System_String_">IClientEntity.UnregisterPlugin(String)</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.ServiceBus.html">Microsoft.Azure.ServiceBus</a></h6>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.ServiceBus.dll</h6>
+  
   <h5 id="Microsoft_Azure_ServiceBus_IQueueClient_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IQueueClient : IReceiverClient, ISenderClient, IClientEntity</code></pre>
   </div>
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_IQueueClient_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>Use <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageSender.html">IMessageSender</a> or <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html">IMessageReceiver</a> for advanced set of functionality.</p>
 </div>
+  
   <h5 id="Microsoft_Azure_ServiceBus_IQueueClient_examples"><strong>Examples</strong></h5>
   <p>Create a new QueueClient</p>
 <pre><code>IQueueClient queueClient = new QueueClient(
@@ -194,131 +202,173 @@ await queueClient.SendAsync(data);</code></pre>
 
   <h3 id="properties">Properties
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_IQueueClient_QueueName.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.IQueueClient.QueueName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_IQueueClient_QueueName.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.IQueueClient.QueueName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/IQueueClient.cs/#L57">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/IQueueClient.cs/#L57" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_IQueueClient_QueueName_" data-uid="Microsoft.Azure.ServiceBus.IQueueClient.QueueName*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_IQueueClient_QueueName" data-uid="Microsoft.Azure.ServiceBus.IQueueClient.QueueName">QueueName</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_IQueueClient_QueueName" data-uid="Microsoft.Azure.ServiceBus.IQueueClient.QueueName"><a href="#collapsible-Microsoft_Azure_ServiceBus_IQueueClient_QueueName" class="expander" data-toggle="collapse">QueueName</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_IQueueClient_QueueName" class="collapse in">
   <div class="markdown level1 summary"><p>Gets the name of the queue.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">string QueueName { get; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
   <h3 id="methods">Methods
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_IQueueClient_RegisterSessionHandler_System_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_System_Threading_CancellationToken_System_Threading_Tasks_Task__Microsoft_Azure_ServiceBus_SessionHandlerOptions_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.IQueueClient.RegisterSessionHandler(System.Func%7BMicrosoft.Azure.ServiceBus.IMessageSession%2CMicrosoft.Azure.ServiceBus.Message%2CSystem.Threading.CancellationToken%2CSystem.Threading.Tasks.Task%7D%2CMicrosoft.Azure.ServiceBus.SessionHandlerOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_IQueueClient_RegisterSessionHandler_System_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_System_Threading_CancellationToken_System_Threading_Tasks_Task__Microsoft_Azure_ServiceBus_SessionHandlerOptions_.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.IQueueClient.RegisterSessionHandler(System.Func%7BMicrosoft.Azure.ServiceBus.IMessageSession%2CMicrosoft.Azure.ServiceBus.Message%2CSystem.Threading.CancellationToken%2CSystem.Threading.Tasks.Task%7D%2CMicrosoft.Azure.ServiceBus.SessionHandlerOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/IQueueClient.cs/#L79">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/IQueueClient.cs/#L79" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_IQueueClient_RegisterSessionHandler_" data-uid="Microsoft.Azure.ServiceBus.IQueueClient.RegisterSessionHandler*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_IQueueClient_RegisterSessionHandler_System_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_System_Threading_CancellationToken_System_Threading_Tasks_Task__Microsoft_Azure_ServiceBus_SessionHandlerOptions_" data-uid="Microsoft.Azure.ServiceBus.IQueueClient.RegisterSessionHandler(System.Func{Microsoft.Azure.ServiceBus.IMessageSession,Microsoft.Azure.ServiceBus.Message,System.Threading.CancellationToken,System.Threading.Tasks.Task},Microsoft.Azure.ServiceBus.SessionHandlerOptions)">RegisterSessionHandler(Func&lt;IMessageSession, Message, CancellationToken, Task&gt;, SessionHandlerOptions)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_IQueueClient_RegisterSessionHandler_System_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_System_Threading_CancellationToken_System_Threading_Tasks_Task__Microsoft_Azure_ServiceBus_SessionHandlerOptions_" data-uid="Microsoft.Azure.ServiceBus.IQueueClient.RegisterSessionHandler(System.Func{Microsoft.Azure.ServiceBus.IMessageSession,Microsoft.Azure.ServiceBus.Message,System.Threading.CancellationToken,System.Threading.Tasks.Task},Microsoft.Azure.ServiceBus.SessionHandlerOptions)"><a href="#collapsible-Microsoft_Azure_ServiceBus_IQueueClient_RegisterSessionHandler_System_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_System_Threading_CancellationToken_System_Threading_Tasks_Task__Microsoft_Azure_ServiceBus_SessionHandlerOptions_" class="expander" data-toggle="collapse">RegisterSessionHandler(Func&lt;IMessageSession, Message, CancellationToken, Task&gt;, SessionHandlerOptions)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_IQueueClient_RegisterSessionHandler_System_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_System_Threading_CancellationToken_System_Threading_Tasks_Task__Microsoft_Azure_ServiceBus_SessionHandlerOptions_" class="collapse in">
   <div class="markdown level1 summary"><p>Receive session messages continuously from the queue. Registers a message handler and begins a new thread to receive session-messages.
 This handler(<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-4">Func&lt;T1,T2,T3,TResult&gt;</a>) is awaited on every time a new message is received by the queue client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">void RegisterSessionHandler(Func&lt;IMessageSession, Message, CancellationToken, Task&gt; handler, SessionHandlerOptions sessionHandlerOptions)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-4">Func</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html">IMessageSession</a>, <a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</td>
-        <td><span class="parametername">handler</span></td>
-        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-4">Func&lt;T1,T2,T3,TResult&gt;</a> that processes messages.
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-4">Func</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html">IMessageSession</a>, <a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</span>
+        <span class="parametername">handler</span>
+        <p><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-4">Func&lt;T1,T2,T3,TResult&gt;</a> that processes messages.
 <a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html">IMessageSession</a> contains the session information, and must be used to perform Complete/Abandon/Deadletter or other such operations on the <a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.ServiceBus.SessionHandlerOptions.html">SessionHandlerOptions</a></td>
-        <td><span class="parametername">sessionHandlerOptions</span></td>
-        <td><p>Options used to configure the settings of the session pump.</p>
-</td>
-      </tr>
-    </tbody>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Azure.ServiceBus.SessionHandlerOptions.html">SessionHandlerOptions</a></span>
+        <span class="parametername">sessionHandlerOptions</span>
+        <p><p>Options used to configure the settings of the session pump.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_IQueueClient_RegisterSessionHandler_System_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_System_Threading_CancellationToken_System_Threading_Tasks_Task__Microsoft_Azure_ServiceBus_SessionHandlerOptions__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Enable prefetch to speed up the receive rate.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_IQueueClient_RegisterSessionHandler_System_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Func_Microsoft_Azure_ServiceBus_ExceptionReceivedEventArgs_System_Threading_Tasks_Task__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.IQueueClient.RegisterSessionHandler(System.Func%7BMicrosoft.Azure.ServiceBus.IMessageSession%2CMicrosoft.Azure.ServiceBus.Message%2CSystem.Threading.CancellationToken%2CSystem.Threading.Tasks.Task%7D%2CSystem.Func%7BMicrosoft.Azure.ServiceBus.ExceptionReceivedEventArgs%2CSystem.Threading.Tasks.Task%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_IQueueClient_RegisterSessionHandler_System_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Func_Microsoft_Azure_ServiceBus_ExceptionReceivedEventArgs_System_Threading_Tasks_Task__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.IQueueClient.RegisterSessionHandler(System.Func%7BMicrosoft.Azure.ServiceBus.IMessageSession%2CMicrosoft.Azure.ServiceBus.Message%2CSystem.Threading.CancellationToken%2CSystem.Threading.Tasks.Task%7D%2CSystem.Func%7BMicrosoft.Azure.ServiceBus.ExceptionReceivedEventArgs%2CSystem.Threading.Tasks.Task%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/IQueueClient.cs/#L69">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/IQueueClient.cs/#L69" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_ServiceBus_IQueueClient_RegisterSessionHandler_" data-uid="Microsoft.Azure.ServiceBus.IQueueClient.RegisterSessionHandler*"></a>
-  <h4 id="Microsoft_Azure_ServiceBus_IQueueClient_RegisterSessionHandler_System_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Func_Microsoft_Azure_ServiceBus_ExceptionReceivedEventArgs_System_Threading_Tasks_Task__" data-uid="Microsoft.Azure.ServiceBus.IQueueClient.RegisterSessionHandler(System.Func{Microsoft.Azure.ServiceBus.IMessageSession,Microsoft.Azure.ServiceBus.Message,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Func{Microsoft.Azure.ServiceBus.ExceptionReceivedEventArgs,System.Threading.Tasks.Task})">RegisterSessionHandler(Func&lt;IMessageSession, Message, CancellationToken, Task&gt;, Func&lt;ExceptionReceivedEventArgs, Task&gt;)</h4>
+  
+  <h4 id="Microsoft_Azure_ServiceBus_IQueueClient_RegisterSessionHandler_System_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Func_Microsoft_Azure_ServiceBus_ExceptionReceivedEventArgs_System_Threading_Tasks_Task__" data-uid="Microsoft.Azure.ServiceBus.IQueueClient.RegisterSessionHandler(System.Func{Microsoft.Azure.ServiceBus.IMessageSession,Microsoft.Azure.ServiceBus.Message,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Func{Microsoft.Azure.ServiceBus.ExceptionReceivedEventArgs,System.Threading.Tasks.Task})"><a href="#collapsible-Microsoft_Azure_ServiceBus_IQueueClient_RegisterSessionHandler_System_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Func_Microsoft_Azure_ServiceBus_ExceptionReceivedEventArgs_System_Threading_Tasks_Task__" class="expander" data-toggle="collapse">RegisterSessionHandler(Func&lt;IMessageSession, Message, CancellationToken, Task&gt;, Func&lt;ExceptionReceivedEventArgs, Task&gt;)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_ServiceBus_IQueueClient_RegisterSessionHandler_System_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Func_Microsoft_Azure_ServiceBus_ExceptionReceivedEventArgs_System_Threading_Tasks_Task__" class="collapse in">
   <div class="markdown level1 summary"><p>Receive session messages continuously from the queue. Registers a message handler and begins a new thread to receive session-messages.
 This handler(<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-4">Func&lt;T1,T2,T3,TResult&gt;</a>) is awaited on every time a new message is received by the queue client.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">void RegisterSessionHandler(Func&lt;IMessageSession, Message, CancellationToken, Task&gt; handler, Func&lt;ExceptionReceivedEventArgs, Task&gt; exceptionReceivedHandler)</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-4">Func</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html">IMessageSession</a>, <a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</td>
-        <td><span class="parametername">handler</span></td>
-        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-4">Func&lt;T1,T2,T3,TResult&gt;</a> that processes messages.
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-4">Func</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html">IMessageSession</a>, <a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</span>
+        <span class="parametername">handler</span>
+        <p><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-4">Func&lt;T1,T2,T3,TResult&gt;</a> that processes messages.
 <a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html">IMessageSession</a> contains the session information, and must be used to perform Complete/Abandon/Deadletter or other such operations on the <a class="xref" href="Microsoft.Azure.ServiceBus.Message.html">Message</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.ExceptionReceivedEventArgs.html">ExceptionReceivedEventArgs</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</td>
-        <td><span class="parametername">exceptionReceivedHandler</span></td>
-        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func&lt;T,TResult&gt;</a> that is invoked during exceptions.
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.ExceptionReceivedEventArgs.html">ExceptionReceivedEventArgs</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</span>
+        <span class="parametername">exceptionReceivedHandler</span>
+        <p><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func&lt;T,TResult&gt;</a> that is invoked during exceptions.
 <a class="xref" href="Microsoft.Azure.ServiceBus.ExceptionReceivedEventArgs.html">ExceptionReceivedEventArgs</a> contains contextual information regarding the exception.</p>
-</td>
-      </tr>
-    </tbody>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_ServiceBus_IQueueClient_RegisterSessionHandler_System_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Func_Microsoft_Azure_ServiceBus_ExceptionReceivedEventArgs_System_Threading_Tasks_Task___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Enable prefetch to speed up the receive rate.
 Use <a class="xref" href="Microsoft.Azure.ServiceBus.IQueueClient.html#Microsoft_Azure_ServiceBus_IQueueClient_RegisterSessionHandler_System_Func_Microsoft_Azure_ServiceBus_IMessageSession_Microsoft_Azure_ServiceBus_Message_System_Threading_CancellationToken_System_Threading_Tasks_Task__Microsoft_Azure_ServiceBus_SessionHandlerOptions_">RegisterSessionHandler(Func&lt;IMessageSession, Message, CancellationToken, Task&gt;, SessionHandlerOptions)</a> to configure the settings of the pump.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
@@ -338,27 +388,21 @@ Use <a class="xref" href="Microsoft.Azure.ServiceBus.IQueueClient.html#Microsoft
   <div>
       <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
+  
   <h3 id="seealso">See Also</h3>
   <div class="seealso">
       <div><a class="xref" href="Microsoft.Azure.ServiceBus.QueueClient.html">QueueClient</a></div>
   </div>
 </article>
           </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_IQueueClient.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.IQueueClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/IQueueClient.cs/#L52" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
+          </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_ServiceBus_IQueueClient.md&amp;value=---%0Auid%3A%20Microsoft.Azure.ServiceBus.IQueueClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/servicebus/Microsoft.Azure.ServiceBus/src/IQueueClient.cs/#L52" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
-  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -79,19 +79,20 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask">
-  
-  
-  <h1 id="Microsoft_Azure_Batch_Protocol_Models_StartTask" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask" class="text-break">Class StartTask
+  <h1 id="Microsoft_Azure_Batch_Protocol_Models_StartTask" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask">Class StartTask
   </h1>
   <div class="markdown level0 summary"><p>A Task which is run when a Node joins a Pool in the Azure Batch
 service, or when the Compute Node is rebooted or reimaged.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">StartTask</span></div>
   </div>
+  
+  
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -116,12 +117,18 @@ service, or when the Compute Node is rebooted or reimaged.</p>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.html">Microsoft.Azure.Batch.Protocol.Models</a></h6>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
+  
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class StartTask</code></pre>
   </div>
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>Batch will retry Tasks when a recovery operation is triggered on a
 Node. Examples of recovery operations include (but are not limited to)
@@ -138,68 +145,92 @@ care should be taken to avoid StartTasks which create breakaway process
 or install/launch services from the StartTask working directory, as
 this will block Batch from being able to re-run the StartTask.</p>
 </div>
+  
   <h3 id="constructors">Constructors
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_StartTask__ctor.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.StartTask.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_StartTask__ctor.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.StartTask.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/StartTask.cs/#L43">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/StartTask.cs/#L43" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_Protocol_Models_StartTask__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.#ctor*"></a>
-  <h4 id="Microsoft_Azure_Batch_Protocol_Models_StartTask__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.#ctor">StartTask()</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_StartTask__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.#ctor"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_StartTask__ctor" class="expander" data-toggle="collapse">StartTask()</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_StartTask__ctor" class="collapse in">
   <div class="markdown level1 summary"><p>Initializes a new instance of the StartTask class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public StartTask()</code></pre>
   </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_StartTask__ctor_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskContainerSettings_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_ResourceFile__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_EnvironmentSetting__Microsoft_Azure_Batch_Protocol_Models_UserIdentity_System_Nullable_System_Int32__System_Nullable_System_Boolean__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.StartTask.%23ctor(System.String%2CMicrosoft.Azure.Batch.Protocol.Models.TaskContainerSettings%2CSystem.Collections.Generic.IList%7BMicrosoft.Azure.Batch.Protocol.Models.ResourceFile%7D%2CSystem.Collections.Generic.IList%7BMicrosoft.Azure.Batch.Protocol.Models.EnvironmentSetting%7D%2CMicrosoft.Azure.Batch.Protocol.Models.UserIdentity%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Nullable%7BSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_StartTask__ctor_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskContainerSettings_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_ResourceFile__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_EnvironmentSetting__Microsoft_Azure_Batch_Protocol_Models_UserIdentity_System_Nullable_System_Int32__System_Nullable_System_Boolean__.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.StartTask.%23ctor(System.String%2CMicrosoft.Azure.Batch.Protocol.Models.TaskContainerSettings%2CSystem.Collections.Generic.IList%7BMicrosoft.Azure.Batch.Protocol.Models.ResourceFile%7D%2CSystem.Collections.Generic.IList%7BMicrosoft.Azure.Batch.Protocol.Models.EnvironmentSetting%7D%2CMicrosoft.Azure.Batch.Protocol.Models.UserIdentity%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Nullable%7BSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/StartTask.cs/#L73">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/StartTask.cs/#L73" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_Protocol_Models_StartTask__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.#ctor*"></a>
-  <h4 id="Microsoft_Azure_Batch_Protocol_Models_StartTask__ctor_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskContainerSettings_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_ResourceFile__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_EnvironmentSetting__Microsoft_Azure_Batch_Protocol_Models_UserIdentity_System_Nullable_System_Int32__System_Nullable_System_Boolean__" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.#ctor(System.String,Microsoft.Azure.Batch.Protocol.Models.TaskContainerSettings,System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.ResourceFile},System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting},Microsoft.Azure.Batch.Protocol.Models.UserIdentity,System.Nullable{System.Int32},System.Nullable{System.Boolean})">StartTask(String, TaskContainerSettings, IList&lt;ResourceFile&gt;, IList&lt;EnvironmentSetting&gt;, UserIdentity, Nullable&lt;Int32&gt;, Nullable&lt;Boolean&gt;)</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_StartTask__ctor_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskContainerSettings_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_ResourceFile__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_EnvironmentSetting__Microsoft_Azure_Batch_Protocol_Models_UserIdentity_System_Nullable_System_Int32__System_Nullable_System_Boolean__" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.#ctor(System.String,Microsoft.Azure.Batch.Protocol.Models.TaskContainerSettings,System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.ResourceFile},System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting},Microsoft.Azure.Batch.Protocol.Models.UserIdentity,System.Nullable{System.Int32},System.Nullable{System.Boolean})"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_StartTask__ctor_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskContainerSettings_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_ResourceFile__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_EnvironmentSetting__Microsoft_Azure_Batch_Protocol_Models_UserIdentity_System_Nullable_System_Int32__System_Nullable_System_Boolean__" class="expander" data-toggle="collapse">StartTask(String, TaskContainerSettings, IList&lt;ResourceFile&gt;, IList&lt;EnvironmentSetting&gt;, UserIdentity, Nullable&lt;Int32&gt;, Nullable&lt;Boolean&gt;)</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_StartTask__ctor_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskContainerSettings_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_ResourceFile__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_EnvironmentSetting__Microsoft_Azure_Batch_Protocol_Models_UserIdentity_System_Nullable_System_Int32__System_Nullable_System_Boolean__" class="collapse in">
   <div class="markdown level1 summary"><p>Initializes a new instance of the StartTask class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public StartTask(string commandLine, TaskContainerSettings containerSettings = null, IList&lt;ResourceFile&gt; resourceFiles = null, IList&lt;EnvironmentSetting&gt; environmentSettings = null, UserIdentity userIdentity = null, int? maxTaskRetryCount = default(int? ), bool? waitForSuccess = default(bool? ))</code></pre>
   </div>
+  
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">commandLine</span></td>
-        <td><p>The command line of the
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">commandLine</span>
+        <p><p>The command line of the
 StartTask.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskContainerSettings.html">TaskContainerSettings</a></td>
-        <td><span class="parametername">containerSettings</span></td>
-        <td><p>The settings for the container
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskContainerSettings.html">TaskContainerSettings</a></span>
+        <span class="parametername">containerSettings</span>
+        <p><p>The settings for the container
 under which the StartTask runs.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ResourceFile.html">ResourceFile</a>&gt;</td>
-        <td><span class="parametername">resourceFiles</span></td>
-        <td><p>A list of files that the Batch service
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ResourceFile.html">ResourceFile</a>&gt;</span>
+        <span class="parametername">resourceFiles</span>
+        <p><p>A list of files that the Batch service
 will download to the Compute Node before running the command line.
 There is a maximum size for the list of resource files. When the
 max size is exceeded, the request will fail and the response error
@@ -207,73 +238,102 @@ code will be RequestEntityTooLarge. If this occurs, the collection
 of ResourceFiles must be reduced in size. This can be achieved
 using .zip files, Application Packages, or Docker
 Containers.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting.html">EnvironmentSetting</a>&gt;</td>
-        <td><span class="parametername">environmentSettings</span></td>
-        <td><p>A list of environment variable
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting.html">EnvironmentSetting</a>&gt;</span>
+        <span class="parametername">environmentSettings</span>
+        <p><p>A list of environment variable
 settings for the StartTask.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.UserIdentity.html">UserIdentity</a></td>
-        <td><span class="parametername">userIdentity</span></td>
-        <td><p>The user identity under which the
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.UserIdentity.html">UserIdentity</a></span>
+        <span class="parametername">userIdentity</span>
+        <p><p>The user identity under which the
 StartTask runs.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
-        <td><span class="parametername">maxTaskRetryCount</span></td>
-        <td><p>The maximum number of times the
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</span>
+        <span class="parametername">maxTaskRetryCount</span>
+        <p><p>The maximum number of times the
 Task may be retried.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
-        <td><span class="parametername">waitForSuccess</span></td>
-        <td><p>Whether the Batch service should wait
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</span>
+        <span class="parametername">waitForSuccess</span>
+        <p><p>Whether the Batch service should wait
 for the StartTask to complete successfully (that is, to exit with
 exit code 0) before scheduling any Tasks on the Compute
 Node.</p>
-</td>
-      </tr>
-    </tbody>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
   <h3 id="properties">Properties
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_StartTask_CommandLine.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.StartTask.CommandLine%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_StartTask_CommandLine.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.StartTask.CommandLine%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/StartTask.cs/#L104">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/StartTask.cs/#L104" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_Protocol_Models_StartTask_CommandLine_" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.CommandLine*"></a>
-  <h4 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_CommandLine" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.CommandLine">CommandLine</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_CommandLine" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.CommandLine"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_StartTask_CommandLine" class="expander" data-toggle="collapse">CommandLine</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_StartTask_CommandLine" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets the command line of the StartTask.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string CommandLine { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_CommandLine_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The command line does not run under a shell, and therefore cannot
 take advantage of shell features such as environment variable
@@ -285,38 +345,51 @@ command line refers to file paths, it should use a relative path
 environment variable
 (<a href="https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables">https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables</a>).</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_StartTask_ContainerSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.StartTask.ContainerSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_StartTask_ContainerSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.StartTask.ContainerSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/StartTask.cs/#L121">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/StartTask.cs/#L121" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_Protocol_Models_StartTask_ContainerSettings_" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.ContainerSettings*"></a>
-  <h4 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_ContainerSettings" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.ContainerSettings">ContainerSettings</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_ContainerSettings" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.ContainerSettings"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_StartTask_ContainerSettings" class="expander" data-toggle="collapse">ContainerSettings</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_StartTask_ContainerSettings" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets the settings for the container under which the
 StartTask runs.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public TaskContainerSettings ContainerSettings { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskContainerSettings.html">TaskContainerSettings</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskContainerSettings.html">TaskContainerSettings</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_ContainerSettings_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>When this is specified, all directories recursively below the
 AZ_BATCH_NODE_ROOT_DIR (the root of Azure Batch directories on the
@@ -327,69 +400,95 @@ of AZ_BATCH_NODE_ROOT_DIR might not be reflected to the host disk,
 meaning that Batch file APIs will not be able to access those
 files.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_StartTask_EnvironmentSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.StartTask.EnvironmentSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_StartTask_EnvironmentSettings.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.StartTask.EnvironmentSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/StartTask.cs/#L144">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/StartTask.cs/#L144" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_Protocol_Models_StartTask_EnvironmentSettings_" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.EnvironmentSettings*"></a>
-  <h4 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_EnvironmentSettings" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.EnvironmentSettings">EnvironmentSettings</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_EnvironmentSettings" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.EnvironmentSettings"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_StartTask_EnvironmentSettings" class="expander" data-toggle="collapse">EnvironmentSettings</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_StartTask_EnvironmentSettings" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets a list of environment variable settings for the
 StartTask.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IList&lt;EnvironmentSetting&gt; EnvironmentSettings { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting.html">EnvironmentSetting</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting.html">EnvironmentSetting</a>&gt;
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_StartTask_MaxTaskRetryCount.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.StartTask.MaxTaskRetryCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_StartTask_MaxTaskRetryCount.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.StartTask.MaxTaskRetryCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/StartTask.cs/#L170">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/StartTask.cs/#L170" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_Protocol_Models_StartTask_MaxTaskRetryCount_" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.MaxTaskRetryCount*"></a>
-  <h4 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_MaxTaskRetryCount" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.MaxTaskRetryCount">MaxTaskRetryCount</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_MaxTaskRetryCount" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.MaxTaskRetryCount"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_StartTask_MaxTaskRetryCount" class="expander" data-toggle="collapse">MaxTaskRetryCount</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_StartTask_MaxTaskRetryCount" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets the maximum number of times the Task may be retried.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int? MaxTaskRetryCount { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_MaxTaskRetryCount_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The Batch service retries a Task if its exit code is nonzero. Note
 that this value specifically controls the number of retries. The
@@ -400,15 +499,24 @@ maximum retry count is 0, the Batch service does not retry the
 Task. If the maximum retry count is -1, the Batch service retries
 the Task without limit.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_StartTask_ResourceFiles.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.StartTask.ResourceFiles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_StartTask_ResourceFiles.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.StartTask.ResourceFiles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/StartTask.cs/#L137">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/StartTask.cs/#L137" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_Protocol_Models_StartTask_ResourceFiles_" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.ResourceFiles*"></a>
-  <h4 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_ResourceFiles" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.ResourceFiles">ResourceFiles</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_ResourceFiles" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.ResourceFiles"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_StartTask_ResourceFiles" class="expander" data-toggle="collapse">ResourceFiles</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_StartTask_ResourceFiles" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets a list of files that the Batch service will download
 to the Compute Node before running the command line.  There is a
 maximum size for the list of resource files. When the max size is
@@ -419,96 +527,126 @@ ResourceFiles must be reduced in size. This can be achieved using
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IList&lt;ResourceFile&gt; ResourceFiles { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ResourceFile.html">ResourceFile</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ResourceFile.html">ResourceFile</a>&gt;
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_ResourceFiles_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Files listed under this element are located in the Task's working
 directory.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_StartTask_UserIdentity.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.StartTask.UserIdentity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_StartTask_UserIdentity.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.StartTask.UserIdentity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/StartTask.cs/#L154">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/StartTask.cs/#L154" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_Protocol_Models_StartTask_UserIdentity_" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.UserIdentity*"></a>
-  <h4 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_UserIdentity" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.UserIdentity">UserIdentity</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_UserIdentity" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.UserIdentity"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_StartTask_UserIdentity" class="expander" data-toggle="collapse">UserIdentity</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_StartTask_UserIdentity" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets the user identity under which the StartTask runs.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UserIdentity UserIdentity { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.UserIdentity.html">UserIdentity</a></td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.UserIdentity.html">UserIdentity</a>
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_UserIdentity_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>If omitted, the Task runs as a non-administrative user unique to
 the Task.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_StartTask_WaitForSuccess.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.StartTask.WaitForSuccess%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_StartTask_WaitForSuccess.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.StartTask.WaitForSuccess%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/StartTask.cs/#L191">View Source</a>
+    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/StartTask.cs/#L191" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Microsoft_Azure_Batch_Protocol_Models_StartTask_WaitForSuccess_" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.WaitForSuccess*"></a>
-  <h4 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_WaitForSuccess" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.WaitForSuccess">WaitForSuccess</h4>
+  
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_WaitForSuccess" data-uid="Microsoft.Azure.Batch.Protocol.Models.StartTask.WaitForSuccess"><a href="#collapsible-Microsoft_Azure_Batch_Protocol_Models_StartTask_WaitForSuccess" class="expander" data-toggle="collapse">WaitForSuccess</a></h4>
+  
+  <div id="collapsible-Microsoft_Azure_Batch_Protocol_Models_StartTask_WaitForSuccess" class="collapse in">
   <div class="markdown level1 summary"><p>Gets or sets whether the Batch service should wait for the
 StartTask to complete successfully (that is, to exit with exit code
 0) before scheduling any Tasks on the Compute Node.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool? WaitForSuccess { get; set; }</code></pre>
   </div>
+  
+  
+  
+  
+  
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;
+        <p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
   <h5 id="Microsoft_Azure_Batch_Protocol_Models_StartTask_WaitForSuccess_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>If true and the StartTask fails on a Node, the Batch service
 retries the StartTask up to its maximum retry count
@@ -522,6 +660,11 @@ executing on the Compute Node while the StartTask is still running;
 and even if the StartTask fails, new Tasks will continue to be
 scheduled on the Compute Node. The default is true.</p>
 </div>
+  
+  
+  
+  </div>
+  
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html#Microsoft_Extensions_Azure_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
@@ -541,23 +684,17 @@ scheduled on the Compute Node. The default is true.</p>
   <div>
       <span class="xref">Microsoft.Extensions.Azure.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
+  
 </article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsMatthewsTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_StartTask.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.StartTask%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsMatthewsTheme/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/StartTask.cs/#L38" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/new/DoCFxDefaultDocsBlackTheme/apiSpec/new?filename=Microsoft_Azure_Batch_Protocol_Models_StartTask.md&amp;value=---%0Auid%3A%20Microsoft.Azure.Batch.Protocol.Models.StartTask%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/chidozieononiwu/azure-sdk-for-net/blob/DoCFxDefaultDocsBlackTheme/sdk/batch/Microsoft.Azure.Batch/src/GeneratedProtocol/Models/StartTask.cs/#L38" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

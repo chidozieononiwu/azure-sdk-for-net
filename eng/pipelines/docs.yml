@@ -18,8 +18,20 @@ jobs:
           script: $(Build.BinariesDirectory)/docfx/docfx.exe init -q
           workingDirectory: $(Build.SourcesDirectory)
           failOnStderr: true
+      - powershell: New-Item -Path . -Name "templates" -ItemType "directory"
+        displayName: Create Template Directory
+        workingDirectory: $(Build.SourcesDirectory)/docfx_project/
+      - task: CopyFiles@2
+        displayName: Copy Template to templates folder
+        inputs:
+          sourceFolder: $(Build.SourcesDirectory)/eng/docgeneration/templates
+          content: '**\*'
+          targetFolder: $(Build.SourcesDirectory)/docfx_project/templates
+          overWrite: true
       - powershell: ls
         workingDirectory: $(Build.SourcesDirectory)/docfx_project/
+      - powershell: ls
+        workingDirectory: $(Build.SourcesDirectory)/docfx_project/templates
       - powershell: |
           Copy-Item "$(Build.SourcesDirectory)/eng/docgeneration/docfx.json" -Destination "$(Build.SourcesDirectory)/docfx_project/" -Force
         displayName: Copy over docfx.json

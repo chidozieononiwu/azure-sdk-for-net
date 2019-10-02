@@ -58,13 +58,9 @@ $(function () {
 
 // Inject line breaks and spaces into the code sections
 $(function () {
-    $(".hljs-params").each(function () {
-        var text = $(this).html();
-        $(this).html("</br>&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;" + text);
-    });
     $(".lang-csharp").each(function () {
         var text = $(this).html();
-        text = text.replace(/,/g, ",</br>&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;");
+        text = text.replace(/, /g, ",</br>&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;");
         $(this).html(text);
     });
 })

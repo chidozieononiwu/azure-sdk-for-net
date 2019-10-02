@@ -40,6 +40,7 @@ body .toc,
 
 article h4 {
   border-bottom: none;
+  line-height: normal;
 }
 
 @media (min-width: 768px) {

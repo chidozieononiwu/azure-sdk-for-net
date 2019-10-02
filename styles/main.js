@@ -4,8 +4,8 @@ containers.removeClass("container");
 containers.addClass("container-fluid");
 
 // Navbar Hamburger
-$(function() {
-    $(".navbar-toggle").click(function() {
+$(function () {
+    $(".navbar-toggle").click(function () {
         $(this).toggleClass("change");
     })
 })
@@ -24,7 +24,7 @@ $(function () {
     form.append(selector);
     form.prependTo("article");
 
-    selector.change(function() {
+    selector.change(function () {
         window.location = $(this).find("option:selected").val();
     })
 
@@ -32,7 +32,7 @@ $(function () {
         var link = item.children('a');
 
         var text = link.text();
-        
+
         for (var i = 0; i < level; ++i) {
             text = '&nbsp;&nbsp;' + text;
         }
@@ -53,5 +53,18 @@ $(function () {
 
     navItems.each(function () {
         work($(this), 0);
+    });
+})
+
+// Inject line breaks and spaces into the code sections
+$(function () {
+    $(".hljs-params").each(function () {
+        var text = $(this).html();
+        $(this).html("</br>&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;" + text);
+    });
+    $(".lang-csharp").each(function () {
+        var text = $(this).html();
+        text = text.replace(/,/g, ",</br>&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;");
+        $(this).html(text);
     });
 })

@@ -167,6 +167,16 @@ article h4 {
   content: '';
 }
 
+/* Style Buttons
+   ------------------------------------------------------- */
+.btn-warning {
+  background-color: #0071c5;
+}
+
+.btn-info {
+  background-color: #0071c5;
+}
+
 /* Navbar Hamburger
    ------------------------------------------------------- */
 .icon-bar {
@@ -191,9 +201,9 @@ article h4 {
 /* Custom Navbar
    ------------------------------------------------------- */
 .navbar-inverse {
-  background-color: #318f7c;
+  background-color: #0071c5;
   opacity: 0.95;
-  border-color: #02735f;
+  border-color: #0071c5;
 }
 .navbar-inverse .navbar-brand {
   color: #ffffff;
@@ -216,20 +226,20 @@ article h4 {
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #ecdbff;
-  background-color: #02735f;
+  background-color: #0071c5;
 }
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
   color: #ecdbff;
-  background-color: #02735f;
+  background-color: #0071c5;
 }
 .navbar-inverse .navbar-toggle {
-  border-color: #02735f;
+  border-color: #0071c5;
 }
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
-  background-color: #02735f;
+  background-color: #0071c5;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #ffffff;
@@ -257,6 +267,6 @@ article h4 {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #ecdbff;
-    background-color: #02735f;
+    background-color: #0071c5;
   }
 }

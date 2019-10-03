@@ -1,20 +1,110 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Identity.AuthenticationFailedException.html</loc>
+    <lastmod>2019-10-02T11:01:50+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Identity.ChainedTokenCredential.html</loc>
+    <lastmod>2019-10-02T11:01:50+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Identity.ClientCertificateCredential.html</loc>
+    <lastmod>2019-10-02T11:01:50+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Identity.ClientSecretCredential.html</loc>
+    <lastmod>2019-10-02T11:01:50+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Identity.DefaultAzureCredential.html</loc>
+    <lastmod>2019-10-02T11:01:50+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Identity.DeviceCodeCredential.html</loc>
+    <lastmod>2019-10-02T11:01:50+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Identity.DeviceCodeInfo.html</loc>
+    <lastmod>2019-10-02T11:01:50+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Identity.EnvironmentCredential.html</loc>
+    <lastmod>2019-10-02T11:01:50+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Identity.IdentityClientOptions.html</loc>
+    <lastmod>2019-10-02T11:01:50+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Identity.InteractiveBrowserCredential.html</loc>
+    <lastmod>2019-10-02T11:01:50+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Identity.ManagedIdentityCredential.html</loc>
+    <lastmod>2019-10-02T11:01:50+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Identity.SharedTokenCacheCredential.html</loc>
+    <lastmod>2019-10-02T11:01:50+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Identity.SharedTokenCacheCredentialOptions.html</loc>
+    <lastmod>2019-10-02T11:01:50+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Identity.UsernamePasswordCredential.html</loc>
+    <lastmod>2019-10-02T11:01:50+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Identity.html</loc>
+    <lastmod>2019-10-02T11:01:50+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/index.html</loc>
-    <lastmod>2019-10-02T10:10:26+00:00</lastmod>
+    <lastmod>2019-10-02T11:01:50+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/articles/intro.html</loc>
-    <lastmod>2019-10-02T10:10:26+00:00</lastmod>
+    <lastmod>2019-10-02T11:01:50+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/index.html</loc>
-    <lastmod>2019-10-02T10:10:26+00:00</lastmod>
+    <lastmod>2019-10-02T11:01:50+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

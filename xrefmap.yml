@@ -1,3 +1,786 @@
 ### YamlMime:XRefMap
 sorted: true
-references: []
+references:
+- uid: Azure.Identity
+  name: Azure.Identity
+  href: api/Azure.Identity.html
+  commentId: N:Azure.Identity
+  fullName: Azure.Identity
+  nameWithType: Azure.Identity
+- uid: Azure.Identity.AuthenticationFailedException
+  name: AuthenticationFailedException
+  href: api/Azure.Identity.AuthenticationFailedException.html
+  commentId: T:Azure.Identity.AuthenticationFailedException
+  fullName: Azure.Identity.AuthenticationFailedException
+  nameWithType: AuthenticationFailedException
+- uid: Azure.Identity.AuthenticationFailedException.#ctor(System.String)
+  name: AuthenticationFailedException(String)
+  href: api/Azure.Identity.AuthenticationFailedException.html#Azure_Identity_AuthenticationFailedException__ctor_System_String_
+  commentId: M:Azure.Identity.AuthenticationFailedException.#ctor(System.String)
+  fullName: Azure.Identity.AuthenticationFailedException.AuthenticationFailedException(System.String)
+  nameWithType: AuthenticationFailedException.AuthenticationFailedException(String)
+- uid: Azure.Identity.AuthenticationFailedException.#ctor(System.String,System.Exception)
+  name: AuthenticationFailedException(String, Exception)
+  href: api/Azure.Identity.AuthenticationFailedException.html#Azure_Identity_AuthenticationFailedException__ctor_System_String_System_Exception_
+  commentId: M:Azure.Identity.AuthenticationFailedException.#ctor(System.String,System.Exception)
+  fullName: Azure.Identity.AuthenticationFailedException.AuthenticationFailedException(System.String, System.Exception)
+  nameWithType: AuthenticationFailedException.AuthenticationFailedException(String, Exception)
+- uid: Azure.Identity.AuthenticationFailedException.#ctor*
+  name: AuthenticationFailedException
+  href: api/Azure.Identity.AuthenticationFailedException.html#Azure_Identity_AuthenticationFailedException__ctor_
+  commentId: Overload:Azure.Identity.AuthenticationFailedException.#ctor
+  isSpec: "True"
+  fullName: Azure.Identity.AuthenticationFailedException.AuthenticationFailedException
+  nameWithType: AuthenticationFailedException.AuthenticationFailedException
+- uid: Azure.Identity.ChainedTokenCredential
+  name: ChainedTokenCredential
+  href: api/Azure.Identity.ChainedTokenCredential.html
+  commentId: T:Azure.Identity.ChainedTokenCredential
+  fullName: Azure.Identity.ChainedTokenCredential
+  nameWithType: ChainedTokenCredential
+- uid: Azure.Identity.ChainedTokenCredential.#ctor(Azure.Core.TokenCredential[])
+  name: ChainedTokenCredential(TokenCredential[])
+  href: api/Azure.Identity.ChainedTokenCredential.html#Azure_Identity_ChainedTokenCredential__ctor_Azure_Core_TokenCredential___
+  commentId: M:Azure.Identity.ChainedTokenCredential.#ctor(Azure.Core.TokenCredential[])
+  name.vb: ChainedTokenCredential(TokenCredential())
+  fullName: Azure.Identity.ChainedTokenCredential.ChainedTokenCredential(Azure.Core.TokenCredential[])
+  fullName.vb: Azure.Identity.ChainedTokenCredential.ChainedTokenCredential(Azure.Core.TokenCredential())
+  nameWithType: ChainedTokenCredential.ChainedTokenCredential(TokenCredential[])
+  nameWithType.vb: ChainedTokenCredential.ChainedTokenCredential(TokenCredential())
+- uid: Azure.Identity.ChainedTokenCredential.#ctor*
+  name: ChainedTokenCredential
+  href: api/Azure.Identity.ChainedTokenCredential.html#Azure_Identity_ChainedTokenCredential__ctor_
+  commentId: Overload:Azure.Identity.ChainedTokenCredential.#ctor
+  isSpec: "True"
+  fullName: Azure.Identity.ChainedTokenCredential.ChainedTokenCredential
+  nameWithType: ChainedTokenCredential.ChainedTokenCredential
+- uid: Azure.Identity.ChainedTokenCredential.GetToken(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  name: GetToken(TokenRequest, CancellationToken)
+  href: api/Azure.Identity.ChainedTokenCredential.html#Azure_Identity_ChainedTokenCredential_GetToken_Azure_Core_TokenRequest_System_Threading_CancellationToken_
+  commentId: M:Azure.Identity.ChainedTokenCredential.GetToken(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  fullName: Azure.Identity.ChainedTokenCredential.GetToken(Azure.Core.TokenRequest, System.Threading.CancellationToken)
+  nameWithType: ChainedTokenCredential.GetToken(TokenRequest, CancellationToken)
+- uid: Azure.Identity.ChainedTokenCredential.GetToken*
+  name: GetToken
+  href: api/Azure.Identity.ChainedTokenCredential.html#Azure_Identity_ChainedTokenCredential_GetToken_
+  commentId: Overload:Azure.Identity.ChainedTokenCredential.GetToken
+  isSpec: "True"
+  fullName: Azure.Identity.ChainedTokenCredential.GetToken
+  nameWithType: ChainedTokenCredential.GetToken
+- uid: Azure.Identity.ChainedTokenCredential.GetTokenAsync(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  name: GetTokenAsync(TokenRequest, CancellationToken)
+  href: api/Azure.Identity.ChainedTokenCredential.html#Azure_Identity_ChainedTokenCredential_GetTokenAsync_Azure_Core_TokenRequest_System_Threading_CancellationToken_
+  commentId: M:Azure.Identity.ChainedTokenCredential.GetTokenAsync(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  fullName: Azure.Identity.ChainedTokenCredential.GetTokenAsync(Azure.Core.TokenRequest, System.Threading.CancellationToken)
+  nameWithType: ChainedTokenCredential.GetTokenAsync(TokenRequest, CancellationToken)
+- uid: Azure.Identity.ChainedTokenCredential.GetTokenAsync*
+  name: GetTokenAsync
+  href: api/Azure.Identity.ChainedTokenCredential.html#Azure_Identity_ChainedTokenCredential_GetTokenAsync_
+  commentId: Overload:Azure.Identity.ChainedTokenCredential.GetTokenAsync
+  isSpec: "True"
+  fullName: Azure.Identity.ChainedTokenCredential.GetTokenAsync
+  nameWithType: ChainedTokenCredential.GetTokenAsync
+- uid: Azure.Identity.ClientCertificateCredential
+  name: ClientCertificateCredential
+  href: api/Azure.Identity.ClientCertificateCredential.html
+  commentId: T:Azure.Identity.ClientCertificateCredential
+  fullName: Azure.Identity.ClientCertificateCredential
+  nameWithType: ClientCertificateCredential
+- uid: Azure.Identity.ClientCertificateCredential.#ctor(System.String,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2)
+  name: ClientCertificateCredential(String, String, X509Certificate2)
+  href: api/Azure.Identity.ClientCertificateCredential.html#Azure_Identity_ClientCertificateCredential__ctor_System_String_System_String_System_Security_Cryptography_X509Certificates_X509Certificate2_
+  commentId: M:Azure.Identity.ClientCertificateCredential.#ctor(System.String,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2)
+  fullName: Azure.Identity.ClientCertificateCredential.ClientCertificateCredential(System.String, System.String, System.Security.Cryptography.X509Certificates.X509Certificate2)
+  nameWithType: ClientCertificateCredential.ClientCertificateCredential(String, String, X509Certificate2)
+- uid: Azure.Identity.ClientCertificateCredential.#ctor(System.String,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2,Azure.Identity.IdentityClientOptions)
+  name: ClientCertificateCredential(String, String, X509Certificate2, IdentityClientOptions)
+  href: api/Azure.Identity.ClientCertificateCredential.html#Azure_Identity_ClientCertificateCredential__ctor_System_String_System_String_System_Security_Cryptography_X509Certificates_X509Certificate2_Azure_Identity_IdentityClientOptions_
+  commentId: M:Azure.Identity.ClientCertificateCredential.#ctor(System.String,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2,Azure.Identity.IdentityClientOptions)
+  fullName: Azure.Identity.ClientCertificateCredential.ClientCertificateCredential(System.String, System.String, System.Security.Cryptography.X509Certificates.X509Certificate2, Azure.Identity.IdentityClientOptions)
+  nameWithType: ClientCertificateCredential.ClientCertificateCredential(String, String, X509Certificate2, IdentityClientOptions)
+- uid: Azure.Identity.ClientCertificateCredential.#ctor*
+  name: ClientCertificateCredential
+  href: api/Azure.Identity.ClientCertificateCredential.html#Azure_Identity_ClientCertificateCredential__ctor_
+  commentId: Overload:Azure.Identity.ClientCertificateCredential.#ctor
+  isSpec: "True"
+  fullName: Azure.Identity.ClientCertificateCredential.ClientCertificateCredential
+  nameWithType: ClientCertificateCredential.ClientCertificateCredential
+- uid: Azure.Identity.ClientCertificateCredential.ClientCertificate
+  name: ClientCertificate
+  href: api/Azure.Identity.ClientCertificateCredential.html#Azure_Identity_ClientCertificateCredential_ClientCertificate
+  commentId: P:Azure.Identity.ClientCertificateCredential.ClientCertificate
+  fullName: Azure.Identity.ClientCertificateCredential.ClientCertificate
+  nameWithType: ClientCertificateCredential.ClientCertificate
+- uid: Azure.Identity.ClientCertificateCredential.ClientCertificate*
+  name: ClientCertificate
+  href: api/Azure.Identity.ClientCertificateCredential.html#Azure_Identity_ClientCertificateCredential_ClientCertificate_
+  commentId: Overload:Azure.Identity.ClientCertificateCredential.ClientCertificate
+  isSpec: "True"
+  fullName: Azure.Identity.ClientCertificateCredential.ClientCertificate
+  nameWithType: ClientCertificateCredential.ClientCertificate
+- uid: Azure.Identity.ClientCertificateCredential.ClientId
+  name: ClientId
+  href: api/Azure.Identity.ClientCertificateCredential.html#Azure_Identity_ClientCertificateCredential_ClientId
+  commentId: P:Azure.Identity.ClientCertificateCredential.ClientId
+  fullName: Azure.Identity.ClientCertificateCredential.ClientId
+  nameWithType: ClientCertificateCredential.ClientId
+- uid: Azure.Identity.ClientCertificateCredential.ClientId*
+  name: ClientId
+  href: api/Azure.Identity.ClientCertificateCredential.html#Azure_Identity_ClientCertificateCredential_ClientId_
+  commentId: Overload:Azure.Identity.ClientCertificateCredential.ClientId
+  isSpec: "True"
+  fullName: Azure.Identity.ClientCertificateCredential.ClientId
+  nameWithType: ClientCertificateCredential.ClientId
+- uid: Azure.Identity.ClientCertificateCredential.GetToken(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  name: GetToken(TokenRequest, CancellationToken)
+  href: api/Azure.Identity.ClientCertificateCredential.html#Azure_Identity_ClientCertificateCredential_GetToken_Azure_Core_TokenRequest_System_Threading_CancellationToken_
+  commentId: M:Azure.Identity.ClientCertificateCredential.GetToken(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  fullName: Azure.Identity.ClientCertificateCredential.GetToken(Azure.Core.TokenRequest, System.Threading.CancellationToken)
+  nameWithType: ClientCertificateCredential.GetToken(TokenRequest, CancellationToken)
+- uid: Azure.Identity.ClientCertificateCredential.GetToken*
+  name: GetToken
+  href: api/Azure.Identity.ClientCertificateCredential.html#Azure_Identity_ClientCertificateCredential_GetToken_
+  commentId: Overload:Azure.Identity.ClientCertificateCredential.GetToken
+  isSpec: "True"
+  fullName: Azure.Identity.ClientCertificateCredential.GetToken
+  nameWithType: ClientCertificateCredential.GetToken
+- uid: Azure.Identity.ClientCertificateCredential.GetTokenAsync(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  name: GetTokenAsync(TokenRequest, CancellationToken)
+  href: api/Azure.Identity.ClientCertificateCredential.html#Azure_Identity_ClientCertificateCredential_GetTokenAsync_Azure_Core_TokenRequest_System_Threading_CancellationToken_
+  commentId: M:Azure.Identity.ClientCertificateCredential.GetTokenAsync(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  fullName: Azure.Identity.ClientCertificateCredential.GetTokenAsync(Azure.Core.TokenRequest, System.Threading.CancellationToken)
+  nameWithType: ClientCertificateCredential.GetTokenAsync(TokenRequest, CancellationToken)
+- uid: Azure.Identity.ClientCertificateCredential.GetTokenAsync*
+  name: GetTokenAsync
+  href: api/Azure.Identity.ClientCertificateCredential.html#Azure_Identity_ClientCertificateCredential_GetTokenAsync_
+  commentId: Overload:Azure.Identity.ClientCertificateCredential.GetTokenAsync
+  isSpec: "True"
+  fullName: Azure.Identity.ClientCertificateCredential.GetTokenAsync
+  nameWithType: ClientCertificateCredential.GetTokenAsync
+- uid: Azure.Identity.ClientCertificateCredential.TenantId
+  name: TenantId
+  href: api/Azure.Identity.ClientCertificateCredential.html#Azure_Identity_ClientCertificateCredential_TenantId
+  commentId: P:Azure.Identity.ClientCertificateCredential.TenantId
+  fullName: Azure.Identity.ClientCertificateCredential.TenantId
+  nameWithType: ClientCertificateCredential.TenantId
+- uid: Azure.Identity.ClientCertificateCredential.TenantId*
+  name: TenantId
+  href: api/Azure.Identity.ClientCertificateCredential.html#Azure_Identity_ClientCertificateCredential_TenantId_
+  commentId: Overload:Azure.Identity.ClientCertificateCredential.TenantId
+  isSpec: "True"
+  fullName: Azure.Identity.ClientCertificateCredential.TenantId
+  nameWithType: ClientCertificateCredential.TenantId
+- uid: Azure.Identity.ClientSecretCredential
+  name: ClientSecretCredential
+  href: api/Azure.Identity.ClientSecretCredential.html
+  commentId: T:Azure.Identity.ClientSecretCredential
+  fullName: Azure.Identity.ClientSecretCredential
+  nameWithType: ClientSecretCredential
+- uid: Azure.Identity.ClientSecretCredential.#ctor(System.String,System.String,System.String)
+  name: ClientSecretCredential(String, String, String)
+  href: api/Azure.Identity.ClientSecretCredential.html#Azure_Identity_ClientSecretCredential__ctor_System_String_System_String_System_String_
+  commentId: M:Azure.Identity.ClientSecretCredential.#ctor(System.String,System.String,System.String)
+  fullName: Azure.Identity.ClientSecretCredential.ClientSecretCredential(System.String, System.String, System.String)
+  nameWithType: ClientSecretCredential.ClientSecretCredential(String, String, String)
+- uid: Azure.Identity.ClientSecretCredential.#ctor(System.String,System.String,System.String,Azure.Identity.IdentityClientOptions)
+  name: ClientSecretCredential(String, String, String, IdentityClientOptions)
+  href: api/Azure.Identity.ClientSecretCredential.html#Azure_Identity_ClientSecretCredential__ctor_System_String_System_String_System_String_Azure_Identity_IdentityClientOptions_
+  commentId: M:Azure.Identity.ClientSecretCredential.#ctor(System.String,System.String,System.String,Azure.Identity.IdentityClientOptions)
+  fullName: Azure.Identity.ClientSecretCredential.ClientSecretCredential(System.String, System.String, System.String, Azure.Identity.IdentityClientOptions)
+  nameWithType: ClientSecretCredential.ClientSecretCredential(String, String, String, IdentityClientOptions)
+- uid: Azure.Identity.ClientSecretCredential.#ctor*
+  name: ClientSecretCredential
+  href: api/Azure.Identity.ClientSecretCredential.html#Azure_Identity_ClientSecretCredential__ctor_
+  commentId: Overload:Azure.Identity.ClientSecretCredential.#ctor
+  isSpec: "True"
+  fullName: Azure.Identity.ClientSecretCredential.ClientSecretCredential
+  nameWithType: ClientSecretCredential.ClientSecretCredential
+- uid: Azure.Identity.ClientSecretCredential.ClientId
+  name: ClientId
+  href: api/Azure.Identity.ClientSecretCredential.html#Azure_Identity_ClientSecretCredential_ClientId
+  commentId: P:Azure.Identity.ClientSecretCredential.ClientId
+  fullName: Azure.Identity.ClientSecretCredential.ClientId
+  nameWithType: ClientSecretCredential.ClientId
+- uid: Azure.Identity.ClientSecretCredential.ClientId*
+  name: ClientId
+  href: api/Azure.Identity.ClientSecretCredential.html#Azure_Identity_ClientSecretCredential_ClientId_
+  commentId: Overload:Azure.Identity.ClientSecretCredential.ClientId
+  isSpec: "True"
+  fullName: Azure.Identity.ClientSecretCredential.ClientId
+  nameWithType: ClientSecretCredential.ClientId
+- uid: Azure.Identity.ClientSecretCredential.ClientSecret
+  name: ClientSecret
+  href: api/Azure.Identity.ClientSecretCredential.html#Azure_Identity_ClientSecretCredential_ClientSecret
+  commentId: P:Azure.Identity.ClientSecretCredential.ClientSecret
+  fullName: Azure.Identity.ClientSecretCredential.ClientSecret
+  nameWithType: ClientSecretCredential.ClientSecret
+- uid: Azure.Identity.ClientSecretCredential.ClientSecret*
+  name: ClientSecret
+  href: api/Azure.Identity.ClientSecretCredential.html#Azure_Identity_ClientSecretCredential_ClientSecret_
+  commentId: Overload:Azure.Identity.ClientSecretCredential.ClientSecret
+  isSpec: "True"
+  fullName: Azure.Identity.ClientSecretCredential.ClientSecret
+  nameWithType: ClientSecretCredential.ClientSecret
+- uid: Azure.Identity.ClientSecretCredential.GetToken(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  name: GetToken(TokenRequest, CancellationToken)
+  href: api/Azure.Identity.ClientSecretCredential.html#Azure_Identity_ClientSecretCredential_GetToken_Azure_Core_TokenRequest_System_Threading_CancellationToken_
+  commentId: M:Azure.Identity.ClientSecretCredential.GetToken(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  fullName: Azure.Identity.ClientSecretCredential.GetToken(Azure.Core.TokenRequest, System.Threading.CancellationToken)
+  nameWithType: ClientSecretCredential.GetToken(TokenRequest, CancellationToken)
+- uid: Azure.Identity.ClientSecretCredential.GetToken*
+  name: GetToken
+  href: api/Azure.Identity.ClientSecretCredential.html#Azure_Identity_ClientSecretCredential_GetToken_
+  commentId: Overload:Azure.Identity.ClientSecretCredential.GetToken
+  isSpec: "True"
+  fullName: Azure.Identity.ClientSecretCredential.GetToken
+  nameWithType: ClientSecretCredential.GetToken
+- uid: Azure.Identity.ClientSecretCredential.GetTokenAsync(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  name: GetTokenAsync(TokenRequest, CancellationToken)
+  href: api/Azure.Identity.ClientSecretCredential.html#Azure_Identity_ClientSecretCredential_GetTokenAsync_Azure_Core_TokenRequest_System_Threading_CancellationToken_
+  commentId: M:Azure.Identity.ClientSecretCredential.GetTokenAsync(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  fullName: Azure.Identity.ClientSecretCredential.GetTokenAsync(Azure.Core.TokenRequest, System.Threading.CancellationToken)
+  nameWithType: ClientSecretCredential.GetTokenAsync(TokenRequest, CancellationToken)
+- uid: Azure.Identity.ClientSecretCredential.GetTokenAsync*
+  name: GetTokenAsync
+  href: api/Azure.Identity.ClientSecretCredential.html#Azure_Identity_ClientSecretCredential_GetTokenAsync_
+  commentId: Overload:Azure.Identity.ClientSecretCredential.GetTokenAsync
+  isSpec: "True"
+  fullName: Azure.Identity.ClientSecretCredential.GetTokenAsync
+  nameWithType: ClientSecretCredential.GetTokenAsync
+- uid: Azure.Identity.ClientSecretCredential.TenantId
+  name: TenantId
+  href: api/Azure.Identity.ClientSecretCredential.html#Azure_Identity_ClientSecretCredential_TenantId
+  commentId: P:Azure.Identity.ClientSecretCredential.TenantId
+  fullName: Azure.Identity.ClientSecretCredential.TenantId
+  nameWithType: ClientSecretCredential.TenantId
+- uid: Azure.Identity.ClientSecretCredential.TenantId*
+  name: TenantId
+  href: api/Azure.Identity.ClientSecretCredential.html#Azure_Identity_ClientSecretCredential_TenantId_
+  commentId: Overload:Azure.Identity.ClientSecretCredential.TenantId
+  isSpec: "True"
+  fullName: Azure.Identity.ClientSecretCredential.TenantId
+  nameWithType: ClientSecretCredential.TenantId
+- uid: Azure.Identity.DefaultAzureCredential
+  name: DefaultAzureCredential
+  href: api/Azure.Identity.DefaultAzureCredential.html
+  commentId: T:Azure.Identity.DefaultAzureCredential
+  fullName: Azure.Identity.DefaultAzureCredential
+  nameWithType: DefaultAzureCredential
+- uid: Azure.Identity.DefaultAzureCredential.#ctor
+  name: DefaultAzureCredential()
+  href: api/Azure.Identity.DefaultAzureCredential.html#Azure_Identity_DefaultAzureCredential__ctor
+  commentId: M:Azure.Identity.DefaultAzureCredential.#ctor
+  fullName: Azure.Identity.DefaultAzureCredential.DefaultAzureCredential()
+  nameWithType: DefaultAzureCredential.DefaultAzureCredential()
+- uid: Azure.Identity.DefaultAzureCredential.#ctor*
+  name: DefaultAzureCredential
+  href: api/Azure.Identity.DefaultAzureCredential.html#Azure_Identity_DefaultAzureCredential__ctor_
+  commentId: Overload:Azure.Identity.DefaultAzureCredential.#ctor
+  isSpec: "True"
+  fullName: Azure.Identity.DefaultAzureCredential.DefaultAzureCredential
+  nameWithType: DefaultAzureCredential.DefaultAzureCredential
+- uid: Azure.Identity.DeviceCodeCredential
+  name: DeviceCodeCredential
+  href: api/Azure.Identity.DeviceCodeCredential.html
+  commentId: T:Azure.Identity.DeviceCodeCredential
+  fullName: Azure.Identity.DeviceCodeCredential
+  nameWithType: DeviceCodeCredential
+- uid: Azure.Identity.DeviceCodeCredential.#ctor
+  name: DeviceCodeCredential()
+  href: api/Azure.Identity.DeviceCodeCredential.html#Azure_Identity_DeviceCodeCredential__ctor
+  commentId: M:Azure.Identity.DeviceCodeCredential.#ctor
+  fullName: Azure.Identity.DeviceCodeCredential.DeviceCodeCredential()
+  nameWithType: DeviceCodeCredential.DeviceCodeCredential()
+- uid: Azure.Identity.DeviceCodeCredential.#ctor(System.String,System.Func{Azure.Identity.DeviceCodeInfo,System.Threading.CancellationToken,System.Threading.Tasks.Task})
+  name: DeviceCodeCredential(String, Func<DeviceCodeInfo, CancellationToken, Task>)
+  href: api/Azure.Identity.DeviceCodeCredential.html#Azure_Identity_DeviceCodeCredential__ctor_System_String_System_Func_Azure_Identity_DeviceCodeInfo_System_Threading_CancellationToken_System_Threading_Tasks_Task__
+  commentId: M:Azure.Identity.DeviceCodeCredential.#ctor(System.String,System.Func{Azure.Identity.DeviceCodeInfo,System.Threading.CancellationToken,System.Threading.Tasks.Task})
+  name.vb: DeviceCodeCredential(String, Func(Of DeviceCodeInfo, CancellationToken, Task))
+  fullName: Azure.Identity.DeviceCodeCredential.DeviceCodeCredential(System.String, System.Func<Azure.Identity.DeviceCodeInfo, System.Threading.CancellationToken, System.Threading.Tasks.Task>)
+  fullName.vb: Azure.Identity.DeviceCodeCredential.DeviceCodeCredential(System.String, System.Func(Of Azure.Identity.DeviceCodeInfo, System.Threading.CancellationToken, System.Threading.Tasks.Task))
+  nameWithType: DeviceCodeCredential.DeviceCodeCredential(String, Func<DeviceCodeInfo, CancellationToken, Task>)
+  nameWithType.vb: DeviceCodeCredential.DeviceCodeCredential(String, Func(Of DeviceCodeInfo, CancellationToken, Task))
+- uid: Azure.Identity.DeviceCodeCredential.#ctor(System.String,System.Func{Azure.Identity.DeviceCodeInfo,System.Threading.CancellationToken,System.Threading.Tasks.Task},Azure.Identity.IdentityClientOptions)
+  name: DeviceCodeCredential(String, Func<DeviceCodeInfo, CancellationToken, Task>, IdentityClientOptions)
+  href: api/Azure.Identity.DeviceCodeCredential.html#Azure_Identity_DeviceCodeCredential__ctor_System_String_System_Func_Azure_Identity_DeviceCodeInfo_System_Threading_CancellationToken_System_Threading_Tasks_Task__Azure_Identity_IdentityClientOptions_
+  commentId: M:Azure.Identity.DeviceCodeCredential.#ctor(System.String,System.Func{Azure.Identity.DeviceCodeInfo,System.Threading.CancellationToken,System.Threading.Tasks.Task},Azure.Identity.IdentityClientOptions)
+  name.vb: DeviceCodeCredential(String, Func(Of DeviceCodeInfo, CancellationToken, Task), IdentityClientOptions)
+  fullName: Azure.Identity.DeviceCodeCredential.DeviceCodeCredential(System.String, System.Func<Azure.Identity.DeviceCodeInfo, System.Threading.CancellationToken, System.Threading.Tasks.Task>, Azure.Identity.IdentityClientOptions)
+  fullName.vb: Azure.Identity.DeviceCodeCredential.DeviceCodeCredential(System.String, System.Func(Of Azure.Identity.DeviceCodeInfo, System.Threading.CancellationToken, System.Threading.Tasks.Task), Azure.Identity.IdentityClientOptions)
+  nameWithType: DeviceCodeCredential.DeviceCodeCredential(String, Func<DeviceCodeInfo, CancellationToken, Task>, IdentityClientOptions)
+  nameWithType.vb: DeviceCodeCredential.DeviceCodeCredential(String, Func(Of DeviceCodeInfo, CancellationToken, Task), IdentityClientOptions)
+- uid: Azure.Identity.DeviceCodeCredential.#ctor*
+  name: DeviceCodeCredential
+  href: api/Azure.Identity.DeviceCodeCredential.html#Azure_Identity_DeviceCodeCredential__ctor_
+  commentId: Overload:Azure.Identity.DeviceCodeCredential.#ctor
+  isSpec: "True"
+  fullName: Azure.Identity.DeviceCodeCredential.DeviceCodeCredential
+  nameWithType: DeviceCodeCredential.DeviceCodeCredential
+- uid: Azure.Identity.DeviceCodeCredential.GetToken(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  name: GetToken(TokenRequest, CancellationToken)
+  href: api/Azure.Identity.DeviceCodeCredential.html#Azure_Identity_DeviceCodeCredential_GetToken_Azure_Core_TokenRequest_System_Threading_CancellationToken_
+  commentId: M:Azure.Identity.DeviceCodeCredential.GetToken(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  fullName: Azure.Identity.DeviceCodeCredential.GetToken(Azure.Core.TokenRequest, System.Threading.CancellationToken)
+  nameWithType: DeviceCodeCredential.GetToken(TokenRequest, CancellationToken)
+- uid: Azure.Identity.DeviceCodeCredential.GetToken*
+  name: GetToken
+  href: api/Azure.Identity.DeviceCodeCredential.html#Azure_Identity_DeviceCodeCredential_GetToken_
+  commentId: Overload:Azure.Identity.DeviceCodeCredential.GetToken
+  isSpec: "True"
+  fullName: Azure.Identity.DeviceCodeCredential.GetToken
+  nameWithType: DeviceCodeCredential.GetToken
+- uid: Azure.Identity.DeviceCodeCredential.GetTokenAsync(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  name: GetTokenAsync(TokenRequest, CancellationToken)
+  href: api/Azure.Identity.DeviceCodeCredential.html#Azure_Identity_DeviceCodeCredential_GetTokenAsync_Azure_Core_TokenRequest_System_Threading_CancellationToken_
+  commentId: M:Azure.Identity.DeviceCodeCredential.GetTokenAsync(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  fullName: Azure.Identity.DeviceCodeCredential.GetTokenAsync(Azure.Core.TokenRequest, System.Threading.CancellationToken)
+  nameWithType: DeviceCodeCredential.GetTokenAsync(TokenRequest, CancellationToken)
+- uid: Azure.Identity.DeviceCodeCredential.GetTokenAsync*
+  name: GetTokenAsync
+  href: api/Azure.Identity.DeviceCodeCredential.html#Azure_Identity_DeviceCodeCredential_GetTokenAsync_
+  commentId: Overload:Azure.Identity.DeviceCodeCredential.GetTokenAsync
+  isSpec: "True"
+  fullName: Azure.Identity.DeviceCodeCredential.GetTokenAsync
+  nameWithType: DeviceCodeCredential.GetTokenAsync
+- uid: Azure.Identity.DeviceCodeInfo
+  name: DeviceCodeInfo
+  href: api/Azure.Identity.DeviceCodeInfo.html
+  commentId: T:Azure.Identity.DeviceCodeInfo
+  fullName: Azure.Identity.DeviceCodeInfo
+  nameWithType: DeviceCodeInfo
+- uid: Azure.Identity.DeviceCodeInfo.ClientId
+  name: ClientId
+  href: api/Azure.Identity.DeviceCodeInfo.html#Azure_Identity_DeviceCodeInfo_ClientId
+  commentId: P:Azure.Identity.DeviceCodeInfo.ClientId
+  fullName: Azure.Identity.DeviceCodeInfo.ClientId
+  nameWithType: DeviceCodeInfo.ClientId
+- uid: Azure.Identity.DeviceCodeInfo.ClientId*
+  name: ClientId
+  href: api/Azure.Identity.DeviceCodeInfo.html#Azure_Identity_DeviceCodeInfo_ClientId_
+  commentId: Overload:Azure.Identity.DeviceCodeInfo.ClientId
+  isSpec: "True"
+  fullName: Azure.Identity.DeviceCodeInfo.ClientId
+  nameWithType: DeviceCodeInfo.ClientId
+- uid: Azure.Identity.DeviceCodeInfo.DeviceCode
+  name: DeviceCode
+  href: api/Azure.Identity.DeviceCodeInfo.html#Azure_Identity_DeviceCodeInfo_DeviceCode
+  commentId: P:Azure.Identity.DeviceCodeInfo.DeviceCode
+  fullName: Azure.Identity.DeviceCodeInfo.DeviceCode
+  nameWithType: DeviceCodeInfo.DeviceCode
+- uid: Azure.Identity.DeviceCodeInfo.DeviceCode*
+  name: DeviceCode
+  href: api/Azure.Identity.DeviceCodeInfo.html#Azure_Identity_DeviceCodeInfo_DeviceCode_
+  commentId: Overload:Azure.Identity.DeviceCodeInfo.DeviceCode
+  isSpec: "True"
+  fullName: Azure.Identity.DeviceCodeInfo.DeviceCode
+  nameWithType: DeviceCodeInfo.DeviceCode
+- uid: Azure.Identity.DeviceCodeInfo.ExpiresOn
+  name: ExpiresOn
+  href: api/Azure.Identity.DeviceCodeInfo.html#Azure_Identity_DeviceCodeInfo_ExpiresOn
+  commentId: P:Azure.Identity.DeviceCodeInfo.ExpiresOn
+  fullName: Azure.Identity.DeviceCodeInfo.ExpiresOn
+  nameWithType: DeviceCodeInfo.ExpiresOn
+- uid: Azure.Identity.DeviceCodeInfo.ExpiresOn*
+  name: ExpiresOn
+  href: api/Azure.Identity.DeviceCodeInfo.html#Azure_Identity_DeviceCodeInfo_ExpiresOn_
+  commentId: Overload:Azure.Identity.DeviceCodeInfo.ExpiresOn
+  isSpec: "True"
+  fullName: Azure.Identity.DeviceCodeInfo.ExpiresOn
+  nameWithType: DeviceCodeInfo.ExpiresOn
+- uid: Azure.Identity.DeviceCodeInfo.Interval
+  name: Interval
+  href: api/Azure.Identity.DeviceCodeInfo.html#Azure_Identity_DeviceCodeInfo_Interval
+  commentId: P:Azure.Identity.DeviceCodeInfo.Interval
+  fullName: Azure.Identity.DeviceCodeInfo.Interval
+  nameWithType: DeviceCodeInfo.Interval
+- uid: Azure.Identity.DeviceCodeInfo.Interval*
+  name: Interval
+  href: api/Azure.Identity.DeviceCodeInfo.html#Azure_Identity_DeviceCodeInfo_Interval_
+  commentId: Overload:Azure.Identity.DeviceCodeInfo.Interval
+  isSpec: "True"
+  fullName: Azure.Identity.DeviceCodeInfo.Interval
+  nameWithType: DeviceCodeInfo.Interval
+- uid: Azure.Identity.DeviceCodeInfo.Message
+  name: Message
+  href: api/Azure.Identity.DeviceCodeInfo.html#Azure_Identity_DeviceCodeInfo_Message
+  commentId: P:Azure.Identity.DeviceCodeInfo.Message
+  fullName: Azure.Identity.DeviceCodeInfo.Message
+  nameWithType: DeviceCodeInfo.Message
+- uid: Azure.Identity.DeviceCodeInfo.Message*
+  name: Message
+  href: api/Azure.Identity.DeviceCodeInfo.html#Azure_Identity_DeviceCodeInfo_Message_
+  commentId: Overload:Azure.Identity.DeviceCodeInfo.Message
+  isSpec: "True"
+  fullName: Azure.Identity.DeviceCodeInfo.Message
+  nameWithType: DeviceCodeInfo.Message
+- uid: Azure.Identity.DeviceCodeInfo.Scopes
+  name: Scopes
+  href: api/Azure.Identity.DeviceCodeInfo.html#Azure_Identity_DeviceCodeInfo_Scopes
+  commentId: P:Azure.Identity.DeviceCodeInfo.Scopes
+  fullName: Azure.Identity.DeviceCodeInfo.Scopes
+  nameWithType: DeviceCodeInfo.Scopes
+- uid: Azure.Identity.DeviceCodeInfo.Scopes*
+  name: Scopes
+  href: api/Azure.Identity.DeviceCodeInfo.html#Azure_Identity_DeviceCodeInfo_Scopes_
+  commentId: Overload:Azure.Identity.DeviceCodeInfo.Scopes
+  isSpec: "True"
+  fullName: Azure.Identity.DeviceCodeInfo.Scopes
+  nameWithType: DeviceCodeInfo.Scopes
+- uid: Azure.Identity.DeviceCodeInfo.UserCode
+  name: UserCode
+  href: api/Azure.Identity.DeviceCodeInfo.html#Azure_Identity_DeviceCodeInfo_UserCode
+  commentId: P:Azure.Identity.DeviceCodeInfo.UserCode
+  fullName: Azure.Identity.DeviceCodeInfo.UserCode
+  nameWithType: DeviceCodeInfo.UserCode
+- uid: Azure.Identity.DeviceCodeInfo.UserCode*
+  name: UserCode
+  href: api/Azure.Identity.DeviceCodeInfo.html#Azure_Identity_DeviceCodeInfo_UserCode_
+  commentId: Overload:Azure.Identity.DeviceCodeInfo.UserCode
+  isSpec: "True"
+  fullName: Azure.Identity.DeviceCodeInfo.UserCode
+  nameWithType: DeviceCodeInfo.UserCode
+- uid: Azure.Identity.DeviceCodeInfo.VerificationUrl
+  name: VerificationUrl
+  href: api/Azure.Identity.DeviceCodeInfo.html#Azure_Identity_DeviceCodeInfo_VerificationUrl
+  commentId: P:Azure.Identity.DeviceCodeInfo.VerificationUrl
+  fullName: Azure.Identity.DeviceCodeInfo.VerificationUrl
+  nameWithType: DeviceCodeInfo.VerificationUrl
+- uid: Azure.Identity.DeviceCodeInfo.VerificationUrl*
+  name: VerificationUrl
+  href: api/Azure.Identity.DeviceCodeInfo.html#Azure_Identity_DeviceCodeInfo_VerificationUrl_
+  commentId: Overload:Azure.Identity.DeviceCodeInfo.VerificationUrl
+  isSpec: "True"
+  fullName: Azure.Identity.DeviceCodeInfo.VerificationUrl
+  nameWithType: DeviceCodeInfo.VerificationUrl
+- uid: Azure.Identity.EnvironmentCredential
+  name: EnvironmentCredential
+  href: api/Azure.Identity.EnvironmentCredential.html
+  commentId: T:Azure.Identity.EnvironmentCredential
+  fullName: Azure.Identity.EnvironmentCredential
+  nameWithType: EnvironmentCredential
+- uid: Azure.Identity.EnvironmentCredential.#ctor
+  name: EnvironmentCredential()
+  href: api/Azure.Identity.EnvironmentCredential.html#Azure_Identity_EnvironmentCredential__ctor
+  commentId: M:Azure.Identity.EnvironmentCredential.#ctor
+  fullName: Azure.Identity.EnvironmentCredential.EnvironmentCredential()
+  nameWithType: EnvironmentCredential.EnvironmentCredential()
+- uid: Azure.Identity.EnvironmentCredential.#ctor(Azure.Identity.IdentityClientOptions)
+  name: EnvironmentCredential(IdentityClientOptions)
+  href: api/Azure.Identity.EnvironmentCredential.html#Azure_Identity_EnvironmentCredential__ctor_Azure_Identity_IdentityClientOptions_
+  commentId: M:Azure.Identity.EnvironmentCredential.#ctor(Azure.Identity.IdentityClientOptions)
+  fullName: Azure.Identity.EnvironmentCredential.EnvironmentCredential(Azure.Identity.IdentityClientOptions)
+  nameWithType: EnvironmentCredential.EnvironmentCredential(IdentityClientOptions)
+- uid: Azure.Identity.EnvironmentCredential.#ctor*
+  name: EnvironmentCredential
+  href: api/Azure.Identity.EnvironmentCredential.html#Azure_Identity_EnvironmentCredential__ctor_
+  commentId: Overload:Azure.Identity.EnvironmentCredential.#ctor
+  isSpec: "True"
+  fullName: Azure.Identity.EnvironmentCredential.EnvironmentCredential
+  nameWithType: EnvironmentCredential.EnvironmentCredential
+- uid: Azure.Identity.EnvironmentCredential.GetToken(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  name: GetToken(TokenRequest, CancellationToken)
+  href: api/Azure.Identity.EnvironmentCredential.html#Azure_Identity_EnvironmentCredential_GetToken_Azure_Core_TokenRequest_System_Threading_CancellationToken_
+  commentId: M:Azure.Identity.EnvironmentCredential.GetToken(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  fullName: Azure.Identity.EnvironmentCredential.GetToken(Azure.Core.TokenRequest, System.Threading.CancellationToken)
+  nameWithType: EnvironmentCredential.GetToken(TokenRequest, CancellationToken)
+- uid: Azure.Identity.EnvironmentCredential.GetToken*
+  name: GetToken
+  href: api/Azure.Identity.EnvironmentCredential.html#Azure_Identity_EnvironmentCredential_GetToken_
+  commentId: Overload:Azure.Identity.EnvironmentCredential.GetToken
+  isSpec: "True"
+  fullName: Azure.Identity.EnvironmentCredential.GetToken
+  nameWithType: EnvironmentCredential.GetToken
+- uid: Azure.Identity.EnvironmentCredential.GetTokenAsync(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  name: GetTokenAsync(TokenRequest, CancellationToken)
+  href: api/Azure.Identity.EnvironmentCredential.html#Azure_Identity_EnvironmentCredential_GetTokenAsync_Azure_Core_TokenRequest_System_Threading_CancellationToken_
+  commentId: M:Azure.Identity.EnvironmentCredential.GetTokenAsync(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  fullName: Azure.Identity.EnvironmentCredential.GetTokenAsync(Azure.Core.TokenRequest, System.Threading.CancellationToken)
+  nameWithType: EnvironmentCredential.GetTokenAsync(TokenRequest, CancellationToken)
+- uid: Azure.Identity.EnvironmentCredential.GetTokenAsync*
+  name: GetTokenAsync
+  href: api/Azure.Identity.EnvironmentCredential.html#Azure_Identity_EnvironmentCredential_GetTokenAsync_
+  commentId: Overload:Azure.Identity.EnvironmentCredential.GetTokenAsync
+  isSpec: "True"
+  fullName: Azure.Identity.EnvironmentCredential.GetTokenAsync
+  nameWithType: EnvironmentCredential.GetTokenAsync
+- uid: Azure.Identity.IdentityClientOptions
+  name: IdentityClientOptions
+  href: api/Azure.Identity.IdentityClientOptions.html
+  commentId: T:Azure.Identity.IdentityClientOptions
+  fullName: Azure.Identity.IdentityClientOptions
+  nameWithType: IdentityClientOptions
+- uid: Azure.Identity.IdentityClientOptions.#ctor
+  name: IdentityClientOptions()
+  href: api/Azure.Identity.IdentityClientOptions.html#Azure_Identity_IdentityClientOptions__ctor
+  commentId: M:Azure.Identity.IdentityClientOptions.#ctor
+  fullName: Azure.Identity.IdentityClientOptions.IdentityClientOptions()
+  nameWithType: IdentityClientOptions.IdentityClientOptions()
+- uid: Azure.Identity.IdentityClientOptions.#ctor*
+  name: IdentityClientOptions
+  href: api/Azure.Identity.IdentityClientOptions.html#Azure_Identity_IdentityClientOptions__ctor_
+  commentId: Overload:Azure.Identity.IdentityClientOptions.#ctor
+  isSpec: "True"
+  fullName: Azure.Identity.IdentityClientOptions.IdentityClientOptions
+  nameWithType: IdentityClientOptions.IdentityClientOptions
+- uid: Azure.Identity.IdentityClientOptions.AuthorityHost
+  name: AuthorityHost
+  href: api/Azure.Identity.IdentityClientOptions.html#Azure_Identity_IdentityClientOptions_AuthorityHost
+  commentId: P:Azure.Identity.IdentityClientOptions.AuthorityHost
+  fullName: Azure.Identity.IdentityClientOptions.AuthorityHost
+  nameWithType: IdentityClientOptions.AuthorityHost
+- uid: Azure.Identity.IdentityClientOptions.AuthorityHost*
+  name: AuthorityHost
+  href: api/Azure.Identity.IdentityClientOptions.html#Azure_Identity_IdentityClientOptions_AuthorityHost_
+  commentId: Overload:Azure.Identity.IdentityClientOptions.AuthorityHost
+  isSpec: "True"
+  fullName: Azure.Identity.IdentityClientOptions.AuthorityHost
+  nameWithType: IdentityClientOptions.AuthorityHost
+- uid: Azure.Identity.InteractiveBrowserCredential
+  name: InteractiveBrowserCredential
+  href: api/Azure.Identity.InteractiveBrowserCredential.html
+  commentId: T:Azure.Identity.InteractiveBrowserCredential
+  fullName: Azure.Identity.InteractiveBrowserCredential
+  nameWithType: InteractiveBrowserCredential
+- uid: Azure.Identity.InteractiveBrowserCredential.#ctor(System.String)
+  name: InteractiveBrowserCredential(String)
+  href: api/Azure.Identity.InteractiveBrowserCredential.html#Azure_Identity_InteractiveBrowserCredential__ctor_System_String_
+  commentId: M:Azure.Identity.InteractiveBrowserCredential.#ctor(System.String)
+  fullName: Azure.Identity.InteractiveBrowserCredential.InteractiveBrowserCredential(System.String)
+  nameWithType: InteractiveBrowserCredential.InteractiveBrowserCredential(String)
+- uid: Azure.Identity.InteractiveBrowserCredential.#ctor(System.String,Azure.Identity.IdentityClientOptions)
+  name: InteractiveBrowserCredential(String, IdentityClientOptions)
+  href: api/Azure.Identity.InteractiveBrowserCredential.html#Azure_Identity_InteractiveBrowserCredential__ctor_System_String_Azure_Identity_IdentityClientOptions_
+  commentId: M:Azure.Identity.InteractiveBrowserCredential.#ctor(System.String,Azure.Identity.IdentityClientOptions)
+  fullName: Azure.Identity.InteractiveBrowserCredential.InteractiveBrowserCredential(System.String, Azure.Identity.IdentityClientOptions)
+  nameWithType: InteractiveBrowserCredential.InteractiveBrowserCredential(String, IdentityClientOptions)
+- uid: Azure.Identity.InteractiveBrowserCredential.#ctor*
+  name: InteractiveBrowserCredential
+  href: api/Azure.Identity.InteractiveBrowserCredential.html#Azure_Identity_InteractiveBrowserCredential__ctor_
+  commentId: Overload:Azure.Identity.InteractiveBrowserCredential.#ctor
+  isSpec: "True"
+  fullName: Azure.Identity.InteractiveBrowserCredential.InteractiveBrowserCredential
+  nameWithType: InteractiveBrowserCredential.InteractiveBrowserCredential
+- uid: Azure.Identity.InteractiveBrowserCredential.GetToken(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  name: GetToken(TokenRequest, CancellationToken)
+  href: api/Azure.Identity.InteractiveBrowserCredential.html#Azure_Identity_InteractiveBrowserCredential_GetToken_Azure_Core_TokenRequest_System_Threading_CancellationToken_
+  commentId: M:Azure.Identity.InteractiveBrowserCredential.GetToken(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  fullName: Azure.Identity.InteractiveBrowserCredential.GetToken(Azure.Core.TokenRequest, System.Threading.CancellationToken)
+  nameWithType: InteractiveBrowserCredential.GetToken(TokenRequest, CancellationToken)
+- uid: Azure.Identity.InteractiveBrowserCredential.GetToken*
+  name: GetToken
+  href: api/Azure.Identity.InteractiveBrowserCredential.html#Azure_Identity_InteractiveBrowserCredential_GetToken_
+  commentId: Overload:Azure.Identity.InteractiveBrowserCredential.GetToken
+  isSpec: "True"
+  fullName: Azure.Identity.InteractiveBrowserCredential.GetToken
+  nameWithType: InteractiveBrowserCredential.GetToken
+- uid: Azure.Identity.InteractiveBrowserCredential.GetTokenAsync(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  name: GetTokenAsync(TokenRequest, CancellationToken)
+  href: api/Azure.Identity.InteractiveBrowserCredential.html#Azure_Identity_InteractiveBrowserCredential_GetTokenAsync_Azure_Core_TokenRequest_System_Threading_CancellationToken_
+  commentId: M:Azure.Identity.InteractiveBrowserCredential.GetTokenAsync(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  fullName: Azure.Identity.InteractiveBrowserCredential.GetTokenAsync(Azure.Core.TokenRequest, System.Threading.CancellationToken)
+  nameWithType: InteractiveBrowserCredential.GetTokenAsync(TokenRequest, CancellationToken)
+- uid: Azure.Identity.InteractiveBrowserCredential.GetTokenAsync*
+  name: GetTokenAsync
+  href: api/Azure.Identity.InteractiveBrowserCredential.html#Azure_Identity_InteractiveBrowserCredential_GetTokenAsync_
+  commentId: Overload:Azure.Identity.InteractiveBrowserCredential.GetTokenAsync
+  isSpec: "True"
+  fullName: Azure.Identity.InteractiveBrowserCredential.GetTokenAsync
+  nameWithType: InteractiveBrowserCredential.GetTokenAsync
+- uid: Azure.Identity.ManagedIdentityCredential
+  name: ManagedIdentityCredential
+  href: api/Azure.Identity.ManagedIdentityCredential.html
+  commentId: T:Azure.Identity.ManagedIdentityCredential
+  fullName: Azure.Identity.ManagedIdentityCredential
+  nameWithType: ManagedIdentityCredential
+- uid: Azure.Identity.ManagedIdentityCredential.#ctor(System.String,Azure.Identity.IdentityClientOptions)
+  name: ManagedIdentityCredential(String, IdentityClientOptions)
+  href: api/Azure.Identity.ManagedIdentityCredential.html#Azure_Identity_ManagedIdentityCredential__ctor_System_String_Azure_Identity_IdentityClientOptions_
+  commentId: M:Azure.Identity.ManagedIdentityCredential.#ctor(System.String,Azure.Identity.IdentityClientOptions)
+  fullName: Azure.Identity.ManagedIdentityCredential.ManagedIdentityCredential(System.String, Azure.Identity.IdentityClientOptions)
+  nameWithType: ManagedIdentityCredential.ManagedIdentityCredential(String, IdentityClientOptions)
+- uid: Azure.Identity.ManagedIdentityCredential.#ctor*
+  name: ManagedIdentityCredential
+  href: api/Azure.Identity.ManagedIdentityCredential.html#Azure_Identity_ManagedIdentityCredential__ctor_
+  commentId: Overload:Azure.Identity.ManagedIdentityCredential.#ctor
+  isSpec: "True"
+  fullName: Azure.Identity.ManagedIdentityCredential.ManagedIdentityCredential
+  nameWithType: ManagedIdentityCredential.ManagedIdentityCredential
+- uid: Azure.Identity.ManagedIdentityCredential.GetToken(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  name: GetToken(TokenRequest, CancellationToken)
+  href: api/Azure.Identity.ManagedIdentityCredential.html#Azure_Identity_ManagedIdentityCredential_GetToken_Azure_Core_TokenRequest_System_Threading_CancellationToken_
+  commentId: M:Azure.Identity.ManagedIdentityCredential.GetToken(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  fullName: Azure.Identity.ManagedIdentityCredential.GetToken(Azure.Core.TokenRequest, System.Threading.CancellationToken)
+  nameWithType: ManagedIdentityCredential.GetToken(TokenRequest, CancellationToken)
+- uid: Azure.Identity.ManagedIdentityCredential.GetToken*
+  name: GetToken
+  href: api/Azure.Identity.ManagedIdentityCredential.html#Azure_Identity_ManagedIdentityCredential_GetToken_
+  commentId: Overload:Azure.Identity.ManagedIdentityCredential.GetToken
+  isSpec: "True"
+  fullName: Azure.Identity.ManagedIdentityCredential.GetToken
+  nameWithType: ManagedIdentityCredential.GetToken
+- uid: Azure.Identity.ManagedIdentityCredential.GetTokenAsync(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  name: GetTokenAsync(TokenRequest, CancellationToken)
+  href: api/Azure.Identity.ManagedIdentityCredential.html#Azure_Identity_ManagedIdentityCredential_GetTokenAsync_Azure_Core_TokenRequest_System_Threading_CancellationToken_
+  commentId: M:Azure.Identity.ManagedIdentityCredential.GetTokenAsync(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  fullName: Azure.Identity.ManagedIdentityCredential.GetTokenAsync(Azure.Core.TokenRequest, System.Threading.CancellationToken)
+  nameWithType: ManagedIdentityCredential.GetTokenAsync(TokenRequest, CancellationToken)
+- uid: Azure.Identity.ManagedIdentityCredential.GetTokenAsync*
+  name: GetTokenAsync
+  href: api/Azure.Identity.ManagedIdentityCredential.html#Azure_Identity_ManagedIdentityCredential_GetTokenAsync_
+  commentId: Overload:Azure.Identity.ManagedIdentityCredential.GetTokenAsync
+  isSpec: "True"
+  fullName: Azure.Identity.ManagedIdentityCredential.GetTokenAsync
+  nameWithType: ManagedIdentityCredential.GetTokenAsync
+- uid: Azure.Identity.SharedTokenCacheCredential
+  name: SharedTokenCacheCredential
+  href: api/Azure.Identity.SharedTokenCacheCredential.html
+  commentId: T:Azure.Identity.SharedTokenCacheCredential
+  fullName: Azure.Identity.SharedTokenCacheCredential
+  nameWithType: SharedTokenCacheCredential
+- uid: Azure.Identity.SharedTokenCacheCredential.#ctor(System.String,System.String)
+  name: SharedTokenCacheCredential(String, String)
+  href: api/Azure.Identity.SharedTokenCacheCredential.html#Azure_Identity_SharedTokenCacheCredential__ctor_System_String_System_String_
+  commentId: M:Azure.Identity.SharedTokenCacheCredential.#ctor(System.String,System.String)
+  fullName: Azure.Identity.SharedTokenCacheCredential.SharedTokenCacheCredential(System.String, System.String)
+  nameWithType: SharedTokenCacheCredential.SharedTokenCacheCredential(String, String)
+- uid: Azure.Identity.SharedTokenCacheCredential.#ctor(System.String,System.String,Azure.Identity.SharedTokenCacheCredentialOptions)
+  name: SharedTokenCacheCredential(String, String, SharedTokenCacheCredentialOptions)
+  href: api/Azure.Identity.SharedTokenCacheCredential.html#Azure_Identity_SharedTokenCacheCredential__ctor_System_String_System_String_Azure_Identity_SharedTokenCacheCredentialOptions_
+  commentId: M:Azure.Identity.SharedTokenCacheCredential.#ctor(System.String,System.String,Azure.Identity.SharedTokenCacheCredentialOptions)
+  fullName: Azure.Identity.SharedTokenCacheCredential.SharedTokenCacheCredential(System.String, System.String, Azure.Identity.SharedTokenCacheCredentialOptions)
+  nameWithType: SharedTokenCacheCredential.SharedTokenCacheCredential(String, String, SharedTokenCacheCredentialOptions)
+- uid: Azure.Identity.SharedTokenCacheCredential.#ctor*
+  name: SharedTokenCacheCredential
+  href: api/Azure.Identity.SharedTokenCacheCredential.html#Azure_Identity_SharedTokenCacheCredential__ctor_
+  commentId: Overload:Azure.Identity.SharedTokenCacheCredential.#ctor
+  isSpec: "True"
+  fullName: Azure.Identity.SharedTokenCacheCredential.SharedTokenCacheCredential
+  nameWithType: SharedTokenCacheCredential.SharedTokenCacheCredential
+- uid: Azure.Identity.SharedTokenCacheCredential.GetToken(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  name: GetToken(TokenRequest, CancellationToken)
+  href: api/Azure.Identity.SharedTokenCacheCredential.html#Azure_Identity_SharedTokenCacheCredential_GetToken_Azure_Core_TokenRequest_System_Threading_CancellationToken_
+  commentId: M:Azure.Identity.SharedTokenCacheCredential.GetToken(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  fullName: Azure.Identity.SharedTokenCacheCredential.GetToken(Azure.Core.TokenRequest, System.Threading.CancellationToken)
+  nameWithType: SharedTokenCacheCredential.GetToken(TokenRequest, CancellationToken)
+- uid: Azure.Identity.SharedTokenCacheCredential.GetToken*
+  name: GetToken
+  href: api/Azure.Identity.SharedTokenCacheCredential.html#Azure_Identity_SharedTokenCacheCredential_GetToken_
+  commentId: Overload:Azure.Identity.SharedTokenCacheCredential.GetToken
+  isSpec: "True"
+  fullName: Azure.Identity.SharedTokenCacheCredential.GetToken
+  nameWithType: SharedTokenCacheCredential.GetToken
+- uid: Azure.Identity.SharedTokenCacheCredential.GetTokenAsync(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  name: GetTokenAsync(TokenRequest, CancellationToken)
+  href: api/Azure.Identity.SharedTokenCacheCredential.html#Azure_Identity_SharedTokenCacheCredential_GetTokenAsync_Azure_Core_TokenRequest_System_Threading_CancellationToken_
+  commentId: M:Azure.Identity.SharedTokenCacheCredential.GetTokenAsync(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  fullName: Azure.Identity.SharedTokenCacheCredential.GetTokenAsync(Azure.Core.TokenRequest, System.Threading.CancellationToken)
+  nameWithType: SharedTokenCacheCredential.GetTokenAsync(TokenRequest, CancellationToken)
+- uid: Azure.Identity.SharedTokenCacheCredential.GetTokenAsync*
+  name: GetTokenAsync
+  href: api/Azure.Identity.SharedTokenCacheCredential.html#Azure_Identity_SharedTokenCacheCredential_GetTokenAsync_
+  commentId: Overload:Azure.Identity.SharedTokenCacheCredential.GetTokenAsync
+  isSpec: "True"
+  fullName: Azure.Identity.SharedTokenCacheCredential.GetTokenAsync
+  nameWithType: SharedTokenCacheCredential.GetTokenAsync
+- uid: Azure.Identity.SharedTokenCacheCredentialOptions
+  name: SharedTokenCacheCredentialOptions
+  href: api/Azure.Identity.SharedTokenCacheCredentialOptions.html
+  commentId: T:Azure.Identity.SharedTokenCacheCredentialOptions
+  fullName: Azure.Identity.SharedTokenCacheCredentialOptions
+  nameWithType: SharedTokenCacheCredentialOptions
+- uid: Azure.Identity.SharedTokenCacheCredentialOptions.CacheAccessRetryCount
+  name: CacheAccessRetryCount
+  href: api/Azure.Identity.SharedTokenCacheCredentialOptions.html#Azure_Identity_SharedTokenCacheCredentialOptions_CacheAccessRetryCount
+  commentId: P:Azure.Identity.SharedTokenCacheCredentialOptions.CacheAccessRetryCount
+  fullName: Azure.Identity.SharedTokenCacheCredentialOptions.CacheAccessRetryCount
+  nameWithType: SharedTokenCacheCredentialOptions.CacheAccessRetryCount
+- uid: Azure.Identity.SharedTokenCacheCredentialOptions.CacheAccessRetryCount*
+  name: CacheAccessRetryCount
+  href: api/Azure.Identity.SharedTokenCacheCredentialOptions.html#Azure_Identity_SharedTokenCacheCredentialOptions_CacheAccessRetryCount_
+  commentId: Overload:Azure.Identity.SharedTokenCacheCredentialOptions.CacheAccessRetryCount
+  isSpec: "True"
+  fullName: Azure.Identity.SharedTokenCacheCredentialOptions.CacheAccessRetryCount
+  nameWithType: SharedTokenCacheCredentialOptions.CacheAccessRetryCount
+- uid: Azure.Identity.SharedTokenCacheCredentialOptions.CacheAccessRetryDelay
+  name: CacheAccessRetryDelay
+  href: api/Azure.Identity.SharedTokenCacheCredentialOptions.html#Azure_Identity_SharedTokenCacheCredentialOptions_CacheAccessRetryDelay
+  commentId: P:Azure.Identity.SharedTokenCacheCredentialOptions.CacheAccessRetryDelay
+  fullName: Azure.Identity.SharedTokenCacheCredentialOptions.CacheAccessRetryDelay
+  nameWithType: SharedTokenCacheCredentialOptions.CacheAccessRetryDelay
+- uid: Azure.Identity.SharedTokenCacheCredentialOptions.CacheAccessRetryDelay*
+  name: CacheAccessRetryDelay
+  href: api/Azure.Identity.SharedTokenCacheCredentialOptions.html#Azure_Identity_SharedTokenCacheCredentialOptions_CacheAccessRetryDelay_
+  commentId: Overload:Azure.Identity.SharedTokenCacheCredentialOptions.CacheAccessRetryDelay
+  isSpec: "True"
+  fullName: Azure.Identity.SharedTokenCacheCredentialOptions.CacheAccessRetryDelay
+  nameWithType: SharedTokenCacheCredentialOptions.CacheAccessRetryDelay
+- uid: Azure.Identity.SharedTokenCacheCredentialOptions.CacheFilePath
+  name: CacheFilePath
+  href: api/Azure.Identity.SharedTokenCacheCredentialOptions.html#Azure_Identity_SharedTokenCacheCredentialOptions_CacheFilePath
+  commentId: P:Azure.Identity.SharedTokenCacheCredentialOptions.CacheFilePath
+  fullName: Azure.Identity.SharedTokenCacheCredentialOptions.CacheFilePath
+  nameWithType: SharedTokenCacheCredentialOptions.CacheFilePath
+- uid: Azure.Identity.SharedTokenCacheCredentialOptions.CacheFilePath*
+  name: CacheFilePath
+  href: api/Azure.Identity.SharedTokenCacheCredentialOptions.html#Azure_Identity_SharedTokenCacheCredentialOptions_CacheFilePath_
+  commentId: Overload:Azure.Identity.SharedTokenCacheCredentialOptions.CacheFilePath
+  isSpec: "True"
+  fullName: Azure.Identity.SharedTokenCacheCredentialOptions.CacheFilePath
+  nameWithType: SharedTokenCacheCredentialOptions.CacheFilePath
+- uid: Azure.Identity.UsernamePasswordCredential
+  name: UsernamePasswordCredential
+  href: api/Azure.Identity.UsernamePasswordCredential.html
+  commentId: T:Azure.Identity.UsernamePasswordCredential
+  fullName: Azure.Identity.UsernamePasswordCredential
+  nameWithType: UsernamePasswordCredential
+- uid: Azure.Identity.UsernamePasswordCredential.#ctor
+  name: UsernamePasswordCredential()
+  href: api/Azure.Identity.UsernamePasswordCredential.html#Azure_Identity_UsernamePasswordCredential__ctor
+  commentId: M:Azure.Identity.UsernamePasswordCredential.#ctor
+  fullName: Azure.Identity.UsernamePasswordCredential.UsernamePasswordCredential()
+  nameWithType: UsernamePasswordCredential.UsernamePasswordCredential()
+- uid: Azure.Identity.UsernamePasswordCredential.#ctor(System.String,System.Security.SecureString,System.String,System.String)
+  name: UsernamePasswordCredential(String, SecureString, String, String)
+  href: api/Azure.Identity.UsernamePasswordCredential.html#Azure_Identity_UsernamePasswordCredential__ctor_System_String_System_Security_SecureString_System_String_System_String_
+  commentId: M:Azure.Identity.UsernamePasswordCredential.#ctor(System.String,System.Security.SecureString,System.String,System.String)
+  fullName: Azure.Identity.UsernamePasswordCredential.UsernamePasswordCredential(System.String, System.Security.SecureString, System.String, System.String)
+  nameWithType: UsernamePasswordCredential.UsernamePasswordCredential(String, SecureString, String, String)
+- uid: Azure.Identity.UsernamePasswordCredential.#ctor(System.String,System.Security.SecureString,System.String,System.String,Azure.Identity.IdentityClientOptions)
+  name: UsernamePasswordCredential(String, SecureString, String, String, IdentityClientOptions)
+  href: api/Azure.Identity.UsernamePasswordCredential.html#Azure_Identity_UsernamePasswordCredential__ctor_System_String_System_Security_SecureString_System_String_System_String_Azure_Identity_IdentityClientOptions_
+  commentId: M:Azure.Identity.UsernamePasswordCredential.#ctor(System.String,System.Security.SecureString,System.String,System.String,Azure.Identity.IdentityClientOptions)
+  fullName: Azure.Identity.UsernamePasswordCredential.UsernamePasswordCredential(System.String, System.Security.SecureString, System.String, System.String, Azure.Identity.IdentityClientOptions)
+  nameWithType: UsernamePasswordCredential.UsernamePasswordCredential(String, SecureString, String, String, IdentityClientOptions)
+- uid: Azure.Identity.UsernamePasswordCredential.#ctor*
+  name: UsernamePasswordCredential
+  href: api/Azure.Identity.UsernamePasswordCredential.html#Azure_Identity_UsernamePasswordCredential__ctor_
+  commentId: Overload:Azure.Identity.UsernamePasswordCredential.#ctor
+  isSpec: "True"
+  fullName: Azure.Identity.UsernamePasswordCredential.UsernamePasswordCredential
+  nameWithType: UsernamePasswordCredential.UsernamePasswordCredential
+- uid: Azure.Identity.UsernamePasswordCredential.GetToken(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  name: GetToken(TokenRequest, CancellationToken)
+  href: api/Azure.Identity.UsernamePasswordCredential.html#Azure_Identity_UsernamePasswordCredential_GetToken_Azure_Core_TokenRequest_System_Threading_CancellationToken_
+  commentId: M:Azure.Identity.UsernamePasswordCredential.GetToken(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  fullName: Azure.Identity.UsernamePasswordCredential.GetToken(Azure.Core.TokenRequest, System.Threading.CancellationToken)
+  nameWithType: UsernamePasswordCredential.GetToken(TokenRequest, CancellationToken)
+- uid: Azure.Identity.UsernamePasswordCredential.GetToken*
+  name: GetToken
+  href: api/Azure.Identity.UsernamePasswordCredential.html#Azure_Identity_UsernamePasswordCredential_GetToken_
+  commentId: Overload:Azure.Identity.UsernamePasswordCredential.GetToken
+  isSpec: "True"
+  fullName: Azure.Identity.UsernamePasswordCredential.GetToken
+  nameWithType: UsernamePasswordCredential.GetToken
+- uid: Azure.Identity.UsernamePasswordCredential.GetTokenAsync(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  name: GetTokenAsync(TokenRequest, CancellationToken)
+  href: api/Azure.Identity.UsernamePasswordCredential.html#Azure_Identity_UsernamePasswordCredential_GetTokenAsync_Azure_Core_TokenRequest_System_Threading_CancellationToken_
+  commentId: M:Azure.Identity.UsernamePasswordCredential.GetTokenAsync(Azure.Core.TokenRequest,System.Threading.CancellationToken)
+  fullName: Azure.Identity.UsernamePasswordCredential.GetTokenAsync(Azure.Core.TokenRequest, System.Threading.CancellationToken)
+  nameWithType: UsernamePasswordCredential.GetTokenAsync(TokenRequest, CancellationToken)
+- uid: Azure.Identity.UsernamePasswordCredential.GetTokenAsync*
+  name: GetTokenAsync
+  href: api/Azure.Identity.UsernamePasswordCredential.html#Azure_Identity_UsernamePasswordCredential_GetTokenAsync_
+  commentId: Overload:Azure.Identity.UsernamePasswordCredential.GetTokenAsync
+  isSpec: "True"
+  fullName: Azure.Identity.UsernamePasswordCredential.GetTokenAsync
+  nameWithType: UsernamePasswordCredential.GetTokenAsync

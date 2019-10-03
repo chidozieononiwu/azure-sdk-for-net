@@ -97,8 +97,8 @@
       <tr>
         <td>
           <p><a class="xref" href="Azure.Identity.ChainedTokenCredential.html">ChainedTokenCredential</a></p>
-          <p><p>Provides a <a class="xref" href="Azure.Core.TokenCredential.html">TokenCredential</a> implementation which chains multiple <a class="xref" href="Azure.Core.TokenCredential.html">TokenCredential</a> implementations to be tried in order
-until one of the getToken methods returns a non-default <a class="xref" href="Azure.Core.AccessToken.html">AccessToken</a>.</p>
+          <p><p>Provides a <span class="xref">Azure.Core.TokenCredential</span> implementation which chains multiple <span class="xref">Azure.Core.TokenCredential</span> implementations to be tried in order
+until one of the getToken methods returns a non-default <span class="xref">Azure.Core.AccessToken</span>.</p>
 </p>
         </td>
       </tr>
@@ -137,7 +137,7 @@ Consult the documentation of these credential types for more information on how 
       <tr>
         <td>
           <p><a class="xref" href="Azure.Identity.DeviceCodeCredential.html">DeviceCodeCredential</a></p>
-          <p><p>A <a class="xref" href="Azure.Core.TokenCredential.html">TokenCredential</a> implementation which authenticates a user using the device code flow, and provides access tokens for that user account.
+          <p><p>A <span class="xref">Azure.Core.TokenCredential</span> implementation which authenticates a user using the device code flow, and provides access tokens for that user account.
 For more information on the device code authentication flow see <a href="https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Device-Code-Flow">https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Device-Code-Flow</a>.</p>
 </p>
         </td>
@@ -168,7 +168,7 @@ documentation of that class for more details.</li>
       <tr>
         <td>
           <p><a class="xref" href="Azure.Identity.InteractiveBrowserCredential.html">InteractiveBrowserCredential</a></p>
-          <p><p>A <a class="xref" href="Azure.Core.TokenCredential.html">TokenCredential</a> implementation which launches the system default browser to interactively authenticate a user, and obtain an access token.
+          <p><p>A <span class="xref">Azure.Core.TokenCredential</span> implementation which launches the system default browser to interactively authenticate a user, and obtain an access token.
 The browser will only be launched to authenticate the user once, then will silently aquire access tokens through the users refresh token as long as it's valid.</p>
 </p>
         </td>

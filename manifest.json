@@ -17,6 +17,186 @@
       "is_incremental": false
     },
     {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Identity.AuthenticationFailedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Identity.AuthenticationFailedException.html",
+          "hash": "oPfi+9dXG5yCBLPnC0t/qQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Identity.ChainedTokenCredential.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Identity.ChainedTokenCredential.html",
+          "hash": "BTdwEW3uMa2DNGqfOYVJ2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Identity.ClientCertificateCredential.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Identity.ClientCertificateCredential.html",
+          "hash": "HzSDwcDL9bPhajBlhX2m1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Identity.ClientSecretCredential.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Identity.ClientSecretCredential.html",
+          "hash": "dmwZNDyQHvkOGXiXuOCBqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Identity.DefaultAzureCredential.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Identity.DefaultAzureCredential.html",
+          "hash": "sTGuLjnEchRoOWqhIVmGlg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Identity.DeviceCodeCredential.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Identity.DeviceCodeCredential.html",
+          "hash": "i5mHAeJiiHtZvEMRkyqdxA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Identity.DeviceCodeInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Identity.DeviceCodeInfo.html",
+          "hash": "X+eVxYAl5EYed7ZGZQs6ow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Identity.EnvironmentCredential.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Identity.EnvironmentCredential.html",
+          "hash": "/DVJcvX7wb1u/ZUKYKFpHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Identity.IdentityClientOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Identity.IdentityClientOptions.html",
+          "hash": "a9kYsfZlCQz07TfCI4RA4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Identity.InteractiveBrowserCredential.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Identity.InteractiveBrowserCredential.html",
+          "hash": "Zi0KVrQKryNJKbfMmDmDfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Identity.ManagedIdentityCredential.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Identity.ManagedIdentityCredential.html",
+          "hash": "R9SgWHz0SdwV9OkIJI5oFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Identity.SharedTokenCacheCredential.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Identity.SharedTokenCacheCredential.html",
+          "hash": "Y5QOuFMtJUoJvZzDyORsUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Identity.SharedTokenCacheCredentialOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Identity.SharedTokenCacheCredentialOptions.html",
+          "hash": "cZC9goakxrBkF6sQ0plp7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Identity.UsernamePasswordCredential.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Identity.UsernamePasswordCredential.html",
+          "hash": "sdiLAaqYKZl4Jh+IGF5uQA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Azure.Identity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Azure.Identity.html",
+          "hash": "X9WM/wGL9dxUpEuS7xsEBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
@@ -34,7 +214,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "eWl/m2iB2mgjZPbLc4xDqw=="
+          "hash": "l57fSs4RS5DIr+ACSl+RVw=="
         }
       },
       "is_incremental": false,
@@ -111,6 +291,12 @@
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 15,
           "skipped_file_count": 0
         }
       }

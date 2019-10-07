@@ -569,12 +569,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "t+OER3y8LhFntLUBUzr1hA=="
+          "hash": "TYJqPHijtm/lFLkhCeJ3/A=="
         }
       },
       "is_incremental": false,

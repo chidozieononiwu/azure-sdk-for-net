@@ -2,295 +2,295 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.Authorization.EventHubSharedKeyCredential.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.Authorization.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.BatchOptions.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.Errors.ConsumerDisconnectedException.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.Errors.EventHubsCommunicationException.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.Errors.EventHubsException.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.Errors.EventHubsResourceNotFoundException.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.Errors.EventHubsTimeoutException.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.Errors.MessageSizeExceededException.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.Errors.QuotaExceededException.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.Errors.ServiceBusyException.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.Errors.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.EventData.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.EventDataBatch.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.EventHubClient.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.EventHubClientOptions.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.EventHubConsumer.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.EventHubConsumerOptions.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.EventHubProducer.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.EventHubProducerOptions.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.EventHubRetryPolicy.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.EventPosition.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.Metadata.EventHubProperties.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.Metadata.LastEnqueuedEventProperties.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.Metadata.PartitionProperties.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.Metadata.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.Processor.BasePartitionProcessor.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.Processor.Checkpoint.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.Processor.EventProcessor-1.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.Processor.EventProcessorOptions.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.Processor.InMemoryPartitionManager.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.Processor.PartitionContext.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.Processor.PartitionManager.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.Processor.PartitionOwnership.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.Processor.PartitionProcessorCloseReason.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.Processor.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.RetryMode.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.RetryOptions.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.SendOptions.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.TransportType.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Azure.Messaging.EventHubs.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/index.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Microsoft.Extensions.Azure.AzureClientBuilderExtensions.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/Microsoft.Extensions.Azure.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/TrackOne.TokenScope.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/TrackOne.TransportType.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/api/TrackOne.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/articles/intro.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://azure.github.io/azure-sdk-for-net/index.html/index.html</loc>
-    <lastmod>2019-10-04T10:13:10+00:00</lastmod>
+    <lastmod>2019-10-07T06:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

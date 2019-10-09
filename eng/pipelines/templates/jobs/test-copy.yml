@@ -1,0 +1,19 @@
+jobs:
+  - job: CopyDocsToBlob
+    variables:
+      - template: ../variables/globals.yml
+    pool:
+      vmImage: windows-2019
+    steps:
+      - task: DownloadPipelineArtifact@2
+        displayName: 'Download Pipeline Artifact'
+        inputs:
+          buildType: specific
+          project: 'fadad8ea-1e34-4d7a-9016-fd29b14e8b94'
+          definition: 595
+          buildVersionToDownload: specific
+          pipelineId: 130512
+      - pwsh: ls
+        workingDirectory: $(Pipeline.Workspace)
+      - pwsh: ls
+        workingDirectory: $(Pipeline.Workspace)/Doc.Index

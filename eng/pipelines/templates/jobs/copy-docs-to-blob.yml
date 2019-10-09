@@ -1,0 +1,67 @@
+jobs:
+  - job: CopyDocsToBlob
+    variables:
+      - template: ../variables/globals.yml
+    pool:
+      vmImage: windows-2019
+    steps:
+      - task: DownloadPipelineArtifact@2
+        displayName: 'Download Pipeline Artifact'
+        inputs:
+          buildType: specific
+          project: 'fadad8ea-1e34-4d7a-9016-fd29b14e8b94'
+          definition: 1114
+          buildVersionToDownload: latestFromBranch
+          branchName: refs/heads/GenerateDocsPerPackage
+      - pwsh: ls
+        workingDirectory: $(Pipeline.Workspace)
+        displayName: View Downloaded Artifacts
+      - pwsh: |
+          Invoke-WebRequest -MaximumRetryCount 10 -Uri "https://aka.ms/downloadazcopy-v10-windows" `
+          -OutFile "azcopy.zip" | Wait-Process; Expand-Archive -Path "azcopy.zip" -DestinationPath "./azcopy/"
+        workingDirectory: $(Build.BinariesDirectory)
+        displayName: Download and Extract azcopy Zip
+      - pwsh: ls
+        workingDirectory: $(Build.BinariesDirectory)/azcopy
+        displayName: View Content of Azcopy
+      - pwsh: |
+          $PublishedPkgs = Get-ChildItem "$(Pipeline.Workspace)/packages" | Where-Object -FilterScript {$_.Name.EndsWith(".nupkg")}
+          $PublishedDocs = Get-ChildItem "$(Pipeline.Workspace)" | Where-Object -FilterScript {$_.Name.StartsWith("Doc.")}
+
+          function Upload-Blobs
+          {
+              Param (
+                  [Parameter(Mandatory=$true)] [String]$PkgDocName,
+                  [Parameter(Mandatory=$true)] [String]$PkgName,
+                  [Parameter(Mandatory=$true)] [String]$PkgVersion
+              )
+
+              $DotNetDocsDir = 'https://azuresdkdocsdev.blob.core.windows.net/$web/dotnet'
+              New-Item "$(Build.BinariesDirectory)/versionplaceholder.txt"
+
+              $AzCopy = "$(Build.BinariesDirectory)/azcopy/**/azcopy.exe"
+
+              & $AzCopy cp "$(Pipeline.Workspace)/$($PkgDocName)/$($PkgDocName)/**" "$($DotNetDocsDir)/$($PkgName)/$($PkgVersion)?$SAS" --recursive=true
+              & $AzCopy cp "$(Build.BinariesDirectory)/versionplaceholder.txt" "$($DotNetDocsDir)/$($PkgName)/version/$($PkgVersion)?$SAS" --recursive=true
+              Write-Host "$($PkgDocName) Uploaded"
+          }
+
+          foreach ($Item in $PublishedDocs) {
+              $PkgName = $Item.Name.Remove(0, 4)
+              $Item.Name.GetType()
+              $PkgFullName = $PublishedPkgs | Where-Object -FilterScript {$_.Name -match "$($PkgName).\d"}
+              if (($PkgFullName | Measure-Object).count -ge 1) 
+              {
+                  $PkgVersion = $PkgFullName[0].BaseName.Remove(0, $PkgName.Length + 1)
+
+                  Write-Host "Uploading Doc for $($PkgName) Version:- $($PkgVersion)..."
+                  Upload-Blobs -PkgDocName $Item.Name -PkgName $PkgName -PkgVersion $PkgVersion
+              }
+              else
+              {
+                  continue
+                  Write-Host "Package with the same name Exists. Upload Skipped"
+              }
+          }
+        displayName: Copy Docs to Blob
+        continueOnError: false

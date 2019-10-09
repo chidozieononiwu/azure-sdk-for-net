@@ -64,3 +64,5 @@ $(function () {
         $(this).html(text);
     });
 })
+
+// Inject Artifact Versions

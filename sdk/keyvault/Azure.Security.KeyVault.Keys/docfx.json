@@ -4,7 +4,7 @@
       "src": [
         {
           "files": [
-            "eventhub/Azure.Messaging.EventHubs/**/*.csproj"
+            "eventhub/Azure.Security.KeyVault.Certificates/**/*.csproj"
           ],
           "exclude": [
             "**/bin/**",
@@ -74,8 +74,8 @@
     "cleanupCacheHistory": false,
     "disableGitFeatures": false,
     "globalMetadata": {
-      "_appTitle": "Azure-SDK-for-Net | Eventhub",
-      "_appFooter": "Azure-SDK-for-Net | Eventhub",
+      "_appTitle": "Azure-SDK-for-Net | KeyVault",
+      "_appFooter": "Azure-SDK-for-Net | KeyVault",
       "_enableSearch": true,
       "_enableNewTab": true
     },

@@ -35,7 +35,7 @@ steps:
       failOnStderr: true
   - pwsh: |
       $PkgReadMePath = "$(Build.SourcesDirectory)/sdk/${{parameters.ServiceDirectory}}/$(PackageName)/README.md"
-      if (![System.IO.File]::Exists($PkgReadMePath))
+      if ([System.IO.File]::Exists($PkgReadMePath))
       {
         Copy-Item $PkgReadMePath -Destination "$(Build.SourcesDirectory)/docfx_project/api/index.md" -Force
       }
@@ -48,7 +48,7 @@ steps:
 
       # Create Toc for Site Navigation
       New-Item "$(Build.SourcesDirectory)/docfx_project/toc.yml" -Force
-      Add-Content -Path "$(Build.SourcesDirectory)/docfx_project/toc.yml" -Value "- name: $(PackageName) Api Documentation`r`n  href: api/`r`n  homepage: api/index.md"
+      Add-Content -Path "$(Build.SourcesDirectory)/docfx_project/toc.yml" -Value "- name: $(PackageName)`r`n  href: api/`r`n  homepage: api/index.md"
     displayName: Copy over Package ReadMe and toc.yml
     continueOnError: true
   - task: CmdLine@2
@@ -70,5 +70,5 @@ steps:
   - task: PublishPipelineArtifact@0
     condition: succeeded()
     inputs:
-      artifactName: "Doc.$(PackageName)"
+      artifactName: "Docs.$(PackageName)"
       targetPath: $(Build.ArtifactStagingDirectory)/$(PackageName)/docfx_project/_site

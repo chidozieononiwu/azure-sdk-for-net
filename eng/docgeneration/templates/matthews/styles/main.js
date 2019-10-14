@@ -3,9 +3,13 @@ var containers = $(".container");
 containers.removeClass("container");
 containers.addClass("container-fluid");
 
+<<<<<<< HEAD
 WINDOW_CONTENTS = window.location.href.split('/')
 SELECTED_LANGUAGE = 'dotnet'
 BLOB_URI_PREFIX = 'https://azuresdkdocs.blob.core.windows.net/$web?restype=container&comp=list&prefix=dotnet/'
+=======
+var SELECTED_LANGUAGE = 'dotnet'
+>>>>>>> Pull versions from blob
 
 // Navbar Hamburger
 $(function () {

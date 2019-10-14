@@ -28,45 +28,50 @@ steps:
       Copy-Item "$(Build.SourcesDirectory)/eng/docgeneration/docfx.json" -Destination "$(Build.SourcesDirectory)/docfx_project/" -Force
     displayName: Copy over docfx.json
   - pwsh: |
-      $ServiceList = Get-ChildItem "$(Build.SourcesDirectory)/sdk" -Directory -Exclude eng, mgmtcommon, template
+      $ServiceList = Get-ChildItem "$(Build.SourcesDirectory)/sdk" -Directory -Exclude eng, mgmtcommon, template | Sort-Object
       $YmlPath = "$(Build.SourcesDirectory)/docfx_project/api"
       New-Item -Path $YmlPath -Name "toc.yml" -Force
-      Add-Content -Path "$($YmlPath)/toc.yml" -Value "- uid: Client Libraries`r`n  name: Client Libraries`r`n  items:"
       foreach ($Dir in $ServiceList)
       {
-          $PkgList = Get-ChildItem $Dir.FullName -Directory | Where-Object -FilterScript {$_.Name -notmatch ".Management."}
+          New-Item -Path $YmlPath -Name "$($Dir.Name).md" -Force
+          Write-Host "Write to Toc.yml"
+          Add-Content -Path "$($YmlPath)/toc.yml" -Value "- name: $($Dir.Name.ToUpper())`r`n  href: $($Dir.Name).md"
+          Write-Host "Write Client Header"
+          $PkgList = Get-ChildItem $Dir.FullName -Directory -Exclude .vs, .vscode, Azure.Security.KeyVault.Shared | Where-Object -FilterScript {$_.Name -notmatch ".Management."}
           if (($PkgList | Measure-Object).count -eq 0)
           {
               continue
           }
-          Add-Content -Path "$($YmlPath)/toc.yml" -Value "  - uid: $($Dir.Name)`r`n    name: $($Dir.Name.ToUpper())`r`n    items:"
+          Add-Content -Path "$($YmlPath)/$($Dir.Name).md" -Value "# CLIENT"
+          Add-Content -Path "$($YmlPath)/$($Dir.Name).md" -Value "---"
           foreach ($Pkg in $PkgList)
           {
-              Add-Content -Path "$($YmlPath)/toc.yml" -Value "    - name: $($Pkg.Name)`r`n      href: $($Pkg.Name).md"
-              New-Item -Path $YmlPath -Name "$($Pkg.Name).md" -Force
-              Add-Content -Path "$($YmlPath)/$($Pkg.Name).md" -Value "# $($Pkg.Name)"
-              Add-Content -Path "$($YmlPath)/$($Pkg.Name).md" -Value "## PUBLISHED VERSIONS"
-
+              $ProjectName = Get-ChildItem "$($pkg.FullName)\src\*" -Include *.csproj
+              Write-Host "Write $($ProjectName.Name)"
+              Add-Content -Path "$($YmlPath)/$($Dir.Name).md" -Value "#### $($ProjectName.BaseName)"
           }
       }
-      Add-Content -Path "$($YmlPath)/toc.yml" -Value "- uid: Management Libraries`r`n  name: Management Libraries`r`n  items:"
       foreach ($Dir in $ServiceList)
       {
+          Write-Host "Write Mgmt Header"
           $PkgList = Get-ChildItem $Dir.FullName -Directory | Where-Object -FilterScript {$_.Name -match ".Management."}
           if (($PkgList | Measure-Object).count -eq 0)
           {
               continue
           }
-          Add-Content -Path "$($YmlPath)/toc.yml" -Value "  - uid: $($Dir.Name)`r`n    name: $($Dir.Name.ToUpper())`r`n    items:"
+          Add-Content -Path "$($YmlPath)/$($Dir.Name).md" -Value "# MANAGEMENT"
+          Add-Content -Path "$($YmlPath)/$($Dir.Name).md" -Value "---"
           foreach ($Pkg in $PkgList)
           {
-              Add-Content -Path "$($YmlPath)/toc.yml" -Value "    - name: $($Pkg.Name)`r`n      href: $($Pkg.Name).md"
-              New-Item -Path $YmlPath -Name "$($Pkg.Name).md" -Force
-              Add-Content -Path "$($YmlPath)/$($Pkg.Name).md" -Value "# $($Pkg.Name)"
-              Add-Content -Path "$($YmlPath)/$($Pkg.Name).md" -Value "## PUBLISHED VERSIONS"
+              $ProjectName = Get-ChildItem "$($pkg.FullName)\src\*" -Include *.csproj
+              Write-Host "Write $($ProjectName.Name)"
+              Add-Content -Path "$($YmlPath)/$($Dir.Name).md" -Value "#### $($ProjectName.BaseName)"
           }
       }
-    displayName: Create Index Toc
+      New-Item -Path "$(Build.SourcesDirectory)/docfx_project" -Name "toc.yml" -Force
+      Add-Content -Path "$(Build.SourcesDirectory)/docfx_project/toc.yml" -Value "- name: Azure SDK for Net Apis`r`n  href: api/`r`n  homepage: api/index.md"
+      Copy-Item "$(Build.SourcesDirectory)/README.md" -Destination "$(Build.SourcesDirectory)/docfx_project/api/index.md" -Force
+    displayName: Create main index and navigation toc.yml, copy over readme.
   - pwsh: ls
     workingDirectory: $(Build.SourcesDirectory)/docfx_project/api
   - task: CmdLine@2

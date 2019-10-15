@@ -99,7 +99,7 @@ function populateIndexList(selector, packageName) {
             }
 
             for (var i in options) {
-                $(publishedversions).append('<li><a href="' + getPackageUrl(SELECTED_LANGUAGE, packageName, options[i]) + '">' + options[i] + '</a></li>')
+                $(publishedversions).append('<li><a href="' + getPackageUrl(SELECTED_LANGUAGE, packageName, options[i]) + '" target="_blank">' + options[i] + '</a></li>')
             }
         }
         else {

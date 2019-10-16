@@ -3,7 +3,6 @@ var containers = $(".container");
 containers.removeClass("container");
 containers.addClass("container-fluid");
 
-var WINDOW_CONTENTS = window.location.href.split('/')
 var SELECTED_LANGUAGE = 'dotnet'
 
 // Navbar Hamburger
@@ -116,6 +115,8 @@ function getPackageUrl(language, package, version) {
 
 // Populate Index
 $(function () {
-    var pkgname = WINDOW_CONTENTS[WINDOW_CONTENTS.length - 1].replace(".html", "");
-    populateIndexList("#published-versions", pkgname);
+    $('h4').each(function () {
+        var pkgName = $(this).text()
+        populateIndexList($(this), pkgName)
+    });
 })

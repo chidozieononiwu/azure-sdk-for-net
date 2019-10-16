@@ -5,11 +5,11 @@
   "files": [
     {
       "type": "Conceptual",
-      "source_relative_path": "api/AnomalyDetector.md",
+      "source_relative_path": "api/advisor.md",
       "output": {
         ".html": {
-          "relative_path": "api/AnomalyDetector.html",
-          "hash": "55U7X6wVT22RDg/quzK/qQ=="
+          "relative_path": "api/advisor.html",
+          "hash": "GfdqW53XunwWs7NZ7/VUhg=="
         }
       },
       "is_incremental": false,
@@ -17,11 +17,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Azure.Core.md",
+      "source_relative_path": "api/alertsmanagement.md",
       "output": {
         ".html": {
-          "relative_path": "api/Azure.Core.html",
-          "hash": "WXfMfRHK7xK6o42KqEYdwA=="
+          "relative_path": "api/alertsmanagement.html",
+          "hash": "qNbWu57F/y8NG5qPGUHmMA=="
         }
       },
       "is_incremental": false,
@@ -29,11 +29,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Azure.Data.AppConfiguration.md",
+      "source_relative_path": "api/analysisservices.md",
       "output": {
         ".html": {
-          "relative_path": "api/Azure.Data.AppConfiguration.html",
-          "hash": "y0F6hlbURjbAz7r+Ao8zoA=="
+          "relative_path": "api/analysisservices.html",
+          "hash": "AaEGrhrl9lH/vnH+boTEyA=="
         }
       },
       "is_incremental": false,
@@ -41,11 +41,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Azure.Identity.md",
+      "source_relative_path": "api/apimanagement.md",
       "output": {
         ".html": {
-          "relative_path": "api/Azure.Identity.html",
-          "hash": "+gIarsCAyecGofuoY3Ukwg=="
+          "relative_path": "api/apimanagement.html",
+          "hash": "t5C5ZZpmm9hG3CUpzpWU7Q=="
         }
       },
       "is_incremental": false,
@@ -53,11 +53,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Azure.Messaging.EventHubs.CheckpointStore.Blob.md",
+      "source_relative_path": "api/appconfiguration.md",
       "output": {
         ".html": {
-          "relative_path": "api/Azure.Messaging.EventHubs.CheckpointStore.Blob.html",
-          "hash": "vLdalp0LL9leNQSU4UdFDQ=="
+          "relative_path": "api/appconfiguration.html",
+          "hash": "1nA5jrtQ6Rz0gmGNGOWOag=="
         }
       },
       "is_incremental": false,
@@ -65,11 +65,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Azure.Messaging.EventHubs.md",
+      "source_relative_path": "api/applicationinsights.md",
       "output": {
         ".html": {
-          "relative_path": "api/Azure.Messaging.EventHubs.html",
-          "hash": "y+wpPlUsXXMqmcFhE2Losw=="
+          "relative_path": "api/applicationinsights.html",
+          "hash": "j7/fPbWnIWOaVGCbLRukNA=="
         }
       },
       "is_incremental": false,
@@ -77,11 +77,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Azure.Security.KeyVault.Certificates.md",
+      "source_relative_path": "api/attestation.md",
       "output": {
         ".html": {
-          "relative_path": "api/Azure.Security.KeyVault.Certificates.html",
-          "hash": "MCD2i/fIOfXls5nPhvZQ6A=="
+          "relative_path": "api/attestation.html",
+          "hash": "jq0T55M34U4iEpfzh/F21g=="
         }
       },
       "is_incremental": false,
@@ -89,11 +89,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Azure.Security.KeyVault.Keys.md",
+      "source_relative_path": "api/authorization.md",
       "output": {
         ".html": {
-          "relative_path": "api/Azure.Security.KeyVault.Keys.html",
-          "hash": "NeToIHfTaCfcpsk1sc+tVw=="
+          "relative_path": "api/authorization.html",
+          "hash": "2R8svlecILiX6lT86P2NiQ=="
         }
       },
       "is_incremental": false,
@@ -101,11 +101,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Azure.Security.KeyVault.Secrets.md",
+      "source_relative_path": "api/automation.md",
       "output": {
         ".html": {
-          "relative_path": "api/Azure.Security.KeyVault.Secrets.html",
-          "hash": "+rfrlCUV3c15ALngm7oOCw=="
+          "relative_path": "api/automation.html",
+          "hash": "4BbRbSq9bz8eBcsQJM2mGQ=="
         }
       },
       "is_incremental": false,
@@ -113,11 +113,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Azure.Security.KeyVault.Shared.md",
+      "source_relative_path": "api/azurestack.md",
       "output": {
         ".html": {
-          "relative_path": "api/Azure.Security.KeyVault.Shared.html",
-          "hash": "FGaHtIXBZqiUxePNKqat3w=="
+          "relative_path": "api/azurestack.html",
+          "hash": "dAoK7O32vHev9kBmvK/v8A=="
         }
       },
       "is_incremental": false,
@@ -125,11 +125,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Azure.Storage.Blobs.Cryptography.md",
+      "source_relative_path": "api/batch.md",
       "output": {
         ".html": {
-          "relative_path": "api/Azure.Storage.Blobs.Cryptography.html",
-          "hash": "cpuD8FShS5x7Dv4BATdAWQ=="
+          "relative_path": "api/batch.html",
+          "hash": "JXFEhy2KLLTS6vliumD23g=="
         }
       },
       "is_incremental": false,
@@ -137,11 +137,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Azure.Storage.Blobs.md",
+      "source_relative_path": "api/batchai.md",
       "output": {
         ".html": {
-          "relative_path": "api/Azure.Storage.Blobs.html",
-          "hash": "uQIea+fBkcoeppnjxppNRg=="
+          "relative_path": "api/batchai.html",
+          "hash": "szERwcnL7i8DQwuh0SMy2g=="
         }
       },
       "is_incremental": false,
@@ -149,11 +149,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Azure.Storage.Common.md",
+      "source_relative_path": "api/billing.md",
       "output": {
         ".html": {
-          "relative_path": "api/Azure.Storage.Common.html",
-          "hash": "8v0q0rN+DV1yq6eS4tgLPA=="
+          "relative_path": "api/billing.html",
+          "hash": "6nSAtullb1NhmYJKVmCcvg=="
         }
       },
       "is_incremental": false,
@@ -161,11 +161,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Azure.Storage.Files.DataLake.md",
+      "source_relative_path": "api/blueprint.md",
       "output": {
         ".html": {
-          "relative_path": "api/Azure.Storage.Files.DataLake.html",
-          "hash": "Pe1ADJ9GIQrnbkCrtGrUnQ=="
+          "relative_path": "api/blueprint.html",
+          "hash": "puUUHVRDExhcjKozwWH7Jg=="
         }
       },
       "is_incremental": false,
@@ -173,11 +173,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Azure.Storage.Files.md",
+      "source_relative_path": "api/botservice.md",
       "output": {
         ".html": {
-          "relative_path": "api/Azure.Storage.Files.html",
-          "hash": "3vR7/rGEHW5Aiz0ei/XU7Q=="
+          "relative_path": "api/botservice.html",
+          "hash": "yAaJsunt/ACrror54/yQbA=="
         }
       },
       "is_incremental": false,
@@ -185,11 +185,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Azure.Storage.Queues.Cryptography.md",
+      "source_relative_path": "api/cdn.md",
       "output": {
         ".html": {
-          "relative_path": "api/Azure.Storage.Queues.Cryptography.html",
-          "hash": "dMQRoE9vQ+cLTtQhYEt1TQ=="
+          "relative_path": "api/cdn.html",
+          "hash": "k9YiQdMwkSfl/JBpGPygFA=="
         }
       },
       "is_incremental": false,
@@ -197,11 +197,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Azure.Storage.Queues.md",
+      "source_relative_path": "api/cognitiveservices.md",
       "output": {
         ".html": {
-          "relative_path": "api/Azure.Storage.Queues.html",
-          "hash": "bHIxykHA2FR1Rrhiw7sYHw=="
+          "relative_path": "api/cognitiveservices.html",
+          "hash": "eOhj0Db4riayDagjEENWlA=="
         }
       },
       "is_incremental": false,
@@ -209,11 +209,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/FormRecognizer.md",
+      "source_relative_path": "api/compute.md",
       "output": {
         ".html": {
-          "relative_path": "api/FormRecognizer.html",
-          "hash": "sloZJBi9dynSEObPtAVW1g=="
+          "relative_path": "api/compute.html",
+          "hash": "bNZbN/6eLAv3KTjYf/Fh4g=="
         }
       },
       "is_incremental": false,
@@ -221,11 +221,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Knowledge.QnAMaker.md",
+      "source_relative_path": "api/consumption.md",
       "output": {
         ".html": {
-          "relative_path": "api/Knowledge.QnAMaker.html",
-          "hash": "9vZEdjN7NpJZrX5HIKAF0Q=="
+          "relative_path": "api/consumption.html",
+          "hash": "Ca1fEabOgVAoqOM2l6rD8w=="
         }
       },
       "is_incremental": false,
@@ -233,11 +233,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Language.LUIS.Authoring.md",
+      "source_relative_path": "api/containerinstance.md",
       "output": {
         ".html": {
-          "relative_path": "api/Language.LUIS.Authoring.html",
-          "hash": "rkLdlLq47rrYLNYiJs4M6Q=="
+          "relative_path": "api/containerinstance.html",
+          "hash": "ULY98qrP951L7oJ+YP4p/A=="
         }
       },
       "is_incremental": false,
@@ -245,11 +245,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Language.LUIS.Runtime.md",
+      "source_relative_path": "api/containerregistry.md",
       "output": {
         ".html": {
-          "relative_path": "api/Language.LUIS.Runtime.html",
-          "hash": "D3RfRqip2GV2SwKzyUXVDA=="
+          "relative_path": "api/containerregistry.html",
+          "hash": "aq/FNL5657arutq/z5OD8g=="
         }
       },
       "is_incremental": false,
@@ -257,11 +257,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Language.SpellCheck.md",
+      "source_relative_path": "api/containerservice.md",
       "output": {
         ".html": {
-          "relative_path": "api/Language.SpellCheck.html",
-          "hash": "0ySH0yH/RK+o+Tw52LqwEA=="
+          "relative_path": "api/containerservice.html",
+          "hash": "qumk0COUb2KKeN8hBiU9tQ=="
         }
       },
       "is_incremental": false,
@@ -269,11 +269,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Language.TextAnalytics.md",
+      "source_relative_path": "api/core.md",
       "output": {
         ".html": {
-          "relative_path": "api/Language.TextAnalytics.html",
-          "hash": "E5lopJV6R/eeKI8lKID6sw=="
+          "relative_path": "api/core.html",
+          "hash": "M3F8PlWgjOPB47ie04ECoQ=="
         }
       },
       "is_incremental": false,
@@ -281,11 +281,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.ApplicationInsights.md",
+      "source_relative_path": "api/cost-management.md",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Azure.ApplicationInsights.html",
-          "hash": "wzJlBl23ClmD/PET2qFAIA=="
+          "relative_path": "api/cost-management.html",
+          "hash": "7RDD+s//27abF8XwtutPJQ=="
         }
       },
       "is_incremental": false,
@@ -293,11 +293,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Batch.Conventions.Files.md",
+      "source_relative_path": "api/customer-insights.md",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Azure.Batch.Conventions.Files.html",
-          "hash": "uU7K463IME2QiAb8fq/LcQ=="
+          "relative_path": "api/customer-insights.html",
+          "hash": "vDg2MLhMKMU7ZSNLWTb8Ew=="
         }
       },
       "is_incremental": false,
@@ -305,11 +305,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Batch.FileStaging.md",
+      "source_relative_path": "api/customproviders.md",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Azure.Batch.FileStaging.html",
-          "hash": "ymoa7bpeYDbEYrjq4VwfWQ=="
+          "relative_path": "api/customproviders.html",
+          "hash": "6IcwP64KHIVp6TMBO9SIIQ=="
         }
       },
       "is_incremental": false,
@@ -317,11 +317,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Batch.md",
+      "source_relative_path": "api/databox.md",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Azure.Batch.html",
-          "hash": "BYUYa4w7wq02zgTEaJ6QSw=="
+          "relative_path": "api/databox.html",
+          "hash": "R8hN8zIL3TMxJcvSS/hA/Q=="
         }
       },
       "is_incremental": false,
@@ -329,11 +329,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.ContainerRegistry.md",
+      "source_relative_path": "api/databoxedge.md",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Azure.ContainerRegistry.html",
-          "hash": "cLy2HpjfjJC0FH+L9k9UDg=="
+          "relative_path": "api/databoxedge.html",
+          "hash": "d1NLIkZveZ+xe3Thcmyp/Q=="
         }
       },
       "is_incremental": false,
@@ -341,11 +341,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.EventGrid.md",
+      "source_relative_path": "api/datafactory.md",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Azure.EventGrid.html",
-          "hash": "IR0/WEHRZg0OutHXhN/O2w=="
+          "relative_path": "api/datafactory.html",
+          "hash": "oTy4P3dS6hgCRRX4/HoJuQ=="
         }
       },
       "is_incremental": false,
@@ -353,11 +353,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.EventHubs.Processor.md",
+      "source_relative_path": "api/datalake-analytics.md",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Azure.EventHubs.Processor.html",
-          "hash": "KN6O6wwj0FhIy//xt3xcxQ=="
+          "relative_path": "api/datalake-analytics.html",
+          "hash": "JdyQ9AYf9ovmSrGjVRIQoA=="
         }
       },
       "is_incremental": false,
@@ -365,11 +365,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.EventHubs.ServiceFabricProcessor.md",
+      "source_relative_path": "api/datalake-store.md",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Azure.EventHubs.ServiceFabricProcessor.html",
-          "hash": "wSyMcFodvINSDWhAqS4KDA=="
+          "relative_path": "api/datalake-store.html",
+          "hash": "lTeouTLTVjn8dkHELXJvUA=="
         }
       },
       "is_incremental": false,
@@ -377,11 +377,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.EventHubs.md",
+      "source_relative_path": "api/datamigration.md",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Azure.EventHubs.html",
-          "hash": "n6kFJm/m/PN7Ebs5ywECBQ=="
+          "relative_path": "api/datamigration.html",
+          "hash": "ryqXGB3nYfsQ3SxXfrPAcw=="
         }
       },
       "is_incremental": false,
@@ -389,11 +389,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Graph.RBAC.md",
+      "source_relative_path": "api/datashare.md",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Azure.Graph.RBAC.html",
-          "hash": "zWYDE2xfEN7hMRa50BOoWQ=="
+          "relative_path": "api/datashare.html",
+          "hash": "tXTqPi9qkpJXHxwm1+QtAw=="
         }
       },
       "is_incremental": false,
@@ -401,11 +401,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.HDInsight.Job.md",
+      "source_relative_path": "api/deploymentmanager.md",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Azure.HDInsight.Job.html",
-          "hash": "FMUn1w1JqSJmDa+yNCEPPQ=="
+          "relative_path": "api/deploymentmanager.html",
+          "hash": "qScy2pYkVdpEhmID//LdGw=="
         }
       },
       "is_incremental": false,
@@ -413,11 +413,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.KeyVault.Core.md",
+      "source_relative_path": "api/deviceprovisioningservices.md",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Azure.KeyVault.Core.html",
-          "hash": "iZ4aLrFcTPxjxP5GsSO1cg=="
+          "relative_path": "api/deviceprovisioningservices.html",
+          "hash": "AJhLas/yQfrJ+DY4MDtObA=="
         }
       },
       "is_incremental": false,
@@ -425,11 +425,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.KeyVault.Cryptography.md",
+      "source_relative_path": "api/devspaces.md",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Azure.KeyVault.Cryptography.html",
-          "hash": "o4Vsb9z+fWMhY3NS+zkvTA=="
+          "relative_path": "api/devspaces.html",
+          "hash": "sJHcrySq3hsLkzyhKx4GPQ=="
         }
       },
       "is_incremental": false,
@@ -437,11 +437,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.KeyVault.Extensions.md",
+      "source_relative_path": "api/devtestlabs.md",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Azure.KeyVault.Extensions.html",
-          "hash": "ygMTghAvw0pXVUwBe96+uA=="
+          "relative_path": "api/devtestlabs.html",
+          "hash": "w+mwn26Kel9ghYIMo/ldZw=="
         }
       },
       "is_incremental": false,
@@ -449,11 +449,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.KeyVault.WebKey.md",
+      "source_relative_path": "api/dns.md",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Azure.KeyVault.WebKey.html",
-          "hash": "SdKJMhBxEEJzX4q6/EysaQ=="
+          "relative_path": "api/dns.html",
+          "hash": "KtG+SXi62CODUgJIDvCeQA=="
         }
       },
       "is_incremental": false,
@@ -461,11 +461,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.KeyVault.md",
+      "source_relative_path": "api/edgegateway.md",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Azure.KeyVault.html",
-          "hash": "feehn10ym/H0CUU9rB7LRA=="
+          "relative_path": "api/edgegateway.html",
+          "hash": "wQhxNYs4aPVcOkCP6C/yIQ=="
         }
       },
       "is_incremental": false,
@@ -473,11 +473,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.Advisor.md",
+      "source_relative_path": "api/eventgrid.md",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.Advisor.html",
-          "hash": "8BwK/A1Hlbl014w4hs9SMQ=="
+          "relative_path": "api/eventgrid.html",
+          "hash": "zJKY4nl3s71pHaaZdToyAg=="
         }
       },
       "is_incremental": false,
@@ -485,11 +485,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.AlertsManagement.md",
+      "source_relative_path": "api/eventhub.md",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.AlertsManagement.html",
-          "hash": "PnGorsQaZcjistmYO/6D+g=="
+          "relative_path": "api/eventhub.html",
+          "hash": "qq1Jx7wl3vWjUPInQHQ1/A=="
         }
       },
       "is_incremental": false,
@@ -497,11 +497,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.AnalysisServices.md",
+      "source_relative_path": "api/frontdoor.md",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.AnalysisServices.html",
-          "hash": "VjSzEOeKeDQ4dRdYyHJCKQ=="
+          "relative_path": "api/frontdoor.html",
+          "hash": "TQ+GvTUr3sN2Aq24sb793w=="
         }
       },
       "is_incremental": false,
@@ -509,11 +509,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.ApiManagement.md",
+      "source_relative_path": "api/graphrbac.md",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.ApiManagement.html",
-          "hash": "jKp4rkJAcY6xkmm8B9njLQ=="
+          "relative_path": "api/graphrbac.html",
+          "hash": "M1fS1Z9WFNMd0A1k5ztfGw=="
         }
       },
       "is_incremental": false,
@@ -521,11 +521,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.ApplicationInsights.md",
+      "source_relative_path": "api/guestconfiguration.md",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.ApplicationInsights.html",
-          "hash": "2SmP+C0MXJGjt1STGNzi2g=="
+          "relative_path": "api/guestconfiguration.html",
+          "hash": "FX7Cd4HmfveoN81nyBmrhg=="
         }
       },
       "is_incremental": false,
@@ -533,11 +533,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.Attestation.md",
+      "source_relative_path": "api/hdinsight.md",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.Attestation.html",
-          "hash": "yXjR3grld9submQY7P5daQ=="
+          "relative_path": "api/hdinsight.html",
+          "hash": "lxTRGychhwXClXomSgAoxg=="
         }
       },
       "is_incremental": false,
@@ -545,11 +545,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.Authorization.md",
+      "source_relative_path": "api/healthcareapis.md",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.Authorization.html",
-          "hash": "0LlQvKv/Ku8/YSpZdMi5rw=="
+          "relative_path": "api/healthcareapis.html",
+          "hash": "nJlACoCUniiljoSHMPpeGA=="
         }
       },
       "is_incremental": false,
@@ -557,11 +557,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.Automation.md",
+      "source_relative_path": "api/hybriddatamanager.md",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.Automation.html",
-          "hash": "xjfRcY1GVcsandLbpjGALQ=="
+          "relative_path": "api/hybriddatamanager.html",
+          "hash": "WUukggPc7L00CHJGaxrMXg=="
         }
       },
       "is_incremental": false,
@@ -569,1511 +569,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.Batch.md",
+      "source_relative_path": "api/identity.md",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.Batch.html",
-          "hash": "mzE319eU5C/0WFkmTho6OQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.BatchAI.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.BatchAI.html",
-          "hash": "oTMEj0je1T/yVdoe/73zZg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.Billing.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.Billing.html",
-          "hash": "ykqiis99EjM8ncI18Yc6LA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.Blueprint.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.Blueprint.html",
-          "hash": "5bm3tDRxjQkLrQNPFiZ7JA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.BotService.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.BotService.html",
-          "hash": "C1ET6AIaiVLn8BiRY+f+Qw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.Cdn.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.Cdn.html",
-          "hash": "TB3vib/rOuOfbexLbjt5jg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.CognitiveServices.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.CognitiveServices.html",
-          "hash": "MMAwF0Qhlm7FWzirYE6gIA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.Compute.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.Compute.html",
-          "hash": "zch9Qe1aHFvQXtRcH+1BRA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.Consumption.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.Consumption.html",
-          "hash": "79Ym75jx6iDmIgKXgMqDJA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.ContainerInstance.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.ContainerInstance.html",
-          "hash": "syutwGufxECFFX4whdVjsw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.ContainerRegistry.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.ContainerRegistry.html",
-          "hash": "1oAuoCjTE2lO4hSFerPCuA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.ContainerService.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.ContainerService.html",
-          "hash": "zG6Dxy35Jqx9s6wADg2H5A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.CostManagement.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.CostManagement.html",
-          "hash": "CqmME1QK/xAoanJdePxeLA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.CustomProviders.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.CustomProviders.html",
-          "hash": "XUFGwThEii6t9VM4PEv5WQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.CustomerInsights.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.CustomerInsights.html",
-          "hash": "turjZfB0wfgXXTcYjnV25w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.DataBox.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.DataBox.html",
-          "hash": "7un2tBnBkfBXyFP9XGJwww=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.DataBoxEdge.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.DataBoxEdge.html",
-          "hash": "4fcyDhmflxArliC3URreAA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.DataFactory.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.DataFactory.html",
-          "hash": "XCjgEDkeu3KY1kNExAr8+Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.DataLake.Analytics.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.DataLake.Analytics.html",
-          "hash": "4EG9+L4t7A4sGeumxMn+FA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.DataLake.Store.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.DataLake.Store.html",
-          "hash": "K2qzVF5cwjNHtAvYfc9jSA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.DataMigration.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.DataMigration.html",
-          "hash": "vETK52tN43H9uHGF53606Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.DataShare.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.DataShare.html",
-          "hash": "ilskpNGVRI7EdiRQXRm8tA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.DeploymentManager.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.DeploymentManager.html",
-          "hash": "UrOxkfvszeTZmPj6xDXVpA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.DevSpaces.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.DevSpaces.html",
-          "hash": "2sNVHrYxPkj3SJeqjSe7jQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.DevTestLabs.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.DevTestLabs.html",
-          "hash": "kPqmP3HFBJNOFt6w2UqjIg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.DeviceProvisioningServices.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.DeviceProvisioningServices.html",
-          "hash": "aB6RTU75h8k41Nuw5MeLAQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.Dns.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.Dns.html",
-          "hash": "ECa4nZxrPv+nr+aSSibLDQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.EdgeGateway.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.EdgeGateway.html",
-          "hash": "Kt5iehU15XiD+rCwuQ9z1w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.EventGrid.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.EventGrid.html",
-          "hash": "tZCLk5nDR5R+MM9uMviUXA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.EventHub.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.EventHub.html",
-          "hash": "Zr2zG7bRzm+NweLd7dJ8Kw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.FrontDoor.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.FrontDoor.html",
-          "hash": "JfHCUKqdQqjl7fa0E6g5vA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.GuestConfiguration.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.GuestConfiguration.html",
-          "hash": "P/p1DT8yXziGadH+/FQ5Lw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.HDInsight.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.HDInsight.html",
-          "hash": "lyoqrOWAxUTKaeiyf1FOhg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.HealthcareApis.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.HealthcareApis.html",
-          "hash": "KeF/cDZl4iinE3yb+b5dEQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.HybridDataManager.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.HybridDataManager.html",
-          "hash": "1OQezTaxxRBlDw/RS7FiyA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.Insights.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.Insights.html",
-          "hash": "gSvpae1aaAZuQ18eR/waKg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.IotCentral.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.IotCentral.html",
-          "hash": "Ilqd/Q9bDBaYdkcnlj4eew=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.IotHub.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.IotHub.html",
-          "hash": "nGtZVlrvUd/0i+bn8ujQog=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.KeyVault.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.KeyVault.html",
-          "hash": "5m9heO0HcClE5pPT8uV9jQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.Kusto.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.Kusto.html",
-          "hash": "Ta/XpmreYIGPaLRatQoYNA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.LabServices.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.LabServices.html",
-          "hash": "3z0uXn420gNnv0//9EMBsg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.LocationBasedServices.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.LocationBasedServices.html",
-          "hash": "WwGNKj/kJ3ELW4JVcmLX7A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.Logic.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.Logic.html",
-          "hash": "rOZp6ylT+H0Q2pIYlD9rHg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.MachineLearning.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.MachineLearning.html",
-          "hash": "hJ73oAJw041C4EdQCnVhIw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.MachineLearningCompute.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.MachineLearningCompute.html",
-          "hash": "pnpQs4xm/d9njUFTp3wtGw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.Maintenance.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.Maintenance.html",
-          "hash": "zx0yNW7W20WICYEpFFpnNQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.ManagedNetwork.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.ManagedNetwork.html",
-          "hash": "1BvzNaCyC/XcvalfUWd3xw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.ManagedServiceIdentity.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.ManagedServiceIdentity.html",
-          "hash": "WT+vT/f9RDAVHzYlgP8rpg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.ManagedServices.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.ManagedServices.html",
-          "hash": "HmbLP5tPxHu0pcoTDcYWPg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.ManagementGroups.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.ManagementGroups.html",
-          "hash": "KV+2kKL7Iog4cp1FWCh+Ew=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.ManagementPartner.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.ManagementPartner.html",
-          "hash": "y2I/w3B945UkUiKNwnYpAw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.Maps.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.Maps.html",
-          "hash": "S39otAZBYNVfXnPnX3POJA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.MarketplaceOrdering.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.MarketplaceOrdering.html",
-          "hash": "Rsz809+zB88XbDUAXcwkiw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.Media.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.Media.html",
-          "hash": "B/uYs3TEJCtEuRch9uFyZg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.MixedReality.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.MixedReality.html",
-          "hash": "dopH3gIe6plW7oa46dF71g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.Monitor.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.Monitor.html",
-          "hash": "vsrx6jHZ9WrJKhJUI6Pdjg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.NetApp.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.NetApp.html",
-          "hash": "BQU/IMSst5XXOkO3Lq606A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.Network.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.Network.html",
-          "hash": "7eJZPPS5ksGBMk8uQClSYw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.NotificationHubs.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.NotificationHubs.html",
-          "hash": "ue8YuqF8aWxqqAVUqnD9rA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.OperationalInsights.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.OperationalInsights.html",
-          "hash": "jpb9OLk/w/yomBxeKoGVWw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.Peering.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.Peering.html",
-          "hash": "EcNXp71YISoZjNAKnx7Hpw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.PolicyInsights.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.PolicyInsights.html",
-          "hash": "Fhxe7Z4lWIWYRc8rFXk9Aw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.PostgreSQL.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.PostgreSQL.html",
-          "hash": "kQyTrOXHS7A04paYFhLluQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.PowerBIDedicated.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.PowerBIDedicated.html",
-          "hash": "V3+hue0o+lqxJ72frPW1Dg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.PrivateDns.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.PrivateDns.html",
-          "hash": "PcdQTKa0jeoOWfXynlSaeA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.RecoveryServices.Backup.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.RecoveryServices.Backup.html",
-          "hash": "3m/+lMC1MqY/4l0/0PSL9A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.RecoveryServices.SiteRecovery.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.RecoveryServices.SiteRecovery.html",
-          "hash": "fvoLI5QVrt5KsmRwYcPhcQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.RecoveryServices.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.RecoveryServices.html",
-          "hash": "tAbJMEa0G+R9BW9VZY5TNA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.RedisCache.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.RedisCache.html",
-          "hash": "JafAur1jdUo2K33FfTzV2Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.Relay.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.Relay.html",
-          "hash": "jIzv+VDSwwCSJywklEnBhw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.Reservations.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.Reservations.html",
-          "hash": "8bPeUH5It8LSXu880Es6bg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.Resource.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.Resource.html",
-          "hash": "6z09MxcF+3jgIK6UxM8VVA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.ResourceGraph.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.ResourceGraph.html",
-          "hash": "TcMLXlu8odWb0VsED79JOg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.Scheduler.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.Scheduler.html",
-          "hash": "hCiMpFIpXrFdgkP6S1cfeA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.Search.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.Search.html",
-          "hash": "4VXqAqtOZ7N/J1ufnsNcaw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.SecurityCenter.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.SecurityCenter.html",
-          "hash": "XlZU7xPY3nvJvSwn9g3HCg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.ServerManagement.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.ServerManagement.html",
-          "hash": "Q/G7IVh2InlUGeO1vIn99A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.ServiceBus.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.ServiceBus.html",
-          "hash": "sBbOj+5XhDs3aQxGOtdXkA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.ServiceFabric.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.ServiceFabric.html",
-          "hash": "lIapuqj3qG/GAWGmrHex9Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.SignalR.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.SignalR.html",
-          "hash": "P9K367apExZxSqz9Y3agjQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.SqlManagement.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.SqlManagement.html",
-          "hash": "DtyuHpMf+l2WFUFN3ZnTPQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.SqlVirtualMachine.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.SqlVirtualMachine.html",
-          "hash": "MBy8pA2VrymfhHYaQ56gsw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.StorSimple.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.StorSimple.html",
-          "hash": "S+dHi9Ti9vI+wCprWZm0ow=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.StorSimple8000Series.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.StorSimple8000Series.html",
-          "hash": "/V79kASCEqoM/KBfqKsA6g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.Storage.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.Storage.html",
-          "hash": "Sn6clEaopRdbNzDVH38wVg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.StorageSync.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.StorageSync.html",
-          "hash": "kAzTbpwEMktM6DNR42vXUQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.StreamAnalytics.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.StreamAnalytics.html",
-          "hash": "qyON/PWhu86PIGuwZHPGJQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.Subscription.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.Subscription.html",
-          "hash": "Mum9lrfR2f2HWNsIlVVQhg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.TrafficManager.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.TrafficManager.html",
-          "hash": "0ILSFeYnmxBSl2HM/aNp7g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Management.WebSites.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Management.WebSites.html",
-          "hash": "jkyKZ3xhbCFX9LJBO9cYxg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.OperationalInsights.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.OperationalInsights.html",
-          "hash": "rSNi7Ka4A9lq1F9AQi6QNg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Search.Common.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Search.Common.html",
-          "hash": "WlPz0fGBKPAz/KUsEgYNpQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Search.Data.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Search.Data.html",
-          "hash": "mz+JOxQd8L/E0Q2U7JTBcA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Search.Service.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Search.Service.html",
-          "hash": "plFWhjAe8YIE62JCcBzLLg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.Search.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.Search.html",
-          "hash": "h9MCz1yaHLH4CqwsnWblzg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Azure.ServiceBus.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Azure.ServiceBus.html",
-          "hash": "VH/hgGMsBpxnTPEplG3Kpw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.AzureStack.Management.AzureBridge.Admin.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.AzureStack.Management.AzureBridge.Admin.html",
-          "hash": "QEqHGS26qIHNLPh2AakSEw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.AzureStack.Management.Backup.Admin.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.AzureStack.Management.Backup.Admin.html",
-          "hash": "b607NiuVZoVepy/o9AyNFQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.AzureStack.Management.Commerce.Admin.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.AzureStack.Management.Commerce.Admin.html",
-          "hash": "4dlnuQDDG/NHj4qgu/wGIg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.AzureStack.Management.Compute.Admin.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.AzureStack.Management.Compute.Admin.html",
-          "hash": "MHfvi151xzg4fGQMyOnwBg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.AzureStack.Management.Fabric.Admin.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.AzureStack.Management.Fabric.Admin.html",
-          "hash": "qBitaS0SKpluDYD5FIujkw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.AzureStack.Management.Gallery.Admin.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.AzureStack.Management.Gallery.Admin.html",
-          "hash": "dka+TUcYNVmCTBGOL+Z1Cg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.AzureStack.Management.InfrastructureInsights.Admin.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.AzureStack.Management.InfrastructureInsights.Admin.html",
-          "hash": "OTXHyjVyeGEdizUuVdBPgQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.AzureStack.Management.KeyVault.Admin.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.AzureStack.Management.KeyVault.Admin.html",
-          "hash": "D385haovjg6CkMO4GHd3TQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.AzureStack.Management.Network.Admin.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.AzureStack.Management.Network.Admin.html",
-          "hash": "w0vlb6E+3SFafCU85BLv1w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.AzureStack.Management.Storage.Admin.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.AzureStack.Management.Storage.Admin.html",
-          "hash": "+ABkQqxHRvAROHuZTFwurg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.AzureStack.Management.Subscription.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.AzureStack.Management.Subscription.html",
-          "hash": "fB9nzAIa1FoWm9FFCTxvSQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.AzureStack.Management.Subscriptions.Admin.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.AzureStack.Management.Subscriptions.Admin.html",
-          "hash": "mmErw2BBc38VX7xyX3rwWg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.AzureStack.Management.Update.Admin.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.AzureStack.Management.Update.Admin.html",
-          "hash": "rxMH6bjy3/FyTmohe24sfQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Microsoft.Extensions.Azure.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Extensions.Azure.html",
-          "hash": "eA45jpMLH9jT3oKXf+sjwg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Personalizer.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Personalizer.html",
-          "hash": "x8bPxNJOQujCb57csFtmNQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Search.BingAutoSuggest.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Search.BingAutoSuggest.html",
-          "hash": "Z523IyFkH0wMO5tqFSI8/Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Search.BingCustomImageSearch.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Search.BingCustomImageSearch.html",
-          "hash": "cLSFEmpoB1D2z6KQB/R+nQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Search.BingCustomSearch.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Search.BingCustomSearch.html",
-          "hash": "COoxDIPoxVHutb3EZgfLoQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Search.BingEntitySearch.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Search.BingEntitySearch.html",
-          "hash": "v2QKbHLmDdjmy+wXSuXBNQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Search.BingImageSearch.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Search.BingImageSearch.html",
-          "hash": "gIR52ClpVQkRbOC9xdtsTw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Search.BingLocalSearch.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Search.BingLocalSearch.html",
-          "hash": "I3K9HCDos7YZAAdvs9nmdA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Search.BingNewsSearch.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Search.BingNewsSearch.html",
-          "hash": "k0HkzU0KR0I4Jh4oVtFI8g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Search.BingVideoSearch.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Search.BingVideoSearch.html",
-          "hash": "R6wrEAxHuASVwXmOt1An7Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Search.BingVisualSearch.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Search.BingVisualSearch.html",
-          "hash": "JtRm9SfMIlE1+tuMqT49Dg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Search.BingWebSearch.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Search.BingWebSearch.html",
-          "hash": "wO3+4G/xzCrYSxLgutbeGQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Vision.ComputerVision.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Vision.ComputerVision.html",
-          "hash": "UA+JKYsqUsrGw+uTwSjXrA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Vision.ContentModerator.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Vision.ContentModerator.html",
-          "hash": "gibXnr1b5fVvqTAeBsYJNw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Vision.CustomVision.Prediction.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Vision.CustomVision.Prediction.html",
-          "hash": "nK9LNuQhxkKQ5zpwYebgrg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Vision.CustomVision.Training.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Vision.CustomVision.Training.html",
-          "hash": "QXU7zGG+5TsK3dZrqdnW9g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/Vision.Face.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/Vision.Face.html",
-          "hash": "53955fBR7xebcyRoFKL4yw=="
+          "relative_path": "api/identity.html",
+          "hash": "7tT/9x4aCD8sBYD4MrKwTg=="
         }
       },
       "is_incremental": false,
@@ -2095,16 +595,672 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink",
-        "UidNotFound"
-      ],
+      "type": "Conceptual",
+      "source_relative_path": "api/insights.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/insights.html",
+          "hash": "SwzSVM2+VWQuyX4At42SMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/iotcentral.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/iotcentral.html",
+          "hash": "THK1lwiXmpAloeyN4EfbfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/iothub.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/iothub.html",
+          "hash": "+TsRukcDFZ9cAEQ/aE8eYg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/keyvault.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/keyvault.html",
+          "hash": "iYFwGJ5gxYPes3SIUp0hQg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/kusto.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/kusto.html",
+          "hash": "ss0Ad2hYEKgtKlcv9zpLZg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/labservices.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/labservices.html",
+          "hash": "SS2jPEQBxE9ZhqmX7Tob1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/locationbasedservices.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/locationbasedservices.html",
+          "hash": "wW7CXCm8dBOWnsOKc1mL4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/logic.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/logic.html",
+          "hash": "l+XAOzlEJLH9EBbwKFXZHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/machinelearning.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/machinelearning.html",
+          "hash": "ckVmZvx8CVjuaakOoygRkw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/machinelearningcompute.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/machinelearningcompute.html",
+          "hash": "bHkIJ8TSeukFyFKYJfj0Dw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/maintenance.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/maintenance.html",
+          "hash": "lxfFHEFGJMtPz4bDQTZQvQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/managednetwork.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/managednetwork.html",
+          "hash": "YzyC8x8TSbqmoYNVSxRitg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/managedserviceidentity.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/managedserviceidentity.html",
+          "hash": "WFtBT+HBUAobx3NLcCeqHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/managedservices.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/managedservices.html",
+          "hash": "baHBSnoYbY/de7588ptCfw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/managementgroups.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/managementgroups.html",
+          "hash": "OWD0uzqwPeygahcr3Sw7hA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/managementpartner.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/managementpartner.html",
+          "hash": "6LQihoJliJECNY6J50K6uA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/maps.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/maps.html",
+          "hash": "VVGNem1DvE00iO42U0ppQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/marketplaceordering.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/marketplaceordering.html",
+          "hash": "U8k82GWp9bvahXaYf8G+Gg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/mediaservices.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/mediaservices.html",
+          "hash": "OxBowFJYktArcgWXM+tpng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/mixedreality.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/mixedreality.html",
+          "hash": "FUeCLLJpVMv4wTRyxmtY5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/monitor.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/monitor.html",
+          "hash": "V5SK8SuXdyQFFCjLj+E0nA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/netapp.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/netapp.html",
+          "hash": "pQ6lRmx+OrSznXqTzicWHQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/network.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/network.html",
+          "hash": "2pk8r5VH7vXo0rBtMqT0Bw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/notificationhubs.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/notificationhubs.html",
+          "hash": "nVnNldpTekYD518cLio0gA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/operationalinsights.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/operationalinsights.html",
+          "hash": "aKeGTaGYsmOSw0pjvdHakw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/peering.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/peering.html",
+          "hash": "ED5CiKFTH5PaZVcb9mYDTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/policyinsights.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/policyinsights.html",
+          "hash": "pB53BQBK52+N0O6Wx8kEfw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/postgresql.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/postgresql.html",
+          "hash": "WG/b+9BfbRWMBe9i/cdlEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/powerbidedicated.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/powerbidedicated.html",
+          "hash": "T1eqMHRSNTnvEY+Sfd8vBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/privatedns.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/privatedns.html",
+          "hash": "9FGJFpc8e+EjOIWf50HDtQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/recoveryservices-backup.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/recoveryservices-backup.html",
+          "hash": "7EI4Mjytfa/uB/6C4RVW0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/recoveryservices-siterecovery.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/recoveryservices-siterecovery.html",
+          "hash": "L92SUjK7hIwlefSyi7ITAA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/recoveryservices.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/recoveryservices.html",
+          "hash": "OVCSEuH2OIO8qOrpvBhdtQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/redis.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/redis.html",
+          "hash": "eZHhQojfoFRcg5Jko0IHzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/relay.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/relay.html",
+          "hash": "IdVdH94oJ3q9UmqBbabvTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/reservations.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/reservations.html",
+          "hash": "pk9gzgEIZfLv2md74ZqrmQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/resourcegraph.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/resourcegraph.html",
+          "hash": "US7Xit5lkUdoOS3l7DycwQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/resources.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/resources.html",
+          "hash": "INrDVSnA9q7qIX1Kz1IbgQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/scheduler.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/scheduler.html",
+          "hash": "roVu1fIRPsBQwXXj1M7XoQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/search.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/search.html",
+          "hash": "imadC7d4yYJyUvyUhF+5Og=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/securitycenter.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/securitycenter.html",
+          "hash": "sMzMj7jG7dHOiHN3LVJW0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/servermanagement.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/servermanagement.html",
+          "hash": "2omiv2KFJ7fjbFUKvs9pWg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/servicebus.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/servicebus.html",
+          "hash": "SPEvr0/h0ga6XToG8WV3Bg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/servicefabric.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/servicefabric.html",
+          "hash": "p2TD65qgX4gcSD2yHTdiDA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/signalr.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/signalr.html",
+          "hash": "WHRH1P3R1Q9A22D0IrpF4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/sqlmanagement.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/sqlmanagement.html",
+          "hash": "1mWi/QS6Xl+UDKXI9fj0Pg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/sqlvirtualmachine.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/sqlvirtualmachine.html",
+          "hash": "8b4fj1+nnN7n6jl1CyV6zA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/storage.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/storage.html",
+          "hash": "LGz0zfWDWPcG3RUGl/mSbg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/storagesync.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/storagesync.html",
+          "hash": "KbJrbAp6HmcB7tTt4Ya4Ww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/storsimple.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/storsimple.html",
+          "hash": "F+N3TvBbGuEAusT32Ay7Ew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/storsimple8000series.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/storsimple8000series.html",
+          "hash": "aWQK6qOM4axpzf5nsOLqAw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/streamanalytics.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/streamanalytics.html",
+          "hash": "QxQSV7SdI2cPACP9Kon+hw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/subscription.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/subscription.html",
+          "hash": "SF2AbFfvNpYrb7aRy6Mueg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "SauEs4WqDISNGbhSiRDE3A=="
+          "hash": "8idwtZLm04RN3n8dhnHNZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/trafficmanager.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/trafficmanager.html",
+          "hash": "mRv6hXezcmjQhYUCZo9o4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/websites.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/websites.html",
+          "hash": "K1wmDNhudoWlzqQDwbCEEA=="
         }
       },
       "is_incremental": false,
@@ -2156,7 +1312,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 175,
+          "total_file_count": 105,
           "skipped_file_count": 0
         }
       }

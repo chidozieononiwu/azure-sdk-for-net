@@ -1,0 +1,19 @@
+jobs:
+  - job: Build
+    variables:
+      - template: templates/variables/globals.yml
+    pool:
+      vmImage: windows-2019
+    steps:
+      - checkout: self
+        path: SourceDirWith49CharsLengthTestForLongPaths
+      - task: DotNetCoreInstaller@2
+        displayName: "Use .NET Core sdk $(DotNetCoreSDKVersion)"
+        inputs:
+          version: "$(DotNetCoreSDKVersion)"
+      - script: |
+          dotnet build eng/service.proj /p:IncludeTests=false /p:IncludeSamples=false /p:OutputPath=$(Build.BinariesDirectory)/buildoutputs /p:ServiceDirectory=core
+        displayName: "Build Package"
+      - pwsh: ls
+        workingDirectory: $(Build.BinariesDirectory)/buildoutputs
+        displayName: View Content of the Directory

@@ -3,7 +3,9 @@ var containers = $(".container");
 containers.removeClass("container");
 containers.addClass("container-fluid");
 
-var SELECTED_LANGUAGE = 'dotnet'
+WINDOW_CONTENTS = window.location.href.split('/')
+SELECTED_LANGUAGE = 'dotnet'
+BLOB_URI_PREFIX = 'https://azuresdkdocs.blob.core.windows.net/$web?restype=container&comp=list&prefix=dotnet/'
 
 // Navbar Hamburger
 $(function () {
@@ -77,11 +79,42 @@ function httpGetAsync(targetUrl, callback) {
     xmlHttp.send(null);
 }
 
-function populateIndexList(selector, packageName) {
-    url = "https://azuresdkdocsdev.blob.core.windows.net/$web?restype=container&comp=list&prefix=" + SELECTED_LANGUAGE + "/" + packageName + "/versions/"
+function populateOptions(selector, packageName) {
+    var versionRequestUrl = BLOB_URI_PREFIX + packageName + "/versions/"
 
-    console.log(url)
-    console.log(selector)
+    httpGetAsync(versionRequestUrl, function (responseText) {
+        var versionselector = document.createElement("select")
+        versionselector.className = 'navbar-version-select'
+        if (responseText) {
+            parser = new DOMParser();
+            xmlDoc = parser.parseFromString(responseText, "text/xml");
+
+            nameElements = Array.from(xmlDoc.getElementsByTagName('Name'))
+            options = []
+
+            for (var i in nameElements) {
+                options.push(nameElements[i].textContent.split('/')[3])
+            }
+
+            for (var i in options) {
+                $(versionselector).append('<option value="' + options[i] + '">' + options[i] + '</option>')
+            }
+        }
+        $(selector).append(versionselector)
+
+        $(selector).change(function () {
+            targetVersion = $(this).val()
+            url = WINDOW_CONTENTS.slice()
+            url[6] = targetVersion
+            window.location.href = url.join('/')
+        });
+
+    })
+}
+
+
+function populateIndexList(selector, packageName) {
+    url = BLOB_URI_PREFIX + packageName + "/versions/"
 
     httpGetAsync(url, function (responseText) {
 
@@ -104,19 +137,27 @@ function populateIndexList(selector, packageName) {
         else {
             $(publishedversions).append('<li>No discovered versions present in blob storage.</li>')
         }
-
         $(selector).after(publishedversions)
     })
 }
 
 function getPackageUrl(language, package, version) {
-    return "https://azuresdkdocsdev.blob.core.windows.net/$web/" + language + "/" + package + "/" + version + "/api/index.html"
+    return "https://azuresdkdocs.blob.core.windows.net/$web/" + language + "/" + package + "/" + version + "/api/index.html"
 }
 
-// Populate Index
+// Populate Versions
 $(function () {
-    $('h4').each(function () {
-        var pkgName = $(this).text()
-        populateIndexList($(this), pkgName)
-    });
+    if (WINDOW_CONTENTS.length < 7 && WINDOW_CONTENTS[WINDOW_CONTENTS.length - 1] != 'index.html') {
+        console.log("Run PopulateList")
+
+        $('h4').each(function () {
+            var pkgName = $(this).text()
+            populateIndexList($(this), pkgName)
+        })
+    }
+
+    if (WINDOW_CONTENTS.length > 7) {
+        var pkgName = WINDOW_CONTENTS[5]
+        populateOptions($('#navbar'), pkgName)
+    }
 })

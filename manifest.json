@@ -77,6 +77,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "api/appplatform.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/appplatform.html",
+          "hash": "Nsci09PqS3oeabxV5Y4kYQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "api/attestation.md",
       "output": {
         ".html": {
@@ -201,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/cognitiveservices.html",
-          "hash": "7sWmbyiEKyJzXXLyfSFjxA=="
+          "hash": "xAg4tBofkRx1BPLFPAB0hA=="
         }
       },
       "is_incremental": false,
@@ -489,7 +501,7 @@
       "output": {
         ".html": {
           "relative_path": "api/eventhub.html",
-          "hash": "YGj7M92e8R2jd+NEJibw0g=="
+          "hash": "dCaalm/RuG6ItzEUEOJ3+Q=="
         }
       },
       "is_incremental": false,
@@ -550,6 +562,18 @@
         ".html": {
           "relative_path": "api/healthcareapis.html",
           "hash": "HrlA3cTXu2o0aSzNHTVG0g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/hybridcompute.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/hybridcompute.html",
+          "hash": "1t2+tQr75SOhoKfpd9WOzg=="
         }
       },
       "is_incremental": false,
@@ -1164,7 +1188,7 @@
       "output": {
         ".html": {
           "relative_path": "api/storage.html",
-          "hash": "5a4HzhPsTTZfECGzdVlhpg=="
+          "hash": "D8Ih7JLNpW1FOhzCVvdgVg=="
         }
       },
       "is_incremental": false,
@@ -1236,7 +1260,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "8idwtZLm04RN3n8dhnHNZQ=="
+          "hash": "TpiGYnwMVNWCHHz6whx38g=="
         }
       },
       "is_incremental": false,
@@ -1312,7 +1336,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 105,
+          "total_file_count": 107,
           "skipped_file_count": 0
         }
       }

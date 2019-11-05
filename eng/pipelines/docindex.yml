@@ -16,34 +16,15 @@ jobs:
       - pwsh: |
           Invoke-WebRequest -Uri "https://github.com/dotnet/docfx/releases/download/v2.43.2/docfx.zip" `
           -OutFile "docfx.zip" | Wait-Process; Expand-Archive -Path "docfx.zip" -DestinationPath "./docfx/"
-        workingDirectory: $(Build.BinariesDirectory)
-        displayName: Download and Extract DocFX
-      - task: CmdLine@2
-        displayName: Provision DocFX Directory
-        inputs:
-          script: $(Build.BinariesDirectory)/docfx/docfx.exe init -q
-          workingDirectory: $(Build.SourcesDirectory)
-          failOnStderr: true
-      - pwsh: New-Item -Path . -Name "templates" -ItemType "directory"
-        displayName: Create Template Directory
-        workingDirectory: $(Build.SourcesDirectory)/docfx_project/
-      - task: CopyFiles@2
-        displayName: Copy Template to templates folder
-        inputs:
-          sourceFolder: $(Build.SourcesDirectory)/eng/docgeneration/templates
-          content: '**\*'
-          targetFolder: $(Build.SourcesDirectory)/docfx_project/templates
-          overWrite: true
-      - pwsh: ls
-        workingDirectory: $(Build.SourcesDirectory)/docfx_project/
-      - pwsh: ls
-        workingDirectory: $(Build.SourcesDirectory)/docfx_project/templates
-      - pwsh: |
-          Copy-Item "$(Build.SourcesDirectory)/eng/docgeneration/docfx.json" -Destination "$(Build.SourcesDirectory)/docfx_project/" -Force
-        displayName: Copy over docfx.json
-      - pwsh: |
+
+          ./docfx/docfx.exe init -q -o 'docfx_project'
+          New-Item -Path ./docfx_project -Name "templates" -ItemType "directory"
+          Copy-Item "$(Build.SourcesDirectory)/eng/docgeneration/templates/*" -Destination "docfx_project/templates" -Force
+          Copy-Item "$(Build.SourcesDirectory)/eng/docgeneration/docfx.json" -Destination "docfx_project/" -Force
+
+          # Comb through RepoRoot/sdk and pick out Service names and Package Names
           $ServiceList = Get-ChildItem "$(Build.SourcesDirectory)/sdk" -Directory -Exclude eng, mgmtcommon, template | Sort-Object
-          $YmlPath = "$(Build.SourcesDirectory)/docfx_project/api"
+          $YmlPath = "docfx_project/api"
           New-Item -Path $YmlPath -Name "toc.yml" -Force
           foreach ($Dir in $ServiceList)
           {
@@ -82,21 +63,17 @@ jobs:
                   Add-Content -Path "$($YmlPath)/$($Dir.Name).md" -Value "#### $($ProjectName.BaseName)"
               }
           }
-          New-Item -Path "$(Build.SourcesDirectory)/docfx_project" -Name "toc.yml" -Force
-          Add-Content -Path "$(Build.SourcesDirectory)/docfx_project/toc.yml" -Value "- name: Azure SDK for NET APIs`r`n  href: api/`r`n  homepage: api/index.md"
-          Copy-Item "$(Build.SourcesDirectory)/README.md" -Destination "$(Build.SourcesDirectory)/docfx_project/api/index.md" -Force
-        displayName: Create main index and navigation toc.yml, copy over readme.
-      - pwsh: ls
-        workingDirectory: $(Build.SourcesDirectory)/docfx_project/api
-      - task: CmdLine@2
-        displayName: Build Doc Content
-        inputs:
-          script: $(Build.BinariesDirectory)/docfx/docfx.exe build
-          workingDirectory: $(Build.SourcesDirectory)/docfx_project/
-          failOnStderr: true
-      - pwsh: |
-          Copy-Item "$(Build.SourcesDirectory)/eng/docgeneration/assets/*" -Destination "$(Build.SourcesDirectory)/docfx_project/_site/" -Force
-        displayName: Replace site assets
+          New-Item -Path "docfx_project" -Name "toc.yml" -Force
+          Add-Content -Path "docfx_project/toc.yml" -Value "- name: Azure SDK for NET APIs`r`n  href: api/`r`n  homepage: api/index.md"
+          Copy-Item "$(Build.SourcesDirectory)/README.md" -Destination "docfx_project/api/index.md" -Force
+          Copy-Item "$(Build.SourcesDirectory)/CONTRIBUTING.md" -Destination "docfx_project/api/CONTRIBUTING.md" -Force
+
+          # Build Doc Site
+          ./docfx/docfx.exe build 'docfx_project/docfx.json'
+
+          Copy-Item "$(Build.SourcesDirectory)/eng/docgeneration/assets/*" -Destination "docfx_project/_site/" -Force
+        workingDirectory: $(Build.SourcesDirectory)
+        displayName: Build Doc Index Site
       - task: UsePythonVersion@0
         displayName: 'Use Python 3.6'
         inputs:

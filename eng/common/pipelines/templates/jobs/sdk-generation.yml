@@ -1,25 +1,37 @@
 parameters:
   - name: SpecRepoBranch
     type: string
+    default: 'main'
   - name: SpecRepoCommit
     type: string
-  - name: SdkRepoUrl
-    type: string
-  - name: SdkRepoFullName
+    default: 'HEAD'
+  - name: SdkRepoOwner
     type: string
   - name: SdkRepoName
     type: string
+
   - name: SdkRepoNameForSpecGen
     type: string
   - name: SdkRepoBranch
     type: string
+    default: 'main'
+  - name: ConfigType
+    type: string
+    values:
+      - 'TypeSpec'
+      - 'AutoRest'
   - name: TspConfigPath
     type: string
-  - name: PushGeneratedCodeToRemote
+  - name: ReadmePath
+    type: string
+  - name: ApiVersion
+    type: string
+    default: 'not-specified'
+  - name: CodePushRequired
     type: boolean
-  - name: CreatePullRequest
+  - name: SdkPrRequired
     type: boolean
-  - name: CreateAPIView
+  - name: ApiViewRequired
     type: boolean
 
 jobs:
@@ -56,7 +68,7 @@ jobs:
         - Name: $(SpecRepoFullName)
           Commitish: ${{ parameters.SpecRepoBranch }}
           WorkingDirectory: $(SpecRepoDirectory)
-        - Name: ${{ parameters.SdkRepoFullName }}
+        - Name: ${{ parameters.SdkRepoOwner }}/${{ parameters.SdkRepoName }}
           Commitish: ${{ parameters.SdkRepoBranch }}
           WorkingDirectory: $(SdkRepoDirectory)
 
@@ -82,28 +94,67 @@ jobs:
       displayName: 'Install spec-gen-sdk'
 
     - script: |
+        optional_params=""
+        sdk_gen_info="sdk generation from Config : "
+
+        if [ "${{ parameters.ConfigType }}" = "TypeSpec" ]; then
+          optional_params="$optional_params --tsp-config-relative-path ${{ parameters.TspConfigPath }}"
+          sdk_gen_info="$sdk_gen_info '${{ parameters.TspConfigPath }}',"
+        else
+          optional_params="$optional_params --readme-relative-path ${{ parameters.ReadmePath }}"
+          sdk_gen_info="$sdk_gen_info '${{ parameters.ReadmePath }}',"
+        fi
+        if [ "${{ parameters.ApiVersion }}" != "not-specified" ]; then
+          optional_params="$optional_params --api-version ${{ parameters.ApiVersion }}"
+          sdk_gen_info="$sdk_gen_info API Version: '${{ parameters.ApiVersion }}',"
+        fi
+
+        sdk_gen_info="$sdk_gen_info and CommitSHA: '$(SpecRepoCommit)'"
+        echo "##vso[task.setvariable variable=GeneratedSDKInformation]$sdk_gen_info"
+        echo "Generated SDK Information : $sdk_gen_info"
+
         spec-gen-sdk \
           --scp "$(SpecRepoDirectory)" \
           --sdp "$(SdkRepoDirectory)" \
           --wf "$(System.DefaultWorkingDirectory)" \
-          --tsp-config-relative-path "${{ parameters.TspConfigPath }}" \
           -l "${{ parameters.SdkRepoNameForSpecGen }}" \
-          -c "$(SpecRepoCommit)"
+          -c "$(SpecRepoCommit)" \
+          $optional_params
       displayName: 'Generate SDK'
 
-    - script: |
-        echo "This step runs only if PushGeneratedCodeToRemote is true"
-      displayName: 'Conditional Step'
-      condition: and(succeeded(), eq('${{ parameters.PushGeneratedCodeToRemote }}', true))
-    
-    - script: |
-        echo "This step runs only if CreatePullRequest is true"
-      displayName: 'Conditional Step'
-      condition: and(succeeded(), eq('${{ parameters.CreatePullRequest }}', true))
+    - ${{ if eq(parameters.CodePushRequired, true) }}:
+      - template: /eng/common/pipelines/templates/steps/git-push-changes.yml
+        parameters:
+          BaseRepoBranch: sdk-generation-from-$(Build.DefinitionName)_$(Build.BuildId)
+          BaseRepoOwner: azure-sdk
+          CommitMsg: $(GeneratedSDKInformation)
+          TargetRepoOwner: ${{ parameters.SdkRepoOwner }}
+          TargetRepoName: ${{ parameters.SdkRepoName }}
+          PushArgs: "--force"
+          WorkingDirectory: $(SdkRepoDirectory)
+          ScriptDirectory: $(SdkRepoDirectory)/eng/common/scripts
+
+    - task: PowerShell@2
+      displayName: Create pull request
+      condition: and(succeeded(), eq('${{ parameters.SdkPrRequired }}', true), eq(variables['HasChanges'], 'true'))
+      inputs:
+        pwsh: true
+        workingDirectory: $(SdkRepoDirectory)
+        filePath: $(SdkRepoDirectory)/eng/common/scripts/Submit-PullRequest.ps1
+        arguments: >
+          -RepoOwner "${{ parameters.SdkRepoOwner }}"
+          -RepoName "${{ parameters.SdkRepoName }}"
+          -BaseBranch "main"
+          -PROwner "azure-sdk"
+          -PRBranch "sdk-generation-from-$(Build.DefinitionName)_$(Build.BuildId)"
+          -AuthToken "$(azuresdk-github-pat)"
+          -PRTitle "sdk-generation-from-$(Build.DefinitionName)_$(Build.BuildId)"
+          -PRBody "$(GeneratedSDKInformation)"
+          -OpenAsDraft $true
 
     - script: |
-        echo "This step runs only if CreateAPIView is true"
+        echo "This step runs only if ApiViewRequired is true"
       displayName: 'Conditional Step'
-      condition: and(succeeded(), eq('${{ parameters.CreateAPIView }}', true))
+      condition: and(succeeded(), eq('${{ parameters.ApiViewRequired }}', true))
 
   

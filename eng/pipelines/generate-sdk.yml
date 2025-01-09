@@ -1,4 +1,10 @@
 parameters:
+  - name: SpecRepoOwner
+    type: string
+    default: 'Azure'
+  - name: SpecRepoName
+    type: string
+    default: 'azure-rest-api-specs'
   - name: SpecRepoBranch
     type: string
     default: 'main'
@@ -35,10 +41,6 @@ parameters:
     type: boolean
     default: false
     displayName: 'Create Pull Request for SDK Changes'
-  - name: ApiViewRequired
-    type: boolean
-    default: false
-    displayName: 'Create APIView'
 
 trigger: none
 pr: none
@@ -46,6 +48,8 @@ pr: none
 extends:
   template: /eng/common/pipelines/templates/jobs/sdk-generation.yml
   parameters:
+    SpecRepoOwner: ${{ parameters.SpecRepoOwner }}
+    SpecRepoName: ${{ parameters.SpecRepoName }}
     SpecRepoBranch: ${{ parameters.SpecRepoBranch }}
     SpecRepoCommit: ${{ parameters.SpecRepoCommit }}
     SdkRepoOwner: 'Azure'
@@ -58,4 +62,3 @@ extends:
     ApiVersion: ${{ parameters.ApiVersion }}
     CodePushRequired: ${{ parameters.CodePushRequired }}
     SdkPrRequired: ${{ parameters.SdkPrRequired }}
-    ApiViewRequired: ${{ parameters.ApiViewRequired }}

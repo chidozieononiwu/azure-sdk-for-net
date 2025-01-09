@@ -1,10 +1,7 @@
 parameters:
-  - name: SpecRepoOwner
+  - name: SpecRepoUrl
     type: string
-    default: 'Azure'
-  - name: SpecRepoName
-    type: string
-    default: 'azure-rest-api-specs'
+    default: 'https://github.com/Azure/azure-rest-api-specs'
   - name: SpecRepoBranch
     type: string
     default: 'main'
@@ -27,7 +24,7 @@ parameters:
     displayName: 'Path to TypeSpec Configuration file'
   - name: ReadmePath
     type: string
-    default: 'specification/contosowidgetmanager/resource-manager/readme.md'
+    default: 'specification/contosowidgetmanager/data-plane/readme.md'
     displayName: 'Path to AutoRest Configuration file (for OpenAPI)'
   - name: ApiVersion
     type: string
@@ -48,13 +45,10 @@ pr: none
 extends:
   template: /eng/common/pipelines/templates/jobs/sdk-generation.yml
   parameters:
-    SpecRepoOwner: ${{ parameters.SpecRepoOwner }}
-    SpecRepoName: ${{ parameters.SpecRepoName }}
+    SpecRepoUrl: ${{ parameters.SpecRepoUrl }}
     SpecRepoBranch: ${{ parameters.SpecRepoBranch }}
     SpecRepoCommit: ${{ parameters.SpecRepoCommit }}
-    SdkRepoOwner: 'Azure'
-    SdkRepoName: 'azure-sdk-for-net'
-    SdkRepoNameForSpecGen: 'azure-sdk-for-net-track2'
+    SdkRepoUrl: 'https://github.com/Azure/azure-sdk-for-net'
     SdkRepoBranch: ${{ parameters.SdkRepoBranch }}
     ConfigType: ${{ parameters.ConfigType }}
     TspConfigPath: ${{ parameters.TspConfigPath }}

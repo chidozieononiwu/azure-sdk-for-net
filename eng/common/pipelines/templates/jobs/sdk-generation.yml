@@ -1,40 +1,21 @@
 parameters:
-  - name: SpecRepoOwner
+  - name: SpecRepoUrl
     type: string
-    default: 'Azure'
-  - name: SpecRepoName
-    type: string
-    default: 'azure-rest-api-specs'
   - name: SpecRepoBranch
     type: string
-    default: 'main'
   - name: SpecRepoCommit
-    type: string
-    default: 'HEAD'
-  - name: SdkRepoOwner
-    type: string
-  - name: SdkRepoName
-    type: string
-  - name: SdkRepoNameForSpecGen
     type: string
   - name: SdkRepoBranch
     type: string
-    default: 'main'
   - name: ConfigType
     type: string
-    values:
-      - 'TypeSpec'
-      - 'AutoRest'
   - name: TspConfigPath
     type: string
   - name: ReadmePath
     type: string
   - name: ApiVersion
     type: string
-    default: 'not-specified'
-  - name: CodePushRequired
-    type: boolean
-  - name: SdkPrRequired
+  - name: SkipPullRequestCreation
     type: boolean
 
 jobs:
@@ -42,14 +23,12 @@ jobs:
   displayName: 'SDK Generation'
   variables:
     - template: /eng/pipelines/templates/variables/image.yml
-    - name: SpecRepoDirectory
-      value: $(System.DefaultWorkingDirectory)/${{ parameters.SpecRepoName }}
-    - name: SdkRepoDirectory
-      value: $(System.DefaultWorkingDirectory)/${{ parameters.SdkRepoName }}
     - name: NodeVersion
       value: '22.13.x'
     - name: PythonVersion
       value: '3.13'
+    - name: SpecGenSdkVersion
+      value: 'latest'
     - name: SdkArtifactName
       value: SDK_Artifact
   pool:
@@ -58,6 +37,51 @@ jobs:
 
   steps:
     - checkout: none
+
+    - pwsh: |
+        $urlPattern = '^https://github\.com/(?<organization>[^/]+)/(?<repository>[^/]+)'
+        if ('${{ parameters.SpecRepoUrl }}' -match $urlPattern) {
+          $specRepoOwner = $Matches['organization']
+          Write-Host "##vso[task.setvariable variable=SpecRepoOwner]$specRepoOwner"
+          Write-Host "SpecRepoOwner variable set to: $specRepoOwner"
+
+          $specRepoName = $Matches['repository']
+          Write-Host "##vso[task.setvariable variable=SpecRepoName]$specRepoName"
+          Write-Host "SpecRepoName variable set to: $specRepoName"
+
+          $specRepoDirectory = "$(System.DefaultWorkingDirectory)/$specRepoName"
+          Write-Host "##vso[task.setvariable variable=SpecRepoDirectory]$specRepoDirectory"
+          Write-Host "SpecRepoDirectory variable set to: $specRepoDirectory"
+        }
+
+        if ('$(SdkRepoUrl)' -match $urlPattern) {
+          if ([string]::IsNullOrEmpty($(SdkRepoOwner))) {
+            $sdkRepoOwner = $Matches['organization']
+            Write-Host "##vso[task.setvariable variable=SdkRepoOwner]$sdkRepoOwner"
+            Write-Host "SdkRepoOwner variable set to: $sdkRepoOwner"
+          }
+
+          $sdkRepoName = $Matches['repository']
+          Write-Host "##vso[task.setvariable variable=SdkRepoName]$sdkRepoName"
+          Write-Host "SdkRepoName variable set to: $sdkRepoName"
+
+          $sdkRepoDirectory = "$(System.DefaultWorkingDirectory)/$sdkRepoName"
+          Write-Host "##vso[task.setvariable variable=SdkRepoDirectory]$sdkRepoDirectory"
+          Write-Host "SdkRepoDirectory variable set to: $sdkRepoDirectory"
+        }
+
+        if ([string]::IsNullOrEmpty($SpecRepoOwner) -or [string]::IsNullOrEmpty($SpecRepoName) -or [string]::IsNullOrEmpty($SdkRepoOwner) -or [string]::IsNullOrEmpty($SdkRepoName)) {
+          Write-Host "One or more required variables are null or empty. Ensure that SpecRepourl and SdkRepoUrl are set to valid GitHub repository URLs."
+          Exit 1
+        }
+
+        $sdkRepoNameForSpecGen = $sdkRepoName
+        if ($sdkRepoName.EndsWith('-for-net')) {
+          $sdkRepoNameForSpecGen = $sdkRepoName + "-track2"
+        }
+        Write-Host "##vso[task.setvariable variable=SdkRepoNameForSpecGen]$sdkRepoNameForSpecGen"
+        Write-Host "SdkRepoNameForSpecGen variable set to: $sdkRepoNameForSpecGen"
+      displayName: "Create Run Time Variables"
 
     - template: /eng/common/pipelines/templates/steps/sparse-checkout.yml
       parameters:
@@ -68,12 +92,13 @@ jobs:
         - '!sdk/**/SessionRecords/*'
         - '!sdk/**/session-records/*'
         Repositories:
-        - Name: ${{ parameters.SpecRepoOwner }}/${{ parameters.SpecRepoName }}
-          Commitish: ${{ parameters.SpecRepoBranch }}
+        - Name: $(SpecRepoOwner)/$(SpecRepoName)
+          Commitish: ${{ coalesce(parameters.SpecRepoCommit, parameters.SpecRepoBranch) }}
           WorkingDirectory: $(SpecRepoDirectory)
-        - Name: ${{ parameters.SdkRepoOwner }}/${{ parameters.SdkRepoName }}
+        - Name: $(SdkRepoOwner)/$(SdkRepoName)
           Commitish: ${{ parameters.SdkRepoBranch }}
           WorkingDirectory: $(SdkRepoDirectory)
+        SkipCheckoutNone: true
 
     - script: |
         if [ "${{ parameters.SpecRepoCommit }}" = "HEAD" ]; then
@@ -97,7 +122,7 @@ jobs:
         versionSpec: $(PythonVersion)
 
     - script: |
-        npm install -g @azure-tools/spec-gen-sdk
+        npm install -g @azure-tools/spec-gen-sdk@$(SpecGenSdkVersion)
       displayName: 'Install spec-gen-sdk'
 
     - script: |
@@ -116,7 +141,7 @@ jobs:
           sdk_gen_info="$sdk_gen_info API Version: '${{ parameters.ApiVersion }}',"
         fi
 
-        sdk_gen_info="$sdk_gen_info and CommitSHA: '$(SpecRepoCommit)'"
+        sdk_gen_info="$sdk_gen_info and CommitSHA: '$(SpecRepoCommit)', in SpecRepo: '${{ parameters.SpecRepoUrl }}'"
         echo "##vso[task.setvariable variable=GeneratedSDKInformation]$sdk_gen_info"
         echo "Generated SDK Information : $sdk_gen_info"
 
@@ -124,47 +149,44 @@ jobs:
           --scp "$(SpecRepoDirectory)" \
           --sdp "$(SdkRepoDirectory)" \
           --wf "$(System.DefaultWorkingDirectory)" \
-          -l "${{ parameters.SdkRepoNameForSpecGen }}" \
+          -l "$(SdkRepoNameForSpecGen)" \
           -c "$(SpecRepoCommit)" \
           -t $true \
           $optional_params
       displayName: 'Generate SDK'
 
     - task: PublishPipelineArtifact@1
-      displayName: Publish SDK ${sdkLanguage} Artifact to Pipeline Artifacts
+      displayName: Publish SDK Artifact to Pipeline Artifacts
       inputs:
         artifactName: $(sdkArtifactName)
         targetPath: "$(System.DefaultWorkingDirectory)/generatedSdkArtifacts"
 
-
-    - ${{ if eq(parameters.CodePushRequired, true) }}:
+    - ${{ if eq(parameters.SkipPullRequestCreation, true) }}: 
       - template: /eng/common/pipelines/templates/steps/git-push-changes.yml
         parameters:
-          BaseRepoBranch: sdk-generation-from-$(Build.DefinitionName)_$(Build.BuildId)
+          BaseRepoBranch: $(PrBranch)-$(Build.BuildId)
           BaseRepoOwner: azure-sdk
           CommitMsg: $(GeneratedSDKInformation)
-          TargetRepoOwner: ${{ parameters.SdkRepoOwner }}
-          TargetRepoName: ${{ parameters.SdkRepoName }}
+          TargetRepoOwner: $(SdkRepoOwner)
+          TargetRepoName: $(SdkRepoName)
           PushArgs: "--force"
           WorkingDirectory: $(SdkRepoDirectory)
           ScriptDirectory: $(SdkRepoDirectory)/eng/common/scripts
 
-    - task: PowerShell@2
-      displayName: Create pull request
-      condition: and(succeeded(), eq('${{ parameters.SdkPrRequired }}', true), eq(variables['HasChanges'], 'true'))
-      inputs:
-        pwsh: true
-        workingDirectory: $(SdkRepoDirectory)
-        filePath: $(SdkRepoDirectory)/eng/common/scripts/Submit-PullRequest.ps1
-        arguments: >
-          -RepoOwner "${{ parameters.SdkRepoOwner }}"
-          -RepoName "${{ parameters.SdkRepoName }}"
-          -BaseBranch "main"
-          -PROwner "azure-sdk"
-          -PRBranch "sdk-generation-from-$(Build.DefinitionName)_$(Build.BuildId)"
-          -AuthToken "$(azuresdk-github-pat)"
-          -PRTitle "sdk-generation-from-$(Build.DefinitionName)_$(Build.BuildId)"
-          -PRBody "$(GeneratedSDKInformation)"
-          -OpenAsDraft $true
-
-  
+      - task: PowerShell@2
+        displayName: Create pull request
+        condition: and(succeeded(), eq('${{ parameters.SkipPullRequestCreation }}', true), eq(variables['HasChanges'], 'true'))
+        inputs:
+          pwsh: true
+          workingDirectory: $(SdkRepoDirectory)
+          filePath: $(SdkRepoDirectory)/eng/common/scripts/Submit-PullRequest.ps1
+          arguments: >
+            -RepoOwner "$(SdkRepoOwner)"
+            -RepoName "$(SdkRepoName)"
+            -BaseBranch "main"
+            -PROwner "azure-sdk"
+            -PRBranch "$(PrBranch)-$(Build.BuildId)"
+            -AuthToken "$(azuresdk-github-pat)"
+            -PRTitle "$(PrTitle)-generated-from-$(Build.DefinitionName)-$(Build.BuildId)"
+            -PRBody "$(GeneratedSDKInformation)"
+            -OpenAsDraft $true

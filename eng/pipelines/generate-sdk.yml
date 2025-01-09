@@ -1,4 +1,10 @@
 parameters:
+  - name: SpecRepoOwner
+    type: string
+    default: 'Azure'
+  - name: SpecRepoName
+    type: string
+    default: 'azure-rest-api-specs'
   - name: SpecRepoBranch
     type: string
     default: 'main'
@@ -21,7 +27,7 @@ parameters:
     displayName: 'Path to TypeSpec Configuration file'
   - name: ReadmePath
     type: string
-    default: 'specification/contosowidgetmanager/resource-manager/readme.md'
+    default: 'specification/contosowidgetmanager/data-plane/readme.md'
     displayName: 'Path to AutoRest Configuration file (for OpenAPI)'
   - name: ApiVersion
     type: string
@@ -46,6 +52,8 @@ pr: none
 extends:
   template: /eng/common/pipelines/templates/jobs/sdk-generation.yml
   parameters:
+    SpecRepoOwner: ${{ parameters.SpecRepoOwner }}
+    SpecRepoName: ${{ parameters.SpecRepoName }}
     SpecRepoBranch: ${{ parameters.SpecRepoBranch }}
     SpecRepoCommit: ${{ parameters.SpecRepoCommit }}
     SdkRepoOwner: 'Azure'

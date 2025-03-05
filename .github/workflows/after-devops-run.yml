@@ -19,11 +19,11 @@ jobs:
     steps:
       - name: Get Pull Request Information
         run: |
-          Write-Host '${{ toJson(github.event.check_suite) }}'
           $prs = '${{ toJson(github.event.check_suite.pull_requests) }}'
           Write-Host $prs
-
-          foreach ($pr in $prs) {
+          $prsAsArray = $prs | ConvertFrom-Json
+          
+          foreach ($pr in $prsAsArray) {
             Write-Host "headSHA: $pr.head.sha"
             Write-Host "repoName: $pr.base.repo.name"
             Write-Host "url: $pr.url"

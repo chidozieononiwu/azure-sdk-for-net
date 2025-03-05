@@ -19,8 +19,10 @@ jobs:
     steps:
       - name: Dump check_suite payload
         run: |
-          $event = $env:GITHUB_EVENT_PATH | Get-Content | ConvertFrom-Json
-          $jsonData = $event | ConvertTo-Json -Depth 10
-          Write-Host "Event payload:"
-          Write-Host $jsonData
+          Write-Host "Event: ${{ github.event_name }}"
+          Write-Host "Check suite ID: ${{ github.event.check_suite.id }}"
+          Write-Host "Check suite status: ${{ github.event.check_suite.status }}"
+          Write-Host "Check suite conclusion: ${{ github.event.check_suite.conclusion }}"
+          Write-Host "Commit SHA: ${{ github.event.check_suite.head_sha }}"
+          Write-Host "Repository name: ${{ github.event.repository.name }}"
         shell: pwsh

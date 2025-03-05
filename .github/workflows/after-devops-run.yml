@@ -18,13 +18,5 @@ jobs:
     runs-on: ubuntu-latest # This image is intentionally set to "latest", and not to a specific version
     steps:
       - name: Get Pull Request Information
-        run: |
-          $prs = ${{ github.event.check_suite.pull_requests }}
-          Write-Host "$prs"
-          foreach ($pr in $prs) {
-            echo "url: $pr.url"
-            echo "number: $pr.number"
-            echo "headSHA: $pr.head.sha"
-            echo "repoName: $pr.repo.name"
-          }
+        run: Write-Host '${{ toJson(github.event.check_suite) }}'
         shell: pwsh

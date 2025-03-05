@@ -17,12 +17,14 @@ jobs:
     name: Handle ${{ github.event_name }} ${{ github.event.action }} event
     runs-on: ubuntu-latest # This image is intentionally set to "latest", and not to a specific version
     steps:
-      - name: Dump check_suite payload
+      - name: Get Pull Request Information
+        if: ${{ github.event.check_suite.pull_requests && github.event.check_suite.pull_requests | length > 0 }}
         run: |
-          Write-Host "Event: ${{ github.event_name }}"
-          Write-Host "Check suite ID: ${{ github.event.check_suite.id }}"
-          Write-Host "Check suite status: ${{ github.event.check_suite.status }}"
-          Write-Host "Check suite conclusion: ${{ github.event.check_suite.conclusion }}"
-          Write-Host "Commit SHA: ${{ github.event.check_suite.head_sha }}"
-          Write-Host "Repository name: ${{ github.event.repository.name }}"
+          $prs = ${{ toJson(github.event.check_suite.pull_requests) }}
+          foreach ($pr in $prs) {
+            echo "url: $pr.url"
+            echo "number: $pr.number"
+            echo "headSHA: $pr.head.sha"
+            echo "repoName: $pr.repo.name"
+          }
         shell: pwsh

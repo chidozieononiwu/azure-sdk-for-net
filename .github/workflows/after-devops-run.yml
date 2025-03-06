@@ -24,9 +24,9 @@ jobs:
           $prsAsArray = $prs | ConvertFrom-Json
           
           foreach ($pr in $prsAsArray) {
-            Write-Host "headSHA: $pr.head.sha"
-            Write-Host "repoName: $pr.base.repo.name"
-            Write-Host "url: $pr.url"
-            Write-Host "number: $pr.number"
+            Write-Host "headSHA: $($pr.head.sha)"
+            Write-Host "repoName: $($pr.base.repo.name)"
+            Write-Host "url: $($pr.url)"
+            Write-Host "number: $($pr.number)"
           }
         shell: pwsh

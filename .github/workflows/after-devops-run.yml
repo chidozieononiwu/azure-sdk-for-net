@@ -19,6 +19,8 @@ jobs:
     steps:
       - name: Get Pull Request Information
         run: |
+          $check_suite = '${{ toJson(github.event.check_suite) }}'
+          Write-Host $check_suite
           $prs = '${{ toJson(github.event.check_suite.pull_requests) }}'
           Write-Host $prs
           $prsAsArray = $prs | ConvertFrom-Json

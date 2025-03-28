@@ -1,10 +1,8 @@
 name: Follow up on DevOps run test
 
 on:
-  check_suite:
+  check_run:
     types: [completed]
-  issue_comment:
-    types: [created]
 
 permissions: {}
 
@@ -19,6 +17,6 @@ jobs:
     steps:
       - name: Get Pull Request Information
         run: |
-          Write-Host $env:GITHUB_REF
-          Get-ChildItem Env: | ForEach-Object { Write-Host "$($_.Name)=$($_.Value)" }
+          $check_run = '${{ toJson(github.event.check_run) }}'
+          Write-Host $check_run
         shell: pwsh

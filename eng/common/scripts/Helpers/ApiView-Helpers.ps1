@@ -122,7 +122,7 @@ function Set-ApiViewCommentForRelatedIssues {
   param (
     [Parameter(Mandatory = $true)]
     [string]$HeadCommitish,
-    [string]$APIViewHost = "https://apiview.dev",
+    [string]$APIViewHost = "https://apiviewstagingtest.com",
     [ValidateNotNullOrEmpty()]
     [Parameter(Mandatory = $true)]
     $AuthToken

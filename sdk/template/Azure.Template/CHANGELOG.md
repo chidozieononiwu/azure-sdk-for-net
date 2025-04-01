@@ -4,7 +4,7 @@
 
 ### Other Changes
 - Release DPG library
-- Add Grow-up story
+- Add Grow-up story change
   
 ## 1.0.3-beta.19 (2020-09-24)
 - Test Submit-PR

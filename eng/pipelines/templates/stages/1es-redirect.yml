@@ -40,6 +40,7 @@ extends:
         - 1ES.PT.Tag-refs/tags/canary
     settings:
       skipBuildTagsForGitHubPullRequests: true
+      # Do not add CFSClean until packages are published through ESRP instead of directly to NuGet.
       ${{ if and(eq(variables['System.TeamProject'], 'internal'), or(eq(variables['Build.Reason'], 'Manual'), eq(variables['Build.Reason'], 'IndividualCI'))) }}:
         networkIsolationPolicy: Permissive, CFSClean2, CFSClean3
       ${{ else }}:
